@@ -115,3 +115,72 @@ def test_static_evidence_cannot_complete_dynamic_vector() -> None:
     result = score_candidate("X", df, seed=1, iterations=20)
     assert result["evidence_complete"] is False
     assert "not_trajectory" in result["missing_requirements"]
+
+
+def test_pareto_front_domination_requires_pairwise_comparison() -> None:
+    """Domination is evaluated pairwise, so a multi-eligible case is required.
+
+    ``test_incomplete_candidate_cannot_enter_pareto`` holds a single eligible
+    row, so its inner comparison loop never executes and cannot detect a
+    regression in the row-vector handling.  pandas 3.x returns read-only row
+    views, so negating the intrinsic-risk axis in place fails unless the row
+    vector is copied first.
+    """
+    scored = pd.DataFrame(
+        [
+            # A dominates B on every axis.
+            {"candidate_id": "A", "CoupledShift": 2.0, "OrthostericStabilization_A": 2.0,
+             "IntrinsicActivationRisk": 0.10, "BindingCompatibility": 2.0,
+             "evidence_complete": True},
+            {"candidate_id": "B", "CoupledShift": 1.0, "OrthostericStabilization_A": 1.0,
+             "IntrinsicActivationRisk": 0.20, "BindingCompatibility": 1.0,
+             "evidence_complete": True},
+            # C trades coupling against stability and compatibility, but carries
+            # the lowest intrinsic risk, so A and C do not dominate each other.
+            {"candidate_id": "C", "CoupledShift": 3.0, "OrthostericStabilization_A": 0.5,
+             "IntrinsicActivationRisk": 0.05, "BindingCompatibility": 1.5,
+             "evidence_complete": True},
+            # D matches A except for a worse intrinsic risk, so A dominates it.
+            {"candidate_id": "D", "CoupledShift": 2.0, "OrthostericStabilization_A": 2.0,
+             "IntrinsicActivationRisk": 0.30, "BindingCompatibility": 2.0,
+             "evidence_complete": True},
+        ]
+    )
+    front = pareto_front(scored)
+    assert sorted(scored.loc[front, "candidate_id"]) == ["A", "C"]
+
+
+def test_intrinsic_activation_risk_is_minimized_not_maximized() -> None:
+    """Lower IntrinsicActivationRisk must win; the axis is negated internally."""
+    scored = pd.DataFrame(
+        [
+            {"candidate_id": "low_risk", "CoupledShift": 1.0,
+             "OrthostericStabilization_A": 1.0, "IntrinsicActivationRisk": 0.10,
+             "BindingCompatibility": 1.0, "evidence_complete": True},
+            {"candidate_id": "high_risk", "CoupledShift": 1.0,
+             "OrthostericStabilization_A": 1.0, "IntrinsicActivationRisk": 0.90,
+             "BindingCompatibility": 1.0, "evidence_complete": True},
+        ]
+    )
+    front = pareto_front(scored)
+    assert sorted(scored.loc[front, "candidate_id"]) == ["low_risk"]
+
+
+def test_ineligible_candidate_is_excluded_from_every_comparison() -> None:
+    """An ineligible row must neither enter the front nor dominate others."""
+    scored = pd.DataFrame(
+        [
+            # Dominates everything numerically, but carries no complete evidence.
+            {"candidate_id": "ineligible", "CoupledShift": 99.0,
+             "OrthostericStabilization_A": 99.0, "IntrinsicActivationRisk": -99.0,
+             "BindingCompatibility": 99.0, "evidence_complete": False},
+            {"candidate_id": "A", "CoupledShift": 2.0, "OrthostericStabilization_A": 2.0,
+             "IntrinsicActivationRisk": 0.10, "BindingCompatibility": 2.0,
+             "evidence_complete": True},
+            {"candidate_id": "C", "CoupledShift": 3.0, "OrthostericStabilization_A": 0.5,
+             "IntrinsicActivationRisk": 0.05, "BindingCompatibility": 1.5,
+             "evidence_complete": True},
+        ]
+    )
+    front = pareto_front(scored)
+    assert sorted(scored.loc[front, "candidate_id"]) == ["A", "C"]

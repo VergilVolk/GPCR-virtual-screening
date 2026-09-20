@@ -7,6 +7,13 @@ dependencies:
   # Frozen compatible OpenFF stack.  Toolkit 0.16.x is incompatible with
   # Interchange 0.4.5 (missing NAGLChargesHandler), despite successful imports.
   - openmmforcefields=0.14.1
+  # openmmforcefields 0.14.1 (build pyhd8ed1ab_3) does NOT declare this runtime
+  # dependency, but openmmforcefields/utils.py imports it unconditionally.
+  # Without it `import openmmforcefields` dies with ModuleNotFoundError.
+  # It cannot be left out of this file: the smoke-test script
+  # scripts/audit_pacer_dc_ligand_parameterization.py imports
+  # openmmforcefields.generators at module level.
+  - importlib_resources
   # Base package is sufficient for GAFF/SMIRNOFF parameterization and avoids
   # pulling optional NAGL/PyTorch/CUDA dependencies into the CPU environment.
   - openff-toolkit-base=0.16.5

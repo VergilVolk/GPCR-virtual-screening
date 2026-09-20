@@ -274,11 +274,11 @@ def pareto_front(scored: pd.DataFrame) -> pd.Series:
         "BindingCompatibility",
     ]
     for i in scored.index[eligible]:
-        x = scored.loc[i, cols].to_numpy(float)
+        x = scored.loc[i, cols].to_numpy(float, copy=True)
         x[2] *= -1.0
         dominated = False
         for j in scored.index[eligible & (scored.index != i)]:
-            y = scored.loc[j, cols].to_numpy(float)
+            y = scored.loc[j, cols].to_numpy(float, copy=True)
             y[2] *= -1.0
             if np.all(y >= x) and np.any(y > x):
                 dominated = True

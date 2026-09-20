@@ -152,29 +152,42 @@ def main() -> None:
     args = parser.parse_args()
     args.outdir.mkdir(parents=True, exist_ok=True)
 
-    ach = openff_molecule(posed_from_pdb(
-        ROOT / "data" / "pdb" / "7TRS.pdb", LIGAND_DIR / "ACH_ideal.sdf",
-        residue_name="ACH",
-    ), "ACH")
-    ly = openff_molecule(posed_from_pdb(
-        COMPLEX_DIR / "LY2119620__candidate_probe.pdb", LIGAND_DIR / "2CU_ideal.sdf",
-        chain="L",
-    ), "LY2119620")
-    compound110 = openff_molecule(posed_from_sdf(
-        COMPLEX_DIR / "compound110_7TRS_redocked.sdf"
-    ), "compound110")
+    # Ligands are resolved lazily, inside the per-system guard below.  Resolving
+    # them up front meant one missing pose aborted every system, which defeats
+    # the per-system error handling this loop is built around and hides which
+    # input is actually absent.
+    def load_ach() -> Molecule:
+        return openff_molecule(posed_from_pdb(
+            ROOT / "data" / "pdb" / "7TRS.pdb", LIGAND_DIR / "ACH_ideal.sdf",
+            residue_name="ACH",
+        ), "ACH")
+
+    def load_ly2119620() -> Molecule:
+        return openff_molecule(posed_from_pdb(
+            COMPLEX_DIR / "LY2119620__candidate_probe.pdb", LIGAND_DIR / "2CU_ideal.sdf",
+            chain="L",
+        ), "LY2119620")
+
+    def load_compound110() -> Molecule:
+        # Produced by the 7TRS pocket re-docking step, not by
+        # build_pacer_dc_reference_complexes.py.  Its absence must fail only the
+        # two compound110 systems, not the whole run.
+        return openff_molecule(posed_from_sdf(
+            COMPLEX_DIR / "compound110_7TRS_redocked.sdf"
+        ), "compound110")
 
     definitions = {
-        "probe_only": [ach],
+        "probe_only": [load_ach],
         "apo": [],
-        "LY2119620__candidate_probe": [ach, ly],
-        "LY2119620__candidate_no_probe": [ly],
-        "compound110__candidate_probe": [ach, compound110],
-        "compound110__candidate_no_probe": [compound110],
+        "LY2119620__candidate_probe": [load_ach, load_ly2119620],
+        "LY2119620__candidate_no_probe": [load_ly2119620],
+        "compound110__candidate_probe": [load_ach, load_compound110],
+        "compound110__candidate_no_probe": [load_compound110],
     }
     records = []
-    for name, ligands in definitions.items():
+    for name, loaders in definitions.items():
         try:
+            ligands = [loader() for loader in loaders]
             records.append({"success": True, **build_one(name, ligands, args.outdir)})
         except Exception as exc:
             records.append({

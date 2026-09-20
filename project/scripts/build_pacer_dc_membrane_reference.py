@@ -212,30 +212,44 @@ def main():
         app.PDBFile.writeFile(base.topology, base.positions, handle)
 
     qc_root = ROOT / "results" / "pacer_dc_openmm_reference_qc_v01"
-    ach_source = qc_root / "probe_only" / "minimized.pdb"
-    ly_source = qc_root / "LY2119620__candidate_no_probe" / "minimized.pdb"
-    c110_source = qc_root / "compound110__candidate_no_probe" / "minimized.pdb"
-    ach0 = qc.openff_molecule(qc.posed_from_pdb(
-        ROOT / "data" / "pdb" / "7TRS.pdb", qc.LIGAND_DIR / "ACH_ideal.sdf", residue_name="ACH"
-    ), "ACH")
-    ly0 = qc.openff_molecule(qc.posed_from_pdb(
-        qc.COMPLEX_DIR / "LY2119620__candidate_probe.pdb", qc.LIGAND_DIR / "2CU_ideal.sdf", chain="L"
-    ), "LY2119620")
-    c1100 = qc.openff_molecule(qc.posed_from_sdf(
-        qc.COMPLEX_DIR / "compound110_7TRS_redocked.sdf"
-    ), "compound110")
-    ach = align_ligand_to_base(replace_conformer_from_chain(ach0, ach_source), ach_source)
-    ly = align_ligand_to_base(replace_conformer_from_chain(ly0, ly_source), ly_source)
-    compound110 = align_ligand_to_base(replace_conformer_from_chain(c1100, c110_source), c110_source)
-    ach = transform_ligand(ach, rotation, source_center, target_center)
-    ly = transform_ligand(ly, rotation, source_center, target_center)
-    compound110 = transform_ligand(compound110, rotation, source_center, target_center)
+
+    # Ligands are resolved lazily so a missing pose fails only the systems that
+    # need it.  Loading them up front aborted the whole run -- including systems
+    # whose inputs were present -- and hid which file was actually absent.
+    def load_ach():
+        source = qc_root / "probe_only" / "minimized.pdb"
+        posed = qc.openff_molecule(qc.posed_from_pdb(
+            ROOT / "data" / "pdb" / "7TRS.pdb", qc.LIGAND_DIR / "ACH_ideal.sdf",
+            residue_name="ACH"
+        ), "ACH")
+        posed = align_ligand_to_base(replace_conformer_from_chain(posed, source), source)
+        return transform_ligand(posed, rotation, source_center, target_center)
+
+    def load_ly2119620():
+        source = qc_root / "LY2119620__candidate_no_probe" / "minimized.pdb"
+        posed = qc.openff_molecule(qc.posed_from_pdb(
+            qc.COMPLEX_DIR / "LY2119620__candidate_probe.pdb", qc.LIGAND_DIR / "2CU_ideal.sdf",
+            chain="L"
+        ), "LY2119620")
+        posed = align_ligand_to_base(replace_conformer_from_chain(posed, source), source)
+        return transform_ligand(posed, rotation, source_center, target_center)
+
+    def load_compound110():
+        # Produced by the 7TRS pocket re-docking step, not by
+        # build_pacer_dc_reference_complexes.py.
+        source = qc_root / "compound110__candidate_no_probe" / "minimized.pdb"
+        posed = qc.openff_molecule(qc.posed_from_sdf(
+            qc.COMPLEX_DIR / "compound110_7TRS_redocked.sdf"
+        ), "compound110")
+        posed = align_ligand_to_base(replace_conformer_from_chain(posed, source), source)
+        return transform_ligand(posed, rotation, source_center, target_center)
+
     definitions = {
-        "probe_only": [ach], "apo": [],
-        "LY2119620__candidate_probe": [ach, ly],
-        "LY2119620__candidate_no_probe": [ly],
-        "compound110__candidate_probe": [ach, compound110],
-        "compound110__candidate_no_probe": [compound110],
+        "probe_only": [load_ach], "apo": [],
+        "LY2119620__candidate_probe": [load_ach, load_ly2119620],
+        "LY2119620__candidate_no_probe": [load_ly2119620],
+        "compound110__candidate_probe": [load_ach, load_compound110],
+        "compound110__candidate_no_probe": [load_compound110],
     }
     unknown = set(args.systems) - set(definitions)
     if unknown:
@@ -243,7 +257,7 @@ def main():
 
     records = []
     for name in args.systems:
-        ligands = definitions[name]
+        ligands = [loader() for loader in definitions[name]]
         modeller = app.Modeller(base.topology, base.positions)
         for ligand in ligands:
             modeller.add(ligand.to_topology().to_openmm(), ligand.conformers[0].to_openmm())

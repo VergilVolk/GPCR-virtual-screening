@@ -11,13 +11,58 @@ Run the frozen 18-job pilot: six matched contexts × three independent replicas 
 - OpenMM with the `CUDA` platform;
 - the packages frozen in `environment_pacer_dc_md.yml`.
 
-Preflight:
+### The environment MUST be activated, not just installed
+
+AmberTools supplies the `sqm` / `antechamber` binaries that OpenFF uses for
+AM1-BCC partial charges. Those binaries live in `$CONDA_PREFIX/bin`, so calling
+the interpreter by absolute path without activating makes OpenFF fall back to
+RDKit-only charge methods and every ligand fails with:
+
+```
+ValueError: No registered toolkits can provide the capability "assign_partial_charges"
+  partial charge method 'am1bcc' is not available from RDKitToolkitWrapper
+```
+
+This looks like a broken environment but is only a PATH problem. Always run:
+
+```bash
+source <prefix>/etc/profile.d/conda.sh
+conda activate pacer-dc-md
+```
+
+Confirm before doing anything else:
+
+```bash
+for b in sqm antechamber tleap parmchk2; do printf '%-10s %s\n' "$b" "$(command -v $b || echo MISSING)"; done
+```
+
+`scripts/audit_pacer_dc_md_environment.py` reports `tleap: null` and
+`production_ready: false` when the environment was not activated. That is a
+tooling artefact, not a real readiness failure.
+
+### Preflight
 
 ```bash
 python - <<'PY'
 from openmm import Platform
 print([Platform.getPlatform(i).getName() for i in range(Platform.getNumPlatforms())])
 assert "CUDA" in [Platform.getPlatform(i).getName() for i in range(Platform.getNumPlatforms())]
+PY
+```
+
+Note that listing `CUDA` only proves the platform was compiled in. It does not
+prove the platform can run. Builds whose CUDA toolkit is newer than the
+installed driver fail later with
+`CUDA_ERROR_UNSUPPORTED_PTX_VERSION`, so also create a real context:
+
+```bash
+python - <<'PY'
+from openmm import Platform, System, LangevinMiddleIntegrator, Context, unit
+p = Platform.getPlatformByName("CUDA")
+s = System(); s.addParticle(1.0)
+i = LangevinMiddleIntegrator(300*unit.kelvin, 1/unit.picosecond, 0.001*unit.picoseconds)
+Context(s, i, p)
+print("CUDA context OK")
 PY
 ```
 

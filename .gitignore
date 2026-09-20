@@ -74,3 +74,23 @@ README.md
 
 # Preserve empty directory markers where useful
 !.gitkeep
+
+# OneProt-MD external repo (checkpoint ~3.6 GB)
+project/tools/oneprot-embeddings/
+
+# Model weights
+*.ckpt
+*.pth
+*.safetensors
+
+# Large trajectory / structure files
+*.dcd
+*.xtc
+*.trr
+*.npy
+*.npz
+
+# Env artifacts
+.conda_*
+__pycache__/
+.pytest_cache/

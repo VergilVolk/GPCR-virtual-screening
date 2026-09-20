@@ -1,0 +1,16 @@
+{
+  "status": "frozen_external_endpoint_transfer_benchmark",
+  "source_document": "CHEMBL3769348",
+  "doi": "10.1039/C5MD00334B",
+  "n_molecules": 16,
+  "n_functional_active": 13,
+  "n_functional_inactive": 3,
+  "n_complete_functional_triplet": 13,
+  "n_binding_alpha": 7,
+  "n_exact_history_overlap": 1,
+  "median_max_history_tanimoto": 0.6321160042964554,
+  "raw_sha256": "8152c2485ed2b003a0ea962b7c93155771f741a2c5de6ec58e61eeeeafe8407f",
+  "csv_sha256": "64856c816da7c1dad17c7290fe944bb00d723583e3c06a893dc2103c9332ffb4",
+  "missing_policy": "Not Active remains a categorical inactive; no continuous endpoint is imputed.",
+  "claim_boundary": "Independent publication and endpoint transfer, but not an unseen-scaffold benchmark; one exact historical overlap and strong LY2033298-neighborhood similarity are disclosed."
+}

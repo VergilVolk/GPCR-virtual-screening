@@ -1,0 +1,25 @@
+{
+  "dataset_id": "M4_ACADIA_WO2025122811_FUNCTIONAL_V01",
+  "publication": "WO2025122811A1",
+  "title": "M4 positive allosteric modulators",
+  "assignee": "Acadia Pharmaceuticals Inc",
+  "priority_date": "2023-12-07",
+  "publication_date": "2025-06-12",
+  "source_url": "https://patentimages.storage.googleapis.com/c7/22/b7/76cb3875bba9b6/WO2025122811A1.pdf",
+  "source_pdf_sha256": "38FD352E90319E794C45FE0540E5AA77A473E773ABE20873018A7CE4AF22C32B",
+  "labels_pages_pdf": [118, 119, 120],
+  "labels_pages_printed": [117, 118, 119],
+  "n_examples": 49,
+  "label_extraction": "manual double-pass transcription from rendered Table 2; ND and NT retained as distinct missingness states",
+  "assay": {
+    "target": "human M4",
+    "cell": "CHO-K1/M4/Galpha15 stable",
+    "probe": "acetylcholine",
+    "probe_regime": "EC20; final 15 nM for M4",
+    "readout": "FDSS calcium flux",
+    "maximum_test_concentration_uM": 10,
+    "ec50_reporting_rule": "reported only when relative efficacy >= 50%"
+  },
+  "mechanistic_endpoint_available": false,
+  "claim_boundary": "Functional PAM potency and efficacy benchmark; no log(alpha beta), log(tauB), affinity, or wet-lab confirmation of generated candidates."
+}

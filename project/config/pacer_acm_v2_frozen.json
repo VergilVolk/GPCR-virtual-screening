@@ -1,0 +1,42 @@
+{
+  "algorithm": "PACER-ACM v2",
+  "expanded_name": "Probe- and Assay-Calibrated Efficacy Ranker for Allosteric Coupling Mechanisms",
+  "frozen_at": "2026-08-30",
+  "status": "preregistered_before_fourth_campaign_label_extraction",
+  "scope": {
+    "target": "human CHRM4",
+    "modality": "positive allosteric modulators",
+    "allowed_endpoints": ["log_alpha_beta", "log_tauB"],
+    "refused_endpoints": ["pKB", "binding_affinity", "PAM_classification_without_functional_labels"],
+    "anchors_required": 3,
+    "anchor_selection": "ECFP4 medoid followed by deterministic max-min diversity; labels hidden during selection",
+    "same_context_fields": ["species", "orthosteric_probe", "probe_regime", "assay_family", "readout", "cell_system"],
+    "same_series_required": true
+  },
+  "representation": {
+    "fingerprint": "Morgan radius 2, 2048 bits",
+    "base_predictor": "frozen cross-campaign ligand/structure predictor supplied before target labels",
+    "calibration": "endpoint-wise arithmetic mean of three anchor residuals",
+    "rank_changing_local_correction": "disabled in primary analysis"
+  },
+  "applicability_domain": {
+    "minimum_query_to_anchor_tanimoto": 0.30,
+    "maximum_anchor_residual_sd_log_units": 0.75,
+    "require_all_anchor_qc": true,
+    "require_finite_base_prediction": true
+  },
+  "uncertainty": {
+    "interval": "leave-one-anchor-out residual t interval",
+    "confidence_level": 0.95,
+    "minimum_interval_half_width_log_units": 0.30
+  },
+  "evaluation": {
+    "primary_metrics": ["Spearman", "MAE", "worst_series_Spearman", "coverage"],
+    "uncertainty_metrics": ["interval_coverage", "median_interval_width"],
+    "baselines": ["FrozenBase", "ECFP4-1NN", "ECFP4-Ridge", "ThreeShot-Offset", "ThreeShot-KernelResidual"],
+    "paired_bootstrap_repeats": 5000,
+    "bootstrap_unit": "chemical_series_or_matched_pair_family",
+    "success_rule": "paired delta lower 95% CI > 0 versus every baseline, no worst-series degradation, and refusal coverage disclosed"
+  },
+  "claim_boundary": "Computational functional-rank hypothesis only; neither confirmed PAM activity nor universal SOTA."
+}

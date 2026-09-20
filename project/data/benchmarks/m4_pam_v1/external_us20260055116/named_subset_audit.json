@@ -1,0 +1,36 @@
+{
+  "dataset_id": "US20260055116_NAMED_FUNCTIONAL_SUBSET_V01",
+  "pdf_sha256": "67CA7CF9E12FA7F2958AB20B48C278D473B3DBA93B8D258CBD7FDF99C88D3D76",
+  "html_sha256": "D0FD316AFDE81F20649304F894B324DF8E19D44A4877F996AA6CB1019DDAB730",
+  "n_table23_rows": 111,
+  "n_explicitly_named": 26,
+  "n_opsin_rdkit_success": 26,
+  "n_unique_active_moieties": 25,
+  "n_duplicate_structure_rows": 2,
+  "n_exact_training_overlap": 0,
+  "median_max_train_tanimoto": 0.21654184304786717,
+  "max_train_tanimoto": 0.3048780487804878,
+  "endpoint_class_counts": {
+    "human_m4_perk": {
+      "A": 10,
+      "B": 7,
+      "C": 5,
+      "D": 4
+    },
+    "rat_m4_perk": {
+      "D": 15,
+      "B": 6,
+      "C": 5
+    },
+    "human_m4_gtpgs": {
+      "N/A": 14,
+      "B": 4,
+      "C": 4,
+      "D": 3,
+      "A": 1
+    }
+  },
+  "image_only_compounds_excluded": true,
+  "labels_visible_during_source_qualification": true,
+  "claim_boundary": "Named high-confidence ordinal external stress test; not pristine blind validation or exact-potency evidence."
+}

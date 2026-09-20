@@ -1,0 +1,76 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+.venv*/
+venv/
+.conda/
+.conda_linux/
+envs/
+.ipynb_checkpoints/
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Runtime outputs, trajectories, checkpoints, and logs
+project/results/
+project/checkpoints/
+checkpoints/
+*.dcd
+*.xtc
+*.trr
+*.nc
+*.chk
+*.ckpt
+*.pt
+*.pth
+*.log
+logs/
+tmp/
+
+# External/raw data and caches
+project/data/m4_gamd_figshare_*/
+project/data/miao2026_m4r/
+project/data/deeprli_m4_*/
+project/data/papers/
+project/data/pdb/
+project/data/ligands/
+project/data/chembl/
+project/data/benchmarks/m4r_enrichment_v1/
+project/data/benchmarks/**/feature_cache*/
+project/data/benchmarks/**/*.pdf
+project/data/benchmarks/**/*.html
+project/data/benchmarks/**/*.zip
+project/data/benchmarks/**/*.png
+project/data/generated/
+
+# Third-party source trees and binaries
+project/tools/DeepRLI/
+project/tools/gpcr-am-ensemble-docking/
+project/tools/oneprot-embeddings/
+project/tools/*.exe
+project/tools/RTMScore/
+project/scripts/_tmp_*
+
+# Large source documents and archives are referenced, not versioned
+README.md
+*.pdf
+*.pptx
+*.docx
+*.xlsx
+*.xls
+*.zip
+*.tar
+*.tar.gz
+
+# Preserve empty directory markers where useful
+!.gitkeep

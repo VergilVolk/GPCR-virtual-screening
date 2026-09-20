@@ -1,0 +1,866 @@
+{
+  "model_id": "PACER-DC-coupling-coordinate-v0.1",
+  "threshold_A": 0.1,
+  "source_contrasts": [
+    "7TRQ-7TRS",
+    "7TRP-7TRS"
+  ],
+  "source_probe": "iperoxo",
+  "representation": "receptor_CA_pair_distances",
+  "residue_numbering": "M4 receptor PDB numbering",
+  "feature_count": 141,
+  "pairs": [
+    {
+      "resid_i": 89,
+      "resid_j": 92,
+      "baseline_distance_A": 4.897140492164787,
+      "weight": -0.004004423344853895
+    },
+    {
+      "resid_i": 89,
+      "resid_j": 93,
+      "baseline_distance_A": 6.374523119418417,
+      "weight": -0.007726227931036136
+    },
+    {
+      "resid_i": 89,
+      "resid_j": 97,
+      "baseline_distance_A": 10.675466687690983,
+      "weight": -0.009939488377903984
+    },
+    {
+      "resid_i": 89,
+      "resid_j": 108,
+      "baseline_distance_A": 9.977148139623871,
+      "weight": -0.007313189164256803
+    },
+    {
+      "resid_i": 89,
+      "resid_j": 185,
+      "baseline_distance_A": 9.819861557068919,
+      "weight": 0.002582172209246015
+    },
+    {
+      "resid_i": 89,
+      "resid_j": 186,
+      "baseline_distance_A": 10.793464874635957,
+      "weight": 0.012948419184286188
+    },
+    {
+      "resid_i": 89,
+      "resid_j": 187,
+      "baseline_distance_A": 13.661908285448273,
+      "weight": 0.01837304554040635
+    },
+    {
+      "resid_i": 89,
+      "resid_j": 416,
+      "baseline_distance_A": 14.552349260514605,
+      "weight": 0.005586533998788201
+    },
+    {
+      "resid_i": 89,
+      "resid_j": 420,
+      "baseline_distance_A": 17.286029792870305,
+      "weight": 0.006016345063691516
+    },
+    {
+      "resid_i": 89,
+      "resid_j": 423,
+      "baseline_distance_A": 19.403008143068952,
+      "weight": 0.003422043255842795
+    },
+    {
+      "resid_i": 89,
+      "resid_j": 432,
+      "baseline_distance_A": 13.522662977387258,
+      "weight": -0.02017758383596562
+    },
+    {
+      "resid_i": 89,
+      "resid_j": 433,
+      "baseline_distance_A": 12.801449019544624,
+      "weight": -0.005435223519501089
+    },
+    {
+      "resid_i": 89,
+      "resid_j": 435,
+      "baseline_distance_A": 11.86313811771574,
+      "weight": -0.005999595945085445
+    },
+    {
+      "resid_i": 92,
+      "resid_j": 97,
+      "baseline_distance_A": 6.167493007697694,
+      "weight": -0.007731239306118369
+    },
+    {
+      "resid_i": 92,
+      "resid_j": 108,
+      "baseline_distance_A": 12.400760783113268,
+      "weight": -0.013694471597356043
+    },
+    {
+      "resid_i": 92,
+      "resid_j": 186,
+      "baseline_distance_A": 11.04523594134594,
+      "weight": 0.0022931710186223165
+    },
+    {
+      "resid_i": 92,
+      "resid_j": 187,
+      "baseline_distance_A": 14.649669791500429,
+      "weight": 0.0028333451800459045
+    },
+    {
+      "resid_i": 92,
+      "resid_j": 416,
+      "baseline_distance_A": 17.195949871990205,
+      "weight": 0.005762537654872739
+    },
+    {
+      "resid_i": 92,
+      "resid_j": 420,
+      "baseline_distance_A": 18.92499582562701,
+      "weight": 0.0033960529984986615
+    },
+    {
+      "resid_i": 92,
+      "resid_j": 423,
+      "baseline_distance_A": 19.87758476274218,
+      "weight": 0.003053479497199565
+    },
+    {
+      "resid_i": 92,
+      "resid_j": 432,
+      "baseline_distance_A": 12.12925541820272,
+      "weight": -0.014088972064723706
+    },
+    {
+      "resid_i": 92,
+      "resid_j": 433,
+      "baseline_distance_A": 11.836598751330554,
+      "weight": 0.002846565884345729
+    },
+    {
+      "resid_i": 92,
+      "resid_j": 436,
+      "baseline_distance_A": 9.268257117710965,
+      "weight": 0.006829310964148572
+    },
+    {
+      "resid_i": 93,
+      "resid_j": 96,
+      "baseline_distance_A": 5.125999804916115,
+      "weight": -0.004093544819548925
+    },
+    {
+      "resid_i": 93,
+      "resid_j": 97,
+      "baseline_distance_A": 7.822127204284011,
+      "weight": -0.013905039370315477
+    },
+    {
+      "resid_i": 93,
+      "resid_j": 108,
+      "baseline_distance_A": 15.434205778076173,
+      "weight": -0.01298249954733159
+    },
+    {
+      "resid_i": 93,
+      "resid_j": 186,
+      "baseline_distance_A": 12.616879685564106,
+      "weight": 0.0067877392326986564
+    },
+    {
+      "resid_i": 93,
+      "resid_j": 187,
+      "baseline_distance_A": 16.13381545078536,
+      "weight": 0.010527633162054132
+    },
+    {
+      "resid_i": 93,
+      "resid_j": 416,
+      "baseline_distance_A": 15.962722700090984,
+      "weight": 0.014294964005431541
+    },
+    {
+      "resid_i": 93,
+      "resid_j": 420,
+      "baseline_distance_A": 18.204760338988258,
+      "weight": 0.012639032310261486
+    },
+    {
+      "resid_i": 93,
+      "resid_j": 423,
+      "baseline_distance_A": 18.914194246649796,
+      "weight": 0.014964390273199965
+    },
+    {
+      "resid_i": 93,
+      "resid_j": 432,
+      "baseline_distance_A": 9.748030211278591,
+      "weight": -0.004005263954836984
+    },
+    {
+      "resid_i": 93,
+      "resid_j": 433,
+      "baseline_distance_A": 8.603845535573035,
+      "weight": 0.011865826269321053
+    },
+    {
+      "resid_i": 93,
+      "resid_j": 436,
+      "baseline_distance_A": 6.886036160230356,
+      "weight": 0.012490776836762332
+    },
+    {
+      "resid_i": 93,
+      "resid_j": 439,
+      "baseline_distance_A": 10.490032411770706,
+      "weight": 0.0048897601717771974
+    },
+    {
+      "resid_i": 96,
+      "resid_j": 98,
+      "baseline_distance_A": 6.779704787083288,
+      "weight": 0.005287321045341174
+    },
+    {
+      "resid_i": 96,
+      "resid_j": 108,
+      "baseline_distance_A": 16.893388114880924,
+      "weight": -0.0038517523502288498
+    },
+    {
+      "resid_i": 96,
+      "resid_j": 183,
+      "baseline_distance_A": 8.606949343408504,
+      "weight": 0.008414292710733682
+    },
+    {
+      "resid_i": 96,
+      "resid_j": 184,
+      "baseline_distance_A": 8.219745069039556,
+      "weight": 0.004696919259750018
+    },
+    {
+      "resid_i": 96,
+      "resid_j": 185,
+      "baseline_distance_A": 10.112389430792302,
+      "weight": 0.009172000678930996
+    },
+    {
+      "resid_i": 96,
+      "resid_j": 186,
+      "baseline_distance_A": 12.519827355039691,
+      "weight": 0.012927176260432539
+    },
+    {
+      "resid_i": 96,
+      "resid_j": 187,
+      "baseline_distance_A": 16.28454190328977,
+      "weight": 0.013560580721825326
+    },
+    {
+      "resid_i": 96,
+      "resid_j": 190,
+      "baseline_distance_A": 19.74845234442436,
+      "weight": 0.003730280847053436
+    },
+    {
+      "resid_i": 96,
+      "resid_j": 416,
+      "baseline_distance_A": 18.91331229584073,
+      "weight": 0.010502189214262306
+    },
+    {
+      "resid_i": 96,
+      "resid_j": 420,
+      "baseline_distance_A": 19.655699148084253,
+      "weight": 0.013664727429790387
+    },
+    {
+      "resid_i": 96,
+      "resid_j": 423,
+      "baseline_distance_A": 19.254979356000366,
+      "weight": 0.014514034906673355
+    },
+    {
+      "resid_i": 96,
+      "resid_j": 432,
+      "baseline_distance_A": 9.883236565012504,
+      "weight": -0.004262765549272928
+    },
+    {
+      "resid_i": 96,
+      "resid_j": 436,
+      "baseline_distance_A": 10.06954030728315,
+      "weight": 0.011855007415817284
+    },
+    {
+      "resid_i": 96,
+      "resid_j": 439,
+      "baseline_distance_A": 14.147706739963194,
+      "weight": 0.006720933706666335
+    },
+    {
+      "resid_i": 97,
+      "resid_j": 108,
+      "baseline_distance_A": 15.191509799884933,
+      "weight": -0.014798354541375323
+    },
+    {
+      "resid_i": 97,
+      "resid_j": 183,
+      "baseline_distance_A": 5.113091921724082,
+      "weight": 0.0049801004467505735
+    },
+    {
+      "resid_i": 97,
+      "resid_j": 190,
+      "baseline_distance_A": 19.01811121010707,
+      "weight": -0.00557043682562723
+    },
+    {
+      "resid_i": 97,
+      "resid_j": 416,
+      "baseline_distance_A": 20.3326739510572,
+      "weight": -0.012239517587231925
+    },
+    {
+      "resid_i": 97,
+      "resid_j": 420,
+      "baseline_distance_A": 20.34824083305483,
+      "weight": -0.008746809821522499
+    },
+    {
+      "resid_i": 97,
+      "resid_j": 423,
+      "baseline_distance_A": 19.94325224229991,
+      "weight": -0.014350746670736209
+    },
+    {
+      "resid_i": 97,
+      "resid_j": 432,
+      "baseline_distance_A": 12.240896740026859,
+      "weight": -0.032210306844785
+    },
+    {
+      "resid_i": 97,
+      "resid_j": 433,
+      "baseline_distance_A": 13.360033008941262,
+      "weight": -0.01561456755458435
+    },
+    {
+      "resid_i": 97,
+      "resid_j": 435,
+      "baseline_distance_A": 14.472221425890366,
+      "weight": -0.0186648842106512
+    },
+    {
+      "resid_i": 98,
+      "resid_j": 108,
+      "baseline_distance_A": 11.688304368042433,
+      "weight": -0.004820714683740873
+    },
+    {
+      "resid_i": 98,
+      "resid_j": 190,
+      "baseline_distance_A": 18.13594885855162,
+      "weight": -0.0023168823243994974
+    },
+    {
+      "resid_i": 98,
+      "resid_j": 423,
+      "baseline_distance_A": 20.37641133762273,
+      "weight": -0.003049570832945434
+    },
+    {
+      "resid_i": 98,
+      "resid_j": 432,
+      "baseline_distance_A": 14.191063878370791,
+      "weight": -0.023372874925009654
+    },
+    {
+      "resid_i": 98,
+      "resid_j": 433,
+      "baseline_distance_A": 15.272781966622853,
+      "weight": -0.005616499213806163
+    },
+    {
+      "resid_i": 98,
+      "resid_j": 435,
+      "baseline_distance_A": 15.285985673158281,
+      "weight": -0.00940611705202525
+    },
+    {
+      "resid_i": 98,
+      "resid_j": 436,
+      "baseline_distance_A": 13.141958796161244,
+      "weight": 0.008559287001580759
+    },
+    {
+      "resid_i": 98,
+      "resid_j": 439,
+      "baseline_distance_A": 15.198038393161136,
+      "weight": 0.0036270502652642304
+    },
+    {
+      "resid_i": 108,
+      "resid_j": 183,
+      "baseline_distance_A": 14.9443710807782,
+      "weight": -0.0031271638587125074
+    },
+    {
+      "resid_i": 108,
+      "resid_j": 184,
+      "baseline_distance_A": 13.227701954610259,
+      "weight": -0.00853654062116199
+    },
+    {
+      "resid_i": 108,
+      "resid_j": 185,
+      "baseline_distance_A": 9.692843648795748,
+      "weight": -0.01094573594939666
+    },
+    {
+      "resid_i": 108,
+      "resid_j": 186,
+      "baseline_distance_A": 10.108263995365379,
+      "weight": -0.008956678686083859
+    },
+    {
+      "resid_i": 108,
+      "resid_j": 187,
+      "baseline_distance_A": 10.930066102270374,
+      "weight": -0.006906900751723155
+    },
+    {
+      "resid_i": 108,
+      "resid_j": 190,
+      "baseline_distance_A": 16.75161717566396,
+      "weight": -0.019131396375131865
+    },
+    {
+      "resid_i": 108,
+      "resid_j": 416,
+      "baseline_distance_A": 18.212545785803805,
+      "weight": -0.011191240572294252
+    },
+    {
+      "resid_i": 108,
+      "resid_j": 420,
+      "baseline_distance_A": 18.976761868137558,
+      "weight": -0.019603072538847428
+    },
+    {
+      "resid_i": 108,
+      "resid_j": 423,
+      "baseline_distance_A": 21.612880141249107,
+      "weight": -0.014417951817944277
+    },
+    {
+      "resid_i": 108,
+      "resid_j": 432,
+      "baseline_distance_A": 20.212641316760163,
+      "weight": -0.04354425066405045
+    },
+    {
+      "resid_i": 108,
+      "resid_j": 433,
+      "baseline_distance_A": 20.933642635719185,
+      "weight": -0.022980814983424705
+    },
+    {
+      "resid_i": 108,
+      "resid_j": 435,
+      "baseline_distance_A": 18.193177869740083,
+      "weight": -0.03659648540296628
+    },
+    {
+      "resid_i": 108,
+      "resid_j": 436,
+      "baseline_distance_A": 16.51120050147777,
+      "weight": -0.017365928916242487
+    },
+    {
+      "resid_i": 108,
+      "resid_j": 439,
+      "baseline_distance_A": 14.501087683342933,
+      "weight": -0.02072104557547036
+    },
+    {
+      "resid_i": 183,
+      "resid_j": 186,
+      "baseline_distance_A": 10.126376745904723,
+      "weight": -0.006166275309698362
+    },
+    {
+      "resid_i": 183,
+      "resid_j": 187,
+      "baseline_distance_A": 13.28875456918368,
+      "weight": -0.008203107355365006
+    },
+    {
+      "resid_i": 183,
+      "resid_j": 190,
+      "baseline_distance_A": 17.24843079819147,
+      "weight": -0.010854779480138773
+    },
+    {
+      "resid_i": 183,
+      "resid_j": 416,
+      "baseline_distance_A": 21.773458590678697,
+      "weight": -0.0029742655770215822
+    },
+    {
+      "resid_i": 183,
+      "resid_j": 420,
+      "baseline_distance_A": 20.44000949119153,
+      "weight": -0.008584960897648142
+    },
+    {
+      "resid_i": 183,
+      "resid_j": 423,
+      "baseline_distance_A": 19.639855676659142,
+      "weight": -0.010843666855370877
+    },
+    {
+      "resid_i": 183,
+      "resid_j": 432,
+      "baseline_distance_A": 14.520984746221597,
+      "weight": -0.02492607302069244
+    },
+    {
+      "resid_i": 183,
+      "resid_j": 433,
+      "baseline_distance_A": 16.656419573245635,
+      "weight": -0.009289913258936367
+    },
+    {
+      "resid_i": 183,
+      "resid_j": 435,
+      "baseline_distance_A": 16.666374950780398,
+      "weight": -0.013422582497743224
+    },
+    {
+      "resid_i": 183,
+      "resid_j": 436,
+      "baseline_distance_A": 15.538017151490081,
+      "weight": 0.010808617699212028
+    },
+    {
+      "resid_i": 183,
+      "resid_j": 439,
+      "baseline_distance_A": 18.003770355122843,
+      "weight": 0.006571020615557566
+    },
+    {
+      "resid_i": 184,
+      "resid_j": 186,
+      "baseline_distance_A": 6.59491091675998,
+      "weight": -0.003995182640514846
+    },
+    {
+      "resid_i": 184,
+      "resid_j": 187,
+      "baseline_distance_A": 9.954854795525655,
+      "weight": -0.003274841329484617
+    },
+    {
+      "resid_i": 184,
+      "resid_j": 190,
+      "baseline_distance_A": 13.825522666431093,
+      "weight": -0.008008918537909603
+    },
+    {
+      "resid_i": 184,
+      "resid_j": 416,
+      "baseline_distance_A": 18.06908771908532,
+      "weight": -0.005479084224589312
+    },
+    {
+      "resid_i": 184,
+      "resid_j": 420,
+      "baseline_distance_A": 16.657757472120903,
+      "weight": -0.007249358462511237
+    },
+    {
+      "resid_i": 184,
+      "resid_j": 423,
+      "baseline_distance_A": 16.115470672617665,
+      "weight": -0.007394893214255383
+    },
+    {
+      "resid_i": 184,
+      "resid_j": 432,
+      "baseline_distance_A": 11.840862721947252,
+      "weight": -0.03246555335069807
+    },
+    {
+      "resid_i": 184,
+      "resid_j": 433,
+      "baseline_distance_A": 14.188336653744871,
+      "weight": -0.014591013407546429
+    },
+    {
+      "resid_i": 184,
+      "resid_j": 435,
+      "baseline_distance_A": 13.351663791453115,
+      "weight": -0.020439199782530743
+    },
+    {
+      "resid_i": 184,
+      "resid_j": 436,
+      "baseline_distance_A": 12.589448637648907,
+      "weight": 0.002058350013126404
+    },
+    {
+      "resid_i": 184,
+      "resid_j": 439,
+      "baseline_distance_A": 14.648925250679659,
+      "weight": 0.005942148765307927
+    },
+    {
+      "resid_i": 185,
+      "resid_j": 190,
+      "baseline_distance_A": 12.274376481108932,
+      "weight": -0.008162243248304677
+    },
+    {
+      "resid_i": 185,
+      "resid_j": 420,
+      "baseline_distance_A": 15.183025818327517,
+      "weight": -0.00360068257611274
+    },
+    {
+      "resid_i": 185,
+      "resid_j": 423,
+      "baseline_distance_A": 15.69830761579095,
+      "weight": -0.0024152388595088978
+    },
+    {
+      "resid_i": 185,
+      "resid_j": 432,
+      "baseline_distance_A": 12.904630680496052,
+      "weight": -0.026686707972958308
+    },
+    {
+      "resid_i": 185,
+      "resid_j": 433,
+      "baseline_distance_A": 14.888076235699495,
+      "weight": -0.00780696804003478
+    },
+    {
+      "resid_i": 185,
+      "resid_j": 435,
+      "baseline_distance_A": 12.94735328165568,
+      "weight": -0.017099133714922044
+    },
+    {
+      "resid_i": 185,
+      "resid_j": 436,
+      "baseline_distance_A": 12.060414006160808,
+      "weight": 0.00483907163507053
+    },
+    {
+      "resid_i": 185,
+      "resid_j": 439,
+      "baseline_distance_A": 12.773546336080676,
+      "weight": 0.007955947497012198
+    },
+    {
+      "resid_i": 186,
+      "resid_j": 190,
+      "baseline_distance_A": 8.733010076714667,
+      "weight": -0.01226433053362959
+    },
+    {
+      "resid_i": 186,
+      "resid_j": 420,
+      "baseline_distance_A": 11.70413781531984,
+      "weight": -0.003109400026100117
+    },
+    {
+      "resid_i": 186,
+      "resid_j": 423,
+      "baseline_distance_A": 12.645960975742414,
+      "weight": -0.0037344985348219777
+    },
+    {
+      "resid_i": 186,
+      "resid_j": 432,
+      "baseline_distance_A": 12.363783158887902,
+      "weight": -0.0252565371290816
+    },
+    {
+      "resid_i": 186,
+      "resid_j": 433,
+      "baseline_distance_A": 14.569431732226219,
+      "weight": -0.0020420202051143993
+    },
+    {
+      "resid_i": 186,
+      "resid_j": 435,
+      "baseline_distance_A": 11.379413605278623,
+      "weight": -0.0117600882649274
+    },
+    {
+      "resid_i": 186,
+      "resid_j": 436,
+      "baseline_distance_A": 11.404162880281918,
+      "weight": 0.006596387054099451
+    },
+    {
+      "resid_i": 186,
+      "resid_j": 439,
+      "baseline_distance_A": 11.042731048069596,
+      "weight": 0.014266666167591226
+    },
+    {
+      "resid_i": 187,
+      "resid_j": 190,
+      "baseline_distance_A": 6.0254217279788795,
+      "weight": -0.004063370090418782
+    },
+    {
+      "resid_i": 187,
+      "resid_j": 416,
+      "baseline_distance_A": 13.237815718614609,
+      "weight": 0.00889133281340643
+    },
+    {
+      "resid_i": 187,
+      "resid_j": 420,
+      "baseline_distance_A": 10.549789855726983,
+      "weight": 0.004243530070150138
+    },
+    {
+      "resid_i": 187,
+      "resid_j": 432,
+      "baseline_distance_A": 14.832113403018477,
+      "weight": -0.016152883472480877
+    },
+    {
+      "resid_i": 187,
+      "resid_j": 435,
+      "baseline_distance_A": 13.171615238838415,
+      "weight": -0.002125456800684968
+    },
+    {
+      "resid_i": 187,
+      "resid_j": 436,
+      "baseline_distance_A": 13.91190357212125,
+      "weight": 0.01157507545508435
+    },
+    {
+      "resid_i": 187,
+      "resid_j": 439,
+      "baseline_distance_A": 12.433974786849145,
+      "weight": 0.022569768814356038
+    },
+    {
+      "resid_i": 190,
+      "resid_j": 416,
+      "baseline_distance_A": 12.678801599520355,
+      "weight": -0.007604667477076328
+    },
+    {
+      "resid_i": 190,
+      "resid_j": 420,
+      "baseline_distance_A": 7.553705646899403,
+      "weight": -0.0085841529702327
+    },
+    {
+      "resid_i": 190,
+      "resid_j": 432,
+      "baseline_distance_A": 15.293968059336335,
+      "weight": -0.01206643648750543
+    },
+    {
+      "resid_i": 190,
+      "resid_j": 433,
+      "baseline_distance_A": 18.113762502583505,
+      "weight": -0.008015997335809114
+    },
+    {
+      "resid_i": 190,
+      "resid_j": 435,
+      "baseline_distance_A": 13.62314189164893,
+      "weight": -0.008345531890937476
+    },
+    {
+      "resid_i": 416,
+      "resid_j": 423,
+      "baseline_distance_A": 10.051916633160062,
+      "weight": 0.004752990593465763
+    },
+    {
+      "resid_i": 416,
+      "resid_j": 432,
+      "baseline_distance_A": 12.44038427863062,
+      "weight": -0.005284496120528031
+    },
+    {
+      "resid_i": 416,
+      "resid_j": 433,
+      "baseline_distance_A": 12.491756882040256,
+      "weight": -0.002391149984563873
+    },
+    {
+      "resid_i": 416,
+      "resid_j": 439,
+      "baseline_distance_A": 6.004429698147861,
+      "weight": 0.005887960258079337
+    },
+    {
+      "resid_i": 420,
+      "resid_j": 423,
+      "baseline_distance_A": 4.8543542309971555,
+      "weight": 0.0084813461919405
+    },
+    {
+      "resid_i": 420,
+      "resid_j": 439,
+      "baseline_distance_A": 10.196397942410838,
+      "weight": 0.010865228481086557
+    },
+    {
+      "resid_i": 423,
+      "resid_j": 433,
+      "baseline_distance_A": 13.925079173922144,
+      "weight": -0.004868460207498851
+    },
+    {
+      "resid_i": 423,
+      "resid_j": 436,
+      "baseline_distance_A": 13.38298897855034,
+      "weight": 0.0060041660569995145
+    },
+    {
+      "resid_i": 423,
+      "resid_j": 439,
+      "baseline_distance_A": 13.14382851379308,
+      "weight": 0.02292866436981507
+    },
+    {
+      "resid_i": 433,
+      "resid_j": 439,
+      "baseline_distance_A": 9.754538738454011,
+      "weight": 0.005880518375890174
+    },
+    {
+      "resid_i": 435,
+      "resid_j": 439,
+      "baseline_distance_A": 6.000573389268734,
+      "weight": 0.005156407792612936
+    }
+  ],
+  "anchor_scores": {
+    "7TRS_probe_only": 0.0,
+    "7TRQ_VU0467154_PAM": 0.9448658589239142,
+    "7TRP_LY2033298_PAM": 1.0551341410760857
+  },
+  "claim_boundary": "Static probe-matched allosteric coupling direction; not PAM-specific and not efficacy."
+}

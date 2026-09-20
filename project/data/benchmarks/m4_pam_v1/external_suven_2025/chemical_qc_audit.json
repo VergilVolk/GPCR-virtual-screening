@@ -1,0 +1,17 @@
+{
+  "status": "source_and_chemical_domain_frozen_before_model_prediction",
+  "n_external": 45,
+  "n_exact_training_overlap": 0,
+  "n_eligible_external": 45,
+  "median_max_train_tanimoto_ecfp4": 0.4383561643835616,
+  "max_max_train_tanimoto_ecfp4": 0.5882352941176471,
+  "n_machine_recovered_mass": 34,
+  "n_mass_qc_pass": 33,
+  "n_mass_manual_review": 0,
+  "mass_manual_review_ids": [],
+  "source_mass_typo_suspected_ids": [
+    88
+  ],
+  "external_labels_used_for_training_or_model_selection": false,
+  "model_predictions_run": false
+}

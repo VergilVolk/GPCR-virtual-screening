@@ -1,0 +1,27 @@
+{
+  "status": "frozen_multidomain_mechanistic_panel",
+  "n_molecules": 27,
+  "by_document": {
+    "Liu2024": 18,
+    "Jorg2023": 9
+  },
+  "n_exact_cross_document_overlap": 1,
+  "median_cross_document_tanimoto": 0.7377049180327869,
+  "median_monash_tanimoto": 0.13636363636363635,
+  "endpoints": [
+    "GoB_log_alpha_beta",
+    "GoB_log_tauB",
+    "arrestin_log_alpha_beta",
+    "arrestin_log_alpha_beta",
+    "arrestin_log_tauB",
+    "arrestin_log_tauB",
+    "binding_log_alpha",
+    "cAMP_log_alpha_beta",
+    "cAMP_log_alpha_beta",
+    "cAMP_log_tauB",
+    "cAMP_log_tauB",
+    "pKB",
+    "pKB"
+  ],
+  "csv_sha256": "54b8df8474c6db779e64506f3682a6ee9ba272280c2ac0a44b6a27e482710846"
+}

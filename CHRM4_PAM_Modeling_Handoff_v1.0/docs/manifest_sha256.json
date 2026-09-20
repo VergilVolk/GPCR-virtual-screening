@@ -1,0 +1,212 @@
+{
+  "code": {
+    "scripts/build_chrm4_final_dataset.py": {
+      "kind": "FC1_builder_reused_logic",
+      "sha256": "c836dec009282cc9dd53e03dc1ef444916f2792b3976d17c936783ab2c2020b1"
+    },
+    "scripts/build_chrm4_final_dataset_fc2.py": {
+      "kind": "FC2_builder",
+      "sha256": "5564a69d80d7198bd68b82edc0792454974be959d4fd9a4276a7568113f7e212"
+    },
+    "scripts/validate_chrm4_final_dataset_fc2.py": {
+      "kind": "FC2_validator",
+      "sha256": "dfeb47dc28ff4e36f9d094e1beac55ec1e5f24b06f109ce9fd376658affdeced"
+    },
+    "tests/test_chrm4_final_dataset_fc2.py": {
+      "kind": "FC2_test_file",
+      "sha256": "656a81d57c25f5110dddb1690128e5dbd8c354b07338ac4a01448b8cc8f082e4"
+    }
+  },
+  "dataset": "CHRM4_PAM_FINAL_DATASET_v1.0",
+  "deterministic": true,
+  "fc2_source": {
+    "byte_identical_files": {
+      "activities.csv": {
+        "byte_identical_to_fc2": true,
+        "sha256": "122f1b9a545f1a9481e507740159744e236a65760218270d1eda0597c06d7fe2"
+      },
+      "assays.csv": {
+        "byte_identical_to_fc2": true,
+        "sha256": "57d6fbf93f3f22887b2d23dc1a669a7507e09ba16d6b6fdadb8c4931159b2269"
+      },
+      "compounds.csv": {
+        "byte_identical_to_fc2": true,
+        "sha256": "408df31dd6b9bbdb005a8bed6d73bcce781d43adc3cb861115a4c3c7301c6b7f"
+      },
+      "excluded_or_unresolved.csv": {
+        "byte_identical_to_fc2": true,
+        "sha256": "03b02b6342f159263cc99f065c6a7195fbaa951818c28c17d068bb39a4289e1e"
+      },
+      "modeling_extended.csv": {
+        "byte_identical_to_fc2": true,
+        "sha256": "c7c88de5af9848eca0abe70cac012e717552b53620b936ac798578e88196b1a6"
+      },
+      "modeling_pam_vs_inactive.csv": {
+        "byte_identical_to_fc2": true,
+        "sha256": "acb382d4189b188de4990e7513cb063289578d0f9447ba9c983f998052143a7c"
+      },
+      "modeling_potency_exact.csv": {
+        "byte_identical_to_fc2": true,
+        "sha256": "456b66b4b63b501f604ec91d6a2cdbaa2d96020aef88dbb75136b69f12309a06"
+      },
+      "modeling_potency_exact_calcium.csv": {
+        "byte_identical_to_fc2": true,
+        "sha256": "332196ef3a3ae8ad0e5907c5b74e39f8f97df27b84cfe47d25d62c58ba4c760e"
+      },
+      "modeling_threshold_10uM.csv": {
+        "byte_identical_to_fc2": true,
+        "sha256": "02ddca85857619c88d5c3e04a6ecc22b89660bf2aefd2099563dd891633dcced"
+      },
+      "sources.csv": {
+        "byte_identical_to_fc2": true,
+        "sha256": "f8fd10792e840b0b87b2ec8ad6604c6bcf0189995be33de4357cedd93c9db4b1"
+      }
+    },
+    "dataset_dir": "CHRM4_PAM_FINAL_DATASET_FC2",
+    "freeze_candidate": "FC2",
+    "manifest": "CHRM4_PAM_FINAL_DATASET_FC2/manifest_sha256.json",
+    "manifest_sha256": "b5ac1d31fafa00e44f04ddb837a5b418d63ae6683cec481c5bd7fed29679827a",
+    "scientific_changes_from_fc2": "NONE",
+    "scientific_identity": "identical"
+  },
+  "files": {
+    "DATA_DICTIONARY.md": {
+      "bytes": 9185,
+      "category": "documentation",
+      "sha256": "a45df235cd5d69405fb20031b43957124be6f53148d6f67e9a009c34e4cbbd3d"
+    },
+    "FINAL_FREEZE_RECORD.md": {
+      "bytes": 6098,
+      "category": "documentation",
+      "sha256": "bea6043640cb86f7d4910f99f844eed403472b3940d31e3f25d17a8876a2d473"
+    },
+    "FREEZE_REPORT.md": {
+      "bytes": 8869,
+      "category": "documentation",
+      "sha256": "886ad4b9cdebaf6eb4c5ed70aa2bd507e10386423f630478b5df3dcdeaed2049"
+    },
+    "README.md": {
+      "bytes": 10740,
+      "category": "documentation",
+      "sha256": "6d58c8183293314f6d97d626b5c13e5e2d71668a8ce7d6c6357737e1ab487d3c"
+    },
+    "activities.csv": {
+      "bytes": 1422116,
+      "category": "scientific_csv",
+      "sha256": "122f1b9a545f1a9481e507740159744e236a65760218270d1eda0597c06d7fe2"
+    },
+    "assays.csv": {
+      "bytes": 35764,
+      "category": "scientific_csv",
+      "sha256": "57d6fbf93f3f22887b2d23dc1a669a7507e09ba16d6b6fdadb8c4931159b2269"
+    },
+    "compounds.csv": {
+      "bytes": 375387,
+      "category": "scientific_csv",
+      "sha256": "408df31dd6b9bbdb005a8bed6d73bcce781d43adc3cb861115a4c3c7301c6b7f"
+    },
+    "excluded_or_unresolved.csv": {
+      "bytes": 85936,
+      "category": "scientific_csv",
+      "sha256": "03b02b6342f159263cc99f065c6a7195fbaa951818c28c17d068bb39a4289e1e"
+    },
+    "modeling_extended.csv": {
+      "bytes": 340356,
+      "category": "scientific_csv",
+      "sha256": "c7c88de5af9848eca0abe70cac012e717552b53620b936ac798578e88196b1a6"
+    },
+    "modeling_pam_vs_inactive.csv": {
+      "bytes": 250061,
+      "category": "scientific_csv",
+      "sha256": "acb382d4189b188de4990e7513cb063289578d0f9447ba9c983f998052143a7c"
+    },
+    "modeling_potency_exact.csv": {
+      "bytes": 261104,
+      "category": "scientific_csv",
+      "sha256": "456b66b4b63b501f604ec91d6a2cdbaa2d96020aef88dbb75136b69f12309a06"
+    },
+    "modeling_potency_exact_calcium.csv": {
+      "bytes": 243881,
+      "category": "scientific_csv",
+      "sha256": "332196ef3a3ae8ad0e5907c5b74e39f8f97df27b84cfe47d25d62c58ba4c760e"
+    },
+    "modeling_threshold_10uM.csv": {
+      "bytes": 390705,
+      "category": "scientific_csv",
+      "sha256": "02ddca85857619c88d5c3e04a6ecc22b89660bf2aefd2099563dd891633dcced"
+    },
+    "sources.csv": {
+      "bytes": 17273,
+      "category": "scientific_csv",
+      "sha256": "f8fd10792e840b0b87b2ec8ad6604c6bcf0189995be33de4357cedd93c9db4b1"
+    }
+  },
+  "freeze_date": "2026-08-16",
+  "inputs": {
+    "human_audit/label_blind_primary_review_001/fc1_divergent_duplicate_reconciliation.csv": {
+      "kind": "divergent_duplicate_reconciliation",
+      "sha256": "ac550cd249b13420dead15b01224bce2dcedd1bd452e44a3519933f7e1f1eee0"
+    },
+    "human_audit/label_blind_primary_review_001/human_decision_reassessments.jsonl": {
+      "kind": "human_reassessment_overlay",
+      "sha256": "beea3063ae970fab2923a7fa516d59b4593066037f1c310b2cd3672d63fe4926"
+    },
+    "human_audit/label_blind_primary_review_001/human_decisions.jsonl": {
+      "kind": "human_decision_overlay",
+      "sha256": "4b327cb9482be03c0e8fe6d7b0e4bdef7875cac6058cc7113d5c2c2754af2134"
+    },
+    "human_audit/label_blind_primary_review_001/human_identity_decisions.jsonl": {
+      "kind": "human_identity_decision_overlay",
+      "sha256": "164697aaa46f6c5ef31ca64f556bc83bbe092993c129ccf534f44fabdae64c1b"
+    },
+    "human_audit/label_blind_primary_review_001/human_row_decisions.jsonl": {
+      "kind": "human_row_decision_overlay",
+      "sha256": "9156290ed7f03651dc76f24e969406069caa928a48493d08df6fe60e8c72e813"
+    },
+    "human_audit/label_blind_primary_review_001/negative_set_purity_audit.csv": {
+      "kind": "negative_set_purity_audit",
+      "sha256": "c68247477041823ae72d1d655bcc0c7d9ef0bbbc47d15743a2eb0997e0f21d68"
+    },
+    "targets/CHRM4-PAM/normalized/v2_1/activities_v2_1.jsonl": {
+      "kind": "normalized_v2_1_activity_input",
+      "sha256": "04ada68a4ad91b3786b523e606a4e2bb86fa13a1903703f86b7a2d776a0d47ea"
+    },
+    "targets/CHRM4-PAM/runs/dataset_audit_001/assay_registry.jsonl": {
+      "kind": "assay_registry_input",
+      "sha256": "e8b0063951d95afb312d380cddd0e7375f6062b1f57d2d76b8cc10a1a0bca8e9"
+    },
+    "targets/CHRM4-PAM/runs/dataset_audit_001/compounds_deduplicated.jsonl": {
+      "kind": "compound_registry_input",
+      "sha256": "31e877747d3189052de92b994756380e62218892f44fcd676f9c3e15d1307829"
+    },
+    "targets/CHRM4-PAM/runs/dataset_audit_001/source_registry.jsonl": {
+      "kind": "source_registry_input",
+      "sha256": "5e32fad4ce9b3abba76112d31c780c5cdbc4c70a04fd6d568dc9637103f9009d"
+    }
+  },
+  "official_name": "CHRM4 PAM Final Modeling Dataset v1.0",
+  "scientific_changes_from_fc2": "NONE",
+  "source_candidate": "FC2",
+  "status": "FROZEN",
+  "summary": {
+    "binary_positive_molecules": 463,
+    "calcium_exact_groups": 437,
+    "calcium_exact_molecules": 430,
+    "exact_groups": 472,
+    "exact_molecules": 460,
+    "exact_rows": 712,
+    "excluded_only_molecules": 118,
+    "extended_only_molecules": 155,
+    "leaks": {
+      "PARENT0872": 0,
+      "RU001": 0,
+      "RU002": 0,
+      "RU011": 0
+    },
+    "strong_inactive_molecules": 66,
+    "surviving_molecules_with_excluded_rows": 53,
+    "threshold_negative_molecules": 70,
+    "threshold_positive_molecules": 463,
+    "unresolved_structure_parents": 51
+  }
+}

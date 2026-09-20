@@ -1,0 +1,28 @@
+{
+  "method": "PACER-FunctionSpace-v3",
+  "frozen_date": "2026-08-30",
+  "scope": "human CHRM4 positive allosteric modulator functional optimization",
+  "anchor_engine": {
+    "initial_anchors": 3,
+    "initial_policy": "ECFP4 medoid plus deterministic max-min",
+    "minimum_observed_pEC50_span": 0.75,
+    "expansion_batch": 2,
+    "maximum_anchors": 7,
+    "expansion_policy": "current DeltaSAR predicted low and high endpoint among unmeasured anchor-pool molecules",
+    "refuse_if_span_below_threshold_at_maximum": true
+  },
+  "required_anchor_assays": [
+    "human M4 PAM concentration-response at fixed orthosteric probe and readout",
+    "candidate-alone intrinsic agonist concentration-response",
+    "human M2 counter-screen under matched probe/readout"
+  ],
+  "objectives": [
+    "maximize M4 PAM pEC50",
+    "maximize M4 PAM relative efficacy",
+    "minimize intrinsic agonist relative efficacy",
+    "maximize M4 over M2 functional selectivity"
+  ],
+  "structural_role": "pose, compatibility, and mechanistic audit only; no static affinity as PAM efficacy label",
+  "claim_gate": "an untouched campaign must beat every preregistered baseline with paired CI lower bound above zero and no worst-domain degradation",
+  "claim_boundary": "No SOTA or confirmed PAM claim without untouched functional campaign or prospective experiment"
+}

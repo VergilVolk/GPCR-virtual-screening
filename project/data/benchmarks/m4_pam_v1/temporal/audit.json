@@ -1,0 +1,17 @@
+{
+  "n_source_rows": 76,
+  "n_pmids_queried": 60,
+  "n_years_filled": 44,
+  "remaining_missing_years": 2,
+  "potency_year_coverage": 1.0,
+  "temporal_counts": {
+    "train_le_2018": 199,
+    "validation_2019_2021": 187,
+    "test_ge_2022": 44
+  },
+  "cutoffs_preregistered": {
+    "train": "<=2018",
+    "validation": "2019-2021",
+    "test": ">=2022"
+  }
+}

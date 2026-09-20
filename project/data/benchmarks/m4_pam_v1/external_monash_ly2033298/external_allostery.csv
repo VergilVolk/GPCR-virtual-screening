@@ -1,0 +1,17 @@
+compound_id,molecule_chembl_id,canonical_smiles,modification_family,functional_pKB,log_tauB,log_alpha_beta,log_alpha,binding_pKi,functional_status,pam_label,exact_history_overlap,max_history_tanimoto_ecfp4,nearest_history_id
+10a_N-acetyl,CHEMBL3769684,COc1nc2sc(C(=O)NC3CC3)c(NC(C)=O)c2c(C)c1Cl,N-acyl-inactive,,,,,,inactive,0,False,0.5263157894736842,CM00713
+10b_N-butanoyl,CHEMBL3770719,CCCC(=O)Nc1c(C(=O)NC2CC2)sc2nc(OC)c(Cl)c(C)c12,N-acyl-inactive,,,,,,inactive,0,False,0.4838709677419355,CM00713
+10c_N-hexanoyl,CHEMBL3769529,CCCCCC(=O)Nc1c(C(=O)NC2CC2)sc2nc(OC)c(Cl)c(C)c12,N-acyl-inactive,,,,,,inactive,0,False,0.46153846153846156,CM00713
+12_core-variant,CHEMBL3770312,COc1cc(C)c2c(N)c(C(=O)NC3CC3)sc2n1,core-variant,5.55,0.66,1.46,,,active,1,False,0.5849056603773585,CM00713
+18_core-variant,CHEMBL2313377,Cc1nc2sc(C(=O)NC3CC3)c(N)c2c(C)c1Cl,core-variant,6.45,1.11,1.89,,,active,1,True,1.0,CM00713
+21_core-variant,CHEMBL3769542,Cc1nc(C)c2c(N)c(C(=O)NC3CC3)sc2n1,core-variant,4.9,0.49,1.15,,,active,1,False,0.6956521739130435,CM00713
+8a_LY2033298,CHEMBL3770346,COc1nc2sc(C(=O)NC3CC3)c(N)c2c(C)c1Cl,reference,6.41,0.93,2.38,3.24,6.41,active,1,False,0.75,CM00713
+8b_O-ethyl,CHEMBL3770870,CCOc1nc2sc(C(=O)NC3CC3)c(N)c2c(C)c1Cl,O-alkyl,6.1,0.97,1.79,1.98,6.71,active,1,False,0.7058823529411765,CM00713
+8c_O-butyl,CHEMBL3769740,CCCCOc1nc2sc(C(=O)NC3CC3)c(N)c2c(C)c1Cl,O-alkyl,6.81,-0.51,0.4,1.35,5.57,active,1,False,0.6545454545454545,CM00713
+8d_O-hexyl,CHEMBL3770397,CCCCCCOc1nc2sc(C(=O)NC3CC3)c(N)c2c(C)c1Cl,O-alkyl,7.42,-0.75,0.3,,,active,1,False,0.631578947368421,CM00713
+8e_5-bromo,CHEMBL3770667,COc1nc2sc(C(=O)NC3CC3)c(N)c2c(C)c1Br,5-halogen,6.52,1.25,1.91,2.54,6.28,active,1,False,0.6153846153846154,CM00713
+8f_5-iodo,CHEMBL3770686,COc1nc2sc(C(=O)NC3CC3)c(N)c2c(C)c1I,5-halogen,6.66,0.37,0.97,2.43,5.78,active,1,False,0.6153846153846154,CM00713
+9a_N-ethyl,CHEMBL3770968,CCNC(=O)c1sc2nc(OC)c(Cl)c(C)c2c1N,N-alkyl,6.73,0.94,1.84,2.75,5.37,active,1,False,0.6,CM00099
+9b_N-butyl,CHEMBL3770360,CCCCNC(=O)c1sc2nc(OC)c(Cl)c(C)c2c1N,N-alkyl,6.29,0.44,1.19,2.09,5.5,active,1,False,0.6727272727272727,CM00099
+9c_N-hexyl,CHEMBL3770771,CCCCCCNC(=O)c1sc2nc(OC)c(Cl)c(C)c2c1N,N-alkyl,6.7,-0.35,0.13,,,active,1,False,0.6491228070175439,CM00099
+VU10004,CHEMBL1212988,Cc1cc(C)c2c(N)c(C(=O)NC3CC3)sc2n1,core-variant,5.37,0.77,1.72,,,active,1,False,0.6326530612244898,CM00713

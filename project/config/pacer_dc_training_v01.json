@@ -1,0 +1,14 @@
+{
+  "model_id": "PACER-DC-dual-head-v0.1",
+  "seed": 20260920,
+  "epochs": 400,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "hidden_dim": 64,
+  "projection_dim": 24,
+  "triplet_margin": 0.2,
+  "pam_triplet_weight": 0.25,
+  "ago_triplet_weight": 0.25,
+  "early_stopping_patience": 40,
+  "claim_boundary": "Precomputed-embedding functional heads; output is retrospective prioritization, not experimental PAM confirmation."
+}

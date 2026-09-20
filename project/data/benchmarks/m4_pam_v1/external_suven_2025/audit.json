@@ -1,0 +1,17 @@
+{
+  "patent": "WO2025099660A1",
+  "dataset_role": "independent_external_holdout",
+  "n_cre_luc": 45,
+  "n_glosensor": 14,
+  "n_m2": 8,
+  "n_opsin_rdkit_pass": 45,
+  "n_failed": 0,
+  "labels_used_for_model_tuning": false,
+  "predictions_run": false,
+  "primary_endpoint": "human M4 CRE-Luc PAM EC50 at ACh EC20",
+  "secondary_endpoints": [
+    "human M4 GloSensor PAM EC50 at ACh EC20",
+    "human M2 CRE-Luc EC50"
+  ],
+  "claim_boundary": "Patent functional data; structures require image/name/mass QC before unblinding models."
+}

@@ -1,0 +1,9 @@
+{
+  "n_examples": 49,
+  "status_counts": {
+    "high_confidence": 47,
+    "opsin_failed": 2
+  },
+  "entry_policy": "Only high_confidence rows may enter the primary external benchmark.",
+  "claim_boundary": "Name-to-structure recovery validated by patent LC-MS; stereochemical image spot-check remains required."
+}

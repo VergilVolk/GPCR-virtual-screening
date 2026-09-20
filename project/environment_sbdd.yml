@@ -1,0 +1,27 @@
+# CHRM4 PAM 结构生成环境 (AI 生成, 需 GPU)
+# 安装: conda env create -f environment_sbdd.yml
+# 说明: 本机纯 CPU 环境下, AI 生成实际用 SMILES LSTM/扩散 (见 scripts/);
+#       此环境仅为未来跑 3D 扩散 (TargetDiff/DiffSBDD) 预留.
+name: chrm4_sbdd
+channels:
+  - pytorch
+  - pyg
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - pytorch=1.13.1
+  - cudatoolkit=11.6
+  - pyg=2.2.0
+  - rdkit=2022.03.2
+  - openbabel>=3.1
+  - numpy>=1.21
+  - pandas>=1.4
+  - scikit-learn>=1.1
+  - tqdm
+  - pip:
+    - pytorch-lightning>=1.7
+    - lmdb
+    - easydict
+    - meeko>=4.1

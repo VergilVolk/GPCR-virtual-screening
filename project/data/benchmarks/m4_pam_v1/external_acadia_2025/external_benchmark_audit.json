@@ -1,0 +1,28 @@
+{
+  "dataset_id": "M4_ACADIA_WO2025122811_FUNCTIONAL_HIGHCONF_V01",
+  "n_patent_examples": 49,
+  "n_structure_high_confidence": 47,
+  "n_exact_potency": 45,
+  "n_unique_active_moieties": 45,
+  "n_unique_exact_potency": 43,
+  "n_duplicate_active_moiety_groups": 2,
+  "duplicate_active_moiety_groups": {
+    "Cc1nc2c(c(N3CCC3)n1)CN(C(=O)[C@@H]1CCN(c3ccnc(Cl)c3)C1)C2": [
+      "ACADIA-12",
+      "ACADIA-13"
+    ],
+    "Cc1nc2c(c(N3CCC3)n1)[C@@H](C)N(C(=O)[C@@H]1CCN(c3ccnc(OC(F)F)c3)C1)C2": [
+      "ACADIA-32",
+      "ACADIA-33"
+    ]
+  },
+  "n_pam_re_below_50": 2,
+  "n_intrinsic_agonist_re_ge_50": 10,
+  "n_exact_training_overlap": 0,
+  "median_max_train_tanimoto_ecfp4": 0.3048780487804878,
+  "max_train_tanimoto_ecfp4": 0.38095238095238093,
+  "csv_sha256": "E5CA9FC1B7A701F95B6DD5BC4A5BC9968A8E7D41518CCDF67B288F07506543C1",
+  "molecule_csv_sha256": "E3C818C2C4477A882AC2E613D314788B3D2F974F3A1B18542B92380BDF3A4BAB",
+  "labels_used_for_method_selection": false,
+  "claim_boundary": "External functional potency/efficacy benchmark; not mechanistic allostery or prospective PAM confirmation."
+}

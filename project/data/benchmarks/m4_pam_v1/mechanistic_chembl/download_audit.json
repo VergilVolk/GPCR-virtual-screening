@@ -1,0 +1,11 @@
+{
+  "source": "ChEMBL REST API",
+  "target": "CHEMBL1821",
+  "n_records": 274,
+  "counts": {
+    "pKb": 97,
+    "log(activity)": 161,
+    "log(IA)": 16
+  },
+  "sha256": "7e1acf772fb6b4c8f2ac503ae76d0587cd9140e1c7344ef239eed1d0a93ecccc"
+}

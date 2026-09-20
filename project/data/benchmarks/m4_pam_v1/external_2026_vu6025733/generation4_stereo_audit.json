@@ -1,0 +1,9 @@
+{
+  "dataset_id": "M4_VU6025733_2026_GENERATION4_STEREO_V01",
+  "n_total": 11,
+  "n_primary_stereoisomers": 4,
+  "n_isotope_or_headgroup_controls": 7,
+  "primary_question": "Can a model rank the four 3-fluoro-piperidine stereoisomers?",
+  "claim_boundary": "Tiny stereochemical stress test; isotope labels are not independent chemotypes.",
+  "csv_sha256": "4603ac387cbaf64250e7fb622d3c28e25333e8a3963e714164d5838eb1cbd566"
+}

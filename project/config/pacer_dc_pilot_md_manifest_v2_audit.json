@@ -1,0 +1,15 @@
+{
+  "base_manifest": "D:\\CLC\\project\\config\\pacer_dc_pilot_md_manifest.csv",
+  "output_manifest": "D:\\CLC\\project\\config\\pacer_dc_pilot_md_manifest_v2.csv",
+  "added_pair": {
+    "positive": "CM00717",
+    "inactive": "CM00734"
+  },
+  "same_primary_source_id": "PMID_22738637",
+  "ecfp4_tanimoto": 0.9545454545454546,
+  "positive_target": 1,
+  "inactive_target": 0,
+  "row_count_before": 30,
+  "row_count_after": 42,
+  "claim_boundary": "CM00734 is experimentally inactive but is not called a binder until the binding/MD gate passes."
+}

@@ -1,0 +1,23 @@
+# CHRM4 PAM 虚拟筛选环境 (传统 VS)
+# 安装: conda env create -f environment_vs.yml
+name: chrm4_vs
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - numpy>=1.21
+  - pandas>=1.4
+  - scipy>=1.8
+  - scikit-learn>=1.1
+  - matplotlib>=3.5
+  - seaborn>=0.12
+  - jupyter
+  - rdkit>=2023.03
+  - openbabel>=3.1
+  - tqdm
+  - pip:
+    - vina>=1.2.0
+    - meeko>=4.1
+    - prolif>=2.0

@@ -1,0 +1,11 @@
+{
+  "dataset_id": "M4_VU6025733_2026_GENERATION3_V01",
+  "n_total": 10,
+  "n_sequential_query": 8,
+  "n_isotope_normalized_2d_overlap_controls": 2,
+  "n_censored_inactive_queries": 2,
+  "evaluation_policy": "Inactives use pEC50<4.5 as an ordering ceiling, not an exact regression label.",
+  "analyst_blinding": "not blinded to paper labels; algorithmic rules must be frozen before prediction",
+  "claim_boundary": "Within-paper sequential medicinal-chemistry challenge, not independent-publication validation.",
+  "csv_sha256": "74e35e68017ca25b94542cfa74858461196961951bd4f4ded21a50138dbf8377"
+}

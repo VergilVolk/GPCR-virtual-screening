@@ -1,0 +1,18 @@
+{
+  "dataset_id": "M4_VU6025733_2026_TABLE1_HIGHCONF_V01",
+  "source_doi": "10.1021/acschemneuro.5c00963",
+  "publication_date": "2026-01-25",
+  "n_reconstructed": 18,
+  "n_exact_training_overlap": 0,
+  "n_zero_shot_eligible": 18,
+  "label_range_pEC50": [
+    5.220403508742176,
+    7.42021640338319
+  ],
+  "median_max_train_tanimoto": 0.3926218708827405,
+  "max_train_tanimoto": 0.4383561643835616,
+  "structure_policy": "Only uniquely reconstructable Scheme-1/Table-1 structures; ambiguous entries excluded.",
+  "endpoint_match": "Exact functional endpoint family: hM4/Gqi5-CHO calcium mobilization with ACh EC20.",
+  "claim_boundary": "Independent temporal SAR validation, not prospective wet-lab confirmation.",
+  "csv_sha256": "6eb072be54d786173636ea47f37065dd061aa4f1b7dfb7aec55d7f056195e545"
+}

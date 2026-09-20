@@ -1,0 +1,214 @@
+{
+  "benchmark": "M4-PAM-Benchmark-v1.0-development",
+  "seed": 42,
+  "temporal_cutoff": 2020,
+  "temporal_split_ready": false,
+  "missing_year_source_ids": [
+    "CHEMBLDOC1255557",
+    "PMID_22738637",
+    "PMID_23177787",
+    "PMID_23562060",
+    "PMID_24074052",
+    "PMID_27185330",
+    "PMID_27476142",
+    "PMID_27939174",
+    "PMID_28197318",
+    "PMID_28442253",
+    "PMID_28522253",
+    "PMID_28866269",
+    "PMID_29089231",
+    "PMID_30258541",
+    "PMID_30580918",
+    "PMID_31113706",
+    "PMID_31223452",
+    "PMID_31248774",
+    "PMID_31784320",
+    "PMID_31787491",
+    "PMID_34710625",
+    "PMID_38888621",
+    "PMID_39140069"
+  ],
+  "potency": {
+    "n_rows": 430,
+    "n_unique_molecules": 430,
+    "n_scaffolds": 214,
+    "n_primary_sources": 18,
+    "publication_year_coverage": 0.0,
+    "scaffold_split": {
+      "n_splits": 5,
+      "fold_sizes": {
+        "0": 86,
+        "1": 86,
+        "2": 86,
+        "3": 86,
+        "4": 86
+      },
+      "groups_crossing_folds": 0
+    },
+    "source_split": {
+      "n_splits": 5,
+      "fold_sizes": {
+        "0": 110,
+        "1": 82,
+        "2": 78,
+        "3": 82,
+        "4": 78
+      },
+      "groups_crossing_folds": 0
+    }
+  },
+  "pam_vs_inactive": {
+    "n_rows": 529,
+    "n_unique_molecules": 529,
+    "n_scaffolds": 261,
+    "n_primary_sources": 20,
+    "publication_year_coverage": 0.001890359168241966,
+    "scaffold_split": {
+      "n_splits": 5,
+      "fold_sizes": {
+        "0": 104,
+        "1": 107,
+        "2": 106,
+        "3": 105,
+        "4": 107
+      },
+      "groups_crossing_folds": 0,
+      "target_by_fold": {
+        "0": {
+          "0": 13,
+          "1": 13,
+          "2": 13,
+          "3": 13,
+          "4": 14
+        },
+        "1": {
+          "0": 91,
+          "1": 94,
+          "2": 93,
+          "3": 92,
+          "4": 93
+        }
+      }
+    },
+    "source_split": {
+      "n_splits": 4,
+      "fold_sizes": {
+        "0": 183,
+        "1": 130,
+        "2": 118,
+        "3": 98
+      },
+      "groups_crossing_folds": 0,
+      "target_by_fold": {
+        "0": {
+          "0": 16,
+          "1": 33,
+          "2": 16,
+          "3": 1
+        },
+        "1": {
+          "0": 167,
+          "1": 97,
+          "2": 102,
+          "3": 97
+        }
+      }
+    },
+    "target_counts": {
+      "1": 463,
+      "0": 66
+    },
+    "negative_bearing_series_holdout": {
+      "n_splits": 3,
+      "training_only_molecules": 230,
+      "test_molecules": 299,
+      "test_components": [
+        "SCOMP0000",
+        "SCOMP0001",
+        "SCOMP0003"
+      ],
+      "target_by_fold": {
+        "0": {
+          "0": 16,
+          "1": 16,
+          "2": 33
+        },
+        "1": {
+          "0": 167,
+          "1": 59,
+          "2": 8
+        }
+      }
+    }
+  },
+  "threshold_10uM": {
+    "n_rows": 533,
+    "n_unique_molecules": 533,
+    "n_scaffolds": 267,
+    "n_primary_sources": 24,
+    "publication_year_coverage": 0.001876172607879925,
+    "scaffold_split": {
+      "n_splits": 5,
+      "fold_sizes": {
+        "0": 107,
+        "1": 105,
+        "2": 106,
+        "3": 105,
+        "4": 110
+      },
+      "groups_crossing_folds": 0,
+      "target_by_fold": {
+        "0": {
+          "0": 14,
+          "1": 13,
+          "2": 14,
+          "3": 13,
+          "4": 16
+        },
+        "1": {
+          "0": 93,
+          "1": 92,
+          "2": 92,
+          "3": 92,
+          "4": 94
+        }
+      }
+    },
+    "source_split": {
+      "n_splits": 5,
+      "fold_sizes": {
+        "0": 180,
+        "1": 71,
+        "2": 77,
+        "3": 90,
+        "4": 115
+      },
+      "groups_crossing_folds": 0,
+      "target_by_fold": {
+        "0": {
+          "0": 13,
+          "1": 12,
+          "2": 10,
+          "3": 16,
+          "4": 19
+        },
+        "1": {
+          "0": 167,
+          "1": 59,
+          "2": 67,
+          "3": 74,
+          "4": 96
+        }
+      }
+    },
+    "target_counts": {
+      "1": 463,
+      "0": 70
+    }
+  },
+  "hard_warnings": [
+    "Temporal evaluation is NOT valid until every used source has a verified publication year.",
+    "Strict PAM classification has fewer than 100 molecules in the minority class; use MCC, balanced accuracy, calibration and confidence intervals, not accuracy or PR-AUC alone.",
+    "At least one strict source-held-out fold has fewer than 5 negatives. Source-split classification is a high-variance stress test; report fold composition and bootstrap CI."
+  ]
+}

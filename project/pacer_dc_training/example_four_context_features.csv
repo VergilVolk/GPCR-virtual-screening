@@ -1,0 +1,5 @@
+candidate_id,chemotype,replicate_id,window_id,context,pam_label,agonism_label,split,f_000,f_001,f_002,f_003
+PAM_A,series_A,rep01,w000,candidate_probe,1,0,train,0.20,0.10,0.40,0.30
+PAM_A,series_A,rep01,w000,candidate_no_probe,1,0,train,0.12,0.09,0.21,0.18
+PAM_A,series_A,rep01,w000,probe_only,1,0,train,0.10,0.08,0.22,0.17
+PAM_A,series_A,rep01,w000,apo,1,0,train,0.08,0.07,0.20,0.16

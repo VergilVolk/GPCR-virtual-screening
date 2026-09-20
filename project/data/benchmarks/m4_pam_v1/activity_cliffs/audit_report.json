@@ -1,0 +1,31 @@
+{
+  "definitions": {
+    "similarity_threshold": 0.7,
+    "cliff_delta_pEC50": 1.0,
+    "strong_cliff_delta_pEC50": 1.5,
+    "smooth_delta_pEC50": 0.3
+  },
+  "n_molecules": 430,
+  "n_near_pairs": 694,
+  "pair_class_counts": {
+    "intermediate": 325,
+    "smooth": 276,
+    "cliff": 93
+  },
+  "n_cliffs": 93,
+  "n_strong_cliffs": 24,
+  "n_conservative_cliffs": 93,
+  "n_same_scaffold_cliffs": 46,
+  "n_same_source_cliffs": 86,
+  "pair_test_coverage": {
+    "scaffold": {
+      "eligible_pairs": 376,
+      "eligible_cliffs": 52
+    },
+    "source": {
+      "eligible_pairs": 660,
+      "eligible_cliffs": 93
+    }
+  },
+  "leakage_rule": "A pair is test-eligible only when both molecules share the held-out fold; pairs crossing folds are excluded from pair-level test metrics."
+}

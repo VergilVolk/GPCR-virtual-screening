@@ -138,6 +138,24 @@ def metrics(y: np.ndarray, p: np.ndarray) -> dict:
     return out
 
 
+def validation_bce(model: DualHead, units: pd.DataFrame, device: torch.device) -> float:
+    """Candidate-level validation objective; windows never get independent weight."""
+    model.eval()
+    x_pam = torch.tensor(np.stack(units.d_pam), device=device)
+    x_ago = torch.tensor(np.stack(units.d_ago), device=device)
+    with torch.no_grad():
+        out = model(x_pam, x_ago)
+        pam_logit, ids = candidate_means(out["pam_logit"].unsqueeze(1), units.candidate_id.tolist())
+        ago_logit, ids2 = candidate_means(out["ago_logit"].unsqueeze(1), units.candidate_id.tolist())
+        if ids != ids2:
+            raise RuntimeError("Validation candidate aggregation mismatch")
+        yp = candidate_labels(units, ids, "pam_label").to(device)
+        ya = candidate_labels(units, ids, "agonism_label").to(device)
+        loss = F.binary_cross_entropy_with_logits(pam_logit.squeeze(1), yp)
+        loss = loss + F.binary_cross_entropy_with_logits(ago_logit.squeeze(1), ya)
+    return float(loss.cpu())
+
+
 def evaluate(model: DualHead, units: pd.DataFrame, device: torch.device) -> tuple[dict, pd.DataFrame]:
     model.eval()
     x_pam = torch.tensor(np.stack(units.d_pam), device=device)
@@ -182,6 +200,7 @@ def main() -> None:
 
     units, feature_cols = validate_and_build(pd.read_csv(args.features))
     train = units[units.split.eq("train")].reset_index(drop=True)
+    validation = units[units.split.eq("val")].reset_index(drop=True)
     if train.candidate_id.nunique() < 6:
         raise ValueError("Training gate failed: fewer than 6 independent training molecules")
     for label in ["pam_label", "agonism_label"]:
@@ -195,7 +214,7 @@ def main() -> None:
     optimizer = torch.optim.AdamW(model.parameters(), lr=float(cfg["learning_rate"]),
                                   weight_decay=float(cfg["weight_decay"]))
     chemotype = dict(zip(train.candidate_id, train.chemotype))
-    best_state, best_loss, stale = None, float("inf"), 0
+    best_state, best_val_loss, stale = None, float("inf"), 0
     history = []
     for epoch in range(int(cfg["epochs"])):
         model.train(); optimizer.zero_grad()
@@ -215,10 +234,12 @@ def main() -> None:
         loss = bce + float(cfg["pam_triplet_weight"]) * tp + float(cfg["ago_triplet_weight"]) * ta
         loss.backward(); optimizer.step()
         value = float(loss.detach())
+        val_loss = validation_bce(model, validation, device)
         history.append({"epoch": epoch, "loss": value, "bce": float(bce.detach()),
-                        "pam_triplet": float(tp.detach()), "ago_triplet": float(ta.detach())})
-        if value < best_loss - 1e-6:
-            best_loss = value
+                        "pam_triplet": float(tp.detach()), "ago_triplet": float(ta.detach()),
+                        "validation_bce": val_loss})
+        if val_loss < best_val_loss - 1e-6:
+            best_val_loss = val_loss
             best_state = {k: v.detach().cpu().clone() for k, v in model.state_dict().items()}
             stale = 0
         else:
@@ -240,7 +261,7 @@ def main() -> None:
         "n_embedding_features": len(feature_cols),
         "n_four_context_units": int(len(units)),
         "candidate_counts": units.drop_duplicates("candidate_id").split.value_counts().to_dict(),
-        "epochs_completed": len(history), "best_training_loss": best_loss,
+        "epochs_completed": len(history), "best_validation_bce": best_val_loss,
         "metrics": summary,
         "candidate_level_metrics": True,
         "windows_are_augmentation_not_independent_samples": True,

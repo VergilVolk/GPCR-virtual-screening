@@ -85,3 +85,8 @@
 5. 数据闸门通过后才做 Triplet 微调。
 
 自动报告：`project/results/pacer_dc_phase1_audit/REPORT.md`。
+# 当前协作任务入口
+
+当前队员交付以仓库根目录 `START_HERE_ONEPROT_PACER_DC.md` 为准：
+**OneProt-MD 复现 → M4 四上下文 embedding → PACER-DC Adapter/Triplet 训练与 baseline 比较**。
+仅完成重对接、体系构建或短平衡不等于完成当前算法任务。

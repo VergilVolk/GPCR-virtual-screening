@@ -1,5 +1,9 @@
 # PACER-DC 最终训练部署说明（CPU 版）
 
+> 当前协作任务以仓库根目录 `START_HERE_ONEPROT_PACER_DC.md` 为准。
+> OneProt-MD 是本轮必须复现和比较的候选预训练 encoder；只有在留出验证中超过
+> tICA/VAMP 后，才会晋级为最终 backbone。
+
 ## 1. 这一步训练什么
 
 最终阶段不重新训练 MD 或蛋白基础模型，而是在冻结的轨迹表征上训练两个轻量功能头：
@@ -13,7 +17,8 @@
 
 - **训练双头模型不需要 GPU**，普通 8 核 CPU、16 GB 内存即可；
 - MD 轨迹生成仍然昂贵。本仓库建议复用已完成或外部计算得到的轨迹；
-- embedding 可先使用 CPU 可计算的 tICA/VAMP 特征。OneProt-MD 只作为可选 baseline，不是运行本流程的必需项。
+- 双头训练可在 CPU 上进行；OneProt-MD embedding 提取通常需要官方 CUDA/Apptainer 环境；
+- tICA/VAMP 是必须保留的强 baseline，不能用 OneProt-MD 的模型名称替代实际比较。
 
 ## 3. 建立环境
 

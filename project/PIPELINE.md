@@ -1,5 +1,10 @@
 # CHRM4 PAM 项目主流程
 
+> **当前队员交付任务不是 PACER-FS，也不是单纯完成 MD 体系构建。**
+> 当前唯一交付入口为仓库根目录 `START_HERE_ONEPROT_PACER_DC.md`：复现
+> OneProt-MD，导出四上下文 embedding，并训练 PACER-DC Adapter/Triplet head。
+> 本文其余内容是项目全流程背景。
+
 ## 核心问题
 
 本项目不把“能够进入 M4 别构口袋”等同于“具有 PAM 功能”。需要判断的是：候选物是否在 ACh 存在时增强受体耦合，同时在没有 ACh 时不过度独立激活受体。

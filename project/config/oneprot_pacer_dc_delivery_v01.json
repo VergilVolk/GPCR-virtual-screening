@@ -1,0 +1,12 @@
+{
+  "oneprot_repository": "https://github.com/oneprot-models/oneprot-embeddings.git",
+  "expected_oneprot_commit": "53fa9c0f9150aa44a9258db6948277a4602036ab",
+  "required_submodule": "external/mdgen",
+  "required_contexts": [
+    "candidate_probe",
+    "candidate_no_probe",
+    "probe_only",
+    "apo"
+  ],
+  "claim_boundary": "Technical delivery audit only; passing does not establish PAM efficacy or model superiority."
+}

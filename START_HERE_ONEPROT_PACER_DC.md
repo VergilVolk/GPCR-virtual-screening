@@ -45,6 +45,20 @@ d_AGO = z_C  - z_0
 
 G0 输出：`oneprot_environment_audit.json`、`checkpoint_sha256.txt`、一份 embedding smoke sample 和运行日志。
 
+若官方 OneProt checkpoint 下载后仍缺少源码默认的 `forward_sim.ckpt`，先运行：
+
+```bash
+python project/pacer_dc_training/inspect_oneprot_md_checkpoint.py \
+  /path/to/epoch_012_01100-v1.ckpt \
+  --output runs/oneprot_checkpoint_audit.json
+```
+
+- 若不存在 `network.md.transformer.*` 权重：立即停止，报告硬阻塞；
+- 若存在：只能说明外层 checkpoint **可能**已经内嵌 MDGen 权重；
+- 随后用 `pretrained=false`、`model_path=null` 实例化，再加载外层 checkpoint；
+- 必须检查 `load_state_dict` 返回值，要求 `network.md.transformer.*` 下零 missing key、零 shape mismatch；
+- 不得仅使用 `strict=false` 后看到程序不报错，就认定权重加载成功。
+
 ### G1：四上下文轨迹输入
 
 - 六个参考体系全部构建并完成数值 QC；

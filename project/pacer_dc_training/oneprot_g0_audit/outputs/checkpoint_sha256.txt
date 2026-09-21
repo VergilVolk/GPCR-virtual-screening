@@ -1,0 +1,12 @@
+# OneProt-MD checkpoint provenance
+source_url     : https://zenodo.org/records/20997998  (files/checkpoints.zip)
+archive_member : checkpoints/Pocket_Text_ST_SG_MD/epoch_012_01100-v1.ckpt
+filename       : epoch_012_01100-v1.ckpt
+size_bytes     : 3614862456
+sha256         : a79bce2e8f91d9cd59840965e145a119c3202e30516e1e0f69452dee6f211997
+md5 (local)    : 209fe3473da58b28b8c818f4a8d2dbe3
+crc32 (zip)    : 2f07819f
+zenodo_zip_md5 : cfda36445f6c21d74058c3a13154d430   (whole 14.73 GB checkpoints.zip; NOT per-member)
+notes          : Only the MD-extended member was extracted via HTTP Range from the
+                 14.73 GB archive; the zip-level md5 therefore cannot be reproduced
+                 from this single member. Per-member integrity is the zip CRC32 above.

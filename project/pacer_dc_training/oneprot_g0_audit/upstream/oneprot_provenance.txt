@@ -1,0 +1,58 @@
+OneProt-MD upstream provenance
+==============================
+
+This file records the exact upstream state the G0 artifacts in this package were
+produced against.  It is a provenance record, not a patch: no upstream source
+file was modified, so no patch exists (see "Modification status" below).
+
+Main upstream repository
+------------------------
+  remote            : https://github.com/oneprot-models/oneprot-embeddings.git
+  branch            : main
+  HEAD commit       : 53fa9c0f9150aa44a9258db6948277a4602036ab
+  HEAD subject      : Update README.md
+  HEAD author/date  : Alina Bazarova, 2026-07-09 10:37:10 +0200
+  local commits ahead of origin/main : 0
+
+Submodule
+---------
+  path              : external/mdgen
+  remote            : https://github.com/bjing2016/mdgen.git
+  HEAD commit       : 1b82cc13f18ea6a4a2f680d5c086bd07715b89c5
+  HEAD subject      : Update README.md (2025-04-05)
+
+Checkpoint
+----------
+  source            : https://zenodo.org/records/20997998  (files/checkpoints.zip)
+  archive member    : checkpoints/Pocket_Text_ST_SG_MD/epoch_012_01100-v1.ckpt
+  size              : 3,614,862,456 bytes
+  sha256            : a79bce2e8f91d9cd59840965e145a119c3202e30516e1e0f69452dee6f211997
+  zip member CRC32  : 2f07819f
+  extraction method : HTTP Range request for the single member's deflate payload
+                      (the enclosing checkpoints.zip is 14.73 GB and was never
+                      downloaded whole; see scripts/fetch_md_ckpt.py)
+
+Modification status
+-------------------
+  No upstream OneProt source files were modified.
+  No mdgen source files were modified.
+
+  Verified on 2026-09-21 with:
+
+    git -C project/tools/oneprot-embeddings diff --stat      -> empty
+    git -C project/tools/oneprot-embeddings rev-list --count origin/main..HEAD -> 0
+    git -C project/tools/oneprot-embeddings/external/mdgen diff --stat -> empty
+
+  The only additions inside the nested checkout are untracked:
+    * artifacts/                  - the G0 work reproduced in this package
+                                    (5.9 GB, dominated by the checkpoint and the
+                                    public M4 trajectory; not versioned)
+    * **/__pycache__/             - byte-code caches created by running the code
+
+  Two hard-coded cluster paths remain in the upstream source that this work does
+  NOT change:
+    * src/models/components/md_encoder.py:11  sys.path.append('/p/project1/hai_oneprot/...')
+    * src/models/components/md_encoder.py:78  model_path default '/p/scratch/profound/.../forward_sim.ckpt'
+  Both are inert here: the first is a no-op append, and the second is only used
+  when TrajectoryEncoder is constructed with pretrained=True, which this work
+  deliberately does not do (START_HERE requires pretrained=false / model_path=null).

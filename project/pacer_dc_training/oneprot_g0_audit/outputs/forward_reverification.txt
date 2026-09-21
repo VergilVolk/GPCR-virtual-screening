@@ -1,0 +1,27 @@
+python      : 3.11.16
+torch       : 2.4.1
+numpy       : 2.4.6
+package     : C:\projects\GPCR-virtual-screening\project\pacer_dc_training\oneprot_g0_audit
+nested repo : C:\projects\GPCR-virtual-screening\project\tools\oneprot-embeddings  exists=True
+checkpoint  : C:\projects\GPCR-virtual-screening\project\tools\oneprot-embeddings\artifacts\Pocket_Text_ST_SG_MD\epoch_012_01100-v1.ckpt  exists=True
+
+atom14 input: shape=(100, 273, 14, 3) dtype=float32 L=273 seqres_len=273 T=100
+latents     : (1, 100, 273, 21)  (expect [1, 100, 273, 21])
+finite      : True
+checkpoint  : 1442 top-level keys, 132 under network.md. (loaded in 2.3s)
+initializing LatentMDGenModel with custom settings
+load_state_dict: missing=0 unexpected=1 ['norm.1.log_logit_scale']
+
+=== re-derivation result ===
+  output shape          : (1, 1024)   saved shape: (1024,)
+  finite                : True
+  non-zero              : True
+  same-process repeat   : True
+  identical_to_package  : True
+  max_abs_diff_vs_saved : 0.0
+  L2 norm               : 1.000000
+  sha256(re-derived)    : 4f484f49d353af01d831eb7525b185863f79769e138b9e29b20cf7363e036e25
+  sha256(package copy)  : 4f484f49d353af01d831eb7525b185863f79769e138b9e29b20cf7363e036e25
+  saved file sha256     : 98ce8ac41f1bf23d69c70c53c0c83f81b385e14026df02bfcdf5b44dc5e1a47c
+
+REVERIFY_PASSED

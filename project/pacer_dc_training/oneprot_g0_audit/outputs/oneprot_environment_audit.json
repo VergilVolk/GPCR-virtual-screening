@@ -1,0 +1,21 @@
+{
+  "oneprot_repository": "https://github.com/oneprot-models/oneprot-embeddings.git",
+  "oneprot_commit": "53fa9c0f9150aa44a9258db6948277a4602036ab",
+  "mdgen_submodule_commit": "1b82cc13f18ea6a4a2f680d5c086bd07715b89c5",
+  "checkpoint_sha256": "a79bce2e8f91d9cd59840965e145a119c3202e30516e1e0f69452dee6f211997",
+  "checkpoint_member": "checkpoints/Pocket_Text_ST_SG_MD/epoch_012_01100-v1.ckpt",
+  "python_env": "oneprot-md",
+  "torch": "2.4.1",
+  "mdanalysis": "2.10.0",
+  "embedding_smoke": {
+    "trajectory_source": "Zenodo 8136971 (DOI 10.5281/zenodo.8136971), 'M4 allosteric xanomeline stability', replica 1",
+    "atom14_shape": [100, 273, 14, 3],
+    "n_protein_residues": 273,
+    "output_shape": [1, 1024],
+    "finite": true,
+    "non_zero": true,
+    "reproducible": true,
+    "l2_norm": 1.0
+  },
+  "claim_boundary": "G0 technical reproduction only; not PAM efficacy and not model superiority."
+}

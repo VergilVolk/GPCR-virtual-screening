@@ -12,6 +12,7 @@ CHARMM naming quirks handled here:
 """
 from __future__ import annotations
 
+import argparse
 import os
 import sys
 from pathlib import Path
@@ -36,8 +37,22 @@ RESNAME_MAP = {"HSE": "HIS", "HSD": "HIS", "HSP": "HIS", "HSD": "HIS"}
 CHARMM_ATOM_RENAMES = {"ILE": {"CD": "CD1"}}
 
 
+def parse_args(argv=None):
+    """Defaults reproduce the original 100-frame invocation exactly."""
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--psf", type=Path, default=PSF)
+    parser.add_argument("--dcd", type=Path, default=DCD)
+    parser.add_argument("--frames", type=int, default=NUM_FRAMES,
+                        help="window length; OneProt's MD modality config declares 39")
+    parser.add_argument("--name", default="m4xan", help="value of the CSV 'name' column")
+    parser.add_argument("--out-npy", type=Path, default=OUT / "m4xan_i1.npy")
+    parser.add_argument("--out-csv", type=Path, default=OUT / "m4xan_test.csv")
+    return parser.parse_args(argv)
+
+
 def main() -> None:
-    u = mda.Universe(str(PSF), str(DCD))
+    args = parse_args()
+    u = mda.Universe(str(args.psf), str(args.dcd))
     # protein residues only: segments A+B, drop ACE cap and XAN ligands
     protein = u.select_atoms("segid A B and not resname ACE XAN")
     residues = list(protein.residues)
@@ -66,7 +81,7 @@ def main() -> None:
                     atom14_idx[j, slot] = atom.index
                     break
 
-    n_frames = min(NUM_FRAMES, u.trajectory.n_frames)
+    n_frames = min(args.frames, u.trajectory.n_frames)
     atom14 = np.zeros((n_frames, L, 14, 3), dtype=np.float32)
     for fi, ts in enumerate(u.trajectory[:n_frames]):
         pos = ts.positions  # [N_atoms, 3]
@@ -78,15 +93,17 @@ def main() -> None:
     print(f"frames          : {n_frames}")
     print(f"atoms missing/残基 (应为 GLY 的 CB 等) : {missing.min()}-{missing.max()}")
 
-    npy = OUT / "m4xan_i1.npy"
+    npy = args.out_npy
+    npy.parent.mkdir(parents=True, exist_ok=True)
     np.save(npy, atom14)
     print(f"wrote {npy}  shape={atom14.shape}  dtype={atom14.dtype}")
 
     seqres = "".join(one_letters)
-    csv = OUT / "m4xan_test.csv"
+    csv = args.out_csv
+    csv.parent.mkdir(parents=True, exist_ok=True)
     with csv.open("w", encoding="utf-8") as fh:
         fh.write("name,seqres\n")
-        fh.write(f"m4xan,{seqres}\n")
+        fh.write(f"{args.name},{seqres}\n")
     print(f"wrote {csv}  seqres length={len(seqres)}")
     print("first 20:", seqres[:20])
     print("CONVERT_DONE")

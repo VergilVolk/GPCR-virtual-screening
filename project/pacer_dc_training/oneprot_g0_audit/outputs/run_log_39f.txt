@@ -1,0 +1,15 @@
+atom14     : (39, 273, 14, 3)  seqres=273  frames=39
+latents    : (1, 39, 273, 21)  (expect [1, 39, 273, 21])
+initializing LatentMDGenModel with custom settings
+
+=== G0 embedding results ===
+  output shape    : (1, 1024)
+  finite          : True
+  non-zero        : True
+  bit-reproducible: True
+  L2 norm         : 1.000000
+  mean/abs-max    : -0.000256 / 0.097002
+  head (first 8)  : [-0.0514, 0.0058, -0.0337, 0.0096, -0.0369, -0.009, 0.028, -0.0215]
+  saved smoke     : project\pacer_dc_training\oneprot_g0_audit\outputs\embedding_smoke_39f.npy  shape=(1024,)
+
+G0_EMBEDDING_OK

@@ -26,6 +26,8 @@ Make the G0 claim checkable by a reviewer who has only this Git branch:
 | Was the input a real MD trajectory, or synthetic data? | `input/`, `scripts/convert_dcd_to_atom14.py` |
 | Did a real forward pass actually run? | `scripts/run_g0_embedding.py`, `outputs/run_log.txt` |
 | Is the embedding finite, non-zero, reproducible? | `outputs/embedding_smoke.npy`, `outputs/forward_reverification.txt` |
+| Where does the branch review's "39 frames" come from? | §5 below — the modality default, not a verified property of this checkpoint |
+| Does the 39-frame window also work? | `outputs/embedding_smoke_39f.npy`, `outputs/forward_reverification_39f.txt` |
 
 Not in scope: embedding *quality*, PAM prediction, G1 four-context trajectories.
 
@@ -122,6 +124,19 @@ and the verdict.
    `max_abs_diff_vs_saved: 0.0`, and identical sha256 of the raw array bytes
    (`4f484f49d353af01d831eb7525b185863f79769e138b9e29b20cf7363e036e25`).**
 
+7. **39-frame window verification (added after the branch review).**
+   `project/docs/ONEPROT_PACER_DC_BRANCH_REVIEW_20260921.md` requires the forward
+   smoke to use a 39-frame input. The same converter was re-run against the same
+   real trajectory with `--frames 39`, and the same forward + fresh-process
+   re-derivation were repeated.
+   → `input/m4xan_i1_39f.npy`, `input/m4xan_39f_test.csv`,
+   `outputs/embedding_smoke_39f.npy`, `outputs/run_log_39f.txt`,
+   `outputs/forward_reverification_39f.txt`.
+   **Result: `(1, 1024)`, finite, non-zero, L2 norm exactly 1.0,
+   `REVERIFY_PASSED` with `max_abs_diff_vs_saved: 0.0`.** See §5 for what the
+   frame-count requirement is actually based on — the evidence is not
+   one-sided.
+
 ---
 
 ## 4. Real trajectory provenance
@@ -149,9 +164,82 @@ This is a genuine MD trajectory, not synthetic or random data: the array is
 derived frame-by-frame from a DCD file with per-residue atom index mapping, and
 the values span −35.2 to +34.4 Å with a mean of 0.013 Å.
 
+The **39-frame** variant is the same trajectory, same selection, same atom14
+mapping, same stride — only the window length differs. `input/m4xan_i1_39f.npy`
+is bit-identical to the first 39 frames of `input/m4xan_i1.npy`
+(`array_equal == True`, `max_abs_diff = 0.0`), and
+`input/m4xan_39f_test.csv` is byte-identical to `input/m4xan_test.csv` (the
+sequence does not depend on the window). Both were produced by the same
+parameterised converter, not by slicing the 100-frame array.
+
 ---
 
-## 5. Forward path
+## 5. Window length: where "39 frames" comes from, and what it does not settle
+
+The branch review asks for "与 OneProt-MD 训练时一致的 **39-frame**
+atom14/sequence/mask 输入". That number is not arbitrary — **39 is the declared
+default frame count of the MD modality**, and it appears in exactly three places
+in the upstream checkout:
+
+| source | line | content |
+|---|---|---|
+| `configs/data/modalities/md.yaml` | 4 | `num_frames: 39` (with `frame_interval: null`, `suffix: "_i1"`) |
+| `src/data/datasets/md_dataset.py` | 27, 80 | `self.num_frames = 39` and the constructor default `num_frames: int = 39` |
+| `src/models/components/md_encoder.py` | 89 | `num_frames: int = 39` (with `suffix: str = "_i40"`) |
+
+What a training sample *is* is defined by `md_dataset.py:212-232`, which also
+settles the tensor semantics rather than leaving them to guesswork:
+
+```python
+arr = np.lib.format.open_memmap(f'{data_dir}/{n}{suffix}.npy', 'r')
+if self.frame_interval:                  # null in configs/data/modalities/md.yaml
+    arr = arr[::self.frame_interval]
+frame_start = np.random.choice(np.arange(arr.shape[0] - self.num_frames))
+end = frame_start + self.num_frames
+arr = np.copy(arr[frame_start:end]).astype(np.float32)   # arr should be in ANGSTROMS
+aatype = torch.from_numpy(seqres)[None].expand(self.num_frames, -1)   # [T, L]
+mask = np.ones(L, dtype=np.float32)
+```
+
+So a sample is `num_frames` **consecutive** frames of the stored array (no
+striding, because `frame_interval` is null), coordinates in **ångström** (ṫhe
+commented-out `/10.0 # convert to nm` is disabled), `aatype` expanded over the
+frame axis, and an all-ones **residue mask**. This package's converter and
+`build_batch` reproduce exactly that, with `frame_start = 0` instead of a random
+start so that the verification is deterministic.
+
+**Counter-evidence a reviewer should see.** 39 is the *modality* default; it is
+not what every experiment used, and the config that produced *this* checkpoint is
+not in the repository:
+
+| config | `num_frames` | `suffix` |
+|---|---|---|
+| `configs/data/modalities/md.yaml` (modality default) | **39** | `_i1` |
+| `train_ddp_md_atlas.yaml`, `train_ddp_md_atlas_struct*.yaml`, `train_ddp_md_combined*.yaml` | **100** | `_i1` |
+| `train_ddp_md.yaml`, `train_ddp_md_atlas_full.yaml` | 250 | `_i40` |
+| `train_ddp_md_mdCATH.yaml` | 499 | `_i1` |
+
+`configs/collect_embeddings.yaml` references this exact checkpoint file as
+`oneprot_md_combined_gpcr_32900` →
+`epoch_012_01100-v1.ckpt`, with
+`config_path: <REPO_ROOT>/logs/train/runs/2025-07-20_21-23-57/config.yaml`.
+That run config is **not** in the checkout, and every `*_md_combined*` config
+that *is* present declares **`num_frames: 100`**. The name `..._combined_gpcr_32900`
+is therefore consistent with the 100-frame family, but I cannot prove which run
+config trained this checkpoint from the repository alone.
+
+**Conclusion, stated without overclaiming:** the 39-frame requirement rests on
+the modality default; the checkpoint's own experiment family points at 100
+frames; the actual training config is unavailable. Experimentally, the frame
+count is a *data-window* parameter only — the runtime audit reports **zero shape
+mismatches** for both 100 and 39 frames, so no checkpoint tensor is sized by the
+frame count (`abs_time_emb` and `abs_pos_emb` are both `False`). Both windows are
+therefore defensible read-outs of the same weights, and this package now ships
+**both** rather than choosing one on the reviewer's behalf.
+
+---
+
+## 6. Forward path
 
 Confirmed by reading the source, not inferred from filenames.
 
@@ -200,15 +288,24 @@ Two honest caveats, so the verdict is not read as more than it is:
 
 ---
 
-## 6. Outputs
+## 7. Outputs
 
 | file | bytes | what it is |
 |---|---|---|
 | `outputs/checkpoint_sha256.txt` | 769 | checkpoint provenance: source URL, archive member, size, sha256, local md5, zip CRC32 |
-| `outputs/embedding_smoke.npy` | 4,224 | the G0 embedding: `(1024,)` float32, L2-normalised, finite, all 1024 entries non-zero |
+| `outputs/embedding_smoke.npy` | 4,224 | **100-frame** G0 embedding: `(1024,)` float32, L2-normalised, finite, all 1024 entries non-zero |
 | `outputs/oneprot_environment_audit.json` | 909 | environment/provenance record: upstream commit, mdgen submodule commit, checkpoint sha256, torch/MDAnalysis versions, input shape, output shape, finite/non-zero/reproducible flags |
-| `outputs/run_log.txt` | 1,264 | stdout of step 5, ending in `G0_EMBEDDING_OK`. **Encoding: UTF-16LE** (verbatim copy of the file produced at the time) — read it with `iconv -f UTF-16 -t UTF-8 outputs/run_log.txt` |
-| `outputs/forward_reverification.txt` | 1,345 | UTF-8 report of the independent re-derivation (§3 step 6), ending in `REVERIFY_PASSED` |
+| `outputs/run_log.txt` | 1,264 | 100-frame stdout, ending in `G0_EMBEDDING_OK`. **Encoding: UTF-16LE** (verbatim copy of the file produced at the time) — read it with `iconv -f UTF-16 -t UTF-8 outputs/run_log.txt` |
+| `outputs/forward_reverification.txt` | 1,345 | UTF-8 report of the independent 100-frame re-derivation (§3 step 6), ending in `REVERIFY_PASSED` |
+| `outputs/embedding_smoke_39f.npy` | 4,224 | **39-frame** embedding, same shape/normalisation/finiteness properties |
+| `outputs/run_log_39f.txt` | 596 | 39-frame stdout (UTF-8), ending in `G0_EMBEDDING_OK` |
+| `outputs/forward_reverification_39f.txt` | 1,593 | UTF-8 report of the 39-frame re-derivation (§3 step 7), ending in `REVERIFY_PASSED` |
+
+The two embeddings are different windows of the same trajectory, so they are not
+expected to be equal: `cosine(100f, 39f) = 0.817634`, `‖100f − 39f‖₂ = 0.603931`.
+Both have unit L2 norm by construction (`self.norm` is the last layer). No
+meaning should be read into that similarity — it is one pair of windows from one
+replica, and no biological endpoint is involved.
 
 Companion evidence lives outside this directory, already committed on this
 branch (commit `2e23271`):
@@ -221,7 +318,7 @@ They are referenced rather than duplicated so that the two copies cannot drift.
 
 ---
 
-## 7. Claim boundary
+## 8. Claim boundary
 
 This package **does** support:
 
@@ -234,12 +331,18 @@ This package **does** support:
 * the MD branch executes a genuine forward pass on that trajectory and returns a
   finite, non-zero, L2-normalised 1024-d embedding;
 * that embedding is deterministic within a process and **bit-identical when
-  re-derived in a fresh process from this package's own inputs**.
+  re-derived in a fresh process from this package's own inputs** — for **both**
+  the 100-frame and the 39-frame window;
+* the frame count is a data-window parameter, not a weight-shape parameter: the
+  runtime load audit reports zero shape mismatches at both 100 and 39 frames.
 
 This package **does not** support, and must not be cited as:
 
 * any statement about embedding *quality* or about PAM functional prediction —
   no biological endpoint is involved anywhere in this chain;
+* any claim that 39 frames is *the* training-time window for this checkpoint:
+  §5 shows the modality default is 39 while this checkpoint's own experiment
+  family declares 100, and the actual run config is not in the repository;
 * any G1 claim: the four-context production trajectories are **not** produced by
   this work, and no four-context candidate exists;
 * any claim that a candidate molecule is a PAM — there is no wet-lab evidence in
@@ -247,18 +350,20 @@ This package **does not** support, and must not be cited as:
 * any claim that OneProt-MD is the PACER-DC backbone. It is a candidate encoder
   that still has to beat tICA/VAMP and the manual differential endpoints on
   held-out chemotypes;
-* generality beyond the single public trajectory and the single 100-frame window
-  used here (one replica, one system).
+* generality beyond the single public trajectory and the two window lengths used
+  here (one replica, one system);
+* any interpretation of the 100f↔39f cosine similarity (0.818) — it is one pair
+  of windows from one trajectory.
 
 ---
 
-## 8. Large files intentionally omitted
+## 9. Large files intentionally omitted
 
 | omitted | size | why |
 |---|---|---|
 | `epoch_012_01100-v1.ckpt` | 3.37 GB | model weights; excluded by `.gitignore` (`*.ckpt`) and far beyond any code-audit need — re-fetchable via `scripts/fetch_md_ckpt.py` |
 | `epoch_012_01100-v1.ckpt.deflate.part` | 2.30 GB | leftover partial download from the range fetch |
-| raw M4 PSF + DCD | ~11 MB | source trajectory; the derived 4.6 MB atom14 array is shipped instead |
+| raw M4 PSF + DCD | ~11 MB | source trajectory; the derived atom14 arrays (4.6 MB + 1.8 MB) are shipped instead |
 | nested `artifacts/` tree | 5.9 GB | the whole nested working tree (checkpoint, trajectory, caches) |
 | `project/tools/oneprot-embeddings/**` | — | third-party checkout; ignored by the main repository by design |
 | WSL production trajectories / checkpoints / state XMLs | 4.90 GB | G1 runtime state, lives outside Git entirely |
@@ -268,7 +373,7 @@ None of these is required to review the logic or the evidence above.
 
 ---
 
-## 9. Reproducing this package
+## 10. Reproducing this package
 
 Prerequisites (deliberately not vendored):
 
@@ -289,20 +394,40 @@ Then, from the repository root:
 python project/pacer_dc_training/oneprot_g0_audit/scripts/audit_md_branch_runtime.py \
   --output runs/oneprot_md_branch_runtime_audit.json
 
+# --- 100-frame variant (the original smoke; defaults are unchanged) ----------
 # the forward itself (overwrites outputs/embedding_smoke.npy - copy it first if you
 # want a diff)
 python project/pacer_dc_training/oneprot_g0_audit/scripts/run_g0_embedding.py
 
 # and the check that needs neither the raw DCD nor a second copy of anything
 python project/pacer_dc_training/oneprot_g0_audit/scripts/reverify_forward.py
+
+# --- 39-frame variant (re-derived from the real trajectory) ------------------
+# needs the raw PSF/DCD, which are not committed: re-download Zenodo 8136971 and
+# point --psf/--dcd at them
+python project/pacer_dc_training/oneprot_g0_audit/scripts/convert_dcd_to_atom14.py \
+  --frames 39 \
+  --out-npy project/pacer_dc_training/oneprot_g0_audit/input/m4xan_i1_39f.npy \
+  --out-csv project/pacer_dc_training/oneprot_g0_audit/input/m4xan_39f_test.csv
+
+python project/pacer_dc_training/oneprot_g0_audit/scripts/run_g0_embedding.py \
+  --npy project/pacer_dc_training/oneprot_g0_audit/input/m4xan_i1_39f.npy \
+  --csv project/pacer_dc_training/oneprot_g0_audit/input/m4xan_39f_test.csv \
+  --output project/pacer_dc_training/oneprot_g0_audit/outputs/embedding_smoke_39f.npy
+
+python project/pacer_dc_training/oneprot_g0_audit/scripts/reverify_forward.py \
+  --npy project/pacer_dc_training/oneprot_g0_audit/input/m4xan_i1_39f.npy \
+  --csv project/pacer_dc_training/oneprot_g0_audit/input/m4xan_39f_test.csv \
+  --saved project/pacer_dc_training/oneprot_g0_audit/outputs/embedding_smoke_39f.npy \
+  --label "39-frame"
 ```
 
-`reverify_forward.py` exits non-zero unless it reproduces
-`outputs/embedding_smoke.npy` bit-for-bit.
+`reverify_forward.py` exits non-zero unless it reproduces the saved embedding
+bit-for-bit (`--saved` defaults to the 100-frame file).
 
 ---
 
-## 10. Package layout
+## 11. Package layout
 
 ```
 project/pacer_dc_training/oneprot_g0_audit/
@@ -312,22 +437,34 @@ project/pacer_dc_training/oneprot_g0_audit/
 │   ├── verify_md_ckpt.py            size + CRC32 + hashes of the extracted member
 │   ├── load_md_branch.py            first successful load (observational)
 │   ├── audit_md_branch_runtime.py   assertive load audit -> runs/*.json
-│   ├── convert_dcd_to_atom14.py     PSF+DCD -> atom14 npy (step 4)
-│   ├── run_g0_embedding.py          the forward smoke (step 5)
-│   └── reverify_forward.py          added for this audit: bit-exact re-derivation
+│   ├── convert_dcd_to_atom14.py     PSF+DCD -> atom14 npy, --frames selectable (steps 4, 7)
+│   ├── run_g0_embedding.py          the forward smoke, --npy/--output selectable (steps 5, 7)
+│   └── reverify_forward.py          bit-exact re-derivation of either variant
 ├── input/
 │   ├── m4xan_i1.npy                 (100, 273, 14, 3) float32
-│   └── m4xan_test.csv               name,seqres (273 aa)
+│   ├── m4xan_test.csv               name,seqres (273 aa)
+│   ├── m4xan_i1_39f.npy             (39, 273, 14, 3) float32 — prefix of the above
+│   └── m4xan_39f_test.csv           byte-identical to m4xan_test.csv; kept so the
+│                                    39-frame variant is self-contained
 ├── outputs/
 │   ├── checkpoint_sha256.txt
-│   ├── embedding_smoke.npy          (1024,) float32
+│   ├── embedding_smoke.npy          (1024,) float32, 100-frame
 │   ├── oneprot_environment_audit.json
-│   ├── run_log.txt                  UTF-16LE stdout of step 5
-│   └── forward_reverification.txt   UTF-8 stdout of step 6
+│   ├── run_log.txt                  UTF-16LE stdout of the 100-frame smoke
+│   ├── forward_reverification.txt   UTF-8 report of the 100-frame check
+│   ├── embedding_smoke_39f.npy      (1024,) float32, 39-frame
+│   ├── run_log_39f.txt              UTF-8 stdout of the 39-frame smoke
+│   └── forward_reverification_39f.txt  UTF-8 report of the 39-frame check
 └── upstream/
     └── oneprot_provenance.txt       remote/commit/submodule + no-modification record
 ```
 
-The six `scripts/` files other than `reverify_forward.py` are byte-identical
-copies of the files that produced the evidence; the originals remain in the
-nested checkout, which this package does not modify or delete from.
+Five of the `scripts/` files are byte-identical copies of the files that produced
+the evidence. Two are **parameterised copies**: `convert_dcd_to_atom14.py` gained
+`--psf/--dcd/--frames/--name/--out-npy/--out-csv` and `run_g0_embedding.py` gained
+`--npy/--csv/--checkpoint/--output`, in both cases with the original constants as
+defaults so the 100-frame commands behave exactly as before — verified by
+re-running the 100-frame check after parameterisation and getting the same array
+sha256 (`4f484f49…6e25`). `reverify_forward.py` is this package's own script and
+gained `--npy/--csv/--saved/--label`. The nested checkout still holds the
+unparameterised originals; nothing there was modified or deleted.

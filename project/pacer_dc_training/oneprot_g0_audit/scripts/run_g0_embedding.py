@@ -9,6 +9,7 @@ embedding is finite, non-zero, and bit-reproducible.
 """
 from __future__ import annotations
 
+import argparse
 import sys
 import types
 from pathlib import Path
@@ -95,16 +96,28 @@ def build_batch(arr: np.ndarray, seqres: str):
     return latents, model_kwargs
 
 
+def parse_args(argv=None):
+    """Defaults reproduce the original 100-frame invocation exactly."""
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--npy", type=Path, default=NPY, help="atom14 input array")
+    parser.add_argument("--csv", type=Path, default=CSV, help="name,seqres CSV for the same window")
+    parser.add_argument("--checkpoint", type=Path, default=CKPT)
+    parser.add_argument("--output", type=Path,
+                        default=REPO / "artifacts" / "g0_outputs" / "embedding_smoke.npy")
+    return parser.parse_args(argv)
+
+
 def main() -> None:
-    arr = np.load(NPY)
-    seqres = CSV.read_text().strip().splitlines()[1].split(",")[1]
+    args = parse_args()
+    arr = np.load(args.npy)
+    seqres = args.csv.read_text().strip().splitlines()[1].split(",")[1]
     T, L = arr.shape[0], arr.shape[1]
     print(f"atom14     : {arr.shape}  seqres={len(seqres)}  frames={T}")
 
     latents, model_kwargs = build_batch(arr, seqres)
     print(f"latents    : {tuple(latents.shape)}  (expect [1, {T}, {L}, 21])")
 
-    obj = torch.load(CKPT, map_location="cpu", weights_only=False)
+    obj = torch.load(args.checkpoint, map_location="cpu", weights_only=False)
     md = {k: v for k, v in obj["state_dict"].items() if k.startswith("network.md.")}
     encoder = TrajectoryEncoder(
         output_dim=1024, hidden_size=21, num_layers=4, num_heads=8,
@@ -128,10 +141,9 @@ def main() -> None:
     print(f"  head (first 8)  : {[round(float(x), 4) for x in out1[0, :8]]}")
 
     out_np = out1[0].cpu().numpy()
-    outdir = REPO / "artifacts" / "g0_outputs"
-    outdir.mkdir(parents=True, exist_ok=True)
-    np.save(outdir / "embedding_smoke.npy", out_np)
-    print(f"  saved smoke     : {outdir / 'embedding_smoke.npy'}  shape={tuple(out_np.shape)}")
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    np.save(args.output, out_np)
+    print(f"  saved smoke     : {args.output}  shape={tuple(out_np.shape)}")
 
     assert torch.isfinite(out1).all(), "non-finite embedding"
     assert out1.abs().max() > 0, "all-zero embedding"

@@ -27,6 +27,7 @@ Run from the repository root:
 """
 from __future__ import annotations
 
+import argparse
 import hashlib
 import importlib.util
 import sys
@@ -41,10 +42,28 @@ REPO_ROOT = PKG.parents[2]
 NESTED = REPO_ROOT / "project" / "tools" / "oneprot-embeddings"
 CKPT = NESTED / "artifacts" / "Pocket_Text_ST_SG_MD" / "epoch_012_01100-v1.ckpt"
 
+
+def parse_args(argv=None):
+    """Defaults reproduce the original 100-frame check exactly."""
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--npy", type=Path, default=PKG / "input" / "m4xan_i1.npy")
+    parser.add_argument("--csv", type=Path, default=PKG / "input" / "m4xan_test.csv")
+    parser.add_argument("--saved", type=Path,
+                        default=PKG / "outputs" / "embedding_smoke.npy")
+    parser.add_argument("--label", default="100-frame",
+                        help="free-text label for the report header")
+    return parser.parse_args(argv)
+
+
+ARGS = parse_args()
+
 print(f"python      : {sys.version.split()[0]}")
 print(f"torch       : {torch.__version__}")
 print(f"numpy       : {np.__version__}")
+print(f"variant     : {ARGS.label}")
 print(f"package     : {PKG}")
+print(f"input array : {ARGS.npy}")
+print(f"saved embed : {ARGS.saved}")
 print(f"nested repo : {NESTED}  exists={NESTED.is_dir()}")
 print(f"checkpoint  : {CKPT}  exists={CKPT.is_file()}")
 if not CKPT.is_file():
@@ -55,10 +74,11 @@ spec = importlib.util.spec_from_file_location("g0", PKG / "scripts" / "run_g0_em
 g0 = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(g0)          # registers src/mdgen stubs, imports TrajectoryEncoder
 
-arr = np.load(PKG / "input" / "m4xan_i1.npy")
-seqres = (PKG / "input" / "m4xan_test.csv").read_text().strip().splitlines()[1].split(",")[1]
+arr = np.load(ARGS.npy)
+seqres = ARGS.csv.read_text().strip().splitlines()[1].split(",")[1]
 T, L = arr.shape[0], arr.shape[1]
 print(f"\natom14 input: shape={arr.shape} dtype={arr.dtype} L={L} seqres_len={len(seqres)} T={T}")
+print(f"finite      : {bool(np.isfinite(arr).all())}")
 
 latents, model_kwargs = g0.build_batch(arr, seqres)
 print(f"latents     : {tuple(latents.shape)}  (expect [1, {T}, {L}, 21])")
@@ -86,7 +106,7 @@ with torch.no_grad():
     first = encoder(latents, 0, **model_kwargs)
     second = encoder(latents, 0, **model_kwargs)
 
-saved = np.load(PKG / "outputs" / "embedding_smoke.npy")
+saved = np.load(ARGS.saved)
 out = first[0].cpu().numpy()
 
 print("\n=== re-derivation result ===")
@@ -97,10 +117,10 @@ print(f"  same-process repeat   : {bool(torch.equal(first, second))}")
 print(f"  identical_to_package  : {bool(np.array_equal(out, saved))}")
 print(f"  max_abs_diff_vs_saved : {float(np.abs(out - saved).max())}")
 print(f"  L2 norm               : {float(first.norm()):.6f}")
+print(f"  nonzero values        : {int((out != 0).sum())}/{out.size}")
 print(f"  sha256(re-derived)    : {hashlib.sha256(out.tobytes()).hexdigest()}")
 print(f"  sha256(package copy)  : {hashlib.sha256(saved.tobytes()).hexdigest()}")
-print(f"  saved file sha256     : "
-      f"{hashlib.sha256((PKG / 'outputs' / 'embedding_smoke.npy').read_bytes()).hexdigest()}")
+print(f"  saved file sha256     : {hashlib.sha256(ARGS.saved.read_bytes()).hexdigest()}")
 
 ok = bool(np.array_equal(out, saved) and torch.equal(first, second)
           and torch.isfinite(first).all() and first.abs().max() > 0)

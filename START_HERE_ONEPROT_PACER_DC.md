@@ -45,6 +45,20 @@ d_AGO = z_C  - z_0
 
 G0 输出：`oneprot_environment_audit.json`、`checkpoint_sha256.txt`、一份 embedding smoke sample 和运行日志。
 
+### 2026-09-21 远端分支审查状态
+
+`audit/oneprot-pacer-dc-g0` 已完成**权重装载审计**，但尚未完成整个 G0：
+
+- 已确认外层 checkpoint 含 125 个 `network.md.transformer.*` 张量；
+- 已确认在 `pretrained=false`、`model_path=null` 初始化后，MD transformer 零 missing key、零 shape mismatch；
+- 尚未提交生成 runtime audit 的可复现脚本；
+- 尚未用真实 M4 轨迹完成两次确定性 forward smoke；
+- 尚无四上下文 embedding、`d_PAM/d_AGO`、训练日志、模型权重或验证指标。
+
+因此下一步只能进入 **G0-forward/G1 特征提取**，不能声称已经完成 PACER-DC 微调。
+现有 18-job pilot 仅覆盖 LY2119620 与 compound-110 两个有标签分子；即使轨迹全部完成，
+也不足以通过正式训练门禁，更不能计算有解释力的 AUC。
+
 若官方 OneProt checkpoint 下载后仍缺少源码默认的 `forward_sim.ckpt`，先运行：
 
 ```bash

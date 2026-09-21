@@ -1,0 +1,145 @@
+{
+  "method": "assertive runtime audit of the OneProt MD branch load",
+  "checkpoint": "project\\tools\\oneprot-embeddings\\artifacts\\Pocket_Text_ST_SG_MD\\epoch_012_01100-v1.ckpt",
+  "file_size_bytes": 3614862456,
+  "torch_version": "2.4.1",
+  "protocol_requirement": "pretrained=false / model_path=null instantiation, load the outer checkpoint, require zero missing keys and zero shape mismatches under network.md.transformer.*",
+  "outer_audit": {
+    "path": "runs\\oneprot_checkpoint_audit.json",
+    "sha256": "a79bce2e8f91d9cd59840965e145a119c3202e30516e1e0f69452dee6f211997",
+    "embedded_md_transformer_candidate": true,
+    "decision": "candidate_embedded_weights_present_runtime_coverage_audit_required",
+    "md_transformer_key_count": 125,
+    "md_transformer_tensor_bytes": 61414356
+  },
+  "checkpoint_top_level_key_count": 1442,
+  "network_md_key_count": 132,
+  "network_md_prefix_counts": {
+    "network.md.transformer": 125,
+    "network.md.proj": 6,
+    "network.md.norm": 1
+  },
+  "configurations": [
+    {
+      "configuration": "A_formal_g0_encoder_use_logit_scale_false",
+      "use_logit_scale": false,
+      "encoder_state_dict_key_count": 131,
+      "encoder_parameter_count": 123,
+      "checkpoint_keys_considered": 132,
+      "matched_count": 131,
+      "shape_mismatch_count": 0,
+      "shape_mismatch": [],
+      "absent_count": 1,
+      "absent": [
+        {
+          "key": "norm.1.log_logit_scale",
+          "is_tensor": true,
+          "shape": [],
+          "dtype": "torch.float32",
+          "numel": 1,
+          "element_size": 4,
+          "bytes": 4,
+          "is_floating_point": true
+        }
+      ],
+      "encoder_keys_not_supplied": [],
+      "encoder_keys_not_covered_by_checkpoint": [],
+      "extra_supplied_keys_without_encoder_destination": [
+        "norm.1.log_logit_scale"
+      ],
+      "transformer_checkpoint_keys": 125,
+      "transformer_missing_keys": [],
+      "transformer_shape_mismatches": [],
+      "load_state_dict_return_value": {
+        "strict": false,
+        "missing_keys": [],
+        "unexpected_keys": [
+          "norm.1.log_logit_scale"
+        ]
+      },
+      "tolerated_keys": {
+        "norm.1.log_logit_scale": {
+          "reason": "LearnableLogitScaling buffer (base_encoder.py:30), created only when use_logit_scale=True. The formal G0 encoder runs with the default use_logit_scale=False, so this buffer has no destination. It is a contrastive-training temperature, never read by TrajectoryEncoder.forward (which returns self.norm(projected) = Normalize only). It is a buffer, not a parameter: no learnable weight is lost. The counterfactual configuration in this same report loads it exactly.",
+          "is_tensor": true,
+          "shape": [],
+          "dtype": "torch.float32",
+          "numel": 1,
+          "element_size": 4,
+          "bytes": 4,
+          "is_floating_point": true
+        }
+      },
+      "unclassified_absent_keys": [],
+      "checks": {
+        "zero_missing_keys_under_transformer": true,
+        "zero_shape_mismatch_under_transformer": true,
+        "zero_shape_mismatch_anywhere": true,
+        "every_encoder_key_was_supplied": true,
+        "absent_keys_are_exactly_the_tolerated_set": true,
+        "no_unclassified_absent_keys": true,
+        "load_state_dict_missing_keys_match_encoder_side_direction": true,
+        "load_state_dict_unexpected_keys_are_tolerated_set": true,
+        "every_checkpoint_key_is_matched_or_tolerated": true,
+        "every_extra_supplied_key_is_a_tolerated_key": true
+      },
+      "all_checks_passed": true
+    },
+    {
+      "configuration": "B_counterfactual_use_logit_scale_true",
+      "use_logit_scale": true,
+      "encoder_state_dict_key_count": 132,
+      "encoder_parameter_count": 123,
+      "checkpoint_keys_considered": 132,
+      "matched_count": 132,
+      "shape_mismatch_count": 0,
+      "shape_mismatch": [],
+      "absent_count": 0,
+      "absent": [],
+      "encoder_keys_not_supplied": [],
+      "encoder_keys_not_covered_by_checkpoint": [],
+      "extra_supplied_keys_without_encoder_destination": [],
+      "transformer_checkpoint_keys": 125,
+      "transformer_missing_keys": [],
+      "transformer_shape_mismatches": [],
+      "load_state_dict_return_value": {
+        "strict": false,
+        "missing_keys": [],
+        "unexpected_keys": []
+      },
+      "tolerated_keys": {},
+      "unclassified_absent_keys": [],
+      "checks": {
+        "zero_missing_keys_under_transformer": true,
+        "zero_shape_mismatch_under_transformer": true,
+        "zero_shape_mismatch_anywhere": true,
+        "every_encoder_key_was_supplied": true,
+        "absent_keys_are_exactly_the_tolerated_set": true,
+        "no_unclassified_absent_keys": true,
+        "load_state_dict_missing_keys_match_encoder_side_direction": true,
+        "load_state_dict_unexpected_keys_are_tolerated_set": true,
+        "every_checkpoint_key_is_matched_or_tolerated": true,
+        "every_extra_supplied_key_is_a_tolerated_key": true
+      },
+      "all_checks_passed": true
+    }
+  ],
+  "encoder_constructed_without_forward_sim_ckpt": true,
+  "model_path_argument_passed": null,
+  "configuration_equivalence": {
+    "A_absent_keys": [
+      "norm.1.log_logit_scale"
+    ],
+    "B_absent_keys": [],
+    "difference_is_exactly_the_logit_scale_buffer": true
+  },
+  "checks": {
+    "A_all_checks_passed": true,
+    "B_exact_match_zero_difference": true,
+    "difference_is_exactly_the_logit_scale_buffer": true,
+    "both_configurations_supply_every_transformer_key": true,
+    "no_shape_mismatch_in_either_configuration": true,
+    "checkpoint_top_level_key_count_as_expected": true
+  },
+  "all_checks_passed": true,
+  "claim_boundary": "G0 technical load audit only: proves the outer checkpoint carries a complete, shape-compatible MD transformer for the pretrained=false encoder. It is not PAM efficacy evidence and says nothing about embedding quality. The 4-byte norm.1.log_logit_scale buffer is contrastive-only and is not read by forward()."
+}

@@ -4,6 +4,14 @@ channels:
 dependencies:
   - python=3.11
   - openmm>=8.2
+  # OpenMM's CUDA platform compiles its kernels at runtime through NVRTC, so the
+  # CUDA version that matters is cuda-nvrtc's, not openmm's.  The host driver
+  # (596.08) supports CUDA <= 13.2; an unpinned solve picks cuda-nvrtc 13.4 and
+  # every CUDA context dies with CUDA_ERROR_UNSUPPORTED_PTX_VERSION (222).
+  # openmm 8.6.1 requires cuda-nvrtc >=13.0.88,<14, so pinning to 13.2 needs no
+  # rebuild and keeps the MD stack identical.
+  - cuda-version=13.2
+  - cuda-nvrtc=13.2.*
   # Frozen compatible OpenFF stack.  Toolkit 0.16.x is incompatible with
   # Interchange 0.4.5 (missing NAGLChargesHandler), despite successful imports.
   - openmmforcefields=0.14.1

@@ -80,6 +80,10 @@ python project/pacer_dc_training/train_dual_context_heads.py \
 5. 只使用 `d_PAM` 或只使用 `d_AGO` 的消融；
 6. 完整 PACER-DC 双头模型。
 
+DrugCLIP 接入实验还必须增加：DrugCLIP 原始 cosine、DrugCLIP 普通分类头、
+DrugCLIP 四上下文交互差分，以及 OneProt-MD + DrugCLIP 融合消融。完整设计见
+`project/docs/DRUGCLIP_PACER_INTEGRATION.md`。
+
 主指标为外部或 chemotype-held-out ROC-AUC、PR-AUC、balanced accuracy，并按独立分子或化学系列 bootstrap 置信区间。不得按 trajectory frame 计算置信区间。
 
 ## 7. 当前证据边界

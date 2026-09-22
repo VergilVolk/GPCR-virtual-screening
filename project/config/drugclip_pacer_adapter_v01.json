@@ -1,0 +1,20 @@
+{
+  "model_id": "PACER-DC-DrugCLIP-adapter-v0.1",
+  "drugclip_repository": "https://github.com/bowen-gao/DrugClip.git",
+  "expected_drugclip_commit": "7a3a3fa33673f8668c811790f2e4681c98af44ef",
+  "official_checkpoint": {
+    "filename": "checkpoint_best.pt",
+    "size_bytes": 1183713459,
+    "sha256": "dc2c76d0f02f9bb079a613f09d538dcda1bf9075f2952d91dc1bea55571f667e"
+  },
+  "official_retrieval_pocket": {
+    "filename": "pocket.lmdb",
+    "size_bytes": 45056,
+    "sha256": "490e79bedd66b8b2137edd6a7bfa0f3121c794187b78eaf08eac9f1f46074def"
+  },
+  "drugclip_embedding_dim": 128,
+  "primary_window_frames": 100,
+  "sensitivity_window_frames": 39,
+  "hard_negative_policy": "experimental_non_PAM_ranked_by_high_DrugCLIP_binding_score",
+  "claim_boundary": "DrugCLIP supplies binding-compatible pocket-ligand representations; PACER context differences and functional labels are still required for PAM prioritization."
+}

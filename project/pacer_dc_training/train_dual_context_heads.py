@@ -83,6 +83,13 @@ def validate_and_build(frame: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
             "agonism_label": next(iter(ago_labels)) if ago_labels else np.nan,
             "d_pam": vectors["candidate_probe"] - vectors["probe_only"],
             "d_ago": vectors["candidate_no_probe"] - vectors["apo"],
+            "drugclip_binding_score": (
+                float(part.loc[
+                    part.context.isin(["candidate_probe", "candidate_no_probe"]),
+                    "drugclip_binding_score",
+                ].mean())
+                if "drugclip_binding_score" in part.columns else np.nan
+            ),
         })
     units = pd.DataFrame(rows)
     if not {"train", "val", "test"}.issubset(set(units.split)):
@@ -107,7 +114,9 @@ def candidate_labels(units: pd.DataFrame, ids: list[str], column: str) -> torch.
 
 
 def cross_chemotype_triplet(embedding: torch.Tensor, labels: torch.Tensor,
-                            candidates: list[str], chemotype: dict[str, str], margin: float) -> torch.Tensor:
+                            candidates: list[str], chemotype: dict[str, str], margin: float,
+                            negative_scores: dict[str, float] | None = None,
+                            hard_negative_top_k: int = 0) -> torch.Tensor:
     terms = []
     for a in range(len(candidates)):
         if labels[a].item() != 1:
@@ -115,6 +124,12 @@ def cross_chemotype_triplet(embedding: torch.Tensor, labels: torch.Tensor,
         positives = [p for p in range(len(candidates)) if p != a and labels[p].item() == 1
                      and chemotype[candidates[p]] != chemotype[candidates[a]]]
         negatives = [n for n in range(len(candidates)) if labels[n].item() == 0]
+        if negative_scores is not None and hard_negative_top_k > 0:
+            negatives = sorted(
+                negatives,
+                key=lambda n: negative_scores.get(candidates[n], float("-inf")),
+                reverse=True,
+            )[:hard_negative_top_k]
         for p in positives:
             for n in negatives:
                 dap = 1 - torch.dot(embedding[a], embedding[p])
@@ -214,6 +229,13 @@ def main() -> None:
     optimizer = torch.optim.AdamW(model.parameters(), lr=float(cfg["learning_rate"]),
                                   weight_decay=float(cfg["weight_decay"]))
     chemotype = dict(zip(train.candidate_id, train.chemotype))
+    binding_scores = {
+        candidate: float(part.drugclip_binding_score.mean())
+        for candidate, part in train.groupby("candidate_id")
+        if part.drugclip_binding_score.notna().any()
+    }
+    hard_negative_top_k = int(cfg.get("triplet_hard_negative_top_k", 0))
+    use_binding_hard_negatives = bool(binding_scores) and hard_negative_top_k > 0
     best_state, best_val_loss, stale = None, float("inf"), 0
     history = []
     for epoch in range(int(cfg["epochs"])):
@@ -229,8 +251,16 @@ def main() -> None:
         ya = candidate_labels(train, ids, "agonism_label").to(device)
         bce = F.binary_cross_entropy_with_logits(pam_logit.squeeze(1), yp)
         bce = bce + F.binary_cross_entropy_with_logits(ago_logit.squeeze(1), ya)
-        tp = cross_chemotype_triplet(pam_emb, yp, ids, chemotype, float(cfg["triplet_margin"]))
-        ta = cross_chemotype_triplet(ago_emb, ya, ids, chemotype, float(cfg["triplet_margin"]))
+        tp = cross_chemotype_triplet(
+            pam_emb, yp, ids, chemotype, float(cfg["triplet_margin"]),
+            binding_scores if use_binding_hard_negatives else None,
+            hard_negative_top_k,
+        )
+        ta = cross_chemotype_triplet(
+            ago_emb, ya, ids, chemotype, float(cfg["triplet_margin"]),
+            None,
+            0,
+        )
         loss = bce + float(cfg["pam_triplet_weight"]) * tp + float(cfg["ago_triplet_weight"]) * ta
         loss.backward(); optimizer.step()
         value = float(loss.detach())
@@ -265,6 +295,11 @@ def main() -> None:
         "metrics": summary,
         "candidate_level_metrics": True,
         "windows_are_augmentation_not_independent_samples": True,
+        "triplet_negative_policy": (
+            f"PAM:top_{hard_negative_top_k}_experimental_negatives_by_DrugCLIP_binding_score;"
+            "AGO:all_experimental_negatives"
+            if use_binding_hard_negatives else "all_experimental_negatives"
+        ),
         "claim_boundary": cfg["claim_boundary"],
     }
     (args.output / "audit.json").write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding="utf-8")

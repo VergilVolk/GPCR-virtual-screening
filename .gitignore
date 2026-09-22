@@ -57,6 +57,8 @@ project/data/generated/
 project/tools/DeepRLI/
 project/tools/gpcr-am-ensemble-docking/
 project/tools/oneprot-embeddings/
+project/tools/DrugCLIP/
+project/tools/Uni-Core/
 project/tools/*.exe
 project/tools/RTMScore/
 project/scripts/_tmp_*

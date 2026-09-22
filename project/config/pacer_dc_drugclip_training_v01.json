@@ -1,0 +1,15 @@
+{
+  "model_id": "PACER-DC-DrugCLIP-hard-triplet-v0.1",
+  "seed": 20260922,
+  "epochs": 400,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "hidden_dim": 64,
+  "projection_dim": 24,
+  "triplet_margin": 0.2,
+  "pam_triplet_weight": 0.25,
+  "ago_triplet_weight": 0.25,
+  "triplet_hard_negative_top_k": 2,
+  "early_stopping_patience": 40,
+  "claim_boundary": "Frozen DrugCLIP/OneProt representations with functional heads; retrospective prioritization only, not experimental PAM confirmation."
+}

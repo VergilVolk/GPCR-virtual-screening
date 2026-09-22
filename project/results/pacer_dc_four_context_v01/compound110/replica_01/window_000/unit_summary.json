@@ -1,0 +1,41 @@
+{
+  "candidate_id": "compound110",
+  "replica_id": 1,
+  "window_id": 0,
+  "window_frames": 100,
+  "start_frame": 0,
+  "end_frame": 99,
+  "contexts_requested": [
+    "candidate_probe",
+    "candidate_no_probe",
+    "probe_only",
+    "apo"
+  ],
+  "contexts_embedded": [
+    "candidate_probe",
+    "candidate_no_probe",
+    "probe_only",
+    "apo"
+  ],
+  "completeness": "complete",
+  "missing_contexts": "",
+  "checkpoint_sha256": "a79bce2e8f91d9cd59840965e145a119c3202e30516e1e0f69452dee6f211997",
+  "receptor_selection": "chainID E and protein",
+  "preprocessing_version": "pacer_dc_atom14_v0.1",
+  "differential": {
+    "candidate_id": "compound110",
+    "replica_id": 1,
+    "window_id": 0,
+    "start_frame": 0,
+    "end_frame": 99,
+    "n_contexts_present": 4,
+    "missing_contexts": "",
+    "completeness": "complete",
+    "d_PAM_path": "embeddings/dPAM_w000.npy",
+    "d_AGO_path": "embeddings/dAGO_w000.npy",
+    "d_PAM_norm": 0.544822,
+    "d_AGO_norm": 0.744751,
+    "cosine_dPAM_dAGO": 0.385785,
+    "seqres_length": 270
+  }
+}

@@ -64,6 +64,7 @@ ROW_FIELDS = [
     "trajectory_frames_total", "frame_spacing_ps", "receptor_selection",
     "preprocessing_version", "checkpoint_sha256", "raw_path", "atom14_path",
     "embedding_path", "embedding_dim", "finite", "norm", "status",
+    "checkpoint_missing_keys", "checkpoint_unexpected_keys",
     "receptor_residues", "receptor_atoms", "ca_neighbour_min_A",
     "ca_neighbour_max_A",
 ]
@@ -82,7 +83,10 @@ def sanitized_topology(path: Path, out_dir: Path, name: str) -> tuple[Path, str]
     n_conect = sum(1 for ln in lines if ln.startswith("CONECT"))
     dest_dir = out_dir / "topology"
     dest_dir.mkdir(parents=True, exist_ok=True)
-    dest = dest_dir / path.name
+    # Every context needs its own immutable topology artefact.  Reusing
+    # ``minimized.pdb`` silently overwrote the previous context and made the
+    # provenance rows point to the last processed system.
+    dest = dest_dir / f"{name}_{path.name}"
     dest.write_text("\n".join(ln for ln in lines if not ln.startswith("CONECT")) + "\n",
                     encoding="utf-8")
     return dest, f"dropped {n_conect} CONECT records (hex serials break the PDB parser)"
@@ -333,6 +337,27 @@ def stage_embed(args) -> dict:
     obj = torch.load(args.checkpoint, map_location="cpu", weights_only=False)
     md = {k: v for k, v in obj["state_dict"].items() if k.startswith("network.md.")}
 
+    # Instantiate and audit one frozen encoder for the whole matched unit.  A
+    # separate strict=False load per context could hide missing random weights
+    # and contaminate the differential with initialization noise.
+    enc = g0.TrajectoryEncoder(
+        output_dim=1024, hidden_size=21, num_layers=4, num_heads=8,
+        pretrained=False, frozen=True, proj_type="mlp",
+        num_frames=args.window_frames, suffix="_i1",
+    )
+    incompat = enc.load_state_dict(
+        {k[len("network.md."):]: v for k, v in md.items()}, strict=False
+    )
+    missing_keys = list(incompat.missing_keys)
+    unexpected_keys = list(incompat.unexpected_keys)
+    allowed_unexpected = {"norm.1.log_logit_scale"}
+    if missing_keys or set(unexpected_keys) - allowed_unexpected:
+        raise RuntimeError(
+            "OneProt-MD checkpoint coverage failed: "
+            f"missing={missing_keys}, unexpected={unexpected_keys}"
+        )
+    enc.eval()
+
     embeddings, seqres_seen, long_rows = {}, set(), []
     for row in traj["rows"]:
         row = {f: row.get(f, "") for f in ROW_FIELDS} | row
@@ -345,13 +370,6 @@ def stage_embed(args) -> dict:
         seqres = csv_path.read_text().strip().splitlines()[1].split(",")[1]
         seqres_seen.add(seqres)
         latents, kwargs = g0.build_batch(arr, seqres)
-        enc = g0.TrajectoryEncoder(
-            output_dim=1024, hidden_size=21, num_layers=4, num_heads=8,
-            pretrained=False, frozen=True, proj_type="mlp",
-            num_frames=arr.shape[0], suffix="_i1",
-        )
-        enc.load_state_dict({k[len("network.md."):]: v for k, v in md.items()}, strict=False)
-        enc.eval()
         with torch.no_grad():
             first = enc(latents, 0, **kwargs)
             second = enc(latents, 0, **kwargs)
@@ -367,6 +385,8 @@ def stage_embed(args) -> dict:
             "repeat_identical": bool(torch.equal(first, second)),
             "nonzero": int((vec != 0).sum()),
             "latents_shape": "x".join(str(x) for x in latents.shape),
+            "checkpoint_missing_keys": json.dumps(missing_keys),
+            "checkpoint_unexpected_keys": json.dumps(unexpected_keys),
         })
         long_rows.append(row)
         print(f"  [{row['context']}] z={tuple(vec.shape)} norm={row['norm']} "
@@ -408,7 +428,13 @@ def stage_embed(args) -> dict:
         })
     else:
         print(f"\n  unit INCOMPLETE: missing {missing} -> no d_PAM / d_AGO computed")
-    return {"long_rows": long_rows, "differential": diff, "checkpoint_sha256": ckpt_sha}
+    return {
+        "long_rows": long_rows,
+        "differential": diff,
+        "checkpoint_sha256": ckpt_sha,
+        "checkpoint_missing_keys": missing_keys,
+        "checkpoint_unexpected_keys": unexpected_keys,
+    }
 
 
 def write_tables(out_dir: Path, long_rows, diff) -> None:
@@ -451,6 +477,13 @@ def main() -> None:
     p.add_argument("--out-dir", type=Path, required=True)
     args = p.parse_args()
 
+    if args.baselines:
+        raise SystemExit(
+            "--baselines is temporarily disabled: the current implementation fits "
+            "PCA/tICA/VAMP independently per context, so its axes are not comparable. "
+            "Use a frozen train-only shared basis before reporting a baseline."
+        )
+
     args.contexts = [c.strip() for c in args.contexts.split(",") if c.strip()]
     if set(args.contexts) - set(CONTEXTS):
         raise SystemExit(f"unknown contexts: {sorted(set(args.contexts) - set(CONTEXTS))}")
@@ -482,6 +515,8 @@ def main() -> None:
             "completeness": res["differential"]["completeness"],
             "missing_contexts": res["differential"]["missing_contexts"],
             "checkpoint_sha256": res["checkpoint_sha256"],
+            "checkpoint_missing_keys": res["checkpoint_missing_keys"],
+            "checkpoint_unexpected_keys": res["checkpoint_unexpected_keys"],
             "receptor_selection": args.receptor_selection,
             "preprocessing_version": PREPROCESSING_VERSION,
             "differential": res["differential"],

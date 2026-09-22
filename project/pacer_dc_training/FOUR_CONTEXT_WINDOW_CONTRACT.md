@@ -83,23 +83,21 @@ Every context goes through exactly the same path:
 `receptor_selection` and `preprocessing_version` are written into each row so a
 reviewer can detect any row that deviated.
 
-## 6. Baselines (Phase 4)
+## 6. Baselines (Phase 4; currently blocked)
 
-PCA / tICA / VAMP are computed **from the same atom14 window** as the OneProt
-embedding — same frames, same residues, same window boundaries. The shared
-feature per frame is the receptor Cα Cartesian vector (3L numbers), so the
-baselines cannot silently use a different slice.
+PCA / tICA / VAMP must use **the same atom14 window** as the OneProt embedding —
+same frames, same residues and same window boundaries. They must also use one
+frozen basis fitted on training systems only. Fitting a separate basis per
+context makes the resulting coordinates incomparable.
 
-* PCA: sklearn `PCA(k)`.
-* tICA: time-lagged covariance eigenproblem with a fixed lag.
-* VAMP: whitened time-lagged cross-covariance SVD; representation = projection on
-  the top-k right singular vectors, and the VAMP-2 score is recorded.
+The current extractor's historical per-context implementation is therefore
+disabled by a hard error. It may not be used as a reported baseline until a
+train-only shared-basis implementation and transform-only evaluation path are
+added.
 
-**Leakage rule.** The default fit scope is `unit` (fit and transform on the same
-window) for descriptive smoke output only. Any *comparative* claim requires
-`--fit-scope train`, which fits on a frozen training manifest and only transforms
-the evaluated unit. With the current molecule count no comparative claim is
-permitted (see §7).
+**Leakage rule.** Any comparative claim requires a frozen training manifest: fit
+the basis on training trajectories and only transform validation/test units.
+With the current molecule count no comparative claim is permitted (see §7).
 
 ## 7. Data gate
 

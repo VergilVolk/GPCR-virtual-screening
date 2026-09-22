@@ -1,8 +1,8 @@
 #!/usr/bin/env python
-"""Phase 4b/5/6 analysis: baseline representations on the identical window, plus
-descriptive stability of the context embedding across replicas and windows.
+"""Descriptive OneProt-MD and differential stability across replicas/windows.
 
 Read-only over existing unit directories. No training, no AUC, no PAM score.
+PCA/tICA/VAMP are intentionally excluded until a train-only shared basis exists.
 
     python audit_pacer_dc_four_context_stability.py \
       --units <unit_dir> [<unit_dir> ...] \
@@ -12,21 +12,10 @@ from __future__ import annotations
 
 import argparse
 import csv
-import importlib.util
 import json
 from pathlib import Path
 
 import numpy as np
-
-EXTRACTOR = Path(__file__).resolve().parent / "extract_pacer_dc_four_context_embeddings.py"
-
-
-def load_module():
-    spec = importlib.util.spec_from_file_location("fce", EXTRACTOR)
-    mod = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(mod)
-    return mod
-
 
 def cos(a, b) -> float:
     return float(np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b)))
@@ -37,9 +26,8 @@ def main() -> None:
     ap.add_argument("--units", nargs="+", type=Path, required=True)
     ap.add_argument("--output", type=Path, required=True)
     args = ap.parse_args()
-    fce = load_module()
-
     records = {}
+    differentials = {}
     for unit in args.units:
         long_csv = unit / "four_context_long.csv"
         if not long_csv.is_file():
@@ -50,25 +38,35 @@ def main() -> None:
                     continue
                 key = f"{row['candidate_id']}/r{row['replica_id']}/w{int(row['start_frame']):04d}/{row['context']}"
                 emb = np.load(unit / row["embedding_path"])
-                arr = np.load(unit / row["atom14_path"])
-                ca = arr[:, :, 1, :].reshape(arr.shape[0], -1).astype(np.float64)
-                reps = fce.baseline_representations(ca)
                 records[key] = {
                     "unit": str(unit), "context": row["context"],
                     "replica": row["replica_id"], "start_frame": row["start_frame"],
-                    "one_prot": emb, "pca": reps["pca"], "tica": reps["tica"],
-                    "vamp": reps["vamp"], "vamp2_score": reps["vamp2_score"],
+                    "candidate": row["candidate_id"], "one_prot": emb,
                     "embedding_norm": float(np.linalg.norm(emb)),
                     "finite": bool(np.isfinite(emb).all()),
                     "nonzero": int((emb != 0).sum()),
                     "embedding_dim": int(emb.size),
+                }
+        diff_csv = unit / "four_context_differential.csv"
+        if diff_csv.is_file():
+            with diff_csv.open(encoding="utf-8") as fh:
+                row = next(csv.DictReader(fh), None)
+            if row and row["completeness"] == "complete":
+                key = (f"{row['candidate_id']}/r{row['replica_id']}/"
+                       f"w{int(row['start_frame']):04d}")
+                differentials[key] = {
+                    "candidate": row["candidate_id"],
+                    "replica": row["replica_id"],
+                    "start_frame": row["start_frame"],
+                    "dPAM": np.load(unit / row["d_PAM_path"]),
+                    "dAGO": np.load(unit / row["d_AGO_path"]),
                 }
 
     print("=== available context embeddings (descriptive) ===")
     for k in sorted(records):
         r = records[k]
         print(f"  {k:<46} z={r['embedding_dim']} norm={r['embedding_norm']:.6f} "
-              f"finite={r['finite']} nonzero={r['nonzero']} vamp2={r['vamp2_score']:.4g}")
+              f"finite={r['finite']} nonzero={r['nonzero']}")
 
     # pairs: same context, same window, different replica  -> replica-to-replica
     #        same context, same replica, different window  -> window-to-window reference
@@ -89,17 +87,34 @@ def main() -> None:
                 "kind": kind, "context": ra["context"], "a": a, "b": b,
                 "one_prot_cosine": round(cos(ra["one_prot"], rb["one_prot"]), 6),
                 "one_prot_l2": round(float(np.linalg.norm(ra["one_prot"] - rb["one_prot"])), 6),
-                "pca_cosine": round(cos(ra["pca"], rb["pca"]), 6),
-                "tica_cosine": round(cos(ra["tica"], rb["tica"]), 6),
-                "vamp_cosine": round(cos(ra["vamp"], rb["vamp"]), 6),
             })
 
     print("\n=== descriptive stability (cosine of the representation vectors) ===")
-    hdr = f"  {'kind':<20}{'context':<10}{'pair':<44}{'OneProt':<10}{'PCA':<9}{'tICA':<9}{'VAMP':<9}"
+    hdr = f"  {'kind':<20}{'context':<10}{'pair':<44}{'OneProt':<10}"
     print(hdr)
     for p in sorted(pairs, key=lambda x: (x["kind"], x["a"])):
         print(f"  {p['kind']:<20}{p['context']:<10}{p['a'] + ' vs ' + p['b']:<44}"
-              f"{p['one_prot_cosine']:<10}{p['pca_cosine']:<9}{p['tica_cosine']:<9}{p['vamp_cosine']:<9}")
+              f"{p['one_prot_cosine']:<10}")
+
+    diff_pairs = []
+    diff_keys = sorted(differentials)
+    for i, a in enumerate(diff_keys):
+        for b in diff_keys[i + 1:]:
+            ra, rb = differentials[a], differentials[b]
+            if ra["candidate"] != rb["candidate"]:
+                continue
+            same_window = ra["start_frame"] == rb["start_frame"]
+            same_replica = ra["replica"] == rb["replica"]
+            kind = ("replica-to-replica" if same_window and not same_replica else
+                    "window-to-window" if same_replica and not same_window else None)
+            if kind:
+                diff_pairs.append({
+                    "kind": kind, "a": a, "b": b,
+                    "dPAM_cosine": round(cos(ra["dPAM"], rb["dPAM"]), 6),
+                    "dAGO_cosine": round(cos(ra["dAGO"], rb["dAGO"]), 6),
+                    "dPAM_l2": round(float(np.linalg.norm(ra["dPAM"] - rb["dPAM"])), 6),
+                    "dAGO_l2": round(float(np.linalg.norm(ra["dAGO"] - rb["dAGO"])), 6),
+                })
 
     report = {
         "units": [str(u) for u in args.units],
@@ -107,15 +122,19 @@ def main() -> None:
                                for k, v in records.items()},
         "pairs": pairs,
         "four_context_differential_stability": {
-            "computable": False,
-            "reason": ("no candidate has all four contexts in the production tree; "
-                       "d_PAM / d_AGO stability cannot be computed"),
+            "computable": bool(diff_pairs),
+            "n_complete_units": len(differentials),
+            "pairs": diff_pairs,
+            "reason": ("" if diff_pairs else
+                       "need at least two matched windows or replicas for one candidate"),
         },
         "sanity_checks": {
-            "z_CA_ne_z_A": "not computable (candidate_probe / probe_only absent)",
-            "z_C_ne_z_0": "not computable (candidate_no_probe absent)",
-            "d_PAM_finite_nonzero": "not computed (unit incomplete)",
-            "d_AGO_finite_nonzero": "not computed (unit incomplete)",
+            "d_PAM_finite_nonzero": all(np.isfinite(r["dPAM"]).all() and
+                                         np.linalg.norm(r["dPAM"]) > 0
+                                         for r in differentials.values()),
+            "d_AGO_finite_nonzero": all(np.isfinite(r["dAGO"]).all() and
+                                         np.linalg.norm(r["dAGO"]) > 0
+                                         for r in differentials.values()),
             "available_context_norm_is_one": all(abs(r["embedding_norm"] - 1.0) < 1e-5
                                                  for r in records.values()),
             "available_context_finite_nonzero": all(r["finite"] and r["nonzero"] > 0

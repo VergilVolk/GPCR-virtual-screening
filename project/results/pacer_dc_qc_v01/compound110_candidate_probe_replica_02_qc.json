@@ -1,0 +1,48 @@
+{
+  "system": "compound110__candidate_probe",
+  "replica": 2,
+  "seed": 38201,
+  "completed_ns": 5.0,
+  "frames": 500,
+  "atoms": 227742,
+  "frame_interval_ps": 10.0,
+  "numerical_qc": "PASS",
+  "preliminary_structural_qc": "PASS",
+  "mean_ca_rmsd_A": 1.102387,
+  "mean_temperature_K": 300.243,
+  "temperature_statistics_scope": "full_500_records",
+  "ligand_analysis": {
+    "ach_mean_rmsd_A": 2.0,
+    "compound110_mean_rmsd_A": 4.379,
+    "compound110_last_contacts": 26,
+    "compound110_last_core_centroid_distance_A": 4.656,
+    "core_centroid_pbc_audit": "PASS"
+  },
+  "limitations": [
+    "Conformational convergence not established",
+    "Biological inference requires matched four-context trajectories",
+    "Independent replicas share a common initial structural state",
+    "Residue numbers refer to simulation E-chain indexing",
+    "Ligand pose convergence not established"
+  ],
+  "topology": {
+    "path": "project/results/pacer_dc_membrane_reference_v01/compound110__candidate_probe/minimized.pdb",
+    "size_bytes": 19853826,
+    "sha256": "75c71e783a89f38eda0a510ffca852ec5d1ef2754cd44a579c4417ec40dab1cb"
+  },
+  "trajectory": {
+    "path": "project/results/pacer_dc_production_v01/compound110__candidate_probe/replica_02/trajectory.dcd",
+    "size_bytes": 1366492276,
+    "sha256": "7bf31fe3153d969e8370cd206f073198128428bba8008344c8a472d760a22c63"
+  },
+  "state_csv": {
+    "path": "project/results/pacer_dc_production_v01/compound110__candidate_probe/replica_02/state.csv",
+    "size_bytes": 65699,
+    "sha256": "253b3e7a52147e57040462b75509cc673e3367463b726235d8a27752eb8149de"
+  },
+  "checkpoint": {
+    "path": "project/results/pacer_dc_production_v01/compound110__candidate_probe/replica_02/checkpoint.chk",
+    "size_bytes": 33930096,
+    "sha256": "776f3dcb3ba0570381006c09e1472f9a31d2756037ba67396bc04616c37d8e17"
+  }
+}

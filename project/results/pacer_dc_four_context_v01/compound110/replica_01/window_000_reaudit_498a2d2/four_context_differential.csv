@@ -1,0 +1,2 @@
+candidate_id,replica_id,window_id,start_frame,end_frame,n_contexts_present,missing_contexts,completeness,d_PAM_path,d_AGO_path,d_PAM_norm,d_AGO_norm,cosine_dPAM_dAGO,seqres_length
+compound110,1,0,0,99,4,,complete,embeddings/dPAM_w000.npy,embeddings/dAGO_w000.npy,0.544822,0.744751,0.385785,270

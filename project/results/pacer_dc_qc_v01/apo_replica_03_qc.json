@@ -1,0 +1,39 @@
+{
+  "system": "apo",
+  "replica": 3,
+  "completed_ns": 5.0,
+  "frames": 500,
+  "atoms": 227685,
+  "frame_interval_ps": 10.0,
+  "numerical_qc": "PASS",
+  "preliminary_structural_qc": "PASS",
+  "mean_ca_rmsd_A": 1.180691,
+  "mean_temperature_K": 300.318837,
+  "topology": {
+    "path": "project/results/pacer_dc_membrane_reference_v01/apo/minimized.pdb",
+    "size_bytes": 19847353,
+    "sha256": "2d8b965a327235d6067864d7f48677ace9c75a7fb837c6732c170593a0b78d44"
+  },
+  "trajectory": {
+    "path": "project/results/pacer_dc_recovery_merged_v01/apo/replica_03/trajectory_corrected.dcd",
+    "size_bytes": 1366150356,
+    "sha256": "8254a69ac6bfd18cb225824b16f3c20442ae4181d8765a2d8b0121eb8aa2edcf"
+  },
+  "state_csv": {
+    "path": "project/results/pacer_dc_recovery_merged_v01/apo/replica_03/state.csv",
+    "size_bytes": 65407,
+    "sha256": "9a081b9189bc85ce601611ca8e2b2dd221d4abc88430b7445d313cf1d28209fb"
+  },
+  "limitations": [
+    "Conformational convergence not established",
+    "Biological inference requires matched contexts"
+  ],
+  "recovery_boundary_qc": "PASS",
+  "recovery_boundary_ca_rmsd_A": 0.565787,
+  "temperature_statistics_scope": "recovery_stage_490_records",
+  "checkpoint": {
+    "path": "project/results/pacer_dc_recovery_backup_v01/apo/replica_03/checkpoint.chk",
+    "size_bytes": 33925360,
+    "sha256": "9a7784693d8eac36050dc8e87f9b396d5f7964fe63673fbe692e32cfa23db649"
+  }
+}

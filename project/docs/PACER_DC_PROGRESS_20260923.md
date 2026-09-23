@@ -97,3 +97,30 @@ Large DCD files, checkpoints, membrane systems,
 and temporary recovery files must not be committed.
 
 Windows is the sole Git authority.
+
+## 2026-09-23 最新里程碑：compound110 replicas 2 and 3
+
+### Git milestone
+Latest pushed commit: 8d51112. Branch: audit/oneprot-pacer-dc-g0. Two candidate_probe QC manifests committed and pushed.
+
+### Production and QC
+compound110 + ACh replicas 2 and 3: both completed 5 ns CUDA production, 500 frames each, 227742 atoms, 10 ps interval. Trajectory integrity, preliminary thermodynamic QC, receptor CA RMSD and centroid PBC audits PASS. Mean receptor CA RMSD: replica 2 = 1.102387 A; replica 3 = 1.200738 A. Mean temperature: 300.243 K and 300.277 K.
+
+### Cross-replica observations
+Mean compound110 RMSD: 4.379 A and 3.836 A. Final initial-pocket contacts: 26 and 28. Final core-centroid distances: 4.656 A and 4.485 A. Both replicas retain core contacts and lose contacts with GLY65, SER232, ILE234 and PRO235. THR148, VAL149 and PRO150 contact gains occur in replica 2 but not replica 3. A common final binding pose or biological mechanism is NOT established.
+
+### Four-context progress
+compound110 + ACh: replica 1 = 1 ns; replicas 2 and 3 = 5 ns + preliminary QC.
+compound110 only: replica 1 = 1 ns; replicas 2 and 3 not started.
+ACh only: replica 1 = 1 ns; replicas 2 and 3 not started.
+apo: replica 1 = 1 ns; replicas 2 and 3 = 5 ns + preliminary QC.
+
+### Next actions
+1. Start probe_only replica 2 and 3 production after checking existing files.
+2. Complete compound110 candidate_no_probe replica 2 and 3.
+3. Audit replica 1 production status and complete matched 5 ns windows.
+4. Perform matched four-context atom14 and frozen OneProt-MD analysis.
+5. Expand the functional control matrix after QC.
+
+### Limitations
+Independent replicas share a common starting structure. Five nanoseconds does not establish conformational convergence. Simulation E-chain residue indices are not original CHRM4 sequence indices. Large DCD files, checkpoints and membrane systems remain local, not on GitHub. TRAINING_GATE = CLOSED.

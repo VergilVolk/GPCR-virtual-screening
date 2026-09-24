@@ -49,3 +49,11 @@ M4 pocket-ranking首次在series holdout上略高于2D baseline（+0.015），�
 ### 分系列稳健性
 
 50:50融合在三个series folds上的AUC分别为0.599、0.553、0.691；对应2D baseline为0.622、0.539、0.602。融合改善两个较小系列，但损害最大系列。其macro AUC约0.614、worst-series约0.553，属于互补性信号而非稳定优势，下一步需要冻结后新增独立系列，不能继续在现有三折上选权重。
+
+## 冻结模型的候选筛选
+
+固定使用三个种子的M4 pocket hard-negative ranking ensemble，并与既有`1 - strict inactive risk`作50:50百分位秩融合，对200个生成候选进行重新筛选。该阶段没有使用候选标签，也没有根据候选结果调整权重。
+
+融合前十为：PACER0060、PACER0045、PACER0059、PACER0058、PACER0084、PACER0039、PACER0056、PACER0054、PACER0024、PACER0028。去除重复Murcko骨架后形成12分子短名单，其中PACER0060与PACER0058同时获得此前动态ensemble支持；PACER0060为融合第1、DrugCLIP第4、2D第1，并且三个训练种子的预测标准差仅0.00072，是目前证据最一致的首选计算假设。
+
+完整短名单输出位于`project/results/drugclip_m4_candidate_screen_v01/diverse_shortlist.csv`（结果目录不进入Git）。这些排序不能证明任何分子是PAM；优先验证仍需ACh条件下浓度响应、Emax/曲线位移以及无ACh内在激动对照。

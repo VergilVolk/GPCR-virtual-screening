@@ -27,14 +27,18 @@ def main() -> None:
     ap.add_argument("--baseline-predictions", type=Path, required=True)
     ap.add_argument("--benchmark", type=Path, required=True)
     ap.add_argument("--output", type=Path, required=True)
+    ap.add_argument("--adapter-columns", default="bce,triplet,triplet_domain")
     ap.add_argument("--bootstrap", type=int, default=5000)
     ap.add_argument("--seed", type=int, default=20260924)
     args = ap.parse_args()
 
     adapter = pd.read_csv(args.adapter_predictions)
+    models = [value.strip() for value in args.adapter_columns.split(",") if value.strip()]
+    if missing := set(models) - set(adapter.columns):
+        raise ValueError(f"Missing adapter columns: {sorted(missing)}")
     # Repeated training seeds are an ensemble at inference, not independent molecules.
     adapter = adapter.groupby(["canonical_molecule_id", "target"], as_index=False)[
-        ["bce", "triplet", "triplet_domain"]
+        models
     ].mean()
     baseline = pd.read_csv(args.baseline_predictions)[
         ["canonical_molecule_id", "target", "prediction"]
@@ -46,7 +50,6 @@ def main() -> None:
         raise ValueError("Target mismatch between adapter and baseline")
     y = frame.target.to_numpy(int)
     rng = np.random.default_rng(args.seed)
-    models = ["bce", "triplet", "triplet_domain"]
     observed_baseline = float(roc_auc_score(y, frame.baseline))
     report = {
         "evidence_level": "retrospective_paired_oof_comparison",

@@ -79,6 +79,13 @@ def train_predict(x_train, pockets, y_train, source_train, x_test, mode, seed, a
     xv = torch.tensor(x_test, dtype=torch.float32)
     s = torch.tensor(source_train, dtype=torch.long)
     model = PocketRealign(x.shape[1], args.rank, int(source_train.max()) + 1)
+    if args.family_checkpoint is not None:
+        family = torch.load(args.family_checkpoint, map_location="cpu")
+        state = family["model"]
+        with torch.no_grad():
+            for target, prefix in [(model.molecule_adapter, "mol"), (model.pocket_adapter, "pocket")]:
+                target.down.weight.copy_(state[f"{prefix}.down.weight"])
+                target.up.weight.copy_(state[f"{prefix}.up.weight"])
     opt = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
     pos_weight = torch.tensor(float((y_train == 0).sum() / max(1, (y_train == 1).sum())))
     original_x, original_p = F.normalize(x, dim=1), F.normalize(p, dim=1)
@@ -126,6 +133,7 @@ def main():
     ap.add_argument("--domain-loss-weight", type=float, default=0.2)
     ap.add_argument("--hard-negative-top-k", type=int, default=16)
     ap.add_argument("--max-positive", type=int, default=128)
+    ap.add_argument("--family-checkpoint", type=Path)
     args = ap.parse_args()
     torch.set_num_threads(max(1, min(8, torch.get_num_threads())))
 
@@ -168,7 +176,7 @@ def main():
     report = {"evidence_level": "retrospective_m4_specific_drugclip_realign",
               "protocol": args.protocol, "n_assigned": int(assigned.sum()),
               "pocket_ids": list(map(str, archive["pocket_ids"])), "aggregate": aggregate,
-              "hyperparameters": {k: v for k, v in vars(args).items()
+              "hyperparameters": {k: (str(v) if isinstance(v, Path) else v) for k, v in vars(args).items()
                                   if k not in {"embeddings", "benchmark", "output"}},
               "claim_boundary": "Frozen-embedding target adaptation; no wet-lab PAM confirmation."}
     args.output.parent.mkdir(parents=True, exist_ok=True)

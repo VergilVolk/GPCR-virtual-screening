@@ -1,0 +1,68 @@
+{
+  "system": "probe_only",
+  "replica": 2,
+  "seed": 38201,
+  "completed_ns": 5.0,
+  "frames": 500,
+  "atoms": 227711,
+  "frame_interval_ps": 10.0,
+  "numerical_qc": "PASS",
+  "preliminary_structural_qc": "PASS",
+  "mean_ca_rmsd_A": 1.2854853700907058,
+  "mean_temperature_K": 300.2532402569587,
+  "temperature_statistics_scope": "full_500_records",
+  "ligand_analysis": {
+    "ach_mean_rmsd_A": 1.9497444423233903,
+    "ach_last_contacts": 40,
+    "ach_last_min_distance_A": 2.748548157078256
+  },
+  "time_axis": {
+    "dcd_first_ps": 10.000000029814057,
+    "dcd_last_ps": 5000.000014907028,
+    "csv_last_ps": 5004.00000010195,
+    "note": "CSV final time is approximately 4 ps later than DCD final time."
+  },
+  "limitations": [
+    "Conformational convergence not established",
+    "Biological inference requires matched four-context trajectories",
+    "Independent replicas share a common initial structural state",
+    "Residue numbers refer to simulation E-chain indexing",
+    "Ligand pose convergence not established",
+    "CSV and DCD final timestamps differ by approximately 4 ps"
+  ],
+  "topology": {
+    "path": "project/results/pacer_dc_membrane_reference_v01/probe_only/minimized.pdb",
+    "size_bytes": 19850048,
+    "sha256": "e910a3cd27f0bc170fedea8893bd0b8eed16dfb0fe54cec652b01f6d4e8409f9"
+  },
+  "trajectory": {
+    "path": "project/results/pacer_dc_production_v01/probe_only/replica_02/trajectory.dcd",
+    "size_bytes": 1366306276,
+    "sha256": "7d5548dfb25806b743dac08c60e8dfeba158cb5b013d863a44a0cad9ae2dfa36"
+  },
+  "state_csv": {
+    "path": "project/results/pacer_dc_production_v01/probe_only/replica_02/state.csv",
+    "size_bytes": 65722,
+    "sha256": "33d4d09ed1c9add8105cdcafddf8331bea65adb6ca2e2e5f556be198f449f443"
+  },
+  "checkpoint": {
+    "path": "project/results/pacer_dc_production_v01/probe_only/replica_02/checkpoint.chk",
+    "size_bytes": 33925360,
+    "sha256": "c5d0a129e2a453a2ac60ccf8ff9a2e74ceb4bbb27ad08362ef85f4bcdf239325"
+  },
+  "latest_state": {
+    "path": "project/results/pacer_dc_production_v01/probe_only/replica_02/latest_state.xml",
+    "size_bytes": 37698154,
+    "sha256": "f0e8ff61c6bcdd6201b75fe595d20aee1c39ad7957f58d5e51a3c1464aa91b57"
+  },
+  "progress": {
+    "path": "project/results/pacer_dc_production_v01/probe_only/replica_02/progress.json",
+    "size_bytes": 508,
+    "sha256": "79fd6b17f9a94fe2310b68499f75b0f696f4853aa5f74ea4c9d45add161d5fe7"
+  },
+  "analysis": {
+    "path": "project/results/pacer_dc_qc_v01/probe_only_replica_02_analysis_v01.json",
+    "size_bytes": 6272,
+    "sha256": "a72996f9f55d9e0867c9be5abf2e00431cc184e1484bf93673c66a2dc2eeb9db"
+  }
+}

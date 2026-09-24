@@ -1,0 +1,70 @@
+{
+  "system": "compound110__candidate_no_probe",
+  "replica": 2,
+  "seed": 38201,
+  "completed_ns": 5.0,
+  "frames": 500,
+  "atoms": 227716,
+  "frame_interval_ps": 10.0,
+  "numerical_qc": "PASS",
+  "preliminary_structural_qc": "PASS",
+  "mean_ca_rmsd_A": 1.217007804259113,
+  "mean_temperature_K": 300.2889420899346,
+  "temperature_statistics_scope": "full_500_records",
+  "ligand_analysis": {
+    "compound110_mean_rmsd_A": 3.260398546401213,
+    "compound110_last_contacts": 31,
+    "compound110_last_core_centroid_distance_A": 5.290570501415409,
+    "core_centroid_pbc_audit": "PASS"
+  },
+  "time_axis": {
+    "dcd_first_ps": 10.000000029814057,
+    "dcd_last_ps": 5000.000014907028,
+    "csv_last_ps": 5004.00000010195,
+    "note": "CSV final time is approximately 4 ps later than DCD final time."
+  },
+  "limitations": [
+    "Conformational convergence not established",
+    "Biological inference requires matched four-context trajectories",
+    "Independent replicas share a common initial structural state",
+    "Residue numbers refer to simulation E-chain indexing",
+    "Ligand pose convergence not established",
+    "PBC centroid audit does not exclude all possible PBC artifacts",
+    "CSV and DCD final timestamps differ by approximately 4 ps"
+  ],
+  "topology": {
+    "path": "project/results/pacer_dc_membrane_reference_v01/compound110__candidate_no_probe/minimized.pdb",
+    "size_bytes": 19851131,
+    "sha256": "189e489a093abefc70678aec1e901dcd1d5fa1a4e11778cfb126a667fd46e5c9"
+  },
+  "trajectory": {
+    "path": "project/results/pacer_dc_production_v01/compound110__candidate_no_probe/replica_02/trajectory.dcd",
+    "size_bytes": 1366336276,
+    "sha256": "1751a02262b2d4503860e4de1c5d918d946514f0de7b1f4bb30fffc3bbc7aa87"
+  },
+  "state_csv": {
+    "path": "project/results/pacer_dc_production_v01/compound110__candidate_no_probe/replica_02/state.csv",
+    "size_bytes": 65714,
+    "sha256": "535745ce32a3e3acf7cda5f012f3aafa1056fde3aa1079170c8812619060ccfe"
+  },
+  "checkpoint": {
+    "path": "project/results/pacer_dc_production_v01/compound110__candidate_no_probe/replica_02/checkpoint.chk",
+    "size_bytes": 33930096,
+    "sha256": "58f0c781679c9f83cc615de1be6337b610876ad2e58fa41fd671bbf7938fd3c7"
+  },
+  "latest_state": {
+    "path": "project/results/pacer_dc_production_v01/compound110__candidate_no_probe/replica_02/latest_state.xml",
+    "size_bytes": 37695840,
+    "sha256": "51dfffc0649be92ebae547704d646ee816a8cb9b9af3fcc204ef3ff640fa9a7e"
+  },
+  "progress": {
+    "path": "project/results/pacer_dc_production_v01/compound110__candidate_no_probe/replica_02/progress.json",
+    "size_bytes": 529,
+    "sha256": "5e91f8d156919f95753bf1136cb466428248feab68a2f8d279107d6d986bc802"
+  },
+  "analysis": {
+    "path": "project/results/pacer_dc_qc_v01/compound110__candidate_no_probe_replica_02_analysis_v01.json",
+    "size_bytes": 8001,
+    "sha256": "2773bbbf1e25f437125c75c72256178d2ccff55e912ac73cd6366ef03b0caad6"
+  }
+}

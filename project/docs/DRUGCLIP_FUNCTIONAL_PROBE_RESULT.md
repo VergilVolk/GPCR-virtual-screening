@@ -61,3 +61,9 @@ python project/scripts/train_drugclip_m4_functional_probe.py \
 | series holdout | 0.404 | 0.515 | 0.521 | 0.624 |
 
 数值为三个固定种子的平均值。Triplet 在 source holdout 上未提高 AUC，但将 MCC 从接近 0 提高到约 0.15；在更严格的 series holdout 上，它将 AUC 从 0.404 提高到约 0.52，但仍明显低于 2D baseline。由此可得：困难负样本与来源去偏方向有信号，但静态 DrugCLIP 表征仍不足以跨系列预测 PAM 功能，不能据此启动大规模 backbone 微调或宣称性能提升。下一步应加入 PACER-DC 四上下文动态差分，而不是继续调静态 adapter 超参数。
+
+## 配对不确定性与外部压力测试（新增）
+
+三个训练种子做概率集成后，source holdout BCE adapter AUC 为 0.667，既有 RandomForest 2D baseline 为 0.630，表面差值为 +0.037。但配对分子 bootstrap 的差值 95% CI 为 −0.028–0.101，按来源成簇 bootstrap 为 −0.063–0.184，均跨零。因此只能报告“存在正向趋势，当前证据不足以确认优于 2D”。
+
+另在 Monash LY2033298 外部药理数据上进行探索性测试：排除1个历史重叠后共15个分子（12 active、3 inactive）。零样本 DrugCLIP AUC 为0.750，BCE adapter 为0.861，Triplet与Triplet+domain均为0.944。该结果支持Triplet能提取一定功能边界，但该数据仅有3个inactive、属于单一窄化学系列，并且既有2D模型在同一集合上的描述性AUC已达1.000。因此外部结果不能证明SOTA，也不能确认候选物为PAM。

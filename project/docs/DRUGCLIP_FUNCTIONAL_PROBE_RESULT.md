@@ -46,3 +46,18 @@ python project/scripts/train_drugclip_m4_functional_probe.py \
 ```
 
 证据等级：`retrospective_frozen_drugclip_functional_probe`。该实验不是湿实验 PAM 验证，也不是 DrugCLIP backbone 全量微调。
+
+## Source-aware triplet adapter（新增）
+
+在同一冻结 embedding 上进一步加入低秩 residual adapter，并按预先固定的三种训练方式进行三种子比较：
+
+1. `BCE`：仅功能分类损失；
+2. `triplet`：阳性对来自不同来源，负样本优先选择 DrugCLIP 结合分数高的实验 inactive；
+3. `triplet_domain`：在 triplet 基础上加入来源对抗去偏。
+
+| 外推协议 | BCE AUC | Triplet AUC | Triplet + domain AUC | 既有最佳 2D baseline |
+|---|---:|---:|---:|---:|
+| source holdout | 0.661 | 0.660 | 0.656 | 0.630 |
+| series holdout | 0.404 | 0.515 | 0.521 | 0.624 |
+
+数值为三个固定种子的平均值。Triplet 在 source holdout 上未提高 AUC，但将 MCC 从接近 0 提高到约 0.15；在更严格的 series holdout 上，它将 AUC 从 0.404 提高到约 0.52，但仍明显低于 2D baseline。由此可得：困难负样本与来源去偏方向有信号，但静态 DrugCLIP 表征仍不足以跨系列预测 PAM 功能，不能据此启动大规模 backbone 微调或宣称性能提升。下一步应加入 PACER-DC 四上下文动态差分，而不是继续调静态 adapter 超参数。

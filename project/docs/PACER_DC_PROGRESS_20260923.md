@@ -124,3 +124,28 @@ apo: replica 1 = 1 ns; replicas 2 and 3 = 5 ns + preliminary QC.
 
 ### Limitations
 Independent replicas share a common starting structure. Five nanoseconds does not establish conformational convergence. Simulation E-chain residue indices are not original CHRM4 sequence indices. Large DCD files, checkpoints and membrane systems remain local, not on GitHub. TRAINING_GATE = CLOSED.
+
+## 2026-09-25 Progress Update
+
+### Completed milestones
+- compound110 R2 and R3: all four contexts completed 5 ns production, preliminary QC and provenance audit.
+- R3 candidate-only QC archived in commit a189942.
+- Extracted and verified 40 raw trajectory windows: 2 replicas x 5 windows x 4 contexts.
+- All 90 transferred raw, topology and manifest files passed WSL/Windows SHA256 checks.
+- R3 apo extraction uses the corrected recovery trajectory with verified provenance.
+- Completed 40 frozen OneProt-MD embeddings (1024 dimensions) and 10 matched dPAM vectors.
+- Added reusable Windows embedding batch runner and an apo trajectory override to the extractor.
+
+### dPAM stability results
+- Ten complete differential units and 25 differential pair comparisons.
+- Matched R2/R3 window cosine similarities: 0.502745, 0.712310, -0.353644, 0.262047, 0.085430.
+- R2 mean dPAM L2: 0.223579; R3 mean dPAM L2: 0.259751.
+- Mean dPAM cross-replica cosine: 0.339248; L2 distance: 0.279383.
+- Cancellation ratios: R2 0.353899; R3 0.399608.
+- Window-level and cross-replica directional stability have not been established.
+
+### Current decision
+- TRAINING_GATE = CLOSED. No classifier training or fine-tuning.
+- Descriptive results do not establish PAM classification or biological mechanism.
+- Pause further computation pending the afternoon project meeting.
+- Next scientific steps will be decided after discussion.

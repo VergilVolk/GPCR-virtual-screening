@@ -1,0 +1,79 @@
+{
+  "candidate": "compound110",
+  "replicas": [
+    2,
+    3
+  ],
+  "windows": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "units_verified": [
+    {
+      "replica": 2,
+      "window": 0,
+      "dpam_l2": 0.8631587624549866,
+      "checkpoint_sha256": "a79bce2e8f91d9cd59840965e145a119c3202e30516e1e0f69452dee6f211997"
+    },
+    {
+      "replica": 2,
+      "window": 1,
+      "dpam_l2": 0.6561586856842041,
+      "checkpoint_sha256": "a79bce2e8f91d9cd59840965e145a119c3202e30516e1e0f69452dee6f211997"
+    },
+    {
+      "replica": 2,
+      "window": 2,
+      "dpam_l2": 0.592905580997467,
+      "checkpoint_sha256": "a79bce2e8f91d9cd59840965e145a119c3202e30516e1e0f69452dee6f211997"
+    },
+    {
+      "replica": 2,
+      "window": 3,
+      "dpam_l2": 0.3886009752750397,
+      "checkpoint_sha256": "a79bce2e8f91d9cd59840965e145a119c3202e30516e1e0f69452dee6f211997"
+    },
+    {
+      "replica": 2,
+      "window": 4,
+      "dpam_l2": 0.657973051071167,
+      "checkpoint_sha256": "a79bce2e8f91d9cd59840965e145a119c3202e30516e1e0f69452dee6f211997"
+    },
+    {
+      "replica": 3,
+      "window": 0,
+      "dpam_l2": 0.7702924609184265,
+      "checkpoint_sha256": "a79bce2e8f91d9cd59840965e145a119c3202e30516e1e0f69452dee6f211997"
+    },
+    {
+      "replica": 3,
+      "window": 1,
+      "dpam_l2": 0.7201981544494629,
+      "checkpoint_sha256": "a79bce2e8f91d9cd59840965e145a119c3202e30516e1e0f69452dee6f211997"
+    },
+    {
+      "replica": 3,
+      "window": 2,
+      "dpam_l2": 0.43286725878715515,
+      "checkpoint_sha256": "a79bce2e8f91d9cd59840965e145a119c3202e30516e1e0f69452dee6f211997"
+    },
+    {
+      "replica": 3,
+      "window": 3,
+      "dpam_l2": 0.7794398665428162,
+      "checkpoint_sha256": "a79bce2e8f91d9cd59840965e145a119c3202e30516e1e0f69452dee6f211997"
+    },
+    {
+      "replica": 3,
+      "window": 4,
+      "dpam_l2": 0.5472779273986816,
+      "checkpoint_sha256": "a79bce2e8f91d9cd59840965e145a119c3202e30516e1e0f69452dee6f211997"
+    }
+  ],
+  "checkpoint_sha256": "a79bce2e8f91d9cd59840965e145a119c3202e30516e1e0f69452dee6f211997",
+  "generated_utc": "2026-09-25T05:11:09.729212+00:00",
+  "note": "Descriptive frozen-encoder output. Does not establish biological mechanism or training eligibility."
+}

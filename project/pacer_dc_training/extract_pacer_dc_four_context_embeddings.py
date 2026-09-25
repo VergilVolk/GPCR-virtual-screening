@@ -155,6 +155,10 @@ def base_row(args, context: str, start: int, end: int) -> dict:
     ref = root / "project/results/pacer_dc_membrane_reference_v01" / system
     prod = root / "project/results/pacer_dc_production_v01" / system / f"replica_{args.replica:02d}"
     topology, trajectory = ref / "minimized.pdb", prod / "trajectory.dcd"
+    if args.trajectory_override is not None:
+        if args.contexts != ["apo"]:
+            raise ValueError("--trajectory-override requires --contexts apo")
+        trajectory = args.trajectory_override
     return {f: "" for f in ROW_FIELDS} | {
         "candidate_id": args.candidate, "replica_id": args.replica,
         "window_id": args.window, "start_frame": start, "end_frame": end,
@@ -464,6 +468,11 @@ def main() -> None:
                    help="comma-separated subset, e.g. apo for a single-context smoke")
     p.add_argument("--work-root", type=Path, default=Path("."),
                    help="repository root holding project/results (the WSL checkout)")
+    p.add_argument(
+        "--trajectory-override",
+        type=Path, default=None,
+        help="Explicit DCD path for single-context apo extraction"
+    )
     p.add_argument("--oneprot-root", type=Path, default=Path("project/tools/oneprot-embeddings"))
     p.add_argument("--oneprot-pkg", type=Path, default=Path("project/pacer_dc_training/oneprot_g0_audit"))
     p.add_argument("--residue-constants", type=Path, default=None,

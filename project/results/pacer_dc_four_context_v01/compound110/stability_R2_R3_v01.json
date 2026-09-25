@@ -1,0 +1,1497 @@
+{
+  "units": [
+    "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_000",
+    "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_001",
+    "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_002",
+    "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_003",
+    "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_004",
+    "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_000",
+    "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_001",
+    "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_002",
+    "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_003",
+    "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_004"
+  ],
+  "context_embeddings": {
+    "compound110/r2/w0000/candidate_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_000",
+      "context": "candidate_probe",
+      "replica": "2",
+      "start_frame": "0",
+      "candidate": "compound110",
+      "embedding_norm": 1.0000001192092896,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r2/w0000/candidate_no_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_000",
+      "context": "candidate_no_probe",
+      "replica": "2",
+      "start_frame": "0",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999999403953552,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r2/w0000/probe_only": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_000",
+      "context": "probe_only",
+      "replica": "2",
+      "start_frame": "0",
+      "candidate": "compound110",
+      "embedding_norm": 1.0000003576278687,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r2/w0000/apo": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_000",
+      "context": "apo",
+      "replica": "2",
+      "start_frame": "0",
+      "candidate": "compound110",
+      "embedding_norm": 1.000000238418579,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r2/w0100/candidate_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_001",
+      "context": "candidate_probe",
+      "replica": "2",
+      "start_frame": "100",
+      "candidate": "compound110",
+      "embedding_norm": 1.0000001192092896,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r2/w0100/candidate_no_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_001",
+      "context": "candidate_no_probe",
+      "replica": "2",
+      "start_frame": "100",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999996423721313,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r2/w0100/probe_only": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_001",
+      "context": "probe_only",
+      "replica": "2",
+      "start_frame": "100",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999999403953552,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r2/w0100/apo": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_001",
+      "context": "apo",
+      "replica": "2",
+      "start_frame": "100",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999998807907104,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r2/w0200/candidate_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_002",
+      "context": "candidate_probe",
+      "replica": "2",
+      "start_frame": "200",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999999403953552,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r2/w0200/candidate_no_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_002",
+      "context": "candidate_no_probe",
+      "replica": "2",
+      "start_frame": "200",
+      "candidate": "compound110",
+      "embedding_norm": 1.0000001192092896,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r2/w0200/probe_only": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_002",
+      "context": "probe_only",
+      "replica": "2",
+      "start_frame": "200",
+      "candidate": "compound110",
+      "embedding_norm": 1.000000238418579,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r2/w0200/apo": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_002",
+      "context": "apo",
+      "replica": "2",
+      "start_frame": "200",
+      "candidate": "compound110",
+      "embedding_norm": 1.0000001192092896,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r2/w0300/candidate_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_003",
+      "context": "candidate_probe",
+      "replica": "2",
+      "start_frame": "300",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999997615814209,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r2/w0300/candidate_no_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_003",
+      "context": "candidate_no_probe",
+      "replica": "2",
+      "start_frame": "300",
+      "candidate": "compound110",
+      "embedding_norm": 1.0000001192092896,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r2/w0300/probe_only": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_003",
+      "context": "probe_only",
+      "replica": "2",
+      "start_frame": "300",
+      "candidate": "compound110",
+      "embedding_norm": 1.0000003576278687,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r2/w0300/apo": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_003",
+      "context": "apo",
+      "replica": "2",
+      "start_frame": "300",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999997019767761,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r2/w0400/candidate_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_004",
+      "context": "candidate_probe",
+      "replica": "2",
+      "start_frame": "400",
+      "candidate": "compound110",
+      "embedding_norm": 1.0000001192092896,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r2/w0400/candidate_no_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_004",
+      "context": "candidate_no_probe",
+      "replica": "2",
+      "start_frame": "400",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999998807907104,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r2/w0400/probe_only": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_004",
+      "context": "probe_only",
+      "replica": "2",
+      "start_frame": "400",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999999403953552,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r2/w0400/apo": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_004",
+      "context": "apo",
+      "replica": "2",
+      "start_frame": "400",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999996423721313,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0000/candidate_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_000",
+      "context": "candidate_probe",
+      "replica": "3",
+      "start_frame": "0",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999999403953552,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0000/candidate_no_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_000",
+      "context": "candidate_no_probe",
+      "replica": "3",
+      "start_frame": "0",
+      "candidate": "compound110",
+      "embedding_norm": 1.000000238418579,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0000/probe_only": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_000",
+      "context": "probe_only",
+      "replica": "3",
+      "start_frame": "0",
+      "candidate": "compound110",
+      "embedding_norm": 1.0000001192092896,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0000/apo": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_000",
+      "context": "apo",
+      "replica": "3",
+      "start_frame": "0",
+      "candidate": "compound110",
+      "embedding_norm": 1.0000001192092896,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0100/candidate_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_001",
+      "context": "candidate_probe",
+      "replica": "3",
+      "start_frame": "100",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999999403953552,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0100/candidate_no_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_001",
+      "context": "candidate_no_probe",
+      "replica": "3",
+      "start_frame": "100",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999997019767761,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0100/probe_only": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_001",
+      "context": "probe_only",
+      "replica": "3",
+      "start_frame": "100",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999998211860657,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0100/apo": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_001",
+      "context": "apo",
+      "replica": "3",
+      "start_frame": "100",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999999403953552,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0200/candidate_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_002",
+      "context": "candidate_probe",
+      "replica": "3",
+      "start_frame": "200",
+      "candidate": "compound110",
+      "embedding_norm": 1.0000004768371582,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0200/candidate_no_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_002",
+      "context": "candidate_no_probe",
+      "replica": "3",
+      "start_frame": "200",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999996423721313,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0200/probe_only": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_002",
+      "context": "probe_only",
+      "replica": "3",
+      "start_frame": "200",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999997615814209,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0200/apo": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_002",
+      "context": "apo",
+      "replica": "3",
+      "start_frame": "200",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999998211860657,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0300/candidate_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_003",
+      "context": "candidate_probe",
+      "replica": "3",
+      "start_frame": "300",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999998211860657,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0300/candidate_no_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_003",
+      "context": "candidate_no_probe",
+      "replica": "3",
+      "start_frame": "300",
+      "candidate": "compound110",
+      "embedding_norm": 1.0,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0300/probe_only": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_003",
+      "context": "probe_only",
+      "replica": "3",
+      "start_frame": "300",
+      "candidate": "compound110",
+      "embedding_norm": 0.9999997615814209,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0300/apo": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_003",
+      "context": "apo",
+      "replica": "3",
+      "start_frame": "300",
+      "candidate": "compound110",
+      "embedding_norm": 1.0000001192092896,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0400/candidate_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_004",
+      "context": "candidate_probe",
+      "replica": "3",
+      "start_frame": "400",
+      "candidate": "compound110",
+      "embedding_norm": 1.0000003576278687,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0400/candidate_no_probe": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_004",
+      "context": "candidate_no_probe",
+      "replica": "3",
+      "start_frame": "400",
+      "candidate": "compound110",
+      "embedding_norm": 1.0,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0400/probe_only": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_004",
+      "context": "probe_only",
+      "replica": "3",
+      "start_frame": "400",
+      "candidate": "compound110",
+      "embedding_norm": 1.0000004768371582,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    },
+    "compound110/r3/w0400/apo": {
+      "unit": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_004",
+      "context": "apo",
+      "replica": "3",
+      "start_frame": "400",
+      "candidate": "compound110",
+      "embedding_norm": 1.0,
+      "finite": true,
+      "nonzero": 1024,
+      "embedding_dim": 1024
+    }
+  },
+  "pairs": [
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r2/w0000/apo",
+      "b": "compound110/r2/w0100/apo",
+      "one_prot_cosine": 0.785896,
+      "one_prot_l2": 0.654376
+    },
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r2/w0000/apo",
+      "b": "compound110/r2/w0200/apo",
+      "one_prot_cosine": 0.488761,
+      "one_prot_l2": 1.011176
+    },
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r2/w0000/apo",
+      "b": "compound110/r2/w0300/apo",
+      "one_prot_cosine": 0.405873,
+      "one_prot_l2": 1.090071
+    },
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r2/w0000/apo",
+      "b": "compound110/r2/w0400/apo",
+      "one_prot_cosine": 0.478617,
+      "one_prot_l2": 1.02116
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "apo",
+      "a": "compound110/r2/w0000/apo",
+      "b": "compound110/r3/w0000/apo",
+      "one_prot_cosine": 0.862831,
+      "one_prot_l2": 0.523771
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r2/w0000/candidate_no_probe",
+      "b": "compound110/r2/w0100/candidate_no_probe",
+      "one_prot_cosine": 0.592733,
+      "one_prot_l2": 0.902515
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r2/w0000/candidate_no_probe",
+      "b": "compound110/r2/w0200/candidate_no_probe",
+      "one_prot_cosine": 0.719446,
+      "one_prot_l2": 0.749072
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r2/w0000/candidate_no_probe",
+      "b": "compound110/r2/w0300/candidate_no_probe",
+      "one_prot_cosine": 0.632043,
+      "one_prot_l2": 0.857855
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r2/w0000/candidate_no_probe",
+      "b": "compound110/r2/w0400/candidate_no_probe",
+      "one_prot_cosine": 0.446254,
+      "one_prot_l2": 1.052375
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "candidate_no_probe",
+      "a": "compound110/r2/w0000/candidate_no_probe",
+      "b": "compound110/r3/w0000/candidate_no_probe",
+      "one_prot_cosine": 0.935397,
+      "one_prot_l2": 0.359451
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r2/w0000/candidate_probe",
+      "b": "compound110/r2/w0100/candidate_probe",
+      "one_prot_cosine": 0.778858,
+      "one_prot_l2": 0.665043
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r2/w0000/candidate_probe",
+      "b": "compound110/r2/w0200/candidate_probe",
+      "one_prot_cosine": 0.810697,
+      "one_prot_l2": 0.61531
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r2/w0000/candidate_probe",
+      "b": "compound110/r2/w0300/candidate_probe",
+      "one_prot_cosine": 0.902615,
+      "one_prot_l2": 0.441327
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r2/w0000/candidate_probe",
+      "b": "compound110/r2/w0400/candidate_probe",
+      "one_prot_cosine": 0.646212,
+      "one_prot_l2": 0.841174
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "candidate_probe",
+      "a": "compound110/r2/w0000/candidate_probe",
+      "b": "compound110/r3/w0000/candidate_probe",
+      "one_prot_cosine": 0.895527,
+      "one_prot_l2": 0.457107
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r2/w0000/probe_only",
+      "b": "compound110/r2/w0100/probe_only",
+      "one_prot_cosine": 0.468206,
+      "one_prot_l2": 1.031304
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r2/w0000/probe_only",
+      "b": "compound110/r2/w0200/probe_only",
+      "one_prot_cosine": 0.506771,
+      "one_prot_l2": 0.993205
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r2/w0000/probe_only",
+      "b": "compound110/r2/w0300/probe_only",
+      "one_prot_cosine": 0.666855,
+      "one_prot_l2": 0.816266
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r2/w0000/probe_only",
+      "b": "compound110/r2/w0400/probe_only",
+      "one_prot_cosine": 0.538296,
+      "one_prot_l2": 0.96094
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "probe_only",
+      "a": "compound110/r2/w0000/probe_only",
+      "b": "compound110/r3/w0000/probe_only",
+      "one_prot_cosine": 0.847766,
+      "one_prot_l2": 0.551786
+    },
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r2/w0100/apo",
+      "b": "compound110/r2/w0200/apo",
+      "one_prot_cosine": 0.80125,
+      "one_prot_l2": 0.630475
+    },
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r2/w0100/apo",
+      "b": "compound110/r2/w0300/apo",
+      "one_prot_cosine": 0.689625,
+      "one_prot_l2": 0.787877
+    },
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r2/w0100/apo",
+      "b": "compound110/r2/w0400/apo",
+      "one_prot_cosine": 0.779803,
+      "one_prot_l2": 0.663622
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "apo",
+      "a": "compound110/r2/w0100/apo",
+      "b": "compound110/r3/w0100/apo",
+      "one_prot_cosine": 0.725392,
+      "one_prot_l2": 0.741091
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r2/w0100/candidate_no_probe",
+      "b": "compound110/r2/w0200/candidate_no_probe",
+      "one_prot_cosine": 0.950607,
+      "one_prot_l2": 0.314304
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r2/w0100/candidate_no_probe",
+      "b": "compound110/r2/w0300/candidate_no_probe",
+      "one_prot_cosine": 0.93846,
+      "one_prot_l2": 0.350828
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r2/w0100/candidate_no_probe",
+      "b": "compound110/r2/w0400/candidate_no_probe",
+      "one_prot_cosine": 0.859612,
+      "one_prot_l2": 0.529884
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "candidate_no_probe",
+      "a": "compound110/r2/w0100/candidate_no_probe",
+      "b": "compound110/r3/w0100/candidate_no_probe",
+      "one_prot_cosine": 0.932384,
+      "one_prot_l2": 0.367739
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r2/w0100/candidate_probe",
+      "b": "compound110/r2/w0200/candidate_probe",
+      "one_prot_cosine": 0.878731,
+      "one_prot_l2": 0.492482
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r2/w0100/candidate_probe",
+      "b": "compound110/r2/w0300/candidate_probe",
+      "one_prot_cosine": 0.731211,
+      "one_prot_l2": 0.733197
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r2/w0100/candidate_probe",
+      "b": "compound110/r2/w0400/candidate_probe",
+      "one_prot_cosine": 0.920338,
+      "one_prot_l2": 0.399153
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "candidate_probe",
+      "a": "compound110/r2/w0100/candidate_probe",
+      "b": "compound110/r3/w0100/candidate_probe",
+      "one_prot_cosine": 0.915691,
+      "one_prot_l2": 0.410632
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r2/w0100/probe_only",
+      "b": "compound110/r2/w0200/probe_only",
+      "one_prot_cosine": 0.738773,
+      "one_prot_l2": 0.72281
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r2/w0100/probe_only",
+      "b": "compound110/r2/w0300/probe_only",
+      "one_prot_cosine": 0.652398,
+      "one_prot_l2": 0.833789
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r2/w0100/probe_only",
+      "b": "compound110/r2/w0400/probe_only",
+      "one_prot_cosine": 0.929329,
+      "one_prot_l2": 0.375955
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "probe_only",
+      "a": "compound110/r2/w0100/probe_only",
+      "b": "compound110/r3/w0100/probe_only",
+      "one_prot_cosine": 0.91811,
+      "one_prot_l2": 0.404697
+    },
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r2/w0200/apo",
+      "b": "compound110/r2/w0300/apo",
+      "one_prot_cosine": 0.832531,
+      "one_prot_l2": 0.578738
+    },
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r2/w0200/apo",
+      "b": "compound110/r2/w0400/apo",
+      "one_prot_cosine": 0.907549,
+      "one_prot_l2": 0.430004
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "apo",
+      "a": "compound110/r2/w0200/apo",
+      "b": "compound110/r3/w0200/apo",
+      "one_prot_cosine": 0.863427,
+      "one_prot_l2": 0.522635
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r2/w0200/candidate_no_probe",
+      "b": "compound110/r2/w0300/candidate_no_probe",
+      "one_prot_cosine": 0.927237,
+      "one_prot_l2": 0.381476
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r2/w0200/candidate_no_probe",
+      "b": "compound110/r2/w0400/candidate_no_probe",
+      "one_prot_cosine": 0.860682,
+      "one_prot_l2": 0.527857
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "candidate_no_probe",
+      "a": "compound110/r2/w0200/candidate_no_probe",
+      "b": "compound110/r3/w0200/candidate_no_probe",
+      "one_prot_cosine": 0.919099,
+      "one_prot_l2": 0.402245
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r2/w0200/candidate_probe",
+      "b": "compound110/r2/w0300/candidate_probe",
+      "one_prot_cosine": 0.725907,
+      "one_prot_l2": 0.740396
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r2/w0200/candidate_probe",
+      "b": "compound110/r2/w0400/candidate_probe",
+      "one_prot_cosine": 0.768453,
+      "one_prot_l2": 0.680512
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "candidate_probe",
+      "a": "compound110/r2/w0200/candidate_probe",
+      "b": "compound110/r3/w0200/candidate_probe",
+      "one_prot_cosine": 0.832024,
+      "one_prot_l2": 0.579614
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r2/w0200/probe_only",
+      "b": "compound110/r2/w0300/probe_only",
+      "one_prot_cosine": 0.83116,
+      "one_prot_l2": 0.581102
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r2/w0200/probe_only",
+      "b": "compound110/r2/w0400/probe_only",
+      "one_prot_cosine": 0.82831,
+      "one_prot_l2": 0.585986
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "probe_only",
+      "a": "compound110/r2/w0200/probe_only",
+      "b": "compound110/r3/w0200/probe_only",
+      "one_prot_cosine": 0.86839,
+      "one_prot_l2": 0.513049
+    },
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r2/w0300/apo",
+      "b": "compound110/r2/w0400/apo",
+      "one_prot_cosine": 0.94443,
+      "one_prot_l2": 0.333378
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "apo",
+      "a": "compound110/r2/w0300/apo",
+      "b": "compound110/r3/w0300/apo",
+      "one_prot_cosine": 0.917828,
+      "one_prot_l2": 0.405396
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r2/w0300/candidate_no_probe",
+      "b": "compound110/r2/w0400/candidate_no_probe",
+      "one_prot_cosine": 0.754498,
+      "one_prot_l2": 0.700715
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "candidate_no_probe",
+      "a": "compound110/r2/w0300/candidate_no_probe",
+      "b": "compound110/r3/w0300/candidate_no_probe",
+      "one_prot_cosine": 0.830112,
+      "one_prot_l2": 0.582903
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r2/w0300/candidate_probe",
+      "b": "compound110/r2/w0400/candidate_probe",
+      "one_prot_cosine": 0.641059,
+      "one_prot_l2": 0.847279
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "candidate_probe",
+      "a": "compound110/r2/w0300/candidate_probe",
+      "b": "compound110/r3/w0300/candidate_probe",
+      "one_prot_cosine": 0.886168,
+      "one_prot_l2": 0.477142
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r2/w0300/probe_only",
+      "b": "compound110/r2/w0400/probe_only",
+      "one_prot_cosine": 0.778493,
+      "one_prot_l2": 0.665593
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "probe_only",
+      "a": "compound110/r2/w0300/probe_only",
+      "b": "compound110/r3/w0300/probe_only",
+      "one_prot_cosine": 0.614202,
+      "one_prot_l2": 0.878406
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "apo",
+      "a": "compound110/r2/w0400/apo",
+      "b": "compound110/r3/w0400/apo",
+      "one_prot_cosine": 0.818882,
+      "one_prot_l2": 0.601861
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "candidate_no_probe",
+      "a": "compound110/r2/w0400/candidate_no_probe",
+      "b": "compound110/r3/w0400/candidate_no_probe",
+      "one_prot_cosine": 0.707426,
+      "one_prot_l2": 0.764949
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "candidate_probe",
+      "a": "compound110/r2/w0400/candidate_probe",
+      "b": "compound110/r3/w0400/candidate_probe",
+      "one_prot_cosine": 0.882035,
+      "one_prot_l2": 0.485726
+    },
+    {
+      "kind": "replica-to-replica",
+      "context": "probe_only",
+      "a": "compound110/r2/w0400/probe_only",
+      "b": "compound110/r3/w0400/probe_only",
+      "one_prot_cosine": 0.785357,
+      "one_prot_l2": 0.655198
+    },
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r3/w0000/apo",
+      "b": "compound110/r3/w0100/apo",
+      "one_prot_cosine": 0.645137,
+      "one_prot_l2": 0.842453
+    },
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r3/w0000/apo",
+      "b": "compound110/r3/w0200/apo",
+      "one_prot_cosine": 0.693287,
+      "one_prot_l2": 0.783215
+    },
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r3/w0000/apo",
+      "b": "compound110/r3/w0300/apo",
+      "one_prot_cosine": 0.598689,
+      "one_prot_l2": 0.895892
+    },
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r3/w0000/apo",
+      "b": "compound110/r3/w0400/apo",
+      "one_prot_cosine": 0.724224,
+      "one_prot_l2": 0.742666
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r3/w0000/candidate_no_probe",
+      "b": "compound110/r3/w0100/candidate_no_probe",
+      "one_prot_cosine": 0.595309,
+      "one_prot_l2": 0.899656
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r3/w0000/candidate_no_probe",
+      "b": "compound110/r3/w0200/candidate_no_probe",
+      "one_prot_cosine": 0.62722,
+      "one_prot_l2": 0.863458
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r3/w0000/candidate_no_probe",
+      "b": "compound110/r3/w0300/candidate_no_probe",
+      "one_prot_cosine": 0.385857,
+      "one_prot_l2": 1.10828
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r3/w0000/candidate_no_probe",
+      "b": "compound110/r3/w0400/candidate_no_probe",
+      "one_prot_cosine": 0.770747,
+      "one_prot_l2": 0.677131
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r3/w0000/candidate_probe",
+      "b": "compound110/r3/w0100/candidate_probe",
+      "one_prot_cosine": 0.582422,
+      "one_prot_l2": 0.913868
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r3/w0000/candidate_probe",
+      "b": "compound110/r3/w0200/candidate_probe",
+      "one_prot_cosine": 0.546371,
+      "one_prot_l2": 0.952501
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r3/w0000/candidate_probe",
+      "b": "compound110/r3/w0300/candidate_probe",
+      "one_prot_cosine": 0.78831,
+      "one_prot_l2": 0.650677
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r3/w0000/candidate_probe",
+      "b": "compound110/r3/w0400/candidate_probe",
+      "one_prot_cosine": 0.71872,
+      "one_prot_l2": 0.75004
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r3/w0000/probe_only",
+      "b": "compound110/r3/w0100/probe_only",
+      "one_prot_cosine": 0.510209,
+      "one_prot_l2": 0.989738
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r3/w0000/probe_only",
+      "b": "compound110/r3/w0200/probe_only",
+      "one_prot_cosine": 0.535417,
+      "one_prot_l2": 0.963932
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r3/w0000/probe_only",
+      "b": "compound110/r3/w0300/probe_only",
+      "one_prot_cosine": 0.429061,
+      "one_prot_l2": 1.068587
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r3/w0000/probe_only",
+      "b": "compound110/r3/w0400/probe_only",
+      "one_prot_cosine": 0.636291,
+      "one_prot_l2": 0.852888
+    },
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r3/w0100/apo",
+      "b": "compound110/r3/w0200/apo",
+      "one_prot_cosine": 0.830735,
+      "one_prot_l2": 0.581834
+    },
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r3/w0100/apo",
+      "b": "compound110/r3/w0300/apo",
+      "one_prot_cosine": 0.929079,
+      "one_prot_l2": 0.376619
+    },
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r3/w0100/apo",
+      "b": "compound110/r3/w0400/apo",
+      "one_prot_cosine": 0.858533,
+      "one_prot_l2": 0.531916
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r3/w0100/candidate_no_probe",
+      "b": "compound110/r3/w0200/candidate_no_probe",
+      "one_prot_cosine": 0.906685,
+      "one_prot_l2": 0.432009
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r3/w0100/candidate_no_probe",
+      "b": "compound110/r3/w0300/candidate_no_probe",
+      "one_prot_cosine": 0.850117,
+      "one_prot_l2": 0.54751
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r3/w0100/candidate_no_probe",
+      "b": "compound110/r3/w0400/candidate_no_probe",
+      "one_prot_cosine": 0.767655,
+      "one_prot_l2": 0.681682
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r3/w0100/candidate_probe",
+      "b": "compound110/r3/w0200/candidate_probe",
+      "one_prot_cosine": 0.858101,
+      "one_prot_l2": 0.532725
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r3/w0100/candidate_probe",
+      "b": "compound110/r3/w0300/candidate_probe",
+      "one_prot_cosine": 0.855914,
+      "one_prot_l2": 0.536818
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r3/w0100/candidate_probe",
+      "b": "compound110/r3/w0400/candidate_probe",
+      "one_prot_cosine": 0.911527,
+      "one_prot_l2": 0.42065
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r3/w0100/probe_only",
+      "b": "compound110/r3/w0200/probe_only",
+      "one_prot_cosine": 0.834269,
+      "one_prot_l2": 0.575728
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r3/w0100/probe_only",
+      "b": "compound110/r3/w0300/probe_only",
+      "one_prot_cosine": 0.654505,
+      "one_prot_l2": 0.831259
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r3/w0100/probe_only",
+      "b": "compound110/r3/w0400/probe_only",
+      "one_prot_cosine": 0.810332,
+      "one_prot_l2": 0.615901
+    },
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r3/w0200/apo",
+      "b": "compound110/r3/w0300/apo",
+      "one_prot_cosine": 0.869871,
+      "one_prot_l2": 0.510156
+    },
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r3/w0200/apo",
+      "b": "compound110/r3/w0400/apo",
+      "one_prot_cosine": 0.962854,
+      "one_prot_l2": 0.272566
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r3/w0200/candidate_no_probe",
+      "b": "compound110/r3/w0300/candidate_no_probe",
+      "one_prot_cosine": 0.85331,
+      "one_prot_l2": 0.541645
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r3/w0200/candidate_no_probe",
+      "b": "compound110/r3/w0400/candidate_no_probe",
+      "one_prot_cosine": 0.825159,
+      "one_prot_l2": 0.591339
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r3/w0200/candidate_probe",
+      "b": "compound110/r3/w0300/candidate_probe",
+      "one_prot_cosine": 0.863511,
+      "one_prot_l2": 0.522472
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r3/w0200/candidate_probe",
+      "b": "compound110/r3/w0400/candidate_probe",
+      "one_prot_cosine": 0.916301,
+      "one_prot_l2": 0.40914
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r3/w0200/probe_only",
+      "b": "compound110/r3/w0300/probe_only",
+      "one_prot_cosine": 0.780837,
+      "one_prot_l2": 0.662062
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r3/w0200/probe_only",
+      "b": "compound110/r3/w0400/probe_only",
+      "one_prot_cosine": 0.92103,
+      "one_prot_l2": 0.397415
+    },
+    {
+      "kind": "window-to-window",
+      "context": "apo",
+      "a": "compound110/r3/w0300/apo",
+      "b": "compound110/r3/w0400/apo",
+      "one_prot_cosine": 0.863303,
+      "one_prot_l2": 0.52287
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_no_probe",
+      "a": "compound110/r3/w0300/candidate_no_probe",
+      "b": "compound110/r3/w0400/candidate_no_probe",
+      "one_prot_cosine": 0.704689,
+      "one_prot_l2": 0.768519
+    },
+    {
+      "kind": "window-to-window",
+      "context": "candidate_probe",
+      "a": "compound110/r3/w0300/candidate_probe",
+      "b": "compound110/r3/w0400/candidate_probe",
+      "one_prot_cosine": 0.943317,
+      "one_prot_l2": 0.336699
+    },
+    {
+      "kind": "window-to-window",
+      "context": "probe_only",
+      "a": "compound110/r3/w0300/probe_only",
+      "b": "compound110/r3/w0400/probe_only",
+      "one_prot_cosine": 0.655538,
+      "one_prot_l2": 0.830015
+    }
+  ],
+  "four_context_differential_stability": {
+    "computable": true,
+    "n_complete_units": 10,
+    "pairs": [
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r2/w0000",
+        "b": "compound110/r2/w0100",
+        "dPAM_cosine": 0.032039,
+        "dAGO_cosine": 0.283517,
+        "dPAM_l2": 1.067378,
+        "dAGO_l2": 0.670282
+      },
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r2/w0000",
+        "b": "compound110/r2/w0200",
+        "dPAM_cosine": 0.169133,
+        "dAGO_cosine": 0.073101,
+        "dPAM_l2": 0.960971,
+        "dAGO_l2": 0.773739
+      },
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r2/w0000",
+        "b": "compound110/r2/w0300",
+        "dPAM_cosine": -0.427625,
+        "dAGO_cosine": -0.170819,
+        "dPAM_l2": 1.087624,
+        "dAGO_l2": 1.141725
+      },
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r2/w0000",
+        "b": "compound110/r2/w0400",
+        "dPAM_cosine": -0.089012,
+        "dAGO_cosine": -0.297003,
+        "dPAM_l2": 1.130964,
+        "dAGO_l2": 0.830384
+      },
+      {
+        "kind": "replica-to-replica",
+        "a": "compound110/r2/w0000",
+        "b": "compound110/r3/w0000",
+        "dPAM_cosine": 0.502745,
+        "dAGO_cosine": 0.531015,
+        "dPAM_l2": 0.81845,
+        "dAGO_l2": 0.598333
+      },
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r2/w0100",
+        "b": "compound110/r2/w0200",
+        "dPAM_cosine": -0.547195,
+        "dAGO_cosine": -0.555461,
+        "dPAM_l2": 1.09902,
+        "dAGO_l2": 0.736927
+      },
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r2/w0100",
+        "b": "compound110/r2/w0300",
+        "dPAM_cosine": -0.100164,
+        "dAGO_cosine": -0.226884,
+        "dPAM_l2": 0.795384,
+        "dAGO_l2": 0.985034
+      },
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r2/w0100",
+        "b": "compound110/r2/w0400",
+        "dPAM_cosine": 0.618797,
+        "dAGO_cosine": 0.112419,
+        "dPAM_l2": 0.573725,
+        "dAGO_l2": 0.485294
+      },
+      {
+        "kind": "replica-to-replica",
+        "a": "compound110/r2/w0100",
+        "b": "compound110/r3/w0100",
+        "dPAM_cosine": 0.71231,
+        "dAGO_cosine": -0.038464,
+        "dPAM_l2": 0.525362,
+        "dAGO_l2": 0.757209
+      },
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r2/w0200",
+        "b": "compound110/r2/w0300",
+        "dPAM_cosine": 0.10498,
+        "dAGO_cosine": 0.514401,
+        "dPAM_l2": 0.673923,
+        "dAGO_l2": 0.70357
+      },
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r2/w0200",
+        "b": "compound110/r2/w0400",
+        "dPAM_cosine": -0.863128,
+        "dAGO_cosine": -0.069799,
+        "dPAM_l2": 1.207437,
+        "dAGO_l2": 0.575196
+      },
+      {
+        "kind": "replica-to-replica",
+        "a": "compound110/r2/w0200",
+        "b": "compound110/r3/w0200",
+        "dPAM_cosine": -0.353644,
+        "dAGO_cosine": 0.222379,
+        "dPAM_l2": 0.848785,
+        "dAGO_l2": 0.625048
+      },
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r2/w0300",
+        "b": "compound110/r2/w0400",
+        "dPAM_cosine": -0.225285,
+        "dAGO_cosine": -0.068341,
+        "dPAM_l2": 0.836149,
+        "dAGO_l2": 0.906869
+      },
+      {
+        "kind": "replica-to-replica",
+        "a": "compound110/r2/w0300",
+        "b": "compound110/r3/w0300",
+        "dPAM_cosine": 0.262047,
+        "dAGO_cosine": 0.258136,
+        "dPAM_l2": 0.774464,
+        "dAGO_l2": 0.824613
+      },
+      {
+        "kind": "replica-to-replica",
+        "a": "compound110/r2/w0400",
+        "b": "compound110/r3/w0400",
+        "dPAM_cosine": 0.08543,
+        "dAGO_cosine": -0.456788,
+        "dPAM_l2": 0.819094,
+        "dAGO_l2": 0.920893
+      },
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r3/w0000",
+        "b": "compound110/r3/w0100",
+        "dPAM_cosine": -0.117944,
+        "dAGO_cosine": 0.254206,
+        "dPAM_l2": 1.114853,
+        "dAGO_l2": 0.726671
+      },
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r3/w0000",
+        "b": "compound110/r3/w0200",
+        "dPAM_cosine": -0.494146,
+        "dAGO_cosine": 0.530078,
+        "dPAM_l2": 1.053686,
+        "dAGO_l2": 0.53346
+      },
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r3/w0000",
+        "b": "compound110/r3/w0300",
+        "dPAM_cosine": 0.393468,
+        "dAGO_cosine": -0.073544,
+        "dPAM_l2": 0.853465,
+        "dAGO_l2": 0.730561
+      },
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r3/w0000",
+        "b": "compound110/r3/w0400",
+        "dPAM_cosine": -0.220512,
+        "dAGO_cosine": 0.796114,
+        "dPAM_l2": 1.038645,
+        "dAGO_l2": 0.435037
+      },
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r3/w0100",
+        "b": "compound110/r3/w0200",
+        "dPAM_cosine": 0.13253,
+        "dAGO_cosine": 0.416665,
+        "dPAM_l2": 0.789574,
+        "dAGO_l2": 0.642897
+      },
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r3/w0100",
+        "b": "compound110/r3/w0300",
+        "dPAM_cosine": -0.415062,
+        "dAGO_cosine": 0.508655,
+        "dPAM_l2": 1.261825,
+        "dAGO_l2": 0.558369
+      },
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r3/w0100",
+        "b": "compound110/r3/w0400",
+        "dPAM_cosine": 0.395258,
+        "dAGO_cosine": 0.250214,
+        "dPAM_l2": 0.711771,
+        "dAGO_l2": 0.830464
+      },
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r3/w0200",
+        "b": "compound110/r3/w0300",
+        "dPAM_cosine": -0.475699,
+        "dAGO_cosine": 0.180246,
+        "dPAM_l2": 1.05636,
+        "dAGO_l2": 0.63913
+      },
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r3/w0200",
+        "b": "compound110/r3/w0400",
+        "dPAM_cosine": 0.476995,
+        "dAGO_cosine": 0.570017,
+        "dPAM_l2": 0.510772,
+        "dAGO_l2": 0.606376
+      },
+      {
+        "kind": "window-to-window",
+        "a": "compound110/r3/w0300",
+        "b": "compound110/r3/w0400",
+        "dPAM_cosine": -0.209896,
+        "dAGO_cosine": -0.00802,
+        "dPAM_l2": 1.042166,
+        "dAGO_l2": 0.845464
+      }
+    ],
+    "reason": ""
+  },
+  "sanity_checks": {
+    "d_PAM_finite_nonzero": true,
+    "d_AGO_finite_nonzero": true,
+    "available_context_norm_is_one": true,
+    "available_context_finite_nonzero": true
+  },
+  "claim_boundary": "Descriptive representation stability only. No AUC, no PAM classification, no biological interpretation; windows/frames are not independent samples."
+}

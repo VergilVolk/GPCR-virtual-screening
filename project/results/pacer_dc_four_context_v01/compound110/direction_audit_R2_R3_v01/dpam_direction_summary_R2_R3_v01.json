@@ -14,8 +14,8 @@
   "figure_png": "project\\results\\pacer_dc_four_context_v01\\compound110\\direction_audit_R2_R3_v01\\dpam_direction_summary_R2_R3_v01.png",
   "figure_svg": "project\\results\\pacer_dc_four_context_v01\\compound110\\direction_audit_R2_R3_v01\\dpam_direction_summary_R2_R3_v01.svg",
   "notes": [
-    "Panel A: 原始 candidate + ACh、ACh-only 及 dPAM 的跨 replica cosine。",
-    "Panel B: ΔzCA 与 ΔzA 的余弦相似度，以及差分分解中的交叉项 -2ΔzCA·ΔzA。",
-    "Panel C: dPAM 的跨 replica 夹角和 ||ΔdPAM||。"
+    "Panel A: Cross-replica cosine for candidate + ACh, ACh-only, and dPAM.",
+    "Panel B: Cosine similarity between ΔzCA and ΔzA, together with the cross term -2ΔzCA·ΔzA.",
+    "Panel C: Cross-replica dPAM angle and ||ΔdPAM||."
   ]
 }

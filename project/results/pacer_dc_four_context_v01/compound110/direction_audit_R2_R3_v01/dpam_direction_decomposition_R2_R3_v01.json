@@ -1,0 +1,411 @@
+{
+  "candidate": "compound110",
+  "replicas": [
+    2,
+    3
+  ],
+  "windows": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "embedding_dim": 1024,
+  "definition": "dPAM = candidate_probe - probe_only",
+  "delta_definition": "R3 - R2",
+  "results": [
+    {
+      "window": 0,
+      "ca_cross_replica_cosine": 0.8955265635838795,
+      "a_cross_replica_cosine": 0.8477660137706541,
+      "dpam_cross_replica_cosine": 0.5027442827020748,
+      "dpam_cross_replica_angle_deg": 59.818273023986656,
+      "r2_dpam_norm": 0.8631590003196539,
+      "r3_dpam_norm": 0.7702925460814632,
+      "delta_ca_norm": 0.45710707006101947,
+      "delta_a_norm": 0.5517861819521775,
+      "delta_dpam_norm": 0.8184496672676916,
+      "delta_ca_a_cosine": -0.3101293815249179,
+      "ca_squared_contribution": 0.20894687349976976,
+      "a_squared_contribution": 0.3044679905933616,
+      "cross_term": 0.15644499286271205,
+      "predicted_delta_dpam_sq": 0.6698598569558434,
+      "observed_delta_dpam_sq": 0.6698598578505952,
+      "decomposition_residual": 8.947518281843259e-10,
+      "r2_differential_residual": 2.164978833093495e-08,
+      "r3_differential_residual": 1.8996191205444263e-08
+    },
+    {
+      "window": 1,
+      "ca_cross_replica_cosine": 0.9156906742444915,
+      "a_cross_replica_cosine": 0.9181101018124251,
+      "dpam_cross_replica_cosine": 0.7123093591511487,
+      "dpam_cross_replica_angle_deg": 44.57687687747205,
+      "r2_dpam_norm": 0.6561588708489592,
+      "r3_dpam_norm": 0.720198150372398,
+      "delta_ca_norm": 0.4106320235444582,
+      "delta_a_norm": 0.4046971481242545,
+      "delta_dpam_norm": 0.5253624867019601,
+      "delta_ca_a_cosine": 0.16967189129496446,
+      "ca_squared_contribution": 0.16861865876021648,
+      "a_squared_contribution": 0.1637797816999048,
+      "cross_term": -0.05639269574639201,
+      "predicted_delta_dpam_sq": 0.27600574471372924,
+      "observed_delta_dpam_sq": 0.27600574243366716,
+      "decomposition_residual": 2.2800620835816687e-09,
+      "r2_differential_residual": 1.538037366152244e-08,
+      "r3_differential_residual": 1.745663660435267e-08
+    },
+    {
+      "window": 2,
+      "ca_cross_replica_cosine": 0.8320238047945681,
+      "a_cross_replica_cosine": 0.8683903826060877,
+      "dpam_cross_replica_cosine": -0.3536436387026662,
+      "dpam_cross_replica_angle_deg": 110.71033901140255,
+      "r2_dpam_norm": 0.5929054889595963,
+      "r3_dpam_norm": 0.43286732849555704,
+      "delta_ca_norm": 0.5796140252255267,
+      "delta_a_norm": 0.513048957447436,
+      "delta_dpam_norm": 0.8487849603640113,
+      "delta_ca_a_cosine": -0.20389431945215733,
+      "ca_squared_contribution": 0.33595241823813754,
+      "a_squared_contribution": 0.26321923273790093,
+      "cross_term": 0.12126425898894246,
+      "predicted_delta_dpam_sq": 0.720435909964981,
+      "observed_delta_dpam_sq": 0.7204359089401362,
+      "decomposition_residual": 1.0248447646077352e-09,
+      "r2_differential_residual": 1.3466992806170782e-08,
+      "r3_differential_residual": 9.744386431121296e-09
+    },
+    {
+      "window": 3,
+      "ca_cross_replica_cosine": 0.8861676679588302,
+      "a_cross_replica_cosine": 0.6142016356881023,
+      "dpam_cross_replica_cosine": 0.26204721813713366,
+      "dpam_cross_replica_angle_deg": 74.80842843128485,
+      "r2_dpam_norm": 0.38860099880510074,
+      "r3_dpam_norm": 0.7794398636387577,
+      "delta_ca_norm": 0.47714217892098115,
+      "delta_a_norm": 0.8784058150947543,
+      "delta_dpam_norm": 0.7744634865543536,
+      "delta_ca_a_cosine": 0.47655025870098133,
+      "ca_squared_contribution": 0.2276646589054616,
+      "a_squared_contribution": 0.7715967759922797,
+      "cross_term": -0.3994677440576662,
+      "predicted_delta_dpam_sq": 0.5997936908400752,
+      "observed_delta_dpam_sq": 0.5997936920059255,
+      "decomposition_residual": 1.1658503051847902e-09,
+      "r2_differential_residual": 7.427461024637853e-09,
+      "r3_differential_residual": 1.8906390093018865e-08
+    },
+    {
+      "window": 4,
+      "ca_cross_replica_cosine": 0.8820352093619184,
+      "a_cross_replica_cosine": 0.7853577051419535,
+      "dpam_cross_replica_cosine": 0.0854303699559855,
+      "dpam_cross_replica_angle_deg": 85.09922672751769,
+      "r2_dpam_norm": 0.6579731644390441,
+      "r3_dpam_norm": 0.5472779608319995,
+      "delta_ca_norm": 0.4857258321845582,
+      "delta_a_norm": 0.6551980816281732,
+      "delta_dpam_norm": 0.819094553810783,
+      "delta_ca_a_cosine": -0.008958113328097308,
+      "ca_squared_contribution": 0.23592958405138162,
+      "a_squared_contribution": 0.4292845261692383,
+      "cross_term": 0.005701778817363812,
+      "predicted_delta_dpam_sq": 0.6709158890379837,
+      "observed_delta_dpam_sq": 0.6709158880824857,
+      "decomposition_residual": 9.554980140435987e-10,
+      "r2_differential_residual": 1.6201813361807108e-08,
+      "r3_differential_residual": 1.2566241022886017e-08
+    }
+  ],
+  "provenance": [
+    {
+      "window": 0,
+      "files": {
+        "2": {
+          "ca": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_000\\embeddings\\candidate_probe_w000.npy",
+            "sha256": "a2027fbb7257236a3a6c2c30dd64aa0ff61525e5df323ec78d40a31cc5cf0b7e",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "a": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_000\\embeddings\\probe_only_w000.npy",
+            "sha256": "ebbdb860c046b37f39b7643fb8c81a37e625a62851be7ef756836446c904595d",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "d": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_000\\embeddings\\dPAM_w000.npy",
+            "sha256": "33613bf5372dfb8b04d8db827fb04267259b11ebb7afbff57ce2b7a2e400fba2",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          }
+        },
+        "3": {
+          "ca": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_000\\embeddings\\candidate_probe_w000.npy",
+            "sha256": "0256958d77de46dccf668bed7f10949b1c7f89cdb5becf3d01c5f15d3648a829",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "a": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_000\\embeddings\\probe_only_w000.npy",
+            "sha256": "0af8cff0e324becd8a9edd2f391568b66ca7a03c18fdb257cbc3945eb9258d7b",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "d": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_000\\embeddings\\dPAM_w000.npy",
+            "sha256": "1aae786e3ac87e8160fb6b1ceea0d3e66e415eb78c5464494ca42dd32b067d47",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          }
+        }
+      }
+    },
+    {
+      "window": 1,
+      "files": {
+        "2": {
+          "ca": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_001\\embeddings\\candidate_probe_w001.npy",
+            "sha256": "dd2899aa7ce3b1a9b9772e90e37ef6af51b233279caa06b20605ddcd8c55f566",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "a": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_001\\embeddings\\probe_only_w001.npy",
+            "sha256": "404f8b01c9079627b942afa805339d0cda0defd134fa667ab252a67edda81429",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "d": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_001\\embeddings\\dPAM_w001.npy",
+            "sha256": "938b4fc3ca64eb659a9d9e4eddf6b0d6648be460751bd64e2828cdd80f36cbd4",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          }
+        },
+        "3": {
+          "ca": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_001\\embeddings\\candidate_probe_w001.npy",
+            "sha256": "494f9f53c0bc8cc1813198e5929de4a987f302fa49b7abef40f349efffdabb71",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "a": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_001\\embeddings\\probe_only_w001.npy",
+            "sha256": "377229558f0a60beecaa77280649099653a8bdc867c4646850aa11dd65b96a26",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "d": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_001\\embeddings\\dPAM_w001.npy",
+            "sha256": "567ce0031ff966323d512a5e8d19ec7810524561b8c2526a0eba99802537cc88",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          }
+        }
+      }
+    },
+    {
+      "window": 2,
+      "files": {
+        "2": {
+          "ca": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_002\\embeddings\\candidate_probe_w002.npy",
+            "sha256": "bd8749fcbf04f045a8aff71000ee63dd9890e8784574babbdfce1e8254ef3025",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "a": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_002\\embeddings\\probe_only_w002.npy",
+            "sha256": "7e8648e4a53fd7865fe5b416fa0fcda1340d2c5838379b2caac213d2bcac26bb",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "d": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_002\\embeddings\\dPAM_w002.npy",
+            "sha256": "1b2b79b1caa43102cd4c555d97416b300650c2d28a440108d6858a2a28cb5bdc",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          }
+        },
+        "3": {
+          "ca": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_002\\embeddings\\candidate_probe_w002.npy",
+            "sha256": "43e3da9a80dd1bffb7eeed906743d2dd799854fddfef30bf5f35d851d3c7f541",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "a": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_002\\embeddings\\probe_only_w002.npy",
+            "sha256": "5088cb0a2047ba9e6513e30529232bfeac8f5121daf84ca641f02996830e9655",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "d": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_002\\embeddings\\dPAM_w002.npy",
+            "sha256": "c48c0d4f0d60d76386edf8ce48fe1192cb9b00a19b985511cba0e5388e28e51a",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          }
+        }
+      }
+    },
+    {
+      "window": 3,
+      "files": {
+        "2": {
+          "ca": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_003\\embeddings\\candidate_probe_w003.npy",
+            "sha256": "290743ec8a4e0bb1f4f259840318b2255c3e5b3c03ab4c5d8f1acb0534afba36",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "a": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_003\\embeddings\\probe_only_w003.npy",
+            "sha256": "e8c51eb7deb5c7781566a53f08eb91e249d369986ec3b384102f02f1d7ff4dfe",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "d": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_003\\embeddings\\dPAM_w003.npy",
+            "sha256": "15c1e04de7159ae727f5ea884d9c8f57d92f42057dac8c0eec2c70272e84865a",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          }
+        },
+        "3": {
+          "ca": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_003\\embeddings\\candidate_probe_w003.npy",
+            "sha256": "d5a62a2dc94b8de4f4e8140fbe94e086b15601da477e84fea8049979a9529092",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "a": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_003\\embeddings\\probe_only_w003.npy",
+            "sha256": "343962e242fc969000d905efc668b8d80f70a006c3c05d9bff3894a3dceb6dea",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "d": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_003\\embeddings\\dPAM_w003.npy",
+            "sha256": "458142a0a1dba3035b5a36e7046f6702296bf6023e6b3ba079268615f216b3b5",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          }
+        }
+      }
+    },
+    {
+      "window": 4,
+      "files": {
+        "2": {
+          "ca": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_004\\embeddings\\candidate_probe_w004.npy",
+            "sha256": "9568a62cfe4386684a203e8fd5dfb7e87debce2fe467be9c7321c946760afa50",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "a": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_004\\embeddings\\probe_only_w004.npy",
+            "sha256": "2332a5a171aef7efb5e1c2ef613719627b01a2fd93b60c928a469d24e4b06967",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "d": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_02\\window_004\\embeddings\\dPAM_w004.npy",
+            "sha256": "490b3e697574855799639fbe95b5a7a28717c6a6df7739eda0189652f02ad9e5",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          }
+        },
+        "3": {
+          "ca": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_004\\embeddings\\candidate_probe_w004.npy",
+            "sha256": "c106bdff6ca3e6829da4d815d70a32622e9064a4a3b6f7ae6a522dba19190c57",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "a": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_004\\embeddings\\probe_only_w004.npy",
+            "sha256": "b4d2b3c190ff8a5de6125856f212f211c9a4f0ef4c6781b50f32078e01f072e5",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          },
+          "d": {
+            "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_03\\window_004\\embeddings\\dPAM_w004.npy",
+            "sha256": "f1dcc3abc49a78cd89f62ac7f80b0bde36ead24f1751379edcbf9d3d2d87a48d",
+            "shape": [
+              1024
+            ],
+            "dtype": "float32"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "analysis": "G1_five_layer_single_window_v01",
+  "candidate": "compound110",
+  "replica": 3,
+  "window": 2,
+  "context": "apo",
+  "checkpoint_sha256": "a79bce2e8f91d9cd59840965e145a119c3202e30516e1e0f69452dee6f211997",
+  "layers": {
+    "L0": {
+      "shape": [
+        1,
+        100,
+        270,
+        384
+      ],
+      "finite": true
+    },
+    "L1": {
+      "shape": [
+        1,
+        100,
+        270,
+        21
+      ],
+      "finite": true
+    },
+    "L2": {
+      "shape": [
+        1,
+        21
+      ],
+      "finite": true
+    },
+    "L3": {
+      "shape": [
+        1,
+        1024
+      ],
+      "finite": true
+    },
+    "L4": {
+      "shape": [
+        1,
+        1024
+      ],
+      "finite": true
+    }
+  },
+  "historical_max_abs_error": 0.0,
+  "historical_l2_error": 0.0,
+  "historical_compatible": true,
+  "repeat_identical": true,
+  "validation_pass": true
+}

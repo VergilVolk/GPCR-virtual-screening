@@ -376,3 +376,47 @@ G0 的计算、结果导出及绘图已经完成，GitHub 归档待完成。
 具体 tensor 语义与形状必须以实际代码和 checkpoint 审计为准。
 
 TRAINING_GATE = CLOSED。不得根据本阶段结果宣称已验证 PAM 分类能力，也不启动分类器训练。
+
+
+## G1 Five-Layer Diagnostic - Completed
+
+Status: extraction, QC and cross-replica analysis completed.
+Scope: compound110; replicas R2/R3; windows W0-W4; four MD contexts.
+
+### Validated representation hierarchy
+
+- L0: MDGen intermediate tensor, 100 x 270 x 384.
+- L1: FinalLayer output, 100 x 270 x 21.
+- L2: global pooled representation, 21D.
+- L3: MLP projection before normalization, 1024D.
+- L4: normalized production embedding, 1024D.
+
+### Data and reproducibility
+
+- 40/40 context-window-replica jobs completed.
+- 200/200 NPY arrays and 40/40 JSON reports passed QC.
+- All L4 arrays exactly reproduce the historical embeddings.
+- L1 global mean reproduces L2 within numerical tolerance.
+- Cross-replica CSV contains 75 comparisons (5 windows x 5 layers x 3 contrasts).
+- Primary scripts: diagnose_oneprot_five_layers.py and diagnose_oneprot_five_layers_batch.py.
+- Summary: project/results/pacer_dc_four_context_v01/compound110/five_layer_cross_replica_G1_v01.csv.
+- Reports: five_layer_diagnostic_R{2,3}_W{0..4}_v01 directories.
+- Raw five-layer NPY arrays total approximately 1.63 GiB and remain local pending separate archival.
+
+### Cross-replica findings
+
+| Layer | Mean dPAM cosine | Mean dAGO cosine | Mean dINT cosine | Negative dINT windows |
+|---|---:|---:|---:|---:|
+| L0 | 0.475133 | 0.188093 | 0.308376 | 1/5 |
+| L1 | -0.099481 | 0.320807 | 0.010757 | 3/5 |
+| L2 | -0.099481 | 0.320807 | 0.010757 | 3/5 |
+| L3 | 0.200722 | 0.141369 | 0.103518 | 2/5 |
+| L4 | 0.241778 | 0.103255 | 0.121711 | 2/5 |
+
+- No layer maintains positive dINT alignment in all five windows.
+- W3 dINT reversal is already present at L0 (cosine -0.800487).
+- W4 dINT is positive at L0 (0.472786) but negative at L1 (-0.651169).
+- Layer changes have contrast-dependent effects; no new representation architecture has been selected.
+- These windows are not independent biological replicates; cross-compound generalization is untested.
+
+TRAINING_GATE = CLOSED. No classifier training or additional MD is authorized.

@@ -259,3 +259,120 @@ Independent replicas share a common starting structure. Five nanoseconds does no
 - `project/results/pacer_dc_four_context_v01/compound110/direction_audit_R2_R3_v01/dpam_direction_summary_R2_R3_v01.svg`
 - `project/results/pacer_dc_four_context_v01/compound110/direction_audit_R2_R3_v01/dpam_direction_summary_R2_R3_v01.json`
 
+## 2026-09-26：G0 四上下文交互差分审计
+
+### 一、研究目的
+
+在现有 compound110 的 R2/R3 五窗口冻结 OneProt-MD embedding 基础上，检验从 dPAM 中扣除候选物单独作用后，四上下文交互差分 dINT 的跨 replica 稳定性是否改善。
+
+本阶段不新增 MD、不重新运行 encoder，不修改已有 dPAM 历史结果。
+
+### 二、差分定义
+
+四个匹配 context：
+
+- z_CA：candidate + ACh
+- z_C：candidate only
+- z_A：ACh only
+- z_0：apo
+
+定义：
+
+- dPAM = z_CA - z_A
+- dAGO = z_C - z_0
+- dINT = dPAM - dAGO = z_CA - z_A - z_C + z_0
+
+dINT 是 embedding 空间中的 candidate×ACh 交互差分，不直接等同于药理学协同效应。
+
+### 三、输入和质量检查
+
+分析对象为 compound110 的 R2/R3，每个 replica 包含五个匹配窗口，每个窗口包含四个 context。
+
+共检查 40 个冻结 OneProt-MD embedding：
+
+- 文件完整性：40/40，通过；
+- 向量形状：全部为 (1024,)；
+- 数值有限性：全部通过；
+- L2 范数范围：0.9999996423721313 至 1.0000004768371582；
+- 归一化检查：全部通过；
+- dPAM 历史一致性：五窗口全部通过；
+- dINT 差分数学一致性：全部通过。
+
+### 四、五窗口跨 replica 比较
+
+下表列出 R2/R3 匹配窗口差分向量的 cosine similarity。
+
+| Window | dPAM cosine | dAGO cosine | dINT cosine |
+|---|---:|---:|---:|
+| W0 | 0.502744 | 0.531015 | 0.675959 |
+| W1 | 0.712309 | -0.038464 | 0.362566 |
+| W2 | -0.353644 | 0.222379 | 0.386707 |
+| W3 | 0.262047 | 0.258136 | -0.426019 |
+| W4 | 0.085430 | -0.456788 | -0.390655 |
+
+相对于 dPAM，dINT 在 W0、W2 的方向一致性改善，在 W1、W3、W4 恶化。
+
+尤其是 W2，dPAM cosine 为 -0.353644，而 dINT cosine 为 0.386707；相反，W3 和 W4 的 dINT 出现负 cosine。
+
+因此，扣除 dAGO 没有产生跨窗口一致的稳定性改善。
+
+### 五、五窗口平均向量比较
+
+先在各 replica 内分别计算五个窗口的平均差分向量，再比较 R2/R3 平均向量。
+
+| 指标 | dPAM | dAGO | dINT |
+|---|---:|---:|---:|
+| Cosine | 0.339247 | 0.330114 | 0.249590 |
+| Angle (deg) | 70.169 | 70.724 | 75.547 |
+| L2 distance | 0.279383 | 0.398976 | 0.430014 |
+| R2 norm | 0.223579 | 0.241554 | 0.295126 |
+| R3 norm | 0.259751 | 0.407143 | 0.394969 |
+
+平均向量比较中，dINT 的 cosine 低于 dPAM，L2 distance 高于 dPAM。
+
+上述指标不是五个窗口 cosine 的算术平均，也不构成统计显著性检验。
+
+### 六、阶段性科学结论
+
+1. 四上下文交互差分 dINT 已成功实现，且计算与历史 dPAM 结果一致。
+2. dINT 未表现出一致优于 dPAM 的跨 replica 方向稳定性。
+3. 二阶差分可能进一步累积四条独立轨迹的采样和表示波动，但当前分析不足以确定因果来源。
+4. 当前结果仅涉及 compound110、两个 replica 和五个匹配窗口；窗口不是独立生物学重复。
+5. 尚不能区分 MD sampling、隐藏表示、全局池化、MLP 投影和 L2 归一化的具体贡献。
+
+### 七、脚本与结果
+
+新增脚本：
+
+- `project/pacer_dc_training/audit_dint_R2_R3.py`
+- `project/pacer_dc_training/plot_dint_comparison_R2_R3.py`
+
+结果目录：
+
+`project/results/pacer_dc_four_context_v01/compound110/interaction_audit_R2_R3_v01/`
+
+新增文件：
+
+- `interaction_comparison_R2_R3_v01.csv`
+- `interaction_comparison_R2_R3_v01.json`
+- `dint_comparison_R2_R3_v01.png`
+- `dint_comparison_R2_R3_v01.svg`
+
+CSV 包含 15 条窗口比较记录。JSON 包含上述记录、3 条平均向量比较记录及全部 40 个输入 embedding 的 SHA256。
+
+正式英文汇总图已生成，并通过人工视觉 QC。
+
+### 八、下一阶段与训练门
+
+G0 的计算、结果导出及绘图已经完成，GitHub 归档待完成。
+
+下一阶段为 G1：审计 OneProt-MD 的实际 forward 路径，并在不改变现有正式输出的前提下，研究四层表示的提取：
+
+1. MDGen 残基级时间隐藏表示；
+2. 21 维全局池化表示；
+3. MLP 投影后、L2 归一化前的 1024 维表示；
+4. 当前归一化的 1024 维表示。
+
+具体 tensor 语义与形状必须以实际代码和 checkpoint 审计为准。
+
+TRAINING_GATE = CLOSED。不得根据本阶段结果宣称已验证 PAM 分类能力，也不启动分类器训练。

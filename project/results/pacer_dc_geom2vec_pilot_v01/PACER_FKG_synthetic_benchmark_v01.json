@@ -1,0 +1,66 @@
+{
+  "method": "PACER-FKG synthetic estimator benchmark v01",
+  "evidence_level": "mathematical_synthetic_control",
+  "settings": {
+    "output": "project\\results\\pacer_dc_geom2vec_pilot_v01\\PACER_FKG_synthetic_benchmark_v01.json",
+    "seeds": 100,
+    "frames": 80,
+    "dimensions": 12,
+    "effect": 1.5
+  },
+  "summary": {
+    "null": {
+      "kernel_u2": {
+        "mean": -0.00022159959153389086,
+        "sd": 0.005137327641758398,
+        "q05": -0.007856115035436989,
+        "q95": 0.008736237320290038
+      },
+      "linear": {
+        "mean": 0.7512374797032187,
+        "sd": 0.13766455315506848,
+        "q05": 0.5267976248700992,
+        "q95": 0.9781446222254776
+      }
+    },
+    "mean_interaction": {
+      "kernel_u2": {
+        "mean": 0.15056262931830014,
+        "sd": 0.022064798846806725,
+        "q05": 0.11357683306131772,
+        "q95": 0.1859867732809486
+      },
+      "linear": {
+        "mean": 2.7136444876214525,
+        "sd": 0.19128535567839927,
+        "q05": 2.367324832927323,
+        "q95": 3.0124520958998278
+      }
+    },
+    "shape_interaction": {
+      "kernel_u2": {
+        "mean": 0.02440097524117159,
+        "sd": 0.007792242826304205,
+        "q05": 0.013019481839009518,
+        "q95": 0.03730419066861672
+      },
+      "linear": {
+        "mean": 0.8103191422410144,
+        "sd": 0.17044610349171166,
+        "q05": 0.5619927867713143,
+        "q95": 1.0836897911211048
+      }
+    }
+  },
+  "auc_signal_vs_null": {
+    "mean_interaction": {
+      "kernel_u2": 1.0,
+      "linear": 1.0
+    },
+    "shape_interaction": {
+      "kernel_u2": 0.9966,
+      "linear": 0.5973
+    }
+  },
+  "claim_boundary": "Tests estimator behavior on generated distributions only; not evidence of M4 PAM prediction."
+}

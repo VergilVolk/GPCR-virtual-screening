@@ -87,3 +87,16 @@ python project/pacer_dc_training/audit_geom2vec_cross_replica.py \
 ## 主张边界
 
 当前结果不证明Geom2Vec优于OneProt，不证明compound110是PAM，也不证明可以预测PAM效力。它只证明：现成MD可以无缝接入冻结Geom2Vec，编码器具备正确几何不变性，并保留了初步局部上下文差异。
+
+## 提取完成后的新分析入口
+
+不要再逐帧相减。R2/R3回传后，先用冻结的多结构图运行PACER-FKG：
+
+```bash
+python project/pacer_dc_training/pacer_factorial_kernel_graph.py \
+  --embedding-root <单个candidate/replica/window的四上下文目录> \
+  --graph project/results/pacer_dc_geom2vec_pilot_v01/M4_MULTISTRUCTURE_GRAPH_v01.json \
+  --output <对应的PACER_FKG审计.json>
+```
+
+统计汇总必须以replica为独立单位做block bootstrap；不得把window或frame当作独立生物学样本。方法定义、基线和晋级条件见`docs/PACER_FACTORIAL_KERNEL_GRAPH_METHOD.md`。

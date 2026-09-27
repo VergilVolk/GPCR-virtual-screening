@@ -10,6 +10,11 @@
 - replica 1五帧描述性小试中，compound110口袋的context separation/temporal variation为`1.18`，global与distal control均约`0.68`，提示局部信号未被全局池化完全抹除。
 - 当前只通过工程可用性闸门，未通过跨replica替换闸门；R2/R3必须运行冻结批处理和matched-window审计，随后还需LY2119620药理控制。
 - 运行与主张边界见`docs/PACER_DC_GEOM2VEC_HANDOFF.md`。
+- 已补充 PACER-FKG 原型：用三套 PAM 结构、一个变构激动剂结构和两套正构结构构建冻结的多结构残基图，并以核均值的四上下文 factorial interaction 取代错误的独立轨迹逐帧相减。
+- 三种 PAM 的4.5 Å共识接触为`Y89/Y92/I93/G96/F186/L190/N423/Q427/D432/W435/S436/Y439`；compound-110另有向`Y416/M419/V420/I430/P431`等残基延伸的结构差异。
+- 无偏核统计的3个合成测试均通过。真实compound-110单replica五帧烟雾测试同时发现旧ICL3 distal control存在强伪信号；新的跨结构稳定核心对照较低，但尚无跨replica和药理对照证据。
+- 100-seed合成基准中，均值保持但分布形状改变时，FKG核交互相对空对照AUC为`0.9966`，线性均值差为`0.5973`；这只证明非线性分布检验的数学增量，不是M4药理性能。
+- 方法、baseline和晋级门槛见`docs/PACER_FACTORIAL_KERNEL_GRAPH_METHOD.md`；不得把当前烟雾结果写成PAM判别、性能提升或机制结论。
 
 ## 2026-09-19 动态表示对照结果
 

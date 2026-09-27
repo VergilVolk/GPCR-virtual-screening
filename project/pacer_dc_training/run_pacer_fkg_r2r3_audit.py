@@ -22,9 +22,18 @@ EXCLUDED_REGIONS = {"distal_control", "stable_core_control"}
 
 
 def rankdata(values):
+    """Average ranks for tied values, matching the Spearman definition."""
+    values = np.asarray(values)
     order = np.argsort(values, kind="mergesort")
+    sorted_values = values[order]
     ranks = np.empty(len(values), dtype=float)
-    ranks[order] = np.arange(len(values), dtype=float)
+    start = 0
+    while start < len(values):
+        end = start + 1
+        while end < len(values) and sorted_values[end] == sorted_values[start]:
+            end += 1
+        ranks[order[start:end]] = (start + end - 1) / 2.0
+        start = end
     return ranks
 
 
@@ -115,7 +124,7 @@ def preflight(args):
                     elif not np.array_equal(ids_in_window, ids):
                         raise ValueError(f"{path}: within-window context frame IDs differ")
                 manifest.append({
-                    "path": str(path.relative_to(args.input_root)).replace("\\\\", "/"),
+                    "path": path.relative_to(args.input_root).as_posix(),
                     "sha256": file_sha256(path),
                 })
     return {

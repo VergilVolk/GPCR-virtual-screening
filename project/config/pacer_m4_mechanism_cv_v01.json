@@ -1,0 +1,33 @@
+{
+  "model_id": "PACER-MCV-v0.1",
+  "description": "Encoder-free, preregistered M4 physical collective variables for four-context contrasts.",
+  "residue_numbering": "M4 receptor PDB numbering mapped by G2_RESIDUE_MAPPING_v01.csv",
+  "regions": {
+    "pam_contact": [89, 92, 93, 95, 96, 184, 186, 423, 432, 433, 435, 439, 443],
+    "orthosteric_core": [112, 113, 116, 117, 164, 203, 204, 413, 416, 417, 439, 442, 443],
+    "intracellular_switch": [129, 130, 131, 409, 413, 415, 445, 450, 453],
+    "distal_control": [221, 222, 223, 224, 225, 226, 392, 393, 394, 395, 396, 397]
+  },
+  "ca_distance_pairs": [
+    [89, 435], [92, 435], [93, 432], [96, 423], [184, 439], [186, 435],
+    [112, 164], [112, 203], [113, 416], [164, 413], [203, 413], [416, 439], [439, 443],
+    [129, 409], [130, 409], [131, 413], [409, 445], [413, 450], [415, 453], [445, 453],
+    [96, 112], [186, 203], [423, 413], [432, 445], [435, 450], [439, 453]
+  ],
+  "sidechain_distance_pairs": [
+    [89, 435], [92, 435], [93, 432], [96, 423], [184, 439], [186, 435],
+    [112, 164], [112, 203], [113, 416], [164, 413], [203, 413], [416, 439], [439, 443],
+    [129, 409], [130, 409], [131, 413], [409, 445], [413, 450], [415, 453], [445, 453]
+  ],
+  "region_centroid_pairs": [
+    ["pam_contact", "orthosteric_core"],
+    ["orthosteric_core", "intracellular_switch"],
+    ["pam_contact", "intracellular_switch"]
+  ],
+  "axes": {
+    "conditional_candidate_effect": {"candidate_probe": 1, "probe_only": -1},
+    "intrinsic_agonism": {"candidate_no_probe": 1, "apo": -1},
+    "synergy_interaction": {"candidate_probe": 1, "probe_only": -1, "candidate_no_probe": -1, "apo": 1}
+  },
+  "claim_boundary": "Physical receptor response only. No PAM efficacy claim without multi-ligand functional validation."
+}

@@ -212,7 +212,11 @@ def main():
             second_graph = (by_replica[str(args.replicas[1])]["window_graph_diffused_minus_stable"]
                             if len(args.replicas) == 2 else [])
             graph_rho = spearman(first_graph, second_graph) if second_graph else None
-            gate = (
+            # Historical magnitude-only screen.  This is retained for exact
+            # replay but MUST NOT be interpreted as cross-replica functional
+            # qualification: region-specific kernels/bandwidths are not a
+            # common vector space, and squared RKHS norms have no direction.
+            legacy_magnitude_screen = (
                 region not in EXCLUDED_REGIONS
                 and all(v["median_u2_minus_stable"] > 0 for v in by_replica.values())
                 and all(v["positive_windows"] >= 4 for v in by_replica.values())
@@ -222,7 +226,12 @@ def main():
                 "region": region, "axis": axis, "replicas": by_replica,
                 "matched_window_spearman": rho,
                 "matched_window_graph_diffused_spearman_descriptive": graph_rho,
-                "preregistered_specificity_gate": gate,
+                "legacy_magnitude_screen": legacy_magnitude_screen,
+                "functional_qualification_gate": False,
+                "qualification_reason": (
+                    "Requires a shared signed feature space and pharmacological controls; "
+                    "region-kernel magnitudes cannot qualify function."
+                ),
             })
 
     report = {
@@ -248,8 +257,11 @@ def main():
         ),
         "window_results": records,
         "cross_replica_summary": summaries,
-        "passing_synergy_regions": [s["region"] for s in summaries
-                                    if s["axis"] == "synergy_interaction" and s["preregistered_specificity_gate"]],
+        "legacy_magnitude_screen_regions": [s["region"] for s in summaries
+                                            if s["axis"] == "synergy_interaction"
+                                            and s["legacy_magnitude_screen"]],
+        "passing_synergy_regions": [],
+        "training_gate": "CLOSED",
         "claim_boundary": (
             "Two replicas and contiguous windows qualify an estimator only. "
             "They do not establish PAM efficacy, potency, convergence or generalization."
@@ -259,7 +271,9 @@ def main():
     audit.write_text(json.dumps(report, indent=2), encoding="utf-8")
     print(json.dumps({
         "audit": str(audit),
+        "legacy_magnitude_screen_regions": report["legacy_magnitude_screen_regions"],
         "passing_synergy_regions": report["passing_synergy_regions"],
+        "training_gate": report["training_gate"],
         "windows_completed": len(args.replicas) * len(args.windows),
     }, indent=2))
 

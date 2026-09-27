@@ -103,3 +103,16 @@ python project/pacer_dc_training/pacer_factorial_kernel_graph.py \
 ```
 
 统计汇总必须以replica为独立单位做block bootstrap；不得把window或frame当作独立生物学样本。方法定义、基线和晋级条件见`docs/PACER_FACTORIAL_KERNEL_GRAPH_METHOD.md`。
+
+对于队友现有的R2/R3完整目录，直接运行一键审计，不需要重新提取：
+
+```bash
+python project/pacer_dc_training/run_pacer_fkg_r2r3_audit.py \
+  --input-root project/results/pacer_dc_geom2vec_R2R3_full_v01 \
+  --graph project/results/pacer_dc_geom2vec_pilot_v01/M4_MULTISTRUCTURE_GRAPH_v01.json \
+  --output-root project/results/pacer_dc_fkg_R2R3_v01 \
+  --replicas 2 3 \
+  --windows 0 1 2 3 4
+```
+
+旧的`audit_geom2vec_cross_replica.py`检验的是“线性时间均值+区域均值”基线；它未通过不能视为PACER-FKG未通过。二者必须并列保留，不能覆盖旧结果。

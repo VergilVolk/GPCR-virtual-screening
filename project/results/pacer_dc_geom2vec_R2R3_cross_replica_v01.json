@@ -1,0 +1,291 @@
+{
+  "method": "matched-window Geom2Vec R2/R3 four-context audit",
+  "evidence_level": "two_replica_encoder_qualification",
+  "replicas": [
+    2,
+    3
+  ],
+  "windows": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "rows": [
+    {
+      "region": "ACh_pocket",
+      "axis": "dAGO",
+      "matched_window_cosines": [
+        0.2961652778223529,
+        0.4504119578201678,
+        0.20054550463973267,
+        0.3963719883218176,
+        -0.19398859302731675
+      ],
+      "median_cosine": 0.2961652778223529,
+      "bootstrap_window_ci95": [
+        -0.19398859302731675,
+        0.4504119578201678
+      ],
+      "positive_windows": 4,
+      "pilot_gate": false,
+      "independence_warning": "Windows are contiguous augmentations, not independent replicas."
+    },
+    {
+      "region": "ACh_pocket",
+      "axis": "dINT",
+      "matched_window_cosines": [
+        0.2792703855071023,
+        -0.13307306581750628,
+        0.23621193389480372,
+        0.7456811390676857,
+        0.325566334286661
+      ],
+      "median_cosine": 0.2792703855071023,
+      "bootstrap_window_ci95": [
+        -0.13307306581750628,
+        0.7456811390676857
+      ],
+      "positive_windows": 4,
+      "pilot_gate": false,
+      "independence_warning": "Windows are contiguous augmentations, not independent replicas."
+    },
+    {
+      "region": "compound110_pocket",
+      "axis": "dAGO",
+      "matched_window_cosines": [
+        -0.6699784439603259,
+        -0.31842625131239,
+        -0.06420884825872591,
+        -0.2624265050191575,
+        0.5598681262274279
+      ],
+      "median_cosine": -0.2624265050191575,
+      "bootstrap_window_ci95": [
+        -0.6699784439603259,
+        0.5598681262274279
+      ],
+      "positive_windows": 1,
+      "pilot_gate": false,
+      "independence_warning": "Windows are contiguous augmentations, not independent replicas."
+    },
+    {
+      "region": "compound110_pocket",
+      "axis": "dINT",
+      "matched_window_cosines": [
+        -0.7280509268545006,
+        0.1826973702860128,
+        -0.028423128600780192,
+        0.18607112250898977,
+        0.11878191197222694
+      ],
+      "median_cosine": 0.11878191197222694,
+      "bootstrap_window_ci95": [
+        -0.7280509268545006,
+        0.18607112250898977
+      ],
+      "positive_windows": 3,
+      "pilot_gate": false,
+      "independence_warning": "Windows are contiguous augmentations, not independent replicas."
+    },
+    {
+      "region": "ECV_anchor",
+      "axis": "dAGO",
+      "matched_window_cosines": [
+        0.4270250244137703,
+        0.3920309577478142,
+        -0.18348231799270187,
+        0.24745080436752726,
+        -0.05401048792109978
+      ],
+      "median_cosine": 0.24745080436752726,
+      "bootstrap_window_ci95": [
+        -0.18348231799270187,
+        0.4270250244137703
+      ],
+      "positive_windows": 3,
+      "pilot_gate": false,
+      "independence_warning": "Windows are contiguous augmentations, not independent replicas."
+    },
+    {
+      "region": "ECV_anchor",
+      "axis": "dINT",
+      "matched_window_cosines": [
+        -0.21162655453740634,
+        0.05307304226762205,
+        -0.2303116055601949,
+        -0.29827800622206835,
+        -0.16322912144816268
+      ],
+      "median_cosine": -0.21162655453740634,
+      "bootstrap_window_ci95": [
+        -0.29827800622206835,
+        0.05307304226762205
+      ],
+      "positive_windows": 1,
+      "pilot_gate": false,
+      "independence_warning": "Windows are contiguous augmentations, not independent replicas."
+    },
+    {
+      "region": "W435_gate",
+      "axis": "dAGO",
+      "matched_window_cosines": [
+        0.6663799856114963,
+        0.6089940116045175,
+        -0.08815514278164621,
+        -0.18183193994704652,
+        0.3729816872326638
+      ],
+      "median_cosine": 0.3729816872326638,
+      "bootstrap_window_ci95": [
+        -0.18183193994704652,
+        0.6663799856114963
+      ],
+      "positive_windows": 3,
+      "pilot_gate": false,
+      "independence_warning": "Windows are contiguous augmentations, not independent replicas."
+    },
+    {
+      "region": "W435_gate",
+      "axis": "dINT",
+      "matched_window_cosines": [
+        0.36712045082782346,
+        -0.14930749095913384,
+        -0.2425463068822878,
+        -0.08022401436574242,
+        0.4214108466873894
+      ],
+      "median_cosine": -0.08022401436574242,
+      "bootstrap_window_ci95": [
+        -0.2425463068822878,
+        0.4214108466873894
+      ],
+      "positive_windows": 2,
+      "pilot_gate": false,
+      "independence_warning": "Windows are contiguous augmentations, not independent replicas."
+    },
+    {
+      "region": "species_probe",
+      "axis": "dAGO",
+      "matched_window_cosines": [
+        0.6312731123534416,
+        0.7222998688832728,
+        -0.01655646317795118,
+        0.002577148824530266,
+        0.9025358795079775
+      ],
+      "median_cosine": 0.6312731123534416,
+      "bootstrap_window_ci95": [
+        -0.01655646317795118,
+        0.9025358795079775
+      ],
+      "positive_windows": 4,
+      "pilot_gate": false,
+      "independence_warning": "Windows are contiguous augmentations, not independent replicas."
+    },
+    {
+      "region": "species_probe",
+      "axis": "dINT",
+      "matched_window_cosines": [
+        0.0878698427070423,
+        -0.5921337905349578,
+        0.8429775978062739,
+        -0.3222480072166109,
+        -0.3048756198055742
+      ],
+      "median_cosine": -0.3048756198055742,
+      "bootstrap_window_ci95": [
+        -0.5921337905349578,
+        0.8429775978062739
+      ],
+      "positive_windows": 2,
+      "pilot_gate": false,
+      "independence_warning": "Windows are contiguous augmentations, not independent replicas."
+    },
+    {
+      "region": "global",
+      "axis": "dAGO",
+      "matched_window_cosines": [
+        0.6070251033135907,
+        0.9171191863017589,
+        0.7673102433454956,
+        0.7208840732552438,
+        0.7986010521154748
+      ],
+      "median_cosine": 0.7673102433454956,
+      "bootstrap_window_ci95": [
+        0.6070251033135907,
+        0.9171191863017589
+      ],
+      "positive_windows": 5,
+      "pilot_gate": true,
+      "independence_warning": "Windows are contiguous augmentations, not independent replicas."
+    },
+    {
+      "region": "global",
+      "axis": "dINT",
+      "matched_window_cosines": [
+        -0.5706259810758335,
+        -0.13150593040193792,
+        -0.41083375330440675,
+        0.051723482052714966,
+        0.347084460365445
+      ],
+      "median_cosine": -0.13150593040193792,
+      "bootstrap_window_ci95": [
+        -0.5706259810758335,
+        0.347084460365445
+      ],
+      "positive_windows": 2,
+      "pilot_gate": false,
+      "independence_warning": "Windows are contiguous augmentations, not independent replicas."
+    },
+    {
+      "region": "distal_control",
+      "axis": "dAGO",
+      "matched_window_cosines": [
+        -0.44427391004816996,
+        -0.12293051377136645,
+        -0.8005408393545855,
+        -0.8366787316744275,
+        -0.7761058666433691
+      ],
+      "median_cosine": -0.7761058666433691,
+      "bootstrap_window_ci95": [
+        -0.8366787316744275,
+        -0.12293051377136645
+      ],
+      "positive_windows": 0,
+      "pilot_gate": false,
+      "independence_warning": "Windows are contiguous augmentations, not independent replicas."
+    },
+    {
+      "region": "distal_control",
+      "axis": "dINT",
+      "matched_window_cosines": [
+        -0.0024370331056232527,
+        0.16293686079107692,
+        -0.7098930101034853,
+        -0.9162434059683793,
+        -0.8610150765152778
+      ],
+      "median_cosine": -0.7098930101034853,
+      "bootstrap_window_ci95": [
+        -0.9162434059683793,
+        0.16293686079107692
+      ],
+      "positive_windows": 1,
+      "pilot_gate": false,
+      "independence_warning": "Windows are contiguous augmentations, not independent replicas."
+    }
+  ],
+  "decision": {
+    "pilot_pass": false,
+    "functional_regions_passing_dINT": [],
+    "distal_dINT_gate": false,
+    "full_replacement_authorized": false,
+    "reason": "A second pharmacological control (LY2119620) is still required even if the two-replica pilot passes."
+  },
+  "claim_boundary": "Two-replica matched-window qualification; not a potency or PAM efficacy benchmark."
+}

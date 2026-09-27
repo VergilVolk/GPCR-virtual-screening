@@ -1,0 +1,575 @@
+{
+  "method": "frozen Geom2Vec ViSNet batch extraction",
+  "evidence_level": "encoder_feasibility_pilot",
+  "checkpoint_sha256": "b8f1ef9b591c57f7687566bd60d3664800956ac280cf2ae8e64f54196cd8d417",
+  "device": "cuda",
+  "stride": 1,
+  "batch_size": 1,
+  "cpu_radius_graph_fallback": false,
+  "files_total": 40,
+  "files_ok": 40,
+  "elapsed_seconds": 288.65,
+  "rows": [
+    {
+      "input": "replica_02/window_000/atom14/apo_w000.npy",
+      "output": "replica_02/window_000/atom14/apo_w000.geom2vec.npz",
+      "input_sha256": "b3104dd9054ee3661e1e1d64708c80b5d1a49399b8bba539a3b9e4076868bdea",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 7.059,
+      "status": "ok"
+    },
+    {
+      "input": "replica_02/window_000/atom14/candidate_no_probe_w000.npy",
+      "output": "replica_02/window_000/atom14/candidate_no_probe_w000.geom2vec.npz",
+      "input_sha256": "b6f4c8af28354909db99595911d392f3b6bb8a6801e046c63187f64431a32ee8",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.783,
+      "status": "ok"
+    },
+    {
+      "input": "replica_02/window_000/atom14/candidate_probe_w000.npy",
+      "output": "replica_02/window_000/atom14/candidate_probe_w000.geom2vec.npz",
+      "input_sha256": "1779d07334193b26b7d11c2eef33ccf0a957663937fb6e630d1263d4415f5055",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.85,
+      "status": "ok"
+    },
+    {
+      "input": "replica_02/window_000/atom14/probe_only_w000.npy",
+      "output": "replica_02/window_000/atom14/probe_only_w000.geom2vec.npz",
+      "input_sha256": "fea5507427a0b06d35918498c39f292230c549466b06378c608150a4d28fdc67",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.734,
+      "status": "ok"
+    },
+    {
+      "input": "replica_02/window_001/atom14/apo_w001.npy",
+      "output": "replica_02/window_001/atom14/apo_w001.geom2vec.npz",
+      "input_sha256": "22d604cf741bb91dc661536fd46f8bf62a1490882009dbe5ede5f67b0d60eddd",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.645,
+      "status": "ok"
+    },
+    {
+      "input": "replica_02/window_001/atom14/candidate_no_probe_w001.npy",
+      "output": "replica_02/window_001/atom14/candidate_no_probe_w001.geom2vec.npz",
+      "input_sha256": "b87affacfe41821dbbd18a4094a02d91bcc67d8d4ed511406a77bdd35a1fd688",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.641,
+      "status": "ok"
+    },
+    {
+      "input": "replica_02/window_001/atom14/candidate_probe_w001.npy",
+      "output": "replica_02/window_001/atom14/candidate_probe_w001.geom2vec.npz",
+      "input_sha256": "79c9e4db8ca4ca522aa98ecaf7452c0ba0e0cd176f0c9830e8d21c321cff70d9",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.67,
+      "status": "ok"
+    },
+    {
+      "input": "replica_02/window_001/atom14/probe_only_w001.npy",
+      "output": "replica_02/window_001/atom14/probe_only_w001.geom2vec.npz",
+      "input_sha256": "1935ec7c6a7f05c7a966f32d303b2ebde3b666c52e5a370b02136fe3d62cf855",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.752,
+      "status": "ok"
+    },
+    {
+      "input": "replica_02/window_002/atom14/apo_w002.npy",
+      "output": "replica_02/window_002/atom14/apo_w002.geom2vec.npz",
+      "input_sha256": "8be24637a192a9bd1259ac7f4f52e5a4a3eaeee512f0eac455446ff8640bf392",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.877,
+      "status": "ok"
+    },
+    {
+      "input": "replica_02/window_002/atom14/candidate_no_probe_w002.npy",
+      "output": "replica_02/window_002/atom14/candidate_no_probe_w002.geom2vec.npz",
+      "input_sha256": "9b98edc6ff619fc3937bc34798710733b47f84170912d963f13a892a840ce086",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.876,
+      "status": "ok"
+    },
+    {
+      "input": "replica_02/window_002/atom14/candidate_probe_w002.npy",
+      "output": "replica_02/window_002/atom14/candidate_probe_w002.geom2vec.npz",
+      "input_sha256": "1e7ab9d65439a677def800973fa2aa99df4bbb2d973166aadcdba99d6a975efd",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.853,
+      "status": "ok"
+    },
+    {
+      "input": "replica_02/window_002/atom14/probe_only_w002.npy",
+      "output": "replica_02/window_002/atom14/probe_only_w002.geom2vec.npz",
+      "input_sha256": "ed4f79c0520fac6868c2a500b2285512482f6aa02f2717cd7e2ce6c247708104",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.82,
+      "status": "ok"
+    },
+    {
+      "input": "replica_02/window_003/atom14/apo_w003.npy",
+      "output": "replica_02/window_003/atom14/apo_w003.geom2vec.npz",
+      "input_sha256": "8d0f2c1342178b6c6999e2d3e83baeecfb30993ea87c392c21c64b0c832e5477",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.692,
+      "status": "ok"
+    },
+    {
+      "input": "replica_02/window_003/atom14/candidate_no_probe_w003.npy",
+      "output": "replica_02/window_003/atom14/candidate_no_probe_w003.geom2vec.npz",
+      "input_sha256": "63acb516ca0b40617a85c1feb69898873d7219c2a6de2484fdbc490ada13a324",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.664,
+      "status": "ok"
+    },
+    {
+      "input": "replica_02/window_003/atom14/candidate_probe_w003.npy",
+      "output": "replica_02/window_003/atom14/candidate_probe_w003.geom2vec.npz",
+      "input_sha256": "33376f8400529bf845e73d4d3a41f5e4cfea2f5629a8a7189138b2ac5e9f8057",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.686,
+      "status": "ok"
+    },
+    {
+      "input": "replica_02/window_003/atom14/probe_only_w003.npy",
+      "output": "replica_02/window_003/atom14/probe_only_w003.geom2vec.npz",
+      "input_sha256": "3612fbce3dc4a2109e6fcdc7919c02f241a590045af0f8b6b621dc026672cfb6",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.701,
+      "status": "ok"
+    },
+    {
+      "input": "replica_02/window_004/atom14/apo_w004.npy",
+      "output": "replica_02/window_004/atom14/apo_w004.geom2vec.npz",
+      "input_sha256": "5fe5afa3dcb80f2c2d24712dcf912effaf8074c7cd61aabade49921486450d0e",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.776,
+      "status": "ok"
+    },
+    {
+      "input": "replica_02/window_004/atom14/candidate_no_probe_w004.npy",
+      "output": "replica_02/window_004/atom14/candidate_no_probe_w004.geom2vec.npz",
+      "input_sha256": "c51b9add191af613709f7046ea2bf0480c9547890379bac92678c8f80cc54c04",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.801,
+      "status": "ok"
+    },
+    {
+      "input": "replica_02/window_004/atom14/candidate_probe_w004.npy",
+      "output": "replica_02/window_004/atom14/candidate_probe_w004.geom2vec.npz",
+      "input_sha256": "d7dfb3a0159f082126257298952b7d833975c6b76cea18a85ce07c4d7196de0e",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.832,
+      "status": "ok"
+    },
+    {
+      "input": "replica_02/window_004/atom14/probe_only_w004.npy",
+      "output": "replica_02/window_004/atom14/probe_only_w004.geom2vec.npz",
+      "input_sha256": "c4451642c1f8cf9dd275d3d32273da8aef8f428724cab949b2c332a0308b3e51",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.817,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_000/atom14/apo_w000.npy",
+      "output": "replica_03/window_000/atom14/apo_w000.geom2vec.npz",
+      "input_sha256": "894f488436ee6e967d3501ba8d7480732f236c0c5c4a4867a593f4f779a0c09f",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.627,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_000/atom14/candidate_no_probe_w000.npy",
+      "output": "replica_03/window_000/atom14/candidate_no_probe_w000.geom2vec.npz",
+      "input_sha256": "bde75d9b642ba67e8e66ba7ff7988c3d561d4f97cf98f82da6535b0171ec98d4",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.628,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_000/atom14/candidate_probe_w000.npy",
+      "output": "replica_03/window_000/atom14/candidate_probe_w000.geom2vec.npz",
+      "input_sha256": "e3168b14d26e0a356eb1d16afc63d9076ee2da82f828b3f31c7a3ac2267d2bd9",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.628,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_000/atom14/probe_only_w000.npy",
+      "output": "replica_03/window_000/atom14/probe_only_w000.geom2vec.npz",
+      "input_sha256": "bd084614d645996cd98e9258bba5400b08c61e5af00b74053f4fbe815239c21e",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.634,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_001/atom14/apo_w001.npy",
+      "output": "replica_03/window_001/atom14/apo_w001.geom2vec.npz",
+      "input_sha256": "46665cabacfe9bafd5486dad18d940d7be1cb8568befce73d2ac4e6ec286664a",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.789,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_001/atom14/candidate_no_probe_w001.npy",
+      "output": "replica_03/window_001/atom14/candidate_no_probe_w001.geom2vec.npz",
+      "input_sha256": "1efa1d04f165e58abf74b14ff03b66f183360c0c99a9695cb9d159658465eb45",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.774,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_001/atom14/candidate_probe_w001.npy",
+      "output": "replica_03/window_001/atom14/candidate_probe_w001.geom2vec.npz",
+      "input_sha256": "a74f6c8cf5b866e6d09b2b20273dc54b304092183330a64e6b82483514511fc5",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.782,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_001/atom14/probe_only_w001.npy",
+      "output": "replica_03/window_001/atom14/probe_only_w001.geom2vec.npz",
+      "input_sha256": "b623184c944da9e9c02dcb4aa178e7a77ea71ca1a440e9fb30f6e4734d50d3b7",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.8,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_002/atom14/apo_w002.npy",
+      "output": "replica_03/window_002/atom14/apo_w002.geom2vec.npz",
+      "input_sha256": "5ddf063cfda3708a7d4ddd9cdc97ce1ca5d5ca1baa39deafbd50d55a3b7b05f4",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.703,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_002/atom14/candidate_no_probe_w002.npy",
+      "output": "replica_03/window_002/atom14/candidate_no_probe_w002.geom2vec.npz",
+      "input_sha256": "d687aef7b1d47b6c4384061b870c5e35c20b3521dc1c3acb586329a379365182",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.703,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_002/atom14/candidate_probe_w002.npy",
+      "output": "replica_03/window_002/atom14/candidate_probe_w002.geom2vec.npz",
+      "input_sha256": "43dec195bb614c43e4d2308ea8d3c636662a5ebd61bb7d21b3fb2df00084df9f",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.762,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_002/atom14/probe_only_w002.npy",
+      "output": "replica_03/window_002/atom14/probe_only_w002.geom2vec.npz",
+      "input_sha256": "8e05185ebd897948b87d9cdbd1058456c1a7b83f6bf8753e47e474584cc047ad",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.721,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_003/atom14/apo_w003.npy",
+      "output": "replica_03/window_003/atom14/apo_w003.geom2vec.npz",
+      "input_sha256": "d9c0f95fd9f5e025a8653bb003b474a4aebaadeba63233752203eaa3f7cd5cfa",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.794,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_003/atom14/candidate_no_probe_w003.npy",
+      "output": "replica_03/window_003/atom14/candidate_no_probe_w003.geom2vec.npz",
+      "input_sha256": "42cba419882adfad22eb77d34958532a1b848b0030b7d1ae2009e28b52e11bb7",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.77,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_003/atom14/candidate_probe_w003.npy",
+      "output": "replica_03/window_003/atom14/candidate_probe_w003.geom2vec.npz",
+      "input_sha256": "d8ecc992eefa5001f41dbc750c709174894a298772f73c10046f78e5fe18f3cc",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.716,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_003/atom14/probe_only_w003.npy",
+      "output": "replica_03/window_003/atom14/probe_only_w003.geom2vec.npz",
+      "input_sha256": "bb1ba3b0916761c2c08192fe332ba051b2c65a45942ad07b5292040b01fde7aa",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.735,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_004/atom14/apo_w004.npy",
+      "output": "replica_03/window_004/atom14/apo_w004.geom2vec.npz",
+      "input_sha256": "dcac1686a2d82c9d203810093ae12551071cc40c1d023e30ff3562c0e8ed5186",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.712,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_004/atom14/candidate_no_probe_w004.npy",
+      "output": "replica_03/window_004/atom14/candidate_no_probe_w004.geom2vec.npz",
+      "input_sha256": "4c3eec30e24971ea9eaecf66f48b9202fb48251ebb24554444f03c26b4a472d8",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.661,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_004/atom14/candidate_probe_w004.npy",
+      "output": "replica_03/window_004/atom14/candidate_probe_w004.geom2vec.npz",
+      "input_sha256": "ff803e696dd40dc0bf1292430beb887de0090c69c6ba6d5ed8308c03fd78c71b",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.631,
+      "status": "ok"
+    },
+    {
+      "input": "replica_03/window_004/atom14/probe_only_w004.npy",
+      "output": "replica_03/window_004/atom14/probe_only_w004.geom2vec.npz",
+      "input_sha256": "fdddad5beed1b682fae551c1740ad16908b9822dd4fb2301c65e54a7e2dafe0a",
+      "frames": 100,
+      "shape": [
+        100,
+        270,
+        128
+      ],
+      "finite": true,
+      "seconds": 6.668,
+      "status": "ok"
+    }
+  ],
+  "claim_boundary": "Embedding extraction only; qualification requires independent-replica audit."
+}

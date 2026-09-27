@@ -1,0 +1,1712 @@
+{
+  "method": "G2-A independent atom14/raw identity + PBC-geometry screen",
+  "status": "REFERENCE_UNVERIFIED_PBC_UNVERIFIED",
+  "atom14_geometry_screen": "PASS",
+  "full_pbc_validation": "NOT_ESTABLISHED_NO_CELL_TRAJECTORY_RECONSTRUCTION",
+  "count": 40,
+  "status_counts": {
+    "PASS_GEOMETRY_SCREEN": 40
+  },
+  "same_masks_within_units": true,
+  "mask_mismatch_units": [],
+  "cross_window_context_mask_match": true,
+  "upstream_batch_audit_sha256": "5849b2c4e9c0e098a8480aea75bc121f35d10d4ba05b541e3c8406fa924621b5",
+  "fkg_report_sha256": "b7dbcb11f07b543694d85a680125c25b1fac2edf16be92ad0f9ff84f174bd90d",
+  "independent_atom14_reference": "hardcoded audit reference; official mdgen source required for full geometry-screen pass",
+  "mdgen_reference_source": {
+    "status": "LOAD_FAILED",
+    "path": "project\\tools\\oneprot-embeddings\\external\\mdgen\\mdgen\\residue_constants.py",
+    "sha256": "c84be323e613c83cfca8eb45ebf0020be2ab2a0e7b79305bd768809d5b597920",
+    "error": "ModuleNotFoundError: No module named 'tree'"
+  },
+  "cutoffs_A": {
+    "N_CA": 2.5,
+    "CA_C": 2.5,
+    "C_O": 2.0,
+    "PEPTIDE_C_N": 3.0,
+    "CA_NEIGHBOR": 8.0
+  },
+  "rows": [
+    {
+      "input": "replica_02/window_000/atom14/apo_w000.npy",
+      "atom14_sha256": "b3104dd9054ee3661e1e1d64708c80b5d1a49399b8bba539a3b9e4076868bdea",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.6032564640045166,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6729333400726318,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3437786102294922,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4504038095474243,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.076969623565674,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.5297369956970215,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "f00106f9674d559c0b1cf855a4293c603fce2f43311a580a011e3aa69b95ff7d",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 0,
+      "context": "apo"
+    },
+    {
+      "input": "replica_02/window_000/atom14/candidate_no_probe_w000.npy",
+      "atom14_sha256": "b6f4c8af28354909db99595911d392f3b6bb8a6801e046c63187f64431a32ee8",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5831395387649536,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6779016256332397,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3204176425933838,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4314591884613037,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.116804599761963,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.6986169815063477,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "78d2039e52d724d968206135f4d7ca56d861d4f8deb17cec92ea56e70d932fc7",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 0,
+      "context": "candidate_no_probe"
+    },
+    {
+      "input": "replica_02/window_000/atom14/candidate_probe_w000.npy",
+      "atom14_sha256": "1779d07334193b26b7d11c2eef33ccf0a957663937fb6e630d1263d4415f5055",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5941282510757446,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6760172843933105,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3272757530212402,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4345173835754395,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.083071708679199,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.6198959350585938,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "29245bfffe894b9eb146df80d6588bb83affcdb99889b6c6add33397c8f71fd9",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 0,
+      "context": "candidate_probe"
+    },
+    {
+      "input": "replica_02/window_000/atom14/probe_only_w000.npy",
+      "atom14_sha256": "fea5507427a0b06d35918498c39f292230c549466b06378c608150a4d28fdc67",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5982654094696045,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.668229341506958,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.329313039779663,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.439430594444275,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.086005210876465,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.273444652557373,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "0b2d44c37168ea4328c54258fcb69b423c829a68610d3badec50e161c8e60ee5",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 0,
+      "context": "probe_only"
+    },
+    {
+      "input": "replica_02/window_001/atom14/apo_w001.npy",
+      "atom14_sha256": "22d604cf741bb91dc661536fd46f8bf62a1490882009dbe5ede5f67b0d60eddd",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.596954107284546,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6818606853485107,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3174761533737183,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4385628700256348,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.092648029327393,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.6146624088287354,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "e6d9d2a5acb3389fb56cdcdc367a8823919955195dec00588ceef10677bb348c",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 1,
+      "context": "apo"
+    },
+    {
+      "input": "replica_02/window_001/atom14/candidate_no_probe_w001.npy",
+      "atom14_sha256": "b87affacfe41821dbbd18a4094a02d91bcc67d8d4ed511406a77bdd35a1fd688",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5979909896850586,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.666606068611145,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3185774087905884,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4496145248413086,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.062575340270996,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 3.3965985774993896,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "886a6c7f6075c5061e4fc1f6665b42f2944ba6f6886b7e8fbd70c37ee997de63",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 1,
+      "context": "candidate_no_probe"
+    },
+    {
+      "input": "replica_02/window_001/atom14/candidate_probe_w001.npy",
+      "atom14_sha256": "79c9e4db8ca4ca522aa98ecaf7452c0ba0e0cd176f0c9830e8d21c321cff70d9",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5856826305389404,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6604976654052734,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3351545333862305,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4376074075698853,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.062712669372559,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.4079267978668213,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "c2ca9dbcf677bd97e739f677a93cc76f3286d3ea973da9b7789b6dc909bc4b4d",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 1,
+      "context": "candidate_probe"
+    },
+    {
+      "input": "replica_02/window_001/atom14/probe_only_w001.npy",
+      "atom14_sha256": "1935ec7c6a7f05c7a966f32d303b2ebde3b666c52e5a370b02136fe3d62cf855",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5898224115371704,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.667854905128479,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3251932859420776,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4434391260147095,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.137849807739258,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.7734880447387695,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "dcc70ba567afb6ce6dea955fe767f110f57436949ca19b791b21143597c021cd",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 1,
+      "context": "probe_only"
+    },
+    {
+      "input": "replica_02/window_002/atom14/apo_w002.npy",
+      "atom14_sha256": "8be24637a192a9bd1259ac7f4f52e5a4a3eaeee512f0eac455446ff8640bf392",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.6274970769882202,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6596685647964478,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3290388584136963,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4333950281143188,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.065666198730469,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.485517978668213,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "a902740c5d2e99085ac4fbe13549ecde025ba8bc8d1feeafb8fb60a943796d18",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 2,
+      "context": "apo"
+    },
+    {
+      "input": "replica_02/window_002/atom14/candidate_no_probe_w002.npy",
+      "atom14_sha256": "9b98edc6ff619fc3937bc34798710733b47f84170912d963f13a892a840ce086",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.589518666267395,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6576049327850342,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3246034383773804,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4322348833084106,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.076059818267822,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.254753828048706,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "0cac244d827087a4847c65c3effad1fb5e4151b5f247d0bb2c4c9bfafbfbca4c",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 2,
+      "context": "candidate_no_probe"
+    },
+    {
+      "input": "replica_02/window_002/atom14/candidate_probe_w002.npy",
+      "atom14_sha256": "1e7ab9d65439a677def800973fa2aa99df4bbb2d973166aadcdba99d6a975efd",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5873240232467651,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.67177414894104,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3297419548034668,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4466726779937744,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.077220439910889,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.5035898685455322,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "d3fecbaa2d6582db8cf1ba46b6f1fdf9246ba72c50b0d42bf6cd171b2a6fa76e",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 2,
+      "context": "candidate_probe"
+    },
+    {
+      "input": "replica_02/window_002/atom14/probe_only_w002.npy",
+      "atom14_sha256": "ed4f79c0520fac6868c2a500b2285512482f6aa02f2717cd7e2ce6c247708104",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5852930545806885,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.658294677734375,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3340845108032227,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4331483840942383,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.075153827667236,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.5195302963256836,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "003b815f41ed80a0cdcb76c3a4db365d32d81527bbb71f5675152351a6dd2f04",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 2,
+      "context": "probe_only"
+    },
+    {
+      "input": "replica_02/window_003/atom14/apo_w003.npy",
+      "atom14_sha256": "8d0f2c1342178b6c6999e2d3e83baeecfb30993ea87c392c21c64b0c832e5477",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5934765338897705,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6555790901184082,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.342180609703064,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4285088777542114,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.081709384918213,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.3086390495300293,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "ee412e5eeb6abf8615adb724e52848f8de51fd80722c4f2eb378b567e196f9b4",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 3,
+      "context": "apo"
+    },
+    {
+      "input": "replica_02/window_003/atom14/candidate_no_probe_w003.npy",
+      "atom14_sha256": "63acb516ca0b40617a85c1feb69898873d7219c2a6de2484fdbc490ada13a324",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5885331630706787,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6816539764404297,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3181548118591309,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4315423965454102,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.0818681716918945,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.240190267562866,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "1601657b5abcb69b8d8e702dcf35de90c777da584bdaa607e0e6346e7887b830",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 3,
+      "context": "candidate_no_probe"
+    },
+    {
+      "input": "replica_02/window_003/atom14/candidate_probe_w003.npy",
+      "atom14_sha256": "33376f8400529bf845e73d4d3a41f5e4cfea2f5629a8a7189138b2ac5e9f8057",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5838696956634521,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.655051589012146,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3220627307891846,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.438025951385498,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.086371421813965,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.4509360790252686,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "150513d28e852e94999673b1daa6aa5bb2d7d06650e141d83e2047e7b2fa1273",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 3,
+      "context": "candidate_probe"
+    },
+    {
+      "input": "replica_02/window_003/atom14/probe_only_w003.npy",
+      "atom14_sha256": "3612fbce3dc4a2109e6fcdc7919c02f241a590045af0f8b6b621dc026672cfb6",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5923194885253906,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6564427614212036,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3268518447875977,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4389675855636597,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.090404033660889,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.427056312561035,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "597ab22a8d967495d2e4767582ed5ff2c81712112f0c6deca229f0234df2bf9c",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 3,
+      "context": "probe_only"
+    },
+    {
+      "input": "replica_02/window_004/atom14/apo_w004.npy",
+      "atom14_sha256": "5fe5afa3dcb80f2c2d24712dcf912effaf8074c7cd61aabade49921486450d0e",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5988444089889526,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.669752836227417,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.321213722229004,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4343425035476685,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.082154273986816,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.08988356590271,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "f827035ee9f1dc75d0939e2bd5f5581fa88d3486e4535d2d4a88a4ff02f0a71b",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 4,
+      "context": "apo"
+    },
+    {
+      "input": "replica_02/window_004/atom14/candidate_no_probe_w004.npy",
+      "atom14_sha256": "c51b9add191af613709f7046ea2bf0480c9547890379bac92678c8f80cc54c04",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.603016972541809,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.653159499168396,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3326830863952637,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4395254850387573,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.123867034912109,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.1130869388580322,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "edadd17b15e12b2513ada7173165385c12065219ee033e9655672279039ea335",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 4,
+      "context": "candidate_no_probe"
+    },
+    {
+      "input": "replica_02/window_004/atom14/candidate_probe_w004.npy",
+      "atom14_sha256": "d7dfb3a0159f082126257298952b7d833975c6b76cea18a85ce07c4d7196de0e",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5928733348846436,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.64956533908844,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3206324577331543,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4350031614303589,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.062438488006592,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.052759885787964,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "231b58c57fe294d0adbd9203ff19cc19d1324d5d63cf7008a6a3db4b47259bbd",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 4,
+      "context": "candidate_probe"
+    },
+    {
+      "input": "replica_02/window_004/atom14/probe_only_w004.npy",
+      "atom14_sha256": "c4451642c1f8cf9dd275d3d32273da8aef8f428724cab949b2c332a0308b3e51",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5778917074203491,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6664940118789673,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3192508220672607,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4399404525756836,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.081383228302002,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.7607433795928955,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "9bd6ea9a560abe8a1c473836f2e6b1be5b3e9da09a7ccebff3d3b010c9e4cbd9",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 2,
+      "window": 4,
+      "context": "probe_only"
+    },
+    {
+      "input": "replica_03/window_000/atom14/apo_w000.npy",
+      "atom14_sha256": "894f488436ee6e967d3501ba8d7480732f236c0c5c4a4867a593f4f779a0c09f",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5899244546890259,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6882236003875732,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.340522050857544,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4317805767059326,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.070894718170166,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.623198986053467,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "924fed087969115c6d6d27b0606926e67c7a64a8b745cb4c4fe8736ffa7a95a8",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 0,
+      "context": "apo"
+    },
+    {
+      "input": "replica_03/window_000/atom14/candidate_no_probe_w000.npy",
+      "atom14_sha256": "bde75d9b642ba67e8e66ba7ff7988c3d561d4f97cf98f82da6535b0171ec98d4",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.589341163635254,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6831697225570679,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3328717947006226,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.433099389076233,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.060219764709473,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.8385696411132812,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "619048f582dd9baaa435429addf4c3c1be98cf4ae8a97d97e8fe7557d6cccd7b",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 0,
+      "context": "candidate_no_probe"
+    },
+    {
+      "input": "replica_03/window_000/atom14/candidate_probe_w000.npy",
+      "atom14_sha256": "e3168b14d26e0a356eb1d16afc63d9076ee2da82f828b3f31c7a3ac2267d2bd9",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5982688665390015,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6647553443908691,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3165887594223022,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4322041273117065,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.121692657470703,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.2103683948516846,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "4c2c758803782e164dacabc6990b0205170ef9837a3520483dd13adeab4cca0e",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 0,
+      "context": "candidate_probe"
+    },
+    {
+      "input": "replica_03/window_000/atom14/probe_only_w000.npy",
+      "atom14_sha256": "bd084614d645996cd98e9258bba5400b08c61e5af00b74053f4fbe815239c21e",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5927923917770386,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6657851934432983,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3184278011322021,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4411029815673828,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.076145172119141,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.539550542831421,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "5915f1d61acd2c5be7c96a6eb902a8215a2e8f65d946285037ad76d893aa5f24",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 0,
+      "context": "probe_only"
+    },
+    {
+      "input": "replica_03/window_001/atom14/apo_w001.npy",
+      "atom14_sha256": "46665cabacfe9bafd5486dad18d940d7be1cb8568befce73d2ac4e6ec286664a",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5978463888168335,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6614534854888916,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3258343935012817,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.431413173675537,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.086490631103516,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.907397508621216,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "491269c756204dc31bec231450b83e3eef4bf2ec9c9e296ef633a50f72b3b028",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 1,
+      "context": "apo"
+    },
+    {
+      "input": "replica_03/window_001/atom14/candidate_no_probe_w001.npy",
+      "atom14_sha256": "1efa1d04f165e58abf74b14ff03b66f183360c0c99a9695cb9d159658465eb45",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.6035858392715454,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6587287187576294,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.32307767868042,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4442894458770752,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.0943684577941895,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.4567947387695312,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "c4a38f8c91b284617ec6ad3b3926cd2826afbe84e3e7338f169ed6cafce8dcfd",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 1,
+      "context": "candidate_no_probe"
+    },
+    {
+      "input": "replica_03/window_001/atom14/candidate_probe_w001.npy",
+      "atom14_sha256": "a74f6c8cf5b866e6d09b2b20273dc54b304092183330a64e6b82483514511fc5",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5941517353057861,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.654887080192566,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.333640694618225,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4316208362579346,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.071796417236328,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.6399829387664795,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "23d731f6afaf82a863408d631e172d3a252eff832a997d99433f7932b6f0b327",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 1,
+      "context": "candidate_probe"
+    },
+    {
+      "input": "replica_03/window_001/atom14/probe_only_w001.npy",
+      "atom14_sha256": "b623184c944da9e9c02dcb4aa178e7a77ea71ca1a440e9fb30f6e4734d50d3b7",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.6099060773849487,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6598730087280273,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3253952264785767,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4297150373458862,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.075869560241699,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.2424182891845703,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "b7b83b4311e0610185ea8a1dcad366e783c3d8e536949bddb8f8791a06150899",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 1,
+      "context": "probe_only"
+    },
+    {
+      "input": "replica_03/window_002/atom14/apo_w002.npy",
+      "atom14_sha256": "5ddf063cfda3708a7d4ddd9cdc97ce1ca5d5ca1baa39deafbd50d55a3b7b05f4",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5838266611099243,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6679856777191162,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3150992393493652,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4413185119628906,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.0846333503723145,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.4449141025543213,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "eb8d73f1c9c63bc96db533d58376f037dad7ab45a826adabc3e871521dea7fe1",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 2,
+      "context": "apo"
+    },
+    {
+      "input": "replica_03/window_002/atom14/candidate_no_probe_w002.npy",
+      "atom14_sha256": "d687aef7b1d47b6c4384061b870c5e35c20b3521dc1c3acb586329a379365182",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.6046979427337646,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6617333889007568,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3196929693222046,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.440696358680725,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.064990043640137,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.235964775085449,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "ae59d11833bc90f984e07e5f95815cae44f36a88056adae737213fbccf9ad9cd",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 2,
+      "context": "candidate_no_probe"
+    },
+    {
+      "input": "replica_03/window_002/atom14/candidate_probe_w002.npy",
+      "atom14_sha256": "43dec195bb614c43e4d2308ea8d3c636662a5ebd61bb7d21b3fb2df00084df9f",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5962392091751099,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6713635921478271,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.317328691482544,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4365503787994385,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.090176582336426,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.5437021255493164,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "d1ebe8dcd858720a34ab753ffcc89408c244a7f88b40805f0d546d2db941cec1",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 2,
+      "context": "candidate_probe"
+    },
+    {
+      "input": "replica_03/window_002/atom14/probe_only_w002.npy",
+      "atom14_sha256": "8e05185ebd897948b87d9cdbd1058456c1a7b83f6bf8753e47e474584cc047ad",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.601770281791687,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.655173420906067,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3202422857284546,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.45186448097229,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.073083877563477,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.3967669010162354,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "300c898425111b5e1b0888b41c25778e7f0050cccc73704ceb52d4ee22dd6913",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 2,
+      "context": "probe_only"
+    },
+    {
+      "input": "replica_03/window_003/atom14/apo_w003.npy",
+      "atom14_sha256": "d9c0f95fd9f5e025a8653bb003b474a4aebaadeba63233752203eaa3f7cd5cfa",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5987173318862915,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6609537601470947,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3240792751312256,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4351475238800049,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.068713665008545,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.2166850566864014,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "56c0d86ff0899d212a5ef88a5c83294009a440d5b2f40f652d73a09d7ab1529c",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 3,
+      "context": "apo"
+    },
+    {
+      "input": "replica_03/window_003/atom14/candidate_no_probe_w003.npy",
+      "atom14_sha256": "42cba419882adfad22eb77d34958532a1b848b0030b7d1ae2009e28b52e11bb7",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.602372169494629,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6745692491531372,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.322862982749939,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.446602463722229,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.06921911239624,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.3620541095733643,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "bd401d5031618d20efb859669fd770bd47aeab1b7b44148ce3cbaf3930f12ce4",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 3,
+      "context": "candidate_no_probe"
+    },
+    {
+      "input": "replica_03/window_003/atom14/candidate_probe_w003.npy",
+      "atom14_sha256": "d8ecc992eefa5001f41dbc750c709174894a298772f73c10046f78e5fe18f3cc",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5991697311401367,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.67250394821167,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.319457769393921,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.435249924659729,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.085921764373779,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.561718225479126,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "b7f4151bbfa595ef4fbbc672bdc4eb60afd29c39c750c925b5a935b098646ac2",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 3,
+      "context": "candidate_probe"
+    },
+    {
+      "input": "replica_03/window_003/atom14/probe_only_w003.npy",
+      "atom14_sha256": "bb1ba3b0916761c2c08192fe332ba051b2c65a45942ad07b5292040b01fde7aa",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.590811848640442,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6804630756378174,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3245593309402466,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4453752040863037,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.098763465881348,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.559321880340576,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "8231862d2649dec0683afd9bf2f579d63cab0ab007e6082e7911e21698b2a5c4",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 3,
+      "context": "probe_only"
+    },
+    {
+      "input": "replica_03/window_004/atom14/apo_w004.npy",
+      "atom14_sha256": "dcac1686a2d82c9d203810093ae12551071cc40c1d023e30ff3562c0e8ed5186",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5995577573776245,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.651073694229126,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3200156688690186,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.437784194946289,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.09667444229126,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.7720401287078857,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "8320e836e3b322dc91979bec2369d6a2fdbf92b27c0f75c0a9ddd0fbe2f71978",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 4,
+      "context": "apo"
+    },
+    {
+      "input": "replica_03/window_004/atom14/candidate_no_probe_w004.npy",
+      "atom14_sha256": "4c3eec30e24971ea9eaecf66f48b9202fb48251ebb24554444f03c26b4a472d8",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5854357481002808,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.663142442703247,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3135281801223755,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.466078758239746,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.080309867858887,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 4.471276760101318,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "ad39fefbba8195e8fb5fd99354956bfe24b5bb7a10b9a57c3c1366d1bd7cb7f6",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 4,
+      "context": "candidate_no_probe"
+    },
+    {
+      "input": "replica_03/window_004/atom14/candidate_probe_w004.npy",
+      "atom14_sha256": "ff803e696dd40dc0bf1292430beb887de0090c69c6ba6d5ed8308c03fd78c71b",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5815855264663696,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6916311979293823,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.3221204280853271,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4458509683609009,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.090299129486084,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 3.5129730701446533,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "405dc2263443d6dbf6cd36e2f15f7a6ae11e351e7f7dc4ebb695dce9a13e9586",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 4,
+      "context": "candidate_probe"
+    },
+    {
+      "input": "replica_03/window_004/atom14/probe_only_w004.npy",
+      "atom14_sha256": "fdddad5beed1b682fae551c1740ad16908b9822dd4fb2301c65e54a7e2dafe0a",
+      "hash_ok": true,
+      "mapping_max_error_A": 0.0,
+      "mismatch_slots_frames": 0,
+      "missing_slot_errors": 0,
+      "mask_sha256": "540cc90c3da8a91aa0000ffcc4dbb68834e4951df06b337a689fa30046beff94",
+      "geometry": {
+        "N_CA": {
+          "max_A": 1.5846941471099854,
+          "violations": 0
+        },
+        "CA_C": {
+          "max_A": 1.6645654439926147,
+          "violations": 0
+        },
+        "C_O": {
+          "max_A": 1.322495460510254,
+          "violations": 0
+        },
+        "PEPTIDE_C_N": {
+          "max_A": 1.4387370347976685,
+          "violations": 0
+        },
+        "CA_NEIGHBOR": {
+          "max_A": 4.070202350616455,
+          "violations": 0
+        },
+        "centered_CA_temporal": {
+          "max_A": 2.06178879737854,
+          "jumps_gt_15A": 0
+        },
+        "geometry_flags": 0
+      },
+      "raw_sha256": "5e690eaf306e0098f28929aa14252ec26d436cf526fd3890f59687870b5fb52c",
+      "box_status": "BOX_MISSING",
+      "status": "PASS_GEOMETRY_SCREEN",
+      "replica": 3,
+      "window": 4,
+      "context": "probe_only"
+    }
+  ],
+  "claim_boundary": "Geometry screens can reject suspect imaging, not prove proper PBC treatment without original unit-cell trajectory, ligand and protein image review."
+}

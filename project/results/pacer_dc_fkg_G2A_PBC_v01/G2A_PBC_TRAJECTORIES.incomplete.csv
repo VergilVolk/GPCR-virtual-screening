@@ -1,0 +1,1 @@
+system,replica,frames_total,frames_scanned,receptor_atoms,receptor_residues,valid_box_frames,invalid_box_frames,ca_pbc_split_pairs,ca_non_pbc_severe_pairs,temporal_pbc_jump_atoms,max_ca_direct_A,dcd_sha256,pdb_sha256

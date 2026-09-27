@@ -28,14 +28,17 @@
 
 ## 安装
 
+权重已直接随本分支提交，队友不需要另行下载。先核验：
+
+```bash
+sha256sum project/tools/geom2vec_checkpoints/visnet_l6_h64_rbf64_r75.pth
+```
+
+应得到：`b8f1ef9b591c57f7687566bd60d3664800956ac280cf2ae8e64f54196cd8d417`。
+
 ```bash
 conda env create -f project/environment_pacer_dc_geom2vec.yml
 conda activate pacer_dc_geom2vec
-mkdir -p project/tools/geom2vec_checkpoints
-curl -L \
-  https://raw.githubusercontent.com/dinner-group/geom2vec/371d642ec1061664f16e49fcac702d07fc8d0b51/checkpoints/visnet_l6_h64_rbf64_r75.pth \
-  -o project/tools/geom2vec_checkpoints/visnet_l6_h64_rbf64_r75.pth
-sha256sum project/tools/geom2vec_checkpoints/visnet_l6_h64_rbf64_r75.pth
 ```
 
 若Linux/CUDA环境已有匹配版本的`pyg-lib`或`torch-cluster`，代码自动使用官方加速邻域构图；否则使用仓库内确定性PyTorch fallback。初次运行建议`--batch-size 1`。

@@ -94,44 +94,53 @@ def main() -> None:
                 provenance.append({"replica": replica, "window": window, "context": context,
                                    "path": str(npy), "sha256": sha256(npy), "frames": int(arr.shape[0])})
 
-    # Scaling is calibrated only on R2 trajectory summaries and frozen before R3 evaluation.
-    calibration = np.stack([
-        raw[2][w][c][stat]
-        for w in args.windows for c in CONTEXTS for stat in ("mean", "std", "q10", "q90", "lag1")
-    ])
-    _, scale = robust_location_scale(calibration)
+    # Each statistic has different units/distribution.  Calibrate each one only
+    # on R2 and freeze it before R3; never mix Angstrom distances with lag-1.
+    statistics = ("mean", "std", "q10", "q90", "lag1")
+    scale_by_stat = {}
+    for stat in statistics:
+        calibration = np.stack([raw[2][w][c][stat] for w in args.windows for c in CONTEXTS])
+        _, scale_by_stat[stat] = robust_location_scale(calibration)
+    mechanism_mask = np.asarray(["distal_control" not in name for name in feature_names])
+    if mechanism_mask.sum() < 2:
+        raise ValueError("mechanism feature panel is empty")
     window_rows, summaries, feature_rows = [], [], []
-    for stat in ("mean", "std", "q10", "q90", "lag1"):
+    for stat in statistics:
         for axis, signs in config["axes"].items():
             by_rep = {}
             for replica in args.replicas:
                 vectors = []
                 for window in args.windows:
                     contexts = {c: raw[replica][window][c][stat] for c in CONTEXTS}
-                    vector = factorial_contrast(contexts, signs) / scale
+                    vector = factorial_contrast(contexts, signs) / scale_by_stat[stat]
                     vectors.append(vector)
                     for name, value in zip(feature_names, vector):
                         window_rows.append({"replica": replica, "window": window, "statistic": stat,
                                             "axis": axis, "feature": name, "scaled_contrast": float(value)})
                 by_rep[replica] = np.stack(vectors)
-            pooled2, pooled3 = by_rep[2].mean(axis=0), by_rep[3].mean(axis=0)
+            pooled2_all, pooled3_all = by_rep[2].mean(axis=0), by_rep[3].mean(axis=0)
+            pooled2, pooled3 = pooled2_all[mechanism_mask], pooled3_all[mechanism_mask]
             sign = np.sign(pooled2) == np.sign(pooled3)
             active = (np.abs(pooled2) + np.abs(pooled3)) > 1e-8
+            mechanism_windows = {rep: by_rep[rep][:, mechanism_mask] for rep in args.replicas}
             summaries.append({
                 "statistic": stat, "axis": axis,
                 "cross_replica_cosine": cosine(pooled2, pooled3),
                 "feature_sign_agreement": float(sign[active].mean()) if active.any() else None,
                 "r2_vector_norm": float(np.linalg.norm(pooled2)),
                 "r3_vector_norm": float(np.linalg.norm(pooled3)),
-                "bootstrap_cosine": bootstrap_cosine(by_rep, args.bootstrap, args.seed + len(summaries)),
+                "mechanism_feature_count": int(mechanism_mask.sum()),
+                "distal_control_excluded_from_primary_vector": True,
+                "bootstrap_cosine": bootstrap_cosine(mechanism_windows, args.bootstrap, args.seed + len(summaries)),
             })
             for index, name in enumerate(feature_names):
                 feature_rows.append({
                     "statistic": stat, "axis": axis, "feature": name,
-                    "r2_pooled_scaled_contrast": float(pooled2[index]),
-                    "r3_pooled_scaled_contrast": float(pooled3[index]),
-                    "same_direction": bool(np.sign(pooled2[index]) == np.sign(pooled3[index])),
-                    "minimum_absolute_effect": float(min(abs(pooled2[index]), abs(pooled3[index]))),
+                    "r2_pooled_scaled_contrast": float(pooled2_all[index]),
+                    "r3_pooled_scaled_contrast": float(pooled3_all[index]),
+                    "same_direction": bool(np.sign(pooled2_all[index]) == np.sign(pooled3_all[index])),
+                    "minimum_absolute_effect": float(min(abs(pooled2_all[index]), abs(pooled3_all[index]))),
+                    "included_in_primary_mechanism_vector": bool(mechanism_mask[index]),
                 })
 
     primary = next(x for x in summaries if x["statistic"] == "mean" and x["axis"] == "synergy_interaction")
@@ -146,7 +155,7 @@ def main() -> None:
         "method": config["model_id"], "status": "COMPLETED_DESCRIPTIVE",
         "evidence_level": "two_replica_physical_mechanism_screen",
         "feature_count": len(feature_names), "features": feature_names,
-        "calibration": "R2-only robust scale; R3 held out from scaling",
+        "calibration": "separate R2-only robust scale per statistic; R3 held out; distal control excluded from primary vector",
         "primary_endpoint": "mean/synergy_interaction",
         "primary_result": primary, "all_endpoints": summaries,
         "provenance": {

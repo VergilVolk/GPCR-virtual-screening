@@ -1,0 +1,37 @@
+{
+  "status": "PASS_SOFTWARE_SMOKE",
+  "evidence_level": "single_replica_single_window_smoke",
+  "feature_count": 53,
+  "axis_raw_norms": {
+    "conditional_candidate_effect": 4.8569192446218254,
+    "intrinsic_agonism": 4.333336081850482,
+    "synergy_interaction": 6.401186602418676
+  },
+  "provenance": [
+    {
+      "context": "apo",
+      "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_01\\window_000\\atom14\\apo_w000.npy",
+      "sha256": "fc30ce252405696c852b7300e5e1f9d593d45924096555c1ae0d7d2e43371239",
+      "frames": 100
+    },
+    {
+      "context": "probe_only",
+      "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_01\\window_000\\atom14\\probe_only_w000.npy",
+      "sha256": "905113a3dc932dc35010a7a3fbaa37ea013f56d23d16141a1394d92348e99475",
+      "frames": 100
+    },
+    {
+      "context": "candidate_no_probe",
+      "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_01\\window_000\\atom14\\candidate_no_probe_w000.npy",
+      "sha256": "76040ea22817534deef26a7847eee2b33ef960ad596d0148e03b07ac2666d903",
+      "frames": 100
+    },
+    {
+      "context": "candidate_probe",
+      "path": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_01\\window_000\\atom14\\candidate_probe_w000.npy",
+      "sha256": "6781e21d1fe1400fed2a91d94fb516691a6efcf702e87d448b0831d62e9dd2f7",
+      "frames": 100
+    }
+  ],
+  "claim_boundary": "Execution and finite physical features only; no replication, significance, synergy or PAM claim."
+}

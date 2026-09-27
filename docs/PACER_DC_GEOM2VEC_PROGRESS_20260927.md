@@ -1,5 +1,10 @@
 
 # PACER-DC Geom2Vec 阶段进度与科学结果（2026-09-27；G2 完成后更新）
+> ⚠️ **统计勘误：原 PACER-FKG kernel_u2 标量筛选结果已全部撤销（SUPERSEDED）。**
+> 原分析存在跨区域核尺度不可比的问题，历史通过区域不得用于后续科学结论或模型训练。
+> 当前修正版为 `project/results/pacer_dc_fkg_U2_erratum_v02/`。
+> G2-B、G2-C 保留为独立的描述性分析。
+> TRAINING_GATE = CLOSED。
 
 **状态：PACER-FKG G2 已完成并由项目负责人确认统一归档；阶段性暂停；`TRAINING_GATE = CLOSED`。**
 

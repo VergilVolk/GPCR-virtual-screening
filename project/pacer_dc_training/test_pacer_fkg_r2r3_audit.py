@@ -9,7 +9,7 @@ from types import SimpleNamespace
 
 import numpy as np
 
-from run_pacer_fkg_r2r3_audit import preflight
+from run_pacer_fkg_r2r3_audit import preflight, spearman
 
 
 GRAPH = Path(__file__).resolve().parents[1] / "results" / "pacer_dc_geom2vec_pilot_v01" / "M4_MULTISTRUCTURE_GRAPH_v01.json"
@@ -52,6 +52,10 @@ class FkgPreflightTests(unittest.TestCase):
             frame_ids=np.arange(4, dtype=np.int64),
             sequence=np.asarray(self.sequence if sequence is None else sequence),
         )
+
+    def test_spearman_ties_and_constant_input(self):
+        self.assertAlmostEqual(spearman([1, 1, 2], [2, 2, 3]), 1.0)
+        self.assertIsNone(spearman([1, 1, 1], [2, 3, 4]))
 
     def test_preflight_accepts_complete_fixture_without_writing(self):
         result = preflight(self.args)

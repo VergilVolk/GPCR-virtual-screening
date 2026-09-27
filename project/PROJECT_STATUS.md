@@ -2,6 +2,14 @@
 
 更新时间：2026-09-27
 
+## 2026-09-27 PACER-MCV 无编码器物理基线
+
+- OneProt-MD 与 Geom2Vec/FKG 均未在 compound-110 的 R2/R3 上给出稳定的协同方向；它们保留为失败/消融基线，不再继续充当默认主表示。
+- 四上下文设计不变。新增 PACER-MCV，直接提取 PAM 接触区、正构核心和胞内微开关的 53 个距离、侧链质心与区域紧致度特征，再计算 `ΔC|A`、`ΔAGO` 与 factorial `ΔINT`。
+- 特征清单、R2-only 标准化和 R3 留出判据已经冻结；单元测试通过，R1/W0 四条真实 atom14 轨迹提取通过。
+- 当前仓库缺少 R2/R3 原始 atom14，仅有 Geom2Vec 派生结果，因此 PACER-MCV 的跨 replica 实值尚未产生。该计算不需要 GPU；有原始坐标的队友应按 `docs/PACER_MCV_METHOD_AND_HANDOFF.md` 运行。
+- 在 R2/R3 门禁通过之前，只能称“物理构象基线已实现”，不能声称检测到协同或预测 PAM。
+
 ## 2026-09-27 Geom2Vec 替代编码器小试
 
 - OneProt最终表示因局部四上下文差分跨replica不稳定，停止作为默认主编码器；四上下文MD和`dINT/dAGO`定义不变。
@@ -101,8 +109,7 @@
 自动报告：`project/results/pacer_dc_phase1_audit/REPORT.md`。
 # 当前协作任务入口
 
-当前队员交付以仓库根目录 `START_HERE_ONEPROT_PACER_DC.md` 为准：
-OneProt复现已转为失败基线；当前优先任务改为：
-**现有M4四上下文atom14窗口 → 冻结Geom2Vec embedding → R2/R3 matched-window资格审计 → 通过后再讨论PACER-DC Adapter/Triplet**。
-具体命令以`docs/PACER_DC_GEOM2VEC_HANDOFF.md`为准。
+OneProt 与 Geom2Vec/FKG 已转为失败/消融基线；当前优先任务改为：
+**现有 M4 四上下文 atom14 窗口 → PACER-MCV 物理特征 → R2/R3 方向与窗口块审计 → 与旧编码器基线比较**。
+具体命令以 `docs/PACER_MCV_METHOD_AND_HANDOFF.md` 为准。
 仅完成重对接、体系构建或短平衡不等于完成当前算法任务。

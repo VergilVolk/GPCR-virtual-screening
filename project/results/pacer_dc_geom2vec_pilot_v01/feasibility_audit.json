@@ -1,0 +1,116 @@
+{
+  "method": "PACER-DC frozen Geom2Vec ViSNet feasibility audit",
+  "evidence_level": "encoder_feasibility_pilot",
+  "input": {
+    "candidate": "compound110",
+    "replica": 1,
+    "window": 0,
+    "frames_per_context": 5,
+    "residues": 270,
+    "channels": 128,
+    "note": "Five strided frames are descriptive, not independent replicates."
+  },
+  "se3_and_determinism": {
+    "repeat": {
+      "max_abs_delta": 0.0,
+      "relative_l2_delta": 0.0,
+      "cosine": 1.0
+    },
+    "translation": {
+      "max_abs_delta": 1.0728836059570312e-06,
+      "relative_l2_delta": 4.4151892097943346e-07,
+      "cosine": 1.0
+    },
+    "rotation": {
+      "max_abs_delta": 0.0,
+      "relative_l2_delta": 0.0,
+      "cosine": 1.0
+    },
+    "cpu_radius_graph_fallback": true
+  },
+  "four_context_descriptive": [
+    {
+      "region": "ACh_pocket",
+      "n_residues": 12,
+      "within_context_temporal_rms": 0.05591738365313653,
+      "median_between_context_distance": 0.051037074746991845,
+      "between_within_ratio": 0.9127228674285275,
+      "dAGO_norm": 0.05083109820082578,
+      "dPAM_norm": 0.05124305129315792,
+      "dINT_norm": 0.05490120135306213,
+      "dPAM_dAGO_cosine": 0.42144483857545056
+    },
+    {
+      "region": "compound110_pocket",
+      "n_residues": 12,
+      "within_context_temporal_rms": 0.08392226259769162,
+      "median_between_context_distance": 0.09906303988113144,
+      "between_within_ratio": 1.1804143121834312,
+      "dAGO_norm": 0.11453210125395417,
+      "dPAM_norm": 0.04937429022712509,
+      "dINT_norm": 0.09939871058729789,
+      "dPAM_dAGO_cosine": 0.5018017763825962
+    },
+    {
+      "region": "ECV_anchor",
+      "n_residues": 4,
+      "within_context_temporal_rms": 0.08085934666319482,
+      "median_between_context_distance": 0.07355309170116534,
+      "between_within_ratio": 0.9096424190457242,
+      "dAGO_norm": 0.07197764853452247,
+      "dPAM_norm": 0.07512853486780818,
+      "dINT_norm": 0.11403349643073565,
+      "dPAM_dAGO_cosine": -0.20143590763208127
+    },
+    {
+      "region": "W435_gate",
+      "n_residues": 1,
+      "within_context_temporal_rms": 0.19375622230774361,
+      "median_between_context_distance": 0.0974611832053642,
+      "between_within_ratio": 0.5030093074924133,
+      "dAGO_norm": 0.1297945715234908,
+      "dPAM_norm": 0.0876948101578379,
+      "dINT_norm": 0.14504119718241248,
+      "dPAM_dAGO_cosine": 0.15375005382816184
+    },
+    {
+      "region": "species_probe",
+      "n_residues": 2,
+      "within_context_temporal_rms": 0.16242685770754625,
+      "median_between_context_distance": 0.19238270024936735,
+      "between_within_ratio": 1.1844266580331029,
+      "dAGO_norm": 0.22313509812666274,
+      "dPAM_norm": 0.13732553339452586,
+      "dINT_norm": 0.2689450322204693,
+      "dPAM_dAGO_cosine": -0.06011093631605991
+    },
+    {
+      "region": "global",
+      "n_residues": 270,
+      "within_context_temporal_rms": 0.019809819741030778,
+      "median_between_context_distance": 0.013502871897399345,
+      "between_within_ratio": 0.6816251775088965,
+      "dAGO_norm": 0.014397324803127162,
+      "dPAM_norm": 0.012608418991671531,
+      "dINT_norm": 0.020042685731601836,
+      "dPAM_dAGO_cosine": -0.0976547897711866
+    },
+    {
+      "region": "distal_control",
+      "n_residues": 12,
+      "within_context_temporal_rms": 0.13417721696628987,
+      "median_between_context_distance": 0.09166561143408858,
+      "between_within_ratio": 0.683168227115027,
+      "dAGO_norm": 0.10422985799058643,
+      "dPAM_norm": 0.06772995237040923,
+      "dINT_norm": 0.11302516548948952,
+      "dPAM_dAGO_cosine": 0.18956923549623494
+    }
+  ],
+  "decision": {
+    "engineering_usable": true,
+    "cross_replica_qualified": false,
+    "reason": "Only replica 1 atom14 tensors are committed; R2/R3 must run this exact frozen extractor before replacement is accepted."
+  },
+  "claim_boundary": "Shows executable invariant encoding and non-collapsed four-context signal only; does not establish replica stability, PAM efficacy, or superiority to OneProt."
+}

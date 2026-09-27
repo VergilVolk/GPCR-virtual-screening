@@ -1,6 +1,15 @@
 # PACER-M4 当前状态
 
-更新时间：2026-09-19
+更新时间：2026-09-27
+
+## 2026-09-27 Geom2Vec 替代编码器小试
+
+- OneProt最终表示因局部四上下文差分跨replica不稳定，停止作为默认主编码器；四上下文MD和`dINT/dAGO`定义不变。
+- 已将冻结Geom2Vec ViSNet接入现有atom14窗口，无需重跑MD；真实M4输入为100帧、270残基、2,139个重原子，输出为每帧`270 x 128`残基级不变量特征。
+- CPU实测约`3.0–4.8 s/frame`；identical repeat与旋转相对误差为0，平移相对误差为`4.42e-7`。
+- replica 1五帧描述性小试中，compound110口袋的context separation/temporal variation为`1.18`，global与distal control均约`0.68`，提示局部信号未被全局池化完全抹除。
+- 当前只通过工程可用性闸门，未通过跨replica替换闸门；R2/R3必须运行冻结批处理和matched-window审计，随后还需LY2119620药理控制。
+- 运行与主张边界见`docs/PACER_DC_GEOM2VEC_HANDOFF.md`。
 
 ## 2026-09-19 动态表示对照结果
 
@@ -88,5 +97,7 @@
 # 当前协作任务入口
 
 当前队员交付以仓库根目录 `START_HERE_ONEPROT_PACER_DC.md` 为准：
-**OneProt-MD 复现 → M4 四上下文 embedding → PACER-DC Adapter/Triplet 训练与 baseline 比较**。
+OneProt复现已转为失败基线；当前优先任务改为：
+**现有M4四上下文atom14窗口 → 冻结Geom2Vec embedding → R2/R3 matched-window资格审计 → 通过后再讨论PACER-DC Adapter/Triplet**。
+具体命令以`docs/PACER_DC_GEOM2VEC_HANDOFF.md`为准。
 仅完成重对接、体系构建或短平衡不等于完成当前算法任务。

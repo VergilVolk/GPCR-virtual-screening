@@ -1,0 +1,23 @@
+{
+  "method": "frozen Geom2Vec ViSNet atom14 heavy-atom inference",
+  "evidence_level": "encoder_feasibility_pilot",
+  "atom14": "project\\results\\pacer_dc_four_context_v01\\compound110\\replica_01\\window_000\\atom14\\candidate_no_probe_w000.npy",
+  "atom14_sha256": "76040ea22817534deef26a7847eee2b33ef960ad596d0148e03b07ac2666d903",
+  "checkpoint": "D:\\CLC_geom2vec_runtime\\checkpoints\\visnet_l6_h64_rbf64_r75.pth",
+  "checkpoint_sha256": "b8f1ef9b591c57f7687566bd60d3664800956ac280cf2ae8e64f54196cd8d417",
+  "frames_total": 100,
+  "frames_encoded": 5,
+  "stride": 20,
+  "residues": 270,
+  "heavy_atoms": 2139,
+  "feature_shape": [
+    5,
+    270,
+    128
+  ],
+  "finite": true,
+  "elapsed_seconds": 14.542,
+  "seconds_per_frame": 2.908,
+  "cpu_radius_graph_fallback": true,
+  "claim_boundary": "Feasibility only; no PAM efficacy or cross-replica stability claim."
+}

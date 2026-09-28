@@ -1,0 +1,63 @@
+{
+  "status": "PACER_FKG_LONG_MD_DESCRIPTIVE_ANALYSIS_COMPLETE",
+  "scope": {
+    "raw_md_ns": 600,
+    "contexts": 4,
+    "paired_replicas": 3,
+    "frames_encoded": 12000,
+    "blocks_per_trajectory": 50,
+    "block_duration_ns": 1.0,
+    "axes": [
+      "dAGO",
+      "dPAM",
+      "dINT"
+    ],
+    "regions": 9
+  },
+  "final_observations": {
+    "strongest_interaction_associated_signal": "dINT / compound110_extension",
+    "dINT_compound110_extension": {
+      "pooled_excess_vs_stable_R1_R2_R3": [
+        0.1489,
+        0.033,
+        0.0584
+      ],
+      "replicas_positive_vs_stable": 3,
+      "pooled_excess_vs_distal_R1_R2_R3": [
+        0.148,
+        0.026,
+        -0.0172
+      ],
+      "replicas_positive_vs_distal": 2,
+      "block_fraction_gt_distal_R1_R2_R3": [
+        0.96,
+        0.64,
+        0.52
+      ],
+      "pooled_direction_cosines_R1R2_R1R3_R2R3": [
+        0.5678,
+        0.6605,
+        0.1717
+      ],
+      "interpretation": "reproducible interaction-associated shift; robust versus stable core but only partially specific versus distal control"
+    },
+    "intrinsic_agonism_signature": "NOT_ROBUST_ACROSS_THREE_REPLICAS",
+    "fully_replica_consistent_distal_specific_PAM_mechanism": "NOT_ESTABLISHED"
+  },
+  "claim_boundary": {
+    "kernel_u2_gate": "REVOKED",
+    "qualification_gate": "NOT_DEFINED",
+    "p_values_computed": false,
+    "automatic_PAM_efficacy_claim": false,
+    "evidence_level": "descriptive paired-replica common-kernel long-MD"
+  },
+  "artifact_sha256": {
+    "contract_v03": "0fc3121a6e105f3d4e4ddf2f09dfa99daf5152907b89f5b91b2cd0366bc0efc0",
+    "math_freeze": "f0709030a8c0f98d3aacafe708da3117196bed01e934899cfc4abdfe228a3ec8",
+    "run_audit": "8c151b68551c31c8bf70534abd5f4edb05f09263d4c1c33ce2acdbac267dbb14",
+    "vectors": "09176c4e2718f9f097e43e55f357e4db308a0a4f794fa13e38def3efb9ae54cb",
+    "region_axis": "fce4b0c6c081415b666fd7ea6642f46c42d10ce8f046d0364341ee3bd5936c3c",
+    "replica_audit": "e2fae2b76d179794cbf2a5adc9966cdedeadfcebab9db45b531c5ba03e8a22d3",
+    "specificity_audit": "5c712bace2b1ccdef340d6163ee1f45b38950a840ba9f22499375b28cff65a6a"
+  }
+}

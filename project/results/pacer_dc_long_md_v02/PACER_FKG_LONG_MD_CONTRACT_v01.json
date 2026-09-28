@@ -1,0 +1,90 @@
+{
+  "contract_version": "PACER_FKG_LONG_MD_v01",
+  "status": "FROZEN_BEFORE_BIOLOGICAL_CONTRASTS",
+  "git_head": "2ea2c78e29f6144820c264ecf8b1c50551f464aa",
+  "inputs": {
+    "long_md_input_manifest": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_dc_long_md_v02\\LONG_MD_INPUT_MANIFEST_v01.json",
+    "long_md_input_manifest_sha256": "77652c85eb2eb95b3e32c56700828b6961c6238612d3a0d3a2b486e49aeb02e6",
+    "geom2vec_manifest": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_dc_long_md_v02\\GEOM2VEC_LONG_MD_MANIFEST_v01.json",
+    "geom2vec_manifest_sha256": "0687f3a2f8fbfebd37559484a32e45f67101994333d087fa576dfd3d5a57c918",
+    "graph": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_dc_geom2vec_pilot_v01\\M4_MULTISTRUCTURE_GRAPH_v01.json",
+    "graph_sha256": "25593c11dac0f70ad6811c8c6aa7a4f06c1755f14397f1162eaa1157026be122",
+    "expected_trajectories": 12,
+    "expected_frames_per_trajectory": 1000,
+    "expected_feature_shape": [
+      1000,
+      270,
+      128
+    ],
+    "frame_spacing_ps": 50.0,
+    "trajectory_length_ns": 50.0
+  },
+  "contexts": {
+    "apo": "apo",
+    "probe": "probe_only",
+    "candidate": "compound110__candidate_no_probe",
+    "candidate_probe": "compound110__candidate_probe"
+  },
+  "paired_replicas": {
+    "R1": 27101,
+    "R2": 38201,
+    "R3": 49301
+  },
+  "temporal_contract": {
+    "block_frames": 20,
+    "block_duration_ns": 1.0,
+    "blocks_per_trajectory": 50,
+    "overlap": false,
+    "pair_blocks_by_replica_and_time_index": true,
+    "blocks_are_independent_biological_replicates": false,
+    "independent_replication_unit": "replica_seed"
+  },
+  "common_kernel": {
+    "reference_implementation": "C:\\projects\\GPCR-virtual-screening\\project\\pacer_dc_training\\audit_pacer_fkg_u2_erratum.py",
+    "reference_implementation_sha256": "27e4d3b466fbabbba0b8c7042844c3565ddea1958f3008fcb9c369000ac6fc6f",
+    "estimand_family": "bag-of-residue signed shared-node RFF contrast mean",
+    "rff_dimension": 256,
+    "rff_seed": 271828,
+    "bandwidth_policy": "use the corrected shared/common-kernel bandwidth logic unchanged from the reference implementation; bandwidth/RFF coordinates must never be fit separately by biological context or replica",
+    "common_vector_space_required": true,
+    "context_specific_kernel_spaces_forbidden": true
+  },
+  "frozen_contrasts": {
+    "dAGO": "candidate - apo",
+    "dPAM": "candidate_probe - probe",
+    "dINT": "(candidate_probe - probe) - (candidate - apo)"
+  },
+  "replica_level_estimands": {
+    "procedure": "within each paired replica, compute block-level signed contrasts in the same common RFF coordinate system, then average the 50 block contrast vectors to obtain one contrast vector per replica",
+    "n_independent_replicas": 3
+  },
+  "cross_replica_reporting": {
+    "report_per_replica_vector_norms": true,
+    "report_mean_replica_vector_norm": true,
+    "report_norm_of_mean_vector": true,
+    "report_pairwise_direction_cosines": [
+      "R1_vs_R2",
+      "R1_vs_R3",
+      "R2_vs_R3"
+    ],
+    "report_all_three_replica_values": true,
+    "frame_level_p_values": false,
+    "block_level_p_values": false,
+    "automatic_functional_gate": false,
+    "new_qualification_gate": "NOT_DEFINED"
+  },
+  "legacy_policy": {
+    "kernel_u2_scalar_gate": "REVOKED",
+    "legacy_magnitude_screen": "HISTORICAL_ONLY",
+    "legacy_region_specific_noncommon_kernel_comparisons": "FORBIDDEN",
+    "passing_synergy_regions_gate": "NOT_DEFINED"
+  },
+  "claim_boundary": {
+    "hypothesis_testing": "NOT_DEFINED",
+    "automatic_PAM_efficacy_claim": false,
+    "automatic_functional_qualification": false,
+    "biological_interpretation_before_replica_audit": false,
+    "allowed_initial_output": "descriptive common-kernel contrast vectors, norms, cross-replica direction consistency, and provenance"
+  },
+  "biological_contrasts_computed_at_contract_creation": false
+}

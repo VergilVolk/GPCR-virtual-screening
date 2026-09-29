@@ -1,0 +1,17 @@
+{
+    "method":  "PACER-FKG-v02",
+    "phase":  2,
+    "status":  "FROZEN",
+    "freeze_manifest":  "project/results/pacer_fkg_v02_longmd_v01/calibration/V02_FREEZE_MANIFEST.json",
+    "freeze_manifest_sha256":  "b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd",
+    "calibration_replica":  2,
+    "excluded_replicas":  [
+                              1,
+                              3
+                          ],
+    "calibration_blocks":  200,
+    "state_motion_bandwidth":  32.301883612608933,
+    "state_motion_seed":  272340,
+    "signed_drift_bandwidth":  29.299348999259639,
+    "signed_drift_seed":  272084
+}

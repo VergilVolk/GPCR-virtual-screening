@@ -1,0 +1,49 @@
+{
+  "all_qualifying_pairs": 1976,
+  "all_qualifying_molecules": 841,
+  "encoded_molecules": 841,
+  "folds": {
+    "M1": {
+      "train_pairs": 235,
+      "train_molecules": 200,
+      "test_pairs": 949,
+      "test_molecules": 641,
+      "molecule_overlap": 0,
+      "held_pocket_in_training": false
+    },
+    "M2": {
+      "train_pairs": 117,
+      "train_molecules": 90,
+      "test_pairs": 1175,
+      "test_molecules": 751,
+      "molecule_overlap": 0,
+      "held_pocket_in_training": false
+    },
+    "M3": {
+      "train_pairs": 353,
+      "train_molecules": 281,
+      "test_pairs": 833,
+      "test_molecules": 560,
+      "molecule_overlap": 0,
+      "held_pocket_in_training": false
+    },
+    "M4": {
+      "train_pairs": 785,
+      "train_molecules": 517,
+      "test_pairs": 514,
+      "test_molecules": 324,
+      "molecule_overlap": 0,
+      "held_pocket_in_training": false
+    },
+    "M5": {
+      "train_pairs": 853,
+      "train_molecules": 563,
+      "test_pairs": 481,
+      "test_molecules": 278,
+      "molecule_overlap": 0,
+      "held_pocket_in_training": false
+    }
+  },
+  "rules": "PACER-overlap excluded; positive pChEMBL >= 6.0; delta >= 1.0; held-target test molecules removed from training.",
+  "claim_boundary": "Heterogeneous ChEMBL muscarinic activity, not PAM-specific."
+}

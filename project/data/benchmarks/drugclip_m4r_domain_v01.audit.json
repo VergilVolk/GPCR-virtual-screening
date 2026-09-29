@@ -1,0 +1,44 @@
+{
+  "source_counts": {
+    "actives": 2314,
+    "decoys": 115643
+  },
+  "functional_exact_overlap_excluded": {
+    "active": 299,
+    "decoy": 6
+  },
+  "conflicting_labels_excluded": 3,
+  "output_rows": 12072,
+  "output_actives": 2012,
+  "output_decoys": 10060,
+  "unique_scaffolds": 8758,
+  "folds": [
+    {
+      "scaffold_fold": 0,
+      "size": 2415,
+      "sum": 403
+    },
+    {
+      "scaffold_fold": 1,
+      "size": 2414,
+      "sum": 402
+    },
+    {
+      "scaffold_fold": 2,
+      "size": 2415,
+      "sum": 403
+    },
+    {
+      "scaffold_fold": 3,
+      "size": 2414,
+      "sum": 402
+    },
+    {
+      "scaffold_fold": 4,
+      "size": 2414,
+      "sum": 402
+    }
+  ],
+  "rules": "Exact functional molecules excluded; labels deduplicated; deterministic random subset of public property-matched decoys; entire Murcko scaffolds held in one fold.",
+  "claim_boundary": "Broad M4R allosteric active-vs-decoy membership, not ACh-dependent functional PAM efficacy."
+}

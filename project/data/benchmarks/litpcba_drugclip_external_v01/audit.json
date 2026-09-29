@@ -1,0 +1,273 @@
+{
+  "targets": [
+    "ALDH1",
+    "ESR1m",
+    "FEN1",
+    "GBA",
+    "KAT2A",
+    "MAPK1",
+    "MTORC1",
+    "PKM2",
+    "VDR"
+  ],
+  "pairs": 8906,
+  "unique_molecules": 8764,
+  "actives_by_target": {
+    "ALDH1": 200,
+    "ESR1m": 76,
+    "FEN1": 195,
+    "GBA": 156,
+    "KAT2A": 185,
+    "MAPK1": 198,
+    "MTORC1": 88,
+    "PKM2": 199,
+    "VDR": 198
+  },
+  "rows_by_target": {
+    "ALDH1": 993,
+    "ESR1m": 955,
+    "FEN1": 988,
+    "GBA": 994,
+    "KAT2A": 1000,
+    "MAPK1": 989,
+    "MTORC1": 1000,
+    "PKM2": 995,
+    "VDR": 992
+  },
+  "parse_failures": [
+    {
+      "target": "ALDH1",
+      "name": "860235_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "ALDH1",
+      "name": "17416353_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "ALDH1",
+      "name": "24824507_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "ESR1m",
+      "name": "144205121_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "ESR1m",
+      "name": "144205120_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "ESR1m",
+      "name": "144205009_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "ESR1m",
+      "name": "144204106_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "ESR1m",
+      "name": "144204095_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "ESR1m",
+      "name": "144203744_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "ESR1m",
+      "name": "144203590_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "ESR1m",
+      "name": "144203587_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "FEN1",
+      "name": "859969_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "FEN1",
+      "name": "26666458_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "FEN1",
+      "name": "49647549_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "FEN1",
+      "name": "859355_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "FEN1",
+      "name": "7975252_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "GBA",
+      "name": "7977526_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "GBA",
+      "name": "26749346_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "GBA",
+      "name": "26657651_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "MAPK1",
+      "name": "856766_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "MAPK1",
+      "name": "4264665_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "MAPK1",
+      "name": "7973206_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "MAPK1",
+      "name": "859254_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "MAPK1",
+      "name": "4252877_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "MAPK1",
+      "name": "active7974352_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "VDR",
+      "name": "24795217_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "VDR",
+      "name": "49671039_1_1",
+      "reason": "rdkit_mol2_parse"
+    },
+    {
+      "target": "VDR",
+      "name": "50109926_1_1",
+      "reason": "rdkit_mol2_parse"
+    }
+  ],
+  "label_rule": "molecule name starts with active; copied before model inference",
+  "pockets": {
+    "ALDH1": {
+      "origin": [
+        34.09000015258789,
+        -16.770000457763672,
+        13.859999656677246
+      ],
+      "atoms": 67,
+      "path": "project\\data\\benchmarks\\litpcba_drugclip_external_v01\\ALDH1.pocket.lmdb",
+      "source": "GOLD origin; protein ATOM records within fixed radius"
+    },
+    "ESR1m": {
+      "origin": [
+        -2.690000057220459,
+        -31.360000610351562,
+        24.299999237060547
+      ],
+      "atoms": 69,
+      "path": "project\\data\\benchmarks\\litpcba_drugclip_external_v01\\ESR1m.pocket.lmdb",
+      "source": "GOLD origin; protein ATOM records within fixed radius"
+    },
+    "FEN1": {
+      "origin": [
+        -17.469999313354492,
+        -4.989999771118164,
+        0.9599999785423279
+      ],
+      "atoms": 57,
+      "path": "project\\data\\benchmarks\\litpcba_drugclip_external_v01\\FEN1.pocket.lmdb",
+      "source": "GOLD origin; protein ATOM records within fixed radius"
+    },
+    "GBA": {
+      "origin": [
+        35.4900016784668,
+        31.6200008392334,
+        -0.28999999165534973
+      ],
+      "atoms": 83,
+      "path": "project\\data\\benchmarks\\litpcba_drugclip_external_v01\\GBA.pocket.lmdb",
+      "source": "GOLD origin; protein ATOM records within fixed radius"
+    },
+    "KAT2A": {
+      "origin": [
+        -16.6200008392334,
+        -5.989999771118164,
+        12.739999771118164
+      ],
+      "atoms": 74,
+      "path": "project\\data\\benchmarks\\litpcba_drugclip_external_v01\\KAT2A.pocket.lmdb",
+      "source": "GOLD origin; protein ATOM records within fixed radius"
+    },
+    "MAPK1": {
+      "origin": [
+        -15.579999923706055,
+        14.220000267028809,
+        42.29999923706055
+      ],
+      "atoms": 69,
+      "path": "project\\data\\benchmarks\\litpcba_drugclip_external_v01\\MAPK1.pocket.lmdb",
+      "source": "GOLD origin; protein ATOM records within fixed radius"
+    },
+    "MTORC1": {
+      "origin": [
+        35.5,
+        50.040000915527344,
+        36.0099983215332
+      ],
+      "atoms": 49,
+      "path": "project\\data\\benchmarks\\litpcba_drugclip_external_v01\\MTORC1.pocket.lmdb",
+      "source": "GOLD origin; protein ATOM records within fixed radius"
+    },
+    "PKM2": {
+      "origin": [
+        -20.360000610351562,
+        -16.520000457763672,
+        13.859999656677246
+      ],
+      "atoms": 86,
+      "path": "project\\data\\benchmarks\\litpcba_drugclip_external_v01\\PKM2.pocket.lmdb",
+      "source": "GOLD origin; protein ATOM records within fixed radius"
+    },
+    "VDR": {
+      "origin": [
+        11.470000267028809,
+        -3.640000104904175,
+        -32.130001068115234
+      ],
+      "atoms": 76,
+      "path": "project\\data\\benchmarks\\litpcba_drugclip_external_v01\\VDR.pocket.lmdb",
+      "source": "GOLD origin; protein ATOM records within fixed radius"
+    }
+  },
+  "claim_boundary": "Independent non-GPCR active/inactive retrieval benchmark; not affinity or PAM efficacy."
+}

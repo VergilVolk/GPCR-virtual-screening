@@ -11,6 +11,7 @@ venv/
 .conda_linux/
 envs/
 .ipynb_checkpoints/
+.codex-worktrees/
 
 # Editors and OS
 .vscode/
@@ -52,6 +53,10 @@ project/data/benchmarks/**/*.html
 project/data/benchmarks/**/*.zip
 project/data/benchmarks/**/*.png
 project/data/generated/
+project/data/external/
+*.lmdb
+*.lmdb-lock
+*.npz
 
 # Third-party source trees and binaries
 project/tools/DeepRLI/
@@ -76,3 +81,6 @@ README.md
 
 # Preserve empty directory markers where useful
 !.gitkeep
+
+# external cloned tool repos (not project code)
+project/tools/

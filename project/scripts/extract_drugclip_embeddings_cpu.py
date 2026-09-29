@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -15,7 +16,7 @@ import numpy as np
 import torch
 
 
-def encode(model, sample: dict, kind: str) -> torch.Tensor:
+def encode(model, sample: dict, kind: str) -> tuple[torch.Tensor, torch.Tensor]:
     net = sample["net_input"]
     prefix = "mol" if kind == "molecule" else "pocket"
     component = model.mol_model if kind == "molecule" else model.pocket_model
@@ -30,7 +31,7 @@ def encode(model, sample: dict, kind: str) -> torch.Tensor:
     bias = bias.permute(0, 3, 1, 2).contiguous().view(-1, n_node, n_node)
     representation = component.encoder(x, padding_mask=padding_mask, attn_mask=bias)[0][:, 0, :]
     embedding = project(representation)
-    return torch.nn.functional.normalize(embedding, dim=1)
+    return representation, torch.nn.functional.normalize(embedding, dim=1)
 
 
 def batches(dataset, batch_size: int):
@@ -48,7 +49,13 @@ def main() -> None:
     parser.add_argument("--pockets", type=Path, required=True, nargs="+")
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--batch-size", type=int, default=8)
+    parser.add_argument("--progress-every", type=int, default=100)
+    parser.add_argument("--trusted-checkpoint", action="store_true",
+                        help="Allow legacy full-object torch.load for a checkpoint whose provenance was verified")
     args = parser.parse_args()
+
+    if args.trusted_checkpoint:
+        os.environ["TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD"] = "1"
 
     sys.path[:0] = [str(args.drugclip), str(args.unicore)]
     import unimol  # noqa: F401  registers DrugCLIP model/task
@@ -76,29 +83,55 @@ def main() -> None:
     model.cpu().float().eval()
 
     mol_dataset = task.load_retrieval_mols_dataset(str(args.molecules), "atoms", "coordinates")
-    molecule_embeddings, molecule_ids = [], []
-    pocket_embeddings, pocket_ids = [], []
+    molecule_representations, molecule_embeddings, molecule_ids = [], [], []
+    pocket_representations, pocket_embeddings, pocket_ids = [], [], []
     with torch.inference_mode():
-        for sample in batches(mol_dataset, args.batch_size):
-            molecule_embeddings.append(encode(model, sample, "molecule").cpu().numpy())
+        for batch_index, sample in enumerate(batches(mol_dataset, args.batch_size), 1):
+            representation, embedding = encode(model, sample, "molecule")
+            molecule_representations.append(representation.cpu().numpy())
+            molecule_embeddings.append(embedding.cpu().numpy())
             molecule_ids.extend(map(str, sample["smi_name"]))
+            if args.progress_every and batch_index % args.progress_every == 0:
+                print(f"molecule_batches={batch_index} molecules={len(molecule_ids)}", flush=True)
         for pocket_path in args.pockets:
             pocket_dataset = task.load_pockets_dataset(str(pocket_path))
             for sample in batches(pocket_dataset, args.batch_size):
-                pocket_embeddings.append(encode(model, sample, "pocket").cpu().numpy())
+                representation, embedding = encode(model, sample, "pocket")
+                pocket_representations.append(representation.cpu().numpy())
+                pocket_embeddings.append(embedding.cpu().numpy())
                 pocket_ids.extend(map(str, sample["pocket_name"]))
+    mol_rep = np.concatenate(molecule_representations).astype(np.float32)
     mol = np.concatenate(molecule_embeddings).astype(np.float32)
+    poc_rep = np.concatenate(pocket_representations).astype(np.float32)
     poc = np.concatenate(pocket_embeddings).astype(np.float32)
     scores = poc @ mol.T
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    np.savez_compressed(args.output, molecule_ids=np.asarray(molecule_ids), molecule_embeddings=mol,
-                        pocket_ids=np.asarray(pocket_ids), pocket_embeddings=poc, scores=scores)
+    np.savez_compressed(
+        args.output,
+        molecule_ids=np.asarray(molecule_ids),
+        molecule_representations=mol_rep,
+        molecule_embeddings=mol,
+        pocket_ids=np.asarray(pocket_ids),
+        pocket_representations=poc_rep,
+        pocket_embeddings=poc,
+        scores=scores,
+    )
+    projection_state = {
+        "mol_project": model.mol_project.state_dict(),
+        "pocket_project": model.pocket_project.state_dict(),
+        "logit_scale": model.logit_scale.detach().cpu(),
+        "source_checkpoint": str(args.checkpoint),
+    }
+    torch.save(projection_state, args.output.with_suffix(".projection.pt"))
     audit = {
         "checkpoint": str(args.checkpoint), "pocket_inputs": list(map(str, args.pockets)),
         "device": "cpu", "molecule_shape": list(mol.shape),
+        "molecule_representation_shape": list(mol_rep.shape),
         "checkpoint_registry_remap": {"from": original_registry, "to": {
             "task": model_args.task, "arch": model_args.arch}},
-        "pocket_shape": list(poc.shape), "score_shape": list(scores.shape),
+        "pocket_shape": list(poc.shape),
+        "pocket_representation_shape": list(poc_rep.shape),
+        "score_shape": list(scores.shape),
         "finite": bool(np.isfinite(scores).all()), "score_range": [float(scores.min()), float(scores.max())],
         "missing_checkpoint_keys": list(missing), "unexpected_checkpoint_keys": list(unexpected),
         "claim_boundary": "Frozen DrugCLIP binding-compatibility embeddings; not PAM efficacy.",

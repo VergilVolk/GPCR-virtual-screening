@@ -1,0 +1,39 @@
+{
+  "training_table": "project/data/benchmarks/m4_pam_v1/pam_vs_inactive.csv",
+  "endpoint_rows": 152,
+  "unique_external_molecules": 147,
+  "datasets": {
+    "acadia_functional": {
+      "rows": 47,
+      "eligible": 47,
+      "exact_training_overlap": 0,
+      "unique_molecules": 45
+    },
+    "monash_allostery": {
+      "rows": 16,
+      "eligible": 16,
+      "exact_training_overlap": 2,
+      "unique_molecules": 16
+    },
+    "suven_potency": {
+      "rows": 45,
+      "eligible": 45,
+      "exact_training_overlap": 0,
+      "unique_molecules": 45
+    },
+    "us20260055116_ordinal": {
+      "rows": 26,
+      "eligible": 26,
+      "exact_training_overlap": 0,
+      "unique_molecules": 25
+    },
+    "vu6025733_potency": {
+      "rows": 18,
+      "eligible": 18,
+      "exact_training_overlap": 0,
+      "unique_molecules": 18
+    }
+  },
+  "pooling_rule": "No cross-assay label pooling; every endpoint is evaluated separately.",
+  "external_rule": "Exact training overlaps are encoded but excluded from zero-shot metrics."
+}

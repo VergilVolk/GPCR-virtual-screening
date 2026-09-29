@@ -1,0 +1,11 @@
+{
+  "pairs": 153,
+  "molecules": 102,
+  "m4_preferred_pairs": 105,
+  "m4_disfavored_pairs": 48,
+  "training_molecule_overlap": 0,
+  "pacer_m4_overlap": 0,
+  "rules": "M4-containing pair; positive pChEMBL >= 6.0; delta >= 1.0; triplet-training molecules excluded.",
+  "evidence_level": "posthoc_frozen_zero_shot_test",
+  "claim_boundary": "Heterogeneous ChEMBL subtype activity; not M4 PAM-specific."
+}

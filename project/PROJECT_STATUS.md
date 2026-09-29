@@ -1,6 +1,76 @@
 # PACER-M4 当前状态
 
-更新时间：2026-09-19
+更新时间：2026-09-26
+
+## 2026-09-26 CGDA：Full LIT-PCBA 未见靶点适配
+
+- 已实现 Context-Gated DrugCLIP Adapter（CGDA）：由目标口袋与共晶参考配体共同产生门控权重，组合两个 rank-2 低秩专家；DrugCLIP 编码器保持冻结。
+- 使用官方 15 个 LIT-PCBA 靶点、2,807,612 个候选、129 个真实口袋构象，执行严格 leave-one-entire-target-out；留出靶点活性标签只用于最终评价。
+- 三种子困难负样本版相对 reference-ligand retrieval：宏 ROC-AUC `0.5693→0.5788`，配对 target-bootstrap 95% CI `[+0.00134,+0.01840]`；BEDROC80.5 `0.07103→0.07378`，CI `[+0.00045,+0.00504]`，15 靶点中 12 个改善。
+- EF1% `6.06→6.31`，但仅少数靶点产生离散增益；EF5%下降，不声称所有截断点均改善。PR-AUC区间仍跨零。
+- 四专家 rank-4 版本过拟合；二专家 rank-2 更稳。去除 retrieval、直接口袋到配体对齐、共享监督 LoRA、简单堆叠与多口袋聚合均未通过。
+- 正式主张限定为：在参考配体辅助、严格未见靶点的回顾性筛选中，CGDA 显著改善整体 ROC-AUC 与 BEDROC；不是通用 SOTA、PAM 身份或药效预测。
+- 完整方法、消融和复现入口见 `docs/DRUGCLIP_CGDA_RESULT.md`。
+- 已完成冻结后的 DUD-E 外部 GPCR 压力测试（AA2AR、ADRB1、CXCR4、DRD3、M3R；91,311候选/1,342活性物）。相对 reference retrieval，CGDA 宏 ROC-AUC `0.7233→0.7437`、PR-AUC `0.2658→0.2762`、BEDROC80.5 `0.3637→0.3738`，三者的 target-bootstrap 95% CI 均为正且5/5靶点改善。
+- 但原始 pocket DrugCLIP 在该 DUD-E 面板更强（ROC-AUC/BEDROC80.5 `0.8105/0.3936`）；CGDA 在 DRD3、M3R 退化。DUD-E 含生成 decoy，只作为迁移压力测试，不作为实验 inactive、PAM 或真实 HTS 命中证据。
+
+## 2026-09-26 DrugCLIP 大样本双侧投影微调
+
+- 已完成13靶点适配器与损失拆解：仅分子端适配基本无增益，口袋端适配贡献主要信号，双侧进一步提高；Target-DRO 退化至 ROC-AUC `0.559`，已否决。
+- 三种子中，去除表示保持约束将宏 ROC-AUC/PR-AUC/BEDROC20 从 `0.623/0.247/0.300` 提高到 `0.637/0.258/0.311`；paired scaffold-cluster bootstrap 95% CI 分别为 `[+0.0079,+0.0197]`、`[+0.0062,+0.0160]`、`[+0.0010,+0.0210]`。EF1%/EF5% 差异仍跨零。
+- 分子锚定显著优于口袋锚定，支持“分子语义可保留、口袋空间需允许域重排”；当前最高总体迁移模型仍为完全不锚定的 `dual_no_preserve`。
+- 已冻结三份 `dual_no_preserve` 全数据部署权重并核验可加载；完整消融与 SHA256 见 `docs/DRUGCLIP_TARGET_TRANSFER_ABLATION.md`。
+- 完整末层投影微调使用 131,328 个参数（LoRA 的 12.8 倍），同种子 ROC-AUC/PR-AUC/BEDROC20/EF5% 仅 `0.591/0.221/0.266/2.00`，低于 LoRA 的 `0.626/0.251/0.307/2.34`；支持参数效率，但该 full-last 基线尚未做大范围调参。
+
+- 已直接微调 DrugCLIP 内部 `mol_project` 与 `pocket_project` 的 rank-8 LoRA，共 10,240 个可训练参数；不是 ECFP 外接分类器。
+- 使用 28,618 个 B2AR/CCR2/M2R/M4R active/decoy 配对，联合平衡 BCE、活性分子靶点检索、表示保持和蒸馏；全局 Murcko-scaffold 五折 OOF 无骨架重叠。
+- 域内完整多任务模型将官方 DrugCLIP 的宏 ROC-AUC/PR-AUC/BEDROC20 从 `0.629/0.195/0.245` 提高到 `0.951/0.864/0.912`；全随机标签对照为 `0.493/0.116/0.128`。
+- 真实 muscarinic triplet 与随机 triplet 几乎无差异，因此当前 triplet 分支未证明有增益；推荐模型为 `BCE + retrieval`。
+- 三种子严格 target-LOSO 中，微调模型的宏 ROC-AUC/PR-AUC/BEDROC20/EF5% 为 `0.655/0.218/0.313/3.57`，官方 DrugCLIP 为 `0.629/0.195/0.245/2.39`；相对官方的 scaffold-bootstrap 95% CI 均为正（EF1% 除外）。
+- pooled ECFP4 的 ROC-AUC 略高（`0.663`），但 PR-AUC/BEDROC20/EF5% 仅 `0.193/0.229/2.32`，低于 DrugCLIP 微调，形成当前最有价值的未见靶点早期富集证据。
+- 冻结 M4 外部药理面板未改善：Acadia AUC 持平，Monash AUC 下降，效力排序无可靠信号；不得将该模型称为 PAM 功能或效力预测器。
+- GaMD 十构象聚合和严格嵌套 docking 融合均未稳定超过单独 target-LOSO DrugCLIP，已保留为负结果。
+- 已冻结 `bce_retrieval` 与 `full_multitask` 两套部署投影权重；详细结果见 `docs/DRUGCLIP_LARGE_MULTITASK_RESULT.md`。
+- 9 个独立 LIT-PCBA 靶点、8,906 个配对的冻结外部测试已完成：完整多任务模型宏 ROC-AUC `0.541`，官方为 `0.532`，差值 95% CI `[+0.0007,+0.0168]`；PR-AUC、BEDROC 和早期富集区间均跨零。模型未出现明显灾难性遗忘，但尚无通用早期富集提升。
+- 已扩大为 4 个 GPCR + 9 个 LIT-PCBA 靶点、37,524 配对的统一 13-target LOSO。三种子 DrugCLIP BCE+retrieval 的宏 ROC-AUC/PR-AUC/BEDROC20/EF5% 为 `0.623/0.247/0.300/2.28`，官方为 `0.562/0.201/0.241/1.78`，严格 ECFP4 为 `0.568/0.201/0.239/1.71`。
+- 13-target 模型相对官方与 ECFP4 的 ROC-AUC、PR-AUC、BEDROC20、EF5% scaffold-bootstrap 95% CI 均为正；EF1% 仍未通过。13 个靶点中 ROC-AUC/PR-AUC/BEDROC20 分别有 `10/11/10` 个改善，CCR2 仍失败。
+- 已按 `20260925/26/27` 三个 seed 冻结全数据部署权重，推理时建议三模型平均；这构成目前最强的方法学结果，但仍是回顾性 13 靶点验证，不称通用 SOTA。
+
+## 2026-09-26 DrugCLIP 非对称分子适配器
+
+- 冻结 DrugCLIP 三维口袋 embedding，以同分子跨亚型 triplet 训练 ECFP→口袋空间的轻量分子适配器。
+- 五亚型严格 target-LOSO 同时满足待测口袋未参与监督、训练/测试分子重叠为 0；ECFP3 适配器宏准确率 `73.0%`，高于 DrugCLIP triplet 的 `55.4%`。
+- 完整 M4 折为 `87.5%` 对 `53.3%`，分子成簇 bootstrap 95% CI 为 `+28.2` 至 `+39.9` 个百分点。
+- 指纹形式只在非 M4 校准集选择；一次性冻结 M4 面板上，ECFP3 为 `68.6%`、ECFP2 为 `66.7%`、DrugCLIP triplet 为 `66.0%`。ECFP3 相对 DrugCLIP 的 CI 跨零，仍需更大独立集。
+- ECFP+DrugCLIP 残差、拼接适配器均未在完整 LOSO 与冻结 M4 上同时改善，暂不作为主模型。
+- ECFP3 直接跨 B2AR/CCR2/M2R/M4R 家族迁移失败；DrugCLIP 路由加局部适配器的宏 Recall@1 增益不显著，两特征门控外迁后有害。家族内适配器不能冒充通用 GPCR 模型。
+- 当前主张限定为“毒蕈碱家族内未见分子、未见亚型的活性排序迁移”；不等同于 PAM 身份、效力或通用 GPCR SOTA。
+- 已对 200 个 PACER 候选完成 M1–M5 选择性审计；24 个候选为 M4 top-1。原 12 个多证据 shortlist 中仅 `PACER0054` 同时保留较强 M4 选择性支持（选择性 rank 6/200，margin `0.0854`，三种子 SD `0.0064`），现列为优先验证假设而非 PAM 结论。
+- 完整结果与负结果见 `docs/DRUGCLIP_ASYMMETRIC_ADAPTER_RESULT.md`。
+
+## 2026-09-25 DrugCLIP 四 GPCR 系统微调
+
+- 已在 B2AR、CCR2、M2R、M4R 的 2,500 个可编码别构调节剂上完成五折 Murcko-scaffold OOF；四个口袋来自公开 GaMD benchmark 的位点定义和代表构象。
+- 冻结两个 Uni-Mol encoder，仅在分子、口袋末端投影训练双侧 rank-4 LoRA，共 5,120 个参数。
+- 靶点平衡 CE 将官方 DrugCLIP 的宏 Recall@1 从 `0.413` 提高到 `0.925`，pair ROC-AUC 从 `0.743` 提高到 `0.9965`；hardest-pocket triplet 未优于 CE，已否决为主模型。
+- 强二维 ECFP4-logistic 的宏 Recall@1 为 `0.963`、pair ROC-AUC 为 `0.9996`，仍高于 DrugCLIP 微调；因此不能声称通用 SOTA。
+- 随机标签模型的总体 Recall@1 可虚高到 `0.840`，但宏 Recall@1 仅 `0.235`，证明不平衡条件下必须报告宏平均和逐靶点指标。
+- 低相似审计中 Tanimoto `<0.30` 仅 18 个分子，CE 未优于官方或 ECFP；当前大幅提升主要是已知 GPCR 化学域特化。
+- 严格留一整靶点时，CE 的宏 Recall@1 为 `0.370`，低于官方模型 `0.413`；专项 adapter 不具备已证明的未见 GPCR 迁移能力。
+- 已冻结三种子 CE 部署权重。部署规则：已知四靶点域可使用 CE adapter；未见 GPCR 保留官方 DrugCLIP 或已验证的跨亚型关系模型。
+- 详细证据与边界见 `docs/DRUGCLIP_GPCR_SYSTEMATIC_FINETUNING_RESULT.md`。
+
+## 2026-09-24 DrugCLIP GPCR triplet 结论
+
+- 已完成官方 DrugCLIP CPU 复现，并开放 512 维投影前表示；微调对象为 DrugCLIP 内部 `pocket_project` / `mol_project`，不是把冻结 embedding 接一个冒充微调的外部分类器。
+- 同分子跨亚型 triplet 在 33 个未见分子、54 个 M1/M2/M3/M5 配对上将官方 DrugCLIP 准确率从 `59.3%` 提到 `79.6%`，相对随机方向对照的分子成簇 95% CI 为 `+5.8` 至 `+32.1` 个百分点。
+- 强二维基线 ECFP4-Ridge 在同一 54 对上达到 `98.1%`；因此该集合是化学系列内插问题，不能用于宣称 DrugCLIP SOTA。
+- 在训练完全不含 M4 口袋、测试分子完全未见的冻结零样本测试中，官方 DrugCLIP 为 `57.5%`，GPCR-triplet 为 `66.0%`；提升的分子成簇 95% CI 为 `+3.1` 至 `+14.3` 个百分点，分子置换检验单侧 `p=0.018`。这是当前最强阳性证据。
+- 五亚型严格 leave-one-target-out 上，官方模型宏平均 `53.6%`，全投影 triplet `55.4%`，rank-4 pocket LoRA `55.6%`；靶点间差异明显，尚不支持通用 GPCR SOTA。
+- 外部 M4 PAM/inactive 数据上，GPCR-triplet 在 Acadia/Monash 的 AUC 分别为 `0.930/0.788`，高于官方模型 `0.837/0.576`，但两集合合计仅 5 个阴性，差值置信区间跨零。
+- Suven、VU6025733 和 US20260055116 的效力排序未通过；DrugCLIP 结构分数不能作为 PAM EC50 预测器。
+- M4 全投影功能微调出现跨来源退化；rank-4 molecule LoRA 系列留出 AUC `0.630`，低于随机配对对照 `0.641`，该路线已否决。
+- 当前可成立的创新边界：GPCR triplet 可修复一部分未见 M4 口袋的零样本结构迁移，但 PAM 身份、效力和内在激动必须由独立功能药理/动态模块承担。完整报告见 `docs/DRUGCLIP_MUSCARINIC_TRIPLET_RESULT.md`。
 
 ## 2026-09-19 动态表示对照结果
 

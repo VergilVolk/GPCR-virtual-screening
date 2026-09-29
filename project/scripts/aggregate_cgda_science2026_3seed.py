@@ -14,10 +14,15 @@ def main():
     p.add_argument("--seed", type=int, default=20260926)
     a = p.parse_args()
     runs = [json.load(open(r, encoding="utf-8")) for r in a.runs]
-    targets = runs[0]["targets"]
-    assert all(r["targets"] == targets for r in runs)
-    names = list(next(iter(runs[0]["macro"].values())).keys())
-    macro = {m: {n: float(np.mean([r["macro"][m][n] for r in runs])) for n in names}
+    targets = runs[0]["targets"] if "targets" in runs[0] else sorted(runs[0]["folds"])
+    assert all((r["targets"] if "targets" in r else sorted(r["folds"])) == targets for r in runs)
+    names = ["roc_auc", "pr_auc", "bedroc_alpha80_5", "ef0.005", "ef0.01", "ef0.02", "ef0.05"]
+
+    def per_run_macro(r):
+        return {m: {n: float(np.mean([r["folds"][t][m][n] for t in targets])) for n in names}
+                for m in ("pocket", "reference", "cgda")}
+
+    macro = {m: {n: float(np.mean([per_run_macro(r)[m][n] for r in runs])) for n in names}
              for m in ("pocket", "reference", "cgda")}
     rng = np.random.default_rng(a.seed)
     deltas = {}

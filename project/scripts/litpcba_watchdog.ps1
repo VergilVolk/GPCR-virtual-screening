@@ -1,7 +1,7 @@
 # LIT-PCBA remaining-targets watchdog: relaunch on silent death, exit when all 15 done
 $wd = 'D:\CLC\project'
 $dir = "$wd\results\drugclip_science2026\full_litpcba"
-$targets = 'OPRK1,VDR,FEN1,GBA,IDH1,KAT2A'
+$targets = 'OPRK1,VDR,FEN1,GBA,IDH1,KAT2A,ADRB2'
 while ($true) {
   $done = (Get-ChildItem $dir -Filter '*.metrics.json' -ErrorAction SilentlyContinue).Count
   if ($done -ge 15) { Add-Content "$dir\watchdog.log" "$(Get-Date -Format 'MM-dd HH:mm:ss') all 15 complete"; break }

@@ -1,5 +1,10 @@
 # 四上下文闭环计划（2026-09-29 冻结草案）
 
+> **状态：已被同日 `PACER_DC_CLOSE_LOOP_CONTRACT_v01.md` 取代。**
+> 修订要点：双轨基线（common-kernel v03 合同 + FKG v02 并存）、三 replica 全报告、
+> 0.50 仅作描述性参照、CM00734 提前、Stage A/B 分里程碑、v01 replay 移出关键路径。
+> 本文件保留作历史草稿，判读以 CONTRACT v01 为准。
+
 目标：把 PACER-DC 四上下文从"compound110 单体系有方向一致信号"推进到
 "框架层面证明能区分 functional PAM / ago-PAM / 无功能 binder"。
 

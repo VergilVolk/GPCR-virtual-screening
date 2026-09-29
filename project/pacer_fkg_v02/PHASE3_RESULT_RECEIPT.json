@@ -1,0 +1,13 @@
+{
+    "method":  "PACER-FKG-v02",
+    "phase":  3,
+    "status":  "COMPLETE_AND_VERIFIED",
+    "freeze_manifest_sha256":  "b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd",
+    "report_path":  "project/results/pacer_fkg_v02_longmd_v01/phase3/REPORT_PHASE3.md",
+    "report_sha256":  "26287179742a926ea288d8289aef69ee61f605e106e71c2bede504161bd6b547",
+    "calibration_replica":  2,
+    "application_replicas":  [
+                                 1,
+                                 3
+                             ]
+}

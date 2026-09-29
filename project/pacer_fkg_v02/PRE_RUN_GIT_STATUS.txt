@@ -1,0 +1,5 @@
+?? project/pacer_fkg_v02/
+0a4b4f2 (HEAD -> experiment/pacer-fkg-v02-longmd-v01, tag: encoder-candidate-ah-frozen-20260929, experiment/pacer-encoder-opt-v01) experiment: freeze encoder optimization A-H candidate
+C:/projects/GPCR-virtual-screening         df219d7 [codex/pacer-dc-geom2vec-pilot]
+C:/projects/GPCR-virtual-screening-encoder 0a4b4f2 [experiment/pacer-encoder-opt-v01]
+C:/projects/GPCR-virtual-screening-fkg-v02 0a4b4f2 [experiment/pacer-fkg-v02-longmd-v01]

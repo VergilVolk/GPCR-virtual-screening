@@ -1,0 +1,1797 @@
+{
+  "schema": "pacer_fkg_v02.v01_component_inventory.v1",
+  "created_at": "2026-09-29T14:09:54.244424+08:00",
+  "baseline_commit": "0a4b4f238c73add75a09a0875f698250a39bdf33",
+  "entries": [
+    {
+      "path": "project/pacer_dc_training/pacer_factorial_kernel_graph.py",
+      "classification": "tracked source/code",
+      "participation": [
+        "kernel",
+        "contrasts",
+        "graph diffusion"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/pacer_dc_training/analyze_pacer_fkg_g1.py",
+      "classification": "tracked source/code",
+      "participation": [
+        "G1",
+        "regions",
+        "contrast diagnostics"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/pacer_dc_training/audit_pacer_fkg_g2a_atom14_pbc.py",
+      "classification": "tracked source/code",
+      "participation": [
+        "G2A",
+        "atom14 mapping",
+        "PBC"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/pacer_dc_training/audit_pacer_fkg_g2a_pbc.py",
+      "classification": "tracked source/code",
+      "participation": [
+        "G2A PBC",
+        "PBC"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/pacer_dc_training/analyze_pacer_fkg_g2b.py",
+      "classification": "tracked source/code",
+      "participation": [
+        "G2B",
+        "normalization",
+        "bandwidth",
+        "RFF",
+        "contrasts"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/pacer_dc_training/audit_pacer_fkg_g2b_robustness.py",
+      "classification": "tracked source/code",
+      "participation": [
+        "G2B robustness",
+        "kernel",
+        "RFF"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/pacer_dc_training/analyze_pacer_fkg_g2c.py",
+      "classification": "tracked source/code",
+      "participation": [
+        "G2C",
+        "graph",
+        "RFF"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/pacer_dc_training/run_pacer_fkg_r2r3_audit.py",
+      "classification": "tracked source/code",
+      "participation": [
+        "R2/R3 FKG audit",
+        "kernel",
+        "regions",
+        "contrasts"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/pacer_dc_training/extract_pacer_dc_four_context_embeddings.py",
+      "classification": "tracked source/code",
+      "participation": [
+        "authenticated short-data preprocessing",
+        "atom14",
+        "selection"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/pacer_dc_training/extract_geom2vec_atom14.py",
+      "classification": "tracked source/code",
+      "participation": [
+        "Geom2Vec input contract",
+        "atom14 heavy atoms"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/pacer_dc_training/build_m4_multistructure_graph.py",
+      "classification": "tracked source/code",
+      "participation": [
+        "graph definitions",
+        "regions"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/scripts/run_pacer_dc_production_md.py",
+      "classification": "tracked source/code",
+      "participation": [
+        "production trajectory provenance",
+        "PBC writer",
+        "seeds"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/pacer_dc_training/FOUR_CONTEXT_WINDOW_CONTRACT.md",
+      "classification": "tracked source/code",
+      "participation": [
+        "short-data contract",
+        "contrasts"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/docs/PACER_FKG_IMPLEMENTATION_AUDIT_20260927.md",
+      "classification": "tracked source/code",
+      "participation": [
+        "implementation audit"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/docs/PACER_FACTORIAL_KERNEL_GRAPH_METHOD.md",
+      "classification": "tracked source/code",
+      "participation": [
+        "method definition"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G1_diagnostics_v01/G1_DIAGNOSTIC_AUDIT.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G1_diagnostics_v01/G1_DIAGNOSTIC_REPORT.md",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G1_diagnostics_v01/G1_axis_region_comparison.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G1_diagnostics_v01/G1_replica_region_summary.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G1_diagnostics_v01/G1_window_diagnostics.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G1_diagnostics_v01/LEGACY_SUPERSEDED_NOTICE.md",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_PBC_v01/G2A_PBC_AUDIT.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_PBC_v01/G2A_PBC_REPORT.md",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_PBC_v01/G2A_PBC_TRAJECTORIES.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_PBC_v01/G2A_PBC_TRAJECTORIES.incomplete.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_PBC_v01/G2A_PBC_WINDOWS.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_v01/G2A_AUDIT.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_v01/G2A_PER_INPUT.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_v01/G2A_REPORT.md",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_v02/G2A_AUDIT.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_v02/G2A_PER_INPUT.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_v02/G2A_REPORT.md",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_robustness_v01/G2B_BASELINE_REPLAY.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_robustness_v01/G2B_ROBUSTNESS_AUDIT.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_robustness_v01/G2B_ROBUSTNESS_REPORT.md",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_robustness_v01/G2B_ROBUSTNESS_SEEDS.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_robustness_v01/G2B_ROBUSTNESS_SUMMARY.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_v01/G2B_CALIBRATION.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_v01/G2B_DIRECTION_AUDIT.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration",
+        "normalization state",
+        "bandwidth",
+        "RFF state"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_v01/G2B_DIRECTION_REPORT.md",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_v01/G2B_DIRECTION_SUMMARY.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_v01/G2B_WINDOW_DIRECTIONS.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2C_v01/G2C_GRAPH_ABLATION_AUDIT.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2C_v01/G2C_GRAPH_ABLATION_REPORT.md",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2C_v01/G2C_MATCHED_WINDOWS.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2C_v01/G2C_REGION_AXIS.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2C_v01/G2C_SHUFFLED_GRAPHS.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/LEGACY_SUPERSEDED_NOTICE.md",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/PACER_FKG_R2R3_AUDIT.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R2_W000.fkg.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R2_W001.fkg.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R2_W002.fkg.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R2_W003.fkg.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R2_W004.fkg.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R3_W000.fkg.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R3_W001.fkg.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R3_W002.fkg.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R3_W003.fkg.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R3_W004.fkg.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_U2_erratum_v02/FKG_U2_ERRATUM_AUDIT_v02.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_U2_erratum_v02/FKG_U2_ERRATUM_REGION_AXIS_v02.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_U2_erratum_v02/FKG_U2_ERRATUM_REPORT_v02.md",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_U2_erratum_v02/FKG_U2_ERRATUM_WINDOWS_v02.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/G2_L0_region_cross_replica_v01.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/G2_L1_region_cross_replica_v01.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/G2_REGION_MAP_v01.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/G2_REGION_MAP_v02.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/G2_RESIDUE_MAPPING_v01.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/G3_ACh_geometry_v01.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/G3_ACh_structure_RMSD_v01.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/G3_L1_ACh_bias_v01.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/G4_four_stage_regions_v01.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/batch_logs/compound110_R2-3_batch_report.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/direction_audit_R2_R3_v01/dpam_direction_decomposition_R2_R3_v01.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/direction_audit_R2_R3_v01/dpam_direction_decomposition_R2_R3_v01.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/direction_audit_R2_R3_v01/dpam_direction_summary_R2_R3_v01.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/direction_audit_R2_R3_v01/dpam_direction_summary_R2_R3_v01.png",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/direction_audit_R2_R3_v01/dpam_direction_summary_R2_R3_v01.svg",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_cross_replica_G1_v01.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W0_v01/five_layer_report.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W0_v01/five_layer_report_apo.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W0_v01/five_layer_report_candidate_no_probe.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W0_v01/five_layer_report_probe_only.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W1_v01/five_layer_report_apo.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W1_v01/five_layer_report_candidate_no_probe.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W1_v01/five_layer_report_candidate_probe.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W1_v01/five_layer_report_probe_only.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W2_v01/five_layer_report_apo.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W2_v01/five_layer_report_candidate_no_probe.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W2_v01/five_layer_report_candidate_probe.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W2_v01/five_layer_report_probe_only.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W3_v01/five_layer_report_apo.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W3_v01/five_layer_report_candidate_no_probe.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W3_v01/five_layer_report_candidate_probe.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W3_v01/five_layer_report_probe_only.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W4_v01/five_layer_report_apo.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W4_v01/five_layer_report_candidate_no_probe.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W4_v01/five_layer_report_candidate_probe.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W4_v01/five_layer_report_probe_only.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W0_v01/five_layer_report_apo.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W0_v01/five_layer_report_candidate_no_probe.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W0_v01/five_layer_report_candidate_probe.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W0_v01/five_layer_report_probe_only.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W1_v01/five_layer_report_apo.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W1_v01/five_layer_report_candidate_no_probe.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W1_v01/five_layer_report_candidate_probe.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W1_v01/five_layer_report_probe_only.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W2_v01/five_layer_report_apo.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W2_v01/five_layer_report_candidate_no_probe.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W2_v01/five_layer_report_candidate_probe.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W2_v01/five_layer_report_probe_only.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W3_v01/five_layer_report_apo.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W3_v01/five_layer_report_candidate_no_probe.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W3_v01/five_layer_report_candidate_probe.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W3_v01/five_layer_report_probe_only.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W4_v01/five_layer_report_apo.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W4_v01/five_layer_report_candidate_no_probe.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W4_v01/five_layer_report_candidate_probe.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W4_v01/five_layer_report_probe_only.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/interaction_audit_R2_R3_v01/dint_comparison_R2_R3_v01.png",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/interaction_audit_R2_R3_v01/dint_comparison_R2_R3_v01.svg",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/interaction_audit_R2_R3_v01/interaction_comparison_R2_R3_v01.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/interaction_audit_R2_R3_v01/interaction_comparison_R2_R3_v01.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/atom14/apo_w000.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/atom14/apo_w000.npy",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/atom14/candidate_no_probe_w000.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/atom14/candidate_no_probe_w000.npy",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/atom14/candidate_probe_w000.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/atom14/candidate_probe_w000.npy",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/atom14/probe_only_w000.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/atom14/probe_only_w000.npy",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/embeddings/apo_w000.npy",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/embeddings/candidate_no_probe_w000.npy",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/embeddings/candidate_probe_w000.npy",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/embeddings/dAGO_w000.npy",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/embeddings/dPAM_w000.npy",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/embeddings/probe_only_w000.npy",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/four_context_differential.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/four_context_long.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/trajectory_windows.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/unit_summary.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/atom14/apo_w000.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/atom14/candidate_no_probe_w000.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/atom14/candidate_probe_w000.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/atom14/probe_only_w000.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/embeddings/apo_w000.npy",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/embeddings/candidate_no_probe_w000.npy",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/embeddings/candidate_probe_w000.npy",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/embeddings/dAGO_w000.npy",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/embeddings/dPAM_w000.npy",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/embeddings/probe_only_w000.npy",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/four_context_differential.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/four_context_long.csv",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/trajectory_windows.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/unit_summary.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/stability_R2_R3_v01.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_R2R3_full_v01/batch_audit.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_pilot_v01/M4_MULTISTRUCTURE_GRAPH_v01.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration",
+        "graph definitions",
+        "region definitions"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_pilot_v01/PACER_FKG_compound110_R1W0_smoke.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_pilot_v01/PACER_FKG_synthetic_benchmark_v01.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_pilot_v01/apo_stride20.audit.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_pilot_v01/candidate_no_probe_stride20.audit.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_pilot_v01/candidate_probe_stride20.audit.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_pilot_v01/feasibility_audit.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_pilot_v01/probe_only_stride20.audit.json",
+      "classification": "tracked result/calibration artifact",
+      "participation": [
+        "historical v01 result/calibration"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": true,
+      "note": ""
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110",
+      "classification": "generated/ignored artifact",
+      "participation": [
+        "historical v01 input/state"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": false,
+      "note": "Directory-level artifact; may be absent in this worktree."
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_R2R3_full_v01",
+      "classification": "generated/ignored artifact",
+      "participation": [
+        "historical v01 input/state"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": false,
+      "note": "Directory-level artifact; may be absent in this worktree."
+    },
+    {
+      "path": "project/results/pacer_dc_G2A_source_v01",
+      "classification": "generated/ignored artifact",
+      "participation": [
+        "historical v01 input/state"
+      ],
+      "present_locally": false,
+      "tracked_at_baseline": false,
+      "note": "Directory-level artifact; may be absent in this worktree."
+    },
+    {
+      "path": "project/results/pacer_dc_production_v01",
+      "classification": "generated/ignored artifact",
+      "participation": [
+        "historical v01 input/state"
+      ],
+      "present_locally": false,
+      "tracked_at_baseline": false,
+      "note": "Directory-level artifact; may be absent in this worktree."
+    },
+    {
+      "path": "project/results/pacer_dc_membrane_reference_v01",
+      "classification": "generated/ignored artifact",
+      "participation": [
+        "historical v01 input/state"
+      ],
+      "present_locally": false,
+      "tracked_at_baseline": false,
+      "note": "Directory-level artifact; may be absent in this worktree."
+    },
+    {
+      "path": "project/results/pacer_dc_restraint_release_v01",
+      "classification": "generated/ignored artifact",
+      "participation": [
+        "historical v01 input/state"
+      ],
+      "present_locally": false,
+      "tracked_at_baseline": false,
+      "note": "Directory-level artifact; may be absent in this worktree."
+    },
+    {
+      "path": "project/results/pacer_dc_common_protein_v01",
+      "classification": "generated/ignored artifact",
+      "participation": [
+        "historical v01 input/state"
+      ],
+      "present_locally": false,
+      "tracked_at_baseline": false,
+      "note": "Directory-level artifact; may be absent in this worktree."
+    },
+    {
+      "path": "C:\\projects\\PACER_DC_MD_delivery_20260927",
+      "classification": "external dependency",
+      "participation": [
+        "authenticated short-data mapping",
+        "topologies",
+        "atom14",
+        "raw windows"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": false,
+      "note": "Read-only local delivery with SHA256SUMS.txt and manifest.json."
+    },
+    {
+      "path": "C:\\projects\\geom2vec-source",
+      "classification": "external dependency",
+      "participation": [
+        "Geom2Vec implementation dependency"
+      ],
+      "present_locally": true,
+      "tracked_at_baseline": false,
+      "note": ""
+    },
+    {
+      "path": "project/tools/geom2vec_checkpoints/visnet-base-1.pt",
+      "classification": "external dependency",
+      "participation": [
+        "frozen ViSNet checkpoint"
+      ],
+      "present_locally": false,
+      "tracked_at_baseline": false,
+      "note": "Path referenced by historical audit; file may be excluded/absent."
+    }
+  ],
+  "counts": {
+    "tracked source/code": 15,
+    "tracked result/calibration artifact": 150,
+    "generated/ignored artifact": 7,
+    "external dependency": 3
+  },
+  "scope_note": "Exact files are listed for tracked implementation/results; bulky generated state is identified by exact directory root."
+}

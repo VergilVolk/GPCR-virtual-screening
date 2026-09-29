@@ -1,0 +1,38 @@
+{
+  "schema": "pacer_fkg_v02.phase0_gate.v1",
+  "created_at": "2026-09-29T14:10:40.899532+08:00",
+  "decision": "PASS_WITH_DOCUMENTED_CAVEAT",
+  "no_encoder_inference_performed": true,
+  "no_visnet_long_md_processing_performed": true,
+  "checks": {
+    "repository_protection": {
+      "checked_at": "2026-09-29T14:10:40.842543+08:00",
+      "v01_result_manifest_file_count": 41,
+      "V01_RESULT_HASHES_UNCHANGED": true,
+      "v01_mismatches": [],
+      "baseline_tracked_file_count": 630,
+      "BASELINE_TRACKED_FILES_UNCHANGED": true,
+      "baseline_mismatches": []
+    },
+    "server_manifest_authenticated": true,
+    "server_local_checksums_match": true,
+    "production_files_complete": true,
+    "completion_qc_pass": true,
+    "seeds_verified": true,
+    "preprocessing_route_compatible": true,
+    "atom_residue_compatible": true,
+    "path_guard_tests": "4/4 PASS (unittest)"
+  },
+  "documented_caveats": [
+    "The long-MD backup contains no topology. Read-only, checksummed per-system sanitized PDBs from C:\\projects\\PACER_DC_MD_delivery_20260927 were used; their atom counts match every DCD and their receptor sequence/mapping matches the authenticated short-data atom14 CSVs.",
+    "All state.csv timestamps are offset from DCD header times by about 3.999860 ps at the final frame (DCD: 50.0-50000.0 ps; state.csv: 54.0-50004.0 ps). Completion is independently recorded as 50.0 ns in each progress.json; no timing value was inferred from filenames.",
+    "MDAnalysis warns that some non-receptor PDB records lack resid information and defaults those records to resid 1. The chain-E protein selection remains 270 residues, matches the short-data sequence exactly, and has complete expected atom14 heavy atoms."
+  ],
+  "git_status": [
+    "## experiment/pacer-fkg-v02-longmd-v01",
+    "?? project/pacer_fkg_v02/"
+  ],
+  "ignored_output_status": [
+    "!! project/results/pacer_fkg_v02_longmd_v01/"
+  ]
+}

@@ -1,0 +1,3161 @@
+{
+  "schema": "pacer_fkg_v02.baseline_tracked_tree.v1",
+  "baseline_commit": "0a4b4f238c73add75a09a0875f698250a39bdf33",
+  "branch": "experiment/pacer-fkg-v02-longmd-v01",
+  "tag": "encoder-candidate-ah-frozen-20260929",
+  "manifest_creation_time": "2026-09-29T14:09:54.214493+08:00",
+  "hash_source": "local worktree bytes for paths tracked at baseline commit",
+  "total_file_count": 630,
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "6fd98f5847ca15d58c4f6f0bf95004fc58e199b1116b2f6b1ddf545b203b33b6",
+      "size": 1573
+    },
+    {
+      "path": "02pres.md",
+      "sha256": "8a8f1186aeaf1294b533dff94d3291d9c35a7568b76798f4347f915eedcd13e7",
+      "size": 5923
+    },
+    {
+      "path": "02pres2innov.md",
+      "sha256": "632322e0a5a50c5a0ca98a575a6c2fd16b5a5114832065ae2b961a1352952e53",
+      "size": 5246
+    },
+    {
+      "path": "CHRM4_PAM_Modeling_Handoff_v1.0/SHA256SUMS.txt",
+      "sha256": "45cd221109ad9aeef977ab24e02d2a77078d7a96f7306276cc39efaf4d00d6bc",
+      "size": 1423
+    },
+    {
+      "path": "CHRM4_PAM_Modeling_Handoff_v1.0/data/activities.csv",
+      "sha256": "0779bb7fc4046eb8230ea51f34feff29a68c0477a6857d1ba1ca3b4a2b30b7ee",
+      "size": 1424232
+    },
+    {
+      "path": "CHRM4_PAM_Modeling_Handoff_v1.0/data/assays.csv",
+      "sha256": "07661232d27d569e60ba2fa6183ff7f44535acce3977069ff57ddac3fdf550cb",
+      "size": 35875
+    },
+    {
+      "path": "CHRM4_PAM_Modeling_Handoff_v1.0/data/compounds.csv",
+      "sha256": "08145cb8f3ee9aa61ade526f289f34163a354f6911f3a388f71912970b0833b1",
+      "size": 376318
+    },
+    {
+      "path": "CHRM4_PAM_Modeling_Handoff_v1.0/data/modeling_pam_vs_inactive.csv",
+      "sha256": "6c7dea3883a30a95969b2861e0be603c1a1f3f768fb6f6dc159bac8f8ef9e5c0",
+      "size": 250847
+    },
+    {
+      "path": "CHRM4_PAM_Modeling_Handoff_v1.0/data/modeling_potency_exact.csv",
+      "sha256": "80482c1960360b7092dafcfaf68e0d5617c6d5a2eef3e2911a9d5db1899f2fc2",
+      "size": 261817
+    },
+    {
+      "path": "CHRM4_PAM_Modeling_Handoff_v1.0/data/modeling_potency_exact_calcium.csv",
+      "sha256": "1db9dd1e58cea1bbaea2648edf511ebb1833ca970e7d25a8574f0c9deded0abf",
+      "size": 244547
+    },
+    {
+      "path": "CHRM4_PAM_Modeling_Handoff_v1.0/data/modeling_threshold_10uM.csv",
+      "sha256": "d38656129d2576e1c8cae218f45b1a88872cd4a1a280ce57fa157f168c0908a5",
+      "size": 391502
+    },
+    {
+      "path": "CHRM4_PAM_Modeling_Handoff_v1.0/data/sources.csv",
+      "sha256": "5254f719bf77768643adaf1e9a1f62738f0c060a464e667469e12b978d8e3fa8",
+      "size": 17350
+    },
+    {
+      "path": "CHRM4_PAM_Modeling_Handoff_v1.0/docs/DATA_DICTIONARY.md",
+      "sha256": "ac0120aaee8bc80ed94a8e832a05cd33cd20b385ceb6070297dd4f1489c831ab",
+      "size": 9347
+    },
+    {
+      "path": "CHRM4_PAM_Modeling_Handoff_v1.0/docs/FINAL_FREEZE_RECORD.md",
+      "sha256": "c41695a7d076aa712e7bbf7ce77b0699cca1f88d61235ed96bb6e321c6d31c9b",
+      "size": 6229
+    },
+    {
+      "path": "CHRM4_PAM_Modeling_Handoff_v1.0/docs/FREEZE_REPORT.md",
+      "sha256": "e58f82c1ff9754d4e5bbeef31b6cf373af073378e44a4bad6238394f378eea00",
+      "size": 9042
+    },
+    {
+      "path": "CHRM4_PAM_Modeling_Handoff_v1.0/docs/manifest_sha256.json",
+      "sha256": "5f9bcaafc30fee49e8889be5c6a391c7d1117c700a8179b175e437acb71f2c83",
+      "size": 8441
+    },
+    {
+      "path": "CHRM4_PAM_Modeling_Handoff_v1.0/optional/excluded_or_unresolved.csv",
+      "sha256": "7759323c401e239c72954961219ff23ed4fdbbfe9326daafade09ded496eca51",
+      "size": 86202
+    },
+    {
+      "path": "CHRM4_PAM_Modeling_Handoff_v1.0/optional/modeling_extended.csv",
+      "sha256": "beb016cb1676f2896b390a0ee2ef07ed74a55f612744ebf08cfb43ebe6dd9388",
+      "size": 341437
+    },
+    {
+      "path": "ENCODER_READOUT_ARCHIVE_20260929_SHA256.txt",
+      "sha256": "eaa056cf8d0ee62e2aeabf718961b874e729afbbab82c49af42a24e041ae0c99",
+      "size": 17322
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "18a8e471d36dc66dba8e34b60e7eac51e802f15e5a1a5a4ee00bb3362dad8de3",
+      "size": 1086
+    },
+    {
+      "path": "START_HERE_ONEPROT_PACER_DC.md",
+      "sha256": "718d82a754d53aca3d7175237bc9c20e1ef1f15b0f7e4dacccba75d9e89de5b1",
+      "size": 6725
+    },
+    {
+      "path": "START_HERE_PACER_DC_GEOM2VEC.md",
+      "sha256": "0606aba9d6a7ad5b108d58461571d94c0ec7aad18ebd5619eb68b6a721392eef",
+      "size": 477
+    },
+    {
+      "path": "competition_notice.txt",
+      "sha256": "741de8c3dc4d59caf9b6d0ba07933dc23ebba5b169ba55299a6aa986988ca139",
+      "size": 20343
+    },
+    {
+      "path": "docs/0915pipeline.md",
+      "sha256": "bed5eaf9245acee957993fdfc90b5b397e05aa59d97c627d44a2ab9e867f0ab4",
+      "size": 20439
+    },
+    {
+      "path": "docs/0915pipeline_org.md",
+      "sha256": "195ca1a41434cdce7c1318dfa2e94d3b8813ff620a6a6e47584140f1e8dae1d3",
+      "size": 17217
+    },
+    {
+      "path": "docs/ENCODER_OPTIMIZATION_DESIGN_v01.md",
+      "sha256": "df456b3654ece98044615cbb54b9104809c7d263b400e8402e8c9137c2c4f737",
+      "size": 33685
+    },
+    {
+      "path": "docs/PACER_DC_GEOM2VEC_PROGRESS_20260927.md",
+      "sha256": "3ce009bbfd4871fa27c826000137e499c70a203bf88531f7bba8cb48f823cefc",
+      "size": 16549
+    },
+    {
+      "path": "project/00_project_strategy.md",
+      "sha256": "7d38de898309486264979e308a57114a8144e3ef8f18f15761a1c09054bf24d6",
+      "size": 9991
+    },
+    {
+      "path": "project/PACER_M4_FINAL_REPORT.md",
+      "sha256": "3e7ad93330c192d30272cadd92739075e69662e29d5f138b5631539a870ef3ff",
+      "size": 40510
+    },
+    {
+      "path": "project/PIPELINE.md",
+      "sha256": "39076f7d6e93d4fe4493934a77c1f7538bff640071210831bb61faaabc4038a8",
+      "size": 3767
+    },
+    {
+      "path": "project/PROJECT_STATUS.md",
+      "sha256": "4fa653fcd0c0be37de02e5c8fbee06dadc71c938e69bbac05324272b69bdc2bf",
+      "size": 12494
+    },
+    {
+      "path": "project/config/oneprot_pacer_dc_delivery_v01.json",
+      "sha256": "94934982df26389123938d31336b5f223b0c7e4a1914844361f0aab1e324c7f4",
+      "size": 437
+    },
+    {
+      "path": "project/config/pacer_acm_v2_frozen.json",
+      "sha256": "f1c20214992e57b2cb6aaf48f0cf856d399456b5e95fd44d863f3fcecb67ef35",
+      "size": 2170
+    },
+    {
+      "path": "project/config/pacer_dc_coupling_coordinate_v01.json",
+      "sha256": "ac5da711fd657798ec40a6c22e6972302877685b8e4767e18f2e379452011dfd",
+      "size": 21527
+    },
+    {
+      "path": "project/config/pacer_dc_evidence_schema.md",
+      "sha256": "d0480178dd7f5a2ffe173831d5883bb171b47e95607c99ee7fc4685c5f903b6a",
+      "size": 1484
+    },
+    {
+      "path": "project/config/pacer_dc_gpu_phase1_manifest.csv",
+      "sha256": "a2fdcbf1313c597d81e3ae7bb9066c3873af19e6774e8f02989f83d720bf3b49",
+      "size": 1314
+    },
+    {
+      "path": "project/config/pacer_dc_pilot_md_manifest.csv",
+      "sha256": "07ae9fda129dd28abb68a06caffaf30fa5b80e4c8350f9baf196663ed254cf62",
+      "size": 8088
+    },
+    {
+      "path": "project/config/pacer_dc_pilot_md_manifest_v2.csv",
+      "sha256": "0a357a019dfba662b0015773ba5e361e08e00f354d0166da5b00b45d99a922f2",
+      "size": 11394
+    },
+    {
+      "path": "project/config/pacer_dc_pilot_md_manifest_v2_audit.json",
+      "sha256": "1bed2aa538953000894928533e25b2778ab56f15ae80c9a1df17998b9c7e0282",
+      "size": 558
+    },
+    {
+      "path": "project/config/pacer_dc_training_v01.json",
+      "sha256": "71a49e5a2d08333b2c50a4c4d28703512f6e7a0f748cf70772e221bc0aeb26c0",
+      "size": 447
+    },
+    {
+      "path": "project/config/pacer_function_space_v3_frozen.json",
+      "sha256": "0ee049d0dc8297d574f7d5feb53c0c3c9f8c3cb226e90d22ccf5398bb2364cc2",
+      "size": 1374
+    },
+    {
+      "path": "project/config/pacer_m4_mechanism_cv_v01.json",
+      "sha256": "d0f52e52db18fbf2b6391e18ae1c9a65184828ef80503413a1f202f7ec0b3977",
+      "size": 1805
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/activity_cliffs/activity_cliffs.csv",
+      "sha256": "4462d778eb86e8a865f7f66500aa2f603958c7c48a15c3eb3ac7b04c875378dd",
+      "size": 23334
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/activity_cliffs/audit_report.json",
+      "sha256": "01638e9afc2639abcae104e14af6781bcde10b7f5026bb81c5adc0fbc407cfa6",
+      "size": 808
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/activity_cliffs/cliff_vs_smooth.csv",
+      "sha256": "c7b10a74aebcdb5d4a0c86e2d9e577972fb9517535b9d6362b1ab64e0ae29db9",
+      "size": 94361
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/activity_cliffs/near_neighbor_pairs.csv",
+      "sha256": "fc563aaca75c5f2b9f4573a036b9c072c46c8dacee92b52114cff8e6ac1ef7ee",
+      "size": 179230
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/audit_report.json",
+      "sha256": "4ce7b4372627aadc034be0e60b59d468eacae94f2c6e786da7f4f68d76473554",
+      "size": 4676
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_2026_vu6025733/audit.json",
+      "sha256": "84a95b74ea3e1fc2317eeab11781a61d698928186d3a272024a0689c0961c277",
+      "size": 817
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_2026_vu6025733/external_potency.csv",
+      "sha256": "6eb072be54d786173636ea47f37065dd061aa4f1b7dfb7aec55d7f056195e545",
+      "size": 5372
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_2026_vu6025733/generation3_audit.json",
+      "sha256": "2a7100c342c4f2e41438ac9324ed72737206c8aec128d0da84649a5592f9cb79",
+      "size": 606
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_2026_vu6025733/generation3_potency.csv",
+      "sha256": "74e35e68017ca25b94542cfa74858461196961951bd4f4ded21a50138dbf8377",
+      "size": 3164
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_2026_vu6025733/generation4_stereo_audit.json",
+      "sha256": "9a08cf3a3b147c78f8f9a49d7adabe2cff474c01cf62c37d39093e72c981d38b",
+      "size": 432
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_2026_vu6025733/generation4_stereo_potency.csv",
+      "sha256": "4603ac387cbaf64250e7fb622d3c28e25333e8a3963e714164d5838eb1cbd566",
+      "size": 3801
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_acadia_2025/external_benchmark_audit.json",
+      "sha256": "3c0465ddae78d6ddc85d458b11818d5a02e2797b050bd2cfb9a89fee18038ab5",
+      "size": 1124
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_acadia_2025/external_functional_benchmark.csv",
+      "sha256": "e5ca9fc1b7a701f95b6dd5bc4a5bc9968a8e7d41518ccdf67b288f07506543c1",
+      "size": 16633
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_acadia_2025/external_molecule_benchmark.csv",
+      "sha256": "e3c818c2c4477a882ac2e613d314788b3d2f974f3a1b18542b92380bdf3a4bab",
+      "size": 16966
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_acadia_2025/functional_labels_frozen.csv",
+      "sha256": "9b7cf86eb9e9555be538407f27975725e71ebc05699f2d43dcc3002f11425e70",
+      "size": 1783
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_acadia_2025/source_registration.json",
+      "sha256": "6daa1ad34b933c001deb26827670fe17505724821eb8950cae9b6f261d23022e",
+      "size": 1227
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_acadia_2025/structure_recovery_audit.json",
+      "sha256": "807515d9f14e799133703818c739d86606a67fc470e40171087d856ceae4b606",
+      "size": 321
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_acadia_2025/structures_opsin_audit.csv",
+      "sha256": "dd80b16de632a99cbcb7a03079ca4390b7a3a50ac488a9a2f1efbe03417c2745",
+      "size": 13677
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_monash_ly2033298/audit.json",
+      "sha256": "44f664a8a4d830358177a2caafd8fed5e62eb3940e60daa2cc964aac2b13dfdd",
+      "size": 839
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_monash_ly2033298/external_allostery.csv",
+      "sha256": "64856c816da7c1dad17c7290fe944bb00d723583e3c06a893dc2103c9332ffb4",
+      "size": 2381
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_suven_2025/audit.json",
+      "sha256": "17dbd13cb4a45d4db0619aedd56f16338cd25fe926e9418d0b1dc4206fabb3be",
+      "size": 546
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_suven_2025/chemical_qc_audit.json",
+      "sha256": "867c9258923ca64baf064cb8c63014467f841f77119ad96a3fd358da01bcdbfe",
+      "size": 552
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_suven_2025/external_patent_potency.csv",
+      "sha256": "edd7e240eb2877b86be84e00cf93f941b940418d5ebff48df097f780c44163d1",
+      "size": 16860
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_us20260055116/named_structure_functional_subset.csv",
+      "sha256": "6a9ccde1968f6313271e55ea611a062fa86fa464069ae839067c347629914d96",
+      "size": 6582
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_us20260055116/named_subset_audit.json",
+      "sha256": "4baa8085a4a2d3a9d112fb3abffae011d58ff963007647e1877aa16a22f750b9",
+      "size": 1068
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_us20260055116/surechembl_document.json",
+      "sha256": "cad4739606879806f3955b06d143bff1272c52bf8e411cace154c15abdc1ee33",
+      "size": 813757
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/external_us20260055116/surechembl_export/document_chemistry_20260830_062053_091.csv",
+      "sha256": "30ace7ad580ee3fd35fc262b1e8b6bfc3645b1393911a4824fc4154cc828183d",
+      "size": 364756
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/mechanistic_chembl/download_audit.json",
+      "sha256": "5b3681e4629b0ac4356708e3b25474c195b4687dfac39ebbfb2720542764fc93",
+      "size": 247
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/mechanistic_chembl/mechanistic_multidomain.csv",
+      "sha256": "54b8df8474c6db779e64506f3682a6ee9ba272280c2ac0a44b6a27e482710846",
+      "size": 5413
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/mechanistic_chembl/mechanistic_multidomain_audit.json",
+      "sha256": "a480fffbb2b5a88fda1004ff8a9dbf187592d738cf7be75d68c7abbc303d9f5e",
+      "size": 712
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/mechanistic_chembl/raw_mechanistic_activities.json",
+      "sha256": "7e1acf772fb6b4c8f2ac503ae76d0587cd9140e1c7344ef239eed1d0a93ecccc",
+      "size": 594226
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/pam_vs_inactive.csv",
+      "sha256": "a64e9bf3cb1f7c88930bd330fdb6e4e37bd97679ff34ee691d0cd350bf1138f2",
+      "size": 88496
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/potency_molecules.csv",
+      "sha256": "391ed0540cc720d7b13aad4324b82acbff02596abc721c2e35ee8b6109fc5b09",
+      "size": 84272
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/source_metadata.csv",
+      "sha256": "663248dbc625e5252d6b37ff65bd606ada5f480051e25a8dd74e217197888760",
+      "size": 19591
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/temporal/audit.json",
+      "sha256": "affb3afd04c025368b9d01f0ad10204ebfc26754a1e796ef91f7387316d5648c",
+      "size": 373
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/temporal/potency_molecules_temporal.csv",
+      "sha256": "70610c424901fe4150c1967cc0943f600a583b63fabf6f5e27f08506d4eebd09",
+      "size": 94603
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/temporal/pubmed_esummary_cache.json",
+      "sha256": "75ad3dd86399a36a0876b3bbb59345c6c80b9abfdf0a4a028dba5fe92a436286",
+      "size": 19559
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/temporal/source_metadata_enriched.csv",
+      "sha256": "2801c9d81114f9d505502d19d5e2b96ab160f2f8c12bce1fb89d4419fb0a3fc0",
+      "size": 22292
+    },
+    {
+      "path": "project/data/benchmarks/m4_pam_v1/threshold_10uM.csv",
+      "sha256": "10477455c040696a80c9c8221424baf877ee698db9e991f4aedd36debd572909",
+      "size": 86702
+    },
+    {
+      "path": "project/data/benchmarks/pacer_dc_reference_evidence.csv",
+      "sha256": "56004e8da7e8bfa544ac4f147519f5b6cb72b409fefe5743cdfe369874810879",
+      "size": 938
+    },
+    {
+      "path": "project/data/reference/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "project/docs/DOCKING_METHODS_SURVEY.md",
+      "sha256": "d020f4e675f3ff67ff0374406ce3f7f3346bfc5567f31c82a61904f56877e382",
+      "size": 4070
+    },
+    {
+      "path": "project/docs/FRONTIER_SURVEY_2026.md",
+      "sha256": "77924fdb7724df40e4c33c27b4f25be30fa588f85f74366f681463fec2dc61d7",
+      "size": 6860
+    },
+    {
+      "path": "project/docs/GPU_PLAN.md",
+      "sha256": "b168c1fd5bc0e71ee20bdedb41784c248d770b78acca7977b25cd6f7a53708aa",
+      "size": 3056
+    },
+    {
+      "path": "project/docs/LITERATURE_REUSE_ANALYSIS.md",
+      "sha256": "0c9b8e0373a3e4717ece7936d96957f1e277eb57547873eada0f540afa14e2bb",
+      "size": 12347
+    },
+    {
+      "path": "project/docs/M4_ALLOSTERIC_COUPLING_HYPOTHESES.md",
+      "sha256": "59bd85be3305634e2aa18dc2bf3781d4d9269e9d5260d5b83e9b49cd91b2fcc5",
+      "size": 2860
+    },
+    {
+      "path": "project/docs/M4_GAMD_ENSEMBLE_REPLICATION_PROTOCOL.md",
+      "sha256": "6543fcf6a5884e3192005f9b2cbd938c050961844e029998d919131dd780248d",
+      "size": 6034
+    },
+    {
+      "path": "project/docs/M4_RESIDUE_POTENCY_ASSOCIATION_PROTOCOL.md",
+      "sha256": "700a0a4eca3199a7ec8d1aa3ed4b33a95f13e1e73fc8d074be9bf5a2cf7210a5",
+      "size": 1506
+    },
+    {
+      "path": "project/docs/ONEPROT_PACER_DC_BRANCH_REVIEW_20260921.md",
+      "sha256": "0b23802f50f0e2d4d69d2ee8fb12c4b222d0a08ec252ad97e079d583c9724495",
+      "size": 3767
+    },
+    {
+      "path": "project/docs/PACER_ACADIA_2025_EXTERNAL_PREREGISTRATION.md",
+      "sha256": "407ada7a1a2f594bde6f3cec43af1de31c3d492e45f1de06e850cd994f1fff20",
+      "size": 2962
+    },
+    {
+      "path": "project/docs/PACER_ACM_V2_PREREGISTRATION.md",
+      "sha256": "a310cb4ba84af0a9a5922ca963292d838a7d268136a3416864d801e2d20b54af",
+      "size": 3642
+    },
+    {
+      "path": "project/docs/PACER_ANCHOR_GUIDED_TRIPLET_PREREGISTRATION.md",
+      "sha256": "9d6a865529b70898dd8dc9472435f0f8a0725936866ab0c770aae57fe17cfe7b",
+      "size": 1877
+    },
+    {
+      "path": "project/docs/PACER_CONSENSUS_PAM_SIGNATURE_PREREGISTRATION.md",
+      "sha256": "80bf6b9ca5004b660a2105a3cd88a3b17bbf55449496a2dafab2754b8c664c66",
+      "size": 2757
+    },
+    {
+      "path": "project/docs/PACER_CONTEXT_KERNEL_DEVELOPMENT_CONTRACT.md",
+      "sha256": "21c5b398407f6becb040a68d7149a81e0be2c80ae7c969eb118c5e3a29584e2d",
+      "size": 1654
+    },
+    {
+      "path": "project/docs/PACER_DC_DYNAMIC_ENCODER_DECISION.md",
+      "sha256": "1d1f68aae61da6c46acf86fcc90f29cf3adae69c0ffcbac1a7226e31c3a531f3",
+      "size": 3968
+    },
+    {
+      "path": "project/docs/PACER_DC_GEOM2VEC_HANDOFF.md",
+      "sha256": "7de0b18e4896b62d07b5e6fde8424c35da03e5699d6749c8429ce0a40fd68477",
+      "size": 4915
+    },
+    {
+      "path": "project/docs/PACER_DC_GPU_HANDOFF.md",
+      "sha256": "f758fefcadbcddfd6bc070a0b21dcc65a5fc098c29da1de644c71df267c4b4c3",
+      "size": 4051
+    },
+    {
+      "path": "project/docs/PACER_DC_NEXT_EXECUTION.md",
+      "sha256": "51d5b0ee1686da778b46b019ffb4117fae54d9563d07f70a8b3675ce2ad52468",
+      "size": 3073
+    },
+    {
+      "path": "project/docs/PACER_DC_PILOT_MD_PRODUCTION_CONTRACT.md",
+      "sha256": "f6e21177ede03a491902f133bc8c48c0f3a481ccf3fe6156f167eccded5bb8f7",
+      "size": 4867
+    },
+    {
+      "path": "project/docs/PACER_DC_PROGRESS_20260923.md",
+      "sha256": "9bcac8928c7c9f201cd885093d5006c985d7c01756c8c1c8efc5fda0f0e0f8b0",
+      "size": 18626
+    },
+    {
+      "path": "project/docs/PACER_DC_PUBLICATION_PROTOCOL.md",
+      "sha256": "f388e1474d6d304260ca51f8bd21a1be06af60dc0c2191f7edf1ab51e90a8ad5",
+      "size": 5731
+    },
+    {
+      "path": "project/docs/PACER_DC_TRAINING_HANDOFF.md",
+      "sha256": "d1b6d12c21838a1d294a036b2af1202cbe345c75f8af761b524c0a0848ec914f",
+      "size": 4104
+    },
+    {
+      "path": "project/docs/PACER_DC_V1_DEVELOPMENT_CONTRACT.md",
+      "sha256": "c74f69747222f6929ef2f2d67d05961cbe61e8b77d1799058ff58768feb656a0",
+      "size": 3623
+    },
+    {
+      "path": "project/docs/PACER_DEEPRLI_FUNCTIONAL_ADAPTER_PROTOCOL.md",
+      "sha256": "54335fac650fab06175a49b4c226ec5632ee13d72cdbd5beebe71b77a3f6a6ac",
+      "size": 6241
+    },
+    {
+      "path": "project/docs/PACER_DELTAR_PREREGISTRATION.md",
+      "sha256": "eac57c91ce062dbec1a3ffd71847fc73e7e1134f43d686e8f2a6a792619b7598",
+      "size": 1806
+    },
+    {
+      "path": "project/docs/PACER_DUAL_CONTEXT_COUPLING_METHOD.md",
+      "sha256": "5070b5fd7ae6a353043b5a27c58f04e7a44bc942bfdb751430f4e2e0157f73b3",
+      "size": 4285
+    },
+    {
+      "path": "project/docs/PACER_EXTERNAL_2026_PREREGISTRATION.md",
+      "sha256": "8328eae112298c417bb21d4cfe8c027901547f368a23f08b5cedfc8613fcf61b",
+      "size": 1759
+    },
+    {
+      "path": "project/docs/PACER_EXTERNAL_STATIC_PAM_SIGNATURE_PREREGISTRATION.md",
+      "sha256": "789d223a016d6b4f312330b0dba61b84a18c33906bec0675d3c3a40d7f082976",
+      "size": 1215
+    },
+    {
+      "path": "project/docs/PACER_FACTORIAL_KERNEL_GRAPH_METHOD.md",
+      "sha256": "9014e37ccd1220dd3757e015c5013c3e4b91fa99cf96889680f685a2cacc24ac",
+      "size": 5233
+    },
+    {
+      "path": "project/docs/PACER_FKG_IMPLEMENTATION_AUDIT_20260927.md",
+      "sha256": "2c0e7b477509713b7a21fad0787f907399ad6349481ad7022fbc649a5504b17b",
+      "size": 3819
+    },
+    {
+      "path": "project/docs/PACER_FS_METHOD.md",
+      "sha256": "883155179896f57d04227dca983f0ebd0fc974ec1cdf0f84a1fbacd893727786",
+      "size": 6101
+    },
+    {
+      "path": "project/docs/PACER_FS_V02_PREREGISTRATION.md",
+      "sha256": "6bde713f673fe440c9ea2938043548df97bef48937c9354c6da376315e5713f3",
+      "size": 1937
+    },
+    {
+      "path": "project/docs/PACER_FUNCTIONAL_TRIPLET_PREREGISTRATION.md",
+      "sha256": "19dc0f9c3d6d3fe3473ea63a338e28a53c94cbec08471d6745b810cee8f9d085",
+      "size": 2462
+    },
+    {
+      "path": "project/docs/PACER_FUNCTION_SPACE_V3_PREREGISTRATION.md",
+      "sha256": "fac81abc592b541ab8e71cbcaf9907c8a798def1493c514419983f268e1a1c53",
+      "size": 2229
+    },
+    {
+      "path": "project/docs/PACER_GENERATION4_STEREO_ENSEMBLE_PROTOCOL.md",
+      "sha256": "d2514e3188e799e401722003d9a0066d73b89f72bce17667b6e2fb09ef0b8eb7",
+      "size": 1329
+    },
+    {
+      "path": "project/docs/PACER_LY2033298_ALLOSTERY_PREREGISTRATION.md",
+      "sha256": "4d2ae7a3f4627d45909ad43e5154137c25b7947dd4c5542edf05c8746146199b",
+      "size": 3846
+    },
+    {
+      "path": "project/docs/PACER_M4_ABSTRACT_EVIDENCE_BANK.md",
+      "sha256": "04fad784d136f37b6c20f8a58c2854fd1e7378dd2a58d6952414505e917ff4c3",
+      "size": 4743
+    },
+    {
+      "path": "project/docs/PACER_M4_DEVELOPMENT_LOG.md",
+      "sha256": "9f5382ca1d49b431c1b7b2540ead5b8cf9955565fa4631b058728c78ab5d5127",
+      "size": 20336
+    },
+    {
+      "path": "project/docs/PACER_M4_DYNAMIC_VALIDATION_PROTOCOL.md",
+      "sha256": "d22c01cf10d0affe23618e90659cce334e47ec680794ce99e5bd773903e39df0",
+      "size": 3279
+    },
+    {
+      "path": "project/docs/PACER_M4_ENRICHMENT_ROUTE_AUDIT.md",
+      "sha256": "471dfa7da6bf2358bc6ef8ba19d7db7dab9aedbb89dcda57071a3cf2c3bfeacd",
+      "size": 4825
+    },
+    {
+      "path": "project/docs/PACER_M4_FUNCTIONAL_VALIDATION_PLAN.md",
+      "sha256": "d96fddb810cfb4014a38764ce9e7fdb501e569d0515658e1c9732d247c48b429",
+      "size": 4047
+    },
+    {
+      "path": "project/docs/PACER_M4_LEAD_PAM_HYPOTHESES.md",
+      "sha256": "3495b684fda38b05bfcad8b1e6f351fa6aa62f11c25ea40d636ad988d0e3b8c8",
+      "size": 2790
+    },
+    {
+      "path": "project/docs/PACER_M4_RESEARCH_CHARTER.md",
+      "sha256": "8e7149d2ee5ca5aa86755376ee83c089bf4d097fe6434fc37a1568eeb372b780",
+      "size": 9194
+    },
+    {
+      "path": "project/docs/PACER_MATCHED_STATIC_SPECIFICITY_PREREGISTRATION.md",
+      "sha256": "571863bc45f039287e99eb24169533d31c5acd9ca35563c8413cad15c1a59c88",
+      "size": 841
+    },
+    {
+      "path": "project/docs/PACER_MCV_METHOD_AND_HANDOFF.md",
+      "sha256": "e73db8fbd846cdcc91f04b4a42e8a5ad73b588b52d611b050cb0c4f50160b6c6",
+      "size": 3571
+    },
+    {
+      "path": "project/docs/PACER_MECHANISTIC_MULTIDOMAIN_PROTOCOL.md",
+      "sha256": "93a333c38112a45ccc50292c4ac84467ab799b96e7abcff608e1f64afbfde56c",
+      "size": 2293
+    },
+    {
+      "path": "project/docs/PACER_METRIC_PREREGISTRATION.md",
+      "sha256": "984300953a6c27c28b131ba6753a0a56d96ed54653113b279224834fa2929ca0",
+      "size": 1787
+    },
+    {
+      "path": "project/docs/PACER_ORTHOSTERIC_STABILITY_ANNOTATION_PREREGISTRATION.md",
+      "sha256": "389af30d014a25193d753ebc63af398026ba93cb8028f825c104e078e1fa4929",
+      "size": 1353
+    },
+    {
+      "path": "project/docs/PACER_PAIRED_DELTA_PAM_SIGNATURE_PREREGISTRATION.md",
+      "sha256": "017405a37e6675bc7a3b03e041516f3f5397dbf9be8471e45b6b3e2990c245fe",
+      "size": 1127
+    },
+    {
+      "path": "project/docs/PACER_PUBLIC_PAM_DYNAMIC_ENDPOINT_PREREGISTRATION.md",
+      "sha256": "53af4034c612bd47c8bf9c56b831d800ae5a2b1ab996063e3cf7120bedcebf74",
+      "size": 1281
+    },
+    {
+      "path": "project/docs/PACER_REPLICA_INVARIANT_STATE_PREREGISTRATION.md",
+      "sha256": "2cce8aafc6b1f41f58c13eceedaa7715478ac765f4fc123ca490ee683a60240c",
+      "size": 2128
+    },
+    {
+      "path": "project/docs/PACER_SEQUENTIAL_SAR_PREREGISTRATION.md",
+      "sha256": "238e6185776b400c83f9e640b382c78ddd2d07c343b6a4bad93831a4d42b1a9c",
+      "size": 1641
+    },
+    {
+      "path": "project/docs/PACER_SOFT_COUPLING_PROTOTYPE_CONTRACT.md",
+      "sha256": "2ee0b95da29112a95ab9ff275e594826a20d5ef69dfbfb9556f597eb8e1f07d3",
+      "size": 1186
+    },
+    {
+      "path": "project/docs/PACER_STATEMETRIC_METHOD_AND_FEASIBILITY.md",
+      "sha256": "5600f59bc5be7fdbc16760b760ffa065fb4d9a28837eba1556c110331c2ce635",
+      "size": 16862
+    },
+    {
+      "path": "project/docs/PACER_STATE_MOE_METHOD.md",
+      "sha256": "e9ac548abbbac3d22b2ea30e505554b536924e4c6877f0d443ebcd621c8d11a8",
+      "size": 3956
+    },
+    {
+      "path": "project/docs/PACER_STATIC_ANCHORED_TRAJECTORY_TEST.md",
+      "sha256": "fa737c90eb1a628f37b7377d55cbb1554f524071df6d80c017b67707b349aa9f",
+      "size": 1413
+    },
+    {
+      "path": "project/docs/PACER_STICKY_SOFT_PROTOTYPE_CONTRACT.md",
+      "sha256": "57ab630c8a5e16c4258144b88746cfd4b9704e30cab20c4a9e8b09b156616b7a",
+      "size": 917
+    },
+    {
+      "path": "project/docs/PACER_SUVEN_PATENT_EXTERNAL_PREREGISTRATION.md",
+      "sha256": "79f58cf10835737ee8597556c1f8c0364fd2203c37d18f70fd6b4d6d4e684341",
+      "size": 2890
+    },
+    {
+      "path": "project/docs/PACER_TRIPLET_CLUSTER_EXTERNAL_ANNOTATION.md",
+      "sha256": "2c271c4144e89e2252816c3f5e34bc02e04beb52f6f826022cbff047ae509755",
+      "size": 1473
+    },
+    {
+      "path": "project/docs/PACER_UNSUPERVISED_STATE_PILOT_PREREGISTRATION.md",
+      "sha256": "a0371aef5a92aac9b6810788dd5812fdd0c76f88ec172fb0af9832c826ec16fd",
+      "size": 2342
+    },
+    {
+      "path": "project/docs/PACER_US20260055116_EXTERNAL_PREREGISTRATION.md",
+      "sha256": "96cb6eac7d20d0e7e9ba922c6c1a62dc62eca5cf67c0e3b681da0a5937fa2a70",
+      "size": 2367
+    },
+    {
+      "path": "project/docs/PACER_XR_CASCADE_METHOD.md",
+      "sha256": "2b0b628320293c27ef08338a9f9a896022010d7afe75ca9b7f1fe1a609cc27e1",
+      "size": 5148
+    },
+    {
+      "path": "project/docs/THOMPSON_MIAO_2026_EXACT_REPRODUCTION.md",
+      "sha256": "1e65cd9c87915decaaa99da33e7198e2774a0223038148b2b506e370b2ddfab7",
+      "size": 6847
+    },
+    {
+      "path": "project/encoder_atom_readout_v01/__init__.py",
+      "sha256": "dd5b0fef0d03a72cda224f3c4d6542a3cdaed6be17e9a1992527264ed9308f43",
+      "size": 71
+    },
+    {
+      "path": "project/encoder_atom_readout_v01/experiment_d.py",
+      "sha256": "f5417a0fad19efa40427dd000f712a162bbd0928555358ff3a73c1d0934ace34",
+      "size": 67297
+    },
+    {
+      "path": "project/encoder_atom_readout_v01/refresh_temporal_report.py",
+      "sha256": "359fb0c07c8ae6eab724d028f3dea39bbde7ed75b038a32c6b42ad2f23ec6563",
+      "size": 3183
+    },
+    {
+      "path": "project/encoder_atom_readout_v01/tests/test_experiment_d.py",
+      "sha256": "f4200e01121fe295e549c346c0019bed5cf5040a77a0ed4d2aa81ebffc71b82a",
+      "size": 2185
+    },
+    {
+      "path": "project/encoder_bs_fusion_v01/__init__.py",
+      "sha256": "d14a3d58af125c71e12d27e72a1ca5ce4e6635219ff6046acfd1884e628a6112",
+      "size": 62
+    },
+    {
+      "path": "project/encoder_bs_fusion_v01/experiment_e.py",
+      "sha256": "706230cd6c6af782d536e6741bf6699d33cad0baeaf7ef57a26653af7a90acbb",
+      "size": 50123
+    },
+    {
+      "path": "project/encoder_bs_fusion_v01/tests/test_experiment_e.py",
+      "sha256": "a598f2e96944f12bd43b035a82cd2242a163c517cf2a06d10acbe2c4396fd79d",
+      "size": 1917
+    },
+    {
+      "path": "project/encoder_candidate_v01/CANDIDATE_SPEC.json",
+      "sha256": "fb1c14df8180892f0902de81685ab6a01e15b8c759b5a01d75831285a01e63db",
+      "size": 2712
+    },
+    {
+      "path": "project/encoder_candidate_v01/__init__.py",
+      "sha256": "27c4a352a63e0dcf8db4544d43c64c8ea8bbe2700129deeb1584f405348a88ee",
+      "size": 67
+    },
+    {
+      "path": "project/encoder_candidate_v01/audit_h.py",
+      "sha256": "7147993dc83c987b077c25a9879abb3a1e0f67c53fe2612ecf69fb278ac62c8b",
+      "size": 24751
+    },
+    {
+      "path": "project/encoder_intermediate_v01/__init__.py",
+      "sha256": "6baaa0d202f5d450ec72ef615622b56df87b69af012f7b786cb17ed3e17f74e8",
+      "size": 67
+    },
+    {
+      "path": "project/encoder_intermediate_v01/core.py",
+      "sha256": "7f441c5b6598a9473b865f00dd05f627a1e5e6cd22ac2f38828506be25977154",
+      "size": 8932
+    },
+    {
+      "path": "project/encoder_intermediate_v01/phase3.py",
+      "sha256": "882e850f93be833372ab5e4d83f74d5fdd66134a7c5a12b3d52683fb2837fc57",
+      "size": 52625
+    },
+    {
+      "path": "project/encoder_intermediate_v01/run_phase_0_2.py",
+      "sha256": "665c845fcd4d8f519cecf986eda986cede54c6848fef11f72acb980e68fd7f49",
+      "size": 24397
+    },
+    {
+      "path": "project/encoder_intermediate_v01/tests/test_core.py",
+      "sha256": "323fe95e95657c13d2f140feca8e1ef80c759ac6167227af4a7b741fafa936a5",
+      "size": 755
+    },
+    {
+      "path": "project/encoder_intermediate_v01/tests/test_phase3.py",
+      "sha256": "7d7989fb1c28614b99c5cee8c39cb805d735f602525dd827d1bb8ee1fcad76ff",
+      "size": 1266
+    },
+    {
+      "path": "project/encoder_readout_v01/.gitignore",
+      "sha256": "e4091a68cb03782f4eda103b3e16039673e2c7345db0fa74d6791fc880c8a777",
+      "size": 77
+    },
+    {
+      "path": "project/encoder_readout_v01/EXPERIMENT_B.md",
+      "sha256": "1a8e9a307072efb17b7d7c5db9c245e819c0b992b350603df81258e11eb72f35",
+      "size": 5723
+    },
+    {
+      "path": "project/encoder_readout_v01/EXPERIMENT_B2.md",
+      "sha256": "f6982868dd725693a39f8141b98672c7f041b35001f31afc7306f89ad502befd",
+      "size": 5513
+    },
+    {
+      "path": "project/encoder_readout_v01/README.md",
+      "sha256": "15de34406861912875811cb03410c767f0628d77fdb88ac3a2d743ace3b1614e",
+      "size": 5797
+    },
+    {
+      "path": "project/encoder_readout_v01/experiment_a.py",
+      "sha256": "f413c090afe2875bcbd7894b7c308b0a3bceaad2c506d83322ae72017e15e03c",
+      "size": 18197
+    },
+    {
+      "path": "project/encoder_readout_v01/experiment_b.py",
+      "sha256": "7d88b9c3cf1f17f9ecb2ed0a70d008429618ab91ba00b94f0dc7690a1d2ce366",
+      "size": 18842
+    },
+    {
+      "path": "project/encoder_readout_v01/experiment_b2.py",
+      "sha256": "902d5f3afbcbe0104b38ebbc5c619ed8afc1c96cf4cb7047b3e3eab870f36f57",
+      "size": 21423
+    },
+    {
+      "path": "project/encoder_readout_v01/report_b.py",
+      "sha256": "0399e8544579b44320b184e2d908b86290d796fc5537ad1973bdcebed2ee6069",
+      "size": 9061
+    },
+    {
+      "path": "project/encoder_readout_v01/report_b2.py",
+      "sha256": "488d60ab269f7d1a1d5c6ac0c246360bb73a3c2a9796ba3f6b84f6f554759ca6",
+      "size": 11302
+    },
+    {
+      "path": "project/encoder_readout_v01/tests/test_experiment_a.py",
+      "sha256": "c5c7c0d062f6de5ff6e97b8c93ecde2a4449464bb4ed27a231df7c60742403a9",
+      "size": 10120
+    },
+    {
+      "path": "project/encoder_readout_v01/tests/test_experiment_b.py",
+      "sha256": "3024b683d7b641f74b05ead08d5524f1eb79f4224559940702d65896a2e10145",
+      "size": 6439
+    },
+    {
+      "path": "project/encoder_readout_v01/tests/test_experiment_b2.py",
+      "sha256": "c9b26f30a1127f10e95ce0e940abf0aea78e5b9298d73e69e65ed13289902b6b",
+      "size": 8418
+    },
+    {
+      "path": "project/encoder_temporal_v01/__init__.py",
+      "sha256": "1936e19ceafb05bacb6d1f7ed055bd56a2b449b14cee7bd2064d2b39cdd792f0",
+      "size": 64
+    },
+    {
+      "path": "project/encoder_temporal_v01/experiment_f.py",
+      "sha256": "4fef9dd1bc50b7e2cf9f63903f9fd96ec88bfb52219499c05281f4b500ee27ae",
+      "size": 37535
+    },
+    {
+      "path": "project/encoder_temporal_v01/tests/test_experiment_f.py",
+      "sha256": "4ca3641c9fba2ee822e0ac2cadbe2b23bc924f680f845f060e717ed01e48438f",
+      "size": 2371
+    },
+    {
+      "path": "project/encoder_temporal_v01/tests/test_experiment_f_integrity.py",
+      "sha256": "1c9304bc2e253e6ea420606ae5f21743aeeaa75ed26a4a1c6e91c4db9242cb83",
+      "size": 2680
+    },
+    {
+      "path": "project/encoder_window_v01/__init__.py",
+      "sha256": "812e96eebeea12b55656b37735bdce80a4cea987aa52792cc98c8f0d8fefd79d",
+      "size": 64
+    },
+    {
+      "path": "project/encoder_window_v01/experiment_g.py",
+      "sha256": "f98c330da5fc6716215c01b1b8d6b03f96550e62fe1a3f9b1a7013ddc996ae33",
+      "size": 33389
+    },
+    {
+      "path": "project/encoder_window_v01/tests/test_experiment_g.py",
+      "sha256": "bd81f565e8d4ba4277205bbde7c08b33bd4bb2b20d5f97f3cb7e82c9b1bc1c9f",
+      "size": 2177
+    },
+    {
+      "path": "project/encoder_window_v01/tests/test_experiment_g_integrity.py",
+      "sha256": "e6a6ec283a95bfc2b3717601b1e8d50647a3c38ea6538846af2bccf6b6ff3f79",
+      "size": 3975
+    },
+    {
+      "path": "project/environment_pacer_dc_geom2vec.yml",
+      "sha256": "7df9ab9aa00d7456650ed5a02c508f51fbaa947298b75a1bf9c316f46cecea1f",
+      "size": 331
+    },
+    {
+      "path": "project/environment_pacer_dc_md.yml",
+      "sha256": "d9309447c3cd93ca216afb02997c78d8b672cc472ed950c625858a26401f4af0",
+      "size": 1619
+    },
+    {
+      "path": "project/environment_pacer_dc_train_cpu.yml",
+      "sha256": "e646ad926dd321da9cfafb2966c0e9b20e0db2fdc751086aac7e2bcdbbeb4b25",
+      "size": 235
+    },
+    {
+      "path": "project/environment_sbdd.yml",
+      "sha256": "a17d7e66fe2e8feb3187ef40f2230de5070b80b71369e8d4edd6fa00333c42c9",
+      "size": 642
+    },
+    {
+      "path": "project/environment_vs.yml",
+      "sha256": "4324f0a3702d69278ad28c19d418d10459cb94204fba53a334997164c15ac42b",
+      "size": 434
+    },
+    {
+      "path": "project/pacer_dc_training/FOUR_CONTEXT_WINDOW_CONTRACT.md",
+      "sha256": "0202c323ced12d95b27fa077ee8e5c07db92408ca9d4759eaf162eaff24ac4f6",
+      "size": 5261
+    },
+    {
+      "path": "project/pacer_dc_training/G0_G4_FREEZE_AND_H_HANDOFF_v01.md",
+      "sha256": "0d7a11022f125a6f8c18014216c1e96223ba5483e91852606ee99819056b3722",
+      "size": 6383
+    },
+    {
+      "path": "project/pacer_dc_training/G3_SCIENTIFIC_SUMMARY_v01.md",
+      "sha256": "bc3d0b608ec5667b7317017013d06ceddf20827460b2330399b9cfce16fded63",
+      "size": 2669
+    },
+    {
+      "path": "project/pacer_dc_training/analyze_g2_l0_regions.py",
+      "sha256": "4b7d7560a9502a5f16dbe6b43e54f0bad28419b7c0d3ecd80c7503f0831c36f6",
+      "size": 3371
+    },
+    {
+      "path": "project/pacer_dc_training/analyze_g2_l1_regions.py",
+      "sha256": "edabb2faaeae3e04147edc2aa355d00e1039b8c14a00a2069f56496bf2f30ccb",
+      "size": 3370
+    },
+    {
+      "path": "project/pacer_dc_training/analyze_g3_geometry_v01.py",
+      "sha256": "7795e24301288b45c241cc88e3f690a7d417e74968887e2eb699be89c601d3bc",
+      "size": 1370
+    },
+    {
+      "path": "project/pacer_dc_training/analyze_g3_l1_bias_v01.py",
+      "sha256": "36eb45a2475bdb702bcca6733a6fd1885af4e7a5d2293b6a1ee8d7e5ecf83429",
+      "size": 1397
+    },
+    {
+      "path": "project/pacer_dc_training/analyze_g3_structure_v01.py",
+      "sha256": "d1f0a6224deadffcf409519099e58afe96224d9d60da51a1ee723fad40873d0e",
+      "size": 1213
+    },
+    {
+      "path": "project/pacer_dc_training/analyze_pacer_fkg_g1.py",
+      "sha256": "c7503f7e7e903e20dc4886b080ea9a11d50853a57f39c93a9fced66f72ce8740",
+      "size": 16927
+    },
+    {
+      "path": "project/pacer_dc_training/analyze_pacer_fkg_g2b.py",
+      "sha256": "d672c6e007d05c27cd3c4aebd0226b9ba2c871f6bf802d8b79cc4117012ba749",
+      "size": 15688
+    },
+    {
+      "path": "project/pacer_dc_training/analyze_pacer_fkg_g2c.py",
+      "sha256": "db669a5e020cf38cfd0dea50966a643593364a6b2241f68c72e8b248618d5477",
+      "size": 17260
+    },
+    {
+      "path": "project/pacer_dc_training/append_progress_20260925_direction_audit.py",
+      "sha256": "594301c314c60aa7506299dbe1b12d9f744a2f5bf1a432e2991d0f453a12d9b4",
+      "size": 5902
+    },
+    {
+      "path": "project/pacer_dc_training/audit_dint_R2_R3.py",
+      "sha256": "680b0bc6ca5a8847a941878b50453669bfa3507a88d7f100deae70c64ed4c9f6",
+      "size": 6456
+    },
+    {
+      "path": "project/pacer_dc_training/audit_dpam_direction_R2_R3.py",
+      "sha256": "82f42d8263a089de78e23ec5329247e5ecc60f3d8f042964b561452922037b8b",
+      "size": 5295
+    },
+    {
+      "path": "project/pacer_dc_training/audit_geom2vec_cross_replica.py",
+      "sha256": "7434acda0818adc7948c5159d03c32a773a972dbbdeea00c4ea2ccc33bc54624",
+      "size": 4783
+    },
+    {
+      "path": "project/pacer_dc_training/audit_geom2vec_pilot.py",
+      "sha256": "a57e86c0fce630cbc4c20c952da1ca638f9acbd6226068ea097749f20de37d71",
+      "size": 6165
+    },
+    {
+      "path": "project/pacer_dc_training/audit_oneprot_pacer_dc_delivery.py",
+      "sha256": "e90c338b55ecdf395830945f5f99621c621a1aa27a82f68711ac9818bcc3312f",
+      "size": 5468
+    },
+    {
+      "path": "project/pacer_dc_training/audit_pacer_dc_four_context_stability.py",
+      "sha256": "120a3a8d0694b9933d70726e97e7b33fca0ee72e11a709e358365b90b7de051e",
+      "size": 7271
+    },
+    {
+      "path": "project/pacer_dc_training/audit_pacer_dc_training_gate.py",
+      "sha256": "1f1492faf6d3f6dfc2fb1cd94b528cef2ca54a0b12b4b3ce20606b73c2b1eb83",
+      "size": 8451
+    },
+    {
+      "path": "project/pacer_dc_training/audit_pacer_fkg_g2a_atom14_pbc.py",
+      "sha256": "4026a2faf8751235e12e468467240d88760603e3e5ce365288ad858a52db74cc",
+      "size": 16436
+    },
+    {
+      "path": "project/pacer_dc_training/audit_pacer_fkg_g2a_pbc.py",
+      "sha256": "0d4e0208dd886a62702f7d2e0c4d5759c019441103670505441e98377d7fdf29",
+      "size": 14954
+    },
+    {
+      "path": "project/pacer_dc_training/audit_pacer_fkg_g2b_robustness.py",
+      "sha256": "63569a4c6ef3a55a8cf83669a7ddb4480d0a00e1dcc893b6daef0bf7aeaadf59",
+      "size": 15829
+    },
+    {
+      "path": "project/pacer_dc_training/audit_pacer_fkg_u2_erratum.py",
+      "sha256": "27e4d3b466fbabbba0b8c7042844c3565ddea1958f3008fcb9c369000ac6fc6f",
+      "size": 16319
+    },
+    {
+      "path": "project/pacer_dc_training/benchmark_pacer_fkg_synthetic.py",
+      "sha256": "8f72948af34e7da3db2fe580bc8f244fd18734b242d3bd1006ab6432bdd161bd",
+      "size": 3238
+    },
+    {
+      "path": "project/pacer_dc_training/build_m4_multistructure_graph.py",
+      "sha256": "30a06d94e7d1fd06cd9eef33cda22217a4ca800a0f14aa432fac6c6d0053dcf2",
+      "size": 9357
+    },
+    {
+      "path": "project/pacer_dc_training/diagnose_oneprot_five_layers.py",
+      "sha256": "b44a820615fd507f37b3408a231da9f437066feb214103b993c38c1955e03e8c",
+      "size": 6240
+    },
+    {
+      "path": "project/pacer_dc_training/diagnose_oneprot_five_layers_batch.py",
+      "sha256": "d942c1058ba7ea0d1f4dbe342f2f5cf38271712380e6117e1f86fbeb22cadd48",
+      "size": 6985
+    },
+    {
+      "path": "project/pacer_dc_training/example_four_context_features.csv",
+      "sha256": "fdf24f40dd3093f4e48708da465e0d1cb0093b290a4ba37744149034df963aaf",
+      "size": 387
+    },
+    {
+      "path": "project/pacer_dc_training/extract_geom2vec_atom14.py",
+      "sha256": "50d6af4cd8294df6c6112bc9ba10cfad7cd63af15f49302aac73cecd9b2a8ce8",
+      "size": 8943
+    },
+    {
+      "path": "project/pacer_dc_training/extract_pacer_dc_four_context_embeddings.py",
+      "sha256": "fe506b52e4944aab3c1496d2057ac418d910e613f6d8c37dc8b29865f49889e5",
+      "size": 26444
+    },
+    {
+      "path": "project/pacer_dc_training/g4_l1_matrix_qc_v01.py",
+      "sha256": "17503882289fd34ae35bbf3dc2548ff6ddace095be8758dc74bb8e1a50e2d96b",
+      "size": 3434
+    },
+    {
+      "path": "project/pacer_dc_training/g4_l1_reconstruction_smoke_v01.py",
+      "sha256": "58a21de72a32113de35f1b8007c2a23091176f9068b8ba095bd52073f4ef0a92",
+      "size": 2668
+    },
+    {
+      "path": "project/pacer_dc_training/g4_stage_region_window_v01.py",
+      "sha256": "add81019979de246e0c66fb0c08407bbdb92a703397d24f573d942281df05965",
+      "size": 5505
+    },
+    {
+      "path": "project/pacer_dc_training/g4_stage_summary_v01.py",
+      "sha256": "f51d5655ecc1d156599caecf0563e9568eddd3817142069e9bb78a2db16e9410",
+      "size": 7985
+    },
+    {
+      "path": "project/pacer_dc_training/g4_stage_w0_smoke_v01.py",
+      "sha256": "8832f5235c0eb9c0dcfec1b1d96efd40e4896fea2f47f9c028c163867c7cf3dd",
+      "size": 5248
+    },
+    {
+      "path": "project/pacer_dc_training/g4_stage_window_smoke_v02.py",
+      "sha256": "a9e4ee3ee7c90a2c84ea49760c50cd55c711eeaf8a60369b1f4ee05ec514c86f",
+      "size": 5306
+    },
+    {
+      "path": "project/pacer_dc_training/inspect_oneprot_md_checkpoint.py",
+      "sha256": "33022050ec2793585b185d7f654180da9bc0bcb66014ad72dfb2e0f2084fc37a",
+      "size": 3375
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/README.md",
+      "sha256": "fda8b4b26ac8634302d6e8da0a3de969b3bba4fb0a7de191c689b0158aeeb629",
+      "size": 26055
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/input/m4xan_39f_test.csv",
+      "sha256": "dde2c590d552fe0c85673fbf8b961d934f3c161d21c460d57dc997342f31c260",
+      "size": 294
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/input/m4xan_i1.npy",
+      "sha256": "d694aaf773b76a36f3034fbf5f1042fcd88d82280dd26441bd2903e07fbbdfbe",
+      "size": 4586528
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/input/m4xan_i1_39f.npy",
+      "sha256": "46ed1ffd2c0b54cd7d074d10b7f96c75d085458d4d18376318527ec03bc6bf20",
+      "size": 1788824
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/input/m4xan_test.csv",
+      "sha256": "dde2c590d552fe0c85673fbf8b961d934f3c161d21c460d57dc997342f31c260",
+      "size": 294
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/outputs/checkpoint_sha256.txt",
+      "sha256": "cdfecaca52b86a5cbec5ed800774909f61afa1a9708dd11e4055a59bdd7ce7a4",
+      "size": 781
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/outputs/embedding_smoke.npy",
+      "sha256": "98ce8ac41f1bf23d69c70c53c0c83f81b385e14026df02bfcdf5b44dc5e1a47c",
+      "size": 4224
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/outputs/embedding_smoke_39f.npy",
+      "sha256": "2b0e99249e024f13f00f0e44149e6b60f60b3ffb750e74aaf818c5a1d7692c15",
+      "size": 4224
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/outputs/forward_reverification.txt",
+      "sha256": "13e6d01e9131c1b736ece1fb7f9789bf322b6f2433f50928d8f7733e257e8970",
+      "size": 1345
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/outputs/forward_reverification_39f.txt",
+      "sha256": "f21b624a8a5522c30704eb886e0971cc51b655d35dac92ecb31caebbb66dc708",
+      "size": 1593
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/outputs/oneprot_environment_audit.json",
+      "sha256": "92382c3c65324541358dea39cf168cd64b849e986b7502c4b1c67829523aecdf",
+      "size": 930
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/outputs/run_log.txt",
+      "sha256": "c069e8a3518e926c8dbc6d323ad1b1afbdfcb92ce953d3d8a86e08e93042c127",
+      "size": 1264
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/outputs/run_log_39f.txt",
+      "sha256": "391df32e9413e69a92a8c295ecae9273c8f9abfd55eba6d28af18ec584938210",
+      "size": 596
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/scripts/audit_md_branch_runtime.py",
+      "sha256": "616bb88394b61e8b8261211c31b1f6f4f56410eb5f1f805595cc521c25237de3",
+      "size": 14439
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/scripts/convert_dcd_to_atom14.py",
+      "sha256": "0100d924899775d79e69a563a6d9a99edf1f6050e6d6c5ccfdd711612ad88267",
+      "size": 4397
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/scripts/fetch_md_ckpt.py",
+      "sha256": "cece0597aeb077a37b3147065472cd1f4cf902d19cfa3a3f9f2b3f69bd975252",
+      "size": 4205
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/scripts/load_md_branch.py",
+      "sha256": "13fcb477040485e3515398904ab7b36ba251b00493a41432054ccafccb1abb44",
+      "size": 3128
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/scripts/reverify_forward.py",
+      "sha256": "deb363d2fac26f9ac9ca2d86cff6466915684bdf233cb46d957477db5b9dcecf",
+      "size": 5837
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/scripts/run_g0_embedding.py",
+      "sha256": "72fade991349fe44c33c0891777169889dd2c3512600b952090ea8ea3e546eeb",
+      "size": 6957
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/scripts/verify_md_ckpt.py",
+      "sha256": "cb3d71bbea41ba8d6f608f82bfdb2cb1597ed28a7870f6623a5eba9907ca0e5f",
+      "size": 4850
+    },
+    {
+      "path": "project/pacer_dc_training/oneprot_g0_audit/upstream/oneprot_provenance.txt",
+      "sha256": "e13e54fbcd08d36503012bb69a5b05d19af7562f2e9f43c091f998dbbb34e1e0",
+      "size": 2837
+    },
+    {
+      "path": "project/pacer_dc_training/pacer_factorial_kernel_graph.py",
+      "sha256": "1b91a7b12c9ecc3a3c99e0c648f22a4f00daf818ffa961a114496a4c53cb8f8d",
+      "size": 9166
+    },
+    {
+      "path": "project/pacer_dc_training/pacer_mechanism_cv.py",
+      "sha256": "6b60de8abd57f3d44e4216c7db3bd633f555b93f8a4d41f186d37285d90ecc0b",
+      "size": 6362
+    },
+    {
+      "path": "project/pacer_dc_training/phase1_audit_wsl.py",
+      "sha256": "f541ca4e919e6fa526a03e12382fb5007ed26b9668caf45c6220130a741acd89",
+      "size": 2552
+    },
+    {
+      "path": "project/pacer_dc_training/phase1_topology_probe.py",
+      "sha256": "f77b87a063b90ebb144a3576361a3d7d2bb40b2f44613a69cd26cd4d167b5a9e",
+      "size": 2069
+    },
+    {
+      "path": "project/pacer_dc_training/plot_dint_comparison_R2_R3.py",
+      "sha256": "196c89bdf1b55d0e9ab3041a600f8d7fed8bfcc7b0f7107e04f99d21d3cd2d3f",
+      "size": 2618
+    },
+    {
+      "path": "project/pacer_dc_training/plot_dpam_direction_summary_R2_R3.py",
+      "sha256": "9d04336664bb7dd256840e4961eedb62600c68ff633365aecbc3fcb6cb1b8908",
+      "size": 3986
+    },
+    {
+      "path": "project/pacer_dc_training/run_geom2vec_four_context_batch.py",
+      "sha256": "6e527020fc89edee7aa0a6de35e001ebd0fa0f85cec6350b50572fdfc68a251f",
+      "size": 3939
+    },
+    {
+      "path": "project/pacer_dc_training/run_pacer_dc_embedding_batch.py",
+      "sha256": "7e904c4f62b9e2f7ad79b7051b7f61d5b32c886fff337ea3eb8cbe718c7ccd09",
+      "size": 10303
+    },
+    {
+      "path": "project/pacer_dc_training/run_pacer_fkg_r2r3_audit.py",
+      "sha256": "403f55ea03d3927206c4762f0999cdb8008919d79cb123e36cadbd3bb5c56a4a",
+      "size": 13998
+    },
+    {
+      "path": "project/pacer_dc_training/run_pacer_mechanism_cv.py",
+      "sha256": "7104ba38c14471ced641f9d0b83a18fe6667a2ece9d3428ef61ff6af719f7c9b",
+      "size": 9563
+    },
+    {
+      "path": "project/pacer_dc_training/run_pacer_mechanism_cv_single_window_smoke.py",
+      "sha256": "043a7db25771e5e01e9cca1f0dd8be313ac00af497b5662a8fe259f0108e6668",
+      "size": 2853
+    },
+    {
+      "path": "project/pacer_dc_training/test_analyze_pacer_fkg_g1.py",
+      "sha256": "d4e8c2cebca33bfad71c1a84f5c694f05079f652bb53827d5771a8da03d6587e",
+      "size": 2834
+    },
+    {
+      "path": "project/pacer_dc_training/test_analyze_pacer_fkg_g2b.py",
+      "sha256": "956ab8fe2f8dd3d3664d0d222021934c6ed89984e8163c9e643155c896b504c2",
+      "size": 2476
+    },
+    {
+      "path": "project/pacer_dc_training/test_analyze_pacer_fkg_g2c.py",
+      "sha256": "5d8f44c007f2223eb6f9088c9f99dcf9f0c2938894a13e89ae71cad9e80f9e86",
+      "size": 3024
+    },
+    {
+      "path": "project/pacer_dc_training/test_audit_pacer_fkg_g2a_atom14_pbc.py",
+      "sha256": "cfe892543783a1731f1df444440a0a1d170f161e3de8541b48b2ee398fd0d4ce",
+      "size": 4213
+    },
+    {
+      "path": "project/pacer_dc_training/test_audit_pacer_fkg_g2a_pbc.py",
+      "sha256": "bec70976672068361204110bd4d82a2f24e930db991c414c8ec9067cabbca794",
+      "size": 4525
+    },
+    {
+      "path": "project/pacer_dc_training/test_audit_pacer_fkg_g2b_robustness.py",
+      "sha256": "3af86ab01edc4abcc65c5b0cb284d6d6d7ad99931b89be35a2f558ecfdd70072",
+      "size": 2852
+    },
+    {
+      "path": "project/pacer_dc_training/test_audit_pacer_fkg_u2_erratum.py",
+      "sha256": "e535ae059726a0cbb0426bc401704519a526af0ab88ca37ad5fdab6af8c67ca7",
+      "size": 3146
+    },
+    {
+      "path": "project/pacer_dc_training/test_pacer_fkg_r2r3_audit.py",
+      "sha256": "8639609f47d7e158e851d82f55d78642173c2ec2170677464536cb09d8788f8b",
+      "size": 3415
+    },
+    {
+      "path": "project/pacer_dc_training/test_pacer_mechanism_cv.py",
+      "sha256": "29589f54ca3997e30fbc4b804861f3db13d1e6ecba817718d74476b238344f28",
+      "size": 2224
+    },
+    {
+      "path": "project/pacer_dc_training/train_dual_context_heads.py",
+      "sha256": "c3c7f85c2ad5528b0a0658c65b960aeb825e32bacabe0e27bba22247f5e049a3",
+      "size": 13594
+    },
+    {
+      "path": "project/paper/PAPER_SKELETON.md",
+      "sha256": "fdc86d4097e39c26da3913e6c319a7dcf5aece4518cb79752c63d0a6186ffb5c",
+      "size": 15253
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G1_diagnostics_v01/G1_DIAGNOSTIC_AUDIT.json",
+      "sha256": "980d48b80fe48ff93d98eeb7793acb1ad1555fe2e6ed883871164334004ea751",
+      "size": 25222
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G1_diagnostics_v01/G1_DIAGNOSTIC_REPORT.md",
+      "sha256": "38f6ed8b4c15b67ced06e2ea9275735a7befc19324efae8b84dd0dd10e15ac21",
+      "size": 2470
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G1_diagnostics_v01/G1_axis_region_comparison.csv",
+      "sha256": "7240e6ae01383f00d327020ddec475a655232a2866c2239328f458f9c2b0f972",
+      "size": 5600
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G1_diagnostics_v01/G1_replica_region_summary.csv",
+      "sha256": "0094cb2eed30c2dd2a69455b9ce232c76b446a8b31a34f45d6dff194ffed5e0c",
+      "size": 10518
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G1_diagnostics_v01/G1_window_diagnostics.csv",
+      "sha256": "7d4430eae0a94d2e4a3db7aaff4961b4753ac29d372a1e86d9db3b1e87ce50ef",
+      "size": 49922
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G1_diagnostics_v01/LEGACY_SUPERSEDED_NOTICE.md",
+      "sha256": "d079747603b11b4cea5bcfa5107fd6fee0514f5d43a50a585acb5d05f50a8fc4",
+      "size": 372
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_PBC_v01/G2A_PBC_AUDIT.json",
+      "sha256": "9580a5ce3f2bf9090bbd4ca7e62e6ff4b65cf59d500c257280e527c2cf1bda4d",
+      "size": 27974
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_PBC_v01/G2A_PBC_REPORT.md",
+      "sha256": "6697e1309ef7ebf066dc873a128f5e8f0e9444adc903c703ea8720ffd3264de0",
+      "size": 1192
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_PBC_v01/G2A_PBC_TRAJECTORIES.csv",
+      "sha256": "bbfa4abb3d100f025a51e9a9066bbafdc0e72865a757341675a6746007b92070",
+      "size": 1810
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_PBC_v01/G2A_PBC_TRAJECTORIES.incomplete.csv",
+      "sha256": "69571903d4c58d8b9620c85248e6cf21e9ca19996a6e695a8952acbdc34ced09",
+      "size": 218
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_PBC_v01/G2A_PBC_WINDOWS.csv",
+      "sha256": "3ebbcf8444b523010cc7e0178f3b0e161b4c96d52ef8f92d6f7767d33fc64f1c",
+      "size": 8891
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_v01/G2A_AUDIT.json",
+      "sha256": "8780f0a8991bad2f51607d97c7ce1312748484c14430f87425d3f933fa9d84eb",
+      "size": 53753
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_v01/G2A_PER_INPUT.csv",
+      "sha256": "c9591d30429f83bb8374e2cbed8839f09247fc893b7ec4975ea1d65839973816",
+      "size": 7293
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_v01/G2A_REPORT.md",
+      "sha256": "4e3a90ffe0e4a7083efd46bcb168cde960756766b323d261aa6b24717e286a44",
+      "size": 605
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_v02/G2A_AUDIT.json",
+      "sha256": "26e2b3c3d65559c9f91cf905498198432ea51ccc78d6e919b06a2906aa69f11b",
+      "size": 53697
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_v02/G2A_PER_INPUT.csv",
+      "sha256": "c9591d30429f83bb8374e2cbed8839f09247fc893b7ec4975ea1d65839973816",
+      "size": 7293
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2A_v02/G2A_REPORT.md",
+      "sha256": "623bb87dc3fbdb5a325b64c11603d49455850dba7aa474d2fa0630c45c620ce5",
+      "size": 586
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_robustness_v01/G2B_BASELINE_REPLAY.csv",
+      "sha256": "b64ea713efc147717f6956af7f7182038b87738471802bd369c1735386b50879",
+      "size": 2828
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_robustness_v01/G2B_ROBUSTNESS_AUDIT.json",
+      "sha256": "25e850fcf8f9b4b2ad5ae3e66a98d56e4920c45ecece532f585aa3e322765502",
+      "size": 115533
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_robustness_v01/G2B_ROBUSTNESS_REPORT.md",
+      "sha256": "edb1f4f537b77526cbb8930746323ffc2b6a4902d0d85fa532e7ff26686d7409",
+      "size": 2524
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_robustness_v01/G2B_ROBUSTNESS_SEEDS.csv",
+      "sha256": "f5a78fa78c95b21e671e6662c38d0fab707c42ba49dea140e7eab5892b60e744",
+      "size": 29473
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_robustness_v01/G2B_ROBUSTNESS_SUMMARY.csv",
+      "sha256": "60333c5bc7ac510c75dad294b711f2a74881fd99313638477e98bed922e45a2a",
+      "size": 11111
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_v01/G2B_CALIBRATION.csv",
+      "sha256": "52e419714f905b34ff85ee7381ee4fcc7b59fda7ea7d049f7c2c69bb03a1ebbe",
+      "size": 1059
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_v01/G2B_DIRECTION_AUDIT.json",
+      "sha256": "374402a7830d8c163c785cfe3899c30b5727a4375b8065fef080c98f2c5a00c5",
+      "size": 31168
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_v01/G2B_DIRECTION_REPORT.md",
+      "sha256": "7c6b4e16e6b8165f1546229a3e48a4e8b8b65b1fca13298c962ba954c041710d",
+      "size": 3367
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_v01/G2B_DIRECTION_SUMMARY.csv",
+      "sha256": "69e97040b8e1372100f4bcd00473fa1fa2c125869fa3a5b9d1ca73de6246eae6",
+      "size": 8380
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2B_v01/G2B_WINDOW_DIRECTIONS.csv",
+      "sha256": "28489731547e30741fc5ae7bd5e0579f5bd233292f4ff0ba3e5d57c61d22daa7",
+      "size": 14270
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2C_v01/G2C_GRAPH_ABLATION_AUDIT.json",
+      "sha256": "1559d58293196ee2506cfb63a286ea04192832632675b580366b4a9b1253bfff",
+      "size": 27495
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2C_v01/G2C_GRAPH_ABLATION_REPORT.md",
+      "sha256": "87677a09bd17806e7f4da9a9cf8f7850b4290fe4515f548bc230c254522afb64",
+      "size": 3868
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2C_v01/G2C_MATCHED_WINDOWS.csv",
+      "sha256": "32f20fae44d4f95474c1e9fa487df2a67e508f01553facb5849802c1a0e4a5b9",
+      "size": 11747
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2C_v01/G2C_REGION_AXIS.csv",
+      "sha256": "d44860d661776894dccf96f726abd9e186bcd4f45ac497a9017c74479a4c0f94",
+      "size": 10535
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_G2C_v01/G2C_SHUFFLED_GRAPHS.csv",
+      "sha256": "617cba87c446dd5bc584009e55f0cd00173cfddd0abb17c13aeceb437211ad61",
+      "size": 23501
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/LEGACY_SUPERSEDED_NOTICE.md",
+      "sha256": "d079747603b11b4cea5bcfa5107fd6fee0514f5d43a50a585acb5d05f50a8fc4",
+      "size": 372
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/PACER_FKG_R2R3_AUDIT.json",
+      "sha256": "b7dbcb11f07b543694d85a680125c25b1fac2edf16be92ad0f9ff84f174bd90d",
+      "size": 162834
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R2_W000.fkg.json",
+      "sha256": "1c40820d9570f3fad8366bbe6fed77ee77495949f2488035012cc5ae8c2564bb",
+      "size": 277929
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R2_W001.fkg.json",
+      "sha256": "60188c17d0355b9978d8d5cc000615294e07a4136b539716900e8d62376fefb1",
+      "size": 277387
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R2_W002.fkg.json",
+      "sha256": "50cd2e4a56d8dc1b89e39bf86785c3bd38f7d44fe60335fcae40f0c7fc512400",
+      "size": 277526
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R2_W003.fkg.json",
+      "sha256": "3f1d51ca336337bf5f080f3a509a4fcd3266210cc4ab6e3db8b2baf0847001b0",
+      "size": 277518
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R2_W004.fkg.json",
+      "sha256": "b055baa5c83e822a17cf5e56e557506b54aec2dd569f0dbfed747e7303f5035e",
+      "size": 277544
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R3_W000.fkg.json",
+      "sha256": "7933c6cb79d66d07010c2bc91e48a13e96b3bd4acd0bd8b4f44f5d9ff6da0c93",
+      "size": 278109
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R3_W001.fkg.json",
+      "sha256": "193111b41ae6525412de308495201c65e76429f64bf028e2dc97c8c1e979be93",
+      "size": 277573
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R3_W002.fkg.json",
+      "sha256": "1fd2557317070c358ca2f283cd3c8e433873010863f45f5d28d804cf8035abe3",
+      "size": 277675
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R3_W003.fkg.json",
+      "sha256": "a1062ca47683a9b989e018261abb11768125151e337d1f80ec52cf6301508e1e",
+      "size": 277614
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_R2R3_v01/R3_W004.fkg.json",
+      "sha256": "2c8257d2d3c532c28c067739d79f87e7448a71f809d0c29fd36de1b9abf5e8c0",
+      "size": 277526
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_U2_erratum_v02/FKG_U2_ERRATUM_AUDIT_v02.json",
+      "sha256": "3cd060e03cef99f6e97a108f1d117055ebb6973043c08684289064c5f4e0cb44",
+      "size": 38447
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_U2_erratum_v02/FKG_U2_ERRATUM_REGION_AXIS_v02.csv",
+      "sha256": "cc736b69a8e54c7bf830fda4ff888b8bdc18889dc610813c3647911521893a0d",
+      "size": 10752
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_U2_erratum_v02/FKG_U2_ERRATUM_REPORT_v02.md",
+      "sha256": "0ba28607c4b6daee1080377b15636bd3fa2c388ebe2f248e5ff0fbaf93649f37",
+      "size": 4174
+    },
+    {
+      "path": "project/results/pacer_dc_fkg_U2_erratum_v02/FKG_U2_ERRATUM_WINDOWS_v02.csv",
+      "sha256": "979b29cec3a524065ad4b7a735b2b98d82a459022512381d9f2de81d7e21f86f",
+      "size": 40388
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/G2_L0_region_cross_replica_v01.csv",
+      "sha256": "5b7464db2b7e052172c219784199eb3cc6220cf616f106c6f2b6a4f6c7fb1ce6",
+      "size": 12034
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/G2_L1_region_cross_replica_v01.csv",
+      "sha256": "1db2644c03ebe32b43047879ac2cf8cdd3a2fe39117d89d762c4b17bbe687946",
+      "size": 12106
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/G2_REGION_MAP_v01.json",
+      "sha256": "50431af023e8390f5f1d4ba781aebc7dad45966fd8208144a4344858c991d32a",
+      "size": 30810
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/G2_REGION_MAP_v02.json",
+      "sha256": "a40fb6ca8131a2f6dfc18caf6f48b9930f1341c072b368e3cb3b7c3c21e593ec",
+      "size": 32175
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/G2_RESIDUE_MAPPING_v01.csv",
+      "sha256": "3cb47de7fa555e635f66e6b1ff16846e6eaa95046c522fea6154d8e1f046b61d",
+      "size": 6803
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/G3_ACh_geometry_v01.csv",
+      "sha256": "8f6bc15cd95232b4ff31bf835f4c35ce1eaad9118dae1d142f080b40d134b88b",
+      "size": 389
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/G3_ACh_structure_RMSD_v01.csv",
+      "sha256": "49f1edbf4b20d1d4e011e8147ca65923e1473b58acb7ec670e949e20c1515ee7",
+      "size": 387
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/G3_L1_ACh_bias_v01.csv",
+      "sha256": "6c03935e7f1a647751e7ec91050a154d9f79478305d6d0336978369f8dd2e154",
+      "size": 526
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/G4_four_stage_regions_v01.csv",
+      "sha256": "32ce69728f3a1b78ac6c3fbc35a0ff59778744e36d95414635104d9ab16b61a3",
+      "size": 12746
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/batch_logs/compound110_R2-3_batch_report.json",
+      "sha256": "1399bcfb42e47b3d889a7d4a2d6992b3c0db60b4274643d55c200e245de31b4e",
+      "size": 2314
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/direction_audit_R2_R3_v01/dpam_direction_decomposition_R2_R3_v01.csv",
+      "sha256": "3490a4eea413d9d2a8c965052db2b4ef45cc4e934a5f170d5882dcad2b5696fb",
+      "size": 2174
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/direction_audit_R2_R3_v01/dpam_direction_decomposition_R2_R3_v01.json",
+      "sha256": "f8abee007cafdf240eed47f84ed87376359ae9d3f71064a42048a144207bdff1",
+      "size": 16238
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/direction_audit_R2_R3_v01/dpam_direction_summary_R2_R3_v01.json",
+      "sha256": "bf62461e4996ceb8e806d3ef15c6da6fce31267dae1aa72823504f5bbd6ac1f2",
+      "size": 691
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/direction_audit_R2_R3_v01/dpam_direction_summary_R2_R3_v01.png",
+      "sha256": "ae950808a89a34fc9dc9cd11aa9fc3af257c71ea6a75fa427bf12db623006405",
+      "size": 355020
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/direction_audit_R2_R3_v01/dpam_direction_summary_R2_R3_v01.svg",
+      "sha256": "1da037219364d360ca2cb0134acfded4bb59ceb460b6053f21964ffb7a8178e7",
+      "size": 102320
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_cross_replica_G1_v01.csv",
+      "sha256": "5c9a43af9f042ef6247da1c5c53b099f8acbb4416d51c43ef574e63a01de1e24",
+      "size": 8006
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W0_v01/five_layer_report.json",
+      "sha256": "169d4ad20e63498f52b7356a7f050de54b76487c1bdfc45a49a1ff23508dc1e0",
+      "size": 956
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W0_v01/five_layer_report_apo.json",
+      "sha256": "238b7d3b3aa8e309dcec514ca069bf1df2e4ead47a5bb5c38df152a0b0983885",
+      "size": 944
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W0_v01/five_layer_report_candidate_no_probe.json",
+      "sha256": "15886898ecbbaee5ea5a66017cdb3e36f5f9a66230645f7ad2f36aa9863067da",
+      "size": 959
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W0_v01/five_layer_report_probe_only.json",
+      "sha256": "e26975003630c16422ffb1df808f55550943bf1ad96940621c12e32a30f11c20",
+      "size": 951
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W1_v01/five_layer_report_apo.json",
+      "sha256": "efdc8d9d679bd396be3624be59d5045e4a62f030269ff51f9324769275e32fd6",
+      "size": 944
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W1_v01/five_layer_report_candidate_no_probe.json",
+      "sha256": "e56ebf586bf098d2b8d3ed6e931ce93cca1113c65483b2f73c9af49310afdbe8",
+      "size": 959
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W1_v01/five_layer_report_candidate_probe.json",
+      "sha256": "8023abe98e103249220633ef8b7e5b59f752cf8563d70f971bd429b20fd0575c",
+      "size": 956
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W1_v01/five_layer_report_probe_only.json",
+      "sha256": "8591474b61046cdc92baf9dfa235e7f3fc43f06248e5c5c82e87e1d99f853881",
+      "size": 951
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W2_v01/five_layer_report_apo.json",
+      "sha256": "3ac14f2e30a6c672c894677d96362a0daaafd91c5ac9c645a8d44e85cb8b256d",
+      "size": 944
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W2_v01/five_layer_report_candidate_no_probe.json",
+      "sha256": "42ac1d6fc5989ecd5070da37ef24678dc61cb9efee08224632c0ef808ae0f5f3",
+      "size": 959
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W2_v01/five_layer_report_candidate_probe.json",
+      "sha256": "6d4248db06df8181338f58d4cd9b9b01fa675541e43c6c37109812572aa17a27",
+      "size": 956
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W2_v01/five_layer_report_probe_only.json",
+      "sha256": "0bcc7d7ce8fd5d3ea81b8213c26b2aa783da5b15cc255d99e74f9b5dcf671cb8",
+      "size": 951
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W3_v01/five_layer_report_apo.json",
+      "sha256": "ba2260125dd6e303adbad18c46871579d134aa409b653004eaf0a1b9077d8a35",
+      "size": 944
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W3_v01/five_layer_report_candidate_no_probe.json",
+      "sha256": "2569bdfbca07a55975195675dd69f0328969801460ffa8f51682c0d2b393edda",
+      "size": 959
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W3_v01/five_layer_report_candidate_probe.json",
+      "sha256": "18cd19dbe21ac1aa7d9619537e4db63b7e60f0778b39b03270054347dca579fe",
+      "size": 956
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W3_v01/five_layer_report_probe_only.json",
+      "sha256": "6713e820573a61e33594dbb6fd5548b648213d9d81d891a242a177a15f47cd43",
+      "size": 951
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W4_v01/five_layer_report_apo.json",
+      "sha256": "7587e87f2f3d0a3d82d8f5fa2f6dd7206f44e7dc87845d736f460923ccb054da",
+      "size": 944
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W4_v01/five_layer_report_candidate_no_probe.json",
+      "sha256": "7a00a32057d6e0d60283e9223ae689c6d1b9b5d2b5d0beaa53db37ca745bead3",
+      "size": 959
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W4_v01/five_layer_report_candidate_probe.json",
+      "sha256": "9700cd54ba097575f735bc42498a03669bb94706f9b70502d923a2f530e56d02",
+      "size": 956
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R2_W4_v01/five_layer_report_probe_only.json",
+      "sha256": "81705e7943198a79a8b156cc38b01406149451b90b62666c832e79c24c629e92",
+      "size": 951
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W0_v01/five_layer_report_apo.json",
+      "sha256": "31ce3fe7327c7f49437e4994178b5131209a6bf23723e5a1870f5e3174ed1e98",
+      "size": 944
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W0_v01/five_layer_report_candidate_no_probe.json",
+      "sha256": "27912aa7fff749d21aae6d0cc73f3e0da5a490b9096576da1607579bc43f5ba1",
+      "size": 959
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W0_v01/five_layer_report_candidate_probe.json",
+      "sha256": "c353eb44d3702444d4c838f888fa65336c59ed0b402d1fb93c188c865e1ebc74",
+      "size": 956
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W0_v01/five_layer_report_probe_only.json",
+      "sha256": "c541fc5d1cf4810957abad1af36accd62bd02be3e3844c75cdde4b865e25471b",
+      "size": 951
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W1_v01/five_layer_report_apo.json",
+      "sha256": "dbcc62738e99ca40fb76d20c003b4dce549c73d46d74dac61588593569bfceaf",
+      "size": 944
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W1_v01/five_layer_report_candidate_no_probe.json",
+      "sha256": "42d7fd357eeb9ef7999046554a5577ee9dc11838889191068b7159b2660a0403",
+      "size": 959
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W1_v01/five_layer_report_candidate_probe.json",
+      "sha256": "b8b20e1620356aca0f20e74317c967169493aeb11d289643d25a6af437f44636",
+      "size": 956
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W1_v01/five_layer_report_probe_only.json",
+      "sha256": "58978db9d5762430f399e1bb741db658b51b5474fb7bcbac1b214bb8f57a44fa",
+      "size": 951
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W2_v01/five_layer_report_apo.json",
+      "sha256": "c5235f8eb33d927615f70ab514c068735e61171a46e3d98cbb764c24e65e37c4",
+      "size": 944
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W2_v01/five_layer_report_candidate_no_probe.json",
+      "sha256": "9e99f32755ee5c55e7f4bb809bff5671cfa9c50e3ac2804a157a2bab61e0db09",
+      "size": 959
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W2_v01/five_layer_report_candidate_probe.json",
+      "sha256": "ec6bcdb579d6dcaa0a386153f802be7279796bd2334941d4fd43e1a481c183a1",
+      "size": 956
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W2_v01/five_layer_report_probe_only.json",
+      "sha256": "d8a7225d9de338f021659e33d34abcbae510565aa0466820ea33e1151b7d4220",
+      "size": 951
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W3_v01/five_layer_report_apo.json",
+      "sha256": "12b6c923ea65815cb319b223373c04995c1fa67a2f8d99f4845acccad3038aa7",
+      "size": 944
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W3_v01/five_layer_report_candidate_no_probe.json",
+      "sha256": "f2a797bd55f22dd1a269ffaa1e3e41a2c4449a80b935677f5ef0e704a7c3ebca",
+      "size": 959
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W3_v01/five_layer_report_candidate_probe.json",
+      "sha256": "ca328d3b336483e4d943268c458a8058491892e40fa098efb788d76be7be644f",
+      "size": 956
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W3_v01/five_layer_report_probe_only.json",
+      "sha256": "3829238c2e51545ec5e3b0db15dffa96f56eaca00536bf75081f6dc667a1ea0d",
+      "size": 951
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W4_v01/five_layer_report_apo.json",
+      "sha256": "17a2287656ade249071e6ebddaf6f3817c9c6ca8bbd7f0c69ddf4850a698cf8e",
+      "size": 944
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W4_v01/five_layer_report_candidate_no_probe.json",
+      "sha256": "6eb945b878cb02978360c530509e973b1c72a881481de52e183bdf5087db8e1a",
+      "size": 959
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W4_v01/five_layer_report_candidate_probe.json",
+      "sha256": "e8dea662501a0fd2a027e99a4f58b0182ced7c0f60b725d8cf8ac5ee53b7950c",
+      "size": 956
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/five_layer_diagnostic_R3_W4_v01/five_layer_report_probe_only.json",
+      "sha256": "c3ca549dbdc03279d39a1dbcccfec25f8e0c4d9ce51295f8c4df485709f9f8cc",
+      "size": 951
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/interaction_audit_R2_R3_v01/dint_comparison_R2_R3_v01.png",
+      "sha256": "b12efb90b0e3e362efc1ad3108c8cc3849a5f0ed11c4fca652251ff1e9854645",
+      "size": 238830
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/interaction_audit_R2_R3_v01/dint_comparison_R2_R3_v01.svg",
+      "sha256": "5b5c35a47568540fdc46cf10ddaa2eca0784eb3d303a9d9ce684c1ae7ab34028",
+      "size": 67882
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/interaction_audit_R2_R3_v01/interaction_comparison_R2_R3_v01.csv",
+      "sha256": "d8ef4e78ae02657b5af87262439abec967faee3bc00e5bab07eb2ead10c7a1c1",
+      "size": 1603
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/interaction_audit_R2_R3_v01/interaction_comparison_R2_R3_v01.json",
+      "sha256": "a43b437190a8bc34b1c07682651b28cea51131e54d60e218a3658413400e71e5",
+      "size": 12876
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/atom14/apo_w000.csv",
+      "sha256": "fc5c15a9a732c36cb88c78f762af92799bdec7dcbbddfb06ef8e765108645f3e",
+      "size": 301
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/atom14/apo_w000.npy",
+      "sha256": "fc30ce252405696c852b7300e5e1f9d593d45924096555c1ae0d7d2e43371239",
+      "size": 4536128
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/atom14/candidate_no_probe_w000.csv",
+      "sha256": "dea1e131e54001e3a83001f32407af2efb02033fbe97ea1afb9ee68c9b8dc627",
+      "size": 316
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/atom14/candidate_no_probe_w000.npy",
+      "sha256": "76040ea22817534deef26a7847eee2b33ef960ad596d0148e03b07ac2666d903",
+      "size": 4536128
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/atom14/candidate_probe_w000.csv",
+      "sha256": "759fee6aea84c60955144b89741d54b4f160a6c9d4c9679507cc2618508cbcb5",
+      "size": 313
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/atom14/candidate_probe_w000.npy",
+      "sha256": "6781e21d1fe1400fed2a91d94fb516691a6efcf702e87d448b0831d62e9dd2f7",
+      "size": 4536128
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/atom14/probe_only_w000.csv",
+      "sha256": "db58f97dc0a6e9572ab1b55541bc6969097d00c0362c030fc558cf2d2f5b9c3a",
+      "size": 308
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/atom14/probe_only_w000.npy",
+      "sha256": "905113a3dc932dc35010a7a3fbaa37ea013f56d23d16141a1394d92348e99475",
+      "size": 4536128
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/embeddings/apo_w000.npy",
+      "sha256": "7129491db5fc9ff0cab566f8e0e5069c6cf3345a7b3eb6e64c451d638a785f62",
+      "size": 4224
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/embeddings/candidate_no_probe_w000.npy",
+      "sha256": "345ef45351db8857e4653de6bc8fa148ba195e5ccdf0a1a0e83e3ad1e48a5305",
+      "size": 4224
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/embeddings/candidate_probe_w000.npy",
+      "sha256": "55abed7fa9d4560af23f500a16b8efda812d83fb68e96f67fff254c9f2ff58b4",
+      "size": 4224
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/embeddings/dAGO_w000.npy",
+      "sha256": "131747870492cb69e9f282e5eb5dee249ea6dd9b57086090991ced3deddeadf7",
+      "size": 4224
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/embeddings/dPAM_w000.npy",
+      "sha256": "aa4e59b6b9065be6fbe6a8aade201b042fd2a8611a54d056de4f9c6bbca25d2a",
+      "size": 4224
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/embeddings/probe_only_w000.npy",
+      "sha256": "946e68d1a412e5c3bcabf8ab5b094de149b280b636f26845ff93ba0ef5678b28",
+      "size": 4224
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/four_context_differential.csv",
+      "sha256": "6484db98934595731bf9be1228fac57fcb47b1dbf3c2f59825a57755ef0002ff",
+      "size": 296
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/four_context_long.csv",
+      "sha256": "889522526ed219c655aec467ddf584a95df63ecbfb8cb8c8a2ebbd5f2ed5b5cc",
+      "size": 2901
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/trajectory_windows.json",
+      "sha256": "5bbe9b8b89edbc8c5f1cb91b0f58cc551c99ab84fed349024c037207f9430b83",
+      "size": 5079
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000/unit_summary.json",
+      "sha256": "e0b76cedd9e801900b7f0aa555d9cebfc5c0946ee684ff260fa71bf80931dce1",
+      "size": 1077
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/atom14/apo_w000.csv",
+      "sha256": "fc5c15a9a732c36cb88c78f762af92799bdec7dcbbddfb06ef8e765108645f3e",
+      "size": 301
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/atom14/candidate_no_probe_w000.csv",
+      "sha256": "dea1e131e54001e3a83001f32407af2efb02033fbe97ea1afb9ee68c9b8dc627",
+      "size": 316
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/atom14/candidate_probe_w000.csv",
+      "sha256": "759fee6aea84c60955144b89741d54b4f160a6c9d4c9679507cc2618508cbcb5",
+      "size": 313
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/atom14/probe_only_w000.csv",
+      "sha256": "db58f97dc0a6e9572ab1b55541bc6969097d00c0362c030fc558cf2d2f5b9c3a",
+      "size": 308
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/embeddings/apo_w000.npy",
+      "sha256": "7129491db5fc9ff0cab566f8e0e5069c6cf3345a7b3eb6e64c451d638a785f62",
+      "size": 4224
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/embeddings/candidate_no_probe_w000.npy",
+      "sha256": "345ef45351db8857e4653de6bc8fa148ba195e5ccdf0a1a0e83e3ad1e48a5305",
+      "size": 4224
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/embeddings/candidate_probe_w000.npy",
+      "sha256": "55abed7fa9d4560af23f500a16b8efda812d83fb68e96f67fff254c9f2ff58b4",
+      "size": 4224
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/embeddings/dAGO_w000.npy",
+      "sha256": "131747870492cb69e9f282e5eb5dee249ea6dd9b57086090991ced3deddeadf7",
+      "size": 4224
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/embeddings/dPAM_w000.npy",
+      "sha256": "aa4e59b6b9065be6fbe6a8aade201b042fd2a8611a54d056de4f9c6bbca25d2a",
+      "size": 4224
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/embeddings/probe_only_w000.npy",
+      "sha256": "946e68d1a412e5c3bcabf8ab5b094de149b280b636f26845ff93ba0ef5678b28",
+      "size": 4224
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/four_context_differential.csv",
+      "sha256": "6484db98934595731bf9be1228fac57fcb47b1dbf3c2f59825a57755ef0002ff",
+      "size": 296
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/four_context_long.csv",
+      "sha256": "a22668920024f2f1a4a378b8a7079102063ddc2917af1060e2e9a9a25fd5c251",
+      "size": 3222
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/trajectory_windows.json",
+      "sha256": "c265fcb9452b3256978c449ae5ac9f0d32bf11acac87146a136483b43a01f50d",
+      "size": 5529
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/replica_01/window_000_reaudit_498a2d2/unit_summary.json",
+      "sha256": "f0bbfc816a2a9e3ce4809a395b97350837980c4732b56fa88525faac752c9a79",
+      "size": 1182
+    },
+    {
+      "path": "project/results/pacer_dc_four_context_v01/compound110/stability_R2_R3_v01.json",
+      "sha256": "3a64650b76c00421acef742c90b25924a5083c85ceb5944ee9a8acdf59d89a88",
+      "size": 48349
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_R2R3_cross_replica_v01.json",
+      "sha256": "9158e780bd16af55e17fd6f5692cf6dc4cfad1e30ca2fad730c5c026d8e86aa2",
+      "size": 8567
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_R2R3_full_v01/batch_audit.json",
+      "sha256": "5849b2c4e9c0e098a8480aea75bc121f35d10d4ba05b541e3c8406fa924621b5",
+      "size": 17121
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_pilot_v01/M4_MULTISTRUCTURE_GRAPH_v01.json",
+      "sha256": "25593c11dac0f70ad6811c8c6aa7a4f06c1755f14397f1162eaa1157026be122",
+      "size": 309375
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_pilot_v01/PACER_FKG_compound110_R1W0_smoke.json",
+      "sha256": "38eb314e9d2f5f0a4188874cafdc1b922300d91410d66231e35a74cdbb75db84",
+      "size": 274898
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_pilot_v01/PACER_FKG_synthetic_benchmark_v01.json",
+      "sha256": "8b5a0ab32fc9fa3641c12a2a9ffc25b5ecb2585b82e67a0a48d24249e1fc0915",
+      "size": 1820
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_pilot_v01/apo_stride20.audit.json",
+      "sha256": "242412728a1104f8ec90f9ea766d6debaa8e3de3f99adf5797bce070866fb844",
+      "size": 880
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_pilot_v01/candidate_no_probe_stride20.audit.json",
+      "sha256": "757da674a625fc49c494fa7c1962de91b7dc30ddc4eb0f780ec87b4252182cd3",
+      "size": 895
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_pilot_v01/candidate_probe_stride20.audit.json",
+      "sha256": "8bb8384833d425b576dde02f08d737f614fed9653e3cdd4af5d6cff54e32b85e",
+      "size": 892
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_pilot_v01/feasibility_audit.json",
+      "sha256": "e1ef4b109c6272ce3e93476ed97dfc0213dabbed35aabfe5364b35a37952be38",
+      "size": 4166
+    },
+    {
+      "path": "project/results/pacer_dc_geom2vec_pilot_v01/probe_only_stride20.audit.json",
+      "sha256": "fba6671f3da524c6b1d888499049aee14233bd55f145039f9bfb0e3ff741815f",
+      "size": 887
+    },
+    {
+      "path": "project/results/pacer_dc_qc_v01/apo_replica_02_qc.json",
+      "sha256": "3bece98c3974abfdec495a2522fae4d786add801204bd70a937b95750987ed21",
+      "size": 1330
+    },
+    {
+      "path": "project/results/pacer_dc_qc_v01/apo_replica_03_qc.json",
+      "sha256": "fc622b7f78e2f0249cbfb9fb4ad275c8ed006f5f0ace7401136790bd9e82d17b",
+      "size": 1444
+    },
+    {
+      "path": "project/results/pacer_dc_qc_v01/compound110__candidate_no_probe_replica_02_analysis_v01.json",
+      "sha256": "2e88c9ac023d6f203b3632e43f038c93cc0fa18328535d7a635a5b235f95428a",
+      "size": 8326
+    },
+    {
+      "path": "project/results/pacer_dc_qc_v01/compound110__candidate_no_probe_replica_03_analysis_v01.json",
+      "sha256": "7ce5bafefb56b03872af388422814cbe713a90dd77a7dfb819c74f0b9d1c57cf",
+      "size": 8300
+    },
+    {
+      "path": "project/results/pacer_dc_qc_v01/compound110_candidate_no_probe_replica_02_qc.json",
+      "sha256": "6a4ed1aa215e4b09c799f42e34cd9b3477383f4c0d7119b71f5d23dac851e7ec",
+      "size": 3019
+    },
+    {
+      "path": "project/results/pacer_dc_qc_v01/compound110_candidate_no_probe_replica_03_qc.json",
+      "sha256": "7d88f7faa16838e411bb6b390f31d877e6e25722cb5d76e54d294c02b3b230b1",
+      "size": 3021
+    },
+    {
+      "path": "project/results/pacer_dc_qc_v01/compound110_candidate_probe_replica_02_qc.json",
+      "sha256": "fc0d1560bd03392b4a9341212ff2738fd3315c5ad3ecd413f073fe853353fa98",
+      "size": 1897
+    },
+    {
+      "path": "project/results/pacer_dc_qc_v01/compound110_candidate_probe_replica_03_qc.json",
+      "sha256": "51be18b0810f5838b539664c0adafa9a312a380dbef290d69d317569629ca3f3",
+      "size": 1905
+    },
+    {
+      "path": "project/results/pacer_dc_qc_v01/probe_only_replica_02_analysis_v01.json",
+      "sha256": "e352c2a9a8e3709d1ac8e49f9b3760cb3d0de7255876d49b06388b4aba24b5d8",
+      "size": 6530
+    },
+    {
+      "path": "project/results/pacer_dc_qc_v01/probe_only_replica_02_qc.json",
+      "sha256": "fb9c88ec8f56f2cd3014adf2bd60097010196e540db828a7d8740f156dacedf9",
+      "size": 2708
+    },
+    {
+      "path": "project/results/pacer_dc_qc_v01/probe_only_replica_03_analysis_v01.json",
+      "sha256": "55a3f56242df557d8f85cfb3fecd47739c3e766d838a0ab848544e69e3ddf06a",
+      "size": 6503
+    },
+    {
+      "path": "project/results/pacer_dc_qc_v01/probe_only_replica_03_qc.json",
+      "sha256": "631e70e322ee89c60d2401a68d4f8ce3c5ae7d82633ae3653a8bdeb33a02e4b5",
+      "size": 2709
+    },
+    {
+      "path": "project/results/pacer_mcv_compound110_R1_smoke_v01/PACER_MCV_R1_FEATURES.csv",
+      "sha256": "1bf466768c0c18b1090edc0e064805b165724be39d6d0c134417cee0e520e16d",
+      "size": 9782
+    },
+    {
+      "path": "project/results/pacer_mcv_compound110_R1_smoke_v01/PACER_MCV_R1_SMOKE_AUDIT.json",
+      "sha256": "65b642f8cda3b51cdc3b7ca3894762278204b7a3002dc66c7ef0874e1960dfe6",
+      "size": 1580
+    },
+    {
+      "path": "project/scripts/allosteric_coupling_analysis.py",
+      "sha256": "8c73869e30d803a3302a7f7d3a831ec669945fdf4fe7db83933d83fbef705f87",
+      "size": 12381
+    },
+    {
+      "path": "project/scripts/analyze_acadia_anchor_failure.py",
+      "sha256": "b1076a25d8c485819a6bdb9ec039d10801a719a7bd9e6e8af65dca96f0f3586f",
+      "size": 3617
+    },
+    {
+      "path": "project/scripts/analyze_acadia_pam_agonism_tradeoff.py",
+      "sha256": "0c17984511474d5995565f30ecdaaffec796610cede4402c71a3be3de519dbfd",
+      "size": 8663
+    },
+    {
+      "path": "project/scripts/analyze_generation4_stereo.py",
+      "sha256": "b6383cc8b70cb385282963d58836020b0fe300e585464ac140dae51b0a97dfce",
+      "size": 6599
+    },
+    {
+      "path": "project/scripts/analyze_m4_gamd_ensemble.py",
+      "sha256": "ebc8deae8e82c5b2ee0f39a4e4dd1effbb50949d9ad678d2cbac1d780c5e98ce",
+      "size": 6656
+    },
+    {
+      "path": "project/scripts/analyze_pacer_dc_trajectory_qc.py",
+      "sha256": "7b895cbeed91395a2f8ee9b71b10e6865f1ecfaca614664a1f11da06a4432cac",
+      "size": 9943
+    },
+    {
+      "path": "project/scripts/analyze_pacer_fs_v01.py",
+      "sha256": "987a08eafd239886f8bcdf2bc8dc27f27bb6d10b61acdb5d589f865dfd06d200",
+      "size": 5094
+    },
+    {
+      "path": "project/scripts/analyze_pam_signature_mechanism.py",
+      "sha256": "57bcf863ff656d673cd1389d5fa4794f8d08649010d5a99b20c9a9e9b39e3994",
+      "size": 2847
+    },
+    {
+      "path": "project/scripts/analyze_public_pam_dynamic_endpoint.py",
+      "sha256": "d71bd1287312401b84da16b5d37d3788b67f52878a5ba81d1e610543425d959f",
+      "size": 4280
+    },
+    {
+      "path": "project/scripts/analyze_residue_potency_associations.py",
+      "sha256": "9e462d63477f9acc61b7364cd50ef33781eeccfa5b49a5f05f6474c627542de8",
+      "size": 8722
+    },
+    {
+      "path": "project/scripts/analyze_suven_factor_sar.py",
+      "sha256": "bdbdc4d376bd5f34a1febae93858699e94fe652151431f4c6d76d535f55318f2",
+      "size": 5584
+    },
+    {
+      "path": "project/scripts/analyze_us20260055116_functional_divergence.py",
+      "sha256": "87f225bd6627992d9c1c3f264ed6d6d4052c4b5dcc96cb718a9c50f7415b21ed",
+      "size": 4566
+    },
+    {
+      "path": "project/scripts/apply_pacer_fs_candidates.py",
+      "sha256": "33d39928a92753e72a13a19e12732772295d78046d413614a96abfab5db3d59d",
+      "size": 4769
+    },
+    {
+      "path": "project/scripts/apply_pacer_mechanism_calibration.py",
+      "sha256": "509077e508d932ae01f967c869137b7114ad69edac19806288845c360860cdc0",
+      "size": 4718
+    },
+    {
+      "path": "project/scripts/apply_pacer_xr_candidates.py",
+      "sha256": "ca604d8845069c3f76c26f62c76a0275e3a0a17ea40496ebd7219d1f5e9edebe",
+      "size": 6161
+    },
+    {
+      "path": "project/scripts/audit_miao_functional_label_overlap.py",
+      "sha256": "5ff8d513173836f3bb7c6d9f33247deee55c86bbd92a0468ef49708a0438b779",
+      "size": 4955
+    },
+    {
+      "path": "project/scripts/audit_pacer_centered_domain.py",
+      "sha256": "918afe345e23ba045a57c03433009bdc9451b202ab02dd06637ca3df33c74d79",
+      "size": 3855
+    },
+    {
+      "path": "project/scripts/audit_pacer_dc_ligand_parameterization.py",
+      "sha256": "3d086d99530bcf6000953dbdd5d78fbd4292d7e612d81e16ef45f498973b1a8f",
+      "size": 3608
+    },
+    {
+      "path": "project/scripts/audit_pacer_dc_md_environment.py",
+      "sha256": "132c36e2861db5a8aa1f8ce09159f718882dae6511fd8cb0e42b56a615719dd0",
+      "size": 2747
+    },
+    {
+      "path": "project/scripts/audit_pacer_dc_phase1.py",
+      "sha256": "24f5aa1278a115442feb8a9830af3959a9aabe1390c2fd34a6062f251b1efb70",
+      "size": 11552
+    },
+    {
+      "path": "project/scripts/audit_pacer_dc_production_phase1.py",
+      "sha256": "66b2a0b953f0695754cb06841887d5dec2010dd9e7de379a8841f4eeb7b69102",
+      "size": 4545
+    },
+    {
+      "path": "project/scripts/audit_pacer_statemetric_feasibility.py",
+      "sha256": "2edb789762eb60247727cb288bd0d1a77d8569746fea6f406fb0ee019cc434dc",
+      "size": 7436
+    },
+    {
+      "path": "project/scripts/audit_pacer_xr_functional_semantics.py",
+      "sha256": "e18488ab965507bab11718a7cbb0fbb825628f6786ab619c1fa67342d309721a",
+      "size": 8681
+    },
+    {
+      "path": "project/scripts/audit_suven_patent_external.py",
+      "sha256": "1c9834ea0321ced4b646f37841022eae94fdcfee4743e278a254a93d2a8c5b59",
+      "size": 5065
+    },
+    {
+      "path": "project/scripts/benchmark_geometry_m4r.py",
+      "sha256": "dfc44e881694033e43db1aa552886fd0162e49b01c814a5fb2f80543871bf62e",
+      "size": 10569
+    },
+    {
+      "path": "project/scripts/binding_assessment.py",
+      "sha256": "750b85899f655ea110420984f379a4fc84a97d8a0506d75d0d651708a5c93454",
+      "size": 9253
+    },
+    {
+      "path": "project/scripts/build_acadia_2025_external.py",
+      "sha256": "5743cf9ad4279034e40c526eca8052bd8ed2ff8d1c05f818ed96f362c2cda17e",
+      "size": 7175
+    },
+    {
+      "path": "project/scripts/build_activity_cliff_benchmark.py",
+      "sha256": "f757682afa0a70873fdd22a36983237b64ce8d28166a1b1fb9198468c0a830f9",
+      "size": 6914
+    },
+    {
+      "path": "project/scripts/build_candidate_function_space_panel.py",
+      "sha256": "cb0c542060555d01969bd95088e11a57ad1f349106553ee60306a9eac6d4a2a3",
+      "size": 6819
+    },
+    {
+      "path": "project/scripts/build_candidate_portfolio.py",
+      "sha256": "4751f7452a64ad644bbe0d2d2789d8f81707c5e6ee6d3e88b47a20e456b4d3ed",
+      "size": 5489
+    },
+    {
+      "path": "project/scripts/build_m4_gamd_validation_set.py",
+      "sha256": "1eed67a5c675ec08103eef85b98929422b6e8fe767337fb21d97a02354fda48d",
+      "size": 2789
+    },
+    {
+      "path": "project/scripts/build_m4_mechanistic_multidomain.py",
+      "sha256": "64b3951414c4ec00e9ecd6f4673d71115108ad2c977e8141b3f34f6400876fca",
+      "size": 5232
+    },
+    {
+      "path": "project/scripts/build_m4r_adversarial_decoys.py",
+      "sha256": "7976671e7259a351a6e5280974c025fe090ca3bb2608f99c61a24da998a51922",
+      "size": 3105
+    },
+    {
+      "path": "project/scripts/build_m4r_enrichment_benchmark.py",
+      "sha256": "3fb0fb22da5f3c09030cf5e200a4901b048bc5e1a0bad45652dcbc433da99c4f",
+      "size": 3800
+    },
+    {
+      "path": "project/scripts/build_m4r_hard_decoys.py",
+      "sha256": "e55030668fb877251fab31b67e3fd3175ee5558e7157a024230c1a643256ae46",
+      "size": 2443
+    },
+    {
+      "path": "project/scripts/build_monash_ly2033298_allostery.py",
+      "sha256": "2e5412f84f531f679355af19fceac0c3f6005c8a277b64aa10499b723ae03a3b",
+      "size": 7228
+    },
+    {
+      "path": "project/scripts/build_pacer_assay_closed_loop.py",
+      "sha256": "e34340ab31baa9bb2018d119f790d338c88914ca59d403d853a237f36f07a09d",
+      "size": 8705
+    },
+    {
+      "path": "project/scripts/build_pacer_benchmark.py",
+      "sha256": "419571528bc7fef5ef943b415a4719cf4af13256e0ce4a2a211d9e002d9bb3ae",
+      "size": 17719
+    },
+    {
+      "path": "project/scripts/build_pacer_dc_coupling_model.py",
+      "sha256": "dede5383445b24addbe016436d1fd144afaef2cab7de3fb934c9726ca5d3528f",
+      "size": 3634
+    },
+    {
+      "path": "project/scripts/build_pacer_dc_md_manifest.py",
+      "sha256": "2c0e93ca1ab1bc61fe94c16e40c298ef144ee2a969b2d5104cd970b8ea94c5da",
+      "size": 4158
+    },
+    {
+      "path": "project/scripts/build_pacer_dc_membrane_reference.py",
+      "sha256": "be7e091dc0830550b99953b09d78e159b3f2ac929a4cee748919a18c30d8b4b9",
+      "size": 14518
+    },
+    {
+      "path": "project/scripts/build_pacer_dc_openmm_reference_systems.py",
+      "sha256": "c3a6755dfaddfb105bf0c96d63280b4893687be15e163afa3185a05cdc61c99b",
+      "size": 8958
+    },
+    {
+      "path": "project/scripts/build_pacer_dc_rapid_evidence.py",
+      "sha256": "10767192aedca2386b33f56a866195921cd3467d246f57a49f46b015c7151937",
+      "size": 6311
+    },
+    {
+      "path": "project/scripts/build_pacer_dc_reference_complexes.py",
+      "sha256": "41a2097754dc9a34ee96fa2d9766e0e52274ec45c046315add9817f645a33c4c",
+      "size": 7149
+    },
+    {
+      "path": "project/scripts/build_pacer_dc_reference_evidence.py",
+      "sha256": "73f594c6a6ef293ffbf5b7f6b5a3b062785bc1122bb7818282680575bf3c75e4",
+      "size": 2327
+    },
+    {
+      "path": "project/scripts/build_pacer_dc_v2_manifest.py",
+      "sha256": "35a036250f4927d4a3b147aa0c21b7d6715f48dde22fa9beee84263661d11894",
+      "size": 4395
+    },
+    {
+      "path": "project/scripts/build_suven_patent_external.py",
+      "sha256": "56721f343c87aad2485471cc734e77c3d59d815c1287e214446a9e3f228c3820",
+      "size": 10461
+    },
+    {
+      "path": "project/scripts/build_vu6025733_external.py",
+      "sha256": "fc867bc73efd16cb582c6a57869d706c837013c1b66238f5d5f398d00e3eb3ff",
+      "size": 6211
+    },
+    {
+      "path": "project/scripts/build_vu6025733_generation3.py",
+      "sha256": "7779f79780cade102f28e925e8b4a0cbee7c78291d9a56f16b23a396dfb4ddf8",
+      "size": 4342
+    },
+    {
+      "path": "project/scripts/build_vu6025733_generation4.py",
+      "sha256": "20445ec5400b51cc791f40d3faa64c89f260f923427d0c22d59054e9992323b8",
+      "size": 4516
+    },
+    {
+      "path": "project/scripts/calibrate_candidate_intervals.py",
+      "sha256": "d0f7945692f0b92b072887d03240fa1432666e893e4625b221139ae79f2b89aa",
+      "size": 2153
+    },
+    {
+      "path": "project/scripts/compare_generators.py",
+      "sha256": "9039bfead26ba5527e27a3988b555744444adf29bc76f39985d03287441f2822",
+      "size": 3592
+    },
+    {
+      "path": "project/scripts/compare_m4_cluster_representatives.py",
+      "sha256": "0a46152eeef54fbb19b20e29d870a75e0c506673a1b85f9305c4ee43bf0f6881",
+      "size": 2980
+    },
+    {
+      "path": "project/scripts/coupling_pharmacophore_rescore.py",
+      "sha256": "bd5670892a4013b131c7e5f6a5ec0338e217062a79f99526290feec95946c6cb",
+      "size": 8214
+    },
+    {
+      "path": "project/scripts/dock_benchmark_chrm4.py",
+      "sha256": "0c7355216cbc00d63741701f964042f58c9d474e979220933321bef7fb8cbd67",
+      "size": 6643
+    },
+    {
+      "path": "project/scripts/dock_candidate_portfolio.py",
+      "sha256": "67fa05b0af57e1296755c8ee760126d94ea3ca64c79f5e6ef72d9250b2bb5110",
+      "size": 5996
+    },
+    {
+      "path": "project/scripts/dock_candidates_7trq_mechanism.py",
+      "sha256": "7a1bc329ce333a3a0ce7965d4268d1817084537909bcfa7fb62e63b4e7c3d3b8",
+      "size": 4390
+    },
+    {
+      "path": "project/scripts/dock_candidates_geometry.py",
+      "sha256": "bb186e0f1cd6253f5c9abeb8074c777f145b273a4fe7874fa46b67203250d254",
+      "size": 8383
+    },
+    {
+      "path": "project/scripts/dock_m4_gamd_ensemble.py",
+      "sha256": "14ee8feed5f1d5490e1be62e62060bc6063622d83b73faeaa87ea1fb34b7ab67",
+      "size": 11230
+    },
+    {
+      "path": "project/scripts/dock_potency_coupling_features.py",
+      "sha256": "e5a8797638802012f97493dce2b2dbd616ae3f4cec3585c3ce25196adb2ed4b1",
+      "size": 9459
+    },
+    {
+      "path": "project/scripts/dock_top_candidates.py",
+      "sha256": "458a116d142d7ed8edd0d5a407a2586bc6f3e1a3d35f467974310eb55cd04abd",
+      "size": 3477
+    },
+    {
+      "path": "project/scripts/download_chembl_m4_mechanistic.py",
+      "sha256": "d616692b3551f281d96930fd6136284d44839b2bbd4c05a9115e43459a3819b7",
+      "size": 2392
+    },
+    {
+      "path": "project/scripts/download_m4_gamd_figshare.py",
+      "sha256": "436f1e8ed3f191f02a94a976d979482af9a5431b874eaaa51d923526098b5af0",
+      "size": 2166
+    },
+    {
+      "path": "project/scripts/download_pubchem.py",
+      "sha256": "8158321f3cf86ef67f5d67a7db3d1f6184e4420bf94127c3ab227d6aa404dcab",
+      "size": 3440
+    },
+    {
+      "path": "project/scripts/enrich_source_years.py",
+      "sha256": "895b4c712ce60a2f8d78c2c5734a71fdfa17ff1e0438b6622784662bb7780bb3",
+      "size": 3531
+    },
+    {
+      "path": "project/scripts/evaluate_cliff_state_switching.py",
+      "sha256": "8415514243edce454324471ecd36df265cac189ba988eba50e5019164387c6cc",
+      "size": 4878
+    },
+    {
+      "path": "project/scripts/evaluate_factor_sar_nested.py",
+      "sha256": "357724c88642f6516006b3e3dbacde1a046040e26d00408a06651eb076a0aba8",
+      "size": 8362
+    },
+    {
+      "path": "project/scripts/evaluate_local_domain_algorithm.py",
+      "sha256": "47fa404d6b76fd0b86ae04fe2b6465f6d3cfac6684daf43fef38f8cead3e6904",
+      "size": 3350
+    },
+    {
+      "path": "project/scripts/evaluate_multidomain_sar.py",
+      "sha256": "994280a902ccda69c3f31b9adff4b7bf321bb9abb8f0d723bb0d8ceef1f30dbb",
+      "size": 9434
+    },
+    {
+      "path": "project/scripts/evaluate_orthosteric_stability_annotation.py",
+      "sha256": "510e19d90e8223b63d6a0d1167ea66bd64dab6587d8d84b4f90a89bb25c3f50c",
+      "size": 5756
+    },
+    {
+      "path": "project/scripts/evaluate_pacer_adaptive_anchors.py",
+      "sha256": "d1653070e0e52bc940cd0cb25bce6ccb6825f752fba5635cf7bea3a4bc6c18b7",
+      "size": 6100
+    },
+    {
+      "path": "project/scripts/evaluate_pacer_anchor_policies.py",
+      "sha256": "cea87d6e503653a1dee7b860859068d2b501493c7072072fc644594aa886131b",
+      "size": 4677
+    },
+    {
+      "path": "project/scripts/evaluate_pacer_context_kernel.py",
+      "sha256": "59c4afe0160a6a09fe802609ad478d9a17d060b53fe8622907c3d3dc47d9b035",
+      "size": 7748
+    },
+    {
+      "path": "project/scripts/evaluate_pacer_endpoint_anchors.py",
+      "sha256": "d77a887b0b5f2582e158a484fc37fe44003f148423ddc0132711cb95cdeddc65",
+      "size": 4204
+    },
+    {
+      "path": "project/scripts/evaluate_selective_prediction.py",
+      "sha256": "b64fe68874847efde73efefc3a9b828b5bc223ccb4532b8049dcbd2b289e9eda",
+      "size": 5005
+    },
+    {
+      "path": "project/scripts/evaluate_state_ensemble_loso.py",
+      "sha256": "19215aeebea57983a666362bb0b51d009267e6429dc3656b7be393047aa7c5d8",
+      "size": 4586
+    },
+    {
+      "path": "project/scripts/evaluate_state_response_fingerprint.py",
+      "sha256": "4cb3c56fc509fa9f539403d64aab0f86b32a20340aa1fae50f0e85a8ea5a9a82",
+      "size": 11329
+    },
+    {
+      "path": "project/scripts/evaluate_structure_loso.py",
+      "sha256": "76a252bd98e40260d2501566f1ea6f78fab92e8d4f1f737fb266fb73f51c5913",
+      "size": 6757
+    },
+    {
+      "path": "project/scripts/evaluate_triplet_cluster_anchor_alignment.py",
+      "sha256": "6ff20b8fc8afa89a8e9391da16076ba175dafd8f5411055e0fbf23e868727c51",
+      "size": 6234
+    },
+    {
+      "path": "project/scripts/export_candidate_sdf.py",
+      "sha256": "bb937e59e1bbd460cbff2db455fc6e3bebaaa0b0d36636c8001c953dca895d32",
+      "size": 908
+    },
+    {
+      "path": "project/scripts/extract_deeprli_m4_embeddings.py",
+      "sha256": "24317a42ec18f304e6ed4c2963027d3d36f195af66363e6fdbc6c059d6db5112",
+      "size": 4575
+    },
+    {
+      "path": "project/scripts/extract_pacer_dc_production_endpoints.py",
+      "sha256": "45491386c52a6ed7e75fa1b3a959fe51499f9cd22585676351c97813308c1a8d",
+      "size": 6286
+    },
+    {
+      "path": "project/scripts/extract_pacer_dc_short_equilibration_endpoints.py",
+      "sha256": "18dfa2e42ff4734f3d1c33bcdc7b9ec1dc3b2113e77c83e26ea0e8ea0d703044",
+      "size": 6017
+    },
+    {
+      "path": "project/scripts/extract_pacer_dc_trajectory_endpoints.py",
+      "sha256": "b55231fc8cbd2347c7ab7497a0136acfe799ec36f021fbeeda992f63fbab4420",
+      "size": 8754
+    },
+    {
+      "path": "project/scripts/extract_suven_patent_tables.py",
+      "sha256": "81d52149e433ade43fd22941b8e137304541f0d701ef4b7b9154731969cd421d",
+      "size": 8505
+    },
+    {
+      "path": "project/scripts/finalize_pacer_fs.py",
+      "sha256": "8185e14e1b835035abc2d6a82e929cebad38e9a76af97a5aa5aed857b52bedce",
+      "size": 5360
+    },
+    {
+      "path": "project/scripts/fragment_generation.py",
+      "sha256": "ffc196290f8a8f3887e35f8e2a994cdb0e519375178bc53856387cb9d48be1fe",
+      "size": 11398
+    },
+    {
+      "path": "project/scripts/gpt_geometry_score.py",
+      "sha256": "0847e15b6d1ef79b708cf374796c4a48cc1080bcec03a794fd4dd447c6cb5e42",
+      "size": 1450
+    },
+    {
+      "path": "project/scripts/m4r_physchem_analysis.py",
+      "sha256": "53b6e2abd2759db080c7ee67a42bb810110d208d2d123c58dfcd171ec972e7c6",
+      "size": 3182
+    },
+    {
+      "path": "project/scripts/make_figures.py",
+      "sha256": "90c8e0b76faa96c634bab3c570873c16d53661d5f28dee4efd61849bdc099625",
+      "size": 4593
+    },
+    {
+      "path": "project/scripts/make_m4r_route_audit_figure.py",
+      "sha256": "be5a14a07f143de49f305bbdfb53a7771af6eff2458d171d1b209b251155c23b",
+      "size": 1705
+    },
+    {
+      "path": "project/scripts/make_pacer_biology_figure.py",
+      "sha256": "d7699efe69ee3524c589d0fc8d67bb77ed146958f9701035c1376fb2989c46a8",
+      "size": 4790
+    },
+    {
+      "path": "project/scripts/make_pacer_final_figures.py",
+      "sha256": "65a5be6d97bdc8511669cf72736712b482b42a831cfa1b7836b03bb6c3f2e89c",
+      "size": 3059
+    },
+    {
+      "path": "project/scripts/make_pacer_xr_figure.py",
+      "sha256": "d5bae902357e4731cffc7848e3ab525f3117be6c81944d61c39c4eb739761a1f",
+      "size": 2338
+    },
+    {
+      "path": "project/scripts/merge_deeprli_compiled_batches.py",
+      "sha256": "76ac9aa83626910c5eba6a65ad844bf11716e220ec360f0c25aeffaf39b6e0a4",
+      "size": 2008
+    },
+    {
+      "path": "project/scripts/merge_geometry_results.py",
+      "sha256": "71cd953c3853d51a8392e144ad1844558a26349e7e4c68c9516d669f6d9d83e2",
+      "size": 3385
+    },
+    {
+      "path": "project/scripts/pacer_acm_v2.py",
+      "sha256": "218fd3e243960785ba63b27eed54dced2fdceb934c09ca7774151bcea8f4d541",
+      "size": 5477
+    },
+    {
+      "path": "project/scripts/pacer_dc_score.py",
+      "sha256": "11810f791bf4327def865b0119e083bf333a99fb404b382e47ddbd4f30307db4",
+      "size": 12182
+    },
+    {
+      "path": "project/scripts/plot_pacer_function_space_v3.py",
+      "sha256": "173ff2924042ab206fddfb17fe8b30f2e41c00a52e98f4bbf180496be90480a0",
+      "size": 3294
+    },
+    {
+      "path": "project/scripts/prep_receptor_7trq.py",
+      "sha256": "ed86615a058b7592e27877b84458965c3cc496c1d351d6f8458f34848b502da6",
+      "size": 8454
+    },
+    {
+      "path": "project/scripts/prepare_deeprli_m4_dataset.py",
+      "sha256": "3fd53cf227cc24633d84db8f554bc24a4588c15ccdc270d5c50ed569b8dc3b5c",
+      "size": 7642
+    },
+    {
+      "path": "project/scripts/prepare_m4_gamd_ensemble.py",
+      "sha256": "88ea3a7f8398aa631e3f5f4b5c33686d3cc4fd75746f5ad0d427e7ba433a4f86",
+      "size": 4496
+    },
+    {
+      "path": "project/scripts/prepare_m4_state_ensemble.py",
+      "sha256": "5bd156eb1c9db02be69f9a140d429107bf9ca1fa7a2661305648113bfdbde637",
+      "size": 3249
+    },
+    {
+      "path": "project/scripts/prepare_pacer_dc_common_protein.py",
+      "sha256": "28fef9d53dc9679d3b8d971af288e5212abcd8cd292efeb338667494f577da67",
+      "size": 3066
+    },
+    {
+      "path": "project/scripts/qsar_pam_models.py",
+      "sha256": "16309caa57fa3d2997d73ecac7783b98e87a3b3a77d152cf7ef6ff321d9b8e89",
+      "size": 12785
+    },
+    {
+      "path": "project/scripts/rank_m4_gamd_candidates.py",
+      "sha256": "54842c8a97f864938c42ca115e0aff120bcbb4d482d7111ed153d1726fb9f67f",
+      "size": 3099
+    },
+    {
+      "path": "project/scripts/recluster_m4_gamd_public_stride.py",
+      "sha256": "b0972e34522f7d320650f126345def5f72dd86fca2ca8305da7f7c67889c61dd",
+      "size": 5114
+    },
+    {
+      "path": "project/scripts/recover_acadia_patent_structures.py",
+      "sha256": "7ef2f268dafed7d3a88eb842460cd8c4beb349e47707a790098aa6f439354dd7",
+      "size": 8352
+    },
+    {
+      "path": "project/scripts/recover_us20260055116_named_subset.py",
+      "sha256": "0abe34911bdc9f0946480e49dfeb8d7e0e4dca605a7aa4e62f85c99be13dc283",
+      "size": 5860
+    },
+    {
+      "path": "project/scripts/reproduce_m4r_enrichment.py",
+      "sha256": "aef11de4b1909d8d4cf61548c17016052c7bbf24179efb3b2525aa2169da9c53",
+      "size": 6269
+    },
+    {
+      "path": "project/scripts/reproduce_thompson_miao_m4_metrics.py",
+      "sha256": "f7f2a959e01557f0dd15311edb2e0ba485f09646b59abbd90736ee2c28bc6938",
+      "size": 5011
+    },
+    {
+      "path": "project/scripts/run_chemberta_loso.py",
+      "sha256": "b55ee046896d03a2228cccf9fafdf1bf4f0951cb1164f8b7131a6ed0e2b0df34",
+      "size": 3688
+    },
+    {
+      "path": "project/scripts/run_chemprop_loso.py",
+      "sha256": "1e119d1e4bd0f42ab1509fe8c8dfab076f95d0e19f165cbd2126f3900043dc40",
+      "size": 4000
+    },
+    {
+      "path": "project/scripts/run_cross_target_rank_fusion.py",
+      "sha256": "1655530b460d8df0f716d4a5ef008f97a9b511b140c75aacb14d040715402f09",
+      "size": 11836
+    },
+    {
+      "path": "project/scripts/run_delta_sar_baselines.py",
+      "sha256": "162d9755f55741409df5bbfa135a7e9b91c0ada9c18a83311f092d873afcf449",
+      "size": 8151
+    },
+    {
+      "path": "project/scripts/run_lightgbm_loso.py",
+      "sha256": "5fb4abc210ad945b804907c934ac3eaf09c0bcb73b90806836a21a0345f4c82f",
+      "size": 3102
+    },
+    {
+      "path": "project/scripts/run_lightgbm_v2_loso.py",
+      "sha256": "16fe75a721610a88b1eef353b899aa9ec8df88b1e0271fcaf92a871855449ac8",
+      "size": 2402
+    },
+    {
+      "path": "project/scripts/run_m4_gamd_background.ps1",
+      "sha256": "2cc15a43ec49f8545538887188f72d495d4338c2b11558d6ffbd8f80e4b7b9fc",
+      "size": 1502
+    },
+    {
+      "path": "project/scripts/run_m4_gamd_complete.py",
+      "sha256": "15c85fd5061c91c0a2c3e129b617120d018002b615fbb652bb03b7bd65f26219",
+      "size": 1443
+    },
+    {
+      "path": "project/scripts/run_m4r_enrichment_baselines.py",
+      "sha256": "3bf89db7ab7dc7e229643958454109fbfb16a199e264181279c60ac13bf30a09",
+      "size": 5742
+    },
+    {
+      "path": "project/scripts/run_m4r_external_pu.py",
+      "sha256": "b1269b48f93664ea63b7730b89cccf2240c9a992c838ce031b28a1ba94fe1498",
+      "size": 5539
+    },
+    {
+      "path": "project/scripts/run_m4r_shuffle_control.py",
+      "sha256": "4484d50103c13be0efdd8cefb6d2159e7c82361c885493b847ba3c646a719c8a",
+      "size": 2045
+    },
+    {
+      "path": "project/scripts/run_multidomain_vu_sequential.py",
+      "sha256": "231c799669505ce39537f8fd6e78ff8d0c1def2ed3ccda6007fefd19e1834c0f",
+      "size": 5277
+    },
+    {
+      "path": "project/scripts/run_nested_robust_ensemble.py",
+      "sha256": "9e98d6ccd65dc5ff9e738d9cb805af8162e5483a5718318a3cf88e431aa7f8a1",
+      "size": 5284
+    },
+    {
+      "path": "project/scripts/run_pacer_acadia_anchor_robustness.py",
+      "sha256": "9ee8de6d60a2a5f948e7e1bde1061b00446f7c187900aad277c98cd58972ae9e",
+      "size": 8706
+    },
+    {
+      "path": "project/scripts/run_pacer_acadia_external.py",
+      "sha256": "71c395208b0e4691058fabea37ac5e60181f8ad096b703419f173348ab25143b",
+      "size": 12577
+    },
+    {
+      "path": "project/scripts/run_pacer_anchor_guided_triplet.py",
+      "sha256": "401c085b0c81beb82a9adad9b0baa164fe103496a37daf328869f5ea0e57dcf6",
+      "size": 9020
+    },
+    {
+      "path": "project/scripts/run_pacer_assay_anchor_robustness.py",
+      "sha256": "01f61f6d2369c4cafff24c8e1ea53702e1d70c580f2254cf5d4dd0cfe366809e",
+      "size": 7190
+    },
+    {
+      "path": "project/scripts/run_pacer_baselines.py",
+      "sha256": "452a06d52881a84e3cd4b38cec0a2ad6305fe6f81a26601c297f1ce6c8993488",
+      "size": 9697
+    },
+    {
+      "path": "project/scripts/run_pacer_bayes_gate.py",
+      "sha256": "f0a06a8c6b3c3cbf016334efb354f2f4750b98a053ea2c39b26f5df53c4a3e66",
+      "size": 10241
+    },
+    {
+      "path": "project/scripts/run_pacer_centered_model_suite.py",
+      "sha256": "6cf903f92958e71ee612ea6765e10964c51032a2f6fa9da4fd31518b1f29587e",
+      "size": 4786
+    },
+    {
+      "path": "project/scripts/run_pacer_centered_temporal.py",
+      "sha256": "e47b2dbfdb1cbcfe5017ca3706994121c95ba79d5a9e48c3c9a4c1cdd81de727",
+      "size": 2979
+    },
+    {
+      "path": "project/scripts/run_pacer_centering_robustness.py",
+      "sha256": "98c71613ef812bf787669e8c7d0ce1b91a05fb17a870473cc0cd496a38092e03",
+      "size": 3573
+    },
+    {
+      "path": "project/scripts/run_pacer_complete.py",
+      "sha256": "bb25ed0b5c305637d9a3fadc9e0e0a2ec49d9d49c70cf6c0f72834cde447c3dc",
+      "size": 1719
+    },
+    {
+      "path": "project/scripts/run_pacer_cpu_state_profile.py",
+      "sha256": "0e44398797bf1a89b6e2c80c1ee9d05deaf5da6b464935f0b2697b878b291137",
+      "size": 13841
+    },
+    {
+      "path": "project/scripts/run_pacer_dc_gpu_phase1.sbatch",
+      "sha256": "6c68e987ee549c07f126c0b803849389e46db8f477349026f0d99fb1d7deaceb",
+      "size": 914
+    },
+    {
+      "path": "project/scripts/run_pacer_dc_membrane_smoke.py",
+      "sha256": "4bee29ba72dfe38f38f8c50ada0bb5ab0e905f00e95f58ef2c6ac8e415760c61",
+      "size": 6909
+    },
+    {
+      "path": "project/scripts/run_pacer_dc_production_md.py",
+      "sha256": "322e165e9897bd52038ea802d8dfb947a46683d146a93a9d44cbe425bff1571c",
+      "size": 7834
+    },
+    {
+      "path": "project/scripts/run_pacer_dc_restraint_release.py",
+      "sha256": "2522614be82e4c5bab4b68d7dab50dc369496fc6bc30193fcbbe4d94bde7a69c",
+      "size": 6589
+    },
+    {
+      "path": "project/scripts/run_pacer_dc_short_equilibration.py",
+      "sha256": "dc73389b278a9f464503621f0a5842a05b985eedc2da3cd2eeca90bb90b56a39",
+      "size": 8165
+    },
+    {
+      "path": "project/scripts/run_pacer_deeprli_adapter.py",
+      "sha256": "40a50fa7f5565bff693db62723315b327d7e6d3f934de4783946e2a83a3fcf8d",
+      "size": 11006
+    },
+    {
+      "path": "project/scripts/run_pacer_delta_residual.py",
+      "sha256": "4c1aa8fa622a00ccf6c96f855e38cc965a3a699b635d3d01f5c7ad504a7ef0f1",
+      "size": 9680
+    },
+    {
+      "path": "project/scripts/run_pacer_dual_channel_loso.py",
+      "sha256": "93aa530bececab75990a0232a9d4e4ca20103b0c46c3712c835014b0f88690a4",
+      "size": 3596
+    },
+    {
+      "path": "project/scripts/run_pacer_dynamic_representation_bakeoff.py",
+      "sha256": "64d803f29bba3237d528b187a126fed0720c32c2ebaa40ffbe5a4e70c8526ee8",
+      "size": 9460
+    },
+    {
+      "path": "project/scripts/run_pacer_external_2026.py",
+      "sha256": "c13870a34bbad960b324d12d00154a095d92fd3a5bf96df117dffea8d578c494",
+      "size": 8626
+    },
+    {
+      "path": "project/scripts/run_pacer_external_frontier.py",
+      "sha256": "0706bea190ffabcebc21ec6fe2b4eee99ff8346f186c6a76b7292c0c3596522f",
+      "size": 1606
+    },
+    {
+      "path": "project/scripts/run_pacer_fewshot_adaptation.py",
+      "sha256": "c69beea97b7cdc679a3a68f298edd97c1a0d984cdd5d0b5be899fbf73c6fb361",
+      "size": 5059
+    },
+    {
+      "path": "project/scripts/run_pacer_fs_baselines.py",
+      "sha256": "6d3f4def75f6740b789eb8235dc3859eb00e2dd7461811ac36c24e1b64889513",
+      "size": 7681
+    },
+    {
+      "path": "project/scripts/run_pacer_fs_complete.py",
+      "sha256": "1fdbce4713cae13cc1db2950a362aecfb3c6ff65bca27113309f56f22b0d56cb",
+      "size": 1208
+    },
+    {
+      "path": "project/scripts/run_pacer_fs_nested.py",
+      "sha256": "fb459b273d1f6a791cdd0476325c14ac63ef01150e31f68525da8672c8804db9",
+      "size": 6975
+    },
+    {
+      "path": "project/scripts/run_pacer_fs_reliability_gated.py",
+      "sha256": "1db2e21c7a8349ac0c9c2252b6820d28f30b71dead743e504582ba87367e6310",
+      "size": 5616
+    },
+    {
+      "path": "project/scripts/run_pacer_functional_frontier.py",
+      "sha256": "09003460e7bc839101a64408f1f5ef7a5546476a06161cca30ffe46d5d83fa4c",
+      "size": 768
+    },
+    {
+      "path": "project/scripts/run_pacer_functional_triplet.py",
+      "sha256": "7db31e56ce42359164bf84d37847cd63db5787f801fed24853a3ca133a36f412",
+      "size": 11272
+    },
+    {
+      "path": "project/scripts/run_pacer_mechanistic_fewshot.py",
+      "sha256": "33fdd277d7f4fa525192669c0e67dd9c3b170bd870a586914ff5e7db809b9603",
+      "size": 7022
+    },
+    {
+      "path": "project/scripts/run_pacer_mechanistic_multidomain.py",
+      "sha256": "e50eab9370f341e176986c076d4abc2819021a7bc56b482e2ef773f234a7f75b",
+      "size": 19028
+    },
+    {
+      "path": "project/scripts/run_pacer_meta_metric.py",
+      "sha256": "346921bae30e3cdf0bef3cdfeb74dfbffb6075e0c6a8cb99ecdc882458ed4477",
+      "size": 8999
+    },
+    {
+      "path": "project/scripts/run_pacer_monash_allostery.py",
+      "sha256": "da2d552ec4ebc93fa7c828fe2a5cedf6fa89c4962c120309f4e5d58f02cc4a12",
+      "size": 18856
+    },
+    {
+      "path": "project/scripts/run_pacer_multitask.py",
+      "sha256": "ead2a43e6dbc61b3de849d50e01d95857ddc6aad8ee336fd2fefb1f65345bd3d",
+      "size": 10503
+    },
+    {
+      "path": "project/scripts/run_pacer_potency_loso.py",
+      "sha256": "729111e663f88cb8667d1c7da07bf54b06c55a2b5c0b063cf9189d5774f8e920",
+      "size": 7815
+    },
+    {
+      "path": "project/scripts/run_pacer_replica_invariant_state.py",
+      "sha256": "69ec492f02167081d488c18cbf2fc8ab9791a130a3e9e9f5f267d8a480dd2ab3",
+      "size": 8526
+    },
+    {
+      "path": "project/scripts/run_pacer_sequential_sar.py",
+      "sha256": "e90f11b43b270d45eff8ccf2da0cebb67efaba9113ed826fb123172448ec0bc5",
+      "size": 7211
+    },
+    {
+      "path": "project/scripts/run_pacer_series_normalized.py",
+      "sha256": "991bc14f1d2b9c7d5cb6d8c944840f312b676e631830efaa06142acd8be8d343",
+      "size": 5772
+    },
+    {
+      "path": "project/scripts/run_pacer_suven_external.py",
+      "sha256": "64bb9ddc8e205e7477b8d08768e392027e27f8bc57736333a42fe7e14f173c33",
+      "size": 10115
+    },
+    {
+      "path": "project/scripts/run_pacer_temporal_fewshot.py",
+      "sha256": "7037a2a04089e353874b255cf9ae18e6a495c4f2717a694eeaafd6b4d08f8ea5",
+      "size": 3918
+    },
+    {
+      "path": "project/scripts/run_pacer_unsupervised_state_pilot.py",
+      "sha256": "8d28082f0fd477c4525c1afa95f367435452846806cfb7dea61d7322d929b62d",
+      "size": 8393
+    },
+    {
+      "path": "project/scripts/run_pacer_us20260055116_external.py",
+      "sha256": "8c6ccf7aad025abf26c55636efa31668cad162534b25fc5eb43f03cb66e1658b",
+      "size": 11536
+    },
+    {
+      "path": "project/scripts/run_pacer_v02_nested.py",
+      "sha256": "4d402a987003fe5f4896f7df381c9f67ee5ee2e9c8c834a026defeba9be45a33",
+      "size": 11684
+    },
+    {
+      "path": "project/scripts/run_soft_coupling_prototypes.py",
+      "sha256": "59fe0c4a7d6c6da09ea7425f574eb6c8206e2d5061bbfec2b7af0a733d97dca8",
+      "size": 4234
+    },
+    {
+      "path": "project/scripts/run_source_groupdro.py",
+      "sha256": "20ca3f6edfd6b25ae103b911f983e913babbdeed7801f194b3e607ee48ef78a3",
+      "size": 11730
+    },
+    {
+      "path": "project/scripts/run_state_residual_moe.py",
+      "sha256": "6e124382f710ba30de533d588a606d3792478dcf20dc15cbaca1c7e950d5e9a0",
+      "size": 7003
+    },
+    {
+      "path": "project/scripts/run_sticky_soft_coupling_prototypes.py",
+      "sha256": "dbffb9fae539acfe2b4d0bc417cc246794a7f9d1252fa527d1db4e71aa21ae3a",
+      "size": 5065
+    },
+    {
+      "path": "project/scripts/run_temporal_benchmark.py",
+      "sha256": "4a576e4896672f49c0e91ca9531a9dc9bfb5f652439239d080c585b2f38e7424",
+      "size": 4998
+    },
+    {
+      "path": "project/scripts/run_thompson_miao_reproduction.py",
+      "sha256": "8e678ebc1634c5af916fa05d47fe37972066fb5a50fa1c954189ae89b20fd027",
+      "size": 1191
+    },
+    {
+      "path": "project/scripts/score_candidates.py",
+      "sha256": "037f54146bed369050cf7b62147d7917954bf488b991a97e6883315fc8ad0b46",
+      "size": 7504
+    },
+    {
+      "path": "project/scripts/select_pareto_candidates.py",
+      "sha256": "34d84a0dca3e55ae4db0a3124b042315a4b2ca3a26cbcb6399540b7350e58fb0",
+      "size": 5596
+    },
+    {
+      "path": "project/scripts/setup_wsl_pacer_dc_md.sh",
+      "sha256": "70854061b9efef198d72d8ee2b6f75399966c5044aef39ef9d57d0d6391b2c64",
+      "size": 9528
+    },
+    {
+      "path": "project/scripts/shape_complementarity_rescore.py",
+      "sha256": "21122696f47d97c1f7b8e821fdb1d6bf0e4f31afdd326c1cb69bf386c7c0a37e",
+      "size": 5759
+    },
+    {
+      "path": "project/scripts/smiles_diffusion_gen.py",
+      "sha256": "38322a84bd68516b90197a94fc1b20998e5fbcb3fd30e47bd922ecd296bdbdc9",
+      "size": 12257
+    },
+    {
+      "path": "project/scripts/smiles_gpt_gen.py",
+      "sha256": "205905107e60772892b27377f1e72f308e8857bac9c01b2f924b18450b5e11f0",
+      "size": 10459
+    },
+    {
+      "path": "project/scripts/smiles_lstm_gen.py",
+      "sha256": "d04631b0252c3ae1e12ecef8fecfcc9d3a8fec98ebb8244022b699b818b46ef7",
+      "size": 12368
+    },
+    {
+      "path": "project/scripts/summarize_domain_methods.py",
+      "sha256": "bb49c54597a8453e30eb633c56fbe8c42b3d237c6285e8f63181513bcba3734a",
+      "size": 3555
+    },
+    {
+      "path": "project/scripts/summarize_pacer_dc_equilibration.py",
+      "sha256": "11f63db14424bc7def41b5bfa776fe5ed2f390187017e8e177e65f8ca72cedba",
+      "size": 3680
+    },
+    {
+      "path": "project/scripts/summarize_pacer_dc_smoke.py",
+      "sha256": "c4f1ddbe235132e7bdd15bc1bf7b46549178baff7402d8bf06a6cc402c3cc1cc",
+      "size": 3520
+    },
+    {
+      "path": "project/scripts/test_consensus_pam_signature.py",
+      "sha256": "7d748fa4f4e9a360ba1ce487e885b75635c4238e6eb57aee8748710efd5dfa75",
+      "size": 11654
+    },
+    {
+      "path": "project/scripts/test_static_anchored_m4_trajectory.py",
+      "sha256": "c25fa4932f79101c3dca36960b7ed605aa790a0a3da81e6afcd483f748f0a6d7",
+      "size": 5695
+    },
+    {
+      "path": "project/scripts/validate_allosteric_pocket.py",
+      "sha256": "a237c32fd13bff356f61caee7cc48efc0bda5bcb2d6a0455d9296c739f2da2e1",
+      "size": 3717
+    },
+    {
+      "path": "project/scripts/validate_external_static_pam_signature.py",
+      "sha256": "ea71bcf69eea86a07544a0a0e1b00e5e51330c21555b8492e73ec0f788274805",
+      "size": 4348
+    },
+    {
+      "path": "project/scripts/validate_matched_static_pam_specificity.py",
+      "sha256": "9a11b08c16c604c501f30c571b8482a599811000651e8d2170cda4b3d5e1f755",
+      "size": 2879
+    },
+    {
+      "path": "project/scripts/validate_pacer_release.py",
+      "sha256": "67bd7d69de878d61e34e765d2247bba710152080bdbc0ce97cf7a6f5d192cca4",
+      "size": 14744
+    },
+    {
+      "path": "project/scripts/validate_paired_delta_pam_signature.py",
+      "sha256": "67731897393df9a3f2a4aecd437771e6b37b558bdb3fcab3c802ae66967ee4dd",
+      "size": 3479
+    },
+    {
+      "path": "project/tests/test_pacer_dc_phase1_audit.py",
+      "sha256": "84517817c1a49814aa0d5befc24dd351aaad8c296298d0808fba6d00f4375072",
+      "size": 1451
+    },
+    {
+      "path": "project/tests/test_pacer_dc_score.py",
+      "sha256": "491b7ee0da92dc08ebf4bab9708df7e4389e26dea30a9017aae6061e21d2d34a",
+      "size": 8643
+    },
+    {
+      "path": "project/tests/test_pacer_factorial_kernel_graph.py",
+      "sha256": "742346937e238e7fab1e81ccbdbef88ea6856b62c0fabc37d30ce5f4eadebb05",
+      "size": 2475
+    },
+    {
+      "path": "project/tools/geom2vec_checkpoints/LICENSE.geom2vec",
+      "sha256": "ffeb48c5b8c1d0a810d1e99886fcdf193bf5d059b6c31b397ac16cf8741743dc",
+      "size": 1431
+    },
+    {
+      "path": "project/tools/geom2vec_checkpoints/README.md",
+      "sha256": "370b80ea43491639af536b558a5976a2a3766da2edd53057bf4d286809ef9564",
+      "size": 1109
+    },
+    {
+      "path": "project/tools/geom2vec_checkpoints/visnet_l6_h64_rbf64_r75.pth",
+      "sha256": "b8f1ef9b591c57f7687566bd60d3664800956ac280cf2ae8e64f54196cd8d417",
+      "size": 1815684
+    },
+    {
+      "path": "push_to_github.sh",
+      "sha256": "fa68b1c242b65e9cf5d4d91d8c6e325a9c94d25694abec89290b6cd00a76a018",
+      "size": 267
+    },
+    {
+      "path": "runs/oneprot_checkpoint_audit.json",
+      "sha256": "3d05b183c0098007a9a69d3175306ee3524afd4fd904ad221dec075091fbea14",
+      "size": 2766
+    },
+    {
+      "path": "runs/oneprot_md_branch_runtime_audit.json",
+      "sha256": "3d9813eaefd5b35b990519753e1fe2ca12b9eaf63f3fda17f103fcb88b3ac09b",
+      "size": 6153
+    }
+  ]
+}

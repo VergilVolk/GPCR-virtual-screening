@@ -16,6 +16,12 @@ KEY_FILENAMES = {
     "minimized.pdb", "system.xml", "state.xml", "production_start_state.xml",
     "latest_state.xml", "checkpoint.chk", "trajectory.dcd",
 }
+SEARCH_NAMES = (
+    "7TRS.pdb", "7TRS_OPM.pdb", "7V68.pdb", "7V6A.pdb",
+    "2CU_ideal.sdf", "ACH_ideal.sdf", "7TRS_R.pdb",
+    "7TRS_R_meeko.pdbqt", "CM00734_7TRS_redocked.sdf",
+    "compound110_7TRS_redocked.sdf",
+)
 
 def sha256(path: Path) -> str | None:
     if not path.is_file():
@@ -39,6 +45,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--label", default=socket.gethostname())
     ap.add_argument("--repo-root", type=Path, default=Path(__file__).resolve().parents[2])
+    ap.add_argument("--search-root", type=Path, action="append", default=[])
     ap.add_argument("--out", type=Path, required=True)
     args = ap.parse_args()
 
@@ -53,7 +60,7 @@ def main() -> None:
         "short_equilibration": project / "results" / "pacer_dc_short_equilibration_v01",
         "restraint_release": project / "results" / "pacer_dc_restraint_release_v01",
         "production": project / "results" / "pacer_dc_production_v01",
-        "close_loop_20ns": project / "results" / "pacer_dc_close_loop_20ns_v01",
+        "close_loop_20ns": project / "results" / "pacer_dc_close_loop_20ns_v01" / "production",
     }
     source_files = {
         "7TRS": project / "data" / "pdb" / "7TRS.pdb",
@@ -150,8 +157,22 @@ def main() -> None:
             if any(c in line for c in CANDIDATES):
                 manifest_rows.append(line)
 
+    external_hits = {}
+    for root in [p.resolve() for p in args.search_root]:
+        root_hits = []
+        if root.exists():
+            for target in SEARCH_NAMES:
+                for p in root.rglob(target):
+                    if p.is_file():
+                        root_hits.append(file_record(p, hash_file=False))
+            for candidate in CANDIDATES:
+                for p in root.rglob(f"*{candidate}*"):
+                    if p.exists():
+                        root_hits.append(file_record(p, hash_file=False))
+        external_hits[str(root)] = root_hits
+
     report = {
-        "schema": "pacer_dc.stage_b_asset_lineage_audit.v2",
+        "schema": "pacer_dc.stage_b_asset_lineage_audit.v3",
         "label": args.label,
         "host": socket.gethostname(),
         "platform": platform.platform(),
@@ -167,6 +188,7 @@ def main() -> None:
         "manifest": {**file_record(manifest), "candidate_rows": manifest_rows},
         "pipeline_scripts": [script_contract(p) for p in pipeline_scripts],
         "candidates": {},
+        "external_search_hits": external_hits,
     }
 
     for candidate in CANDIDATES:
@@ -192,6 +214,8 @@ def main() -> None:
         print(f"{candidate}_PRESENT_STAGES=" + (";".join(present) if present else "NONE"))
     for key, rec in report["source_files"].items():
         print(f"SOURCE_{key}={'PRESENT' if rec['exists'] else 'MISSING'}")
+    for root, hits in external_hits.items():
+        print(f"SEARCH_ROOT={root} HITS={len(hits)}")
     print(f"AUDIT_JSON={args.out}")
 
 if __name__ == "__main__":

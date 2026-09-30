@@ -1,5 +1,15 @@
 # DrugCLIP 微调主线：方法、证据与下一步
 
+更新日期：2026-09-30
+
+> **9/30 口径更新（团队决策）**：CGDA 支线关闭。理由：微调主线在
+> Science-2026 权重上的增益（宏 ROC +0.065，9 靶试点 +0.089）比 CGDA 的
+> 边缘增益（旧权重 +0.010、新权重 +0.004 且 BEDROC/EF5% 翻负）大一个
+> 量级；作为论文主张 CGDA 已不成立，其历史结果仅作反证保留
+> （`DRUGCLIP_CGDA_RESULT.md`、`DRUGCLIP_SCIENCE2026_CGDA_SUBSET_GATE_RESULT.md`）。
+> 当前论文主算法 = **双侧 rank-8 LoRA 微调（BCE + target retrieval，
+> no-preservation）**。
+
 更新日期：2026-09-26
 
 ## 1. 我们正在解决什么问题

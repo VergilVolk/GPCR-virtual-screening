@@ -1,5 +1,9 @@
 # CGDA 双 checkpoint 对照：分层子集临时门（v01）
 
+> **9/30 状态：CGDA 支线已关闭**（见 `DRUGCLIP_FINETUNING_MAINLINE_REVIEW.md`
+> 口径更新）。本文保留为反证记录：它正是"新权重上 CGDA 增益进一步收缩、
+> BEDROC 翻负"这一关闭决策的依据之一。
+
 日期：2026-09-30。执行链：`cgda_subset_gate.ps1`（提交 0a08f224）。
 
 ## 协议

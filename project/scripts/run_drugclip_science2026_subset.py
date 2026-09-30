@@ -39,19 +39,22 @@ def run_subset_target(task, model, folder, output, device, batch_size, labels_ol
     pocket_loader = torch.utils.data.DataLoader(pocket_dataset, batch_size=batch_size,
                                                 shuffle=False, collate_fn=pocket_dataset.collater)
     molecule_embeddings, molecule_ids, labels = [], [], []
+    molecule_representations, pocket_representations = [], []
     pocket_embeddings, pocket_ids = [], []
     with torch.inference_mode():
         for batch_index, raw in enumerate(loader, 1):
             labels.extend(torch.as_tensor(raw["target"]).cpu().numpy().astype(int).tolist())
             molecule_ids.extend(map(str, raw["smi_name"]))
-            _, embedding = full_runner.encode(model, full_runner.move(raw, device), "molecule")
+            representation, embedding = full_runner.encode(model, full_runner.move(raw, device), "molecule")
             molecule_embeddings.append(embedding)
+            molecule_representations.append(representation)
             if batch_index % 100 == 0:
                 print(f"target={folder.name} subset_batches={batch_index} rows={len(labels)}", flush=True)
         for raw in pocket_loader:
             pocket_ids.extend(map(str, raw["pocket_name"]))
-            _, embedding = full_runner.encode(model, full_runner.move(raw, device), "pocket")
+            representation, embedding = full_runner.encode(model, full_runner.move(raw, device), "pocket")
             pocket_embeddings.append(embedding)
+            pocket_representations.append(representation)
     mol = np.concatenate(molecule_embeddings).astype(np.float32)
     pocket = np.concatenate(pocket_embeddings).astype(np.float32)
     labels_array = np.asarray(labels, dtype=np.int8)
@@ -63,8 +66,10 @@ def run_subset_target(task, model, folder, output, device, batch_size, labels_ol
     np.savez_compressed(output / f"{folder.name}.npz",
                         molecule_ids=np.asarray(molecule_ids),
                         molecule_embeddings=mol,
+                        molecule_representations=np.concatenate(molecule_representations).astype(np.float32),
                         pocket_ids=np.asarray(pocket_ids),
                         pocket_embeddings=pocket,
+                        pocket_representations=np.concatenate(pocket_representations).astype(np.float32),
                         labels=labels_array,
                         scores=scores.astype(np.float32),
                         row_indices=keep.astype(np.int64))

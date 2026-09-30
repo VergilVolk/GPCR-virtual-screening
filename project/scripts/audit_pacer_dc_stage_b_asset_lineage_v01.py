@@ -11,7 +11,6 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-
 CANDIDATES = ("LY2119620", "CM00734", "compound110")
 
 ASSET_ROOTS = {
@@ -50,6 +49,12 @@ PIPELINE_SCRIPTS = (
     ROOT / "scripts" / "prepare_cm00734_stage_b_pose_v01.py",
 )
 
+KEY_FILENAMES = {
+    "audit.json", "preflight.json", "progress.json", "state.csv",
+    "minimized.pdb", "system.xml", "state.xml", "production_start_state.xml",
+    "latest_state.xml", "checkpoint.chk", "trajectory.dcd",
+}
+
 def sha256(path: Path) -> str | None:
     if not path.is_file():
         return None
@@ -59,16 +64,23 @@ def sha256(path: Path) -> str | None:
             h.update(block)
     return h.hexdigest()
 
-def file_record(path: Path) -> dict:
+def rel(path: Path) -> str:
+    try:
+        return str(path.relative_to(ROOT))
+    except ValueError:
+        return str(path)
+
+def file_record(path: Path, *, hash_file: bool = True) -> dict:
     rec = {
-        "path": str(path.relative_to(ROOT)) if path.is_absolute() else str(path),
+        "path": rel(path),
         "exists": path.exists(),
         "is_file": path.is_file(),
         "is_dir": path.is_dir(),
     }
     if path.is_file():
         rec["size_bytes"] = path.stat().st_size
-        rec["sha256"] = sha256(path)
+        if hash_file:
+            rec["sha256"] = sha256(path)
     return rec
 
 def git(args: list[str]) -> str | None:
@@ -80,67 +92,68 @@ def git(args: list[str]) -> str | None:
     except Exception:
         return None
 
-def candidate_paths(candidate: str) -> list[dict]:
+def stage_summary(candidate: str) -> dict:
+    names = (f"{candidate}__candidate_no_probe", f"{candidate}__candidate_probe")
+    out = {}
+    for label, root in ASSET_ROOTS.items():
+        rows = []
+        for name in names:
+            p = root / name
+            files = []
+            if p.exists():
+                for x in sorted((q for q in p.rglob("*") if q.is_file()), key=lambda q: str(q)):
+                    if x.name in KEY_FILENAMES or x.suffix.lower() in {".json", ".csv"}:
+                        files.append(file_record(x, hash_file=False))
+            rows.append({
+                "context": name,
+                "exists": p.exists(),
+                "key_files": files,
+                "file_count": sum(1 for x in p.rglob("*") if x.is_file()) if p.exists() else 0,
+            })
+        out[label] = rows
+    return out
+
+def named_hits(candidate: str) -> list[dict]:
     hits = []
     needle = candidate.lower()
     for label, root in ASSET_ROOTS.items():
         if not root.exists():
             continue
         for p in root.rglob("*"):
-            if needle in p.name.lower() or needle in str(p.parent).lower():
-                if p.is_file():
-                    hits.append({
-                        "stage": label,
-                        **file_record(p),
-                    })
+            if not p.is_file():
+                continue
+            s = str(p).lower()
+            if needle in s:
+                hits.append({
+                    "stage": label,
+                    **file_record(p, hash_file=False),
+                })
     return hits
 
-def stage_summary(candidate: str) -> dict:
-    names = (
-        f"{candidate}__candidate_no_probe",
-        f"{candidate}__candidate_probe",
-    )
-    out = {}
-    for label, root in ASSET_ROOTS.items():
-        rows = []
-        for name in names:
-            p = root / name
-            rows.append({
-                "context": name,
-                "exists": p.exists(),
-                "files": sorted(
-                    str(x.relative_to(ROOT))
-                    for x in p.rglob("*")
-                    if x.is_file()
-                ) if p.exists() else [],
-            })
-        out[label] = rows
-    return out
-
 def script_contract(path: Path) -> dict:
-    rec = file_record(path)
+    rec = file_record(path, hash_file=True)
     if not path.is_file():
         return rec
     text = path.read_text(encoding="utf-8", errors="ignore")
-    rec["mentions"] = {
-        c: text.count(c) for c in CANDIDATES
-    }
+    rec["mentions"] = {c: text.count(c) for c in CANDIDATES}
     rec["contains_7V68"] = "7V68" in text
     rec["contains_7V6A"] = "7V6A" in text
-    rec["contains_7TRS_common_pocket_pose_proposal"] = "7TRS_common_pocket_pose_proposal" in text
+    rec["contains_7TRS_common_pocket_pose_proposal"] = (
+        "7TRS_common_pocket_pose_proposal" in text
+    )
     return rec
 
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--label", default=socket.gethostname())
-    ap.add_argument("--out", type=Path)
+    ap.add_argument("--out", type=Path, required=True)
     args = ap.parse_args()
 
     manifest = ROOT / "config" / "pacer_dc_pilot_md_manifest_v2.csv"
     manifest_rows = []
     if manifest.exists():
         for line in manifest.read_text(encoding="utf-8-sig", errors="ignore").splitlines():
-            if any(c in line for c in ("LY2119620", "CM00734", "compound110")):
+            if any(c in line for c in CANDIDATES):
                 manifest_rows.append(line)
 
     report = {
@@ -167,14 +180,28 @@ def main() -> None:
     for candidate in CANDIDATES:
         report["candidates"][candidate] = {
             "stage_summary": stage_summary(candidate),
-            "all_result_file_hits": candidate_paths(candidate),
+            "named_result_file_hits": named_hits(candidate),
         }
 
-    text = json.dumps(report, indent=2, ensure_ascii=False)
-    print(text)
-    if args.out:
-        args.out.parent.mkdir(parents=True, exist_ok=True)
-        args.out.write_text(text + "\n", encoding="utf-8")
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    args.out.write_text(
+        json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
+
+    print(f"AUDIT_LABEL={args.label}")
+    print(f"GIT_BRANCH={report['git']['branch']}")
+    print(f"GIT_HEAD={report['git']['head']}")
+    for candidate in CANDIDATES:
+        stages = report["candidates"][candidate]["stage_summary"]
+        present = []
+        for stage, rows in stages.items():
+            for row in rows:
+                if row["exists"]:
+                    present.append(f"{stage}:{row['context']}")
+        print(f"{candidate}_PRESENT_STAGES=" + (";".join(present) if present else "NONE"))
+    for key, rec in report["source_files"].items():
+        print(f"SOURCE_{key}={'PRESENT' if rec['exists'] else 'MISSING'}")
+    print(f"AUDIT_JSON={args.out}")
 
 if __name__ == "__main__":
     main()

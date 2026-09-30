@@ -1,0 +1,4268 @@
+{
+  "schema": "pacer_dc.close_loop_20ns.track_b.matched_graph_region.v1",
+  "version": "PACER_DC_CLOSE_LOOP_PHASE2B_GRAPH_REGION_v01",
+  "created_at": "2026-09-30T14:10:59.468753+08:00",
+  "status": "TRACK_B_MATCHED_20NS_COMPLETE",
+  "upstream": {
+    "phase2a_freeze_receipt_sha256": "e42d3445b3374a3837a6c12d6b1c5e2e97b54824fd2747d08902394faad6744f",
+    "historical_fkg_v02_freeze_sha256": "b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd"
+  },
+  "matched_design": {
+    "frames_per_trajectory": 400,
+    "frame_spacing_ps": 50,
+    "duration_ns": 20,
+    "block_frames": 20,
+    "blocks_per_trajectory": 20,
+    "shared_controls": {
+      "A": "apo first 20 ns",
+      "P": "probe_only first 20 ns"
+    },
+    "compound110_reference": {
+      "C": "compound110__candidate_no_probe first 20 ns",
+      "CP": "compound110__candidate_probe first 20 ns"
+    },
+    "LY2119620": {
+      "C": "LY2119620__candidate_no_probe 20 ns",
+      "CP": "LY2119620__candidate_probe 20 ns"
+    }
+  },
+  "contrasts": {
+    "Delta_PAM": {
+      "historical_axis": "conditional_pam_effect",
+      "formula": {
+        "CP": 1.0,
+        "P": -1.0
+      }
+    },
+    "Delta_AGO": {
+      "historical_axis": "intrinsic_agonism",
+      "formula": {
+        "C": 1.0,
+        "A": -1.0
+      }
+    },
+    "Delta_INT": {
+      "historical_axis": "synergy_interaction",
+      "formula": {
+        "CP": 1.0,
+        "P": -1.0,
+        "C": -1.0,
+        "A": 1.0
+      }
+    }
+  },
+  "graph": {
+    "path": "project/results/pacer_dc_geom2vec_pilot_v01/M4_MULTISTRUCTURE_GRAPH_v01.json",
+    "sha256": "25593c11dac0f70ad6811c8c6aa7a4f06c1755f14397f1162eaa1157026be122",
+    "diffusion_alpha": 0.65,
+    "diffusion_steps": 20,
+    "regions": {
+      "compound110_extension": 8,
+      "cooperativity_mutagenesis": 13,
+      "distal_control": 12,
+      "intracellular_microswitches": 9,
+      "orthosteric_activation_core": 13,
+      "orthosteric_contact_union": 14,
+      "pam_contact_consensus": 12,
+      "pam_contact_union": 16,
+      "stable_core_control": 12
+    }
+  },
+  "results": {
+    "STATE_MOTION": {
+      "compound110_reference": {
+        "Delta_PAM": {
+          "historical_axis": "conditional_pam_effect",
+          "regions": {
+            "compound110_extension": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.07114751491967433,
+                  "block_magnitude_mean": 0.11457645457917569,
+                  "block_magnitude_q10": 0.1003571486105655,
+                  "block_magnitude_median": 0.1145454019046474,
+                  "block_magnitude_q90": 0.1292149345358847
+                },
+                "R2": {
+                  "mean_vector_norm": 0.07008027122533965,
+                  "block_magnitude_mean": 0.11954422430136424,
+                  "block_magnitude_q10": 0.09386933569586939,
+                  "block_magnitude_median": 0.11902541180625772,
+                  "block_magnitude_q90": 0.1402384614521078
+                },
+                "R3": {
+                  "mean_vector_norm": 0.05906186721620041,
+                  "block_magnitude_mean": 0.10251606831616496,
+                  "block_magnitude_q10": 0.08912339447475989,
+                  "block_magnitude_median": 0.09836339411334967,
+                  "block_magnitude_q90": 0.1180141920102298
+                }
+              },
+              "R1_R3_direction_cosine": -0.43869804499777465
+            },
+            "cooperativity_mutagenesis": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.045705178056089854,
+                  "block_magnitude_mean": 0.0802543033443158,
+                  "block_magnitude_q10": 0.07117451108727699,
+                  "block_magnitude_median": 0.07753392862413094,
+                  "block_magnitude_q90": 0.09715459118763907
+                },
+                "R2": {
+                  "mean_vector_norm": 0.034155824813434314,
+                  "block_magnitude_mean": 0.07377602714047915,
+                  "block_magnitude_q10": 0.06592898211006033,
+                  "block_magnitude_median": 0.07414721192182576,
+                  "block_magnitude_q90": 0.08232014378868065
+                },
+                "R3": {
+                  "mean_vector_norm": 0.06573756253444712,
+                  "block_magnitude_mean": 0.08964990302352324,
+                  "block_magnitude_q10": 0.0725744936838948,
+                  "block_magnitude_median": 0.09128279002999201,
+                  "block_magnitude_q90": 0.10295109550057435
+                }
+              },
+              "R1_R3_direction_cosine": 0.12255718155462152
+            },
+            "distal_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.042560113088819684,
+                  "block_magnitude_mean": 0.0975639030360916,
+                  "block_magnitude_q10": 0.08258486686461516,
+                  "block_magnitude_median": 0.09915376392118934,
+                  "block_magnitude_q90": 0.11170362261297863
+                },
+                "R2": {
+                  "mean_vector_norm": 0.07140938647780186,
+                  "block_magnitude_mean": 0.11463385366261543,
+                  "block_magnitude_q10": 0.09124489259210632,
+                  "block_magnitude_median": 0.11429880844379518,
+                  "block_magnitude_q90": 0.13936137164749204
+                },
+                "R3": {
+                  "mean_vector_norm": 0.05064404044623681,
+                  "block_magnitude_mean": 0.10249065318444359,
+                  "block_magnitude_q10": 0.0815790152243941,
+                  "block_magnitude_median": 0.10268803253698107,
+                  "block_magnitude_q90": 0.12887320269220578
+                }
+              },
+              "R1_R3_direction_cosine": -0.029957136384936883
+            },
+            "intracellular_microswitches": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.042081967926892415,
+                  "block_magnitude_mean": 0.07049259317443582,
+                  "block_magnitude_q10": 0.06122199063972165,
+                  "block_magnitude_median": 0.06772918026089675,
+                  "block_magnitude_q90": 0.08494525905987471
+                },
+                "R2": {
+                  "mean_vector_norm": 0.04961159864021212,
+                  "block_magnitude_mean": 0.07937609416681848,
+                  "block_magnitude_q10": 0.06957782703695091,
+                  "block_magnitude_median": 0.0780844262671229,
+                  "block_magnitude_q90": 0.08673521401599157
+                },
+                "R3": {
+                  "mean_vector_norm": 0.04399795713052261,
+                  "block_magnitude_mean": 0.07312127058811937,
+                  "block_magnitude_q10": 0.06308505302320783,
+                  "block_magnitude_median": 0.07126387302110682,
+                  "block_magnitude_q90": 0.08463343092954383
+                }
+              },
+              "R1_R3_direction_cosine": 0.5088904218110308
+            },
+            "orthosteric_activation_core": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.032031313284753574,
+                  "block_magnitude_mean": 0.061479200847015095,
+                  "block_magnitude_q10": 0.05537861138997046,
+                  "block_magnitude_median": 0.060238945467108354,
+                  "block_magnitude_q90": 0.06641056606667775
+                },
+                "R2": {
+                  "mean_vector_norm": 0.0273943473981241,
+                  "block_magnitude_mean": 0.05756570295976019,
+                  "block_magnitude_q10": 0.05159308604900828,
+                  "block_magnitude_median": 0.05567415833504106,
+                  "block_magnitude_q90": 0.06524337296416624
+                },
+                "R3": {
+                  "mean_vector_norm": 0.03250685500132457,
+                  "block_magnitude_mean": 0.059450659559478335,
+                  "block_magnitude_q10": 0.052403726119722806,
+                  "block_magnitude_median": 0.05772628798271932,
+                  "block_magnitude_q90": 0.06955157391475457
+                }
+              },
+              "R1_R3_direction_cosine": 0.3035932498420043
+            },
+            "orthosteric_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.03140106025438251,
+                  "block_magnitude_mean": 0.061452129470347505,
+                  "block_magnitude_q10": 0.05401012596954907,
+                  "block_magnitude_median": 0.060491478485212476,
+                  "block_magnitude_q90": 0.06825461851536645
+                },
+                "R2": {
+                  "mean_vector_norm": 0.026433276494050837,
+                  "block_magnitude_mean": 0.05716927455381913,
+                  "block_magnitude_q10": 0.05043813814103612,
+                  "block_magnitude_median": 0.05523815097540507,
+                  "block_magnitude_q90": 0.06462300739090482
+                },
+                "R3": {
+                  "mean_vector_norm": 0.03167417174841729,
+                  "block_magnitude_mean": 0.05946762430082103,
+                  "block_magnitude_q10": 0.05327517390341345,
+                  "block_magnitude_median": 0.05826346189801976,
+                  "block_magnitude_q90": 0.06933454474765541
+                }
+              },
+              "R1_R3_direction_cosine": 0.3244828535175933
+            },
+            "pam_contact_consensus": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.04798008194987899,
+                  "block_magnitude_mean": 0.08759196204425598,
+                  "block_magnitude_q10": 0.07577186369310693,
+                  "block_magnitude_median": 0.08844112273300771,
+                  "block_magnitude_q90": 0.09762448972490184
+                },
+                "R2": {
+                  "mean_vector_norm": 0.04254676511215319,
+                  "block_magnitude_mean": 0.08696394479566784,
+                  "block_magnitude_q10": 0.07889609164166345,
+                  "block_magnitude_median": 0.08704621340807361,
+                  "block_magnitude_q90": 0.09869256175040639
+                },
+                "R3": {
+                  "mean_vector_norm": 0.07188885740625549,
+                  "block_magnitude_mean": 0.10039916731196638,
+                  "block_magnitude_q10": 0.08211303632968613,
+                  "block_magnitude_median": 0.10293667591909252,
+                  "block_magnitude_q90": 0.11291974108964795
+                }
+              },
+              "R1_R3_direction_cosine": 0.10518246112717536
+            },
+            "pam_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.04610485688554094,
+                  "block_magnitude_mean": 0.0848432232699874,
+                  "block_magnitude_q10": 0.07010193818975453,
+                  "block_magnitude_median": 0.08488405439345931,
+                  "block_magnitude_q90": 0.0989969110900742
+                },
+                "R2": {
+                  "mean_vector_norm": 0.04328550266281521,
+                  "block_magnitude_mean": 0.08619062127975949,
+                  "block_magnitude_q10": 0.07748453725296116,
+                  "block_magnitude_median": 0.08439820797109257,
+                  "block_magnitude_q90": 0.09619752532218952
+                },
+                "R3": {
+                  "mean_vector_norm": 0.06497267492402069,
+                  "block_magnitude_mean": 0.09370431903608692,
+                  "block_magnitude_q10": 0.08121758172417615,
+                  "block_magnitude_median": 0.09552327369301722,
+                  "block_magnitude_q90": 0.10567994916173498
+                }
+              },
+              "R1_R3_direction_cosine": 0.16219983867487048
+            },
+            "stable_core_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.031093552310143362,
+                  "block_magnitude_mean": 0.07653859018901707,
+                  "block_magnitude_q10": 0.06434802046771446,
+                  "block_magnitude_median": 0.07328771943351067,
+                  "block_magnitude_q90": 0.08794382184298125
+                },
+                "R2": {
+                  "mean_vector_norm": 0.036332245794793716,
+                  "block_magnitude_mean": 0.0785364312543547,
+                  "block_magnitude_q10": 0.06927392915132852,
+                  "block_magnitude_median": 0.08063307682331036,
+                  "block_magnitude_q90": 0.0860158132294055
+                },
+                "R3": {
+                  "mean_vector_norm": 0.04004185339480608,
+                  "block_magnitude_mean": 0.08393905668829091,
+                  "block_magnitude_q10": 0.07524685023559545,
+                  "block_magnitude_median": 0.08120718482418786,
+                  "block_magnitude_q90": 0.09811590083263264
+                }
+              },
+              "R1_R3_direction_cosine": 0.25096177228693733
+            }
+          }
+        },
+        "Delta_AGO": {
+          "historical_axis": "intrinsic_agonism",
+          "regions": {
+            "compound110_extension": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.07968648577431263,
+                  "block_magnitude_mean": 0.11737121099684691,
+                  "block_magnitude_q10": 0.09104113719693063,
+                  "block_magnitude_median": 0.11757625696275759,
+                  "block_magnitude_q90": 0.1417907508363002
+                },
+                "R2": {
+                  "mean_vector_norm": 0.04752779147163551,
+                  "block_magnitude_mean": 0.10176743164525337,
+                  "block_magnitude_q10": 0.08976521700782585,
+                  "block_magnitude_median": 0.10022561748868718,
+                  "block_magnitude_q90": 0.11483213457396653
+                },
+                "R3": {
+                  "mean_vector_norm": 0.12893538085641004,
+                  "block_magnitude_mean": 0.15430132256505064,
+                  "block_magnitude_q10": 0.12732814535476664,
+                  "block_magnitude_median": 0.15814450299915345,
+                  "block_magnitude_q90": 0.1806183835184452
+                }
+              },
+              "R1_R3_direction_cosine": 0.7500708739583611
+            },
+            "cooperativity_mutagenesis": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.05904332867005021,
+                  "block_magnitude_mean": 0.08733087157813683,
+                  "block_magnitude_q10": 0.06818661533960643,
+                  "block_magnitude_median": 0.0850260820582935,
+                  "block_magnitude_q90": 0.10554219737390699
+                },
+                "R2": {
+                  "mean_vector_norm": 0.05979492265362253,
+                  "block_magnitude_mean": 0.09044493126137546,
+                  "block_magnitude_q10": 0.07464416529949623,
+                  "block_magnitude_median": 0.09220441305895966,
+                  "block_magnitude_q90": 0.10139968123792359
+                },
+                "R3": {
+                  "mean_vector_norm": 0.05733675811526997,
+                  "block_magnitude_mean": 0.08598845729586574,
+                  "block_magnitude_q10": 0.07520075539153602,
+                  "block_magnitude_median": 0.08675909938298386,
+                  "block_magnitude_q90": 0.09608015768680364
+                }
+              },
+              "R1_R3_direction_cosine": 0.07992315182086678
+            },
+            "distal_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.07337546449594516,
+                  "block_magnitude_mean": 0.11210008515301054,
+                  "block_magnitude_q10": 0.10120349838914279,
+                  "block_magnitude_median": 0.11062602844921463,
+                  "block_magnitude_q90": 0.1292684958211127
+                },
+                "R2": {
+                  "mean_vector_norm": 0.0663142883638832,
+                  "block_magnitude_mean": 0.11750141817105217,
+                  "block_magnitude_q10": 0.10367909509848089,
+                  "block_magnitude_median": 0.11451974494302924,
+                  "block_magnitude_q90": 0.1418532440859944
+                },
+                "R3": {
+                  "mean_vector_norm": 0.0864101412695818,
+                  "block_magnitude_mean": 0.12643049343541665,
+                  "block_magnitude_q10": 0.10901180860570661,
+                  "block_magnitude_median": 0.12306373008550459,
+                  "block_magnitude_q90": 0.14825523883794292
+                }
+              },
+              "R1_R3_direction_cosine": 0.03633866794580819
+            },
+            "intracellular_microswitches": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.04272981015143448,
+                  "block_magnitude_mean": 0.07141794831689212,
+                  "block_magnitude_q10": 0.060769521110814864,
+                  "block_magnitude_median": 0.07021586288912565,
+                  "block_magnitude_q90": 0.08392632650651129
+                },
+                "R2": {
+                  "mean_vector_norm": 0.05058202850511861,
+                  "block_magnitude_mean": 0.07560038511084469,
+                  "block_magnitude_q10": 0.06983294626882519,
+                  "block_magnitude_median": 0.07492872818122531,
+                  "block_magnitude_q90": 0.08442861802554015
+                },
+                "R3": {
+                  "mean_vector_norm": 0.06878985487375668,
+                  "block_magnitude_mean": 0.09140598888276244,
+                  "block_magnitude_q10": 0.08199842239454333,
+                  "block_magnitude_median": 0.09290517872231804,
+                  "block_magnitude_q90": 0.09922413606025683
+                }
+              },
+              "R1_R3_direction_cosine": -0.35524371255035103
+            },
+            "orthosteric_activation_core": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.06407510109079206,
+                  "block_magnitude_mean": 0.08749588921135623,
+                  "block_magnitude_q10": 0.07601749703277821,
+                  "block_magnitude_median": 0.08443853126909304,
+                  "block_magnitude_q90": 0.09946837117361597
+                },
+                "R2": {
+                  "mean_vector_norm": 0.04248409363329397,
+                  "block_magnitude_mean": 0.07263247837997938,
+                  "block_magnitude_q10": 0.06316505628947904,
+                  "block_magnitude_median": 0.07247586394473446,
+                  "block_magnitude_q90": 0.08387076531570718
+                },
+                "R3": {
+                  "mean_vector_norm": 0.05423107340388272,
+                  "block_magnitude_mean": 0.07441474476614617,
+                  "block_magnitude_q10": 0.0623600945698567,
+                  "block_magnitude_median": 0.07716865128832145,
+                  "block_magnitude_q90": 0.08393341734829558
+                }
+              },
+              "R1_R3_direction_cosine": 0.24204023320080012
+            },
+            "orthosteric_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.06038660907282818,
+                  "block_magnitude_mean": 0.08472727555604398,
+                  "block_magnitude_q10": 0.0731936717794298,
+                  "block_magnitude_median": 0.08167497382278574,
+                  "block_magnitude_q90": 0.09649980975650631
+                },
+                "R2": {
+                  "mean_vector_norm": 0.04262722074255527,
+                  "block_magnitude_mean": 0.07192791173520653,
+                  "block_magnitude_q10": 0.06295820544194577,
+                  "block_magnitude_median": 0.07177255964769158,
+                  "block_magnitude_q90": 0.08215285267761661
+                },
+                "R3": {
+                  "mean_vector_norm": 0.054519814809796015,
+                  "block_magnitude_mean": 0.07507335565349686,
+                  "block_magnitude_q10": 0.0611728132100067,
+                  "block_magnitude_median": 0.07718711400436991,
+                  "block_magnitude_q90": 0.0852251426335033
+                }
+              },
+              "R1_R3_direction_cosine": 0.2669992677409549
+            },
+            "pam_contact_consensus": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.06654047715445191,
+                  "block_magnitude_mean": 0.09800831490340534,
+                  "block_magnitude_q10": 0.07881565116670118,
+                  "block_magnitude_median": 0.09506088388660539,
+                  "block_magnitude_q90": 0.12096362689803525
+                },
+                "R2": {
+                  "mean_vector_norm": 0.061197349816714215,
+                  "block_magnitude_mean": 0.09614084384336623,
+                  "block_magnitude_q10": 0.08088203557046153,
+                  "block_magnitude_median": 0.09609452383058997,
+                  "block_magnitude_q90": 0.1110751594650854
+                },
+                "R3": {
+                  "mean_vector_norm": 0.07924252121145489,
+                  "block_magnitude_mean": 0.1039863938651597,
+                  "block_magnitude_q10": 0.09047423596271166,
+                  "block_magnitude_median": 0.10440678489724564,
+                  "block_magnitude_q90": 0.11710675114474184
+                }
+              },
+              "R1_R3_direction_cosine": 0.006103038954353157
+            },
+            "pam_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.05867971434523554,
+                  "block_magnitude_mean": 0.09103760368617889,
+                  "block_magnitude_q10": 0.07440045634047908,
+                  "block_magnitude_median": 0.08947315176885465,
+                  "block_magnitude_q90": 0.10924953188026776
+                },
+                "R2": {
+                  "mean_vector_norm": 0.05659524925229129,
+                  "block_magnitude_mean": 0.09060893620282823,
+                  "block_magnitude_q10": 0.07732122193118048,
+                  "block_magnitude_median": 0.09243329397726277,
+                  "block_magnitude_q90": 0.10615548693289224
+                },
+                "R3": {
+                  "mean_vector_norm": 0.08208058691309743,
+                  "block_magnitude_mean": 0.10451069519631251,
+                  "block_magnitude_q10": 0.0915258745855081,
+                  "block_magnitude_median": 0.1043825585370228,
+                  "block_magnitude_q90": 0.11786217677594804
+                }
+              },
+              "R1_R3_direction_cosine": -0.020924909398589417
+            },
+            "stable_core_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.053378800419325426,
+                  "block_magnitude_mean": 0.08657981186048469,
+                  "block_magnitude_q10": 0.07729049145315446,
+                  "block_magnitude_median": 0.08581626253621712,
+                  "block_magnitude_q90": 0.09631572083127872
+                },
+                "R2": {
+                  "mean_vector_norm": 0.050688003417403496,
+                  "block_magnitude_mean": 0.08783639480089221,
+                  "block_magnitude_q10": 0.08116391007636131,
+                  "block_magnitude_median": 0.08721954825838443,
+                  "block_magnitude_q90": 0.0982290415910638
+                },
+                "R3": {
+                  "mean_vector_norm": 0.051215941194320914,
+                  "block_magnitude_mean": 0.08466638307506541,
+                  "block_magnitude_q10": 0.07450703807906373,
+                  "block_magnitude_median": 0.08498682506077461,
+                  "block_magnitude_q90": 0.09471832399015392
+                }
+              },
+              "R1_R3_direction_cosine": -0.40773550621493815
+            }
+          }
+        },
+        "Delta_INT": {
+          "historical_axis": "synergy_interaction",
+          "regions": {
+            "compound110_extension": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.14052344530431699,
+                  "block_magnitude_mean": 0.18990828996963868,
+                  "block_magnitude_q10": 0.16187795195522808,
+                  "block_magnitude_median": 0.18725343154798862,
+                  "block_magnitude_q90": 0.2183004260668872
+                },
+                "R2": {
+                  "mean_vector_norm": 0.08418792916452655,
+                  "block_magnitude_mean": 0.15593093872175837,
+                  "block_magnitude_q10": 0.13084945015598975,
+                  "block_magnitude_median": 0.15590951351495122,
+                  "block_magnitude_q90": 0.181364790683772
+                },
+                "R3": {
+                  "mean_vector_norm": 0.10594839208502374,
+                  "block_magnitude_mean": 0.16149499175544385,
+                  "block_magnitude_q10": 0.13738265490274856,
+                  "block_magnitude_median": 0.16185405516419582,
+                  "block_magnitude_q90": 0.18043580472391735
+                }
+              },
+              "R1_R3_direction_cosine": 0.5836558294376457
+            },
+            "cooperativity_mutagenesis": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.07240638242070607,
+                  "block_magnitude_mean": 0.11640079774402645,
+                  "block_magnitude_q10": 0.10179288713050552,
+                  "block_magnitude_median": 0.11786642008834756,
+                  "block_magnitude_q90": 0.12847327418655594
+                },
+                "R2": {
+                  "mean_vector_norm": 0.06458320556391627,
+                  "block_magnitude_mean": 0.11437117016848224,
+                  "block_magnitude_q10": 0.09927817813355053,
+                  "block_magnitude_median": 0.11381964467432942,
+                  "block_magnitude_q90": 0.133179373793693
+                },
+                "R3": {
+                  "mean_vector_norm": 0.0667610797708525,
+                  "block_magnitude_mean": 0.10981833999825075,
+                  "block_magnitude_q10": 0.09566183824537376,
+                  "block_magnitude_median": 0.10853286012199273,
+                  "block_magnitude_q90": 0.12940289716483702
+                }
+              },
+              "R1_R3_direction_cosine": -0.24601658559834225
+            },
+            "distal_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.08727780993529856,
+                  "block_magnitude_mean": 0.1494714526229763,
+                  "block_magnitude_q10": 0.13218362876068482,
+                  "block_magnitude_median": 0.1484179741070749,
+                  "block_magnitude_q90": 0.16876439556124198
+                },
+                "R2": {
+                  "mean_vector_norm": 0.11820938724189269,
+                  "block_magnitude_mean": 0.17489625273594075,
+                  "block_magnitude_q10": 0.14817890486174415,
+                  "block_magnitude_median": 0.1689356642163184,
+                  "block_magnitude_q90": 0.2060256402752289
+                },
+                "R3": {
+                  "mean_vector_norm": 0.11391237950550369,
+                  "block_magnitude_mean": 0.173517076778741,
+                  "block_magnitude_q10": 0.137960099591723,
+                  "block_magnitude_median": 0.17617323095141246,
+                  "block_magnitude_q90": 0.20800484057239266
+                }
+              },
+              "R1_R3_direction_cosine": -0.13781251576088305
+            },
+            "intracellular_microswitches": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.06277349443009113,
+                  "block_magnitude_mean": 0.10185457580286472,
+                  "block_magnitude_q10": 0.09011257065214782,
+                  "block_magnitude_median": 0.10170456345181499,
+                  "block_magnitude_q90": 0.11456499954333747
+                },
+                "R2": {
+                  "mean_vector_norm": 0.08364656378194377,
+                  "block_magnitude_mean": 0.11840915702656755,
+                  "block_magnitude_q10": 0.10565574484109493,
+                  "block_magnitude_median": 0.11731919275448591,
+                  "block_magnitude_q90": 0.13285273722030788
+                },
+                "R3": {
+                  "mean_vector_norm": 0.06794362174680062,
+                  "block_magnitude_mean": 0.10824599642834801,
+                  "block_magnitude_q10": 0.09667389837796027,
+                  "block_magnitude_median": 0.10885976593010065,
+                  "block_magnitude_q90": 0.11709185465143468
+                }
+              },
+              "R1_R3_direction_cosine": -0.11141095792981442
+            },
+            "orthosteric_activation_core": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.06905582651190473,
+                  "block_magnitude_mean": 0.10474082555364576,
+                  "block_magnitude_q10": 0.09571103464716231,
+                  "block_magnitude_median": 0.10249222541011825,
+                  "block_magnitude_q90": 0.11904258504705127
+                },
+                "R2": {
+                  "mean_vector_norm": 0.05143065742960296,
+                  "block_magnitude_mean": 0.09226101488496771,
+                  "block_magnitude_q10": 0.07917272315162414,
+                  "block_magnitude_median": 0.09395705904856164,
+                  "block_magnitude_q90": 0.10576484452979196
+                },
+                "R3": {
+                  "mean_vector_norm": 0.05507269882936314,
+                  "block_magnitude_mean": 0.08797441638880721,
+                  "block_magnitude_q10": 0.0768807380730177,
+                  "block_magnitude_median": 0.08868232188131128,
+                  "block_magnitude_q90": 0.09897401155870471
+                }
+              },
+              "R1_R3_direction_cosine": -0.07434108158654325
+            },
+            "orthosteric_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.06453221614736468,
+                  "block_magnitude_mean": 0.10183692118612417,
+                  "block_magnitude_q10": 0.0935716244279849,
+                  "block_magnitude_median": 0.09824376685727249,
+                  "block_magnitude_q90": 0.11825621472462597
+                },
+                "R2": {
+                  "mean_vector_norm": 0.051756131595497794,
+                  "block_magnitude_mean": 0.09188104791938599,
+                  "block_magnitude_q10": 0.07752984101964532,
+                  "block_magnitude_median": 0.09248287667403104,
+                  "block_magnitude_q90": 0.10550645517215392
+                },
+                "R3": {
+                  "mean_vector_norm": 0.05418468005696247,
+                  "block_magnitude_mean": 0.0880694465690177,
+                  "block_magnitude_q10": 0.07915835677884031,
+                  "block_magnitude_median": 0.08607411168461343,
+                  "block_magnitude_q90": 0.0999614246174652
+                }
+              },
+              "R1_R3_direction_cosine": -0.05225431020724917
+            },
+            "pam_contact_consensus": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.08080581567460278,
+                  "block_magnitude_mean": 0.13223788476633044,
+                  "block_magnitude_q10": 0.11761240098125039,
+                  "block_magnitude_median": 0.13293534232008916,
+                  "block_magnitude_q90": 0.14732733223812744
+                },
+                "R2": {
+                  "mean_vector_norm": 0.06692100380383573,
+                  "block_magnitude_mean": 0.12201638361605652,
+                  "block_magnitude_q10": 0.10185718906121219,
+                  "block_magnitude_median": 0.1246683536266575,
+                  "block_magnitude_q90": 0.13870568828829924
+                },
+                "R3": {
+                  "mean_vector_norm": 0.0902217461480354,
+                  "block_magnitude_mean": 0.13024737398232705,
+                  "block_magnitude_q10": 0.11078594139256916,
+                  "block_magnitude_median": 0.1328545710278078,
+                  "block_magnitude_q90": 0.15158170536036877
+                }
+              },
+              "R1_R3_direction_cosine": -0.307913856192465
+            },
+            "pam_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.0743921501852318,
+                  "block_magnitude_mean": 0.12717070707499153,
+                  "block_magnitude_q10": 0.11352279051628379,
+                  "block_magnitude_median": 0.12702393298763676,
+                  "block_magnitude_q90": 0.13936606049642922
+                },
+                "R2": {
+                  "mean_vector_norm": 0.06841201557965944,
+                  "block_magnitude_mean": 0.12223998962791402,
+                  "block_magnitude_q10": 0.10180952498720662,
+                  "block_magnitude_median": 0.12032595989038125,
+                  "block_magnitude_q90": 0.1477966067220374
+                },
+                "R3": {
+                  "mean_vector_norm": 0.09731490266871924,
+                  "block_magnitude_mean": 0.13235327255806087,
+                  "block_magnitude_q10": 0.10608365354849827,
+                  "block_magnitude_median": 0.1322771215397306,
+                  "block_magnitude_q90": 0.16308210644606794
+                }
+              },
+              "R1_R3_direction_cosine": -0.18255799899778521
+            },
+            "stable_core_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.06307533117487991,
+                  "block_magnitude_mean": 0.12042119752624134,
+                  "block_magnitude_q10": 0.1048930575220068,
+                  "block_magnitude_median": 0.11957731452957027,
+                  "block_magnitude_q90": 0.13934016291759505
+                },
+                "R2": {
+                  "mean_vector_norm": 0.06655517822767203,
+                  "block_magnitude_mean": 0.11831329079145189,
+                  "block_magnitude_q10": 0.10797579648789578,
+                  "block_magnitude_median": 0.1187715387629792,
+                  "block_magnitude_q90": 0.12943244186863026
+                },
+                "R3": {
+                  "mean_vector_norm": 0.059244780655562865,
+                  "block_magnitude_mean": 0.11537566382765374,
+                  "block_magnitude_q10": 0.09852884921873326,
+                  "block_magnitude_median": 0.11538253351700274,
+                  "block_magnitude_q90": 0.1338032462048242
+                }
+              },
+              "R1_R3_direction_cosine": -0.43747179302219785
+            }
+          }
+        }
+      },
+      "LY2119620": {
+        "Delta_PAM": {
+          "historical_axis": "conditional_pam_effect",
+          "regions": {
+            "compound110_extension": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.07632849375968039,
+                  "block_magnitude_mean": 0.12269989675736118,
+                  "block_magnitude_q10": 0.10599363814736089,
+                  "block_magnitude_median": 0.12434407141583266,
+                  "block_magnitude_q90": 0.14072671709314247
+                },
+                "R2": {
+                  "mean_vector_norm": 0.060651743521974714,
+                  "block_magnitude_mean": 0.10675011621384804,
+                  "block_magnitude_q10": 0.09285995731588167,
+                  "block_magnitude_median": 0.10553672514054839,
+                  "block_magnitude_q90": 0.12158878296593842
+                },
+                "R3": {
+                  "mean_vector_norm": 0.03721031297794761,
+                  "block_magnitude_mean": 0.09201190230524388,
+                  "block_magnitude_q10": 0.07613515162622955,
+                  "block_magnitude_median": 0.09083077009010276,
+                  "block_magnitude_q90": 0.10947879556375592
+                }
+              },
+              "R1_R3_direction_cosine": 0.025594352426104763
+            },
+            "cooperativity_mutagenesis": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.057420973215292624,
+                  "block_magnitude_mean": 0.08792142104526082,
+                  "block_magnitude_q10": 0.07191094670060877,
+                  "block_magnitude_median": 0.08888330325208765,
+                  "block_magnitude_q90": 0.09921303567264154
+                },
+                "R2": {
+                  "mean_vector_norm": 0.0362750726252985,
+                  "block_magnitude_mean": 0.07314684332687742,
+                  "block_magnitude_q10": 0.06504486116610682,
+                  "block_magnitude_median": 0.07288223823850624,
+                  "block_magnitude_q90": 0.08073916753135191
+                },
+                "R3": {
+                  "mean_vector_norm": 0.039279934293610694,
+                  "block_magnitude_mean": 0.07077637045443687,
+                  "block_magnitude_q10": 0.05844402308715479,
+                  "block_magnitude_median": 0.07216610316993836,
+                  "block_magnitude_q90": 0.07967246534803642
+                }
+              },
+              "R1_R3_direction_cosine": -0.5106585068279332
+            },
+            "distal_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.06761654507482273,
+                  "block_magnitude_mean": 0.11546310559789734,
+                  "block_magnitude_q10": 0.10248071034964959,
+                  "block_magnitude_median": 0.11155816516574643,
+                  "block_magnitude_q90": 0.13404445536001558
+                },
+                "R2": {
+                  "mean_vector_norm": 0.06770201456566112,
+                  "block_magnitude_mean": 0.10922191180009758,
+                  "block_magnitude_q10": 0.09608542469880317,
+                  "block_magnitude_median": 0.1076421020766225,
+                  "block_magnitude_q90": 0.1246952608645433
+                },
+                "R3": {
+                  "mean_vector_norm": 0.08835123227408423,
+                  "block_magnitude_mean": 0.12454385378619044,
+                  "block_magnitude_q10": 0.10179231826925172,
+                  "block_magnitude_median": 0.12434990543459534,
+                  "block_magnitude_q90": 0.14514383601900752
+                }
+              },
+              "R1_R3_direction_cosine": -0.5502951863198206
+            },
+            "intracellular_microswitches": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.04654697439928687,
+                  "block_magnitude_mean": 0.07469775643176953,
+                  "block_magnitude_q10": 0.06600667401246497,
+                  "block_magnitude_median": 0.07543662139389223,
+                  "block_magnitude_q90": 0.08212512239929627
+                },
+                "R2": {
+                  "mean_vector_norm": 0.035861520553227735,
+                  "block_magnitude_mean": 0.07154558776403462,
+                  "block_magnitude_q10": 0.06334567212000525,
+                  "block_magnitude_median": 0.07182503661033267,
+                  "block_magnitude_q90": 0.07936474511109234
+                },
+                "R3": {
+                  "mean_vector_norm": 0.04186916798581737,
+                  "block_magnitude_mean": 0.07354017071030194,
+                  "block_magnitude_q10": 0.06637720712107573,
+                  "block_magnitude_median": 0.07393505022233535,
+                  "block_magnitude_q90": 0.07903070984674981
+                }
+              },
+              "R1_R3_direction_cosine": -0.11594159630581577
+            },
+            "orthosteric_activation_core": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.03861857860900388,
+                  "block_magnitude_mean": 0.06494456301186453,
+                  "block_magnitude_q10": 0.05946128284874938,
+                  "block_magnitude_median": 0.06558403443802058,
+                  "block_magnitude_q90": 0.06958138516742245
+                },
+                "R2": {
+                  "mean_vector_norm": 0.03273715629219606,
+                  "block_magnitude_mean": 0.06154606771702216,
+                  "block_magnitude_q10": 0.054937250564681864,
+                  "block_magnitude_median": 0.059731350123877314,
+                  "block_magnitude_q90": 0.0715000948009311
+                },
+                "R3": {
+                  "mean_vector_norm": 0.017361651040462122,
+                  "block_magnitude_mean": 0.049247944724441065,
+                  "block_magnitude_q10": 0.044423374435753955,
+                  "block_magnitude_median": 0.04821460123140808,
+                  "block_magnitude_q90": 0.05634572493060497
+                }
+              },
+              "R1_R3_direction_cosine": 0.005738986971821563
+            },
+            "orthosteric_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.037118624487888774,
+                  "block_magnitude_mean": 0.06426759102574073,
+                  "block_magnitude_q10": 0.05952600798519122,
+                  "block_magnitude_median": 0.06369093105897419,
+                  "block_magnitude_q90": 0.07117875740179631
+                },
+                "R2": {
+                  "mean_vector_norm": 0.031236786039974283,
+                  "block_magnitude_mean": 0.06071890444851191,
+                  "block_magnitude_q10": 0.054642281225063004,
+                  "block_magnitude_median": 0.05812173634495249,
+                  "block_magnitude_q90": 0.06943534353602887
+                },
+                "R3": {
+                  "mean_vector_norm": 0.01857136659338876,
+                  "block_magnitude_mean": 0.05039807002086773,
+                  "block_magnitude_q10": 0.04508308964738437,
+                  "block_magnitude_median": 0.049545461141494246,
+                  "block_magnitude_q90": 0.056503893758545774
+                }
+              },
+              "R1_R3_direction_cosine": 0.010148736431907203
+            },
+            "pam_contact_consensus": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.054167057346594584,
+                  "block_magnitude_mean": 0.09169189015919163,
+                  "block_magnitude_q10": 0.07851378691600878,
+                  "block_magnitude_median": 0.09336362576913246,
+                  "block_magnitude_q90": 0.10281277467851781
+                },
+                "R2": {
+                  "mean_vector_norm": 0.050381973537306064,
+                  "block_magnitude_mean": 0.08327455634581905,
+                  "block_magnitude_q10": 0.07240475877374901,
+                  "block_magnitude_median": 0.08342301775075522,
+                  "block_magnitude_q90": 0.09280091596748165
+                },
+                "R3": {
+                  "mean_vector_norm": 0.038283144755264446,
+                  "block_magnitude_mean": 0.07492040906980404,
+                  "block_magnitude_q10": 0.0641185195664049,
+                  "block_magnitude_median": 0.0741306012260313,
+                  "block_magnitude_q90": 0.08555140472468852
+                }
+              },
+              "R1_R3_direction_cosine": -0.43748822185910613
+            },
+            "pam_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.047753675446736046,
+                  "block_magnitude_mean": 0.08595961477033537,
+                  "block_magnitude_q10": 0.07398024390379761,
+                  "block_magnitude_median": 0.08759744530810099,
+                  "block_magnitude_q90": 0.09440424652618752
+                },
+                "R2": {
+                  "mean_vector_norm": 0.048269038220204626,
+                  "block_magnitude_mean": 0.07955122033985765,
+                  "block_magnitude_q10": 0.06995399635202137,
+                  "block_magnitude_median": 0.07753641687662821,
+                  "block_magnitude_q90": 0.09137167696383008
+                },
+                "R3": {
+                  "mean_vector_norm": 0.0344781035386201,
+                  "block_magnitude_mean": 0.07057814347732261,
+                  "block_magnitude_q10": 0.06291584326245175,
+                  "block_magnitude_median": 0.07027745175713268,
+                  "block_magnitude_q90": 0.07924057377617008
+                }
+              },
+              "R1_R3_direction_cosine": -0.35814138641072474
+            },
+            "stable_core_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.04571867051508586,
+                  "block_magnitude_mean": 0.0825212901345887,
+                  "block_magnitude_q10": 0.07170660140504496,
+                  "block_magnitude_median": 0.08233291418014471,
+                  "block_magnitude_q90": 0.09105855499794012
+                },
+                "R2": {
+                  "mean_vector_norm": 0.03312048601066742,
+                  "block_magnitude_mean": 0.07308450463909283,
+                  "block_magnitude_q10": 0.06738611368096346,
+                  "block_magnitude_median": 0.07371141210546214,
+                  "block_magnitude_q90": 0.07795217594614882
+                },
+                "R3": {
+                  "mean_vector_norm": 0.04358683657964286,
+                  "block_magnitude_mean": 0.08762806114486776,
+                  "block_magnitude_q10": 0.0764374816465863,
+                  "block_magnitude_median": 0.08763605830171553,
+                  "block_magnitude_q90": 0.09980125213047614
+                }
+              },
+              "R1_R3_direction_cosine": -0.40555263850706885
+            }
+          }
+        },
+        "Delta_AGO": {
+          "historical_axis": "intrinsic_agonism",
+          "regions": {
+            "compound110_extension": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.05225890343432749,
+                  "block_magnitude_mean": 0.10757407819705778,
+                  "block_magnitude_q10": 0.09774438867294978,
+                  "block_magnitude_median": 0.1038024716768601,
+                  "block_magnitude_q90": 0.12552211343871972
+                },
+                "R2": {
+                  "mean_vector_norm": 0.06677673297640406,
+                  "block_magnitude_mean": 0.10879357857584052,
+                  "block_magnitude_q10": 0.10245481116203625,
+                  "block_magnitude_median": 0.10924950106160802,
+                  "block_magnitude_q90": 0.11390671863932288
+                },
+                "R3": {
+                  "mean_vector_norm": 0.0901798852063776,
+                  "block_magnitude_mean": 0.1265649818856403,
+                  "block_magnitude_q10": 0.10697622388274802,
+                  "block_magnitude_median": 0.12610827664027108,
+                  "block_magnitude_q90": 0.14644293616633186
+                }
+              },
+              "R1_R3_direction_cosine": 0.4443041612368324
+            },
+            "cooperativity_mutagenesis": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.04189014740385594,
+                  "block_magnitude_mean": 0.07696301662031133,
+                  "block_magnitude_q10": 0.06911516926911944,
+                  "block_magnitude_median": 0.0765629221830287,
+                  "block_magnitude_q90": 0.08395737435505977
+                },
+                "R2": {
+                  "mean_vector_norm": 0.049147242309125067,
+                  "block_magnitude_mean": 0.08180016787889115,
+                  "block_magnitude_q10": 0.07050433821386529,
+                  "block_magnitude_median": 0.08237991927355791,
+                  "block_magnitude_q90": 0.09078906048426529
+                },
+                "R3": {
+                  "mean_vector_norm": 0.06707864282479543,
+                  "block_magnitude_mean": 0.09024898811554855,
+                  "block_magnitude_q10": 0.07001990851762642,
+                  "block_magnitude_median": 0.08726467880938041,
+                  "block_magnitude_q90": 0.11979389895220396
+                }
+              },
+              "R1_R3_direction_cosine": 0.5673906163841766
+            },
+            "distal_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.05181196290202612,
+                  "block_magnitude_mean": 0.10423662540979164,
+                  "block_magnitude_q10": 0.08887695288935332,
+                  "block_magnitude_median": 0.10082905300057754,
+                  "block_magnitude_q90": 0.11837864208136585
+                },
+                "R2": {
+                  "mean_vector_norm": 0.10011368186572217,
+                  "block_magnitude_mean": 0.134563077109974,
+                  "block_magnitude_q10": 0.11053540817375897,
+                  "block_magnitude_median": 0.13057897534509755,
+                  "block_magnitude_q90": 0.17186957546770276
+                },
+                "R3": {
+                  "mean_vector_norm": 0.07737420620230945,
+                  "block_magnitude_mean": 0.12244314968401801,
+                  "block_magnitude_q10": 0.10915988547030353,
+                  "block_magnitude_median": 0.11809792252678616,
+                  "block_magnitude_q90": 0.14557772430616214
+                }
+              },
+              "R1_R3_direction_cosine": -0.4306703860124159
+            },
+            "intracellular_microswitches": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.035158121938130234,
+                  "block_magnitude_mean": 0.06951902925501377,
+                  "block_magnitude_q10": 0.0572886466870279,
+                  "block_magnitude_median": 0.06928077408701774,
+                  "block_magnitude_q90": 0.08060262284870605
+                },
+                "R2": {
+                  "mean_vector_norm": 0.032953517491876055,
+                  "block_magnitude_mean": 0.06666370905922575,
+                  "block_magnitude_q10": 0.05925337235356702,
+                  "block_magnitude_median": 0.06664174554598362,
+                  "block_magnitude_q90": 0.07415871789472513
+                },
+                "R3": {
+                  "mean_vector_norm": 0.044058362592829296,
+                  "block_magnitude_mean": 0.07805850335683487,
+                  "block_magnitude_q10": 0.06742654881964667,
+                  "block_magnitude_median": 0.0757904983320252,
+                  "block_magnitude_q90": 0.09449566804238083
+                }
+              },
+              "R1_R3_direction_cosine": 0.046005090394211086
+            },
+            "orthosteric_activation_core": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.04656894431141007,
+                  "block_magnitude_mean": 0.07614225781033089,
+                  "block_magnitude_q10": 0.059297794407107134,
+                  "block_magnitude_median": 0.0726497572584642,
+                  "block_magnitude_q90": 0.09601690911211634
+                },
+                "R2": {
+                  "mean_vector_norm": 0.0439144162010548,
+                  "block_magnitude_mean": 0.07014582265417173,
+                  "block_magnitude_q10": 0.06168543670599512,
+                  "block_magnitude_median": 0.07081874476853464,
+                  "block_magnitude_q90": 0.07874145913094693
+                },
+                "R3": {
+                  "mean_vector_norm": 0.0409706756452168,
+                  "block_magnitude_mean": 0.06497497549034484,
+                  "block_magnitude_q10": 0.05907283425676111,
+                  "block_magnitude_median": 0.06440008997014801,
+                  "block_magnitude_q90": 0.0724104841075452
+                }
+              },
+              "R1_R3_direction_cosine": 0.38168878532294764
+            },
+            "orthosteric_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.04455910026591413,
+                  "block_magnitude_mean": 0.0750160782131247,
+                  "block_magnitude_q10": 0.05953024564990972,
+                  "block_magnitude_median": 0.0723156482715443,
+                  "block_magnitude_q90": 0.09341563705566672
+                },
+                "R2": {
+                  "mean_vector_norm": 0.04252771923322417,
+                  "block_magnitude_mean": 0.06950297051900332,
+                  "block_magnitude_q10": 0.062172431848047285,
+                  "block_magnitude_median": 0.06958773663995438,
+                  "block_magnitude_q90": 0.0761905749159783
+                },
+                "R3": {
+                  "mean_vector_norm": 0.04018581879396317,
+                  "block_magnitude_mean": 0.06513134808604323,
+                  "block_magnitude_q10": 0.059473695186099164,
+                  "block_magnitude_median": 0.06480468464540792,
+                  "block_magnitude_q90": 0.07027427100849902
+                }
+              },
+              "R1_R3_direction_cosine": 0.36146732597365155
+            },
+            "pam_contact_consensus": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.05599906368679209,
+                  "block_magnitude_mean": 0.09581663399708645,
+                  "block_magnitude_q10": 0.08284157973018301,
+                  "block_magnitude_median": 0.09232647323412549,
+                  "block_magnitude_q90": 0.11453604524847089
+                },
+                "R2": {
+                  "mean_vector_norm": 0.056559174450816575,
+                  "block_magnitude_mean": 0.09134436236607044,
+                  "block_magnitude_q10": 0.0801426726830793,
+                  "block_magnitude_median": 0.0937464894557848,
+                  "block_magnitude_q90": 0.10152828191204578
+                },
+                "R3": {
+                  "mean_vector_norm": 0.08506025210315982,
+                  "block_magnitude_mean": 0.10668508782769912,
+                  "block_magnitude_q10": 0.0842739838646918,
+                  "block_magnitude_median": 0.1086677408230281,
+                  "block_magnitude_q90": 0.12607988621582325
+                }
+              },
+              "R1_R3_direction_cosine": 0.6621198826847894
+            },
+            "pam_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.05374221729624111,
+                  "block_magnitude_mean": 0.08978412830741746,
+                  "block_magnitude_q10": 0.07736157619817398,
+                  "block_magnitude_median": 0.08933608130979168,
+                  "block_magnitude_q90": 0.10081055676494444
+                },
+                "R2": {
+                  "mean_vector_norm": 0.056256979212204676,
+                  "block_magnitude_mean": 0.08741677922852523,
+                  "block_magnitude_q10": 0.0787790932310478,
+                  "block_magnitude_median": 0.08943941508937454,
+                  "block_magnitude_q90": 0.09575432288118595
+                },
+                "R3": {
+                  "mean_vector_norm": 0.08191095607096842,
+                  "block_magnitude_mean": 0.10280416256345651,
+                  "block_magnitude_q10": 0.08016762705913572,
+                  "block_magnitude_median": 0.10393298176777599,
+                  "block_magnitude_q90": 0.12482759552804884
+                }
+              },
+              "R1_R3_direction_cosine": 0.5990788772627026
+            },
+            "stable_core_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.04786757793609098,
+                  "block_magnitude_mean": 0.08483602559964937,
+                  "block_magnitude_q10": 0.07172847109906577,
+                  "block_magnitude_median": 0.08294091345101423,
+                  "block_magnitude_q90": 0.0969104801344366
+                },
+                "R2": {
+                  "mean_vector_norm": 0.05533146199473714,
+                  "block_magnitude_mean": 0.09160074061674964,
+                  "block_magnitude_q10": 0.07629204246612672,
+                  "block_magnitude_median": 0.09371216800129131,
+                  "block_magnitude_q90": 0.10776122791176146
+                },
+                "R3": {
+                  "mean_vector_norm": 0.04555849178491971,
+                  "block_magnitude_mean": 0.08254550414666348,
+                  "block_magnitude_q10": 0.07168808710372414,
+                  "block_magnitude_median": 0.08247154447013788,
+                  "block_magnitude_q90": 0.09062690062044672
+                }
+              },
+              "R1_R3_direction_cosine": -0.31708360493443966
+            }
+          }
+        },
+        "Delta_INT": {
+          "historical_axis": "synergy_interaction",
+          "regions": {
+            "compound110_extension": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.10434798293964347,
+                  "block_magnitude_mean": 0.17155746991491916,
+                  "block_magnitude_q10": 0.1407712316114935,
+                  "block_magnitude_median": 0.17174535549837444,
+                  "block_magnitude_q90": 0.19825327584837063
+                },
+                "R2": {
+                  "mean_vector_norm": 0.08559413848636761,
+                  "block_magnitude_mean": 0.14648334067064903,
+                  "block_magnitude_q10": 0.13377483850763697,
+                  "block_magnitude_median": 0.14567633813595646,
+                  "block_magnitude_q90": 0.16336261744370356
+                },
+                "R3": {
+                  "mean_vector_norm": 0.1049928320460232,
+                  "block_magnitude_mean": 0.16311339009872447,
+                  "block_magnitude_q10": 0.13191172470755252,
+                  "block_magnitude_median": 0.1625613591414546,
+                  "block_magnitude_q90": 0.20788396483229304
+                }
+              },
+              "R1_R3_direction_cosine": 0.634304250027008
+            },
+            "cooperativity_mutagenesis": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.06453090929758246,
+                  "block_magnitude_mean": 0.11388983161181288,
+                  "block_magnitude_q10": 0.0983777716108681,
+                  "block_magnitude_median": 0.11726089032660071,
+                  "block_magnitude_q90": 0.12877460173073546
+                },
+                "R2": {
+                  "mean_vector_norm": 0.06024647634249559,
+                  "block_magnitude_mean": 0.11122719603574667,
+                  "block_magnitude_q10": 0.09439728363382595,
+                  "block_magnitude_median": 0.1127167429017491,
+                  "block_magnitude_q90": 0.12135456663970856
+                },
+                "R3": {
+                  "mean_vector_norm": 0.06484868930311605,
+                  "block_magnitude_mean": 0.10640309162770853,
+                  "block_magnitude_q10": 0.08875489380550347,
+                  "block_magnitude_median": 0.10308101727257281,
+                  "block_magnitude_q90": 0.13317966562192357
+                }
+              },
+              "R1_R3_direction_cosine": 0.23458692250618837
+            },
+            "distal_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.08498489647478093,
+                  "block_magnitude_mean": 0.15961074049645985,
+                  "block_magnitude_q10": 0.1361605511932757,
+                  "block_magnitude_median": 0.1543683198457307,
+                  "block_magnitude_q90": 0.18213101405321008
+                },
+                "R2": {
+                  "mean_vector_norm": 0.1536753561637978,
+                  "block_magnitude_mean": 0.199234191132459,
+                  "block_magnitude_q10": 0.15575332848769965,
+                  "block_magnitude_median": 0.2000416879272387,
+                  "block_magnitude_q90": 0.2328938407228797
+                },
+                "R3": {
+                  "mean_vector_norm": 0.129468522475399,
+                  "block_magnitude_mean": 0.18946244398613135,
+                  "block_magnitude_q10": 0.16220032834463174,
+                  "block_magnitude_median": 0.1860922728054008,
+                  "block_magnitude_q90": 0.2221846589682508
+                }
+              },
+              "R1_R3_direction_cosine": -0.5288840502488982
+            },
+            "intracellular_microswitches": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.041547949114492624,
+                  "block_magnitude_mean": 0.09651711291937734,
+                  "block_magnitude_q10": 0.08884301767385332,
+                  "block_magnitude_median": 0.09405521674579839,
+                  "block_magnitude_q90": 0.1110196298648239
+                },
+                "R2": {
+                  "mean_vector_norm": 0.05140796027430102,
+                  "block_magnitude_mean": 0.1011373955725902,
+                  "block_magnitude_q10": 0.09109422123606337,
+                  "block_magnitude_median": 0.10176511801692002,
+                  "block_magnitude_q90": 0.11278865783283223
+                },
+                "R3": {
+                  "mean_vector_norm": 0.05059157404575615,
+                  "block_magnitude_mean": 0.10337362953558678,
+                  "block_magnitude_q10": 0.08792971025050504,
+                  "block_magnitude_median": 0.10140988689582041,
+                  "block_magnitude_q90": 0.12040566678867258
+                }
+              },
+              "R1_R3_direction_cosine": 0.1796284883819226
+            },
+            "orthosteric_activation_core": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.05840817064359747,
+                  "block_magnitude_mean": 0.10074397316097575,
+                  "block_magnitude_q10": 0.08583207374338214,
+                  "block_magnitude_median": 0.10176216292108801,
+                  "block_magnitude_q90": 0.11361662646187723
+                },
+                "R2": {
+                  "mean_vector_norm": 0.05280239660153393,
+                  "block_magnitude_mean": 0.09241547017121923,
+                  "block_magnitude_q10": 0.08019411278378033,
+                  "block_magnitude_median": 0.0917060563629252,
+                  "block_magnitude_q90": 0.10545902352806392
+                },
+                "R3": {
+                  "mean_vector_norm": 0.03883465394314304,
+                  "block_magnitude_mean": 0.07781166804418788,
+                  "block_magnitude_q10": 0.07189656195761776,
+                  "block_magnitude_median": 0.07567927799385313,
+                  "block_magnitude_q90": 0.08791838464440521
+                }
+              },
+              "R1_R3_direction_cosine": 0.32136153750976076
+            },
+            "orthosteric_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.055423728141601736,
+                  "block_magnitude_mean": 0.09875068171750881,
+                  "block_magnitude_q10": 0.08224705421381466,
+                  "block_magnitude_median": 0.09854745561152815,
+                  "block_magnitude_q90": 0.11128595577370902
+                },
+                "R2": {
+                  "mean_vector_norm": 0.05101336649536677,
+                  "block_magnitude_mean": 0.09130728086586226,
+                  "block_magnitude_q10": 0.07944174160994605,
+                  "block_magnitude_median": 0.08980783375763596,
+                  "block_magnitude_q90": 0.10450905993464832
+                },
+                "R3": {
+                  "mean_vector_norm": 0.037548745329395256,
+                  "block_magnitude_mean": 0.0783275638595746,
+                  "block_magnitude_q10": 0.07246303384227913,
+                  "block_magnitude_median": 0.07600673170415029,
+                  "block_magnitude_q90": 0.08926655762221522
+                }
+              },
+              "R1_R3_direction_cosine": 0.30005579046164943
+            },
+            "pam_contact_consensus": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.07298649734394592,
+                  "block_magnitude_mean": 0.13180320395044753,
+                  "block_magnitude_q10": 0.11178836225242762,
+                  "block_magnitude_median": 0.1319724376265231,
+                  "block_magnitude_q90": 0.1602398116215008
+                },
+                "R2": {
+                  "mean_vector_norm": 0.07121461428594629,
+                  "block_magnitude_mean": 0.12151578553016859,
+                  "block_magnitude_q10": 0.10347390412162799,
+                  "block_magnitude_median": 0.12197145052401204,
+                  "block_magnitude_q90": 0.13915081840870552
+                },
+                "R3": {
+                  "mean_vector_norm": 0.08510743064170519,
+                  "block_magnitude_mean": 0.12540188169581712,
+                  "block_magnitude_q10": 0.10736069631355837,
+                  "block_magnitude_median": 0.12256972010734454,
+                  "block_magnitude_q90": 0.14807555748165543
+                }
+              },
+              "R1_R3_direction_cosine": 0.3751149647188171
+            },
+            "pam_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.06966477625613605,
+                  "block_magnitude_mean": 0.1246295578755264,
+                  "block_magnitude_q10": 0.10639011579479708,
+                  "block_magnitude_median": 0.1267128509123065,
+                  "block_magnitude_q90": 0.14336399474430309
+                },
+                "R2": {
+                  "mean_vector_norm": 0.07138948808664543,
+                  "block_magnitude_mean": 0.11737870513822324,
+                  "block_magnitude_q10": 0.10105376173889886,
+                  "block_magnitude_median": 0.11833460505235313,
+                  "block_magnitude_q90": 0.12843302396082246
+                },
+                "R3": {
+                  "mean_vector_norm": 0.08260574631737885,
+                  "block_magnitude_mean": 0.1214569321056886,
+                  "block_magnitude_q10": 0.10202906979487726,
+                  "block_magnitude_median": 0.11974058222575681,
+                  "block_magnitude_q90": 0.14714045078808438
+                }
+              },
+              "R1_R3_direction_cosine": 0.306023831803733
+            },
+            "stable_core_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.07707560582132551,
+                  "block_magnitude_mean": 0.12425944956938936,
+                  "block_magnitude_q10": 0.10526390579392932,
+                  "block_magnitude_median": 0.12250901675987101,
+                  "block_magnitude_q90": 0.14246667485412137
+                },
+                "R2": {
+                  "mean_vector_norm": 0.07027020281294212,
+                  "block_magnitude_mean": 0.1204224010634807,
+                  "block_magnitude_q10": 0.10944438420022287,
+                  "block_magnitude_median": 0.12249667842743056,
+                  "block_magnitude_q90": 0.13030925776502583
+                },
+                "R3": {
+                  "mean_vector_norm": 0.05133883675381771,
+                  "block_magnitude_mean": 0.11272379056541584,
+                  "block_magnitude_q10": 0.09761105130658594,
+                  "block_magnitude_median": 0.10911517908380196,
+                  "block_magnitude_q90": 0.12545419524782528
+                }
+              },
+              "R1_R3_direction_cosine": -0.3191009725812404
+            }
+          }
+        }
+      }
+    },
+    "SIGNED_DRIFT": {
+      "compound110_reference": {
+        "Delta_PAM": {
+          "historical_axis": "conditional_pam_effect",
+          "regions": {
+            "compound110_extension": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.04518647646238093,
+                  "block_magnitude_mean": 0.2014374965626602,
+                  "block_magnitude_q10": 0.17916433222803962,
+                  "block_magnitude_median": 0.198606884380497,
+                  "block_magnitude_q90": 0.2380047759579553
+                },
+                "R2": {
+                  "mean_vector_norm": 0.042761696998647444,
+                  "block_magnitude_mean": 0.20317584673926542,
+                  "block_magnitude_q10": 0.1832869994077933,
+                  "block_magnitude_median": 0.2044386828355238,
+                  "block_magnitude_q90": 0.22514715488969442
+                },
+                "R3": {
+                  "mean_vector_norm": 0.05362194815112997,
+                  "block_magnitude_mean": 0.19941530833446452,
+                  "block_magnitude_q10": 0.1710310084620698,
+                  "block_magnitude_median": 0.1986436706854505,
+                  "block_magnitude_q90": 0.2226233782026672
+                }
+              },
+              "R1_R3_direction_cosine": -0.14226258352570817
+            },
+            "cooperativity_mutagenesis": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.034524232380299454,
+                  "block_magnitude_mean": 0.15745583667851296,
+                  "block_magnitude_q10": 0.1380198330880431,
+                  "block_magnitude_median": 0.15250602569815572,
+                  "block_magnitude_q90": 0.1741328149651674
+                },
+                "R2": {
+                  "mean_vector_norm": 0.03006482106856276,
+                  "block_magnitude_mean": 0.14748480632922584,
+                  "block_magnitude_q10": 0.13232251937549686,
+                  "block_magnitude_median": 0.14419500219857878,
+                  "block_magnitude_q90": 0.16947916369033306
+                },
+                "R3": {
+                  "mean_vector_norm": 0.040158176001180906,
+                  "block_magnitude_mean": 0.1431856724290444,
+                  "block_magnitude_q10": 0.12605874462736583,
+                  "block_magnitude_median": 0.1394403611690997,
+                  "block_magnitude_q90": 0.17587061395258202
+                }
+              },
+              "R1_R3_direction_cosine": -0.17418705956637595
+            },
+            "distal_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.05012441917384852,
+                  "block_magnitude_mean": 0.20137651169406218,
+                  "block_magnitude_q10": 0.1766662365891285,
+                  "block_magnitude_median": 0.20044423575274295,
+                  "block_magnitude_q90": 0.22627726890404623
+                },
+                "R2": {
+                  "mean_vector_norm": 0.05811295908726463,
+                  "block_magnitude_mean": 0.21138737871058266,
+                  "block_magnitude_q10": 0.18737843616051186,
+                  "block_magnitude_median": 0.20927262043518424,
+                  "block_magnitude_q90": 0.24085514656183418
+                },
+                "R3": {
+                  "mean_vector_norm": 0.04774181369099584,
+                  "block_magnitude_mean": 0.21381920540380267,
+                  "block_magnitude_q10": 0.17524652573154462,
+                  "block_magnitude_median": 0.21465654309615717,
+                  "block_magnitude_q90": 0.2576754020634396
+                }
+              },
+              "R1_R3_direction_cosine": -0.1829639974440083
+            },
+            "intracellular_microswitches": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.029158133411846674,
+                  "block_magnitude_mean": 0.13351070008430027,
+                  "block_magnitude_q10": 0.1176476959577847,
+                  "block_magnitude_median": 0.13075437241274634,
+                  "block_magnitude_q90": 0.15381880004399873
+                },
+                "R2": {
+                  "mean_vector_norm": 0.036484736552168155,
+                  "block_magnitude_mean": 0.14393831429301915,
+                  "block_magnitude_q10": 0.12258134547261727,
+                  "block_magnitude_median": 0.14249144325097512,
+                  "block_magnitude_q90": 0.16699192988200898
+                },
+                "R3": {
+                  "mean_vector_norm": 0.03309132909538994,
+                  "block_magnitude_mean": 0.13696623177836836,
+                  "block_magnitude_q10": 0.11784730726162611,
+                  "block_magnitude_median": 0.1358883005980408,
+                  "block_magnitude_q90": 0.15440026958548725
+                }
+              },
+              "R1_R3_direction_cosine": 0.06281031397425992
+            },
+            "orthosteric_activation_core": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.02563105684251912,
+                  "block_magnitude_mean": 0.12243351787411412,
+                  "block_magnitude_q10": 0.10739403576729364,
+                  "block_magnitude_median": 0.12296743983116382,
+                  "block_magnitude_q90": 0.13692548466304108
+                },
+                "R2": {
+                  "mean_vector_norm": 0.025908266368032177,
+                  "block_magnitude_mean": 0.12322013304359214,
+                  "block_magnitude_q10": 0.1137287079963602,
+                  "block_magnitude_median": 0.12039782205974942,
+                  "block_magnitude_q90": 0.13563088250000982
+                },
+                "R3": {
+                  "mean_vector_norm": 0.028966294661472023,
+                  "block_magnitude_mean": 0.11953830088654431,
+                  "block_magnitude_q10": 0.11028454118343248,
+                  "block_magnitude_median": 0.11665309099607984,
+                  "block_magnitude_q90": 0.1313364338210393
+                }
+              },
+              "R1_R3_direction_cosine": -0.06790353001997994
+            },
+            "orthosteric_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.02617416081132109,
+                  "block_magnitude_mean": 0.1243272380530031,
+                  "block_magnitude_q10": 0.10942648250328013,
+                  "block_magnitude_median": 0.12065934879088094,
+                  "block_magnitude_q90": 0.141128570939294
+                },
+                "R2": {
+                  "mean_vector_norm": 0.02581618740604469,
+                  "block_magnitude_mean": 0.12504633703570073,
+                  "block_magnitude_q10": 0.11529618257133162,
+                  "block_magnitude_median": 0.12257402365020037,
+                  "block_magnitude_q90": 0.13669311379128934
+                },
+                "R3": {
+                  "mean_vector_norm": 0.027409659238863245,
+                  "block_magnitude_mean": 0.12039445675208178,
+                  "block_magnitude_q10": 0.11233505013112384,
+                  "block_magnitude_median": 0.11882483021783034,
+                  "block_magnitude_q90": 0.1333683300509493
+                }
+              },
+              "R1_R3_direction_cosine": -0.010828217960480797
+            },
+            "pam_contact_consensus": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.03723569756708571,
+                  "block_magnitude_mean": 0.16657555096929597,
+                  "block_magnitude_q10": 0.13705949027092296,
+                  "block_magnitude_median": 0.16252503713482772,
+                  "block_magnitude_q90": 0.19459662500578057
+                },
+                "R2": {
+                  "mean_vector_norm": 0.03547390735067728,
+                  "block_magnitude_mean": 0.1604406048851674,
+                  "block_magnitude_q10": 0.13759100152980108,
+                  "block_magnitude_median": 0.15147209111919258,
+                  "block_magnitude_q90": 0.19273246638756458
+                },
+                "R3": {
+                  "mean_vector_norm": 0.048374294800776006,
+                  "block_magnitude_mean": 0.15409113782612816,
+                  "block_magnitude_q10": 0.1349156497069615,
+                  "block_magnitude_median": 0.15073232962401997,
+                  "block_magnitude_q90": 0.18060026752101943
+                }
+              },
+              "R1_R3_direction_cosine": -0.101937674029506
+            },
+            "pam_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.034243929580980444,
+                  "block_magnitude_mean": 0.15912116426230788,
+                  "block_magnitude_q10": 0.13243029021901434,
+                  "block_magnitude_median": 0.1530223452639417,
+                  "block_magnitude_q90": 0.18901957185052362
+                },
+                "R2": {
+                  "mean_vector_norm": 0.032772049387380736,
+                  "block_magnitude_mean": 0.1500582815323914,
+                  "block_magnitude_q10": 0.13231680801335546,
+                  "block_magnitude_median": 0.14208316734933346,
+                  "block_magnitude_q90": 0.17894662137621792
+                },
+                "R3": {
+                  "mean_vector_norm": 0.04719442719972906,
+                  "block_magnitude_mean": 0.14806682189619813,
+                  "block_magnitude_q10": 0.12903981799815326,
+                  "block_magnitude_median": 0.14390835724100093,
+                  "block_magnitude_q90": 0.17543250657274356
+                }
+              },
+              "R1_R3_direction_cosine": 0.01917895267917687
+            },
+            "stable_core_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.04224391862618552,
+                  "block_magnitude_mean": 0.16407085356082188,
+                  "block_magnitude_q10": 0.14930075359597025,
+                  "block_magnitude_median": 0.16141603221891035,
+                  "block_magnitude_q90": 0.17539563102152317
+                },
+                "R2": {
+                  "mean_vector_norm": 0.03679620705991442,
+                  "block_magnitude_mean": 0.16298053004699273,
+                  "block_magnitude_q10": 0.13866889769175963,
+                  "block_magnitude_median": 0.16152063349950896,
+                  "block_magnitude_q90": 0.2000519173193027
+                },
+                "R3": {
+                  "mean_vector_norm": 0.03748012544450108,
+                  "block_magnitude_mean": 0.1681061344345625,
+                  "block_magnitude_q10": 0.15194681889493086,
+                  "block_magnitude_median": 0.1635620849474092,
+                  "block_magnitude_q90": 0.19472861028040817
+                }
+              },
+              "R1_R3_direction_cosine": 0.2928778411125139
+            }
+          }
+        },
+        "Delta_AGO": {
+          "historical_axis": "intrinsic_agonism",
+          "regions": {
+            "compound110_extension": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.05721276167062455,
+                  "block_magnitude_mean": 0.20544588510612583,
+                  "block_magnitude_q10": 0.18005673071065456,
+                  "block_magnitude_median": 0.206465754787779,
+                  "block_magnitude_q90": 0.24088041885257772
+                },
+                "R2": {
+                  "mean_vector_norm": 0.05148836870665762,
+                  "block_magnitude_mean": 0.19872172204579128,
+                  "block_magnitude_q10": 0.17688740723974827,
+                  "block_magnitude_median": 0.19475591750473692,
+                  "block_magnitude_q90": 0.23407610665912001
+                },
+                "R3": {
+                  "mean_vector_norm": 0.06374361176859977,
+                  "block_magnitude_mean": 0.2033008397874124,
+                  "block_magnitude_q10": 0.17730422785461197,
+                  "block_magnitude_median": 0.19781865956627487,
+                  "block_magnitude_q90": 0.23775632383695472
+                }
+              },
+              "R1_R3_direction_cosine": 0.3984924788536965
+            },
+            "cooperativity_mutagenesis": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.0482221279240245,
+                  "block_magnitude_mean": 0.14591083817751613,
+                  "block_magnitude_q10": 0.12285783458241283,
+                  "block_magnitude_median": 0.14497369300617285,
+                  "block_magnitude_q90": 0.16861216106818008
+                },
+                "R2": {
+                  "mean_vector_norm": 0.03145498638977752,
+                  "block_magnitude_mean": 0.14218057091586897,
+                  "block_magnitude_q10": 0.12281182184385882,
+                  "block_magnitude_median": 0.14333315077551378,
+                  "block_magnitude_q90": 0.1576171754708097
+                },
+                "R3": {
+                  "mean_vector_norm": 0.0329255697623725,
+                  "block_magnitude_mean": 0.14405052996653972,
+                  "block_magnitude_q10": 0.13069833851931498,
+                  "block_magnitude_median": 0.13970892677385882,
+                  "block_magnitude_q90": 0.16176132750205463
+                }
+              },
+              "R1_R3_direction_cosine": 0.36657729175005455
+            },
+            "distal_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.042309671098930086,
+                  "block_magnitude_mean": 0.19371105601489072,
+                  "block_magnitude_q10": 0.17287411579595532,
+                  "block_magnitude_median": 0.19394270704435018,
+                  "block_magnitude_q90": 0.21581475948203643
+                },
+                "R2": {
+                  "mean_vector_norm": 0.05160843033616546,
+                  "block_magnitude_mean": 0.19843006851099063,
+                  "block_magnitude_q10": 0.17623150654069272,
+                  "block_magnitude_median": 0.19946636094859266,
+                  "block_magnitude_q90": 0.21850807710723566
+                },
+                "R3": {
+                  "mean_vector_norm": 0.04903473255133224,
+                  "block_magnitude_mean": 0.20623497502140298,
+                  "block_magnitude_q10": 0.17534314100720869,
+                  "block_magnitude_median": 0.20444389486424291,
+                  "block_magnitude_q90": 0.24596270712135515
+                }
+              },
+              "R1_R3_direction_cosine": 0.046295734325931585
+            },
+            "intracellular_microswitches": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.03337664938877647,
+                  "block_magnitude_mean": 0.14007593991496334,
+                  "block_magnitude_q10": 0.12486669484273002,
+                  "block_magnitude_median": 0.13770694941180728,
+                  "block_magnitude_q90": 0.15912467956936793
+                },
+                "R2": {
+                  "mean_vector_norm": 0.04364612591438806,
+                  "block_magnitude_mean": 0.14304832482753205,
+                  "block_magnitude_q10": 0.12905067095244735,
+                  "block_magnitude_median": 0.13946796264897107,
+                  "block_magnitude_q90": 0.16580457636951537
+                },
+                "R3": {
+                  "mean_vector_norm": 0.029963534410254202,
+                  "block_magnitude_mean": 0.14063979304125898,
+                  "block_magnitude_q10": 0.120455147083176,
+                  "block_magnitude_median": 0.13818221173653006,
+                  "block_magnitude_q90": 0.16953486422677208
+                }
+              },
+              "R1_R3_direction_cosine": -0.29774286375442854
+            },
+            "orthosteric_activation_core": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.030629206327115892,
+                  "block_magnitude_mean": 0.13293730000575724,
+                  "block_magnitude_q10": 0.12168696361528117,
+                  "block_magnitude_median": 0.1301556018362598,
+                  "block_magnitude_q90": 0.14932327190822225
+                },
+                "R2": {
+                  "mean_vector_norm": 0.03055262370121986,
+                  "block_magnitude_mean": 0.12858403675924396,
+                  "block_magnitude_q10": 0.10972205226066298,
+                  "block_magnitude_median": 0.1290585377395787,
+                  "block_magnitude_q90": 0.14824475457719385
+                },
+                "R3": {
+                  "mean_vector_norm": 0.0294690654569972,
+                  "block_magnitude_mean": 0.12073223111923259,
+                  "block_magnitude_q10": 0.1068425655537973,
+                  "block_magnitude_median": 0.1206619814702393,
+                  "block_magnitude_q90": 0.13161031686591493
+                }
+              },
+              "R1_R3_direction_cosine": 0.13932964368920456
+            },
+            "orthosteric_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.0304416668741908,
+                  "block_magnitude_mean": 0.13331819436659426,
+                  "block_magnitude_q10": 0.12377171783076753,
+                  "block_magnitude_median": 0.12965732706248706,
+                  "block_magnitude_q90": 0.14761970353624654
+                },
+                "R2": {
+                  "mean_vector_norm": 0.031126175299616626,
+                  "block_magnitude_mean": 0.12828813077146442,
+                  "block_magnitude_q10": 0.11072898176297136,
+                  "block_magnitude_median": 0.12839369758228353,
+                  "block_magnitude_q90": 0.1511408635689603
+                },
+                "R3": {
+                  "mean_vector_norm": 0.03178369823540995,
+                  "block_magnitude_mean": 0.11967041244134809,
+                  "block_magnitude_q10": 0.10983106426677641,
+                  "block_magnitude_median": 0.12013790135536967,
+                  "block_magnitude_q90": 0.13099839230060803
+                }
+              },
+              "R1_R3_direction_cosine": 0.1464561699799842
+            },
+            "pam_contact_consensus": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.05613196702821786,
+                  "block_magnitude_mean": 0.15738320852238757,
+                  "block_magnitude_q10": 0.13269513932899205,
+                  "block_magnitude_median": 0.15760529852377797,
+                  "block_magnitude_q90": 0.1857464351374373
+                },
+                "R2": {
+                  "mean_vector_norm": 0.03559778738034772,
+                  "block_magnitude_mean": 0.15434529073761055,
+                  "block_magnitude_q10": 0.13542075345975768,
+                  "block_magnitude_median": 0.15377776765245,
+                  "block_magnitude_q90": 0.1790368710513699
+                },
+                "R3": {
+                  "mean_vector_norm": 0.03579000806565001,
+                  "block_magnitude_mean": 0.15436215227570707,
+                  "block_magnitude_q10": 0.1335049347762199,
+                  "block_magnitude_median": 0.15333227931686041,
+                  "block_magnitude_q90": 0.17901779883796892
+                }
+              },
+              "R1_R3_direction_cosine": 0.24553489986641738
+            },
+            "pam_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.04899004262517038,
+                  "block_magnitude_mean": 0.14751571731058233,
+                  "block_magnitude_q10": 0.1262822884887719,
+                  "block_magnitude_median": 0.14697329749162025,
+                  "block_magnitude_q90": 0.1727956371249663
+                },
+                "R2": {
+                  "mean_vector_norm": 0.034208779782171,
+                  "block_magnitude_mean": 0.14801430518221984,
+                  "block_magnitude_q10": 0.13350055016960932,
+                  "block_magnitude_median": 0.14575257810838393,
+                  "block_magnitude_q90": 0.16393871505501592
+                },
+                "R3": {
+                  "mean_vector_norm": 0.03276240145295464,
+                  "block_magnitude_mean": 0.14796170843414105,
+                  "block_magnitude_q10": 0.13110728323402318,
+                  "block_magnitude_median": 0.14371278164168005,
+                  "block_magnitude_q90": 0.16653529448568719
+                }
+              },
+              "R1_R3_direction_cosine": -0.014734764961245931
+            },
+            "stable_core_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.038765429766498896,
+                  "block_magnitude_mean": 0.15921944056897014,
+                  "block_magnitude_q10": 0.1442704575080295,
+                  "block_magnitude_median": 0.15578806364109732,
+                  "block_magnitude_q90": 0.1791300725555705
+                },
+                "R2": {
+                  "mean_vector_norm": 0.04119268888915516,
+                  "block_magnitude_mean": 0.16409734827099948,
+                  "block_magnitude_q10": 0.1492069004921355,
+                  "block_magnitude_median": 0.16225850015359228,
+                  "block_magnitude_q90": 0.1778331529606517
+                },
+                "R3": {
+                  "mean_vector_norm": 0.033805092327010074,
+                  "block_magnitude_mean": 0.16271826520489396,
+                  "block_magnitude_q10": 0.14765243162706437,
+                  "block_magnitude_median": 0.1595001478987375,
+                  "block_magnitude_q90": 0.1832043201274653
+                }
+              },
+              "R1_R3_direction_cosine": -0.09914031127575705
+            }
+          }
+        },
+        "Delta_INT": {
+          "historical_axis": "synergy_interaction",
+          "regions": {
+            "compound110_extension": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.08253932148409233,
+                  "block_magnitude_mean": 0.28574702961262743,
+                  "block_magnitude_q10": 0.2536061788053265,
+                  "block_magnitude_median": 0.28734558925060716,
+                  "block_magnitude_q90": 0.31380453039002393
+                },
+                "R2": {
+                  "mean_vector_norm": 0.06116075687103091,
+                  "block_magnitude_mean": 0.28133906674096665,
+                  "block_magnitude_q10": 0.24963843345458755,
+                  "block_magnitude_median": 0.2829933016368471,
+                  "block_magnitude_q90": 0.3005169294234002
+                },
+                "R3": {
+                  "mean_vector_norm": 0.06148670415437872,
+                  "block_magnitude_mean": 0.27538955098561424,
+                  "block_magnitude_q10": 0.2403586172882124,
+                  "block_magnitude_median": 0.2752522336375678,
+                  "block_magnitude_q90": 0.323717602086251
+                }
+              },
+              "R1_R3_direction_cosine": 0.13513002104022717
+            },
+            "cooperativity_mutagenesis": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.05463685507369929,
+                  "block_magnitude_mean": 0.21016414667292538,
+                  "block_magnitude_q10": 0.184844814367776,
+                  "block_magnitude_median": 0.20373528018923293,
+                  "block_magnitude_q90": 0.24807473882624848
+                },
+                "R2": {
+                  "mean_vector_norm": 0.03894261236237058,
+                  "block_magnitude_mean": 0.20259403364136747,
+                  "block_magnitude_q10": 0.18230434490404726,
+                  "block_magnitude_median": 0.20234275148497144,
+                  "block_magnitude_q90": 0.22093503758733385
+                },
+                "R3": {
+                  "mean_vector_norm": 0.04418983146661099,
+                  "block_magnitude_mean": 0.19146422145063258,
+                  "block_magnitude_q10": 0.1744813987501507,
+                  "block_magnitude_median": 0.1845947175194695,
+                  "block_magnitude_q90": 0.2211282434862005
+                }
+              },
+              "R1_R3_direction_cosine": -0.08799443640878496
+            },
+            "distal_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.05946786876548072,
+                  "block_magnitude_mean": 0.2748319135577587,
+                  "block_magnitude_q10": 0.2397784295614063,
+                  "block_magnitude_median": 0.2759009357397668,
+                  "block_magnitude_q90": 0.30414549315519934
+                },
+                "R2": {
+                  "mean_vector_norm": 0.0917033030096862,
+                  "block_magnitude_mean": 0.28644572798705814,
+                  "block_magnitude_q10": 0.2460078049588408,
+                  "block_magnitude_median": 0.27982656621161706,
+                  "block_magnitude_q90": 0.3265210415208443
+                },
+                "R3": {
+                  "mean_vector_norm": 0.07062811237168473,
+                  "block_magnitude_mean": 0.2932070207116489,
+                  "block_magnitude_q10": 0.2574095495369347,
+                  "block_magnitude_median": 0.2858564229868922,
+                  "block_magnitude_q90": 0.3376457740224145
+                }
+              },
+              "R1_R3_direction_cosine": 0.010594629676705917
+            },
+            "intracellular_microswitches": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.04376153892612248,
+                  "block_magnitude_mean": 0.18758186241701216,
+                  "block_magnitude_q10": 0.1698103267396789,
+                  "block_magnitude_median": 0.18055628001281177,
+                  "block_magnitude_q90": 0.2044550185498585
+                },
+                "R2": {
+                  "mean_vector_norm": 0.048060538965886364,
+                  "block_magnitude_mean": 0.20200601696676804,
+                  "block_magnitude_q10": 0.1806351782517983,
+                  "block_magnitude_median": 0.19455549129147068,
+                  "block_magnitude_q90": 0.22830781488381727
+                },
+                "R3": {
+                  "mean_vector_norm": 0.04231682883735305,
+                  "block_magnitude_mean": 0.19822575661700298,
+                  "block_magnitude_q10": 0.17111049617445268,
+                  "block_magnitude_median": 0.19171631872931738,
+                  "block_magnitude_q90": 0.22548185066233561
+                }
+              },
+              "R1_R3_direction_cosine": -0.07270809894647924
+            },
+            "orthosteric_activation_core": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.03670427293696622,
+                  "block_magnitude_mean": 0.17910499066101612,
+                  "block_magnitude_q10": 0.14697408567868894,
+                  "block_magnitude_median": 0.1750226022122135,
+                  "block_magnitude_q90": 0.21499845642128004
+                },
+                "R2": {
+                  "mean_vector_norm": 0.04289067521908294,
+                  "block_magnitude_mean": 0.17582977292831076,
+                  "block_magnitude_q10": 0.1581200418401465,
+                  "block_magnitude_median": 0.1721749392731931,
+                  "block_magnitude_q90": 0.2024158900843733
+                },
+                "R3": {
+                  "mean_vector_norm": 0.03486916239880369,
+                  "block_magnitude_mean": 0.16244712594023206,
+                  "block_magnitude_q10": 0.14412630433127288,
+                  "block_magnitude_median": 0.15987375118385105,
+                  "block_magnitude_q90": 0.17651771363689633
+                }
+              },
+              "R1_R3_direction_cosine": -0.07909854882677012
+            },
+            "orthosteric_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.03811529861067223,
+                  "block_magnitude_mean": 0.18144335746362264,
+                  "block_magnitude_q10": 0.15176753190773737,
+                  "block_magnitude_median": 0.173273971171714,
+                  "block_magnitude_q90": 0.22012417077917526
+                },
+                "R2": {
+                  "mean_vector_norm": 0.044109304005949604,
+                  "block_magnitude_mean": 0.1765240660524306,
+                  "block_magnitude_q10": 0.15911817699418584,
+                  "block_magnitude_median": 0.17084797221382175,
+                  "block_magnitude_q90": 0.19655715080998368
+                },
+                "R3": {
+                  "mean_vector_norm": 0.03659161438147629,
+                  "block_magnitude_mean": 0.16270165623400062,
+                  "block_magnitude_q10": 0.14856674429449088,
+                  "block_magnitude_median": 0.16352313985764216,
+                  "block_magnitude_q90": 0.17458336851427705
+                }
+              },
+              "R1_R3_direction_cosine": -0.029998840879743242
+            },
+            "pam_contact_consensus": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.06810129607506295,
+                  "block_magnitude_mean": 0.228704700340678,
+                  "block_magnitude_q10": 0.20316425137873165,
+                  "block_magnitude_median": 0.21957240976864761,
+                  "block_magnitude_q90": 0.2628546181073754
+                },
+                "R2": {
+                  "mean_vector_norm": 0.04141070882607668,
+                  "block_magnitude_mean": 0.2221393114423949,
+                  "block_magnitude_q10": 0.1967025602157273,
+                  "block_magnitude_median": 0.22142552360692946,
+                  "block_magnitude_q90": 0.2491941504974319
+                },
+                "R3": {
+                  "mean_vector_norm": 0.045994192172777004,
+                  "block_magnitude_mean": 0.20382058743186549,
+                  "block_magnitude_q10": 0.18150553372130496,
+                  "block_magnitude_median": 0.20382058498771016,
+                  "block_magnitude_q90": 0.23122703653783072
+                }
+              },
+              "R1_R3_direction_cosine": -0.27803826886263955
+            },
+            "pam_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.05773965386290065,
+                  "block_magnitude_mean": 0.2169812615626469,
+                  "block_magnitude_q10": 0.18694867386428377,
+                  "block_magnitude_median": 0.21429837038607125,
+                  "block_magnitude_q90": 0.25503525874692534
+                },
+                "R2": {
+                  "mean_vector_norm": 0.041057643972226096,
+                  "block_magnitude_mean": 0.210724622854491,
+                  "block_magnitude_q10": 0.19201782417907676,
+                  "block_magnitude_median": 0.21191175687951697,
+                  "block_magnitude_q90": 0.2306771857692498
+                },
+                "R3": {
+                  "mean_vector_norm": 0.053399730572670875,
+                  "block_magnitude_mean": 0.20017220393118246,
+                  "block_magnitude_q10": 0.18466160143281513,
+                  "block_magnitude_median": 0.19664341751592046,
+                  "block_magnitude_q90": 0.21303939061598412
+                }
+              },
+              "R1_R3_direction_cosine": -0.40114515639418846
+            },
+            "stable_core_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.057862924606773315,
+                  "block_magnitude_mean": 0.22220673999026688,
+                  "block_magnitude_q10": 0.190192649220251,
+                  "block_magnitude_median": 0.22191363322109198,
+                  "block_magnitude_q90": 0.25077391192183046
+                },
+                "R2": {
+                  "mean_vector_norm": 0.04800877246248434,
+                  "block_magnitude_mean": 0.22831008764845726,
+                  "block_magnitude_q10": 0.19188570844961575,
+                  "block_magnitude_median": 0.2239825613708744,
+                  "block_magnitude_q90": 0.2651078344597374
+                },
+                "R3": {
+                  "mean_vector_norm": 0.0523469891067507,
+                  "block_magnitude_mean": 0.22379829282913316,
+                  "block_magnitude_q10": 0.19681646707378617,
+                  "block_magnitude_median": 0.2162004240716817,
+                  "block_magnitude_q90": 0.25573101815147914
+                }
+              },
+              "R1_R3_direction_cosine": 0.13323341427543578
+            }
+          }
+        }
+      },
+      "LY2119620": {
+        "Delta_PAM": {
+          "historical_axis": "conditional_pam_effect",
+          "regions": {
+            "compound110_extension": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.04611802035570514,
+                  "block_magnitude_mean": 0.2094562121734719,
+                  "block_magnitude_q10": 0.18735785818682907,
+                  "block_magnitude_median": 0.20651018916655206,
+                  "block_magnitude_q90": 0.2348453539202268
+                },
+                "R2": {
+                  "mean_vector_norm": 0.04292147198455205,
+                  "block_magnitude_mean": 0.20183170056462374,
+                  "block_magnitude_q10": 0.17883903147858984,
+                  "block_magnitude_median": 0.1976703816280927,
+                  "block_magnitude_q90": 0.22466068345505646
+                },
+                "R3": {
+                  "mean_vector_norm": 0.04397980770280303,
+                  "block_magnitude_mean": 0.20974839000470608,
+                  "block_magnitude_q10": 0.18308580932099527,
+                  "block_magnitude_median": 0.2092285490125696,
+                  "block_magnitude_q90": 0.238487021675457
+                }
+              },
+              "R1_R3_direction_cosine": -0.02145333703261324
+            },
+            "cooperativity_mutagenesis": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.04275757550678846,
+                  "block_magnitude_mean": 0.15114126842416548,
+                  "block_magnitude_q10": 0.13024955644777841,
+                  "block_magnitude_median": 0.14215099014795968,
+                  "block_magnitude_q90": 0.16973671720335848
+                },
+                "R2": {
+                  "mean_vector_norm": 0.035097721574931615,
+                  "block_magnitude_mean": 0.1438948129158362,
+                  "block_magnitude_q10": 0.1285806159043157,
+                  "block_magnitude_median": 0.14055634312334758,
+                  "block_magnitude_q90": 0.15958635974421617
+                },
+                "R3": {
+                  "mean_vector_norm": 0.03779657876885528,
+                  "block_magnitude_mean": 0.1407096240819906,
+                  "block_magnitude_q10": 0.1287480711000276,
+                  "block_magnitude_median": 0.13917917607703556,
+                  "block_magnitude_q90": 0.15676033624164812
+                }
+              },
+              "R1_R3_direction_cosine": -0.20549805951283612
+            },
+            "distal_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.051366538059580316,
+                  "block_magnitude_mean": 0.2008702409725342,
+                  "block_magnitude_q10": 0.17695901745437143,
+                  "block_magnitude_median": 0.19242238575643242,
+                  "block_magnitude_q90": 0.22932961083924247
+                },
+                "R2": {
+                  "mean_vector_norm": 0.038698401857557574,
+                  "block_magnitude_mean": 0.19545182051268978,
+                  "block_magnitude_q10": 0.1756669686128044,
+                  "block_magnitude_median": 0.19848272594167216,
+                  "block_magnitude_q90": 0.21240540570039174
+                },
+                "R3": {
+                  "mean_vector_norm": 0.05885142218464268,
+                  "block_magnitude_mean": 0.2169177010964638,
+                  "block_magnitude_q10": 0.1934953358671997,
+                  "block_magnitude_median": 0.2090436930664522,
+                  "block_magnitude_q90": 0.2474790695107855
+                }
+              },
+              "R1_R3_direction_cosine": -0.4477523115375488
+            },
+            "intracellular_microswitches": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.033750117647540434,
+                  "block_magnitude_mean": 0.13857151520841585,
+                  "block_magnitude_q10": 0.12127937254135984,
+                  "block_magnitude_median": 0.13448005588571016,
+                  "block_magnitude_q90": 0.1615267123993502
+                },
+                "R2": {
+                  "mean_vector_norm": 0.0293374274012645,
+                  "block_magnitude_mean": 0.14071254356709048,
+                  "block_magnitude_q10": 0.12525158533191874,
+                  "block_magnitude_median": 0.14072187357634036,
+                  "block_magnitude_q90": 0.15416952886275373
+                },
+                "R3": {
+                  "mean_vector_norm": 0.0353370974438744,
+                  "block_magnitude_mean": 0.13796299248315205,
+                  "block_magnitude_q10": 0.12029527790911988,
+                  "block_magnitude_median": 0.13342992213999233,
+                  "block_magnitude_q90": 0.1577711027509208
+                }
+              },
+              "R1_R3_direction_cosine": -0.1458971568254707
+            },
+            "orthosteric_activation_core": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.027800470088945886,
+                  "block_magnitude_mean": 0.12197100624049817,
+                  "block_magnitude_q10": 0.10651956257557485,
+                  "block_magnitude_median": 0.12017301553012733,
+                  "block_magnitude_q90": 0.1448917056692835
+                },
+                "R2": {
+                  "mean_vector_norm": 0.031958898332567834,
+                  "block_magnitude_mean": 0.12592034503971744,
+                  "block_magnitude_q10": 0.10834378177314528,
+                  "block_magnitude_median": 0.12488300431854107,
+                  "block_magnitude_q90": 0.1491305433763253
+                },
+                "R3": {
+                  "mean_vector_norm": 0.02443560830089027,
+                  "block_magnitude_mean": 0.1150220886941706,
+                  "block_magnitude_q10": 0.10135454924803212,
+                  "block_magnitude_median": 0.11038087840849797,
+                  "block_magnitude_q90": 0.134220379978626
+                }
+              },
+              "R1_R3_direction_cosine": -0.08486839922975395
+            },
+            "orthosteric_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.02752475438218339,
+                  "block_magnitude_mean": 0.12473739374805311,
+                  "block_magnitude_q10": 0.11052290226174769,
+                  "block_magnitude_median": 0.12330718589986052,
+                  "block_magnitude_q90": 0.14323424978534816
+                },
+                "R2": {
+                  "mean_vector_norm": 0.03139517777104707,
+                  "block_magnitude_mean": 0.12690507674430662,
+                  "block_magnitude_q10": 0.11112131598388837,
+                  "block_magnitude_median": 0.12586444053577883,
+                  "block_magnitude_q90": 0.14729124727250886
+                },
+                "R3": {
+                  "mean_vector_norm": 0.02470646442043242,
+                  "block_magnitude_mean": 0.11627450193568045,
+                  "block_magnitude_q10": 0.10182378308973421,
+                  "block_magnitude_median": 0.11418245950428396,
+                  "block_magnitude_q90": 0.13351628814349759
+                }
+              },
+              "R1_R3_direction_cosine": -0.08425937748728408
+            },
+            "pam_contact_consensus": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.040915277182089704,
+                  "block_magnitude_mean": 0.15589922363445838,
+                  "block_magnitude_q10": 0.13606053912690225,
+                  "block_magnitude_median": 0.14728030290018157,
+                  "block_magnitude_q90": 0.17920222919515405
+                },
+                "R2": {
+                  "mean_vector_norm": 0.04317070679551719,
+                  "block_magnitude_mean": 0.15400002509618063,
+                  "block_magnitude_q10": 0.13583351317539602,
+                  "block_magnitude_median": 0.15004288963002588,
+                  "block_magnitude_q90": 0.17602695339659116
+                },
+                "R3": {
+                  "mean_vector_norm": 0.04049270912996178,
+                  "block_magnitude_mean": 0.15107699471928523,
+                  "block_magnitude_q10": 0.1337469413279158,
+                  "block_magnitude_median": 0.14771038803772657,
+                  "block_magnitude_q90": 0.17511277168650344
+                }
+              },
+              "R1_R3_direction_cosine": -0.12725501212289456
+            },
+            "pam_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.036780294892131256,
+                  "block_magnitude_mean": 0.1501304353724865,
+                  "block_magnitude_q10": 0.1317885826088191,
+                  "block_magnitude_median": 0.14313136924782227,
+                  "block_magnitude_q90": 0.17258138056188202
+                },
+                "R2": {
+                  "mean_vector_norm": 0.03839805389185838,
+                  "block_magnitude_mean": 0.14560350687395124,
+                  "block_magnitude_q10": 0.13041640310832953,
+                  "block_magnitude_median": 0.1434265270563047,
+                  "block_magnitude_q90": 0.16250638730940029
+                },
+                "R3": {
+                  "mean_vector_norm": 0.03826860831690478,
+                  "block_magnitude_mean": 0.14731495839142664,
+                  "block_magnitude_q10": 0.1336512293411418,
+                  "block_magnitude_median": 0.1457120565801479,
+                  "block_magnitude_q90": 0.16798820003494483
+                }
+              },
+              "R1_R3_direction_cosine": -0.02736771962505427
+            },
+            "stable_core_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.0331576724064884,
+                  "block_magnitude_mean": 0.15956181982237808,
+                  "block_magnitude_q10": 0.14373338557636253,
+                  "block_magnitude_median": 0.1558094191540377,
+                  "block_magnitude_q90": 0.17884304198346165
+                },
+                "R2": {
+                  "mean_vector_norm": 0.0476676180130486,
+                  "block_magnitude_mean": 0.16273379087991519,
+                  "block_magnitude_q10": 0.14341825808113448,
+                  "block_magnitude_median": 0.15837784966476492,
+                  "block_magnitude_q90": 0.18542054418708703
+                },
+                "R3": {
+                  "mean_vector_norm": 0.03812571224524358,
+                  "block_magnitude_mean": 0.16496482361091433,
+                  "block_magnitude_q10": 0.13849530964913442,
+                  "block_magnitude_median": 0.16782195459511062,
+                  "block_magnitude_q90": 0.19237842782986736
+                }
+              },
+              "R1_R3_direction_cosine": 0.04602806617584829
+            }
+          }
+        },
+        "Delta_AGO": {
+          "historical_axis": "intrinsic_agonism",
+          "regions": {
+            "compound110_extension": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.052016005076889874,
+                  "block_magnitude_mean": 0.20197401863277298,
+                  "block_magnitude_q10": 0.17140659896781976,
+                  "block_magnitude_median": 0.19243361642816312,
+                  "block_magnitude_q90": 0.23125430941377134
+                },
+                "R2": {
+                  "mean_vector_norm": 0.048375097409123435,
+                  "block_magnitude_mean": 0.19606215215853545,
+                  "block_magnitude_q10": 0.16910694602937426,
+                  "block_magnitude_median": 0.192267657610809,
+                  "block_magnitude_q90": 0.22640276053543795
+                },
+                "R3": {
+                  "mean_vector_norm": 0.05789631756614998,
+                  "block_magnitude_mean": 0.20601951515645095,
+                  "block_magnitude_q10": 0.181867900703666,
+                  "block_magnitude_median": 0.207288502646618,
+                  "block_magnitude_q90": 0.23924937303756638
+                }
+              },
+              "R1_R3_direction_cosine": 0.4006931436091439
+            },
+            "cooperativity_mutagenesis": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.050733598415656486,
+                  "block_magnitude_mean": 0.15401037393160522,
+                  "block_magnitude_q10": 0.13356100235094157,
+                  "block_magnitude_median": 0.14683734798899245,
+                  "block_magnitude_q90": 0.18382394538341712
+                },
+                "R2": {
+                  "mean_vector_norm": 0.03507697170266007,
+                  "block_magnitude_mean": 0.14338038980205534,
+                  "block_magnitude_q10": 0.11914878889892626,
+                  "block_magnitude_median": 0.1420266650954848,
+                  "block_magnitude_q90": 0.16407558988449233
+                },
+                "R3": {
+                  "mean_vector_norm": 0.05069152037661775,
+                  "block_magnitude_mean": 0.14847070413763586,
+                  "block_magnitude_q10": 0.123102362749179,
+                  "block_magnitude_median": 0.14342440271705903,
+                  "block_magnitude_q90": 0.17597591286653394
+                }
+              },
+              "R1_R3_direction_cosine": 0.5324053965560546
+            },
+            "distal_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.047078004474350975,
+                  "block_magnitude_mean": 0.20468899924068448,
+                  "block_magnitude_q10": 0.17966186482632998,
+                  "block_magnitude_median": 0.1941472435930988,
+                  "block_magnitude_q90": 0.24178494793566063
+                },
+                "R2": {
+                  "mean_vector_norm": 0.061754566237130236,
+                  "block_magnitude_mean": 0.19910978487772046,
+                  "block_magnitude_q10": 0.168601703292737,
+                  "block_magnitude_median": 0.20112965416912582,
+                  "block_magnitude_q90": 0.22249991298880936
+                },
+                "R3": {
+                  "mean_vector_norm": 0.05024043694820665,
+                  "block_magnitude_mean": 0.21319330811169074,
+                  "block_magnitude_q10": 0.1871993493085632,
+                  "block_magnitude_median": 0.21318088568665697,
+                  "block_magnitude_q90": 0.24108078442004371
+                }
+              },
+              "R1_R3_direction_cosine": 0.18142710800590475
+            },
+            "intracellular_microswitches": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.0290373318656741,
+                  "block_magnitude_mean": 0.13929808457364437,
+                  "block_magnitude_q10": 0.12214796948964023,
+                  "block_magnitude_median": 0.14035883686447378,
+                  "block_magnitude_q90": 0.156375493841958
+                },
+                "R2": {
+                  "mean_vector_norm": 0.04544409476039587,
+                  "block_magnitude_mean": 0.1400546795782566,
+                  "block_magnitude_q10": 0.12219580523179302,
+                  "block_magnitude_median": 0.14108635828917065,
+                  "block_magnitude_q90": 0.16009129670149466
+                },
+                "R3": {
+                  "mean_vector_norm": 0.03718851091980869,
+                  "block_magnitude_mean": 0.14794690050536174,
+                  "block_magnitude_q10": 0.12293972312728471,
+                  "block_magnitude_median": 0.14591349786490748,
+                  "block_magnitude_q90": 0.17591505556330278
+                }
+              },
+              "R1_R3_direction_cosine": -0.25307224977453735
+            },
+            "orthosteric_activation_core": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.02773668571187303,
+                  "block_magnitude_mean": 0.12535802625044856,
+                  "block_magnitude_q10": 0.11044187552743032,
+                  "block_magnitude_median": 0.12890712915451374,
+                  "block_magnitude_q90": 0.14289932926256008
+                },
+                "R2": {
+                  "mean_vector_norm": 0.02576009422902117,
+                  "block_magnitude_mean": 0.12323046078575879,
+                  "block_magnitude_q10": 0.11150864168487824,
+                  "block_magnitude_median": 0.1207903368535353,
+                  "block_magnitude_q90": 0.14129652370089538
+                },
+                "R3": {
+                  "mean_vector_norm": 0.030933518118066994,
+                  "block_magnitude_mean": 0.12523170961036784,
+                  "block_magnitude_q10": 0.10789424585259817,
+                  "block_magnitude_median": 0.1207108091872048,
+                  "block_magnitude_q90": 0.1497233395036432
+                }
+              },
+              "R1_R3_direction_cosine": 0.30605028671652335
+            },
+            "orthosteric_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.028663337865829943,
+                  "block_magnitude_mean": 0.1266387325305567,
+                  "block_magnitude_q10": 0.10943281595051524,
+                  "block_magnitude_median": 0.12792171682485415,
+                  "block_magnitude_q90": 0.14466968944762099
+                },
+                "R2": {
+                  "mean_vector_norm": 0.02626752796656629,
+                  "block_magnitude_mean": 0.12256315794686079,
+                  "block_magnitude_q10": 0.1093005985479221,
+                  "block_magnitude_median": 0.1199296087520817,
+                  "block_magnitude_q90": 0.1392884424008428
+                },
+                "R3": {
+                  "mean_vector_norm": 0.031139291048678908,
+                  "block_magnitude_mean": 0.1271015756031119,
+                  "block_magnitude_q10": 0.11161982450149373,
+                  "block_magnitude_median": 0.12073846481023733,
+                  "block_magnitude_q90": 0.14798785005547677
+                }
+              },
+              "R1_R3_direction_cosine": 0.3143324959159641
+            },
+            "pam_contact_consensus": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.05299422828656536,
+                  "block_magnitude_mean": 0.16459725081484636,
+                  "block_magnitude_q10": 0.14006602507702787,
+                  "block_magnitude_median": 0.1583249511846782,
+                  "block_magnitude_q90": 0.19292715882493858
+                },
+                "R2": {
+                  "mean_vector_norm": 0.03571630716287374,
+                  "block_magnitude_mean": 0.15396164861397743,
+                  "block_magnitude_q10": 0.12459168997289513,
+                  "block_magnitude_median": 0.14984438077702972,
+                  "block_magnitude_q90": 0.18584122856031926
+                },
+                "R3": {
+                  "mean_vector_norm": 0.06135535481311758,
+                  "block_magnitude_mean": 0.16062967714376006,
+                  "block_magnitude_q10": 0.13362816757501278,
+                  "block_magnitude_median": 0.15502358838485703,
+                  "block_magnitude_q90": 0.19664377326540847
+                }
+              },
+              "R1_R3_direction_cosine": 0.6306711902937797
+            },
+            "pam_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.0463592202046687,
+                  "block_magnitude_mean": 0.15014408160723897,
+                  "block_magnitude_q10": 0.1327941308873479,
+                  "block_magnitude_median": 0.1425276872146123,
+                  "block_magnitude_q90": 0.1724957806553387
+                },
+                "R2": {
+                  "mean_vector_norm": 0.03485745847069392,
+                  "block_magnitude_mean": 0.14615964627867334,
+                  "block_magnitude_q10": 0.12398407675774031,
+                  "block_magnitude_median": 0.14101606380109516,
+                  "block_magnitude_q90": 0.17526322997483473
+                },
+                "R3": {
+                  "mean_vector_norm": 0.05712643525582459,
+                  "block_magnitude_mean": 0.1521634233860225,
+                  "block_magnitude_q10": 0.13251946878937335,
+                  "block_magnitude_median": 0.14819486487129077,
+                  "block_magnitude_q90": 0.18693096895243316
+                }
+              },
+              "R1_R3_direction_cosine": 0.600869004558895
+            },
+            "stable_core_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.046899800649103575,
+                  "block_magnitude_mean": 0.156272461968591,
+                  "block_magnitude_q10": 0.1410898427878231,
+                  "block_magnitude_median": 0.15740723261171335,
+                  "block_magnitude_q90": 0.1697002669280976
+                },
+                "R2": {
+                  "mean_vector_norm": 0.03856216469267992,
+                  "block_magnitude_mean": 0.15997128745623163,
+                  "block_magnitude_q10": 0.12909421399146118,
+                  "block_magnitude_median": 0.15892370024197097,
+                  "block_magnitude_q90": 0.19235628353977824
+                },
+                "R3": {
+                  "mean_vector_norm": 0.033870048933907416,
+                  "block_magnitude_mean": 0.1599509710206763,
+                  "block_magnitude_q10": 0.14921112519900162,
+                  "block_magnitude_median": 0.15681622228145853,
+                  "block_magnitude_q90": 0.1766324803587196
+                }
+              },
+              "R1_R3_direction_cosine": -0.14471831400704901
+            }
+          }
+        },
+        "Delta_INT": {
+          "historical_axis": "synergy_interaction",
+          "regions": {
+            "compound110_extension": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.07831338320477643,
+                  "block_magnitude_mean": 0.29892128614886515,
+                  "block_magnitude_q10": 0.26524882565268715,
+                  "block_magnitude_median": 0.29741811544021013,
+                  "block_magnitude_q90": 0.3370893371206053
+                },
+                "R2": {
+                  "mean_vector_norm": 0.058526262929699396,
+                  "block_magnitude_mean": 0.27711581836232657,
+                  "block_magnitude_q10": 0.255821752672366,
+                  "block_magnitude_median": 0.2766742699878778,
+                  "block_magnitude_q90": 0.30266475662565917
+                },
+                "R3": {
+                  "mean_vector_norm": 0.07236764930305498,
+                  "block_magnitude_mean": 0.2937820884411699,
+                  "block_magnitude_q10": 0.24611106065641766,
+                  "block_magnitude_median": 0.2897304157737296,
+                  "block_magnitude_q90": 0.3460025806995027
+                }
+              },
+              "R1_R3_direction_cosine": 0.32001085157951664
+            },
+            "cooperativity_mutagenesis": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.04713326479867627,
+                  "block_magnitude_mean": 0.20989791074061737,
+                  "block_magnitude_q10": 0.19157911430083077,
+                  "block_magnitude_median": 0.20446094986279717,
+                  "block_magnitude_q90": 0.23769876635708237
+                },
+                "R2": {
+                  "mean_vector_norm": 0.0527535284227773,
+                  "block_magnitude_mean": 0.20020905038085726,
+                  "block_magnitude_q10": 0.17516725977631592,
+                  "block_magnitude_median": 0.1994722693506788,
+                  "block_magnitude_q90": 0.2311364984920325
+                },
+                "R3": {
+                  "mean_vector_norm": 0.05710760344078517,
+                  "block_magnitude_mean": 0.2005100583252318,
+                  "block_magnitude_q10": 0.17771809251232226,
+                  "block_magnitude_median": 0.202355431096082,
+                  "block_magnitude_q90": 0.23131619817856836
+                }
+              },
+              "R1_R3_direction_cosine": 0.15476676699190994
+            },
+            "distal_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.06044946929970003,
+                  "block_magnitude_mean": 0.2905404420257339,
+                  "block_magnitude_q10": 0.25898179250748277,
+                  "block_magnitude_median": 0.2906896840733947,
+                  "block_magnitude_q90": 0.3260069983065481
+                },
+                "R2": {
+                  "mean_vector_norm": 0.07645916462628194,
+                  "block_magnitude_mean": 0.27953815363764767,
+                  "block_magnitude_q10": 0.2515952278002487,
+                  "block_magnitude_median": 0.27812608739964084,
+                  "block_magnitude_q90": 0.3045263450878244
+                },
+                "R3": {
+                  "mean_vector_norm": 0.08806542234389582,
+                  "block_magnitude_mean": 0.300256976849199,
+                  "block_magnitude_q10": 0.2656307745409885,
+                  "block_magnitude_median": 0.2988149361220457,
+                  "block_magnitude_q90": 0.3485264947093682
+                }
+              },
+              "R1_R3_direction_cosine": -0.11069105704227078
+            },
+            "intracellular_microswitches": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.0439134679460199,
+                  "block_magnitude_mean": 0.19586166836235736,
+                  "block_magnitude_q10": 0.1810876698010768,
+                  "block_magnitude_median": 0.1942569606601916,
+                  "block_magnitude_q90": 0.21154293713714503
+                },
+                "R2": {
+                  "mean_vector_norm": 0.044281575142102035,
+                  "block_magnitude_mean": 0.19699864595388872,
+                  "block_magnitude_q10": 0.17716529149558777,
+                  "block_magnitude_median": 0.1928010025729759,
+                  "block_magnitude_q90": 0.22080718149707776
+                },
+                "R3": {
+                  "mean_vector_norm": 0.05500522077219562,
+                  "block_magnitude_mean": 0.20075845130317496,
+                  "block_magnitude_q10": 0.17377677027576313,
+                  "block_magnitude_median": 0.19742320764350105,
+                  "block_magnitude_q90": 0.2330373043141277
+                }
+              },
+              "R1_R3_direction_cosine": -0.18070001424508303
+            },
+            "orthosteric_activation_core": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.03960359363574519,
+                  "block_magnitude_mean": 0.17004955521636222,
+                  "block_magnitude_q10": 0.15067679756207916,
+                  "block_magnitude_median": 0.16989399350537937,
+                  "block_magnitude_q90": 0.1888552061979337
+                },
+                "R2": {
+                  "mean_vector_norm": 0.04270026008730045,
+                  "block_magnitude_mean": 0.17573784875384205,
+                  "block_magnitude_q10": 0.15039303725511186,
+                  "block_magnitude_median": 0.17364688516575666,
+                  "block_magnitude_q90": 0.19952003017035427
+                },
+                "R3": {
+                  "mean_vector_norm": 0.0436735027691676,
+                  "block_magnitude_mean": 0.16863829403875433,
+                  "block_magnitude_q10": 0.1439130770729221,
+                  "block_magnitude_median": 0.15901035760749616,
+                  "block_magnitude_q90": 0.2024870121818293
+                }
+              },
+              "R1_R3_direction_cosine": 0.1592557806918595
+            },
+            "orthosteric_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.0403409720800812,
+                  "block_magnitude_mean": 0.17435463964072118,
+                  "block_magnitude_q10": 0.15587919291462857,
+                  "block_magnitude_median": 0.17436447000056482,
+                  "block_magnitude_q90": 0.19199431305567094
+                },
+                "R2": {
+                  "mean_vector_norm": 0.04438132527387026,
+                  "block_magnitude_mean": 0.17663962315130144,
+                  "block_magnitude_q10": 0.1546394379692009,
+                  "block_magnitude_median": 0.17509481326952775,
+                  "block_magnitude_q90": 0.20301295651388196
+                },
+                "R3": {
+                  "mean_vector_norm": 0.04362727204918068,
+                  "block_magnitude_mean": 0.17051353925626164,
+                  "block_magnitude_q10": 0.14890102068519875,
+                  "block_magnitude_median": 0.1617296335265948,
+                  "block_magnitude_q90": 0.19747155515315953
+                }
+              },
+              "R1_R3_direction_cosine": 0.19160350297309395
+            },
+            "pam_contact_consensus": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.051518339924147775,
+                  "block_magnitude_mean": 0.22244506895877175,
+                  "block_magnitude_q10": 0.19898065796468156,
+                  "block_magnitude_median": 0.22283013297706938,
+                  "block_magnitude_q90": 0.244280456341911
+                },
+                "R2": {
+                  "mean_vector_norm": 0.05556069440820676,
+                  "block_magnitude_mean": 0.21162486491917515,
+                  "block_magnitude_q10": 0.17899150726124077,
+                  "block_magnitude_median": 0.2118740264943154,
+                  "block_magnitude_q90": 0.2431632321190317
+                },
+                "R3": {
+                  "mean_vector_norm": 0.06130502547666591,
+                  "block_magnitude_mean": 0.21514618026873925,
+                  "block_magnitude_q10": 0.19069886587462553,
+                  "block_magnitude_median": 0.211911462143689,
+                  "block_magnitude_q90": 0.24160891567583295
+                }
+              },
+              "R1_R3_direction_cosine": 0.29177562960141856
+            },
+            "pam_contact_union": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.04816002607789832,
+                  "block_magnitude_mean": 0.20721921945721672,
+                  "block_magnitude_q10": 0.18861114703482731,
+                  "block_magnitude_median": 0.2065893858454779,
+                  "block_magnitude_q90": 0.2221777937522591
+                },
+                "R2": {
+                  "mean_vector_norm": 0.0484051624053202,
+                  "block_magnitude_mean": 0.1999500708307884,
+                  "block_magnitude_q10": 0.17615333193717242,
+                  "block_magnitude_median": 0.1949677715331185,
+                  "block_magnitude_q90": 0.22871821693510616
+                },
+                "R3": {
+                  "mean_vector_norm": 0.05386433489630103,
+                  "block_magnitude_mean": 0.20687334218525194,
+                  "block_magnitude_q10": 0.18401820856753395,
+                  "block_magnitude_median": 0.20309841394083272,
+                  "block_magnitude_q90": 0.23074573186324696
+                }
+              },
+              "R1_R3_direction_cosine": 0.24222466738666776
+            },
+            "stable_core_control": {
+              "replicas": {
+                "R1": {
+                  "mean_vector_norm": 0.06385368117685006,
+                  "block_magnitude_mean": 0.21951789507651592,
+                  "block_magnitude_q10": 0.19297068383412253,
+                  "block_magnitude_median": 0.22311495611924087,
+                  "block_magnitude_q90": 0.24104541583716
+                },
+                "R2": {
+                  "mean_vector_norm": 0.05123167248904502,
+                  "block_magnitude_mean": 0.22764201120825073,
+                  "block_magnitude_q10": 0.19937072317697768,
+                  "block_magnitude_median": 0.2203409219545153,
+                  "block_magnitude_q90": 0.2638240243372971
+                },
+                "R3": {
+                  "mean_vector_norm": 0.048942739880749465,
+                  "block_magnitude_mean": 0.22121370316202754,
+                  "block_magnitude_q10": 0.18902597154381742,
+                  "block_magnitude_median": 0.22195198027005622,
+                  "block_magnitude_q90": 0.2562049921535506
+                }
+              },
+              "R1_R3_direction_cosine": 0.06615287047266112
+            }
+          }
+        }
+      }
+    }
+  },
+  "LY_vs_compound110_descriptive_comparison": {
+    "STATE_MOTION": {
+      "Delta_PAM": {
+        "compound110_extension": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.8679285190973054,
+              "LY_mean_vector_norm": 0.07632849365472794,
+              "compound110_mean_vector_norm": 0.07114751636981964,
+              "magnitude_ratio_LY_over_compound110": 1.072820212837479
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": -0.15651214206844682,
+              "LY_mean_vector_norm": 0.060651745647192,
+              "compound110_mean_vector_norm": 0.07008027285337448,
+              "magnitude_ratio_LY_over_compound110": 0.8654610374318986
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.033668840758633654,
+              "LY_mean_vector_norm": 0.037210311740636826,
+              "compound110_mean_vector_norm": 0.059061866253614426,
+              "magnitude_ratio_LY_over_compound110": 0.6300226203630952
+            }
+          }
+        },
+        "cooperativity_mutagenesis": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.6079025502677854,
+              "LY_mean_vector_norm": 0.05742097273468971,
+              "compound110_mean_vector_norm": 0.04570517688989639,
+              "magnitude_ratio_LY_over_compound110": 1.2563341100947192
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.3982699779792248,
+              "LY_mean_vector_norm": 0.036275073885917664,
+              "compound110_mean_vector_norm": 0.03415582329034805,
+              "magnitude_ratio_LY_over_compound110": 1.0620465382302315
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.6390908746333746,
+              "LY_mean_vector_norm": 0.03927993401885033,
+              "compound110_mean_vector_norm": 0.06573756039142609,
+              "magnitude_ratio_LY_over_compound110": 0.5975264945179418
+            }
+          }
+        },
+        "distal_control": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.09647591207374928,
+              "LY_mean_vector_norm": 0.0676165446639061,
+              "compound110_mean_vector_norm": 0.04256011173129082,
+              "magnitude_ratio_LY_over_compound110": 1.5887304312266037
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.7073680560062956,
+              "LY_mean_vector_norm": 0.06770201772451401,
+              "compound110_mean_vector_norm": 0.07140938937664032,
+              "magnitude_ratio_LY_over_compound110": 0.9480828545869197
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.6903458161126649,
+              "LY_mean_vector_norm": 0.08835122734308243,
+              "compound110_mean_vector_norm": 0.05064403638243675,
+              "magnitude_ratio_LY_over_compound110": 1.7445534292705478
+            }
+          }
+        },
+        "intracellular_microswitches": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.7052817021902786,
+              "LY_mean_vector_norm": 0.04654697701334953,
+              "compound110_mean_vector_norm": 0.04208196699619293,
+              "magnitude_ratio_LY_over_compound110": 1.1061026928128275
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.41270918729203016,
+              "LY_mean_vector_norm": 0.03586152195930481,
+              "compound110_mean_vector_norm": 0.04961159825325012,
+              "magnitude_ratio_LY_over_compound110": 0.722845528504123
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.38773454379560773,
+              "LY_mean_vector_norm": 0.04186916723847389,
+              "compound110_mean_vector_norm": 0.043997958302497864,
+              "magnitude_ratio_LY_over_compound110": 0.9516161397902158
+            }
+          }
+        },
+        "orthosteric_activation_core": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.7179159667572946,
+              "LY_mean_vector_norm": 0.038618579506874084,
+              "compound110_mean_vector_norm": 0.032031312584877014,
+              "magnitude_ratio_LY_over_compound110": 1.2056508581889063
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.5268120456361624,
+              "LY_mean_vector_norm": 0.03273715451359749,
+              "compound110_mean_vector_norm": 0.02739434689283371,
+              "magnitude_ratio_LY_over_compound110": 1.1950332176804495
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.4171289928978669,
+              "LY_mean_vector_norm": 0.017361652106046677,
+              "compound110_mean_vector_norm": 0.032506853342056274,
+              "magnitude_ratio_LY_over_compound110": 0.5340920550924182
+            }
+          }
+        },
+        "orthosteric_contact_union": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.7097034277395947,
+              "LY_mean_vector_norm": 0.03711862489581108,
+              "compound110_mean_vector_norm": 0.03140106052160263,
+              "magnitude_ratio_LY_over_compound110": 1.1820818876571064
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.5260499221248521,
+              "LY_mean_vector_norm": 0.031236784532666206,
+              "compound110_mean_vector_norm": 0.026433276012539864,
+              "magnitude_ratio_LY_over_compound110": 1.1817220278654668
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.4198163413510931,
+              "LY_mean_vector_norm": 0.018571367487311363,
+              "compound110_mean_vector_norm": 0.03167416900396347,
+              "magnitude_ratio_LY_over_compound110": 0.5863253266403763
+            }
+          }
+        },
+        "pam_contact_consensus": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.5646699298622831,
+              "LY_mean_vector_norm": 0.05416705831885338,
+              "compound110_mean_vector_norm": 0.04798008129000664,
+              "magnitude_ratio_LY_over_compound110": 1.1289488650811306
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.4701627793005413,
+              "LY_mean_vector_norm": 0.05038197338581085,
+              "compound110_mean_vector_norm": 0.04254676401615143,
+              "magnitude_ratio_LY_over_compound110": 1.18415523602888
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.5635267096585728,
+              "LY_mean_vector_norm": 0.03828314319252968,
+              "compound110_mean_vector_norm": 0.07188885658979416,
+              "magnitude_ratio_LY_over_compound110": 0.5325323702250206
+            }
+          }
+        },
+        "pam_contact_union": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.5896012159137448,
+              "LY_mean_vector_norm": 0.047753676772117615,
+              "compound110_mean_vector_norm": 0.046104855835437775,
+              "magnitude_ratio_LY_over_compound110": 1.0357624138890051
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.47871598298502127,
+              "LY_mean_vector_norm": 0.048269037157297134,
+              "compound110_mean_vector_norm": 0.04328550398349762,
+              "magnitude_ratio_LY_over_compound110": 1.1151316887912281
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.49750569359910457,
+              "LY_mean_vector_norm": 0.03447810560464859,
+              "compound110_mean_vector_norm": 0.06497267633676529,
+              "magnitude_ratio_LY_over_compound110": 0.5306554623968736
+            }
+          }
+        },
+        "stable_core_control": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.25962519472590073,
+              "LY_mean_vector_norm": 0.04571867361664772,
+              "compound110_mean_vector_norm": 0.031093552708625793,
+              "magnitude_ratio_LY_over_compound110": 1.4703586317418373
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.42961106091778817,
+              "LY_mean_vector_norm": 0.03312048688530922,
+              "compound110_mean_vector_norm": 0.03633224591612816,
+              "magnitude_ratio_LY_over_compound110": 0.9116003167480154
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.4243373880325162,
+              "LY_mean_vector_norm": 0.04358683526515961,
+              "compound110_mean_vector_norm": 0.04004185274243355,
+              "magnitude_ratio_LY_over_compound110": 1.0885319304660779
+            }
+          }
+        }
+      },
+      "Delta_AGO": {
+        "compound110_extension": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.5005360677309783,
+              "LY_mean_vector_norm": 0.05225890502333641,
+              "compound110_mean_vector_norm": 0.0796864852309227,
+              "magnitude_ratio_LY_over_compound110": 0.655806375094796
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.43448121558750685,
+              "LY_mean_vector_norm": 0.06677673012018204,
+              "compound110_mean_vector_norm": 0.04752779006958008,
+              "magnitude_ratio_LY_over_compound110": 1.4050038939833254
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.844397910005927,
+              "LY_mean_vector_norm": 0.09017988294363022,
+              "compound110_mean_vector_norm": 0.12893538177013397,
+              "magnitude_ratio_LY_over_compound110": 0.6994192106585835
+            }
+          }
+        },
+        "cooperativity_mutagenesis": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.6828955714679288,
+              "LY_mean_vector_norm": 0.04189014807343483,
+              "compound110_mean_vector_norm": 0.05904332920908928,
+              "magnitude_ratio_LY_over_compound110": 0.7094814712275093
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.4424768315716683,
+              "LY_mean_vector_norm": 0.049147240817546844,
+              "compound110_mean_vector_norm": 0.059794921427965164,
+              "magnitude_ratio_LY_over_compound110": 0.8219300175309109
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.43796061117747104,
+              "LY_mean_vector_norm": 0.06707864254713058,
+              "compound110_mean_vector_norm": 0.05733675882220268,
+              "magnitude_ratio_LY_over_compound110": 1.1699064252155726
+            }
+          }
+        },
+        "distal_control": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.3930070720883384,
+              "LY_mean_vector_norm": 0.05181196331977844,
+              "compound110_mean_vector_norm": 0.07337546348571777,
+              "magnitude_ratio_LY_over_compound110": 0.7061211045005995
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.786679865635789,
+              "LY_mean_vector_norm": 0.10011368244886398,
+              "compound110_mean_vector_norm": 0.06631428748369217,
+              "magnitude_ratio_LY_over_compound110": 1.509684960024394
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.9034720455824056,
+              "LY_mean_vector_norm": 0.07737420499324799,
+              "compound110_mean_vector_norm": 0.08641014248132706,
+              "magnitude_ratio_LY_over_compound110": 0.8954296656780574
+            }
+          }
+        },
+        "intracellular_microswitches": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.3618870868235401,
+              "LY_mean_vector_norm": 0.03515812009572983,
+              "compound110_mean_vector_norm": 0.04272980988025665,
+              "magnitude_ratio_LY_over_compound110": 0.8228007612075678
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.5392556757079285,
+              "LY_mean_vector_norm": 0.032953519374132156,
+              "compound110_mean_vector_norm": 0.050582028925418854,
+              "magnitude_ratio_LY_over_compound110": 0.6514867053419463
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.5696127875764903,
+              "LY_mean_vector_norm": 0.044058363884687424,
+              "compound110_mean_vector_norm": 0.06878985464572906,
+              "magnitude_ratio_LY_over_compound110": 0.6404776418207312
+            }
+          }
+        },
+        "orthosteric_activation_core": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.7046612420605858,
+              "LY_mean_vector_norm": 0.04656894505023956,
+              "compound110_mean_vector_norm": 0.06407510489225388,
+              "magnitude_ratio_LY_over_compound110": 0.726786871883363
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.846149615609204,
+              "LY_mean_vector_norm": 0.04391441494226456,
+              "compound110_mean_vector_norm": 0.0424840934574604,
+              "magnitude_ratio_LY_over_compound110": 1.0336672238572384
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.4730715692756211,
+              "LY_mean_vector_norm": 0.04097067564725876,
+              "compound110_mean_vector_norm": 0.05423107370734215,
+              "magnitude_ratio_LY_over_compound110": 0.7554833944162144
+            }
+          }
+        },
+        "orthosteric_contact_union": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.7059603524786641,
+              "LY_mean_vector_norm": 0.04455910250544548,
+              "compound110_mean_vector_norm": 0.06038660928606987,
+              "magnitude_ratio_LY_over_compound110": 0.7378970773860701
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.8422815093226563,
+              "LY_mean_vector_norm": 0.04252772033214569,
+              "compound110_mean_vector_norm": 0.04262721911072731,
+              "magnitude_ratio_LY_over_compound110": 0.9976658393238563
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.4338423760037558,
+              "LY_mean_vector_norm": 0.04018582031130791,
+              "compound110_mean_vector_norm": 0.05451981723308563,
+              "magnitude_ratio_LY_over_compound110": 0.7370864825078859
+            }
+          }
+        },
+        "pam_contact_consensus": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.7742888107106514,
+              "LY_mean_vector_norm": 0.055999062955379486,
+              "compound110_mean_vector_norm": 0.06654047966003418,
+              "magnitude_ratio_LY_over_compound110": 0.8415788891436843
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.5853176663681535,
+              "LY_mean_vector_norm": 0.05655917152762413,
+              "compound110_mean_vector_norm": 0.06119735166430473,
+              "magnitude_ratio_LY_over_compound110": 0.9242094631460014
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.3576673471828636,
+              "LY_mean_vector_norm": 0.085060253739357,
+              "compound110_mean_vector_norm": 0.0792425200343132,
+              "magnitude_ratio_LY_over_compound110": 1.0734168184268322
+            }
+          }
+        },
+        "pam_contact_union": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.8039952120070463,
+              "LY_mean_vector_norm": 0.053742218762636185,
+              "compound110_mean_vector_norm": 0.05867971479892731,
+              "magnitude_ratio_LY_over_compound110": 0.915856850136201
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.6501229610715353,
+              "LY_mean_vector_norm": 0.0562569797039032,
+              "compound110_mean_vector_norm": 0.056595250964164734,
+              "magnitude_ratio_LY_over_compound110": 0.9940229744634276
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.2437992424861805,
+              "LY_mean_vector_norm": 0.08191095292568207,
+              "compound110_mean_vector_norm": 0.08208058774471283,
+              "magnitude_ratio_LY_over_compound110": 0.9979333137871971
+            }
+          }
+        },
+        "stable_core_control": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.7531914646618364,
+              "LY_mean_vector_norm": 0.04786757752299309,
+              "compound110_mean_vector_norm": 0.05337879806756973,
+              "magnitude_ratio_LY_over_compound110": 0.8967526294316285
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.3611974894869972,
+              "LY_mean_vector_norm": 0.05533146113157272,
+              "compound110_mean_vector_norm": 0.0506880022585392,
+              "magnitude_ratio_LY_over_compound110": 1.0916086384574617
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.6395287580373938,
+              "LY_mean_vector_norm": 0.045558493584394455,
+              "compound110_mean_vector_norm": 0.051215942949056625,
+              "magnitude_ratio_LY_over_compound110": 0.8895373385922132
+            }
+          }
+        }
+      },
+      "Delta_INT": {
+        "compound110_extension": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.8383496655358706,
+              "LY_mean_vector_norm": 0.10434798151254654,
+              "compound110_mean_vector_norm": 0.14052344858646393,
+              "magnitude_ratio_LY_over_compound110": 0.7425663301192138
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.04793566388743711,
+              "LY_mean_vector_norm": 0.08559413254261017,
+              "compound110_mean_vector_norm": 0.08418793231248856,
+              "magnitude_ratio_LY_over_compound110": 1.0167031092401946
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.6925346976930571,
+              "LY_mean_vector_norm": 0.1049928367137909,
+              "compound110_mean_vector_norm": 0.10594838857650757,
+              "magnitude_ratio_LY_over_compound110": 0.9909809684172153
+            }
+          }
+        },
+        "cooperativity_mutagenesis": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.7280001129226,
+              "LY_mean_vector_norm": 0.06453090906143188,
+              "compound110_mean_vector_norm": 0.07240638136863708,
+              "magnitude_ratio_LY_over_compound110": 0.8912323450179148
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.21962384105079735,
+              "LY_mean_vector_norm": 0.06024647504091263,
+              "compound110_mean_vector_norm": 0.0645832046866417,
+              "magnitude_ratio_LY_over_compound110": 0.9328505039851938
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": -0.04905534921128351,
+              "LY_mean_vector_norm": 0.06484869122505188,
+              "compound110_mean_vector_norm": 0.0667610839009285,
+              "magnitude_ratio_LY_over_compound110": 0.9713546790415424
+            }
+          }
+        },
+        "distal_control": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.5687442654046281,
+              "LY_mean_vector_norm": 0.08498489856719971,
+              "compound110_mean_vector_norm": 0.08727781474590302,
+              "magnitude_ratio_LY_over_compound110": 0.973728533586928
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.8643739908518434,
+              "LY_mean_vector_norm": 0.15367534756660461,
+              "compound110_mean_vector_norm": 0.11820939183235168,
+              "magnitude_ratio_LY_over_compound110": 1.3000265476752633
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.7944968503606896,
+              "LY_mean_vector_norm": 0.12946853041648865,
+              "compound110_mean_vector_norm": 0.11391238123178482,
+              "magnitude_ratio_LY_over_compound110": 1.1365624089013708
+            }
+          }
+        },
+        "intracellular_microswitches": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.4607820536048073,
+              "LY_mean_vector_norm": 0.04154794663190842,
+              "compound110_mean_vector_norm": 0.06277349591255188,
+              "magnitude_ratio_LY_over_compound110": 0.6618708425891682
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.45991553619796055,
+              "LY_mean_vector_norm": 0.051407959312200546,
+              "compound110_mean_vector_norm": 0.08364655822515488,
+              "magnitude_ratio_LY_over_compound110": 0.6145854701376192
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.28444252733073083,
+              "LY_mean_vector_norm": 0.05059157311916351,
+              "compound110_mean_vector_norm": 0.06794362515211105,
+              "magnitude_ratio_LY_over_compound110": 0.7446110360743917
+            }
+          }
+        },
+        "orthosteric_activation_core": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.7090703884532042,
+              "LY_mean_vector_norm": 0.05840817466378212,
+              "compound110_mean_vector_norm": 0.06905582547187805,
+              "magnitude_ratio_LY_over_compound110": 0.8458109690914921
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.7236134932530985,
+              "LY_mean_vector_norm": 0.052802395075559616,
+              "compound110_mean_vector_norm": 0.051430657505989075,
+              "magnitude_ratio_LY_over_compound110": 1.0266715930942707
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.30538309958756693,
+              "LY_mean_vector_norm": 0.03883465379476547,
+              "compound110_mean_vector_norm": 0.05507269874215126,
+              "magnitude_ratio_LY_over_compound110": 0.7051525471193661
+            }
+          }
+        },
+        "orthosteric_contact_union": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.6975016519986581,
+              "LY_mean_vector_norm": 0.05542372912168503,
+              "compound110_mean_vector_norm": 0.06453222036361694,
+              "magnitude_ratio_LY_over_compound110": 0.8588535898717155
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.722364879073936,
+              "LY_mean_vector_norm": 0.051013365387916565,
+              "compound110_mean_vector_norm": 0.051756128668785095,
+              "magnitude_ratio_LY_over_compound110": 0.9856487859510925
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.27900875981034723,
+              "LY_mean_vector_norm": 0.037548746913671494,
+              "compound110_mean_vector_norm": 0.0541846789419651,
+              "magnitude_ratio_LY_over_compound110": 0.6929771966331729
+            }
+          }
+        },
+        "pam_contact_consensus": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.728046315802957,
+              "LY_mean_vector_norm": 0.07298649847507477,
+              "compound110_mean_vector_norm": 0.08080581575632095,
+              "magnitude_ratio_LY_over_compound110": 0.9032332362706885
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.35415684148737225,
+              "LY_mean_vector_norm": 0.07121461629867554,
+              "compound110_mean_vector_norm": 0.06692100316286087,
+              "magnitude_ratio_LY_over_compound110": 1.0641594257839442
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": -0.12442852472540014,
+              "LY_mean_vector_norm": 0.08510743081569672,
+              "compound110_mean_vector_norm": 0.09022174775600433,
+              "magnitude_ratio_LY_over_compound110": 0.9433139230007074
+            }
+          }
+        },
+        "pam_contact_union": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.7677762452282243,
+              "LY_mean_vector_norm": 0.06966477632522583,
+              "compound110_mean_vector_norm": 0.07439214736223221,
+              "magnitude_ratio_LY_over_compound110": 0.9364533596000699
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.5173516429328274,
+              "LY_mean_vector_norm": 0.07138948887586594,
+              "compound110_mean_vector_norm": 0.06841202080249786,
+              "magnitude_ratio_LY_over_compound110": 1.0435225862127926
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": -0.1476212573970417,
+              "LY_mean_vector_norm": 0.0826057493686676,
+              "compound110_mean_vector_norm": 0.09731490164995193,
+              "magnitude_ratio_LY_over_compound110": 0.8488499496799152
+            }
+          }
+        },
+        "stable_core_control": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.5272817892149462,
+              "LY_mean_vector_norm": 0.07707560062408447,
+              "compound110_mean_vector_norm": 0.06307533383369446,
+              "magnitude_ratio_LY_over_compound110": 1.2219610414952915
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.3958901431225068,
+              "LY_mean_vector_norm": 0.07027020305395126,
+              "compound110_mean_vector_norm": 0.06655517965555191,
+              "magnitude_ratio_LY_over_compound110": 1.0558186968711676
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.22954566509447685,
+              "LY_mean_vector_norm": 0.051338836550712585,
+              "compound110_mean_vector_norm": 0.059244781732559204,
+              "magnitude_ratio_LY_over_compound110": 0.8665545732359118
+            }
+          }
+        }
+      }
+    },
+    "SIGNED_DRIFT": {
+      "Delta_PAM": {
+        "compound110_extension": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.5351182374051058,
+              "LY_mean_vector_norm": 0.04611802101135254,
+              "compound110_mean_vector_norm": 0.04518647491931915,
+              "magnitude_ratio_LY_over_compound110": 1.0206155955669627
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.324728766946358,
+              "LY_mean_vector_norm": 0.04292147234082222,
+              "compound110_mean_vector_norm": 0.04276169836521149,
+              "magnitude_ratio_LY_over_compound110": 1.003736380492799
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.41026005445018904,
+              "LY_mean_vector_norm": 0.04397980868816376,
+              "compound110_mean_vector_norm": 0.05362194776535034,
+              "magnitude_ratio_LY_over_compound110": 0.8201829758333176
+            }
+          }
+        },
+        "cooperativity_mutagenesis": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.6607545181577689,
+              "LY_mean_vector_norm": 0.04275757446885109,
+              "compound110_mean_vector_norm": 0.034524232149124146,
+              "magnitude_ratio_LY_over_compound110": 1.2384800995475815
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.4132430525842438,
+              "LY_mean_vector_norm": 0.035097721964120865,
+              "compound110_mean_vector_norm": 0.030064821243286133,
+              "magnitude_ratio_LY_over_compound110": 1.1674016512557395
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.5924093885856916,
+              "LY_mean_vector_norm": 0.03779657930135727,
+              "compound110_mean_vector_norm": 0.04015817493200302,
+              "magnitude_ratio_LY_over_compound110": 0.9411926554270836
+            }
+          }
+        },
+        "distal_control": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.5602564468609575,
+              "LY_mean_vector_norm": 0.05136653780937195,
+              "compound110_mean_vector_norm": 0.05012441799044609,
+              "magnitude_ratio_LY_over_compound110": 1.0247807329984882
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.3848050226368972,
+              "LY_mean_vector_norm": 0.03869840130209923,
+              "compound110_mean_vector_norm": 0.05811296030879021,
+              "magnitude_ratio_LY_over_compound110": 0.6659168814748142
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.6246515944839903,
+              "LY_mean_vector_norm": 0.058851420879364014,
+              "compound110_mean_vector_norm": 0.047741811722517014,
+              "magnitude_ratio_LY_over_compound110": 1.232701876112658
+            }
+          }
+        },
+        "intracellular_microswitches": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.5176320463842933,
+              "LY_mean_vector_norm": 0.03375011682510376,
+              "compound110_mean_vector_norm": 0.029158134013414383,
+              "magnitude_ratio_LY_over_compound110": 1.1574854827670662
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.4325904746582198,
+              "LY_mean_vector_norm": 0.029337428510189056,
+              "compound110_mean_vector_norm": 0.0364847369492054,
+              "magnitude_ratio_LY_over_compound110": 0.8041014123531456
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.5562257489365461,
+              "LY_mean_vector_norm": 0.03533709794282913,
+              "compound110_mean_vector_norm": 0.03309132903814316,
+              "magnitude_ratio_LY_over_compound110": 1.0678657814588637
+            }
+          }
+        },
+        "orthosteric_activation_core": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.5590292962535846,
+              "LY_mean_vector_norm": 0.02780047059059143,
+              "compound110_mean_vector_norm": 0.02563105709850788,
+              "magnitude_ratio_LY_over_compound110": 1.0846400319637945
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.6051796883015582,
+              "LY_mean_vector_norm": 0.03195890039205551,
+              "compound110_mean_vector_norm": 0.025908267125487328,
+              "magnitude_ratio_LY_over_compound110": 1.233540639258573
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.47912846557919747,
+              "LY_mean_vector_norm": 0.024435607716441154,
+              "compound110_mean_vector_norm": 0.02896629460155964,
+              "magnitude_ratio_LY_over_compound110": 0.8435876266730181
+            }
+          }
+        },
+        "orthosteric_contact_union": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.5211499045552692,
+              "LY_mean_vector_norm": 0.027524754405021667,
+              "compound110_mean_vector_norm": 0.026174161583185196,
+              "magnitude_ratio_LY_over_compound110": 1.0516002324484814
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.6181373062347408,
+              "LY_mean_vector_norm": 0.03139517456293106,
+              "compound110_mean_vector_norm": 0.025816187262535095,
+              "magnitude_ratio_LY_over_compound110": 1.2161042311810424
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.3970271874896279,
+              "LY_mean_vector_norm": 0.024706464260816574,
+              "compound110_mean_vector_norm": 0.027409659698605537,
+              "magnitude_ratio_LY_over_compound110": 0.9013780007664054
+            }
+          }
+        },
+        "pam_contact_consensus": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.6120665818278268,
+              "LY_mean_vector_norm": 0.04091527685523033,
+              "compound110_mean_vector_norm": 0.037235695868730545,
+              "magnitude_ratio_LY_over_compound110": 1.0988186443318169
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.42176585232526326,
+              "LY_mean_vector_norm": 0.04317070543766022,
+              "compound110_mean_vector_norm": 0.035473909229040146,
+              "magnitude_ratio_LY_over_compound110": 1.2169706236469482
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.6412856828336734,
+              "LY_mean_vector_norm": 0.0404927097260952,
+              "compound110_mean_vector_norm": 0.048374295234680176,
+              "magnitude_ratio_LY_over_compound110": 0.8370707940994546
+            }
+          }
+        },
+        "pam_contact_union": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.6633341514227656,
+              "LY_mean_vector_norm": 0.03678029403090477,
+              "compound110_mean_vector_norm": 0.034243930131196976,
+              "magnitude_ratio_LY_over_compound110": 1.0740675468613081
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.49232970740374193,
+              "LY_mean_vector_norm": 0.038398053497076035,
+              "compound110_mean_vector_norm": 0.03277204930782318,
+              "magnitude_ratio_LY_over_compound110": 1.1716708081453375
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.6675428313645752,
+              "LY_mean_vector_norm": 0.03826860710978508,
+              "compound110_mean_vector_norm": 0.04719442501664162,
+              "magnitude_ratio_LY_over_compound110": 0.8108713496623992
+            }
+          }
+        },
+        "stable_core_control": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.43582774355178433,
+              "LY_mean_vector_norm": 0.033157672733068466,
+              "compound110_mean_vector_norm": 0.04224391654133797,
+              "magnitude_ratio_LY_over_compound110": 0.7849100047487757
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.3903728406662441,
+              "LY_mean_vector_norm": 0.04766761511564255,
+              "compound110_mean_vector_norm": 0.0367962084710598,
+              "magnitude_ratio_LY_over_compound110": 1.2954490991411005
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.3782133968524346,
+              "LY_mean_vector_norm": 0.03812571242451668,
+              "compound110_mean_vector_norm": 0.037480127066373825,
+              "magnitude_ratio_LY_over_compound110": 1.0172247377123236
+            }
+          }
+        }
+      },
+      "Delta_AGO": {
+        "compound110_extension": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.6990778868343759,
+              "LY_mean_vector_norm": 0.0520160049200058,
+              "compound110_mean_vector_norm": 0.05721275880932808,
+              "magnitude_ratio_LY_over_compound110": 0.9091679199277664
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.5409103217049058,
+              "LY_mean_vector_norm": 0.048375096172094345,
+              "compound110_mean_vector_norm": 0.05148836970329285,
+              "magnitude_ratio_LY_over_compound110": 0.9395344317728631
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.7501378092752505,
+              "LY_mean_vector_norm": 0.057896316051483154,
+              "compound110_mean_vector_norm": 0.06374360620975494,
+              "magnitude_ratio_LY_over_compound110": 0.9082686012612673
+            }
+          }
+        },
+        "cooperativity_mutagenesis": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.7898957590779548,
+              "LY_mean_vector_norm": 0.050733596086502075,
+              "compound110_mean_vector_norm": 0.048222124576568604,
+              "magnitude_ratio_LY_over_compound110": 1.0520813118871541
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.518237622882974,
+              "LY_mean_vector_norm": 0.03507697209715843,
+              "compound110_mean_vector_norm": 0.031454987823963165,
+              "magnitude_ratio_LY_over_compound110": 1.1151481696151206
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.6178559993234699,
+              "LY_mean_vector_norm": 0.05069151893258095,
+              "compound110_mean_vector_norm": 0.0329255685210228,
+              "magnitude_ratio_LY_over_compound110": 1.5395791541219612
+            }
+          }
+        },
+        "distal_control": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.5761163286264801,
+              "LY_mean_vector_norm": 0.047078005969524384,
+              "compound110_mean_vector_norm": 0.04230967164039612,
+              "magnitude_ratio_LY_over_compound110": 1.112700811522621
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.5889208780764706,
+              "LY_mean_vector_norm": 0.06175456568598747,
+              "compound110_mean_vector_norm": 0.051608432084321976,
+              "magnitude_ratio_LY_over_compound110": 1.1965983695278308
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.5891207460516776,
+              "LY_mean_vector_norm": 0.05024043470621109,
+              "compound110_mean_vector_norm": 0.049034733325242996,
+              "magnitude_ratio_LY_over_compound110": 1.0245887210800309
+            }
+          }
+        },
+        "intracellular_microswitches": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.4994783478451641,
+              "LY_mean_vector_norm": 0.02903733216226101,
+              "compound110_mean_vector_norm": 0.033376649022102356,
+              "magnitude_ratio_LY_over_compound110": 0.8699894391145196
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.7777249005731509,
+              "LY_mean_vector_norm": 0.045444097369909286,
+              "compound110_mean_vector_norm": 0.04364612326025963,
+              "magnitude_ratio_LY_over_compound110": 1.041194359896031
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.6786146091011758,
+              "LY_mean_vector_norm": 0.037188511341810226,
+              "compound110_mean_vector_norm": 0.029963534325361252,
+              "magnitude_ratio_LY_over_compound110": 1.241125660878187
+            }
+          }
+        },
+        "orthosteric_activation_core": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.4690967623182964,
+              "LY_mean_vector_norm": 0.027736686170101166,
+              "compound110_mean_vector_norm": 0.03062920644879341,
+              "magnitude_ratio_LY_over_compound110": 0.9055633294474009
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.5585521350445479,
+              "LY_mean_vector_norm": 0.025760093703866005,
+              "compound110_mean_vector_norm": 0.03055262379348278,
+              "magnitude_ratio_LY_over_compound110": 0.8431385100667173
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.5409169558643045,
+              "LY_mean_vector_norm": 0.030933517962694168,
+              "compound110_mean_vector_norm": 0.029469065368175507,
+              "magnitude_ratio_LY_over_compound110": 1.0496945721291917
+            }
+          }
+        },
+        "orthosteric_contact_union": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.44137110478796043,
+              "LY_mean_vector_norm": 0.028663337230682373,
+              "compound110_mean_vector_norm": 0.030441666021943092,
+              "magnitude_ratio_LY_over_compound110": 0.9415824091237694
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.6076839211767258,
+              "LY_mean_vector_norm": 0.026267528533935547,
+              "compound110_mean_vector_norm": 0.031126175075769424,
+              "magnitude_ratio_LY_over_compound110": 0.8439047994169976
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.5294194558224993,
+              "LY_mean_vector_norm": 0.03113929182291031,
+              "compound110_mean_vector_norm": 0.03178369998931885,
+              "magnitude_ratio_LY_over_compound110": 0.9797251998154684
+            }
+          }
+        },
+        "pam_contact_consensus": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.8476078055543315,
+              "LY_mean_vector_norm": 0.052994225174188614,
+              "compound110_mean_vector_norm": 0.05613196641206741,
+              "magnitude_ratio_LY_over_compound110": 0.9441006357260943
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.5240646201414725,
+              "LY_mean_vector_norm": 0.035716306418180466,
+              "compound110_mean_vector_norm": 0.0355977863073349,
+              "magnitude_ratio_LY_over_compound110": 1.0033294236282648
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.5673634505599879,
+              "LY_mean_vector_norm": 0.0613553524017334,
+              "compound110_mean_vector_norm": 0.035790007561445236,
+              "magnitude_ratio_LY_over_compound110": 1.7143151561618672
+            }
+          }
+        },
+        "pam_contact_union": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.831712784497952,
+              "LY_mean_vector_norm": 0.046359218657016754,
+              "compound110_mean_vector_norm": 0.04899004474282265,
+              "magnitude_ratio_LY_over_compound110": 0.9462987613173934
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.44565618328476186,
+              "LY_mean_vector_norm": 0.034857455641031265,
+              "compound110_mean_vector_norm": 0.03420877829194069,
+              "magnitude_ratio_LY_over_compound110": 1.0189623067960716
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.32482429598098445,
+              "LY_mean_vector_norm": 0.05712643638253212,
+              "compound110_mean_vector_norm": 0.032762400805950165,
+              "magnitude_ratio_LY_over_compound110": 1.7436584309217371
+            }
+          }
+        },
+        "stable_core_control": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.6829807329448825,
+              "LY_mean_vector_norm": 0.04689979925751686,
+              "compound110_mean_vector_norm": 0.03876543045043945,
+              "magnitude_ratio_LY_over_compound110": 1.2098356373851433
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.6646449331459375,
+              "LY_mean_vector_norm": 0.038562167435884476,
+              "compound110_mean_vector_norm": 0.041192688047885895,
+              "magnitude_ratio_LY_over_compound110": 0.9361410789957801
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.5455059077397605,
+              "LY_mean_vector_norm": 0.03387004882097244,
+              "compound110_mean_vector_norm": 0.03380509093403816,
+              "magnitude_ratio_LY_over_compound110": 1.001921541553047
+            }
+          }
+        }
+      },
+      "Delta_INT": {
+        "compound110_extension": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.7245222806006998,
+              "LY_mean_vector_norm": 0.07831338047981262,
+              "compound110_mean_vector_norm": 0.08253931999206543,
+              "magnitude_ratio_LY_over_compound110": 0.9488008925605511
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.40689317484732485,
+              "LY_mean_vector_norm": 0.058526262640953064,
+              "compound110_mean_vector_norm": 0.06116075441241264,
+              "magnitude_ratio_LY_over_compound110": 0.9569251263041172
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.5198591168269678,
+              "LY_mean_vector_norm": 0.07236765325069427,
+              "compound110_mean_vector_norm": 0.061486706137657166,
+              "magnitude_ratio_LY_over_compound110": 1.176964221968188
+            }
+          }
+        },
+        "cooperativity_mutagenesis": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.6308404654709323,
+              "LY_mean_vector_norm": 0.04713326692581177,
+              "compound110_mean_vector_norm": 0.05463685467839241,
+              "magnitude_ratio_LY_over_compound110": 0.8626643536354933
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.4935198740549596,
+              "LY_mean_vector_norm": 0.05275353044271469,
+              "compound110_mean_vector_norm": 0.0389426127076149,
+              "magnitude_ratio_LY_over_compound110": 1.3546479492476164
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.4451314305369886,
+              "LY_mean_vector_norm": 0.057107605040073395,
+              "compound110_mean_vector_norm": 0.04418983310461044,
+              "magnitude_ratio_LY_over_compound110": 1.2923245241701355
+            }
+          }
+        },
+        "distal_control": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.5237823622535221,
+              "LY_mean_vector_norm": 0.060449469834566116,
+              "compound110_mean_vector_norm": 0.0594678670167923,
+              "magnitude_ratio_LY_over_compound110": 1.0165064406546924
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.6480542446945693,
+              "LY_mean_vector_norm": 0.07645916193723679,
+              "compound110_mean_vector_norm": 0.09170330315828323,
+              "magnitude_ratio_LY_over_compound110": 0.8337667161810464
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.6411122823506247,
+              "LY_mean_vector_norm": 0.08806542307138443,
+              "compound110_mean_vector_norm": 0.07062811404466629,
+              "magnitude_ratio_LY_over_compound110": 1.246889064823259
+            }
+          }
+        },
+        "intracellular_microswitches": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.515263725902617,
+              "LY_mean_vector_norm": 0.04391346871852875,
+              "compound110_mean_vector_norm": 0.043761540204286575,
+              "magnitude_ratio_LY_over_compound110": 1.0034717359931333
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.6095875760244025,
+              "LY_mean_vector_norm": 0.044281575828790665,
+              "compound110_mean_vector_norm": 0.04806054010987282,
+              "magnitude_ratio_LY_over_compound110": 0.9213707488005142
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.6072316438489475,
+              "LY_mean_vector_norm": 0.05500522255897522,
+              "compound110_mean_vector_norm": 0.042316827923059464,
+              "magnitude_ratio_LY_over_compound110": 1.2998427637105934
+            }
+          }
+        },
+        "orthosteric_activation_core": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.41343777805527,
+              "LY_mean_vector_norm": 0.039603594690561295,
+              "compound110_mean_vector_norm": 0.036704275757074356,
+              "magnitude_ratio_LY_over_compound110": 1.0789913129651694
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.6449123980829892,
+              "LY_mean_vector_norm": 0.04270026087760925,
+              "compound110_mean_vector_norm": 0.042890675365924835,
+              "magnitude_ratio_LY_over_compound110": 0.9955604688736877
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.47174833524150755,
+              "LY_mean_vector_norm": 0.04367350414395332,
+              "compound110_mean_vector_norm": 0.03486916422843933,
+              "magnitude_ratio_LY_over_compound110": 1.2524964423533032
+            }
+          }
+        },
+        "orthosteric_contact_union": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.3713721619689717,
+              "LY_mean_vector_norm": 0.04034097120165825,
+              "compound110_mean_vector_norm": 0.03811529651284218,
+              "magnitude_ratio_LY_over_compound110": 1.058393214599975
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.6816908025076804,
+              "LY_mean_vector_norm": 0.04438132420182228,
+              "compound110_mean_vector_norm": 0.04410930350422859,
+              "magnitude_ratio_LY_over_compound110": 1.0061669687794461
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.47914640564742267,
+              "LY_mean_vector_norm": 0.04362727329134941,
+              "compound110_mean_vector_norm": 0.03659161180257797,
+              "magnitude_ratio_LY_over_compound110": 1.1922752549609132
+            }
+          }
+        },
+        "pam_contact_consensus": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.7179004629803213,
+              "LY_mean_vector_norm": 0.05151833966374397,
+              "compound110_mean_vector_norm": 0.06810129433870316,
+              "magnitude_ratio_LY_over_compound110": 0.756495748928302
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.5623841172596846,
+              "LY_mean_vector_norm": 0.05556069687008858,
+              "compound110_mean_vector_norm": 0.04141070693731308,
+              "magnitude_ratio_LY_over_compound110": 1.3416988257214624
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.20982442096225087,
+              "LY_mean_vector_norm": 0.06130502372980118,
+              "compound110_mean_vector_norm": 0.045994192361831665,
+              "magnitude_ratio_LY_over_compound110": 1.332886188054369
+            }
+          }
+        },
+        "pam_contact_union": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.7224764412318216,
+              "LY_mean_vector_norm": 0.04816002771258354,
+              "compound110_mean_vector_norm": 0.05773965269327164,
+              "magnitude_ratio_LY_over_compound110": 0.8340893210498234
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.5064646265309108,
+              "LY_mean_vector_norm": 0.04840516299009323,
+              "compound110_mean_vector_norm": 0.04105764254927635,
+              "magnitude_ratio_LY_over_compound110": 1.1789562182484923
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.027713907352214833,
+              "LY_mean_vector_norm": 0.053864337503910065,
+              "compound110_mean_vector_norm": 0.05339973047375679,
+              "magnitude_ratio_LY_over_compound110": 1.008700550097001
+            }
+          }
+        },
+        "stable_core_control": {
+          "replicas": {
+            "R1": {
+              "direction_cosine_LY_vs_compound110": 0.5828748295248525,
+              "LY_mean_vector_norm": 0.0638536810874939,
+              "compound110_mean_vector_norm": 0.05786292627453804,
+              "magnitude_ratio_LY_over_compound110": 1.1035335611014894
+            },
+            "R2": {
+              "direction_cosine_LY_vs_compound110": 0.3620769663805196,
+              "LY_mean_vector_norm": 0.05123167112469673,
+              "compound110_mean_vector_norm": 0.04800877347588539,
+              "magnitude_ratio_LY_over_compound110": 1.0671314306838142
+            },
+            "R3": {
+              "direction_cosine_LY_vs_compound110": 0.4409165479198112,
+              "LY_mean_vector_norm": 0.04894273728132248,
+              "compound110_mean_vector_norm": 0.05234698951244354,
+              "magnitude_ratio_LY_over_compound110": 0.9349675642701128
+            }
+          }
+        }
+      }
+    }
+  },
+  "vector_artifacts": [
+    {
+      "branch": "STATE_MOTION",
+      "panel": "compound110_reference",
+      "replica": 1,
+      "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2b_graph_region/state_motion/compound110_reference/replica_01/BLOCK_REGIONAL_VECTORS.npz",
+      "sha256": "c822ef7634244103dfd022b351ea405aead14bcb62c54ef6d01e16543b394825",
+      "bytes": 2402465
+    },
+    {
+      "branch": "STATE_MOTION",
+      "panel": "LY2119620",
+      "replica": 1,
+      "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2b_graph_region/state_motion/LY2119620/replica_01/BLOCK_REGIONAL_VECTORS.npz",
+      "sha256": "d4fb3ca449cbe3eb85c7b1ba8491456496d4e9b54a2af377ddaed746f8eb32ad",
+      "bytes": 2402693
+    },
+    {
+      "branch": "STATE_MOTION",
+      "panel": "compound110_reference",
+      "replica": 2,
+      "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2b_graph_region/state_motion/compound110_reference/replica_02/BLOCK_REGIONAL_VECTORS.npz",
+      "sha256": "2074ccfe891f797de77820204dfc16f458219385cab03750f3ddb3bd072ebd5e",
+      "bytes": 2402788
+    },
+    {
+      "branch": "STATE_MOTION",
+      "panel": "LY2119620",
+      "replica": 2,
+      "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2b_graph_region/state_motion/LY2119620/replica_02/BLOCK_REGIONAL_VECTORS.npz",
+      "sha256": "eb23d487a8a475e2dd67f82bbd1c950b2220d280403c11e23a66dd1120773010",
+      "bytes": 2402201
+    },
+    {
+      "branch": "STATE_MOTION",
+      "panel": "compound110_reference",
+      "replica": 3,
+      "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2b_graph_region/state_motion/compound110_reference/replica_03/BLOCK_REGIONAL_VECTORS.npz",
+      "sha256": "33c08b88fca5ca3c540b884ed0830a9c8d47d50e81ec00665c5502c6d3495ac4",
+      "bytes": 2402309
+    },
+    {
+      "branch": "STATE_MOTION",
+      "panel": "LY2119620",
+      "replica": 3,
+      "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2b_graph_region/state_motion/LY2119620/replica_03/BLOCK_REGIONAL_VECTORS.npz",
+      "sha256": "2c6c72efb0aa7a3d13e215db4b71a957dceb91c383f0817ace65b65895712ca6",
+      "bytes": 2402485
+    },
+    {
+      "branch": "SIGNED_DRIFT",
+      "panel": "compound110_reference",
+      "replica": 1,
+      "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2b_graph_region/signed_drift/compound110_reference/replica_01/BLOCK_REGIONAL_VECTORS.npz",
+      "sha256": "edc00273ffd66a14f5d93e6bb23d474ab8e29e788b2e087dba5f781e1c78eb98",
+      "bytes": 2400167
+    },
+    {
+      "branch": "SIGNED_DRIFT",
+      "panel": "LY2119620",
+      "replica": 1,
+      "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2b_graph_region/signed_drift/LY2119620/replica_01/BLOCK_REGIONAL_VECTORS.npz",
+      "sha256": "804f5dec482faef4be20de2e10abb89619ceb76a8edea4f339e0587aabc060f6",
+      "bytes": 2399718
+    },
+    {
+      "branch": "SIGNED_DRIFT",
+      "panel": "compound110_reference",
+      "replica": 2,
+      "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2b_graph_region/signed_drift/compound110_reference/replica_02/BLOCK_REGIONAL_VECTORS.npz",
+      "sha256": "e454d194760a72c47ef956f443026b293dc1b7bfc38fc4bd6052da4db1e037d1",
+      "bytes": 2400098
+    },
+    {
+      "branch": "SIGNED_DRIFT",
+      "panel": "LY2119620",
+      "replica": 2,
+      "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2b_graph_region/signed_drift/LY2119620/replica_02/BLOCK_REGIONAL_VECTORS.npz",
+      "sha256": "6a6250cd5de941a4c10aad6201a2ca4327e55f520aa558951d9a7f3f57738ea1",
+      "bytes": 2399916
+    },
+    {
+      "branch": "SIGNED_DRIFT",
+      "panel": "compound110_reference",
+      "replica": 3,
+      "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2b_graph_region/signed_drift/compound110_reference/replica_03/BLOCK_REGIONAL_VECTORS.npz",
+      "sha256": "d98c3c3bb141db1306cdb056d770408cc46f3e633e29b50043559dd160fbac2c",
+      "bytes": 2399900
+    },
+    {
+      "branch": "SIGNED_DRIFT",
+      "panel": "LY2119620",
+      "replica": 3,
+      "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2b_graph_region/signed_drift/LY2119620/replica_03/BLOCK_REGIONAL_VECTORS.npz",
+      "sha256": "5a43fe33d695f43dc54988d968ea232e7c70907f152de9afc72fa1c7271b56c4",
+      "bytes": 2399462
+    }
+  ],
+  "claim_boundary": "Retrospective matched-20ns descriptive mechanism comparison. No threshold tuning, p-values, classifier fitting, efficacy prediction, or independent-block inference.",
+  "forbidden_operations_performed": {
+    "calibration": false,
+    "normalization_refit": false,
+    "bandwidth_refit": false,
+    "rff_refit": false,
+    "graph_refit": false,
+    "region_refit": false,
+    "threshold_selection": false,
+    "outcome_driven_tuning": false
+  }
+}

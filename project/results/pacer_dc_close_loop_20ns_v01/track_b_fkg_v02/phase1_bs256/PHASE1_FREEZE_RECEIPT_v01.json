@@ -1,0 +1,257 @@
+{
+  "schema": "pacer_dc.close_loop_20ns.track_b.phase1_freeze.v1",
+  "status": "PHASE1_FROZEN",
+  "track": "B / frozen C1-BS256 + PACER-FKG-v02",
+  "scope": "LY2119620 six trajectories only",
+  "code": {
+    "branch": "experiment/pacer-dc-close-loop-20ns-analysis-v01",
+    "current_head": "535aef50d0ebdedbd30c39ae78da2981a71a63e8",
+    "extractor_commit": "600a8833d0574566a72ec397650cc98c6dbf0a83",
+    "extractor": {
+      "path": "project/pacer_fkg_v02/run_close_loop_phase1_bs256_v01.py",
+      "sha256": "929e35f01e83329a396208dbf8fd71d332ea08e6a0bede8c633a1a59cb635a8e",
+      "bytes": 21601
+    }
+  },
+  "closure_anchors": {
+    "execution_manifest": {
+      "path": "project/results/pacer_dc_close_loop_20ns_v01/CLOSE_LOOP_EXECUTION_MANIFEST_v01.json",
+      "sha256": "d0333145061bc5ff6a4b52df33269cf1893c77472e2c839252c03c84e6a39b77",
+      "bytes": 9453
+    },
+    "preflight": {
+      "path": "project/results/pacer_dc_close_loop_20ns_v01/LY2119620_CLOSE_LOOP_PREFLIGHT_v01.json",
+      "sha256": "6b5d6c33ee7405c152ac0890c259da425091927fd87e02d311d9457c20313b3b",
+      "bytes": 5359
+    },
+    "transfer_manifest": {
+      "path": "project/results/pacer_dc_close_loop_20ns_v01/TRANSFER_SHA256_v01.txt",
+      "sha256": "d0383b9fda1bf6de8d227b4bf26a623c4621218292b602812def9aed41799696",
+      "bytes": 5572
+    },
+    "topology_sanitization": {
+      "path": "project/results/pacer_dc_close_loop_20ns_v01/topology_sanitized/LY_TOPOLOGY_SANITIZATION_v01.json",
+      "sha256": "b16dc0b80a64de85c6143ae38ae4cb22e1376dc516ff0f1cf409a4ee6f67e97e",
+      "bytes": 1563
+    }
+  },
+  "run_report": {
+    "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase1_bs256/RUN_FULL_v01.json",
+    "sha256": "c01a477407c10e9f578d59bf7600bc12c89ba45a53e83dc10a0f8448cc493313",
+    "bytes": 9396
+  },
+  "caches": [
+    {
+      "system": "LY2119620__candidate_no_probe",
+      "replica": 1,
+      "shape": [
+        400,
+        270,
+        256
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "cache": {
+        "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/bs256/full/LY2119620__candidate_no_probe/replica_01/C1_BS256.npy",
+        "sha256": "d4a6c425e140777ed7ed9863fb40c0338f3878b19dd25c0f4379bb169d29e377",
+        "bytes": 110592128
+      },
+      "manifest": {
+        "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase1_bs256/manifests/full/LY2119620__candidate_no_probe__replica_01.json",
+        "sha256": "76764a1776dd35bbfdbc3b9c8634d8abfbf8141a3f3202f2e0290b3fda2ccafb",
+        "bytes": 86490
+      },
+      "replay": {
+        "passed": true,
+        "frame_ids": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "relative_rmse": 1.7780675985909705e-07,
+        "limit": 0.0001
+      }
+    },
+    {
+      "system": "LY2119620__candidate_no_probe",
+      "replica": 2,
+      "shape": [
+        400,
+        270,
+        256
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "cache": {
+        "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/bs256/full/LY2119620__candidate_no_probe/replica_02/C1_BS256.npy",
+        "sha256": "cd686fed34cad786654e6b2e3807aa20a06a7a457cc36cdbd49c8f6881a4bb0d",
+        "bytes": 110592128
+      },
+      "manifest": {
+        "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase1_bs256/manifests/full/LY2119620__candidate_no_probe__replica_02.json",
+        "sha256": "2ec2521b40be45046b556d47f6033b2e111d6cbed1e40219d3cbf02856b3fe2b",
+        "bytes": 86488
+      },
+      "replay": {
+        "passed": true,
+        "frame_ids": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "relative_rmse": 1.7545208621089055e-07,
+        "limit": 0.0001
+      }
+    },
+    {
+      "system": "LY2119620__candidate_no_probe",
+      "replica": 3,
+      "shape": [
+        400,
+        270,
+        256
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "cache": {
+        "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/bs256/full/LY2119620__candidate_no_probe/replica_03/C1_BS256.npy",
+        "sha256": "f006fc73f96f82226e1b07481039abcff6bd2cee63a2f2b454ef2f05c1924b43",
+        "bytes": 110592128
+      },
+      "manifest": {
+        "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase1_bs256/manifests/full/LY2119620__candidate_no_probe__replica_03.json",
+        "sha256": "0807f5cdcda264f7990e72eec81f763b7482dda4de2a80ae18adb4f8be423d41",
+        "bytes": 86489
+      },
+      "replay": {
+        "passed": true,
+        "frame_ids": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "relative_rmse": 1.780411404885301e-07,
+        "limit": 0.0001
+      }
+    },
+    {
+      "system": "LY2119620__candidate_probe",
+      "replica": 1,
+      "shape": [
+        400,
+        270,
+        256
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "cache": {
+        "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/bs256/full/LY2119620__candidate_probe/replica_01/C1_BS256.npy",
+        "sha256": "f94ab6464d31066a5fe95c2f7a74636ba5467b83c94a1e7d824c1b64c1799667",
+        "bytes": 110592128
+      },
+      "manifest": {
+        "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase1_bs256/manifests/full/LY2119620__candidate_probe__replica_01.json",
+        "sha256": "50094e05fd5f8425bdaac94c7406e09712e70098e243d31675f40237fb7b9f66",
+        "bytes": 86476
+      },
+      "replay": {
+        "passed": true,
+        "frame_ids": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "relative_rmse": 1.7805490442250862e-07,
+        "limit": 0.0001
+      }
+    },
+    {
+      "system": "LY2119620__candidate_probe",
+      "replica": 2,
+      "shape": [
+        400,
+        270,
+        256
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "cache": {
+        "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/bs256/full/LY2119620__candidate_probe/replica_02/C1_BS256.npy",
+        "sha256": "b50ff5bf8f966ea7afb14021aae8e41bc4457806f95129762518beb435a5f0fb",
+        "bytes": 110592128
+      },
+      "manifest": {
+        "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase1_bs256/manifests/full/LY2119620__candidate_probe__replica_02.json",
+        "sha256": "5959924e763b16e923d3afb6b83b8ea111dee2dcb53a8df431a5df0c1779b72d",
+        "bytes": 86475
+      },
+      "replay": {
+        "passed": true,
+        "frame_ids": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "relative_rmse": 1.787175712903297e-07,
+        "limit": 0.0001
+      }
+    },
+    {
+      "system": "LY2119620__candidate_probe",
+      "replica": 3,
+      "shape": [
+        400,
+        270,
+        256
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "cache": {
+        "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/bs256/full/LY2119620__candidate_probe/replica_03/C1_BS256.npy",
+        "sha256": "bfa3ad354e15fa95d7d47f3c0078998f39be53096502c34b490bc66d92fe93e3",
+        "bytes": 110592128
+      },
+      "manifest": {
+        "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase1_bs256/manifests/full/LY2119620__candidate_probe__replica_03.json",
+        "sha256": "b7c15e4159794903d5cad5562331818143b59ec0a54f58186696574af2aeb420",
+        "bytes": 86476
+      },
+      "replay": {
+        "passed": true,
+        "frame_ids": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "relative_rmse": 1.7855582978565428e-07,
+        "limit": 0.0001
+      }
+    }
+  ],
+  "cache_count": 6,
+  "contract": {
+    "trajectories": 6,
+    "frames_per_trajectory": 400,
+    "frame_spacing_ps": 50,
+    "trajectory_ns": 20,
+    "residues": 270,
+    "bs256_width": 256,
+    "next_block_frames": 20,
+    "next_blocks_per_trajectory": 20
+  },
+  "forbidden_operations_performed": {
+    "phase2_calibration": false,
+    "normalization_refit": false,
+    "bandwidth_refit": false,
+    "rff_refit": false,
+    "graph_refit": false,
+    "region_refit": false,
+    "outcome_driven_tuning": false
+  }
+}

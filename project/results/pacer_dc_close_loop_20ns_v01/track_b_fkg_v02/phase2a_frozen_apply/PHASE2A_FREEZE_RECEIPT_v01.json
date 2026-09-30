@@ -1,0 +1,263 @@
+{
+  "schema": "pacer_dc.close_loop_20ns.track_b.phase2a_freeze.v1",
+  "status": "PHASE2A_FROZEN",
+  "track": "B / frozen C1-BS256 + PACER-FKG-v02",
+  "code": {
+    "branch": "experiment/pacer-dc-close-loop-20ns-analysis-v01",
+    "current_head": "fc1a6856ad6d2905c922fc1603ff71d407e1cae1",
+    "runner_commit": "3423bcce5fab452f8d38a5167979d3b6d90261bf",
+    "runner": {
+      "path": "project/pacer_fkg_v02/run_close_loop_phase2a_frozen_apply_v01.py",
+      "sha256": "4cda00ad45126157dcf6c953bc26a54a2a24966d32a3a43b53aff8ed59172a42",
+      "bytes": 18002
+    }
+  },
+  "upstream": {
+    "phase1_freeze_receipt": {
+      "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase1_bs256/PHASE1_FREEZE_RECEIPT_v01.json",
+      "sha256": "58b0c76459683018b1c850dfe12fd1b4b616a7fe79727aa818d2aba0d26070ad",
+      "bytes": 8444
+    },
+    "historical_fkg_v02_freeze_sha256": "b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd"
+  },
+  "run_report": {
+    "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/RUN_FULL_v01.json",
+    "sha256": "bd2d6bf215e8eb8c00904b6c9426c88b7dba98fb7f610505e799517bfbdad70a",
+    "bytes": 4294
+  },
+  "records": [
+    {
+      "system": "LY2119620__candidate_no_probe",
+      "replica": 1,
+      "endpoint_identity": true,
+      "manifest": {
+        "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/manifests/full/LY2119620__candidate_no_probe__replica_01.json",
+        "sha256": "28c2abbf509c617c297a17751859755eceec0ca1abd7d8419a27e1b6d51bec0e",
+        "bytes": 3133
+      },
+      "outputs": {
+        "state_motion_descriptor": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_no_probe/replica_01/STATE_MOTION_DESCRIPTOR.npy",
+          "sha256": "2bb2b04e5ffb4cb401dbd16b5b2b6e219503cbc8ca00901d9928887a607cb3e6",
+          "bytes": 11059328
+        },
+        "signed_drift_descriptor": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_no_probe/replica_01/SIGNED_DRIFT_DESCRIPTOR.npy",
+          "sha256": "9dec3b661b81894a7a1cb079dd2e1002d05f84f1660f67ddfebed07c426ba183",
+          "bytes": 5529728
+        },
+        "state_motion_rff": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_no_probe/replica_01/STATE_MOTION_RFF.npy",
+          "sha256": "1e8c9478cee06f895dbd3f025fbd93968853a9e617f2091b8cb3d133ed10a951",
+          "bytes": 11059328
+        },
+        "signed_drift_rff": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_no_probe/replica_01/SIGNED_DRIFT_RFF.npy",
+          "sha256": "4d38d3b7b97f000f96be06d5ce523ba868280ceb0a32e3e5ab564b4d6d45d809",
+          "bytes": 11059328
+        }
+      }
+    },
+    {
+      "system": "LY2119620__candidate_no_probe",
+      "replica": 2,
+      "endpoint_identity": true,
+      "manifest": {
+        "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/manifests/full/LY2119620__candidate_no_probe__replica_02.json",
+        "sha256": "3107033d000f2942a42d3c9f280de2f036d6b658ae4eed6add79f2ab82ebf362",
+        "bytes": 3133
+      },
+      "outputs": {
+        "state_motion_descriptor": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_no_probe/replica_02/STATE_MOTION_DESCRIPTOR.npy",
+          "sha256": "0719ac8851f9edadd1185ebd7e8f4b805b2e667fcac352cb1413480b8a8617c2",
+          "bytes": 11059328
+        },
+        "signed_drift_descriptor": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_no_probe/replica_02/SIGNED_DRIFT_DESCRIPTOR.npy",
+          "sha256": "affbc3f90e6dd05638cabfb234cb873d7f809bbe12982c1f8180bddf3a03ab95",
+          "bytes": 5529728
+        },
+        "state_motion_rff": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_no_probe/replica_02/STATE_MOTION_RFF.npy",
+          "sha256": "f7d2d9816ac3aad4e8f872ad3ad54f2916446a52e3787c8712fc43d4af682d59",
+          "bytes": 11059328
+        },
+        "signed_drift_rff": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_no_probe/replica_02/SIGNED_DRIFT_RFF.npy",
+          "sha256": "511c7cf43aebb736f450020d3f1ff15f2e82fe5ca46f925456c6e69d378a87ed",
+          "bytes": 11059328
+        }
+      }
+    },
+    {
+      "system": "LY2119620__candidate_no_probe",
+      "replica": 3,
+      "endpoint_identity": true,
+      "manifest": {
+        "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/manifests/full/LY2119620__candidate_no_probe__replica_03.json",
+        "sha256": "ea5e62d7f780a66098da6eb3c29e661cebee967dca394d0c7e4964ce2cb11960",
+        "bytes": 3133
+      },
+      "outputs": {
+        "state_motion_descriptor": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_no_probe/replica_03/STATE_MOTION_DESCRIPTOR.npy",
+          "sha256": "96e964c859a6297d517fc17029cb68e9580fa2064e93779073f2cb2bae77a7cf",
+          "bytes": 11059328
+        },
+        "signed_drift_descriptor": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_no_probe/replica_03/SIGNED_DRIFT_DESCRIPTOR.npy",
+          "sha256": "09c0f1681d5705ccc1bc283373bc7f23db7abaad39ccbbf5fd6509b4670b04e1",
+          "bytes": 5529728
+        },
+        "state_motion_rff": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_no_probe/replica_03/STATE_MOTION_RFF.npy",
+          "sha256": "129cb188a78581eaad5eb98760897fa248564c2efe28b858a3f406c1973d1118",
+          "bytes": 11059328
+        },
+        "signed_drift_rff": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_no_probe/replica_03/SIGNED_DRIFT_RFF.npy",
+          "sha256": "5f1d029b0bdc5f3a55ffee24bc755745f84bd94d6cfbb5c08175380c68d6deff",
+          "bytes": 11059328
+        }
+      }
+    },
+    {
+      "system": "LY2119620__candidate_probe",
+      "replica": 1,
+      "endpoint_identity": true,
+      "manifest": {
+        "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/manifests/full/LY2119620__candidate_probe__replica_01.json",
+        "sha256": "7b5b67c0ea1cc5f39acd74402f941acfb4641f27bac876208c0061bf17ef0682",
+        "bytes": 3115
+      },
+      "outputs": {
+        "state_motion_descriptor": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_probe/replica_01/STATE_MOTION_DESCRIPTOR.npy",
+          "sha256": "6cd44f0fa0e9de4d9fd44abb91bcaf057042ea828cbcf5e6e4d6921fe055a69b",
+          "bytes": 11059328
+        },
+        "signed_drift_descriptor": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_probe/replica_01/SIGNED_DRIFT_DESCRIPTOR.npy",
+          "sha256": "3873c865dc8672242bee4277cd175b4ba6d6c779be058452e4570ead1266d449",
+          "bytes": 5529728
+        },
+        "state_motion_rff": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_probe/replica_01/STATE_MOTION_RFF.npy",
+          "sha256": "93bf494d93b4bfd4b3c0ca4b7100f34cfd8a9f66f6f5a709c87fb65a76740828",
+          "bytes": 11059328
+        },
+        "signed_drift_rff": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_probe/replica_01/SIGNED_DRIFT_RFF.npy",
+          "sha256": "4b92c860e18e66baa243922640b578fdfd7ead0e1fb80635f99cf868424f25b5",
+          "bytes": 11059328
+        }
+      }
+    },
+    {
+      "system": "LY2119620__candidate_probe",
+      "replica": 2,
+      "endpoint_identity": true,
+      "manifest": {
+        "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/manifests/full/LY2119620__candidate_probe__replica_02.json",
+        "sha256": "179067a575f4418c03a4432f78b299f8ee628f29ec32e16ee34ca9cc5f32cf05",
+        "bytes": 3115
+      },
+      "outputs": {
+        "state_motion_descriptor": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_probe/replica_02/STATE_MOTION_DESCRIPTOR.npy",
+          "sha256": "65d346725503ccd59842431f5bb8b199d44aa04f61be5b6d016ce4dff652361f",
+          "bytes": 11059328
+        },
+        "signed_drift_descriptor": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_probe/replica_02/SIGNED_DRIFT_DESCRIPTOR.npy",
+          "sha256": "d298517d8ad82004c30749c16084d577c2ac751089e27eeb7ddf252daa4c88f5",
+          "bytes": 5529728
+        },
+        "state_motion_rff": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_probe/replica_02/STATE_MOTION_RFF.npy",
+          "sha256": "656bfb80540ca3e2bca7cbf7fe8925d70f0383b8909f20c1f045ccd34affbe31",
+          "bytes": 11059328
+        },
+        "signed_drift_rff": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_probe/replica_02/SIGNED_DRIFT_RFF.npy",
+          "sha256": "f2591feb66773f4a20cb527ab05fcb5c2d7eeeb9b78b479467f9cfb4078df371",
+          "bytes": 11059328
+        }
+      }
+    },
+    {
+      "system": "LY2119620__candidate_probe",
+      "replica": 3,
+      "endpoint_identity": true,
+      "manifest": {
+        "path": "project/results/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/manifests/full/LY2119620__candidate_probe__replica_03.json",
+        "sha256": "f2da8c9fa4b06d470ec19b1f2ac413d420afb2da950896844571dda2001d1d27",
+        "bytes": 3115
+      },
+      "outputs": {
+        "state_motion_descriptor": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_probe/replica_03/STATE_MOTION_DESCRIPTOR.npy",
+          "sha256": "9fdff9d8eda9c556592e6de38e68893c29aa3c1dd4bdcf67ae6f19e62c668f0d",
+          "bytes": 11059328
+        },
+        "signed_drift_descriptor": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_probe/replica_03/SIGNED_DRIFT_DESCRIPTOR.npy",
+          "sha256": "6cb4a88d9dc262db6aa9b4a6efd260308a82a74e81ab5ae1b87be04b574724d4",
+          "bytes": 5529728
+        },
+        "state_motion_rff": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_probe/replica_03/STATE_MOTION_RFF.npy",
+          "sha256": "96dfaf3309b7e597773c6d2ce262780d8cc5cdc928366cdfed5df29cb822a0b7",
+          "bytes": 11059328
+        },
+        "signed_drift_rff": {
+          "path": "project/cache/pacer_dc_close_loop_20ns_v01/track_b_fkg_v02/phase2a_frozen_apply/full/LY2119620__candidate_probe/replica_03/SIGNED_DRIFT_RFF.npy",
+          "sha256": "4fd45af93d9b190f766fc2d6faa0630b31b6e43a17c71c18e1edc1fe0c1e69f7",
+          "bytes": 11059328
+        }
+      }
+    }
+  ],
+  "trajectory_count": 6,
+  "artifact_count": 24,
+  "contract": {
+    "frames_per_trajectory": 400,
+    "frame_spacing_ps": 50,
+    "block_frames": 20,
+    "blocks_per_trajectory": 20,
+    "block_duration_ps": 1000,
+    "STATE_MOTION_DESCRIPTOR": [
+      20,
+      270,
+      512
+    ],
+    "SIGNED_DRIFT_DESCRIPTOR": [
+      20,
+      270,
+      256
+    ],
+    "STATE_MOTION_RFF": [
+      20,
+      270,
+      512
+    ],
+    "SIGNED_DRIFT_RFF": [
+      20,
+      270,
+      512
+    ]
+  },
+  "endpoint_identity": "PASS_6_OF_6",
+  "forbidden_operations_performed": {
+    "phase2_calibration": false,
+    "normalization_refit": false,
+    "bandwidth_refit": false,
+    "rff_refit": false,
+    "graph_diffusion": false,
+    "regional_pooling": false,
+    "context_contrast": false,
+    "biological_interpretation": false,
+    "outcome_driven_tuning": false
+  }
+}

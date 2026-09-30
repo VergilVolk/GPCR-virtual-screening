@@ -1,0 +1,59 @@
+{
+  "schema": "pacer_dc.close_loop_20ns.final_status.v1",
+  "status": "RETROSPECTIVE_CLOSURE_COMPLETE",
+  "design": {
+    "duration_ns": 20,
+    "frame_spacing_ps": 50,
+    "frames_per_trajectory": 400,
+    "block_frames": 20,
+    "block_duration_ns": 1,
+    "blocks_per_trajectory": 20,
+    "replicas": [1, 2, 3],
+    "paired_seeds": {
+      "R1": 27101,
+      "R2": 38201,
+      "R3": 49301
+    }
+  },
+  "compound_roles": {
+    "compound110": "historical interacting reference/control",
+    "LY2119620": "known functional PAM retrospective validation ligand",
+    "CM00734": "inactive hard negative reserved for subsequent Stage B"
+  },
+  "track_a_common_kernel": {
+    "status": "NOT_EXECUTED_FOR_LY_STRICT_CLOSURE",
+    "historical_reference_available": true,
+    "historical_contract_sha256": "0fc3121a6e105f3d4e4ddf2f09dfa99daf5152907b89f5b91b2cd0366bc0efc0",
+    "historical_vectors_sha256": "09176c4e2718f9f097e43e55f357e4db308a0a4f794fa13e38def3efb9ae54cb",
+    "legacy_geom2vec_manifest_expected_sha256": "0687f3a2f8fbfebd37559484a32e45f67101994333d087fa576dfd3d5a57c918",
+    "reason": "Frozen common-kernel downstream state is present, but the legacy 128D Geom2Vec upstream manifest was not materialized in the synchronized repository. A new LY 128D extraction therefore cannot be authenticated as strict apply-only without reconstructing missing provenance."
+  },
+  "track_b_fkg_v02": {
+    "status": "COMPLETED",
+    "closure_interpretation": "PARTIAL_POSITIVE",
+    "historical_fkg_v02_freeze_sha256": "b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd",
+    "phase1_freeze_receipt_sha256": "58b0c76459683018b1c850dfe12fd1b4b616a7fe79727aa818d2aba0d26070ad",
+    "phase2a_freeze_receipt_sha256": "e42d3445b3374a3837a6c12d6b1c5e2e97b54824fd2747d08902394faad6744f",
+    "matched_20ns_result_sha256": "0ad0c2a0be008b38ccf8f5b0551aa6dab5552e459699cb4ffe43d5287e542c0f",
+    "primary_observation": "LY2119620 reproduces an interaction-associated Delta_INT signal most clearly in the preregistered compound110_extension region, with similar magnitude to compound110 and positive LY-versus-compound110 direction agreement across both STATE_MOTION and SIGNED_DRIFT.",
+    "important_limitation": "Direct Delta_PAM direction is not replica-stable in the 20 ns matched windows for either LY2119620 or compound110, so the closure does not support a stable PAM-efficacy or PAM-classification endpoint."
+  },
+  "track_c_pacer_mcv": {
+    "status": "NOT_EXECUTED_STRICT_CLOSURE",
+    "config_status": "FROZEN_CONFIG",
+    "config_sha256": "2764472c1e2f04c3ff0e1f617966c5f08f8522dd5326f1694c8e9c08fa6f0826",
+    "reason": "The preregistered physical-CV feature configuration is frozen, but no pre-LY frozen R2-derived scale/calibration artifact was materialized. Re-estimating the scale after observing LY results would violate the retrospective no-refit contract."
+  },
+  "claim_boundary": {
+    "automatic_pam_efficacy_claim": false,
+    "automatic_pam_classification_claim": false,
+    "new_threshold_selected": false,
+    "outcome_driven_tuning": false,
+    "post_outcome_refit": false,
+    "interpretation": "Descriptive retrospective mechanism validation only."
+  },
+  "next_stage": {
+    "stage": "CM00734_INACTIVE_HARD_NEGATIVE",
+    "policy": "Only after LY Stage A is frozen and reported. No tuning based on LY or CM00734 outcomes."
+  }
+}

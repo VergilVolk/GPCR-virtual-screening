@@ -1,0 +1,510 @@
+{
+  "protocol": "13-target LOSO + ChEMBL M2/M4 domain training-only augmentation (aux rows never tested; same-target aux excluded when held; scaffold purge global)",
+  "n_pairs": 39852,
+  "n_aux": 2328,
+  "n_targets": 13,
+  "targets": [
+    "B2AR",
+    "CCR2",
+    "M2R",
+    "M4R",
+    "ALDH1",
+    "ESR1m",
+    "FEN1",
+    "GBA",
+    "KAT2A",
+    "MAPK1",
+    "MTORC1",
+    "PKM2",
+    "VDR"
+  ],
+  "metrics": {
+    "official": {
+      "macro": {
+        "roc_auc": 0.5442203506632646,
+        "pr_auc": 0.17796105346311838,
+        "bedroc_alpha20": 0.18752400131482477,
+        "ef1pct": 1.7878216924540054,
+        "ef5pct": 1.1269391474053037
+      },
+      "per_target": {
+        "B2AR": {
+          "n": 697,
+          "actives": 64,
+          "roc_auc": 0.5356931279620853,
+          "pr_auc": 0.08981937879551191,
+          "bedroc_alpha20": 0.004110355953846695,
+          "ef1pct": 0.0,
+          "ef5pct": 0.0
+        },
+        "CCR2": {
+          "n": 174,
+          "actives": 16,
+          "roc_auc": 0.7503955696202532,
+          "pr_auc": 0.23175805761988333,
+          "bedroc_alpha20": 0.28199571168536075,
+          "ef1pct": 5.4375,
+          "ef5pct": 2.4166666666666665
+        },
+        "M2R": {
+          "n": 2498,
+          "actives": 230,
+          "roc_auc": 0.5749693275055594,
+          "pr_auc": 0.10440104700752242,
+          "bedroc_alpha20": 0.057642756522542714,
+          "ef1pct": 0.8688695652173913,
+          "ef5pct": 0.2606608695652174
+        },
+        "M4R": {
+          "n": 25249,
+          "actives": 2301,
+          "roc_auc": 0.5400654803176496,
+          "pr_auc": 0.1070414283169953,
+          "bedroc_alpha20": 0.12454955018609948,
+          "ef1pct": 1.5613833476766417,
+          "ef5pct": 0.9556896843019472
+        },
+        "ALDH1": {
+          "n": 993,
+          "actives": 200,
+          "roc_auc": 0.5553783102143758,
+          "pr_auc": 0.22715911226324245,
+          "bedroc_alpha20": 0.24034972244352826,
+          "ef1pct": 0.4965,
+          "ef5pct": 1.3902
+        },
+        "ESR1m": {
+          "n": 955,
+          "actives": 76,
+          "roc_auc": 0.47604933836297225,
+          "pr_auc": 0.0795392812283546,
+          "bedroc_alpha20": 0.09675845918209659,
+          "ef1pct": 2.5131578947368425,
+          "ef5pct": 0.7853618421052632
+        },
+        "FEN1": {
+          "n": 988,
+          "actives": 195,
+          "roc_auc": 0.6496200730753063,
+          "pr_auc": 0.39732120961268935,
+          "bedroc_alpha20": 0.5581826046237157,
+          "ef1pct": 4.053333333333334,
+          "ef5pct": 3.1413333333333333
+        },
+        "GBA": {
+          "n": 994,
+          "actives": 156,
+          "roc_auc": 0.48422679150602776,
+          "pr_auc": 0.16745874766020413,
+          "bedroc_alpha20": 0.162294634988249,
+          "ef1pct": 1.9115384615384614,
+          "ef5pct": 0.7646153846153846
+        },
+        "KAT2A": {
+          "n": 1000,
+          "actives": 185,
+          "roc_auc": 0.496348864201625,
+          "pr_auc": 0.19663269301392505,
+          "bedroc_alpha20": 0.21691537019204102,
+          "ef1pct": 1.6216216216216215,
+          "ef5pct": 1.2972972972972974
+        },
+        "MAPK1": {
+          "n": 989,
+          "actives": 198,
+          "roc_auc": 0.3760742698795796,
+          "pr_auc": 0.1543080033956434,
+          "bedroc_alpha20": 0.0820486008377345,
+          "ef1pct": 0.0,
+          "ef5pct": 0.19979797979797978
+        },
+        "MTORC1": {
+          "n": 1000,
+          "actives": 88,
+          "roc_auc": 0.548021331738437,
+          "pr_auc": 0.10143856309100563,
+          "bedroc_alpha20": 0.11912021079052831,
+          "ef1pct": 2.272727272727273,
+          "ef5pct": 1.1363636363636365
+        },
+        "PKM2": {
+          "n": 995,
+          "actives": 199,
+          "roc_auc": 0.5242228731597687,
+          "pr_auc": 0.21235769249170738,
+          "bedroc_alpha20": 0.2238950713375133,
+          "ef1pct": 0.0,
+          "ef5pct": 1.2
+        },
+        "VDR": {
+          "n": 992,
+          "actives": 198,
+          "roc_auc": 0.5637992010787981,
+          "pr_auc": 0.24425848052385388,
+          "bedroc_alpha20": 0.26994896834946563,
+          "ef1pct": 2.505050505050505,
+          "ef5pct": 1.1022222222222222
+        }
+      }
+    },
+    "bce_retrieval": {
+      "macro": {
+        "roc_auc": 0.6410149027545047,
+        "pr_auc": 0.24171124601324567,
+        "bedroc_alpha20": 0.27786953742149145,
+        "ef1pct": 2.0596712009513936,
+        "ef5pct": 1.8562098977052826
+      },
+      "per_target": {
+        "B2AR": {
+          "n": 697,
+          "actives": 64,
+          "roc_auc": 0.8456753554502371,
+          "pr_auc": 0.3226782577077538,
+          "bedroc_alpha20": 0.4347561484645757,
+          "ef1pct": 3.1116071428571423,
+          "ef5pct": 4.978571428571428
+        },
+        "CCR2": {
+          "n": 174,
+          "actives": 16,
+          "roc_auc": 0.5909810126582279,
+          "pr_auc": 0.10908225942911384,
+          "bedroc_alpha20": 0.004963218774415909,
+          "ef1pct": 0.0,
+          "ef5pct": 0.0
+        },
+        "M2R": {
+          "n": 2498,
+          "actives": 230,
+          "roc_auc": 0.8323959052219921,
+          "pr_auc": 0.2471809221120712,
+          "bedroc_alpha20": 0.2874372680740772,
+          "ef1pct": 1.3033043478260868,
+          "ef5pct": 2.2590608695652175
+        },
+        "M4R": {
+          "n": 25249,
+          "actives": 2301,
+          "roc_auc": 0.544239581172012,
+          "pr_auc": 0.09587024984947007,
+          "bedroc_alpha20": 0.1014007379616552,
+          "ef1pct": 1.2577810300728502,
+          "ef5pct": 0.9643777723410558
+        },
+        "ALDH1": {
+          "n": 993,
+          "actives": 200,
+          "roc_auc": 0.5672635561160152,
+          "pr_auc": 0.23751312862792912,
+          "bedroc_alpha20": 0.25416275342580635,
+          "ef1pct": 0.993,
+          "ef5pct": 1.1916
+        },
+        "ESR1m": {
+          "n": 955,
+          "actives": 76,
+          "roc_auc": 0.6180019160529309,
+          "pr_auc": 0.10886551179629922,
+          "bedroc_alpha20": 0.13891527578566398,
+          "ef1pct": 2.5131578947368425,
+          "ef5pct": 1.308936403508772
+        },
+        "FEN1": {
+          "n": 988,
+          "actives": 195,
+          "roc_auc": 0.7621689785624212,
+          "pr_auc": 0.5622439979503594,
+          "bedroc_alpha20": 0.7538953001094636,
+          "ef1pct": 5.066666666666666,
+          "ef5pct": 4.458666666666667
+        },
+        "GBA": {
+          "n": 994,
+          "actives": 156,
+          "roc_auc": 0.6174346735205924,
+          "pr_auc": 0.23406455573288742,
+          "bedroc_alpha20": 0.2864136229366989,
+          "ef1pct": 2.548717948717949,
+          "ef5pct": 1.9115384615384614
+        },
+        "KAT2A": {
+          "n": 1000,
+          "actives": 185,
+          "roc_auc": 0.6403714143591444,
+          "pr_auc": 0.2746646365317434,
+          "bedroc_alpha20": 0.30148353282000623,
+          "ef1pct": 2.7027027027027026,
+          "ef5pct": 1.1891891891891893
+        },
+        "MAPK1": {
+          "n": 989,
+          "actives": 198,
+          "roc_auc": 0.42141388601565594,
+          "pr_auc": 0.17879392004372893,
+          "bedroc_alpha20": 0.18386640526290077,
+          "ef1pct": 0.998989898989899,
+          "ef5pct": 0.899090909090909
+        },
+        "MTORC1": {
+          "n": 1000,
+          "actives": 88,
+          "roc_auc": 0.6815191387559809,
+          "pr_auc": 0.15305010831970486,
+          "bedroc_alpha20": 0.1792530448068317,
+          "ef1pct": 2.272727272727273,
+          "ef5pct": 1.3636363636363638
+        },
+        "PKM2": {
+          "n": 995,
+          "actives": 199,
+          "roc_auc": 0.46289235120325245,
+          "pr_auc": 0.17750150163035633,
+          "bedroc_alpha20": 0.12956735229682595,
+          "ef1pct": 0.5,
+          "ef5pct": 0.6
+        },
+        "VDR": {
+          "n": 992,
+          "actives": 198,
+          "roc_auc": 0.7488359667200976,
+          "pr_auc": 0.4407371484407764,
+          "bedroc_alpha20": 0.5561893257604674,
+          "ef1pct": 3.507070707070707,
+          "ef5pct": 3.0060606060606063
+        }
+      }
+    },
+    "random_label": {
+      "macro": {
+        "roc_auc": 0.4678403715324619,
+        "pr_auc": 0.13973549323113793,
+        "bedroc_alpha20": 0.1268508525935841,
+        "ef1pct": 0.9889293800954598,
+        "ef5pct": 0.7591366582196653
+      },
+      "per_target": {
+        "B2AR": {
+          "n": 697,
+          "actives": 64,
+          "roc_auc": 0.5902695497630333,
+          "pr_auc": 0.10382432608389666,
+          "bedroc_alpha20": 0.033272350905122046,
+          "ef1pct": 0.0,
+          "ef5pct": 0.0
+        },
+        "CCR2": {
+          "n": 174,
+          "actives": 16,
+          "roc_auc": 0.5189873417721519,
+          "pr_auc": 0.09888222622906917,
+          "bedroc_alpha20": 0.071174817685098,
+          "ef1pct": 0.0,
+          "ef5pct": 1.2083333333333333
+        },
+        "M2R": {
+          "n": 2498,
+          "actives": 230,
+          "roc_auc": 0.601706157503259,
+          "pr_auc": 0.1165717743439774,
+          "bedroc_alpha20": 0.13077109149791766,
+          "ef1pct": 2.1721739130434785,
+          "ef5pct": 0.9557565217391304
+        },
+        "M4R": {
+          "n": 25249,
+          "actives": 2301,
+          "roc_auc": 0.23556873704296175,
+          "pr_auc": 0.05495490925103279,
+          "bedroc_alpha20": 0.007957703250907253,
+          "ef1pct": 0.0,
+          "ef5pct": 0.026064264117325833
+        },
+        "ALDH1": {
+          "n": 993,
+          "actives": 200,
+          "roc_auc": 0.46482345523329127,
+          "pr_auc": 0.18553921669619375,
+          "bedroc_alpha20": 0.16009283404402144,
+          "ef1pct": 0.4965,
+          "ef5pct": 0.8936999999999999
+        },
+        "ESR1m": {
+          "n": 955,
+          "actives": 76,
+          "roc_auc": 0.5540686186455901,
+          "pr_auc": 0.09186890344211959,
+          "bedroc_alpha20": 0.100754411642663,
+          "ef1pct": 1.2565789473684212,
+          "ef5pct": 0.7853618421052632
+        },
+        "FEN1": {
+          "n": 988,
+          "actives": 195,
+          "roc_auc": 0.45505868658453774,
+          "pr_auc": 0.20559084178304515,
+          "bedroc_alpha20": 0.23252871733748406,
+          "ef1pct": 2.533333333333333,
+          "ef5pct": 1.3173333333333335
+        },
+        "GBA": {
+          "n": 994,
+          "actives": 156,
+          "roc_auc": 0.4337938314668625,
+          "pr_auc": 0.13703981672540322,
+          "bedroc_alpha20": 0.12128041848726723,
+          "ef1pct": 1.2743589743589745,
+          "ef5pct": 0.6371794871794872
+        },
+        "KAT2A": {
+          "n": 1000,
+          "actives": 185,
+          "roc_auc": 0.4762924888078262,
+          "pr_auc": 0.18526520792242585,
+          "bedroc_alpha20": 0.21353352476274354,
+          "ef1pct": 1.6216216216216215,
+          "ef5pct": 1.1891891891891893
+        },
+        "MAPK1": {
+          "n": 989,
+          "actives": 198,
+          "roc_auc": 0.3333333333333333,
+          "pr_auc": 0.14387133649695483,
+          "bedroc_alpha20": 0.07133429172427179,
+          "ef1pct": 0.4994949494949495,
+          "ef5pct": 0.2996969696969697
+        },
+        "MTORC1": {
+          "n": 1000,
+          "actives": 88,
+          "roc_auc": 0.41464812599681017,
+          "pr_auc": 0.07465717379003564,
+          "bedroc_alpha20": 0.06028103377771709,
+          "ef1pct": 0.0,
+          "ef5pct": 0.4545454545454546
+        },
+        "PKM2": {
+          "n": 995,
+          "actives": 199,
+          "roc_auc": 0.4836304638771749,
+          "pr_auc": 0.2068233609128906,
+          "bedroc_alpha20": 0.2378629732198788,
+          "ef1pct": 2.0,
+          "ef5pct": 1.3
+        },
+        "VDR": {
+          "n": 992,
+          "actives": 198,
+          "roc_auc": 0.5197440398951734,
+          "pr_auc": 0.21167231832774835,
+          "bedroc_alpha20": 0.2082169153815018,
+          "ef1pct": 1.002020202020202,
+          "ef5pct": 0.8016161616161617
+        }
+      }
+    }
+  },
+  "training_audit": {
+    "B2AR": {
+      "train_pairs": 37109,
+      "test_pairs": 697,
+      "aux_in_train": 2312,
+      "purged_rows": 2046,
+      "scaffold_overlap": 0
+    },
+    "CCR2": {
+      "train_pairs": 38659,
+      "test_pairs": 174,
+      "aux_in_train": 2299,
+      "purged_rows": 1019,
+      "scaffold_overlap": 0
+    },
+    "M2R": {
+      "train_pairs": 33099,
+      "test_pairs": 2498,
+      "aux_in_train": 648,
+      "purged_rows": 2583,
+      "scaffold_overlap": 0
+    },
+    "M4R": {
+      "train_pairs": 10830,
+      "test_pairs": 25249,
+      "aux_in_train": 1589,
+      "purged_rows": 3117,
+      "scaffold_overlap": 0
+    },
+    "ALDH1": {
+      "train_pairs": 37023,
+      "test_pairs": 993,
+      "aux_in_train": 2294,
+      "purged_rows": 1836,
+      "scaffold_overlap": 0
+    },
+    "ESR1m": {
+      "train_pairs": 36779,
+      "test_pairs": 955,
+      "aux_in_train": 2251,
+      "purged_rows": 2118,
+      "scaffold_overlap": 0
+    },
+    "FEN1": {
+      "train_pairs": 36660,
+      "test_pairs": 988,
+      "aux_in_train": 2294,
+      "purged_rows": 2204,
+      "scaffold_overlap": 0
+    },
+    "GBA": {
+      "train_pairs": 36898,
+      "test_pairs": 994,
+      "aux_in_train": 2308,
+      "purged_rows": 1960,
+      "scaffold_overlap": 0
+    },
+    "KAT2A": {
+      "train_pairs": 36722,
+      "test_pairs": 1000,
+      "aux_in_train": 2293,
+      "purged_rows": 2130,
+      "scaffold_overlap": 0
+    },
+    "MAPK1": {
+      "train_pairs": 36841,
+      "test_pairs": 989,
+      "aux_in_train": 2308,
+      "purged_rows": 2022,
+      "scaffold_overlap": 0
+    },
+    "MTORC1": {
+      "train_pairs": 38204,
+      "test_pairs": 1000,
+      "aux_in_train": 2328,
+      "purged_rows": 648,
+      "scaffold_overlap": 0
+    },
+    "PKM2": {
+      "train_pairs": 36772,
+      "test_pairs": 995,
+      "aux_in_train": 2290,
+      "purged_rows": 2085,
+      "scaffold_overlap": 0
+    },
+    "VDR": {
+      "train_pairs": 36551,
+      "test_pairs": 992,
+      "aux_in_train": 2307,
+      "purged_rows": 2309,
+      "scaffold_overlap": 0
+    }
+  },
+  "hyperparameters": {
+    "rank": 8,
+    "epochs": 80,
+    "lr": 0.005,
+    "temperature": 0.07,
+    "retrieval_weight": 0.25,
+    "preserve_weight": 0.0,
+    "seed": 20260925
+  },
+  "claim_boundary": "Retrospective binding-screening pilot; domain ChEMBL actives are not PAM labels."
+}

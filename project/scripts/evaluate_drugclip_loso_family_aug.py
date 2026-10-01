@@ -39,7 +39,7 @@ def weights(targets, labels, n_targets):
     return out * len(labels) / out.sum()
 
 
-def fit(mol, pocket, pm, pt, y, seen, state, seed, args, random=False):
+def fit(mol, pocket, pm, pt, y, seen, state, seed, args, random=False, domain_balance=False, n_gpcr=4):
     model = Model(state, args.rank, seed)
     with torch.no_grad():
         hm = model.mol.hidden(mol); hp = model.pocket.hidden(pocket)
@@ -50,7 +50,14 @@ def fit(mol, pocket, pm, pt, y, seen, state, seed, args, random=False):
         for target in seen:
             keep = np.flatnonzero(pt == target); y[keep] = rng.permutation(y[keep])
     pmt = torch.as_tensor(np.asarray(pm, dtype=np.int64).copy()); ptt = torch.as_tensor(np.asarray(pt, dtype=np.int64).copy())
-    yt = torch.as_tensor(y, dtype=torch.float32); wt = torch.as_tensor(weights(pt, y, pocket.shape[0]))
+    yt = torch.as_tensor(y, dtype=torch.float32); wt_np = weights(pt, y, pocket.shape[0])
+    if domain_balance:
+        gpcr_mask = np.asarray(pt) < n_gpcr
+        wg, wl = wt_np[gpcr_mask].sum(), wt_np[~gpcr_mask].sum()
+        if wg > 0 and wl > 0:
+            wt_np[gpcr_mask] *= 0.5 / wg; wt_np[~gpcr_mask] *= 0.5 / wl
+            wt_np *= len(y) / wt_np.sum()
+    wt = torch.as_tensor(wt_np)
     train_mol = torch.unique(pmt); seen_t = torch.as_tensor(seen)
     remap = {t: i for i, t in enumerate(seen)}; active = {}
     for m, t, label in zip(pm, pt, y):
@@ -97,6 +104,8 @@ def main():
     p.add_argument('--preserve-weight', type=float, default=0.)
     p.add_argument('--full-only', action='store_true')
     p.add_argument('--save-full-checkpoint', type=Path)
+    p.add_argument('--domain-balance', action='store_true',
+                   help='rescale BCE weights so GPCR and external domains contribute equally')
     a = p.parse_args()
     ga = np.load(a.gpcr_representations, allow_pickle=False); ea = np.load(a.external_representations, allow_pickle=False)
     fa = np.load(a.family_npz, allow_pickle=False)
@@ -155,7 +164,8 @@ def main():
                          'aux_in_train': int((train & aux).sum()),
                          'purged_rows': int(((pt != held) & ~train).sum()), 'scaffold_overlap': 0}
         for randomized, out in [(False, tuned), (True, random)]:
-            model = fit(mol, pocket, pm[train], pt[train], labels[train], seen, state, a.seed + held * 1009, a, randomized)
+            model = fit(mol, pocket, pm[train], pt[train], labels[train], seen, state, a.seed + held * 1009, a, randomized,
+                        domain_balance=a.domain_balance)
             with torch.inference_mode():
                 matrix = model.mol.from_hidden(model.mol.hidden(mol)) @ model.pocket.from_hidden(model.pocket.hidden(pocket)).T
             out[test] = matrix.numpy()[pm[test], pt[test]]

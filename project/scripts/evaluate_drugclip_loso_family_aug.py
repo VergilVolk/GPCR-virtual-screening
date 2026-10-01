@@ -95,6 +95,8 @@ def main():
     p.add_argument('--temperature', type=float, default=.07)
     p.add_argument('--retrieval-weight', type=float, default=.25)
     p.add_argument('--preserve-weight', type=float, default=0.)
+    p.add_argument('--full-only', action='store_true')
+    p.add_argument('--save-full-checkpoint', type=Path)
     a = p.parse_args()
     ga = np.load(a.gpcr_representations, allow_pickle=False); ea = np.load(a.external_representations, allow_pickle=False)
     fa = np.load(a.family_npz, allow_pickle=False)
@@ -129,6 +131,19 @@ def main():
     with torch.inference_mode():
         base = (frozen_m(mol) @ frozen_p(pocket).T).numpy()
     official = base[pm, pt]
+    if a.full_only:
+        if a.save_full_checkpoint is None:
+            raise ValueError('--full-only requires --save-full-checkpoint')
+        model = fit(mol, pocket, pm, pt, labels, list(range(len(targets))), state, a.seed, a, False)
+        a.save_full_checkpoint.parent.mkdir(parents=True, exist_ok=True)
+        torch.save({'mol_project': model.mol.materialized_state(), 'pocket_project': model.pocket.materialized_state(),
+                    'base_projection': str(a.projection), 'training_targets': targets,
+                    'n_pairs': int(len(table)), 'n_aux_rows': int(aux.sum()), 'seed': a.seed,
+                    'objective': 'target-balanced BCE + target retrieval + ChEMBL M2/M4 family aux (training-only)'},
+                   a.save_full_checkpoint)
+        print(json.dumps({'checkpoint': str(a.save_full_checkpoint), 'n_pairs': int(len(table)),
+                          'n_aux': int(aux.sum()), 'targets': targets, 'seed': a.seed}, indent=2))
+        return
     tuned = np.full(len(table), np.nan); random = np.full(len(table), np.nan); audit = {}
     for held, target in enumerate(targets):
         test = (pt == held) & ~aux                       # benchmark rows only

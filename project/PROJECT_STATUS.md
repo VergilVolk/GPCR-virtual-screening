@@ -1,6 +1,38 @@
 # PACER-M4 当前状态
 
-更新时间：2026-09-27
+更新时间：2026-10-01
+
+## 2026-10-01 PACER-FKG v02 Stage A + Stage B 闭环
+
+### 当前冻结结论
+
+- PACER-FKG v02 已完成从历史 600 ns long-MD、LY2119620 20 ns matched closure（Stage A）到 CM00734 20 ns hard-negative test（Stage B）的同一冻结表示链验证。
+- 三批分析统一使用冻结的优化 encoder：原始 Geom2Vec/ViSNet 预训练 checkpoint 不微调，但使用冻结的 `C1-BS256` 中间层/残基 readout，而不是原版 Geom2Vec final embedding。
+- 冻结 PACER-FKG v02 数值锚点：`b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd`。
+- Stage A 的 matched 20 ns 结果中，主要信号位于 `STATE_MOTION / Delta_INT / compound110_extension`：
+  - compound110 reference：R1/R3 direction cosine = `+0.583656`
+  - LY2119620：R1/R3 direction cosine = `+0.634304`
+- Stage B 对实验 inactive hard negative `CM00734` 使用相同冻结 encoder、normalization、RFF、graph、region 和 contrast，无任何 outcome-driven refit。相同主要信号下：
+  - CM00734：R1/R3 direction cosine = `-0.326839`
+  - CM00734 / LY2119620 的 Delta_INT magnitude 比例为 R1 `0.644`、R2 `0.798`、R3 `0.525`
+- 在 `STATE_MOTION / Delta_INT` 中，CM00734 的全部 9 个报告区域均为负的 R1/R3 direction cosine；LY2119620 在多个机制相关区域为正。
+- 但 CM00734 在多个区域仍产生与 LY2119620 相当甚至更大的 Delta_INT magnitude；`SIGNED_DRIFT` 分支的 magnitude 也大量重叠。因此 **Delta_INT magnitude 单独不能作为 PAM/cooperativity 判别量**。
+- 当前总体科学结论为：`PARTIAL_SPECIFICITY_SUPPORT`。被冻结方法的可区分信息主要来自 `STATE_MOTION` 分支中 Delta_INT **跨 replica 方向一致性**，而不是单纯幅度。
+- 这一结论属于 representation-space mechanistic evidence；不构成通用 PAM classifier、效力预测、药理活性证明或前瞻候选确认。
+- R2 是历史 calibration/fitting replica；冻结外推解释优先看 R1/R3。20 个时间 block 是相关时间样本，不是独立生物学 replica，不做独立样本 p-value 推断。
+- Stage B 结果已冻结：
+  - branch：`experiment/pacer-dc-cm00734-stage-b-20ns-v01`
+  - commit：`f2f73403c1e965f63cf6fd68d3b6dc60c7dba26a`
+  - tag：`pacer-dc-cm00734-stage-b-20ns-v01`
+  - final result SHA256：`be663c7d45cc4ade1e053029e6aa09e65ca24c1e2fc22dae5398a26bf49d7d99`
+
+### 方法主张边界
+
+- `Delta_INT = CP - P - C + A`；不得用简单 `CP - C` 替代。
+- `Delta_AGO` 仅为历史 representation axis；不得据此直接宣称 intrinsic agonism。
+- docking 仅用于 pose proposal / pocket compatibility，不用于 efficacy 或 PAM 判别。
+- CM00734 hard-negative 结果已接受，不允许根据其结果重新调 encoder、normalization、bandwidth、RFF、graph、region 或 threshold。
+- 旧状态中“Geom2Vec/FKG 已转为失败/消融基线”的表述只代表 2026-09-27 当时阶段，现已被后续 encoder optimization + frozen PACER-FKG v02 结果取代。
 
 ## 2026-09-27 PACER-MCV 无编码器物理基线
 
@@ -77,7 +109,11 @@
 
 ## 当前主线
 
-开发 PACER-DC：用 M4 在有、无 ACh 条件下的匹配动态差分，区分 ACh 依赖的 PAM 协同作用与候选物自身的内在激动作用。
+PACER-DC 当前主线已从“继续寻找新 encoder”转为：
+
+**冻结的 C1-BS256 encoder + PACER-FKG v02 → matched four-context Delta_INT → 跨 replica 方向一致性 → hard-negative specificity 审计。**
+
+Stage A 与 Stage B 已完成，不再进行 outcome-driven tuning。当前工作重点是结果归档、外部审计和为下一轮真正前瞻验证冻结 protocol。
 
 ## 已完成
 
@@ -90,26 +126,32 @@
 
 ## 当前真实闸门
 
-| 闸门 | 状态 | 原因 |
+| 闸门 | 状态 | 说明 |
 |---|---:|---|
-| 试验清单结构 | 通过 | 四上下文和 replica 对齐正确 |
-| 生产 MD 环境 | 未通过 | Windows 无 AmberTools；正在建立 WSL2 Linux 隔离环境 |
-| PACER-DC 完整计分 | 未通过 | 当前完整四上下文候选数为 0 |
-| Triplet/监督轨迹学习 | 未通过 | 仅一个 PAM 动态正对照，且缺少无功能结合对照 |
-| 功能性 PAM 结论 | 未通过 | 尚无前瞻功能实验 |
+| 优化 encoder 冻结 | 通过 | C1-BS256 candidate 已冻结；原始 Geom2Vec/ViSNet 权重不微调 |
+| 历史 long-MD PACER-FKG v02 | 通过 | 4 systems × 3 replicas × 50 ns 已进入统一冻结表示 |
+| Stage A：LY2119620 matched 20 ns | 通过 / 描述性正向 | 主要 `STATE_MOTION / Delta_INT / compound110_extension` R1/R3 cosine `+0.634` |
+| Stage B：CM00734 hard negative | 部分特异性支持 | 同一主要信号 R1/R3 cosine `-0.327`，但 magnitude 存在明显重叠 |
+| magnitude-only PAM 判别 | 未通过 | inactive CM00734 在多个区域仍有较大 Delta_INT magnitude |
+| 通用 PAM classifier | 未建立 | 无冻结分类阈值、无足够独立正负样本、无前瞻验证 |
+| 药理效力 / potency 预测 | 未建立 | 当前输出为 representation-space mechanistic descriptors |
+| outcome-driven retuning | 禁止 | Stage B 后不得反向调参以改善 hard-negative 结果 |
 
 ## 下一执行点
 
-1. 完成 WSL2 中 OpenFF/AmberTools/OpenMM 环境；
-2. 对已知 PAM、compound-110、CM00717/CM00734 和共享对照做参数化与最小化 QC；
-3. 先跑短轨迹检查体系稳定性，QC 通过后才进入 3 × 100 ns；
-4. 先完成简单动态差分 baseline，再比较 VAMP/SPIB；
-5. 数据闸门通过后才做 Triplet 微调。
+1. 完成 `PROJECT_STATUS.md` 与 Stage A+B 总结报告归档；
+2. 保留 Stage A / Stage B 冻结代码、receipt、result SHA 与 tag，不重跑、不调参；
+3. 下一轮若继续科学验证，必须在运行前冻结新增正/负样本清单与评价规则；
+4. 优先增加新的实验 inactive/binder hard negatives 和独立已知 PAM，而不是继续在 LY2119620 / CM00734 上优化；
+5. 只有在独立前瞻样本中复现方向性 discrimination 后，才讨论 classifier、threshold 或候选排名。
 
 自动报告：`project/results/pacer_dc_phase1_audit/REPORT.md`。
 # 当前协作任务入口
 
-OneProt 与 Geom2Vec/FKG 已转为失败/消融基线；当前优先任务改为：
-**现有 M4 四上下文 atom14 窗口 → PACER-MCV 物理特征 → R2/R3 方向与窗口块审计 → 与旧编码器基线比较**。
-具体命令以 `docs/PACER_MCV_METHOD_AND_HANDOFF.md` 为准。
-仅完成重对接、体系构建或短平衡不等于完成当前算法任务。
+PACER-FKG v02 的 Stage A + Stage B 已闭环。当前不再以 PACER-MCV 或原版 Geom2Vec 作为默认主线，也不继续对现有 LY2119620 / CM00734 结果做参数优化。
+
+当前入口为：
+**冻结结果归档 → 独立审计 → 下一轮预注册样本扩展 / 前瞻验证。**
+
+总结合并报告：
+`project/results/pacer_dc_stage_a_b_final_synthesis_v01/PACER_DC_STAGE_A_B_FINAL_SYNTHESIS_v01.md`。

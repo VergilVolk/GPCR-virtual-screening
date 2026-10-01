@@ -1,0 +1,88 @@
+{
+  "schema": "pacer.final.frozen_runner.cm00734_payload_regression.v1",
+  "frozen_result_path": "C:\\projects\\GPCR-virtual-screening-final\\project\\results\\pacer_dc_cm00734_stage_b_20ns_analysis_v01\\track_b_fkg_v02\\phase2b_graph_region\\STAGE_B_MATCHED_20NS_RESULTS_v01.json",
+  "frozen_result_sha256_expected": "be663c7d45cc4ade1e053029e6aa09e65ca24c1e2fc22dae5398a26bf49d7d99",
+  "frozen_result_sha256_actual": "be663c7d45cc4ade1e053029e6aa09e65ca24c1e2fc22dae5398a26bf49d7d99",
+  "frozen_result_sha256_match": true,
+  "compared_subtree": "results[<branch>][<panel>][<contrast>].regions[<region>]",
+  "comparison_policy": {
+    "exact_fields": "all descriptor / block-summary quantities must match exactly",
+    "tolerated_field": "R1_R3_direction_cosine",
+    "tolerance_abs": 1e-06,
+    "tolerance_rationale": "single float32 inner product; summation-order noise of order 1e-8. The tolerance is 1e-6, four orders below the 6-decimal precision at which the frozen reports publish these cosines.",
+    "sign_preservation_required": true,
+    "rendering_equality_reported_not_gated": "round(value, 6) equality is reported as evidence; it is not a gate, because a 1-ULP float32 difference can flip the last published digit."
+  },
+  "exact_fields_compared": 1632,
+  "exact_fields_mismatched": 0,
+  "cosine_fields_compared": 108,
+  "cosine_max_abs_diff": 6.43649971099336e-08,
+  "cosine_sign_mismatches": [],
+  "cosine_rendering_mismatches": [
+    {
+      "path": "results.SIGNED_DRIFT.compound110_reference.Delta_AGO.regions.compound110_extension.R1_R3_direction_cosine",
+      "frozen": 0.398492,
+      "live": 0.398493
+    },
+    {
+      "path": "results.STATE_MOTION.CM00734.Delta_AGO.regions.stable_core_control.R1_R3_direction_cosine",
+      "frozen": -0.264858,
+      "live": -0.264859
+    }
+  ],
+  "cosine_rendering_identical": false,
+  "cosine_rendering_mismatch_count": 2,
+  "primary_signal": {
+    "path": "STATE_MOTION/CM00734/Delta_INT/compound110_extension/R1_R3_direction_cosine",
+    "frozen": -0.3268392457993834,
+    "live": -0.32683923840522766,
+    "abs_diff": 7.394155732143304e-09,
+    "within_tolerance": true,
+    "sign_preserved": true,
+    "rendered_6dp_frozen": -0.326839,
+    "rendered_6dp_live": -0.326839,
+    "matches": true
+  },
+  "n_differences": 0,
+  "differences": [],
+  "differences_truncated": 0,
+  "scientific_payload_identical": true,
+  "non_scientific_provenance_fields_not_compared": [
+    "created_at",
+    "upstream.phase2a_receipt_sha256",
+    "vector_artifacts[].path",
+    "vector_artifacts[].bytes",
+    "vector_artifacts[].sha256",
+    "graph.path",
+    "matched_design (run-level labels)",
+    "candidate.implemented_as",
+    "version",
+    "schema",
+    "status",
+    "run_id"
+  ],
+  "frozen_panels": [
+    "Delta_AGO",
+    "Delta_INT",
+    "Delta_PAM"
+  ],
+  "live_panels": [
+    "Delta_AGO",
+    "Delta_INT",
+    "Delta_PAM"
+  ],
+  "block_constructor_equivalence": {
+    "n_residues": 270,
+    "bs_width": 256,
+    "checks": {
+      "phase2_1000x50_STATE_MOTION_bit_identical": true,
+      "phase2_1000x50_SIGNED_DRIFT_bit_identical": true,
+      "phase2_endpoint_identity": true,
+      "stage_b_400x20_STATE_MOTION_bit_identical": true,
+      "stage_b_400x20_SIGNED_DRIFT_bit_identical": true,
+      "stage_b_endpoint_identity": true
+    },
+    "stage_b_driver_available": true,
+    "all_identical": true
+  }
+}

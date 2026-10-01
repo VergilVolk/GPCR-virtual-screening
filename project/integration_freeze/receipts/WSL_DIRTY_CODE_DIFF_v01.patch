@@ -1,0 +1,273 @@
+diff --git a/project/environment_pacer_dc_md.yml b/project/environment_pacer_dc_md.yml
+index cba39cc..7ccfe54 100644
+--- a/project/environment_pacer_dc_md.yml
++++ b/project/environment_pacer_dc_md.yml
+@@ -4,9 +4,24 @@ channels:
+ dependencies:
+   - python=3.11
+   - openmm>=8.2
++  # OpenMM's CUDA platform compiles its kernels at runtime through NVRTC, so the
++  # CUDA version that matters is cuda-nvrtc's, not openmm's.  The host driver
++  # (596.08) supports CUDA <= 13.2; an unpinned solve picks cuda-nvrtc 13.4 and
++  # every CUDA context dies with CUDA_ERROR_UNSUPPORTED_PTX_VERSION (222).
++  # openmm 8.6.1 requires cuda-nvrtc >=13.0.88,<14, so pinning to 13.2 needs no
++  # rebuild and keeps the MD stack identical.
++  - cuda-version=13.2
++  - cuda-nvrtc=13.2.*
+   # Frozen compatible OpenFF stack.  Toolkit 0.16.x is incompatible with
+   # Interchange 0.4.5 (missing NAGLChargesHandler), despite successful imports.
+   - openmmforcefields=0.14.1
++  # openmmforcefields 0.14.1 (build pyhd8ed1ab_3) does NOT declare this runtime
++  # dependency, but openmmforcefields/utils.py imports it unconditionally.
++  # Without it `import openmmforcefields` dies with ModuleNotFoundError.
++  # It cannot be left out of this file: the smoke-test script
++  # scripts/audit_pacer_dc_ligand_parameterization.py imports
++  # openmmforcefields.generators at module level.
++  - importlib_resources
+   # Base package is sufficient for GAFF/SMIRNOFF parameterization and avoids
+   # pulling optional NAGL/PyTorch/CUDA dependencies into the CPU environment.
+   - openff-toolkit-base=0.16.5
+diff --git a/project/scripts/build_pacer_dc_membrane_reference.py b/project/scripts/build_pacer_dc_membrane_reference.py
+index 150a2b7..6488497 100644
+--- a/project/scripts/build_pacer_dc_membrane_reference.py
++++ b/project/scripts/build_pacer_dc_membrane_reference.py
+@@ -212,30 +212,46 @@ def main():
+         app.PDBFile.writeFile(base.topology, base.positions, handle)
+ 
+     qc_root = ROOT / "results" / "pacer_dc_openmm_reference_qc_v01"
+-    ach_source = qc_root / "probe_only" / "minimized.pdb"
+-    ly_source = qc_root / "LY2119620__candidate_no_probe" / "minimized.pdb"
+-    c110_source = qc_root / "compound110__candidate_no_probe" / "minimized.pdb"
+-    ach0 = qc.openff_molecule(qc.posed_from_pdb(
+-        ROOT / "data" / "pdb" / "7TRS.pdb", qc.LIGAND_DIR / "ACH_ideal.sdf", residue_name="ACH"
+-    ), "ACH")
+-    ly0 = qc.openff_molecule(qc.posed_from_pdb(
+-        qc.COMPLEX_DIR / "LY2119620__candidate_probe.pdb", qc.LIGAND_DIR / "2CU_ideal.sdf", chain="L"
+-    ), "LY2119620")
+-    c1100 = qc.openff_molecule(qc.posed_from_sdf(
+-        qc.COMPLEX_DIR / "compound110_7TRS_redocked.sdf"
+-    ), "compound110")
+-    ach = align_ligand_to_base(replace_conformer_from_chain(ach0, ach_source), ach_source)
+-    ly = align_ligand_to_base(replace_conformer_from_chain(ly0, ly_source), ly_source)
+-    compound110 = align_ligand_to_base(replace_conformer_from_chain(c1100, c110_source), c110_source)
+-    ach = transform_ligand(ach, rotation, source_center, target_center)
+-    ly = transform_ligand(ly, rotation, source_center, target_center)
+-    compound110 = transform_ligand(compound110, rotation, source_center, target_center)
++
++    # Ligands are resolved lazily so a missing pose fails only the systems that
++    # need it.  Loading them up front aborted the whole run -- including systems
++    # whose inputs were present -- and hid which file was actually absent.
++    def load_ach():
++        source = qc_root / "probe_only" / "minimized.pdb"
++        posed = qc.openff_molecule(qc.posed_from_pdb(
++            ROOT / "data" / "pdb" / "7TRS.pdb", qc.LIGAND_DIR / "ACH_ideal.sdf",
++            residue_name="ACH"
++        ), "ACH")
++        posed = align_ligand_to_base(replace_conformer_from_chain(posed, source), source)
++        return transform_ligand(posed, rotation, source_center, target_center)
++
++    def load_ly2119620():
++        source = qc_root / "LY2119620__candidate_no_probe" / "minimized.pdb"
++        posed = qc.openff_molecule(qc.posed_from_pdb(
++            qc.COMPLEX_DIR / "LY2119620__candidate_probe.pdb", qc.LIGAND_DIR / "2CU_ideal.sdf",
++            chain="L"
++        ), "LY2119620")
++        posed = align_ligand_to_base(replace_conformer_from_chain(posed, source), source)
++        return transform_ligand(posed, rotation, source_center, target_center)
++
++    def load_compound110():
++        # Produced by the 7TRS pocket re-docking step, not by
++        # build_pacer_dc_reference_complexes.py.
++        source = qc_root / "compound110__candidate_no_probe" / "minimized.pdb"
++        posed = qc.openff_molecule(qc.posed_from_pdb(
++            qc.COMPLEX_DIR / "compound110__candidate_probe.pdb",
++            qc.LIGAND_DIR / "5XI_ideal.sdf",
++            chain="L",
++        ), "compound110")
++        posed = align_ligand_to_base(replace_conformer_from_chain(posed, source), source)
++        return transform_ligand(posed, rotation, source_center, target_center)
++
+     definitions = {
+-        "probe_only": [ach], "apo": [],
+-        "LY2119620__candidate_probe": [ach, ly],
+-        "LY2119620__candidate_no_probe": [ly],
+-        "compound110__candidate_probe": [ach, compound110],
+-        "compound110__candidate_no_probe": [compound110],
++        "probe_only": [load_ach], "apo": [],
++        "LY2119620__candidate_probe": [load_ach, load_ly2119620],
++        "LY2119620__candidate_no_probe": [load_ly2119620],
++        "compound110__candidate_probe": [load_ach, load_compound110],
++        "compound110__candidate_no_probe": [load_compound110],
+     }
+     unknown = set(args.systems) - set(definitions)
+     if unknown:
+@@ -243,7 +259,7 @@ def main():
+ 
+     records = []
+     for name in args.systems:
+-        ligands = definitions[name]
++        ligands = [loader() for loader in definitions[name]]
+         modeller = app.Modeller(base.topology, base.positions)
+         for ligand in ligands:
+             modeller.add(ligand.to_topology().to_openmm(), ligand.conformers[0].to_openmm())
+diff --git a/project/scripts/build_pacer_dc_openmm_reference_systems.py b/project/scripts/build_pacer_dc_openmm_reference_systems.py
+index 41fcfee..6948edf 100644
+--- a/project/scripts/build_pacer_dc_openmm_reference_systems.py
++++ b/project/scripts/build_pacer_dc_openmm_reference_systems.py
+@@ -152,29 +152,44 @@ def main() -> None:
+     args = parser.parse_args()
+     args.outdir.mkdir(parents=True, exist_ok=True)
+ 
+-    ach = openff_molecule(posed_from_pdb(
+-        ROOT / "data" / "pdb" / "7TRS.pdb", LIGAND_DIR / "ACH_ideal.sdf",
+-        residue_name="ACH",
+-    ), "ACH")
+-    ly = openff_molecule(posed_from_pdb(
+-        COMPLEX_DIR / "LY2119620__candidate_probe.pdb", LIGAND_DIR / "2CU_ideal.sdf",
+-        chain="L",
+-    ), "LY2119620")
+-    compound110 = openff_molecule(posed_from_sdf(
+-        COMPLEX_DIR / "compound110_7TRS_redocked.sdf"
+-    ), "compound110")
++    # Ligands are resolved lazily, inside the per-system guard below.  Resolving
++    # them up front meant one missing pose aborted every system, which defeats
++    # the per-system error handling this loop is built around and hides which
++    # input is actually absent.
++    def load_ach() -> Molecule:
++        return openff_molecule(posed_from_pdb(
++            ROOT / "data" / "pdb" / "7TRS.pdb", LIGAND_DIR / "ACH_ideal.sdf",
++            residue_name="ACH",
++        ), "ACH")
++
++    def load_ly2119620() -> Molecule:
++        return openff_molecule(posed_from_pdb(
++            COMPLEX_DIR / "LY2119620__candidate_probe.pdb", LIGAND_DIR / "2CU_ideal.sdf",
++            chain="L",
++        ), "LY2119620")
++
++    def load_compound110() -> Molecule:
++        # Produced by the 7TRS pocket re-docking step, not by
++        # build_pacer_dc_reference_complexes.py.  Its absence must fail only the
++        # two compound110 systems, not the whole run.
++        return openff_molecule(posed_from_pdb(
++            COMPLEX_DIR / "compound110__candidate_probe.pdb",
++            LIGAND_DIR / "5XI_ideal.sdf",
++            chain="L",
++        ), "compound110")
+ 
+     definitions = {
+-        "probe_only": [ach],
++        "probe_only": [load_ach],
+         "apo": [],
+-        "LY2119620__candidate_probe": [ach, ly],
+-        "LY2119620__candidate_no_probe": [ly],
+-        "compound110__candidate_probe": [ach, compound110],
+-        "compound110__candidate_no_probe": [compound110],
++        "LY2119620__candidate_probe": [load_ach, load_ly2119620],
++        "LY2119620__candidate_no_probe": [load_ly2119620],
++        "compound110__candidate_probe": [load_ach, load_compound110],
++        "compound110__candidate_no_probe": [load_compound110],
+     }
+     records = []
+-    for name, ligands in definitions.items():
++    for name, loaders in definitions.items():
+         try:
++            ligands = [loader() for loader in loaders]
+             records.append({"success": True, **build_one(name, ligands, args.outdir)})
+         except Exception as exc:
+             records.append({
+diff --git a/project/scripts/pacer_dc_score.py b/project/scripts/pacer_dc_score.py
+index 8ca2e96..50d0e99 100644
+--- a/project/scripts/pacer_dc_score.py
++++ b/project/scripts/pacer_dc_score.py
+@@ -274,11 +274,11 @@ def pareto_front(scored: pd.DataFrame) -> pd.Series:
+         "BindingCompatibility",
+     ]
+     for i in scored.index[eligible]:
+-        x = scored.loc[i, cols].to_numpy(float)
++        x = scored.loc[i, cols].to_numpy(float, copy=True)
+         x[2] *= -1.0
+         dominated = False
+         for j in scored.index[eligible & (scored.index != i)]:
+-            y = scored.loc[j, cols].to_numpy(float)
++            y = scored.loc[j, cols].to_numpy(float, copy=True)
+             y[2] *= -1.0
+             if np.all(y >= x) and np.any(y > x):
+                 dominated = True
+diff --git a/project/tests/test_pacer_dc_score.py b/project/tests/test_pacer_dc_score.py
+index e3f4154..15aa5ef 100644
+--- a/project/tests/test_pacer_dc_score.py
++++ b/project/tests/test_pacer_dc_score.py
+@@ -115,3 +115,72 @@ def test_static_evidence_cannot_complete_dynamic_vector() -> None:
+     result = score_candidate("X", df, seed=1, iterations=20)
+     assert result["evidence_complete"] is False
+     assert "not_trajectory" in result["missing_requirements"]
++
++
++def test_pareto_front_domination_requires_pairwise_comparison() -> None:
++    """Domination is evaluated pairwise, so a multi-eligible case is required.
++
++    ``test_incomplete_candidate_cannot_enter_pareto`` holds a single eligible
++    row, so its inner comparison loop never executes and cannot detect a
++    regression in the row-vector handling.  pandas 3.x returns read-only row
++    views, so negating the intrinsic-risk axis in place fails unless the row
++    vector is copied first.
++    """
++    scored = pd.DataFrame(
++        [
++            # A dominates B on every axis.
++            {"candidate_id": "A", "CoupledShift": 2.0, "OrthostericStabilization_A": 2.0,
++             "IntrinsicActivationRisk": 0.10, "BindingCompatibility": 2.0,
++             "evidence_complete": True},
++            {"candidate_id": "B", "CoupledShift": 1.0, "OrthostericStabilization_A": 1.0,
++             "IntrinsicActivationRisk": 0.20, "BindingCompatibility": 1.0,
++             "evidence_complete": True},
++            # C trades coupling against stability and compatibility, but carries
++            # the lowest intrinsic risk, so A and C do not dominate each other.
++            {"candidate_id": "C", "CoupledShift": 3.0, "OrthostericStabilization_A": 0.5,
++             "IntrinsicActivationRisk": 0.05, "BindingCompatibility": 1.5,
++             "evidence_complete": True},
++            # D matches A except for a worse intrinsic risk, so A dominates it.
++            {"candidate_id": "D", "CoupledShift": 2.0, "OrthostericStabilization_A": 2.0,
++             "IntrinsicActivationRisk": 0.30, "BindingCompatibility": 2.0,
++             "evidence_complete": True},
++        ]
++    )
++    front = pareto_front(scored)
++    assert sorted(scored.loc[front, "candidate_id"]) == ["A", "C"]
++
++
++def test_intrinsic_activation_risk_is_minimized_not_maximized() -> None:
++    """Lower IntrinsicActivationRisk must win; the axis is negated internally."""
++    scored = pd.DataFrame(
++        [
++            {"candidate_id": "low_risk", "CoupledShift": 1.0,
++             "OrthostericStabilization_A": 1.0, "IntrinsicActivationRisk": 0.10,
++             "BindingCompatibility": 1.0, "evidence_complete": True},
++            {"candidate_id": "high_risk", "CoupledShift": 1.0,
++             "OrthostericStabilization_A": 1.0, "IntrinsicActivationRisk": 0.90,
++             "BindingCompatibility": 1.0, "evidence_complete": True},
++        ]
++    )
++    front = pareto_front(scored)
++    assert sorted(scored.loc[front, "candidate_id"]) == ["low_risk"]
++
++
++def test_ineligible_candidate_is_excluded_from_every_comparison() -> None:
++    """An ineligible row must neither enter the front nor dominate others."""
++    scored = pd.DataFrame(
++        [
++            # Dominates everything numerically, but carries no complete evidence.
++            {"candidate_id": "ineligible", "CoupledShift": 99.0,
++             "OrthostericStabilization_A": 99.0, "IntrinsicActivationRisk": -99.0,
++             "BindingCompatibility": 99.0, "evidence_complete": False},
++            {"candidate_id": "A", "CoupledShift": 2.0, "OrthostericStabilization_A": 2.0,
++             "IntrinsicActivationRisk": 0.10, "BindingCompatibility": 2.0,
++             "evidence_complete": True},
++            {"candidate_id": "C", "CoupledShift": 3.0, "OrthostericStabilization_A": 0.5,
++             "IntrinsicActivationRisk": 0.05, "BindingCompatibility": 1.5,
++             "evidence_complete": True},
++        ]
++    )
++    front = pareto_front(scored)
++    assert sorted(scored.loc[front, "candidate_id"]) == ["A", "C"]

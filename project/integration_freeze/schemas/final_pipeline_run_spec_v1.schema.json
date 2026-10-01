@@ -1,0 +1,309 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "pacer.final.pipeline_run_spec.v1",
+  "title": "PACER final pipeline run spec (frozen-method apply-only)",
+  "type": "object",
+  "required": [
+    "schema",
+    "run_id",
+    "created_at",
+    "scope",
+    "molecule",
+    "contexts",
+    "replicas",
+    "seeds",
+    "frames",
+    "reference_panel",
+    "calibration",
+    "paths",
+    "inputs",
+    "frozen_anchor"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "pacer.final.pipeline_run_spec.v1"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "object",
+      "required": [
+        "prospective_frozen_method_candidate_evaluation"
+      ],
+      "properties": {
+        "prospective_frozen_method_candidate_evaluation": {
+          "const": true
+        },
+        "pam_classifier_claim": {
+          "const": false
+        },
+        "potency_predictor_claim": {
+          "const": false
+        },
+        "pam_probability_output": {
+          "const": false
+        },
+        "magnitude_threshold_defined": {
+          "const": false
+        },
+        "outcome_driven_rule": {
+          "const": false
+        },
+        "calibration_performed": {
+          "const": false
+        },
+        "model_training_performed": {
+          "const": false
+        },
+        "adapter_fitting_performed": {
+          "const": false
+        },
+        "score_fusion_invented": {
+          "const": false
+        }
+      },
+      "additionalProperties": true
+    },
+    "molecule": {
+      "type": "object",
+      "required": [
+        "candidate_id",
+        "canonical_smiles",
+        "role"
+      ],
+      "properties": {
+        "candidate_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "canonical_smiles": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "enum": [
+            "prospective_computational_hypothesis",
+            "known_PAM_positive_control",
+            "allosteric_agonist_specificity_control",
+            "strict_experimental_inactive_binding_to_be_tested",
+            "same_source_PAM_positive_control",
+            "regression_replay_control"
+          ]
+        },
+        "chemotype": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "provenance": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": true
+    },
+    "contexts": {
+      "type": "object",
+      "required": [
+        "A",
+        "P",
+        "C",
+        "CP"
+      ],
+      "properties": {
+        "A": {
+          "type": "string"
+        },
+        "P": {
+          "type": "string"
+        },
+        "C": {
+          "type": "string"
+        },
+        "CP": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "replicas": {
+      "const": [
+        1,
+        2,
+        3
+      ]
+    },
+    "seeds": {
+      "type": "object",
+      "required": [
+        "1",
+        "2",
+        "3"
+      ],
+      "properties": {
+        "1": {
+          "const": 27101
+        },
+        "2": {
+          "const": 38201
+        },
+        "3": {
+          "const": 49301
+        }
+      },
+      "additionalProperties": false
+    },
+    "frames": {
+      "type": "object",
+      "required": [
+        "n_frames",
+        "block_frames",
+        "blocks_per_trajectory"
+      ],
+      "properties": {
+        "n_frames": {
+          "enum": [
+            400,
+            1000
+          ]
+        },
+        "block_frames": {
+          "const": 20
+        },
+        "blocks_per_trajectory": {
+          "enum": [
+            20,
+            50
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "reference_panel": {
+      "type": "object",
+      "required": [
+        "C",
+        "CP"
+      ],
+      "properties": {
+        "C": {
+          "type": "string"
+        },
+        "CP": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "calibration": {
+      "type": "object",
+      "required": [
+        "usage",
+        "r2_fitting_allowed"
+      ],
+      "properties": {
+        "usage": {
+          "enum": [
+            "forbidden",
+            "verify_only"
+          ]
+        },
+        "r2_fitting_allowed": {
+          "const": false
+        }
+      },
+      "additionalProperties": true
+    },
+    "frozen_anchor": {
+      "type": "object",
+      "required": [
+        "freeze_sha256"
+      ],
+      "properties": {
+        "freeze_sha256": {
+          "const": "b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd"
+        },
+        "graph_sha256": {
+          "type": "string"
+        },
+        "region_map_sha256": {
+          "type": "string"
+        },
+        "encoder_checkpoint_sha256": {
+          "const": "b8f1ef9b591c57f7687566bd60d3664800956ac280cf2ae8e64f54196cd8d417"
+        }
+      },
+      "additionalProperties": true
+    },
+    "paths": {
+      "type": "object",
+      "required": [
+        "topology_root",
+        "production_root",
+        "phase1_cache_root",
+        "phase2a_cache_root",
+        "report_root",
+        "allowed_output_roots"
+      ],
+      "properties": {
+        "topology_root": {
+          "type": "string"
+        },
+        "production_root": {
+          "type": "string"
+        },
+        "phase1_cache_root": {
+          "type": "string"
+        },
+        "phase2a_cache_root": {
+          "type": "string"
+        },
+        "report_root": {
+          "type": "string"
+        },
+        "allowed_output_roots": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "role",
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "role": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-fA-F]{64}$"
+          },
+          "bytes": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  }
+}

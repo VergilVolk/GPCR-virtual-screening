@@ -1,0 +1,6 @@
+ project/environment_pacer_dc_md.yml                | 15 +++++
+ .../scripts/build_pacer_dc_membrane_reference.py   | 64 ++++++++++++--------
+ .../build_pacer_dc_openmm_reference_systems.py     | 49 +++++++++------
+ project/scripts/pacer_dc_score.py                  |  4 +-
+ project/tests/test_pacer_dc_score.py               | 69 ++++++++++++++++++++++
+ 5 files changed, 158 insertions(+), 43 deletions(-)

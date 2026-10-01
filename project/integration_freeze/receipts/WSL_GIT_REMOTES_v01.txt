@@ -1,0 +1,2 @@
+origin	https://github.com/VergilVolk/GPCR-virtual-screening.git (fetch)
+origin	https://github.com/VergilVolk/GPCR-virtual-screening.git (push)

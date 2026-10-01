@@ -1,0 +1,153 @@
+{
+  "schema": "pacer.final.integration_freeze.receipt_index.v1",
+  "created_at": "2026-10-01T18:00:35.495Z",
+  "worktree": "C:\\projects\\GPCR-virtual-screening-final",
+  "branch": "integration/final-freeze-v01",
+  "head": "18100f9b6b42f27e43760daa5b3dfdd028b330d3",
+  "receipts": [
+    {
+      "file": "CM00734_PAYLOAD_REGRESSION_v01.json",
+      "bytes": 3456,
+      "sha256": "1576d1b43008bbe67d77179389a3c1fab1fd5402f848316a3de3f0b62e57c022",
+      "committed": true
+    },
+    {
+      "file": "FROZEN_EOL_NORMALISATION_APPLIED_v01.json",
+      "bytes": 7149,
+      "sha256": "a4cbdb71c1cf8533610c75a2f9293c54cc484931dccb2709bff14877695ac8b2",
+      "committed": true
+    },
+    {
+      "file": "FROZEN_EOL_NORMALISATION_DRYRUN_v01.json",
+      "bytes": 6979,
+      "sha256": "80520a6a992046dbb513622915eb6b67aa9ea27a9c8dd5e5c63deb98007f146d",
+      "committed": true
+    },
+    {
+      "file": "PHASE1_ENCODER_REPLAY_v01.json",
+      "bytes": 1536,
+      "sha256": "a4c341012db9398b3d090ad7dcc3d2095707601bfa80fd75cff7e6c6103986e3",
+      "committed": true
+    },
+    {
+      "file": "WSL_DIRTY_CODE_DIFF_v01.patch",
+      "bytes": 13959,
+      "sha256": "bb7aea969b93893b20cedc5aa9d3cfc90fc564d13869e572210000d339ef1d20",
+      "committed": true
+    },
+    {
+      "file": "WSL_DIRTY_FILES_BLOB_HASHES_v01.tsv",
+      "bytes": 513,
+      "sha256": "66f626d4de1a4a93a2465d61e111f2dd978d8b74a8e689c2ac86c0a3ae2a56d8",
+      "committed": true
+    },
+    {
+      "file": "WSL_GIT_BRANCHES_v01.txt",
+      "bytes": 66,
+      "sha256": "3c195f8cf75771d64158ca03f58116240b9dcc77a662b4d9387f63dc167eee62",
+      "committed": true
+    },
+    {
+      "file": "WSL_GIT_BRANCH_v01.txt",
+      "bytes": 5,
+      "sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01",
+      "committed": true
+    },
+    {
+      "file": "WSL_GIT_DIFF_NUMSTAT_v01.txt",
+      "bytes": 18771,
+      "sha256": "5fd7d3fb1d8a489b137f82346cbe64d3c6cbd76473fd0c2b4c267ec5209e0df8",
+      "committed": true
+    },
+    {
+      "file": "WSL_GIT_DIFF_STAT_IGNORE_CR_v01.txt",
+      "bytes": 407,
+      "sha256": "bbd06d855593369036ef985cdc57b059220850588cae2a6e9c6962a3bf6ba155",
+      "committed": true
+    },
+    {
+      "file": "WSL_GIT_HEAD_v01.txt",
+      "bytes": 41,
+      "sha256": "7e14cfed3b4367be33fbecf0aec11d4a70328e5991b9f8c86d4f8371e8ecd305",
+      "committed": true
+    },
+    {
+      "file": "WSL_GIT_LOG1_v01.txt",
+      "bytes": 130,
+      "sha256": "c241f637930b83f568d821055ae95feff4d4774ff8023641d3d67a32e870c6c2",
+      "committed": true
+    },
+    {
+      "file": "WSL_GIT_REMOTES_v01.txt",
+      "bytes": 143,
+      "sha256": "367b4afb6fd577c46e293a91c4f3bf4c187039c6115e2d712edd0582a0147f9d",
+      "committed": true
+    },
+    {
+      "file": "WSL_GIT_STASH_v01.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "committed": true
+    },
+    {
+      "file": "WSL_GIT_STATUS_PORCELAIN_v01.txt",
+      "bytes": 17917,
+      "sha256": "5176674765e5c549fbb7e32eca726b325441e5e85d85e4ca13d32c5c35baceea",
+      "committed": true
+    },
+    {
+      "file": "WSL_RESULTS_FILES_v01.tsv",
+      "bytes": 55235,
+      "sha256": "379be0ba36a0585b103a497cf6bac574e172a627fbc1a71d8e68404720646154",
+      "committed": true
+    },
+    {
+      "file": "WSL_RESULTS_SHA256_v01.txt",
+      "bytes": 82211,
+      "sha256": "062fe33d534a22509e1debbf2cde9aec877acd8f9bb4e1220ecefed1d46a6387",
+      "committed": true
+    },
+    {
+      "file": "WSL_RESULTS_TOTAL_BYTES_v01.txt",
+      "bytes": 32,
+      "sha256": "87e57f870debb83342fd6c64b2b9159c0b9530a4bbf8f44a3b4bd9ca1c81c313",
+      "committed": true
+    },
+    {
+      "file": "WSL_TOPFILES_v01.tsv",
+      "bytes": 248,
+      "sha256": "111a65a3a2a87c2591d25a7566fc517d4a86e2177e16a004e42ac0b755c77696",
+      "committed": true
+    },
+    {
+      "file": "WSL_WORK_EXTRAS_SHA256_v01.txt",
+      "bytes": 769,
+      "sha256": "8c7efd4d52a3763ee15e8e088e442291afaec0dd5a97021a13f98103b3668f42",
+      "committed": true
+    },
+    {
+      "file": "diagnose.log",
+      "bytes": 3274,
+      "sha256": "1b59b903337db296b09545d1a040bede33935a5ab631953de842bee18ac07526",
+      "committed": false,
+      "gitignored_runtime_log": true
+    },
+    {
+      "file": "phase1_replay.log",
+      "bytes": 5244,
+      "sha256": "5798370fb4aee259a6739e6e3c642e775169ec96ff28cf96a5b686edc3e218cf",
+      "committed": false,
+      "gitignored_runtime_log": true
+    },
+    {
+      "file": "regression_stdout.log",
+      "bytes": 7028,
+      "sha256": "4f38a1610845c0e22abdec279307ec7cca9b7a3474ef28d77961e7ac8589d7f6",
+      "committed": false,
+      "gitignored_runtime_log": true
+    }
+  ],
+  "note": "Receipts marked gitignored_runtime_log are *.log run logs. They are matched by the repository .gitignore rule '*.log' and are therefore NOT part of the code-freeze commit; they are reproducible outputs of the tools in project/integration_freeze/tools/.",
+  "committed_receipt_count": 20,
+  "gitignored_runtime_log_count": 3
+}

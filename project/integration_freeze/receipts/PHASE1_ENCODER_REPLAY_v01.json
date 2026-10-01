@@ -1,0 +1,52 @@
+{
+  "schema": "pacer.final.frozen_runner.phase1_replay.v1",
+  "device": "cuda",
+  "replay_frame_ids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "model_provenance": {
+    "checkpoint_sha256": "b8f1ef9b591c57f7687566bd60d3664800956ac280cf2ae8e64f54196cd8d417",
+    "strict_load_ok": true,
+    "geom2vec_source_equivalent": true
+  },
+  "jobs": [
+    {
+      "system": "CM00734__candidate_no_probe",
+      "replica": 1,
+      "status": "REPLAYED",
+      "frozen_cache": "C:\\projects\\GPCR-virtual-screening-final\\project\\cache\\pacer_dc_cm00734_stage_b_20ns_v01\\track_b_fkg_v02\\bs256\\CM00734__candidate_no_probe\\replica_01\\C1_BS256.npy",
+      "shape": [
+        4,
+        270,
+        256
+      ],
+      "bitwise_identical": false,
+      "max_abs": 2.1457672119140625e-06,
+      "relative_rmse": 1.7701934839585968e-07,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "system": "CM00734__candidate_no_probe",
+      "replica": 2,
+      "status": "REPLAYED",
+      "frozen_cache": "C:\\projects\\GPCR-virtual-screening-final\\project\\cache\\pacer_dc_cm00734_stage_b_20ns_v01\\track_b_fkg_v02\\bs256\\CM00734__candidate_no_probe\\replica_02\\C1_BS256.npy",
+      "shape": [
+        4,
+        270,
+        256
+      ],
+      "bitwise_identical": false,
+      "max_abs": 2.384185791015625e-06,
+      "relative_rmse": 1.7635935193584083e-07,
+      "limit": 0.0001,
+      "passed": true
+    }
+  ],
+  "n_replayed": 2,
+  "all_passed": true,
+  "all_bitwise_identical": false
+}

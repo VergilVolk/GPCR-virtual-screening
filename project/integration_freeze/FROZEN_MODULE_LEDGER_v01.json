@@ -1,0 +1,29 @@
+{
+  "schema": "pacer.final.frozen_module_ledger.v1",
+  "repo_root": "C:\\projects\\GPCR-virtual-screening-final",
+  "note": "LF-normalised SHA256. Line endings are not part of Git blob identity; the frozen modules are byte-identical modulo CRLF/LF across worktrees.",
+  "modules": {
+    "project/pacer_fkg_v02/run_phase1_bs256.py": {
+      "lf_sha256": "d3ed9764ff813b9f164e139668cab2f55d7112d7b04283812d4a5fe3beee2271",
+      "bytes_on_disk": 31537,
+      "lf_bytes": 30874
+    },
+    "project/pacer_fkg_v02/run_phase2_calibration.py": {
+      "lf_sha256": "ccf8af5247ff2c7325f1c451d36943f2e293dee0dff48625031d8bb10a2d6e11",
+      "bytes_on_disk": 21993,
+      "lf_bytes": 21545
+    },
+    "project/pacer_fkg_v02/run_phase3_fkg.py": {
+      "lf_sha256": "147cb31363fe733c72719494dd282c80c86a61e1b733ad2568b94eca3b1d224c",
+      "bytes_on_disk": 39619,
+      "lf_bytes": 38878
+    },
+    "project/pacer_fkg_v02/path_guard.py": {
+      "lf_sha256": "144e3bf7bb45523246c45844c8a3a33b20819b4289c169314c12655bc8341a33",
+      "bytes_on_disk": 2805,
+      "lf_bytes": 2736
+    }
+  },
+  "frozen_numerics_ok": true,
+  "expected_freeze_sha256": "b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd"
+}

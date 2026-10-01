@@ -1,0 +1,116 @@
+{
+  "schema": "pacer.final.pipeline_run_spec.v1",
+  "run_id": "PACER-FINAL-20261002-CM00734-REGRESSION",
+  "created_at": "2026-10-02T00:00:00+08:00",
+  "scope": {
+    "prospective_frozen_method_candidate_evaluation": true,
+    "regression_replay_only": true,
+    "new_md_production_run": false,
+    "pam_classifier_claim": false,
+    "potency_predictor_claim": false,
+    "pam_probability_output": false,
+    "magnitude_threshold_defined": false,
+    "outcome_driven_rule": false,
+    "calibration_performed": false,
+    "model_training_performed": false,
+    "adapter_fitting_performed": false,
+    "score_fusion_invented": false
+  },
+  "molecule": {
+    "candidate_id": "CM00734",
+    "canonical_smiles": "COc1ccc(C)c2sc(NC(=O)NC3CCC3)nc12",
+    "role": "regression_replay_control",
+    "chemotype": "benzothienopyrimidinone",
+    "provenance": {
+      "source": "frozen Stage-B hard-negative test",
+      "freeze_tag": "pacer-dc-cm00734-stage-b-20ns-v01",
+      "freeze_commit": "f2f73403c1e965f63cf6fd68d3b6dc60c7dba26a",
+      "frozen_result_sha256": "be663c7d45cc4ade1e053029e6aa09e65ca24c1e2fc22dae5398a26bf49d7d99"
+    }
+  },
+  "contexts": {
+    "A": "apo",
+    "P": "probe_only",
+    "C": "CM00734__candidate_no_probe",
+    "CP": "CM00734__candidate_probe"
+  },
+  "replicas": [
+    1,
+    2,
+    3
+  ],
+  "seeds": {
+    "1": 27101,
+    "2": 38201,
+    "3": 49301
+  },
+  "frames": {
+    "n_frames": 400,
+    "block_frames": 20,
+    "blocks_per_trajectory": 20
+  },
+  "reference_panel": {
+    "C": "compound110__candidate_no_probe",
+    "CP": "compound110__candidate_probe"
+  },
+  "calibration": {
+    "usage": "forbidden",
+    "r2_fitting_allowed": false,
+    "note": "R2 is the frozen calibration replica and is never refitted. It is still mapped through the frozen normalization/RFF state and reported as a descriptive replica result, preserving Stage-A/Stage-B semantics. The primary cross-replica metric remains the R1/R3 direction cosine."
+  },
+  "frozen_anchor": {
+    "freeze_sha256": "b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd",
+    "graph_sha256": "25593c11dac0f70ad6811c8c6aa7a4f06c1755f14397f1162eaa1157026be122",
+    "region_map_sha256": "a40fb6ca8131a2f6dfc18caf6f48b9930f1341c072b368e3cb3b7c3c21e593ec",
+    "encoder_checkpoint_sha256": "b8f1ef9b591c57f7687566bd60d3664800956ac280cf2ae8e64f54196cd8d417"
+  },
+  "paths": {
+    "topology_root": "project/results/pacer_dc_cm00734_stage_b_20ns_analysis_v01/topology_sanitized",
+    "production_root": "project/results/pacer_dc_cm00734_stage_b_20ns_v01/production",
+    "phase1_cache_root": "project/cache/pacer_final_cm00734_regression_v01/bs256",
+    "phase2a_cache_root": "project/cache/pacer_final_cm00734_regression_v01/phase2a_frozen_apply",
+    "report_root": "project/results/pacer_final_cm00734_regression_v01",
+    "allowed_output_roots": [
+      "project/cache/pacer_final_cm00734_regression_v01",
+      "project/results/pacer_final_cm00734_regression_v01"
+    ]
+  },
+  "inputs": [
+    {
+      "role": "frozen_stage_b_result",
+      "path": "project/results/pacer_dc_cm00734_stage_b_20ns_analysis_v01/track_b_fkg_v02/phase2b_graph_region/STAGE_B_MATCHED_20NS_RESULTS_v01.json",
+      "sha256": "be663c7d45cc4ade1e053029e6aa09e65ca24c1e2fc22dae5398a26bf49d7d99"
+    },
+    {
+      "role": "frozen_freeze_manifest",
+      "path": "project/results/pacer_fkg_v02_longmd_v01/calibration/V02_FREEZE_MANIFEST.json",
+      "sha256": "b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd"
+    },
+    {
+      "role": "frozen_graph",
+      "path": "project/results/pacer_dc_geom2vec_pilot_v01/M4_MULTISTRUCTURE_GRAPH_v01.json",
+      "sha256": "25593c11dac0f70ad6811c8c6aa7a4f06c1755f14397f1162eaa1157026be122"
+    },
+    {
+      "role": "frozen_region_map",
+      "path": "project/results/pacer_dc_four_context_v01/compound110/G2_REGION_MAP_v02.json",
+      "sha256": "a40fb6ca8131a2f6dfc18caf6f48b9930f1341c072b368e3cb3b7c3c21e593ec"
+    },
+    {
+      "role": "frozen_encoder_checkpoint",
+      "path": "project/tools/geom2vec_checkpoints/visnet_l6_h64_rbf64_r75.pth",
+      "sha256": "b8f1ef9b591c57f7687566bd60d3664800956ac280cf2ae8e64f54196cd8d417"
+    },
+    {
+      "role": "frozen_stage_b_phase1_receipt",
+      "path": "project/results/pacer_dc_cm00734_stage_b_20ns_analysis_v01/track_b_fkg_v02/phase1_bs256/PHASE1_FREEZE_RECEIPT_v01.json",
+      "sha256": "f8b5b945c81ea51dd4c5fc7d8ee0ee04114cde07043fed877b25da162ecdc8db"
+    },
+    {
+      "role": "frozen_stage_b_phase2a_receipt",
+      "path": "project/results/pacer_dc_cm00734_stage_b_20ns_analysis_v01/track_b_fkg_v02/phase2a_frozen_apply/PHASE2A_FREEZE_RECEIPT_v01.json",
+      "sha256": "73f1e7e5f4ef3532daf7d797a54e4d60a22cf3c65a0d16477b3871a1a7a815b8"
+    }
+  ],
+  "note": "Verification/replay spec only. It does not authorize new MD, new generation or new inference. The regression harness recomputes the Stage-B scientific payload from frozen artifacts and compares it with the frozen result."
+}

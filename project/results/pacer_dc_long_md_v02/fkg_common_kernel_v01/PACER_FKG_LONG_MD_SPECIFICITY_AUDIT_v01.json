@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "method": "descriptive target-vs-stable-and-distal common-RFF specificity audit",
+  "input_vectors_sha256": "09176c4e2718f9f097e43e55f357e4db308a0a4f794fa13e38def3efb9ae54cb",
+  "axes": [
+    "dAGO",
+    "dPAM",
+    "dINT"
+  ],
+  "target_regions": [
+    "compound110_extension",
+    "cooperativity_mutagenesis",
+    "intracellular_microswitches",
+    "orthosteric_activation_core",
+    "orthosteric_contact_union",
+    "pam_contact_consensus",
+    "pam_contact_union"
+  ],
+  "controls": [
+    "stable_core_control",
+    "distal_control"
+  ],
+  "independent_replication_unit": "replica_seed",
+  "n_independent_replicas": 3,
+  "matched_blocks_per_replica": 50,
+  "p_values_computed": false,
+  "qualification_gate": "NOT_DEFINED",
+  "automatic_biological_claims": false,
+  "rows": 21
+}

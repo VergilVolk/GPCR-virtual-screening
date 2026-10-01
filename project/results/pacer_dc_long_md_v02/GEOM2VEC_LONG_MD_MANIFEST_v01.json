@@ -1,0 +1,218 @@
+{
+  "status": "PASS",
+  "n_trajectories": 12,
+  "total_encoded_frames": 12000,
+  "feature_definition": "frozen Geom2Vec ViSNet per-frame per-residue invariant features",
+  "cuda_replay_policy": {
+    "bitwise_determinism_required": false,
+    "pilot_full_replay_relative_l2": 1.9159807566490173e-07,
+    "acceptance_bound_relative_l2": 1e-06
+  },
+  "biological_contrasts_computed": false,
+  "entries": [
+    {
+      "system": "apo",
+      "context": "apo",
+      "replica": 1,
+      "path": "project\\results\\pacer_dc_long_md_v02\\pilot_apo_R1_v01\\apo_R1.geom2vec.npz",
+      "sha256": "0bda08935b47c3db0c8085e8cd84ef6a50bcd8b70d8eff7660e56471bf60c775",
+      "shape": [
+        1000,
+        270,
+        128
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "frame_order": true,
+      "residue_order": true,
+      "status": "PASS"
+    },
+    {
+      "system": "apo",
+      "context": "apo",
+      "replica": 2,
+      "path": "project\\results\\pacer_dc_long_md_v02\\batch_v01\\apo\\replica_02\\apo_R2.geom2vec.npz",
+      "sha256": "c6ba2313969c08f295b728e0b237e0dc790adf2fb54c3ffcdb7c61df51d633c6",
+      "shape": [
+        1000,
+        270,
+        128
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "frame_order": true,
+      "residue_order": true,
+      "status": "PASS"
+    },
+    {
+      "system": "apo",
+      "context": "apo",
+      "replica": 3,
+      "path": "project\\results\\pacer_dc_long_md_v02\\batch_v01\\apo\\replica_03\\apo_R3.geom2vec.npz",
+      "sha256": "e2a5129d28129b818deaf61c5f9f46130cab90489990f0b23371d5ad73c596dc",
+      "shape": [
+        1000,
+        270,
+        128
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "frame_order": true,
+      "residue_order": true,
+      "status": "PASS"
+    },
+    {
+      "system": "probe_only",
+      "context": "probe_only",
+      "replica": 1,
+      "path": "project\\results\\pacer_dc_long_md_v02\\batch_v01\\probe_only\\replica_01\\probe_only_R1.geom2vec.npz",
+      "sha256": "558700bac60620f779dc41f04fbaeea06a173c3cd3425fd7d8ed708be6165557",
+      "shape": [
+        1000,
+        270,
+        128
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "frame_order": true,
+      "residue_order": true,
+      "status": "PASS"
+    },
+    {
+      "system": "probe_only",
+      "context": "probe_only",
+      "replica": 2,
+      "path": "project\\results\\pacer_dc_long_md_v02\\batch_v01\\probe_only\\replica_02\\probe_only_R2.geom2vec.npz",
+      "sha256": "35aac2751db27dd200e138a85d1f5206f37567c80e29ebed32e80f8e7e568e50",
+      "shape": [
+        1000,
+        270,
+        128
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "frame_order": true,
+      "residue_order": true,
+      "status": "PASS"
+    },
+    {
+      "system": "probe_only",
+      "context": "probe_only",
+      "replica": 3,
+      "path": "project\\results\\pacer_dc_long_md_v02\\batch_v01\\probe_only\\replica_03\\probe_only_R3.geom2vec.npz",
+      "sha256": "995ef2ade32f1424d1c2912bb8d0a0f194580c3c67b3ca52f8d017de408be0c5",
+      "shape": [
+        1000,
+        270,
+        128
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "frame_order": true,
+      "residue_order": true,
+      "status": "PASS"
+    },
+    {
+      "system": "compound110__candidate_no_probe",
+      "context": "candidate_no_probe",
+      "replica": 1,
+      "path": "project\\results\\pacer_dc_long_md_v02\\batch_v01\\compound110__candidate_no_probe\\replica_01\\candidate_no_probe_R1.geom2vec.npz",
+      "sha256": "5eb2e3c76f7be2fad6d67228b336c87d7417d19c9fdd6d708fb1b6d939741aca",
+      "shape": [
+        1000,
+        270,
+        128
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "frame_order": true,
+      "residue_order": true,
+      "status": "PASS"
+    },
+    {
+      "system": "compound110__candidate_no_probe",
+      "context": "candidate_no_probe",
+      "replica": 2,
+      "path": "project\\results\\pacer_dc_long_md_v02\\batch_v01\\compound110__candidate_no_probe\\replica_02\\candidate_no_probe_R2.geom2vec.npz",
+      "sha256": "f2aab2ff3821fca356d1fa55173bfdabcea6864113b9a1f0e7f397767f73805a",
+      "shape": [
+        1000,
+        270,
+        128
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "frame_order": true,
+      "residue_order": true,
+      "status": "PASS"
+    },
+    {
+      "system": "compound110__candidate_no_probe",
+      "context": "candidate_no_probe",
+      "replica": 3,
+      "path": "project\\results\\pacer_dc_long_md_v02\\batch_v01\\compound110__candidate_no_probe\\replica_03\\candidate_no_probe_R3.geom2vec.npz",
+      "sha256": "226e5bedae65739a10ee42996584b752686b71d4aab4ce0651de8908334b903d",
+      "shape": [
+        1000,
+        270,
+        128
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "frame_order": true,
+      "residue_order": true,
+      "status": "PASS"
+    },
+    {
+      "system": "compound110__candidate_probe",
+      "context": "candidate_probe",
+      "replica": 1,
+      "path": "project\\results\\pacer_dc_long_md_v02\\batch_v01\\compound110__candidate_probe\\replica_01\\candidate_probe_R1.geom2vec.npz",
+      "sha256": "413dc048b4fbc8ffef485caa5aeb2b665cb9bd2d9d55c241de76fc986f4fcc08",
+      "shape": [
+        1000,
+        270,
+        128
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "frame_order": true,
+      "residue_order": true,
+      "status": "PASS"
+    },
+    {
+      "system": "compound110__candidate_probe",
+      "context": "candidate_probe",
+      "replica": 2,
+      "path": "project\\results\\pacer_dc_long_md_v02\\batch_v01\\compound110__candidate_probe\\replica_02\\candidate_probe_R2.geom2vec.npz",
+      "sha256": "dc9f24fd2d69a28847d7b5b73831c47e2a3a257816bc993eb5285fcc91c33682",
+      "shape": [
+        1000,
+        270,
+        128
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "frame_order": true,
+      "residue_order": true,
+      "status": "PASS"
+    },
+    {
+      "system": "compound110__candidate_probe",
+      "context": "candidate_probe",
+      "replica": 3,
+      "path": "project\\results\\pacer_dc_long_md_v02\\batch_v01\\compound110__candidate_probe\\replica_03\\candidate_probe_R3.geom2vec.npz",
+      "sha256": "41797a65b92ee54d1d954e000a30af589ffb13ce49f651450cc76c7793245e6d",
+      "shape": [
+        1000,
+        270,
+        128
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "frame_order": true,
+      "residue_order": true,
+      "status": "PASS"
+    }
+  ]
+}

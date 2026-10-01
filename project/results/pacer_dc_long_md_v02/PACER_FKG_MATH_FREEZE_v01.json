@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "contract_v03_sha256": "0fc3121a6e105f3d4e4ddf2f09dfa99daf5152907b89f5b91b2cd0366bc0efc0",
+  "math_source": "C:\\projects\\GPCR-virtual-screening\\project\\pacer_dc_training\\pacer_fkg_long_md_math_v02.py",
+  "math_source_sha256": "14669741f9d051113f15af98fe7f049d2f04a7465428bb4c7d023824713bc38b",
+  "synthetic_test_source": "C:\\projects\\GPCR-virtual-screening\\project\\pacer_dc_training\\test_pacer_fkg_long_md_math_v02.py",
+  "synthetic_test_source_sha256": "68577a23c7bc5626670c8f494cc468f8ce81d71c136c4002411371e5bd2cfeb9",
+  "synthetic_test_replayed": "PASS",
+  "kernel_u2_used": false,
+  "qualification_gate": "NOT_DEFINED",
+  "real_biological_contrasts_computed_at_freeze": false
+}

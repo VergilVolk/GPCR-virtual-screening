@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "evidence_level": "descriptive_common_kernel_long_md",
+  "contract_sha256": "0fc3121a6e105f3d4e4ddf2f09dfa99daf5152907b89f5b91b2cd0366bc0efc0",
+  "math_freeze_sha256": "f0709030a8c0f98d3aacafe708da3117196bed01e934899cfc4abdfe228a3ec8",
+  "feature_manifest_sha256": "0687f3a2f8fbfebd37559484a32e45f67101994333d087fa576dfd3d5a57c918",
+  "graph_sha256": "25593c11dac0f70ad6811c8c6aa7a4f06c1755f14397f1162eaa1157026be122",
+  "shared_node_bandwidth": 16.476339519583565,
+  "rff_dimension": 256,
+  "actual_rff_rng_seed": 272599,
+  "rff_weights_sha256": "9df1418a0825600e8890a0ce5f50c6886472bf9031f30d82fd34f496b94d9061",
+  "rff_bias_sha256": "c6a1e79365173d9ba3db0ecaa264d283c760d04755480e30ef0ea4183cbfeddc",
+  "contexts": 4,
+  "paired_replicas": 3,
+  "blocks_per_trajectory": 50,
+  "block_duration_ns": 1.0,
+  "axes": [
+    "dAGO",
+    "dPAM",
+    "dINT"
+  ],
+  "regions": [
+    "compound110_extension",
+    "cooperativity_mutagenesis",
+    "distal_control",
+    "intracellular_microswitches",
+    "orthosteric_activation_core",
+    "orthosteric_contact_union",
+    "pam_contact_consensus",
+    "pam_contact_union",
+    "stable_core_control"
+  ],
+  "kernel_u2_gate": "REVOKED",
+  "qualification_gate": "NOT_DEFINED",
+  "p_values_computed": false,
+  "automatic_biological_claims": false
+}

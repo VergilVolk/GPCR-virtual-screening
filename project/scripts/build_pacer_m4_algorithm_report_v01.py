@@ -296,6 +296,28 @@ def fig_dynamic(d):
     return savefig(fig,"fig06_dynamic_heatmap.png")
 
 
+def fig_hard_negative_result():
+    labels = ["compound110\nago-PAM", "LY2119620\nPAM", "CM00734\ninactive"]
+    vals = [0.583656, 0.634304, -0.326839]
+    cols = [ORANGE, GREEN, RED]
+    fig, ax = plt.subplots(figsize=(9.4, 4.3))
+    bars = ax.bar(labels, vals, color=cols, width=.62)
+    ax.axhline(0, color=NAVY, lw=1.2)
+    ax.set_ylim(-.48, .78)
+    ax.set_ylabel("R1-R3 direction cosine")
+    ax.set_title("冻结主信号：功能分子方向可重复，inactive hard negative 方向不一致",
+                 fontsize=14.5, fontweight="bold", color=NAVY)
+    for b, v in zip(bars, vals):
+        ax.text(b.get_x()+b.get_width()/2, v + (.035 if v >= 0 else -.075),
+                f"{v:+.3f}", ha="center", fontsize=13, fontweight="bold")
+    ax.text(1, -.42, "STATE_MOTION / Delta_INT / compound110_extension",
+            ha="center", fontsize=10, color=GREY)
+    ax.grid(axis="y", alpha=.22)
+    ax.spines[["top", "right"]].set_visible(False)
+    fig.tight_layout()
+    return savefig(fig, "fig00_hard_negative_headline.png")
+
+
 def fig_four_context():
     fig, ax = plt.subplots(figsize=(11.8, 4.2))
     ax.set_xlim(0, 11.8); ax.set_ylim(0, 4.2); ax.axis("off")
@@ -382,14 +404,14 @@ def header_footer(canvas, doc):
     canvas.saveState(); w,h=landscape(A4)
     canvas.setStrokeColor(colors.HexColor(GRID)); canvas.line(15*mm,12*mm,w-15*mm,12*mm)
     canvas.setFont("CN",7.5); canvas.setFillColor(colors.HexColor(GREY))
-    canvas.drawString(15*mm,7.5*mm,"PACER-M4 整体算法与基准评估 v01 | 2026-10-01")
+    canvas.drawString(15*mm,7.5*mm,"PACER-M4 整体算法与基准评估 v02 | 2026-10-01")
     canvas.drawRightString(w-15*mm,7.5*mm,f"{doc.page}")
     canvas.restoreState()
 
 
 def build_pdf(d, figs):
     OUT.mkdir(parents=True,exist_ok=True)
-    pdf=OUT/"PACER-M4_整体算法与基准评估_v01.pdf"
+    pdf=OUT/"PACER-M4_整体算法与基准评估_v02.pdf"
     w,h=landscape(A4)
     doc=BaseDocTemplate(str(pdf),pagesize=(w,h),leftMargin=15*mm,rightMargin=15*mm,topMargin=13*mm,bottomMargin=16*mm)
     doc.addPageTemplates([PageTemplate(id="main",frames=[Frame(doc.leftMargin,doc.bottomMargin,doc.width,doc.height,id="f")],onPage=header_footer)])
@@ -397,12 +419,27 @@ def build_pdf(d, figs):
     imgw=doc.width
 
     # 1 cover
-    story += [Spacer(1,13*mm),P("PACER-M4：从结合检索到功能动态复核",s["title"]),P("整体算法、数据链、基准评估与 SOTA 主张边界",s["subtitle"]),Spacer(1,7*mm),Image(str(figs["architecture"]),width=240*mm,height=103*mm),Spacer(1,4*mm),P("核心结论：项目已经形成可运行、可审计的多阶段算法链。结合线：微调权重在 13/20 靶严格 LOSO 上显著超过官方 checkpoint（CI 为正），family-aug 集成 0.6414 为 13 靶头条，纯 GPCR 域内微调确认 M4 退化根因。功能线：四上下文 PACER-FKG 在 compound110 / LY2119620 / CM00734 三类已知配体上完成回顾性判别——已知 PAM 与 ago-PAM 方向可复现（+0.63 / +0.58），实验 inactive hard negative 全区域为负（−0.33）。当前尚不能宣称端到端 PAM 预测 SOTA，也不能把 5 个候选称为已确认 PAM。",s["callout"]),PageBreak()]
+    story += [Spacer(1,13*mm),P("PACER-M4：从结合检索到功能动态复核",s["title"]),P("整体算法、数据链、基准评估与 SOTA 主张边界",s["subtitle"]),Spacer(1,7*mm),Image(str(figs["architecture"]),width=240*mm,height=103*mm),Spacer(1,4*mm),P("核心结论：项目已经形成可运行、可审计的多阶段算法链。最关键的新证据不是又一个 docking 分数，而是预冻结 PACER-FKG 在零结果驱动调参条件下，将已知 PAM/ago-PAM 的可重复动态方向（+0.63/+0.58）与实验 inactive 的高相似近邻 CM00734（−0.33；完整九个报告区域均为负）分开。它是回顾性 hard-negative 计算验证，不是湿实验、标签盲测或通用 PAM 分类器。",s["callout"]),PageBreak()]
 
-    # 2 science and architecture
+    # 2 headline hard-negative result
+    story += [P("主结果：冻结四上下文方法通过近邻 hard-negative 检验",s["h1"]),
+              Image(str(figs["headline"]),width=178*mm,height=81*mm),
+              Spacer(1,1*mm),
+              table([
+                  ["证据", "观察", "严格解释"],
+                  ["同系列困难对照", "CM00717/CM00734：PAM/inactive；ECFP4 Tc约0.955；仅环大小微调", "二维近邻性不能给出功能边界"],
+                  ["预冻结应用", "同一 encoder/norm/RFF/graph/region/contrast；零重拟合", "预冻结 apply-only；并非标签盲测"],
+                  ["方向性结果", "主区：LY +0.634；c110 +0.584；CM -0.327；CM九区均负", "支持初步方向特异性"],
+                  ["幅度反证", "CM/LY magnitude：R1 0.644 / R2 0.798 / R3 0.525", "幅度或结合强弱不能单独判 PAM"],
+              ], widths=[42*mm,108*mm,88*mm], font=7.8),
+              Spacer(1,2*mm),
+              P("静态模型的准确说法：冻结 source-holdout 功能探针把 CM00734 排在 CM00717 之上（0.779 vs 0.642），ECFP-PU 对两者近乎饱和且 inactive 略高（0.99699 vs 0.99684）；raw DrugCLIP state-max 则有轻微正确方向（0.0448 vs -0.0008），因此不能笼统说‘所有 DrugCLIP 都分不开’。CM00734 的 ensemble docking 为 -9.02 kcal/mol、口袋覆盖0.714，说明它可获得口袋相容 pose，但 CM00717 未进入同一冻结 docking 面板，不能声称已完成严格成对 docking 失败证明。",s["warn"]),
+              P("可用于汇报的一句话：在预冻结、零结果驱动调参的回顾性 hard-negative 测试中，PACER-FKG 区分了已知 PAM 的可重复协同方向与实验 inactive 高相似近邻的不一致方向；这是初步功能特异性证据，而非已验证 PAM 分类器。",s["callout"]),PageBreak()]
+
+    # 3 science and architecture
     story += [P("1. 科学问题与算法主线",s["h1"]),P("科学问题不是“哪个分子与 M4 别构口袋结合最强”，而是：在排除明显不相容分子后，如何判断候选物是否会在 ACh 存在时产生可重复、具有功能方向性的受体协同变化，并同时避免把无功能别构配体或内在激动剂误判为 PAM。",s["body"]),Image(str(figs["architecture"]),width=240*mm,height=103*mm),P("四个模块回答不同问题，不能用一个随意权重合成：CGDA 回答结合检索；静态门控回答姿势合理性；四上下文回答条件效应与交互效应；PACER-FKG 回答这些动态变化能否跨 replica 重复。最终输出是证据卡与拒绝理由，而不是未经校准的“PAM 概率”。",s["warn"]),PageBreak()]
 
-    # 3 data chain
+    # 4 data chain
     story += [P("2. 数据链与整体评价原则",s["h1"]),Image(str(figs["protocol"]),width=235*mm,height=117*mm),Spacer(1,2*mm),P("为什么不能给一个总 AUC：LIT-PCBA 评价跨靶点结合检索；M4 文献集评价功能标签或效力；四上下文 MD 目前只有 3 个化合物。样本宇宙、终点和统计单位不同。把它们标准化后相加会掩盖样本量、标签含义与泄漏风险。因而本报告给出一组整体证据向量，并在样本真正一致的子任务内做公平比较。",s["body"]),PageBreak()]
 
     # 4 binding line (current headline first, CGDA as closed secondary)
@@ -411,12 +448,12 @@ def build_pdf(d, figs):
         ["13 靶 LOSO（ep80 3 种子 0.6047-0.6079，集成 0.6121/0.6290）", "0.5442", "0.6062", "0.6414", "[+0.0668, +0.1017]"],
         ["20 靶全覆盖 LOSO（3 种子 0.6245/0.6255/0.6278）", "0.5816", "0.6278", "—", "[+0.0276, +0.0621]"],
         ["纯 GPCR 域内（B2AR/CCR2/M2R 训练，M4 留出）", "0.6003", "0.6887", "—", "机制探针：异源共训伤 M4 的根因确认"],
-    ],widths=[95*mm,25*mm,25*mm,25*mm,55*mm],font=8.4),Spacer(1,2*mm),P("M4 路由结论（9/30 冻结）：M4/GPCR 结合线守旧 2023 权重（M4-LOSO EF1% 2.08）；新微调权重用于 LIT-PCBA 型面板；若用于 GPCR 需纯 GPCR 域内微调。EF1% 边界保持：早期富集对官方与 ECFP 均无优势，主张限于整体排序与检索质量。",s["warn"]),Spacer(1,3*mm),P("CGDA（Context-Gated DrugCLIP Adapter）为 15 靶全量 LIT-PCBA 协议下的独立冻结结果（9/30 团队决策：支线关闭，数字留档）：",s["body"]),Image(str(figs["binding"]),width=240*mm,height=69*mm),Spacer(1,2*mm),table([
+    ],widths=[95*mm,25*mm,25*mm,25*mm,55*mm],font=8.0),Spacer(1,1*mm),P("M4 路由结论（9/30 冻结）：M4/GPCR 结合线守旧 2023 权重；新微调权重用于 LIT-PCBA 型面板；若用于 GPCR 需纯 GPCR 域内微调。EF1% 对官方与 ECFP 均无优势，主张限于整体排序与检索质量。",s["warn"]),Spacer(1,1*mm),P("CGDA 是 15 靶全量 LIT-PCBA 协议下的独立冻结支线：",s["body"]),Image(str(figs["binding"]),width=180*mm,height=52*mm),Spacer(1,1*mm),table([
         ["Full LIT-PCBA 15T", "ROC-AUC", "PR-AUC", "BEDROC80.5", "EF1%"],
         ["Pocket DrugCLIP", "0.5672", "0.02379", "0.06109", "5.36"],
         ["Reference retrieval", "0.5693", "0.02594", "0.07103", "6.06"],
         ["CGDA hard-rank ensemble", "0.5788", "0.02627", "0.07378", "6.31"],
-    ],widths=[60*mm,30*mm,30*mm,35*mm,30*mm],font=8.7),Spacer(1,2*mm),P("CGDA 相对 reference retrieval 的 ROC 增益 +0.00954（95% CI +0.00134 至 +0.01840），BEDROC +0.00274（+0.00045 至 +0.00504）；PR 与多数 EF 截断点不稳定。注意 family-aug 13T 与 Full LIT-PCBA 15T 是不同协议，不可直接比较；两者各自在协议内成立。",s["warn"]),PageBreak()]
+    ],widths=[60*mm,30*mm,30*mm,35*mm,30*mm],font=8.0),Spacer(1,1*mm),P("相对 reference retrieval：ROC +0.00954（95% CI +0.00134 至 +0.01840），BEDROC +0.00274（+0.00045 至 +0.00504）；PR 与多数 EF 截断点不稳定。family-aug 13T 与 Full LIT-PCBA 15T 协议不同，不可直接横比。",s["warn"]),PageBreak()]
 
     # 5 external and M4
     acad=d["m4_external"]["datasets"]["acadia_functional"]; mon=d["m4_external"]["datasets"]["monash_allostery"]
@@ -450,7 +487,7 @@ def build_pdf(d, figs):
         ["对象", "药理身份", "主区域 ΔINT R1/R3 cosine", "可解释结论"],
         ["compound110", "ago-PAM / allosteric agonist", "+0.584", "局部方向可重复；其他区域并不一致"],
         ["LY2119620", "已知 PAM", "+0.634", "多个机制区为正，支持已知 PAM 的方向模式"],
-        ["CM00734", "实验 inactive hard negative", "-0.327", "7 个报告区域均为负，提供冻结 hard-negative 支持"],
+        ["CM00734", "实验 inactive hard negative", "-0.327", "完整 9 个报告区域均为负，提供冻结 hard-negative 支持"],
     ],widths=[38*mm,55*mm,52*mm,92*mm],font=8.6),Spacer(1,2*mm),P("这是目前最有价值的动态结论：区分力来自跨 replica 的方向一致性，而不是 ΔINT 幅度。CM00734 的幅度仍可达到 LY 的 0.53-0.80，单看‘变化有多大’会误判。由于只有 2 个功能分子和 1 个 hard negative，不能计算可信 AUC、阈值或效力回归，也不能宣称 SOTA classifier。",s["warn"]),PageBreak()]
 
     # 9 integrated vector
@@ -499,6 +536,7 @@ def main():
     d,paths=collect(); save_scorecard(d,paths)
     figs={
         "architecture":fig_architecture(),
+        "headline":fig_hard_negative_result(),
         "protocol":fig_protocol_map(),
         "binding":fig_binding(d),
         "dude":fig_dude(d),

@@ -1,0 +1,8 @@
+region,CM00734_R1R3,LY2119620_R1R3,compound110_R1R3,provenance
+compound110_extension,-0.327,0.634,0.584,PACER_DC_STAGE_A_B_FINAL_SYNTHESIS_v01.md table
+cooperativity_mutagenesis,-0.095,0.235,-0.246,PACER_DC_STAGE_A_B_FINAL_SYNTHESIS_v01.md table
+intracellular_microswitches,-0.006,0.18,-0.111,PACER_DC_STAGE_A_B_FINAL_SYNTHESIS_v01.md table
+orthosteric_activation_core,-0.385,0.321,-0.074,PACER_DC_STAGE_A_B_FINAL_SYNTHESIS_v01.md table
+orthosteric_contact_union,-0.376,0.3,-0.052,PACER_DC_STAGE_A_B_FINAL_SYNTHESIS_v01.md table
+pam_contact_consensus,-0.251,0.375,-0.308,PACER_DC_STAGE_A_B_FINAL_SYNTHESIS_v01.md table
+pam_contact_union,-0.241,0.306,-0.183,PACER_DC_STAGE_A_B_FINAL_SYNTHESIS_v01.md table

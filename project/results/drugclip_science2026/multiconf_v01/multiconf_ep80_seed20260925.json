@@ -1,0 +1,496 @@
+{
+  "protocol": "multi-conformation GaMD pocket LOSO (10 clusters/GPCR target, target score = max over conformations); held-target scaffolds purged; held pocket absent from loss",
+  "n_pairs": 37524,
+  "n_targets": 13,
+  "targets": [
+    "B2AR",
+    "CCR2",
+    "M2R",
+    "M4R",
+    "ALDH1",
+    "ESR1m",
+    "FEN1",
+    "GBA",
+    "KAT2A",
+    "MAPK1",
+    "MTORC1",
+    "PKM2",
+    "VDR"
+  ],
+  "metrics": {
+    "official": {
+      "macro": {
+        "roc_auc": 0.5086626868341948,
+        "pr_auc": 0.18661451289424688,
+        "bedroc_alpha20": 0.20710467832746723,
+        "ef1pct": 2.0479777014677607,
+        "ef5pct": 1.4396384218703828
+      },
+      "per_target": {
+        "B2AR": {
+          "n": 697,
+          "actives": 64,
+          "roc_auc": 0.44557168246445494,
+          "pr_auc": 0.07667941895430586,
+          "bedroc_alpha20": 0.001309667453246446,
+          "ef1pct": 0.0,
+          "ef5pct": 0.0
+        },
+        "CCR2": {
+          "n": 174,
+          "actives": 16,
+          "roc_auc": 0.4208860759493671,
+          "pr_auc": 0.08042100655243484,
+          "bedroc_alpha20": 0.03631281293098484,
+          "ef1pct": 0.0,
+          "ef5pct": 0.0
+        },
+        "M2R": {
+          "n": 2498,
+          "actives": 230,
+          "roc_auc": 0.6186182041254504,
+          "pr_auc": 0.3991676977821622,
+          "bedroc_alpha20": 0.5656840575854932,
+          "ef1pct": 9.992,
+          "ef5pct": 6.603408695652174
+        },
+        "M4R": {
+          "n": 25249,
+          "actives": 2301,
+          "roc_auc": 0.4538042739259639,
+          "pr_auc": 0.08925875652222157,
+          "bedroc_alpha20": 0.11958571838907202,
+          "ef1pct": 1.2577810300728502,
+          "ef5pct": 1.094699092927685
+        },
+        "ALDH1": {
+          "n": 993,
+          "actives": 200,
+          "roc_auc": 0.5553783102143758,
+          "pr_auc": 0.22715911226324245,
+          "bedroc_alpha20": 0.24034972244352826,
+          "ef1pct": 0.4965,
+          "ef5pct": 1.3902
+        },
+        "ESR1m": {
+          "n": 955,
+          "actives": 76,
+          "roc_auc": 0.47604933836297225,
+          "pr_auc": 0.0795392812283546,
+          "bedroc_alpha20": 0.09675845918209659,
+          "ef1pct": 2.5131578947368425,
+          "ef5pct": 0.7853618421052632
+        },
+        "FEN1": {
+          "n": 988,
+          "actives": 195,
+          "roc_auc": 0.6496200730753063,
+          "pr_auc": 0.39732120961268935,
+          "bedroc_alpha20": 0.5581826046237157,
+          "ef1pct": 4.053333333333334,
+          "ef5pct": 3.1413333333333333
+        },
+        "GBA": {
+          "n": 994,
+          "actives": 156,
+          "roc_auc": 0.48422679150602776,
+          "pr_auc": 0.16745874766020413,
+          "bedroc_alpha20": 0.162294634988249,
+          "ef1pct": 1.9115384615384614,
+          "ef5pct": 0.7646153846153846
+        },
+        "KAT2A": {
+          "n": 1000,
+          "actives": 185,
+          "roc_auc": 0.496348864201625,
+          "pr_auc": 0.19663269301392505,
+          "bedroc_alpha20": 0.21691537019204102,
+          "ef1pct": 1.6216216216216215,
+          "ef5pct": 1.2972972972972974
+        },
+        "MAPK1": {
+          "n": 989,
+          "actives": 198,
+          "roc_auc": 0.3760742698795796,
+          "pr_auc": 0.1543080033956434,
+          "bedroc_alpha20": 0.0820486008377345,
+          "ef1pct": 0.0,
+          "ef5pct": 0.19979797979797978
+        },
+        "MTORC1": {
+          "n": 1000,
+          "actives": 88,
+          "roc_auc": 0.548021331738437,
+          "pr_auc": 0.10143856309100563,
+          "bedroc_alpha20": 0.11912021079052831,
+          "ef1pct": 2.272727272727273,
+          "ef5pct": 1.1363636363636365
+        },
+        "PKM2": {
+          "n": 995,
+          "actives": 199,
+          "roc_auc": 0.5242228731597687,
+          "pr_auc": 0.21235769249170738,
+          "bedroc_alpha20": 0.2238950713375133,
+          "ef1pct": 0.0,
+          "ef5pct": 1.2
+        },
+        "VDR": {
+          "n": 992,
+          "actives": 198,
+          "roc_auc": 0.563792840241203,
+          "pr_auc": 0.24424648505731295,
+          "bedroc_alpha20": 0.26990388750287064,
+          "ef1pct": 2.505050505050505,
+          "ef5pct": 1.1022222222222222
+        }
+      }
+    },
+    "bce_retrieval": {
+      "macro": {
+        "roc_auc": 0.5776152968353803,
+        "pr_auc": 0.2114647969750686,
+        "bedroc_alpha20": 0.2290977822625486,
+        "ef1pct": 1.6164359233036925,
+        "ef5pct": 1.3726818629907456
+      },
+      "per_target": {
+        "B2AR": {
+          "n": 697,
+          "actives": 64,
+          "roc_auc": 0.6232721169036335,
+          "pr_auc": 0.10865320382925833,
+          "bedroc_alpha20": 0.010207924909156467,
+          "ef1pct": 0.0,
+          "ef5pct": 0.0
+        },
+        "CCR2": {
+          "n": 174,
+          "actives": 16,
+          "roc_auc": 0.2112341772151899,
+          "pr_auc": 0.059522554258226584,
+          "bedroc_alpha20": 7.720937020352611e-06,
+          "ef1pct": 0.0,
+          "ef5pct": 0.0
+        },
+        "M2R": {
+          "n": 2498,
+          "actives": 230,
+          "roc_auc": 0.7523061881757535,
+          "pr_auc": 0.2177202160039869,
+          "bedroc_alpha20": 0.2945630592543713,
+          "ef1pct": 0.8688695652173913,
+          "ef5pct": 2.6066086956521737
+        },
+        "M4R": {
+          "n": 25249,
+          "actives": 2301,
+          "roc_auc": 0.5051529971167737,
+          "pr_auc": 0.08349910576877673,
+          "bedroc_alpha20": 0.037797428115865166,
+          "ef1pct": 0.17348703863073794,
+          "ef5pct": 0.2432664650950411
+        },
+        "ALDH1": {
+          "n": 993,
+          "actives": 200,
+          "roc_auc": 0.5536065573770492,
+          "pr_auc": 0.22715226507013514,
+          "bedroc_alpha20": 0.22247100894602587,
+          "ef1pct": 0.993,
+          "ef5pct": 1.1916
+        },
+        "ESR1m": {
+          "n": 955,
+          "actives": 76,
+          "roc_auc": 0.5235464942219028,
+          "pr_auc": 0.08654038935649638,
+          "bedroc_alpha20": 0.10363322530855987,
+          "ef1pct": 1.2565789473684212,
+          "ef5pct": 0.7853618421052632
+        },
+        "FEN1": {
+          "n": 988,
+          "actives": 195,
+          "roc_auc": 0.8262747760856209,
+          "pr_auc": 0.5344013259965551,
+          "bedroc_alpha20": 0.642529166859308,
+          "ef1pct": 4.053333333333334,
+          "ef5pct": 3.4453333333333336
+        },
+        "GBA": {
+          "n": 994,
+          "actives": 156,
+          "roc_auc": 0.5999479835995349,
+          "pr_auc": 0.23476444417137193,
+          "bedroc_alpha20": 0.2944308199797234,
+          "ef1pct": 3.1858974358974357,
+          "ef5pct": 1.7841025641025643
+        },
+        "KAT2A": {
+          "n": 1000,
+          "actives": 185,
+          "roc_auc": 0.6548565743657768,
+          "pr_auc": 0.27923134524630505,
+          "bedroc_alpha20": 0.31279483207569736,
+          "ef1pct": 2.7027027027027026,
+          "ef5pct": 1.6216216216216215
+        },
+        "MAPK1": {
+          "n": 989,
+          "actives": 198,
+          "roc_auc": 0.4493800201764804,
+          "pr_auc": 0.20927363317291625,
+          "bedroc_alpha20": 0.2922787196894175,
+          "ef1pct": 0.998989898989899,
+          "ef5pct": 1.6982828282828284
+        },
+        "MTORC1": {
+          "n": 1000,
+          "actives": 88,
+          "roc_auc": 0.6508423046251994,
+          "pr_auc": 0.13741164706713352,
+          "bedroc_alpha20": 0.14579508321393503,
+          "ef1pct": 2.272727272727273,
+          "ef5pct": 1.3636363636363638
+        },
+        "PKM2": {
+          "n": 995,
+          "actives": 199,
+          "roc_auc": 0.443397893992576,
+          "pr_auc": 0.17297647875467098,
+          "bedroc_alpha20": 0.13253521384275696,
+          "ef1pct": 0.5,
+          "ef5pct": 0.6
+        },
+        "VDR": {
+          "n": 992,
+          "actives": 198,
+          "roc_auc": 0.7151807750044525,
+          "pr_auc": 0.3978957519800586,
+          "bedroc_alpha20": 0.4892269662812944,
+          "ef1pct": 4.008080808080808,
+          "ef5pct": 2.505050505050505
+        }
+      }
+    },
+    "random_label": {
+      "macro": {
+        "roc_auc": 0.4203509560849406,
+        "pr_auc": 0.13969568238822938,
+        "bedroc_alpha20": 0.12775032880842657,
+        "ef1pct": 0.9496762974293339,
+        "ef5pct": 0.8272203760610644
+      },
+      "per_target": {
+        "B2AR": {
+          "n": 697,
+          "actives": 64,
+          "roc_auc": 0.2109004739336493,
+          "pr_auc": 0.05615657462339858,
+          "bedroc_alpha20": 0.0017704571895866502,
+          "ef1pct": 0.0,
+          "ef5pct": 0.0
+        },
+        "CCR2": {
+          "n": 174,
+          "actives": 16,
+          "roc_auc": 0.5458860759493671,
+          "pr_auc": 0.11529082860816604,
+          "bedroc_alpha20": 0.10930324896554243,
+          "ef1pct": 0.0,
+          "ef5pct": 1.2083333333333333
+        },
+        "M2R": {
+          "n": 2498,
+          "actives": 230,
+          "roc_auc": 0.3670021470746108,
+          "pr_auc": 0.0676551147633179,
+          "bedroc_alpha20": 0.015662947221163074,
+          "ef1pct": 0.0,
+          "ef5pct": 0.0
+        },
+        "M4R": {
+          "n": 25249,
+          "actives": 2301,
+          "roc_auc": 0.2466360371694613,
+          "pr_auc": 0.05581437898570233,
+          "bedroc_alpha20": 0.0013019204100992816,
+          "ef1pct": 0.0,
+          "ef5pct": 0.0
+        },
+        "ALDH1": {
+          "n": 993,
+          "actives": 200,
+          "roc_auc": 0.4366204287515763,
+          "pr_auc": 0.168373019812644,
+          "bedroc_alpha20": 0.08251756616510579,
+          "ef1pct": 0.0,
+          "ef5pct": 0.2979
+        },
+        "ESR1m": {
+          "n": 955,
+          "actives": 76,
+          "roc_auc": 0.41434644632057965,
+          "pr_auc": 0.06769312231490682,
+          "bedroc_alpha20": 0.06800912923323972,
+          "ef1pct": 1.2565789473684212,
+          "ef5pct": 0.5235745614035088
+        },
+        "FEN1": {
+          "n": 988,
+          "actives": 195,
+          "roc_auc": 0.5691855013418695,
+          "pr_auc": 0.33753219249690786,
+          "bedroc_alpha20": 0.49170589708717566,
+          "ef1pct": 4.053333333333334,
+          "ef5pct": 3.04
+        },
+        "GBA": {
+          "n": 994,
+          "actives": 156,
+          "roc_auc": 0.44490086286029007,
+          "pr_auc": 0.15158904549908223,
+          "bedroc_alpha20": 0.13053854887511518,
+          "ef1pct": 1.2743589743589745,
+          "ef5pct": 0.5097435897435898
+        },
+        "KAT2A": {
+          "n": 1000,
+          "actives": 185,
+          "roc_auc": 0.44497429945282707,
+          "pr_auc": 0.1743059092876159,
+          "bedroc_alpha20": 0.16866106105439935,
+          "ef1pct": 1.6216216216216215,
+          "ef5pct": 1.0810810810810811
+        },
+        "MAPK1": {
+          "n": 989,
+          "actives": 198,
+          "roc_auc": 0.3523669054642506,
+          "pr_auc": 0.14721125646384264,
+          "bedroc_alpha20": 0.06580045673664221,
+          "ef1pct": 0.4994949494949495,
+          "ef5pct": 0.2996969696969697
+        },
+        "MTORC1": {
+          "n": 1000,
+          "actives": 88,
+          "roc_auc": 0.5512609649122807,
+          "pr_auc": 0.1060387342757575,
+          "bedroc_alpha20": 0.13175256704516794,
+          "ef1pct": 1.1363636363636365,
+          "ef5pct": 1.590909090909091
+        },
+        "PKM2": {
+          "n": 995,
+          "actives": 199,
+          "roc_auc": 0.4568950279033358,
+          "pr_auc": 0.18046449419278543,
+          "bedroc_alpha20": 0.16547039039810088,
+          "ef1pct": 0.5,
+          "ef5pct": 0.8999999999999999
+        },
+        "VDR": {
+          "n": 992,
+          "actives": 198,
+          "roc_auc": 0.4235872579701295,
+          "pr_auc": 0.18791919972285484,
+          "bedroc_alpha20": 0.22826008412820728,
+          "ef1pct": 2.004040404040404,
+          "ef5pct": 1.3026262626262628
+        }
+      }
+    }
+  },
+  "training_audit": {
+    "B2AR": {
+      "train_pairs": 34797,
+      "test_pairs": 697,
+      "purged_rows": 2030,
+      "scaffold_overlap": 0
+    },
+    "CCR2": {
+      "train_pairs": 36360,
+      "test_pairs": 174,
+      "purged_rows": 990,
+      "scaffold_overlap": 0
+    },
+    "M2R": {
+      "train_pairs": 32451,
+      "test_pairs": 2498,
+      "purged_rows": 2575,
+      "scaffold_overlap": 0
+    },
+    "M4R": {
+      "train_pairs": 9241,
+      "test_pairs": 25249,
+      "purged_rows": 3034,
+      "scaffold_overlap": 0
+    },
+    "ALDH1": {
+      "train_pairs": 34729,
+      "test_pairs": 993,
+      "purged_rows": 1802,
+      "scaffold_overlap": 0
+    },
+    "ESR1m": {
+      "train_pairs": 34528,
+      "test_pairs": 955,
+      "purged_rows": 2041,
+      "scaffold_overlap": 0
+    },
+    "FEN1": {
+      "train_pairs": 34366,
+      "test_pairs": 988,
+      "purged_rows": 2170,
+      "scaffold_overlap": 0
+    },
+    "GBA": {
+      "train_pairs": 34590,
+      "test_pairs": 994,
+      "purged_rows": 1940,
+      "scaffold_overlap": 0
+    },
+    "KAT2A": {
+      "train_pairs": 34429,
+      "test_pairs": 1000,
+      "purged_rows": 2095,
+      "scaffold_overlap": 0
+    },
+    "MAPK1": {
+      "train_pairs": 34533,
+      "test_pairs": 989,
+      "purged_rows": 2002,
+      "scaffold_overlap": 0
+    },
+    "MTORC1": {
+      "train_pairs": 35876,
+      "test_pairs": 1000,
+      "purged_rows": 648,
+      "scaffold_overlap": 0
+    },
+    "PKM2": {
+      "train_pairs": 34482,
+      "test_pairs": 995,
+      "purged_rows": 2047,
+      "scaffold_overlap": 0
+    },
+    "VDR": {
+      "train_pairs": 34244,
+      "test_pairs": 992,
+      "purged_rows": 2288,
+      "scaffold_overlap": 0
+    }
+  },
+  "hyperparameters": {
+    "rank": 8,
+    "epochs": 80,
+    "lr": 0.005,
+    "temperature": 0.07,
+    "retrieval_weight": 0.25,
+    "preserve_weight": 0.0,
+    "seed": 20260925
+  },
+  "claim_boundary": "Retrospective target-transfer pilot with GaMD ensemble pockets; no efficacy claim."
+}

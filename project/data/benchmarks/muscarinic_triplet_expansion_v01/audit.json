@@ -1,0 +1,11 @@
+{
+  "expanded_pairs_before_test_exclusion": 1462,
+  "expanded_molecules": 753,
+  "strict_external_pairs": 54,
+  "strict_external_molecules": 33,
+  "training_pairs": 1393,
+  "training_molecules": 720,
+  "test_molecule_overlap_with_training": 0,
+  "rules": "Non-M4 subtypes only; positive pChEMBL >= 6.0; within-molecule delta >= 1.0; every strict-test molecule removed from training.",
+  "claim_boundary": "Heterogeneous ChEMBL activity ranking; not allosteric or PAM-specific."
+}

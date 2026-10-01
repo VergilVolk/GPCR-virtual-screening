@@ -1,0 +1,10 @@
+target,canonical_smiles
+M4R,COc1ccc(C)c2sc(NS(=O)(=O)c3cccc(Cl)c3)nc12
+M4R,Cc1c(CF)nnc2sc(C(=O)NC3CN(c4ncc(C(F)(F)F)cn4)C3)c(N)c12
+M4R,Cc1c(Cl)nnc2sc(C(=O)NC3CN(c4ccc(C5CC5)nn4)C3)c(N)c12
+M4R,Cc1nnc2sc(C(=O)NC3CN(C(=O)c4ccccc4)C3)c(N)c2c1C
+M4R,Cc1nnc2sc(C(=O)NCc3ccc(S(C)(=O)=O)c(F)c3)c(N)c2c1C
+M4R,Cc1nnc2sc(C(=O)NCc3ccc(S(C)(=O)=O)cc3)c(N)c2c1C
+M4R,Cc1nnc2sc(C(=O)NCc3ccc([S+](C)[O-])cc3)c(N)c2c1C
+M4R,Cc1nnc2sc(C(=O)NCc3cccc(S(C)(=O)=O)c3)c(N)c2c1C
+M4R,Cn1nnc2ccc3c(NC4CN(c5cc(Cl)ncc5Cl)C4)ncnc3c21

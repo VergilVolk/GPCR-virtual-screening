@@ -1,0 +1,50 @@
+{
+  "protocol": "cross-checkpoint ensemble: rank-mean of old-2023 3-seed LOSO tuned and Science-2026 ep80 3-seed ensemble tuned scores; identical 37,524 rows",
+  "n_pairs": 37524,
+  "n_targets": 13,
+  "old_tuned": {
+    "roc_auc": 0.6234810266507474,
+    "pr_auc": 0.24683070027892978,
+    "ef1pct": 2.4158281660858365
+  },
+  "new_tuned": {
+    "roc_auc": 0.6290208577662567,
+    "pr_auc": 0.23278045529862013,
+    "ef1pct": 1.9625690636447204
+  },
+  "official": {
+    "roc_auc": 0.5442203506632646,
+    "pr_auc": 0.17796105346311838,
+    "ef1pct": 1.4281086066634334
+  },
+  "xens04": {
+    "roc_auc": 0.6512394479573924,
+    "pr_auc": 0.2633212023348172,
+    "ef1pct": 2.4034060196255633
+  },
+  "xens05": {
+    "roc_auc": 0.6488773020199988,
+    "pr_auc": 0.26451302473648874,
+    "ef1pct": 2.586870832332878
+  },
+  "xens06": {
+    "roc_auc": 0.6460029281712966,
+    "pr_auc": 0.26479089551323914,
+    "ef1pct": 2.6375882824317105
+  },
+  "diversity": {
+    "per_target_spearman_median": 0.327854796078654,
+    "per_target_spearman_min": 0.1425883424926678,
+    "per_target_spearman_max": 0.5057266886473503
+  },
+  "bootstrap_95ci": {
+    "xens05_minus_official_roc": [
+      0.08308494030072171,
+      0.1236898967718666
+    ],
+    "xens05_minus_newens_roc": [
+      0.003088214467979239,
+      0.034689635469071695
+    ]
+  }
+}

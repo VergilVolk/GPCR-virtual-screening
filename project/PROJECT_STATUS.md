@@ -2,6 +2,15 @@
 
 更新时间：2026-10-01
 
+## 2026-10-01 DrugCLIP 结合筛选线闭环
+
+- DrugCLIP 内部双侧投影微调已迁移到官方 Science-2026 表征，并以严格 target-LOSO、Murcko scaffold 隔离和三随机种子评估。
+- 13-target family-augmented ep80 三种子集成宏 ROC-AUC 为 `0.6414`；对应官方 DrugCLIP 为 `0.5442`、ECFP4 logistic 为 `0.5681`。原始预测独立复算已通过。
+- 20-target 全覆盖时 family augmentation 不增益，冻结路由为：13-target 使用 family augmentation，20-target 使用纯 ep80；不得跨协议择优拼接。
+- EF1% 仍未稳定优于强二维基线，因此正式主张限定为整体排序与部分早期识别改善，不称通用虚拟筛选 SOTA。
+- 已完成 28,519 分子库和 PACER 200 候选重评分。新旧权重排序近乎独立，当前作为双模型第二意见；双优交集进入 PACER-DC 功能复核，不直接称 PAM。
+- 结合线完整交接见 `docs/DRUGCLIP_FINETUNING_PIPELINE_INTEGRATION.md`；功能线闭环与主张边界见下节。
+
 ## 2026-10-01 PACER-FKG v02 Stage A + Stage B 闭环
 
 ### 当前冻结结论

@@ -1,0 +1,54 @@
+{
+  "raw_unique_target_molecule_pairs": 2624,
+  "primary_single_label_molecules": 2504,
+  "exact_multitarget_molecules_excluded": 60,
+  "invalid_smiles": [],
+  "unique_scaffolds": 968,
+  "target_counts": {
+    "B2AR": 64,
+    "CCR2": 16,
+    "M2R": 170,
+    "M4R": 2254
+  },
+  "fold_target_counts": {
+    "0": {
+      "B2AR": 27,
+      "CCR2": 0,
+      "M2R": 0,
+      "M4R": 297
+    },
+    "1": {
+      "B2AR": 7,
+      "CCR2": 4,
+      "M2R": 43,
+      "M4R": 528
+    },
+    "2": {
+      "B2AR": 10,
+      "CCR2": 4,
+      "M2R": 43,
+      "M4R": 468
+    },
+    "3": {
+      "B2AR": 9,
+      "CCR2": 4,
+      "M2R": 44,
+      "M4R": 476
+    },
+    "4": {
+      "B2AR": 11,
+      "CCR2": 4,
+      "M2R": 40,
+      "M4R": 485
+    }
+  },
+  "split_rule": "Five-fold deterministic greedy target-vector balancing; Murcko scaffold is indivisible.",
+  "primary_metrics": [
+    "macro Recall@1",
+    "Recall@2",
+    "MRR",
+    "pair ROC-AUC",
+    "pair PR-AUC"
+  ],
+  "claim_boundary": "Retrieval of literature-curated GPCR allosteric-modulator target; not efficacy or prospective binding."
+}

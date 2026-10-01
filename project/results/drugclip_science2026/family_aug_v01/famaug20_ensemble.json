@@ -1,0 +1,22 @@
+{
+  "protocol": "ensemble = mean of 3 per-seed tuned scores (identical rows)",
+  "n_targets": 20,
+  "ensemble_macro": {
+    "roc_auc": 0.6253262553256868,
+    "pr_auc": 0.16253968285653658,
+    "bedroc_alpha20": 0.09475574346758683,
+    "ef1pct": 2.523407433034368
+  },
+  "official_macro": {
+    "roc_auc": 0.5815597836082669,
+    "pr_auc": 0.14466761647800358,
+    "bedroc_alpha20": 0.10251328082614783,
+    "ef1pct": 3.756141924622517
+  },
+  "bootstrap_95ci": {
+    "ens_minus_off_roc": [
+      0.023897989699503082,
+      0.06162269551199458
+    ]
+  }
+}

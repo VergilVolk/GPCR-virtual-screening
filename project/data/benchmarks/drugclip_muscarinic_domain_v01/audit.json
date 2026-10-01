@@ -1,0 +1,61 @@
+{
+  "raw_rows": 10818,
+  "pacer_overlap_rows_excluded": 447,
+  "usable_pairs": 8066,
+  "unique_molecules": 4623,
+  "positives": 7365,
+  "negatives": 701,
+  "by_subtype_label": [
+    {
+      "subtype": "M1",
+      "target": 0,
+      "n": 165
+    },
+    {
+      "subtype": "M1",
+      "target": 1,
+      "n": 1851
+    },
+    {
+      "subtype": "M2",
+      "target": 0,
+      "n": 154
+    },
+    {
+      "subtype": "M2",
+      "target": 1,
+      "n": 1684
+    },
+    {
+      "subtype": "M3",
+      "target": 0,
+      "n": 166
+    },
+    {
+      "subtype": "M3",
+      "target": 1,
+      "n": 2134
+    },
+    {
+      "subtype": "M4",
+      "target": 0,
+      "n": 113
+    },
+    {
+      "subtype": "M4",
+      "target": 1,
+      "n": 1109
+    },
+    {
+      "subtype": "M5",
+      "target": 0,
+      "n": 103
+    },
+    {
+      "subtype": "M5",
+      "target": 1,
+      "n": 587
+    }
+  ],
+  "claim_boundary": "Heterogeneous ChEMBL M1-M5 activity domain adaptation; not allosteric or PAM-specific."
+}

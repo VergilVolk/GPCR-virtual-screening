@@ -1,0 +1,106 @@
+{
+  "source_counts": {
+    "B2AR": {
+      "actives": 64,
+      "decoys": 3200
+    },
+    "CCR2": {
+      "actives": 16,
+      "decoys": 800
+    },
+    "M2R": {
+      "actives": 230,
+      "decoys": 11550
+    },
+    "M4R": {
+      "actives": 2314,
+      "decoys": 115643
+    }
+  },
+  "decoys_per_active": 10,
+  "selected_pairs": 28765,
+  "unique_molecules": 28629,
+  "unique_scaffolds": 19448,
+  "selected_counts": {
+    "B2AR": {
+      "actives": 64,
+      "decoys": 640
+    },
+    "CCR2": {
+      "actives": 16,
+      "decoys": 160
+    },
+    "M2R": {
+      "actives": 230,
+      "decoys": 2300
+    },
+    "M4R": {
+      "actives": 2305,
+      "decoys": 23050
+    }
+  },
+  "invalid_rows": [],
+  "within_target_label_conflicts_excluded": 9,
+  "fold_counts": {
+    "0": {
+      "B2AR_0": 128,
+      "B2AR_1": 27,
+      "CCR2_0": 32,
+      "CCR2_1": 3,
+      "M2R_0": 460,
+      "M2R_1": 46,
+      "M4R_0": 4610,
+      "M4R_1": 461
+    },
+    "1": {
+      "B2AR_0": 128,
+      "B2AR_1": 9,
+      "CCR2_0": 32,
+      "CCR2_1": 3,
+      "M2R_0": 460,
+      "M2R_1": 46,
+      "M4R_0": 4610,
+      "M4R_1": 461
+    },
+    "2": {
+      "B2AR_0": 128,
+      "B2AR_1": 9,
+      "CCR2_0": 32,
+      "CCR2_1": 3,
+      "M2R_0": 460,
+      "M2R_1": 46,
+      "M4R_0": 4610,
+      "M4R_1": 461
+    },
+    "3": {
+      "B2AR_0": 128,
+      "B2AR_1": 10,
+      "CCR2_0": 32,
+      "CCR2_1": 3,
+      "M2R_0": 460,
+      "M2R_1": 46,
+      "M4R_0": 4610,
+      "M4R_1": 461
+    },
+    "4": {
+      "B2AR_0": 128,
+      "B2AR_1": 9,
+      "CCR2_0": 32,
+      "CCR2_1": 4,
+      "M2R_0": 460,
+      "M2R_1": 46,
+      "M4R_0": 4610,
+      "M4R_1": 461
+    }
+  },
+  "selection_rule": "All non-conflicting actives; deterministic SHA256 decoy subset; no model-dependent selection.",
+  "split_rule": "Global Murcko scaffold is indivisible across every target and label.",
+  "primary_metrics": [
+    "macro ROC-AUC",
+    "macro PR-AUC",
+    "macro BEDROC20",
+    "macro EF1%",
+    "macro EF5%"
+  ],
+  "claim_boundary": "Retrospective active/decoy screening; not affinity, PAM efficacy, or prospective validation."
+}

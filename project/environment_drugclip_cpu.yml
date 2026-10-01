@@ -1,0 +1,22 @@
+name: drugclip-cpu
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch=2.0.1
+  - cpuonly
+  - rdkit=2022.09.5
+  - numpy<2
+  - scipy
+  - pandas
+  - scikit-learn
+  - python-lmdb
+  - tqdm
+  - biopandas
+  - ipython
+  - setuptools<81
+  - iopath
+  - ml-collections
+  - tensorboardx
+  - tokenizers

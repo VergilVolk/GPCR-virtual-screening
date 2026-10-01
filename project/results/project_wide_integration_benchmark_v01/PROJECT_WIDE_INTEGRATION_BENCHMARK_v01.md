@@ -51,6 +51,24 @@
 - 历史分支数据提取：FGK v01 common-kernel 四件套经 `git show` 从
   `codex/pacer-dc-geom2vec-pilot` 提取（UTF-8 校验通过）
 
+### 1.4 独立复算审计（最强联调：不信 JSON，从原始预测重算）
+
+`project/scripts/recompute_predictions_audit_v01.py` 用 sklearn 从
+37k–51k 行原始预测 CSV 独立重算逐靶 ROC/PR 并与已提交 JSON 对账，
+容差 2e-3：
+
+| 检查 | 复算 ROC | 提交 ROC | 判定 |
+|---|---:|---:|---|
+| 13T official raw (seed25) | 0.5442 | 0.5442 | PASS |
+| 13T ep80 tuned (seed25) | 0.6047 | 0.6047 | PASS |
+| 13T ep40 ensemble | 0.6121 | 0.6121 | PASS |
+| 13T ECFP4 logistic | 0.5681 | 0.5681 | PASS |
+| 13T famaug (seed25) | 0.6434 | 0.6434 | PASS |
+| 20T ECFP4 logistic | 0.5332 | 0.5332 | PASS |
+
+**6/6 PASS，PR-AUC 同样全部一致，逐靶无一超差。** 结合线的度量管线
+从预测到宏指标整链可复现。结果存 `recompute_verification_v01.json`。
+
 ## 2. 基准跑分：结合线（DrugCLIP，13/20 靶严格 LOSO）
 
 宏指标全表见 `csv/binding_macros.csv`。要点（ROC-AUC）：

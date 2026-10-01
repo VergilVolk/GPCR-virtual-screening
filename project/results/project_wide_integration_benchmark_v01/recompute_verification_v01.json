@@ -1,0 +1,62 @@
+[
+ {
+  "check": "13T ep80 seed25 / official",
+  "recomputed_macro_roc": 0.5442,
+  "recomputed_macro_pr": 0.178,
+  "committed_macro_roc": 0.5442,
+  "committed_macro_pr": 0.178,
+  "macro_roc_match": true,
+  "macro_pr_match": true,
+  "per_target_mismatches": []
+ },
+ {
+  "check": "13T ep80 seed25 / tuned(bce_retrieval)",
+  "recomputed_macro_roc": 0.6047,
+  "recomputed_macro_pr": 0.2133,
+  "committed_macro_roc": 0.6047,
+  "committed_macro_pr": 0.2133,
+  "macro_roc_match": true,
+  "macro_pr_match": true,
+  "per_target_mismatches": []
+ },
+ {
+  "check": "13T ep40 ensemble / tuned",
+  "recomputed_macro_roc": 0.6121,
+  "recomputed_macro_pr": 0.2171,
+  "committed_macro_roc": 0.6121,
+  "committed_macro_pr": 0.2171,
+  "macro_roc_match": true,
+  "macro_pr_match": true,
+  "per_target_mismatches": []
+ },
+ {
+  "check": "13T ECFP logistic",
+  "recomputed_macro_roc": 0.5681,
+  "recomputed_macro_pr": 0.2014,
+  "committed_macro_roc": 0.5681,
+  "committed_macro_pr": 0.2014,
+  "macro_roc_match": true,
+  "macro_pr_match": true,
+  "per_target_mismatches": []
+ },
+ {
+  "check": "13T famaug seed25 / bce_retrieval",
+  "recomputed_macro_roc": 0.6434,
+  "recomputed_macro_pr": 0.2443,
+  "committed_macro_roc": 0.6434,
+  "committed_macro_pr": 0.2443,
+  "macro_roc_match": true,
+  "macro_pr_match": true,
+  "per_target_mismatches": []
+ },
+ {
+  "check": "20T ECFP (col=ecfp4_logistic)",
+  "recomputed_macro_roc": 0.5332,
+  "recomputed_macro_pr": 0.1436,
+  "committed_macro_roc": 0.5332,
+  "committed_macro_pr": 0.1436,
+  "macro_roc_match": true,
+  "macro_pr_match": true,
+  "per_target_mismatches": []
+ }
+]

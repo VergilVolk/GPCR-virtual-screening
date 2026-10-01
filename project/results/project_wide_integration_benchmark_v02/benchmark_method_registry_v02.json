@@ -1,0 +1,24 @@
+{
+  "rows": 47,
+  "modules": {
+    "static structure": 15,
+    "binding": 11,
+    "2D/QSAR": 9,
+    "MD representation": 6,
+    "functional MD": 6
+  },
+  "status_counts": {
+    "COMMITTED_RESULT": 29,
+    "RECOMPUTED_RAW": 8,
+    "NOT_RUN_DATA_GATE": 2,
+    "COMMITTED_NEGATIVE": 1,
+    "SOFTWARE_SMOKE_ONLY": 1,
+    "RUN_AS_VinaOnly": 1,
+    "NOT_RUN_NO_MATCHED_BINARY_GPU": 1,
+    "NOT_RUN_LEGACY_CUDA_STACK": 1,
+    "PILOT_ONLY_NOT_COMMON_PROTOCOL": 1,
+    "NOT_RUN_NO_COMMON_PREDICTIONS": 1,
+    "RUN_SUPERSEDED_BY_C1_BS256": 1
+  },
+  "rule": "Only same_protocol_comparable=true rows may enter head-to-head winner claims."
+}

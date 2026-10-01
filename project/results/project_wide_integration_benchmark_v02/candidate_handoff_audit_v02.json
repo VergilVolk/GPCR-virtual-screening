@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "old_rows": 200,
+  "new_rows": 200,
+  "matched_ids_and_smiles": 200,
+  "spearman_old_drugclip_vs_famaug_rank": -0.058988974724368114,
+  "topk_overlap": {
+    "20": {
+      "intersection": 2,
+      "jaccard": 0.05263157894736842
+    },
+    "50": {
+      "intersection": 10,
+      "jaccard": 0.1111111111111111
+    },
+    "100": {
+      "intersection": 49,
+      "jaccard": 0.32450331125827814
+    }
+  },
+  "dual_rule": "old DrugCLIP rank <= 50 AND family-augmented rank <= 25",
+  "dual_count": 5,
+  "dual_candidate_ids": [
+    "PACER0040",
+    "PACER0154",
+    "PACER0125",
+    "PACER0057",
+    "PACER0053"
+  ],
+  "provenance": {
+    "old": "D:\\CLC\\project\\results\\drugclip_m4_candidate_screen_v01\\ranked_candidates.csv",
+    "old_sha256": "13a535e24bdacbb520da7975f421f9dec4c452c50963d8ce6ae09964395cde88",
+    "new": "D:\\CLC\\project\\data\\drugclip_muscarinic_family_aug_v01\\cand200\\cands200_famaug_scores.csv",
+    "new_sha256": "19de17ae777050581ed029d317c9b63d91663adc1253a4b28d075068f4edd8ae"
+  },
+  "correction": "v01 pipeline_continuity_check compared PACER-200 to an unrelated 28,519-molecule library and is superseded."
+}

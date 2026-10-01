@@ -23,8 +23,9 @@ M4 定向配置可选（M4R 换取其他 GPCR 微降，宏不变）。
    - 新旧权重排名 Spearman ≈ −0.06：**两套权重对候选排序基本独立**
      （top20 重合 2，top50 重合 10，top100 重合 49）；
    - 旧 drugclip-top50 在新排名中位数 96/200；
-   - **双优交集 25 个**（旧≤50 且新≤25）= 稳健候选，见
-     `scripts/cand200_overlap_final.py` 输出（PACER0040/0057/0060/0058/…）。
+   - v01 曾把 28,519 外部筛选库与 PACER-200 直接求交，并误报“双优 25 个”；该比较对象错误，已经撤销。
+   - v02 在 200/200 个相同 `candidate_id + canonical SMILES` 上重新联调。旧 DrugCLIP rank 与 family-augmented rank 的 Spearman 为 `-0.059`；严格规则“旧 rank≤50 且新 rank≤25”得到 **5 个**双优候选：`PACER0040/0154/0125/0057/0053`。
+   - 机器可读审计见 `results/project_wide_integration_benchmark_v02/candidate_handoff_audit_v02.json`。
 3. **路由决议不变**：留出 M4R 在新权重上仍弱（0.51-0.54），
    M4 候选决策线守旧 2023 权重；新权重产出作为**第二意见**，
    双优交集优先进入 PACER-DC 功能复核。
@@ -39,5 +40,5 @@ GaMD 10 构象三种融入方式（max 0.5776 / mean 0.5689 / 训练增强 0.607
 
 - 部署权重：famaug ×3（13 靶最优）、ep80 ×3（13 靶）、ep80 ×3（20 靶）
 - 排名文件：28k 库 + 200 候选（新旧对照）
-- 基准 JSON：全协议 × 全配方 × 3 种子 + 集成 + CI
+- 基准 JSON：全协议 × 全配方 × 3 种子 + 集成 + CI。v01 ensemble BEDROC 使用了错误公式；最终数值以统一 RDKit `CalcBEDROC(alpha=20)` 的 v02 独立复算为准。
 - 本文档为管线交接入口

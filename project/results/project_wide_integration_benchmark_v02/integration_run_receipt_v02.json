@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "version": "v02",
+  "timestamp_utc": "2026-10-01T10:52:01.778473+00:00",
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\21597\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "project/scripts/recompute_binding_benchmark_v02.py",
+        "--repo-root",
+        "D:\\CLC_integration_benchmark",
+        "--artifact-root",
+        "D:\\CLC",
+        "--bootstrap",
+        "20000"
+      ],
+      "returncode": 0,
+      "stdout_tail": "{\n  \"output\": \"D:\\\\CLC_integration_benchmark\\\\project\\\\results\\\\project_wide_integration_benchmark_v02\\\\binding_recomputed_v02.json\",\n  \"methods\": 21,\n  \"famaug13\": {\n    \"roc_auc\": 0.6413556753888947,\n    \"pr_auc\": 0.2484267540270234,\n    \"bedroc_alpha20\": 0.29403220974489297,\n    \"ef1pct\": 2.1048345768172063,\n    \"ef5pct\": 2.058251774016057\n  },\n  \"ep80_20\": {\n    \"roc_auc\": 0.6277843697036476,\n    \"pr_auc\": 0.15879496544998264,\n    \"bedroc_alpha20\": 0.21422902481768533,\n    \"ef1pct\": 1.7279633250070057,\n    \"ef5pct\": 2.109135221896673\n  }\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\21597\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "project/scripts/audit_candidate_handoff_v02.py",
+        "--old-ranking",
+        "D:\\CLC\\project\\results\\drugclip_m4_candidate_screen_v01\\ranked_candidates.csv",
+        "--famaug-scores",
+        "D:\\CLC\\project\\data\\drugclip_muscarinic_family_aug_v01\\cand200\\cands200_famaug_scores.csv",
+        "--output-dir",
+        "D:\\CLC_integration_benchmark\\project\\results\\project_wide_integration_benchmark_v02"
+      ],
+      "returncode": 0,
+      "stdout_tail": "{\n  \"status\": \"PASS\",\n  \"old_rows\": 200,\n  \"new_rows\": 200,\n  \"matched_ids_and_smiles\": 200,\n  \"spearman_old_drugclip_vs_famaug_rank\": -0.058988974724368114,\n  \"topk_overlap\": {\n    \"20\": {\n      \"intersection\": 2,\n      \"jaccard\": 0.05263157894736842\n    },\n    \"50\": {\n      \"intersection\": 10,\n      \"jaccard\": 0.1111111111111111\n    },\n    \"100\": {\n      \"intersection\": 49,\n      \"jaccard\": 0.32450331125827814\n    }\n  },\n  \"dual_rule\": \"old DrugCLIP rank <= 50 AND family-augmented rank <= 25\",\n  \"dual_count\": 5,\n  \"dual_candidate_ids\": [\n    \"PACER0040\",\n    \"PACER0154\",\n    \"PACER0125\",\n    \"PACER0057\",\n    \"PACER0053\"\n  ],\n  \"provenance\": {\n    \"old\": \"D:\\\\CLC\\\\project\\\\results\\\\drugclip_m4_candidate_screen_v01\\\\ranked_candidates.csv\",\n    \"old_sha256\": \"13a535e24bdacbb520da7975f421f9dec4c452c50963d8ce6ae09964395cde88\",\n    \"new\": \"D:\\\\CLC\\\\project\\\\data\\\\drugclip_muscarinic_family_aug_v01\\\\cand200\\\\cands200_famaug_scores.csv\",\n    \"new_sha256\": \"19de17ae777050581ed029d317c9b63d91663adc1253a4b28d075068f4edd8ae\"\n  },\n  \"correction\": \"v01 pipeline_continuity_check compared PACER-200 to an unrelated 28,519-molecule library and is superseded.\"\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\21597\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "project/scripts/build_benchmark_registry_v02.py",
+        "--repo-root",
+        "D:\\CLC_integration_benchmark"
+      ],
+      "returncode": 0,
+      "stdout_tail": "{\n  \"rows\": 47,\n  \"modules\": {\n    \"static structure\": 15,\n    \"binding\": 11,\n    \"2D/QSAR\": 9,\n    \"MD representation\": 6,\n    \"functional MD\": 6\n  },\n  \"status_counts\": {\n    \"COMMITTED_RESULT\": 29,\n    \"RECOMPUTED_RAW\": 8,\n    \"NOT_RUN_DATA_GATE\": 2,\n    \"COMMITTED_NEGATIVE\": 1,\n    \"SOFTWARE_SMOKE_ONLY\": 1,\n    \"RUN_AS_VinaOnly\": 1,\n    \"NOT_RUN_NO_MATCHED_BINARY_GPU\": 1,\n    \"NOT_RUN_LEGACY_CUDA_STACK\": 1,\n    \"PILOT_ONLY_NOT_COMMON_PROTOCOL\": 1,\n    \"NOT_RUN_NO_COMMON_PREDICTIONS\": 1,\n    \"RUN_SUPERSEDED_BY_C1_BS256\": 1\n  },\n  \"rule\": \"Only same_protocol_comparable=true rows may enter head-to-head winner claims.\"\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\21597\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "project/scripts/make_project_benchmark_figures_v02.py",
+        "--repo-root",
+        "D:\\CLC_integration_benchmark"
+      ],
+      "returncode": 0,
+      "stdout_tail": "{\n  \"figures\": 6,\n  \"output\": \"D:\\\\CLC_integration_benchmark\\\\project\\\\results\\\\project_wide_integration_benchmark_v02\\\\figures\"\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\21597\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "project/scripts/audit_branch_integration_v02.py",
+        "--repo-root",
+        "D:\\CLC_integration_benchmark"
+      ],
+      "returncode": 0,
+      "stdout_tail": "{\n  \"status\": \"PASS\",\n  \"head\": \"55eb925b3c874a9835c4ba9a5c09da54a8b61a4d\",\n  \"frozen_lines\": {\n    \"oneprot_g0\": {\n      \"commit\": \"e04949f6\",\n      \"object_present\": true,\n      \"ancestor_of_head\": true\n    },\n    \"encoder_optimization\": {\n      \"commit\": \"0a4b4f23\",\n      \"object_present\": true,\n      \"ancestor_of_head\": true\n    },\n    \"fkg_long_md\": {\n      \"commit\": \"07ce8ae1\",\n      \"object_present\": true,\n      \"ancestor_of_head\": true\n    },\n    \"geom2vec_pilot\": {\n      \"commit\": \"14d86967\",\n      \"object_present\": true,\n      \"ancestor_of_head\": true\n    },\n    \"close_loop_20ns\": {\n      \"commit\": \"6d12bcef\",\n      \"object_present\": true,\n      \"ancestor_of_head\": true\n    },\n    \"cm00734_analysis\": {\n      \"commit\": \"853aaa12\",\n      \"object_present\": true,\n      \"ancestor_of_head\": true\n    },\n    \"cm00734_stage_b_synthesis\": {\n      \"commit\": \"5e86149b\",\n      \"object_present\": true,\n      \"ancestor_of_head\": true\n    },\n    \"drugclip_handoff\": {\n      \"commit\": \"c19b7443\",\n      \"object_present\": true,\n      \"ancestor_of_head\": true\n    },\n    \"project_benchmark_v01\": {\n      \"commit\": \"a2e01fe1\",\n      \"object_present\": true,\n      \"ancestor_of_head\": true\n    }\n  }\n}\n",
+      "stderr_tail": ""
+    }
+  ],
+  "required_artifacts": [
+    {
+      "path": "project\\results\\project_wide_integration_benchmark_v02\\binding_recomputed_v02.json",
+      "sha256": "f362e2854377bec0c3fceb498502b8c8df0db2c028966d75f03fbfe69026fd02"
+    },
+    {
+      "path": "project\\results\\project_wide_integration_benchmark_v02\\candidate_handoff_audit_v02.json",
+      "sha256": "b46ce45516b359676ce2fe796eb41c7493690a874f9b1cd61946b3e76f171ab2"
+    },
+    {
+      "path": "project\\results\\project_wide_integration_benchmark_v02\\benchmark_method_registry_v02.csv",
+      "sha256": "3833902a4a35ddff07a50a52e99eb22b3ca687df13d464b9c4e0f9e308d41fca"
+    },
+    {
+      "path": "project\\results\\project_wide_integration_benchmark_v02\\figures\\fig_v02_01_binding_fair_bars.png",
+      "sha256": "49ec4e0f63af3e340c5c9671b9c45175ec85a4c226fec7ce309e18b9ed3eb5ba"
+    },
+    {
+      "path": "project\\results\\project_wide_integration_benchmark_v02\\figures\\fig_v02_06_candidate_handoff_scatter.png",
+      "sha256": "3cbbe27d08a95693c765c084c939db4679ad2d34b544afabbcdc7453ff57c180"
+    },
+    {
+      "path": "project\\results\\project_wide_integration_benchmark_v02\\branch_integration_audit_v02.json",
+      "sha256": "814a92fba38b07328334ddb333898bf276ab4777e8db9949de38318306d63779"
+    }
+  ],
+  "claim_boundary": "Integration success is reproducibility, not PAM confirmation or universal SOTA."
+}

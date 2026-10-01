@@ -1,0 +1,23 @@
+{
+  "schema": "pacer_m4.integrated_scorecard.v1",
+  "principle": "No scalar total score; metrics remain protocol- and endpoint-specific.",
+  "source_paths": {
+    "cgda": "D:\\CLC\\project\\results\\litpcba_drugclip_external_v01\\full15_cgda_small_hardrank_3seed_summary.json",
+    "lit_reference": "D:\\CLC\\project\\results\\litpcba_drugclip_external_v01\\official_full15_embedding_reproduction.json",
+    "lit_pocket": "D:\\CLC\\project\\results\\litpcba_drugclip_external_v01\\official_full15_pocket_reproduction.json",
+    "dude": "D:\\CLC\\project\\results\\dude_gpcr_external_v01\\cgda_external_dude_gpcr.json",
+    "m4_external": "D:\\CLC\\project\\results\\drugclip_m4_external_panel_v01\\frozen_external_evaluation.json",
+    "m4_baseline": "D:\\CLC\\project\\results\\drugclip_m4_benchmark_v01\\baseline.json",
+    "m4_probe": "D:\\CLC\\project\\results\\drugclip_m4_benchmark_v01\\functional_probe.json",
+    "master": "D:\\CLC_integration_benchmark\\project\\results\\project_wide_integration_benchmark_v01\\project_wide_benchmark_master_v01.json",
+    "candidates": "D:\\CLC_integration_benchmark\\project\\results\\project_wide_integration_benchmark_v02\\candidate_dual_model_shortlist_v02.csv"
+  },
+  "candidate_ids": [
+    "PACER0040",
+    "PACER0154",
+    "PACER0125",
+    "PACER0057",
+    "PACER0053"
+  ],
+  "claim": "Integrated evidence cascade; not an end-to-end validated PAM classifier and not universal SOTA."
+}

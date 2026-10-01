@@ -1,0 +1,11 @@
+﻿stage,benchmark,method,metric,value,n,protocol_note
+Binding,LIT-PCBA 15T,CGDA,ROC-AUC,0.5788114208490779,2807612,"LOTO, 3 seeds"
+Binding,LIT-PCBA 15T,CGDA,BEDROC80.5,0.07377769240603,2807612,"LOTO, 3 seeds"
+Binding,DUD-E 5 GPCR,CGDA,ROC-AUC,0.7436735977604826,91311,external frozen
+M4 function,Acadia,GPCR-triplet,ROC-AUC,0.9302325581395349,45,43 positive/2 negative
+M4 function,Monash,GPCR-triplet,ROC-AUC,0.7878787878787878,14,11 positive/3 negative
+M4 potency,Suven,GPCR-triplet,Spearman,-0.105824990497196,45,external source
+M4 potency,VU6025733,GPCR-triplet,Spearman,-0.6367389060887513,18,external source; sign inversion risk
+Dynamics,matched 4-context,PACER-FKG,LY R1/R3 cosine,0.634,3,"case triad, not AUC"
+Dynamics,matched 4-context,PACER-FKG,CM00734 R1/R3 cosine,-0.327,3,hard-negative direction
+Handoff,PACER-200,dual model rule,retained,5.0,200,hypotheses only

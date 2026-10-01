@@ -1,4 +1,4 @@
-# PACER-M4 整体算法与基准评估 v01
+﻿# PACER-M4 整体算法与基准评估 v01
 
 日期：2026-10-01
 
@@ -33,3 +33,4 @@ python project\scripts\build_pacer_m4_algorithm_report_v01.py
 ```
 
 输出：`output/pdf/PACER-M4_整体算法与基准评估_v01.pdf`。
+

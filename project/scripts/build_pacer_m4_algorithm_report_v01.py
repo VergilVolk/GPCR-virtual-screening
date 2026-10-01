@@ -397,7 +397,7 @@ def build_pdf(d, figs):
     imgw=doc.width
 
     # 1 cover
-    story += [Spacer(1,13*mm),P("PACER-M4：从结合检索到功能动态复核",s["title"]),P("整体算法、数据链、基准评估与 SOTA 主张边界",s["subtitle"]),Spacer(1,7*mm),Image(str(figs["architecture"]),width=240*mm,height=103*mm),Spacer(1,4*mm),P("核心结论：项目已经形成可运行、可审计的多阶段算法链；CGDA 在严格未见靶点检索中取得显著但有限的增益，四上下文 PACER-FKG 得到初步 hard-negative 特异性证据。当前尚不能宣称端到端 PAM 预测 SOTA，也不能把 5 个候选称为已确认 PAM。",s["callout"]),PageBreak()]
+    story += [Spacer(1,13*mm),P("PACER-M4：从结合检索到功能动态复核",s["title"]),P("整体算法、数据链、基准评估与 SOTA 主张边界",s["subtitle"]),Spacer(1,7*mm),Image(str(figs["architecture"]),width=240*mm,height=103*mm),Spacer(1,4*mm),P("核心结论：项目已经形成可运行、可审计的多阶段算法链。结合线：微调权重在 13/20 靶严格 LOSO 上显著超过官方 checkpoint（CI 为正），family-aug 集成 0.6414 为 13 靶头条，纯 GPCR 域内微调确认 M4 退化根因。功能线：四上下文 PACER-FKG 在 compound110 / LY2119620 / CM00734 三类已知配体上完成回顾性判别——已知 PAM 与 ago-PAM 方向可复现（+0.63 / +0.58），实验 inactive hard negative 全区域为负（−0.33）。当前尚不能宣称端到端 PAM 预测 SOTA，也不能把 5 个候选称为已确认 PAM。",s["callout"]),PageBreak()]
 
     # 2 science and architecture
     story += [P("1. 科学问题与算法主线",s["h1"]),P("科学问题不是“哪个分子与 M4 别构口袋结合最强”，而是：在排除明显不相容分子后，如何判断候选物是否会在 ACh 存在时产生可重复、具有功能方向性的受体协同变化，并同时避免把无功能别构配体或内在激动剂误判为 PAM。",s["body"]),Image(str(figs["architecture"]),width=240*mm,height=103*mm),P("四个模块回答不同问题，不能用一个随意权重合成：CGDA 回答结合检索；静态门控回答姿势合理性；四上下文回答条件效应与交互效应；PACER-FKG 回答这些动态变化能否跨 replica 重复。最终输出是证据卡与拒绝理由，而不是未经校准的“PAM 概率”。",s["warn"]),PageBreak()]
@@ -405,13 +405,18 @@ def build_pdf(d, figs):
     # 3 data chain
     story += [P("2. 数据链与整体评价原则",s["h1"]),Image(str(figs["protocol"]),width=235*mm,height=117*mm),Spacer(1,2*mm),P("为什么不能给一个总 AUC：LIT-PCBA 评价跨靶点结合检索；M4 文献集评价功能标签或效力；四上下文 MD 目前只有 3 个化合物。样本宇宙、终点和统计单位不同。把它们标准化后相加会掩盖样本量、标签含义与泄漏风险。因而本报告给出一组整体证据向量，并在样本真正一致的子任务内做公平比较。",s["body"]),PageBreak()]
 
-    # 4 CGDA
-    story += [P("3. DrugCLIP 主线：CGDA，而不是只看 family-aug",s["h1"]),P("CGDA（Context-Gated DrugCLIP Adapter）冻结 DrugCLIP 编码器，用靶点口袋与共晶参考配体构造上下文，门控选择两个 rank-2 低秩残差专家。训练使用靶点内 active/decoy、跨靶点检索、困难负样本排序和表示保持损失；留出靶点的标签不进入训练。",s["body"]),Image(str(figs["binding"]),width=240*mm,height=69*mm),Spacer(1,2*mm),table([
+    # 4 binding line (current headline first, CGDA as closed secondary)
+    story += [P("3. DrugCLIP 结合线：微调头条（13T/20T）与 CGDA 冻结结果",s["h1"]),P("当前结合线的头条是微调权重对官方 Science-2026 checkpoint 的严格 LOSO 增益（9/30 冻结，全部数字已经独立复算审计对账）：",s["body"]),table([
+        ["协议（宏）", "官方 raw", "微调 ep80", "family-aug", "Δ 95% CI（vs 官方）"],
+        ["13 靶 LOSO（ep80 3 种子 0.6047-0.6079，集成 0.6121/0.6290）", "0.5442", "0.6062", "0.6414", "[+0.0668, +0.1017]"],
+        ["20 靶全覆盖 LOSO（3 种子 0.6245/0.6255/0.6278）", "0.5816", "0.6278", "—", "[+0.0276, +0.0621]"],
+        ["纯 GPCR 域内（B2AR/CCR2/M2R 训练，M4 留出）", "0.6003", "0.6887", "—", "机制探针：异源共训伤 M4 的根因确认"],
+    ],widths=[95*mm,25*mm,25*mm,25*mm,55*mm],font=8.4),Spacer(1,2*mm),P("M4 路由结论（9/30 冻结）：M4/GPCR 结合线守旧 2023 权重（M4-LOSO EF1% 2.08）；新微调权重用于 LIT-PCBA 型面板；若用于 GPCR 需纯 GPCR 域内微调。EF1% 边界保持：早期富集对官方与 ECFP 均无优势，主张限于整体排序与检索质量。",s["warn"]),Spacer(1,3*mm),P("CGDA（Context-Gated DrugCLIP Adapter）为 15 靶全量 LIT-PCBA 协议下的独立冻结结果（9/30 团队决策：支线关闭，数字留档）：",s["body"]),Image(str(figs["binding"]),width=240*mm,height=69*mm),Spacer(1,2*mm),table([
         ["Full LIT-PCBA 15T", "ROC-AUC", "PR-AUC", "BEDROC80.5", "EF1%"],
         ["Pocket DrugCLIP", "0.5672", "0.02379", "0.06109", "5.36"],
         ["Reference retrieval", "0.5693", "0.02594", "0.07103", "6.06"],
         ["CGDA hard-rank ensemble", "0.5788", "0.02627", "0.07378", "6.31"],
-    ],widths=[60*mm,30*mm,30*mm,35*mm,30*mm],font=8.7),Spacer(1,2*mm),P("相对 reference retrieval，target-bootstrap 的 ROC 增益 +0.00954（95% CI +0.00134 至 +0.01840），BEDROC 增益 +0.00274（+0.00045 至 +0.00504）。这是严格可主张的结果；PR 与多数 EF 截断点不稳定。family-aug 的 13T ROC 0.641 是另一个协议下的域适配结果，不能与 Full LIT-PCBA 直接比较，也不能替代 CGDA。",s["warn"]),PageBreak()]
+    ],widths=[60*mm,30*mm,30*mm,35*mm,30*mm],font=8.7),Spacer(1,2*mm),P("CGDA 相对 reference retrieval 的 ROC 增益 +0.00954（95% CI +0.00134 至 +0.01840），BEDROC +0.00274（+0.00045 至 +0.00504）；PR 与多数 EF 截断点不稳定。注意 family-aug 13T 与 Full LIT-PCBA 15T 是不同协议，不可直接比较；两者各自在协议内成立。",s["warn"]),PageBreak()]
 
     # 5 external and M4
     acad=d["m4_external"]["datasets"]["acadia_functional"]; mon=d["m4_external"]["datasets"]["monash_allostery"]
@@ -451,10 +456,10 @@ def build_pdf(d, figs):
     # 9 integrated vector
     story += [P("8. 整体算法的一系列指标",s["h1"]),Image(str(figs["vector"]),width=235*mm,height=85*mm),Spacer(1,2*mm),P("这张图不是让柱高彼此竞争，而是展示全流程每个科学终点已有多少证据。当前链条在“通用结合检索”上有大规模严格验证，在“M4 功能迁移”上有小样本外部提示，在“功能效力排序”上仍失败，在“四上下文动态”上只有三化合物机制闭环。",s["body"]),table([
         ["阶段", "当前最强证据", "当前缺口", "比赛中应如何表述"],
-        ["结合检索", "CGDA：2.8M LIT-PCBA + 外部 5-GPCR", "未全面胜过 pocket DrugCLIP/所有 SOTA", "严格未见靶点增益"],
-        ["M4 专化", "triplet：Acadia/Monash 数值改善", "负样本少，效力不改善", "外部压力测试，不称确认"],
+        ["结合检索", "微调 13T [+0.067,+0.102] / 20T [+0.028,+0.062] CI 为正；famaug 集成 0.6414；CGDA 15T +0.0095 留档", "EF1% 早期富集无优势；未全面胜过所有 SOTA", "严格未见靶点增益 + 协议内成立"],
+        ["M4 专化", "triplet：Acadia/Monash 数值改善；纯 GPCR 域内 0.600→0.689；路由结论冻结", "负样本少，效力不改善", "外部压力测试 + 路由结论，不称确认"],
         ["静态结构", "姿势、IFP、LOSO 结构特征", "Vina 与效力弱相关", "作为门控与解释，不作功能分数"],
-        ["动态功能", "LY/CM 冻结 hard-negative 对照", "n=3，无通用阈值", "部分特异性机制支持"],
+        ["动态功能", "三类回顾性判别：LY +0.634 / c110 +0.584 / CM00734 全区为负", "n=3，无通用阈值，ΔPAM 20ns 不稳", "冻结 hard-negative 部分特异性支持"],
     ],widths=[35*mm,73*mm,68*mm,62*mm],font=8.3),PageBreak()]
 
     # 10 candidates

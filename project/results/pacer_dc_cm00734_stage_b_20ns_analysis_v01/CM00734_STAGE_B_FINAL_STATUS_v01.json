@@ -1,0 +1,47 @@
+{
+  "schema": "pacer_dc.cm00734.stage_b.final_summary.v1",
+  "status": "PARTIAL_SPECIFICITY_SUPPORT",
+  "production": {
+    "contexts": 2,
+    "replicas_per_context": 3,
+    "trajectory_ns": 20,
+    "total_ns": 120,
+    "frames_per_trajectory": 400,
+    "total_frames": 2400,
+    "seeds": {
+      "R1": 27101,
+      "R2": 38201,
+      "R3": 49301
+    }
+  },
+  "frozen_fkg_v02_sha256": "b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd",
+  "phase1_receipt_sha256": "f8b5b945c81ea51dd4c5fc7d8ee0ee04114cde07043fed877b25da162ecdc8db",
+  "phase2a_receipt_sha256": "73f1e7e5f4ef3532daf7d797a54e4d60a22cf3c65a0d16477b3871a1a7a815b8",
+  "phase2b_result_sha256": "be663c7d45cc4ade1e053029e6aa09e65ca24c1e2fc22dae5398a26bf49d7d99",
+  "primary_result": {
+    "branch": "STATE_MOTION",
+    "contrast": "Delta_INT",
+    "region": "compound110_extension",
+    "R1_R3_direction_cosine": {
+      "compound110_reference": 0.5836558294376457,
+      "LY2119620": 0.634304250027008,
+      "CM00734": -0.3268392457993834
+    },
+    "CM_over_LY_magnitude_ratio": {
+      "R1": 0.644,
+      "R2": 0.798,
+      "R3": 0.525
+    }
+  },
+  "interpretation": "Partial hard-negative specificity support. Directional cross-replica consistency in STATE_MOTION Delta_INT is more discriminative than raw Delta_INT magnitude. Magnitude alone is not specific.",
+  "forbidden_posthoc_operations_performed": {
+    "encoder_tuning": false,
+    "normalization_refit": false,
+    "bandwidth_refit": false,
+    "rff_refit": false,
+    "graph_refit": false,
+    "region_refit": false,
+    "threshold_selection": false,
+    "outcome_driven_tuning": false
+  }
+}

@@ -43,6 +43,16 @@ PACER-M4 是面向人源 CHRM4/M4 正性别构调节剂（PAM）的分层计算�
 
 ## 快速复核
 
+安装候选化学、docking 准备、离线 DrugCLIP 和报告生成的冻结核心环境：
+
+```bash
+pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+pip install -r requirements.txt
+python project/scripts/audit_core_environment.py
+```
+
+目标环境为 CPython 3.9.23。MD、旧版 DrugCLIP/C1-BS256 和 Web API 必须使用各自隔离环境，不能全部塞进该环境。
+
 轻量测试不需要 GPU：
 
 ```bash

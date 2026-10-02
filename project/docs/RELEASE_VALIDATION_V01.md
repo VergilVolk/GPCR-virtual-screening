@@ -14,6 +14,8 @@ python project/scripts/validate_pacer_m4_release.py \
 
 结果：`valid = true`。manifest 中的项目入口、核心文档、DrugCLIP 路由、六路 docking、PACER-FS、Pareto、PACER-FKG 和测试文件均存在。四个可选轻量证据目录也全部存在。
 
+核心 `requirements.txt` 的 12 个固定直接依赖均已确认存在 CPython 3.9/Windows wheel；报告生成器所需的 `reportlab==4.2.5` 已显式加入。项目元数据已由 Python `>=3.10` 修正为 `>=3.9`，7 个包入口文件通过 Python 3.9 grammar parse，生成 wheel 的 `Requires-Python` 为 `>=3.9`。当前本机只有 Python 3.11/3.13，因此完整精确版本导入闸门仍应由队友在 `chrm4_vs` Python 3.9.23 环境运行 `audit_core_environment.py` 最终确认。
+
 ## 2. 自动测试
 
 执行：

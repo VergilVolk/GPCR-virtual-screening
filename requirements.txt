@@ -1,0 +1,32 @@
+# Canonical core entrypoint: candidate chemistry, docking preparation, offline
+# DrugCLIP projections/router and reporting. Validated target: CPython 3.9.23.
+#
+# This is a direct/necessary dependency baseline, not a transitive lockfile.
+# Do not install it into the MD, legacy DrugCLIP or C1-BS256 environments; use
+# project/environment_pacer_dc_md.yml, the relevant DrugCLIP environment and
+# project/environment_pacer_dc_geom2vec.yml instead.
+#
+# The file intentionally excludes the Web/API layer, model assets, Vina binary,
+# GPU drivers and local source checkouts. On CPU-only hosts, install the PyTorch
+# 2.8.0 CPU wheel from the official PyTorch CPU index before this file; pip will
+# then retain the already satisfied version.
+
+numpy==1.26.4
+pandas==2.3.1
+scipy==1.13.1
+scikit-learn==1.6.1
+rdkit==2025.3.5
+torch==2.8.0
+lightgbm==4.6.0
+meeko==0.7.1
+molscrub==0.1.1
+
+# Meeko imports gemmi, but Meeko 0.7.1 does not declare it as an install
+# dependency. Keep it explicit.
+gemmi==0.7.3
+
+matplotlib==3.9.4
+
+# build_pacer_m4_algorithm_report_v01.py imports ReportLab directly.
+reportlab==4.2.5
+

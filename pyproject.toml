@@ -7,7 +7,7 @@ name = "pacer-m4"
 version = "0.1.0"
 description = "Auditable orchestration tools for the PACER-M4 computational screening workflow"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.9"
 license = {file = "LICENSE"}
 authors = [{name = "PACER-M4 team"}]
 

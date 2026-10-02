@@ -6,16 +6,18 @@
 
 ## 1. 环境
 
-推荐 Python 3.11 或 3.12。轻量复核需要：
+提交级核心推理环境冻结为 CPython 3.9.23：
 
 ```bash
-pip install numpy pandas scipy scikit-learn rdkit pytest
+pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+pip install -r requirements.txt
+python project/scripts/audit_core_environment.py
 ```
 
-PACER-200 离线 DrugCLIP 适配器重评分额外需要 CPU 版 PyTorch：
+若机器只使用 CPU，建议先从 PyTorch 官方 CPU index 安装 `torch==2.8.0`，再安装 requirements；其余固定版本均存在 CPython 3.9 Windows wheel。开发测试另行安装：
 
 ```bash
-pip install torch
+pip install pytest
 ```
 
 完整模块环境分别记录在：

@@ -9,8 +9,8 @@
       "role": "repository_entry",
       "exists": true,
       "kind": "file",
-      "bytes": 4911,
-      "sha256": "4e885a9a47f86bfe70a60b548f450f502afc3356923e60bd255f299394230544"
+      "bytes": 5314,
+      "sha256": "ec9eaf458f9657dc2f3107b27601ae64a0a292d91d7de1cfcea22f44cd99aba0"
     },
     {
       "path": "LICENSE",
@@ -25,8 +25,16 @@
       "role": "python_package_metadata",
       "exists": true,
       "kind": "file",
-      "bytes": 744,
-      "sha256": "52f0142defd7a94bcbafd7b0d702293d8018cadc0a23d44bd42c24f2c8749fd4"
+      "bytes": 743,
+      "sha256": "20f660c085e8e920f88b5199898f81281bd59c1507431549f71225288dfd1b39"
+    },
+    {
+      "path": "requirements.txt",
+      "role": "canonical_core_environment",
+      "exists": true,
+      "kind": "file",
+      "bytes": 1098,
+      "sha256": "b3c190249ddd5cfe9ddd7aa22df2c14164952929c277f48fa1a5d87eff2a71fa"
     },
     {
       "path": "pacer_m4/stages.py",
@@ -113,16 +121,16 @@
       "role": "reproduction_guide",
       "exists": true,
       "kind": "file",
-      "bytes": 4570,
-      "sha256": "a4d103b72fd27720992d5330668afdf2263b5d305c6504e609066c6f02eed6da"
+      "bytes": 4792,
+      "sha256": "fc4c1439b3fcbe7fc0536b8db0eac59aa9cb462f63f86bc6e552c107421ef018"
     },
     {
       "path": "project/docs/RELEASE_VALIDATION_V01.md",
       "role": "release_validation",
       "exists": true,
       "kind": "file",
-      "bytes": 3004,
-      "sha256": "4a7c895a162d12be03a319d19f46bcfc9c4e86fd0bad927809853f4e7e2fc703"
+      "bytes": 3504,
+      "sha256": "f999b41412d68aa1a65a5e7c11a45a7303367d6686c5186e72c0061d6955ff0a"
     },
     {
       "path": "project/docs/LOCAL_API_AND_DOCKER_V01.md",
@@ -155,6 +163,14 @@
       "kind": "file",
       "bytes": 6906,
       "sha256": "5d6469a02fa39961b42227bd209a89d190c65e7cb9e9bd15501c4220d994b278"
+    },
+    {
+      "path": "project/scripts/audit_core_environment.py",
+      "role": "core_environment_audit",
+      "exists": true,
+      "kind": "file",
+      "bytes": 4213,
+      "sha256": "31997b119cb1ad0c18600d790ffcf61d284e539ab0b05c8e44c74077fc1f3408"
     },
     {
       "path": "project/scripts/score_pacer200_drugclip2023_m4_loto.py",

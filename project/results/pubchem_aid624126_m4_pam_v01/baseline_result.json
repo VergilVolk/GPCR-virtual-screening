@@ -1,0 +1,106 @@
+{
+  "dataset": "PubChem AID 624126 CHRM4 PAM primary screen",
+  "n_after_exact_overlap_exclusion": 21445,
+  "active": 1445,
+  "inactive": 20000,
+  "exact_training_overlap_removed": 5,
+  "unique_scaffolds": 15421,
+  "full_deterministic_subset": {
+    "ecfp_ridge": {
+      "roc_auc": 0.5354179411764706,
+      "average_precision_sampled": 0.08264621921773713,
+      "average_precision_prevalence_corrected": 0.005016898087483132,
+      "EF@0.5pct": 3.435377418941433,
+      "hits@0.5pct": 25,
+      "EF@1pct": 2.6920576164802448,
+      "hits@1pct": 39,
+      "EF@5pct": 1.507596010280654,
+      "hits@5pct": 109
+    },
+    "ecfp_rf": {
+      "roc_auc": 0.5079192906574395,
+      "average_precision_sampled": 0.08048458892137149,
+      "average_precision_prevalence_corrected": 0.008937679149277043,
+      "EF@0.5pct": 3.435377418941433,
+      "hits@0.5pct": 25,
+      "EF@1pct": 2.6230304981089563,
+      "hits@1pct": 38,
+      "EF@5pct": 1.300128669416344,
+      "hits@5pct": 94
+    },
+    "max_train_similarity": {
+      "roc_auc": 0.5275813148788927,
+      "average_precision_sampled": 0.08876767156070325,
+      "average_precision_prevalence_corrected": 0.010156355093988309,
+      "EF@0.5pct": 4.122452902729719,
+      "hits@0.5pct": 30,
+      "EF@1pct": 2.8301118532228218,
+      "hits@1pct": 41,
+      "EF@5pct": 1.4522713860501715,
+      "hits@5pct": 105
+    },
+    "physchem_logistic": {
+      "roc_auc": 0.5220423529411764,
+      "average_precision_sampled": 0.07300395540774532,
+      "average_precision_prevalence_corrected": 0.004330553509629792,
+      "EF@0.5pct": 0.4122452902729719,
+      "hits@0.5pct": 3,
+      "EF@1pct": 0.9663796571980365,
+      "hits@1pct": 14,
+      "EF@5pct": 1.2586352012434818,
+      "hits@5pct": 91
+    }
+  },
+  "property_matched_secondary": {
+    "n": 9234,
+    "active": 1445,
+    "inactive": 7789,
+    "methods": {
+      "ecfp_ridge": {
+        "roc_auc": 0.5262408480418441,
+        "average_precision_sampled": 0.1822458646270096,
+        "average_precision_prevalence_corrected": 0.1822458646270096,
+        "EF@0.5pct": 2.5833173820216446,
+        "hits@0.5pct": 19,
+        "EF@1pct": 2.473668936265208,
+        "hits@1pct": 36,
+        "EF@5pct": 1.3831842897586841,
+        "hits@5pct": 100
+      },
+      "ecfp_rf": {
+        "roc_auc": 0.5117922933637669,
+        "average_precision_sampled": 0.17584787875016752,
+        "average_precision_prevalence_corrected": 0.17584787875016752,
+        "EF@0.5pct": 2.855245527497607,
+        "hits@0.5pct": 21,
+        "EF@1pct": 2.1988168322357406,
+        "hits@1pct": 32,
+        "EF@5pct": 1.231034017885229,
+        "hits@5pct": 89
+      },
+      "max_train_similarity": {
+        "roc_auc": 0.517277448766582,
+        "average_precision_sampled": 0.18003719118179268,
+        "average_precision_prevalence_corrected": 0.18003719118179268,
+        "EF@0.5pct": 3.263137745711551,
+        "hits@0.5pct": 24,
+        "EF@1pct": 2.2675298582431074,
+        "hits@1pct": 33,
+        "EF@5pct": 1.3831842897586841,
+        "hits@5pct": 100
+      },
+      "physchem_logistic": {
+        "roc_auc": 0.5595231674871092,
+        "average_precision_sampled": 0.1949874432107423,
+        "average_precision_prevalence_corrected": 0.1949874432107423,
+        "EF@0.5pct": 2.0394610910697195,
+        "hits@0.5pct": 15,
+        "EF@1pct": 1.99267775421364,
+        "hits@1pct": 29,
+        "EF@5pct": 1.7013166764031815,
+        "hits@5pct": 123
+      }
+    }
+  },
+  "claim_boundary": "AID 624126 is a singlicate primary functional PAM screen. It measures large-scale screen transfer and enrichment, not confirmatory PAM pharmacology."
+}

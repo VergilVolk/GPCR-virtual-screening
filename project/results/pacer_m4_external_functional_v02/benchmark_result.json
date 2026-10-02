@@ -1,0 +1,844 @@
+{
+  "benchmark": "PACER-M4 external functional benchmark v02",
+  "n_unique_molecules": 145,
+  "n_endpoint_units": 384,
+  "n_endpoints": 13,
+  "confirmatory_macro_definition": "Unweighted mean of endpoint directional skill. Binary skill=2*AUC-1; continuous/ordinal skill=2*pairwise-concordance-1. Only primary functional endpoints with n>=15 and adequate class balance enter the macro score.",
+  "macro": {
+    "drugclip_gpcr_triplet": {
+      "macro_directional_skill": -0.05393790928334089,
+      "n_endpoints": 6,
+      "endpoint_min": -0.46405228758169936,
+      "endpoint_max": 0.2058823529411764
+    },
+    "drugclip_m4_matched": {
+      "macro_directional_skill": -0.0675130520808725,
+      "n_endpoints": 6,
+      "endpoint_min": -0.4117647058823529,
+      "endpoint_max": 0.17647058823529416
+    },
+    "drugclip_official": {
+      "macro_directional_skill": 0.007851476824539017,
+      "n_endpoints": 6,
+      "endpoint_min": -0.4771241830065359,
+      "endpoint_max": 0.32591768631813123
+    },
+    "ecfp_rf_task": {
+      "macro_directional_skill": -0.13603150725411,
+      "n_endpoints": 6,
+      "endpoint_min": -0.4022988505747126,
+      "endpoint_max": 0.013215859030837107
+    },
+    "max_train_similarity": {
+      "macro_directional_skill": 0.05558049602093201,
+      "n_endpoints": 6,
+      "endpoint_min": -0.3215859030837004,
+      "endpoint_max": 0.5947712418300655
+    }
+  },
+  "endpoints": [
+    {
+      "dataset": "acadia_2025",
+      "endpoint": "PAM_RE_ge_50pct",
+      "task_type": "binary",
+      "endpoint_role": "primary_function",
+      "n": 45,
+      "n_scaffolds": 6,
+      "confirmatory_macro_eligible": false,
+      "methods": {
+        "drugclip_official": {
+          "roc_auc": 0.8372093023255813,
+          "directional_skill": 0.6744186046511627,
+          "roc_auc_bootstrap_95ci": [
+            0.5813953488372093,
+            0.8372093023255813,
+            1.0
+          ],
+          "average_precision": 0.9912153776184023
+        },
+        "drugclip_gpcr_triplet": {
+          "roc_auc": 0.9302325581395349,
+          "directional_skill": 0.8604651162790697,
+          "roc_auc_bootstrap_95ci": [
+            0.8372093023255814,
+            0.9302325581395349,
+            1.0
+          ],
+          "average_precision": 0.9968276600510242
+        },
+        "drugclip_m4_matched": {
+          "roc_auc": 0.8604651162790697,
+          "directional_skill": 0.7209302325581395,
+          "roc_auc_bootstrap_95ci": [
+            0.7441860465116279,
+            0.8604651162790697,
+            0.9534883720930233
+          ],
+          "average_precision": 0.9933775123640792
+        },
+        "ecfp_rf_task": {
+          "roc_auc": 0.5174418604651163,
+          "directional_skill": 0.03488372093023262,
+          "roc_auc_bootstrap_95ci": [
+            0.023255813953488372,
+            0.5174418604651163,
+            1.0
+          ],
+          "average_precision": 0.9404393085648155
+        },
+        "max_train_similarity": {
+          "roc_auc": 0.4767441860465116,
+          "directional_skill": -0.04651162790697683,
+          "roc_auc_bootstrap_95ci": [
+            0.05784883720930242,
+            0.4767441860465116,
+            0.9072674418604663
+          ],
+          "average_precision": 0.9483222256982801
+        }
+      },
+      "positive": 43,
+      "negative": 2,
+      "evidence_warning": "descriptive_only_fewer_than_10_per_class"
+    },
+    {
+      "dataset": "acadia_2025",
+      "endpoint": "PAM_pEC50",
+      "task_type": "continuous",
+      "endpoint_role": "primary_function",
+      "n": 43,
+      "n_scaffolds": 6,
+      "confirmatory_macro_eligible": true,
+      "methods": {
+        "drugclip_official": {
+          "pairwise_concordance": 0.6629588431590656,
+          "directional_skill": 0.32591768631813123,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.5670416537827252,
+            0.6643990929705216,
+            0.7440339270964826
+          ],
+          "spearman": 0.47545688504836386
+        },
+        "drugclip_gpcr_triplet": {
+          "pairwise_concordance": 0.4972191323692992,
+          "directional_skill": -0.005561735261401579,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.3869817234715664,
+            0.49603174093065766,
+            0.6078043604344616
+          ],
+          "spearman": -0.02718622595575143
+        },
+        "drugclip_m4_matched": {
+          "pairwise_concordance": 0.457174638487208,
+          "directional_skill": -0.08565072302558396,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.35044806589135136,
+            0.4556818181818182,
+            0.5629379333018482
+          ],
+          "spearman": -0.13645975083900785
+        },
+        "ecfp_rf_task": {
+          "pairwise_concordance": 0.5050055617352615,
+          "directional_skill": 0.010011123470522909,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.3969870545221095,
+            0.5036891896424066,
+            0.6137321952005155
+          ],
+          "spearman": 0.022051049941887273
+        },
+        "max_train_similarity": {
+          "pairwise_concordance": 0.4810901001112347,
+          "directional_skill": -0.03781979977753058,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.3851779073698445,
+            0.48001125905747466,
+            0.5868437162393741
+          ],
+          "spearman": -0.06447105075942987
+        }
+      }
+    },
+    {
+      "dataset": "acadia_2025",
+      "endpoint": "PAM_relative_efficacy_pct",
+      "task_type": "continuous",
+      "endpoint_role": "primary_function",
+      "n": 45,
+      "n_scaffolds": 6,
+      "confirmatory_macro_eligible": true,
+      "methods": {
+        "drugclip_official": {
+          "pairwise_concordance": 0.6418067226890757,
+          "directional_skill": 0.28361344537815136,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.5330166788692245,
+            0.6422459550479538,
+            0.7486642143362068
+          ],
+          "spearman": 0.3860605978507739
+        },
+        "drugclip_gpcr_triplet": {
+          "pairwise_concordance": 0.6029411764705882,
+          "directional_skill": 0.2058823529411764,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.5015810793824917,
+            0.6032000227557173,
+            0.6995833077327435
+          ],
+          "spearman": 0.3013767635128456
+        },
+        "drugclip_m4_matched": {
+          "pairwise_concordance": 0.5882352941176471,
+          "directional_skill": 0.17647058823529416,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.48767217487521547,
+            0.5884875687089888,
+            0.6845647578565507
+          ],
+          "spearman": 0.23906847074978685
+        },
+        "ecfp_rf_task": {
+          "pairwise_concordance": 0.49737394957983194,
+          "directional_skill": -0.005252100840336116,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.39258572699028677,
+            0.4972691857967833,
+            0.6086935858600714
+          ],
+          "spearman": -0.01534656276938233
+        },
+        "max_train_similarity": {
+          "pairwise_concordance": 0.5740546218487395,
+          "directional_skill": 0.1481092436974789,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.4667981501632209,
+            0.574892438467836,
+            0.6907141283271637
+          ],
+          "spearman": 0.201571646568856
+        }
+      }
+    },
+    {
+      "dataset": "acadia_2025",
+      "endpoint": "intrinsic_agonist_RE_ge_50pct",
+      "task_type": "binary",
+      "endpoint_role": "liability",
+      "n": 45,
+      "n_scaffolds": 6,
+      "confirmatory_macro_eligible": false,
+      "methods": {
+        "drugclip_official": {
+          "roc_auc": 0.7736486486486486,
+          "directional_skill": 0.5472972972972971,
+          "roc_auc_bootstrap_95ci": [
+            0.5337837837837838,
+            0.7837837837837838,
+            0.972972972972973
+          ],
+          "average_precision": 0.6150275681525681
+        },
+        "drugclip_gpcr_triplet": {
+          "roc_auc": 0.5945945945945946,
+          "directional_skill": 0.18918918918918926,
+          "roc_auc_bootstrap_95ci": [
+            0.3716216216216216,
+            0.597972972972973,
+            0.8175675675675675
+          ],
+          "average_precision": 0.34489318864318863
+        },
+        "drugclip_m4_matched": {
+          "roc_auc": 0.625,
+          "directional_skill": 0.25,
+          "roc_auc_bootstrap_95ci": [
+            0.3952702702702703,
+            0.6317567567567567,
+            0.8378378378378378
+          ],
+          "average_precision": 0.43860709183289825
+        },
+        "ecfp_rf_task": {
+          "roc_auc": 0.41216216216216217,
+          "directional_skill": -0.17567567567567566,
+          "roc_auc_bootstrap_95ci": [
+            0.2466216216216216,
+            0.41216216216216217,
+            0.581081081081081
+          ],
+          "average_precision": 0.16057216379797024
+        },
+        "max_train_similarity": {
+          "roc_auc": 0.37331081081081074,
+          "directional_skill": -0.2533783783783785,
+          "roc_auc_bootstrap_95ci": [
+            0.15878378378378374,
+            0.3699324324324324,
+            0.6030827702702705
+          ],
+          "average_precision": 0.15677293066219686
+        }
+      },
+      "positive": 8,
+      "negative": 37,
+      "evidence_warning": "descriptive_only_fewer_than_10_per_class"
+    },
+    {
+      "dataset": "acadia_2025",
+      "endpoint": "intrinsic_agonist_RE_pct",
+      "task_type": "continuous",
+      "endpoint_role": "liability",
+      "n": 45,
+      "n_scaffolds": 6,
+      "confirmatory_macro_eligible": false,
+      "methods": {
+        "drugclip_official": {
+          "pairwise_concordance": 0.6160990712074303,
+          "directional_skill": 0.2321981424148607,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.5146660764187626,
+            0.617678381256656,
+            0.7139763925297316
+          ],
+          "spearman": 0.3374766634360084
+        },
+        "drugclip_gpcr_triplet": {
+          "pairwise_concordance": 0.5655314757481941,
+          "directional_skill": 0.13106295149638814,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.4494736842105263,
+            0.5661761866141428,
+            0.6719645756702125
+          ],
+          "spearman": 0.1800139294998638
+        },
+        "drugclip_m4_matched": {
+          "pairwise_concordance": 0.5552115583075335,
+          "directional_skill": 0.1104231166150671,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.4456260934339293,
+            0.5536929916030953,
+            0.6624427833148764
+          ],
+          "spearman": 0.1515941479561124
+        },
+        "ecfp_rf_task": {
+          "pairwise_concordance": 0.47316821465428277,
+          "directional_skill": -0.05366357069143446,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.3783783783783784,
+            0.4726789429598206,
+            0.5665997218439818
+          ],
+          "spearman": -0.06904058332723428
+        },
+        "max_train_similarity": {
+          "pairwise_concordance": 0.5479876160990712,
+          "directional_skill": 0.09597523219814241,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.4420960637823372,
+            0.548852226106668,
+            0.6550373482726425
+          ],
+          "spearman": 0.13122488178690336
+        }
+      }
+    },
+    {
+      "dataset": "monash_2015",
+      "endpoint": "reported_PAM_vs_inactive",
+      "task_type": "binary",
+      "endpoint_role": "primary_function",
+      "n": 14,
+      "n_scaffolds": 3,
+      "confirmatory_macro_eligible": false,
+      "methods": {
+        "drugclip_official": {
+          "roc_auc": 0.5757575757575758,
+          "directional_skill": 0.1515151515151516,
+          "roc_auc_bootstrap_95ci": [
+            0.2727272727272727,
+            0.5757575757575758,
+            0.8484848484848485
+          ],
+          "average_precision": 0.8876691490327855
+        },
+        "drugclip_gpcr_triplet": {
+          "roc_auc": 0.7878787878787878,
+          "directional_skill": 0.5757575757575757,
+          "roc_auc_bootstrap_95ci": [
+            0.4545454545454546,
+            0.8181818181818181,
+            1.0
+          ],
+          "average_precision": 0.9403069153069155
+        },
+        "drugclip_m4_matched": {
+          "roc_auc": 0.6060606060606061,
+          "directional_skill": 0.21212121212121215,
+          "roc_auc_bootstrap_95ci": [
+            0.3333333333333333,
+            0.6060606060606061,
+            0.909090909090909
+          ],
+          "average_precision": 0.8942807192807194
+        },
+        "ecfp_rf_task": {
+          "roc_auc": 1.0,
+          "directional_skill": 1.0,
+          "roc_auc_bootstrap_95ci": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "average_precision": 1.0
+        },
+        "max_train_similarity": {
+          "roc_auc": 1.0,
+          "directional_skill": 1.0,
+          "roc_auc_bootstrap_95ci": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "average_precision": 1.0
+        }
+      },
+      "positive": 11,
+      "negative": 3,
+      "evidence_warning": "descriptive_only_fewer_than_10_per_class"
+    },
+    {
+      "dataset": "suven_2025",
+      "endpoint": "CRE_luc_PAM_pEC50",
+      "task_type": "continuous",
+      "endpoint_role": "primary_function",
+      "n": 45,
+      "n_scaffolds": 14,
+      "confirmatory_macro_eligible": true,
+      "methods": {
+        "drugclip_official": {
+          "pairwise_concordance": 0.48370672097759676,
+          "directional_skill": -0.03258655804480648,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.39210844607552564,
+            0.48286604361370716,
+            0.5799424909149261
+          ],
+          "spearman": -0.06635477299543983
+        },
+        "drugclip_gpcr_triplet": {
+          "pairwise_concordance": 0.4684317718940937,
+          "directional_skill": -0.06313645621181263,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.39080132213685903,
+            0.4683609618043786,
+            0.5541820711363328
+          ],
+          "spearman": -0.105824990497196
+        },
+        "drugclip_m4_matched": {
+          "pairwise_concordance": 0.48370672097759676,
+          "directional_skill": -0.03258655804480648,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.39667705088265837,
+            0.4838709677419355,
+            0.5742993229412691
+          ],
+          "spearman": -0.040129152685424885
+        },
+        "ecfp_rf_task": {
+          "pairwise_concordance": 0.3004073319755601,
+          "directional_skill": -0.39918533604887985,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.21413347063138297,
+            0.29927007299270075,
+            0.39460020768431986
+          ],
+          "spearman": -0.5679362348040675
+        },
+        "max_train_similarity": {
+          "pairwise_concordance": 0.5468431771894094,
+          "directional_skill": 0.09368635437881889,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.4429173389530991,
+            0.5490400753203161,
+            0.647705029012489
+          ],
+          "spearman": 0.13691496493413008
+        }
+      }
+    },
+    {
+      "dataset": "suven_2025",
+      "endpoint": "GloSensor_PAM_pEC50",
+      "task_type": "continuous",
+      "endpoint_role": "primary_function",
+      "n": 14,
+      "n_scaffolds": 8,
+      "confirmatory_macro_eligible": false,
+      "methods": {
+        "drugclip_official": {
+          "pairwise_concordance": 0.4666666666666667,
+          "directional_skill": -0.06666666666666665,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.26506024096385544,
+            0.47058823529411764,
+            0.6471323529411768
+          ],
+          "spearman": 0.002200221353402789
+        },
+        "drugclip_gpcr_triplet": {
+          "pairwise_concordance": 0.3888888888888889,
+          "directional_skill": -0.2222222222222222,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.17141114982578398,
+            0.3764705882352941,
+            0.671136780905753
+          ],
+          "spearman": -0.3498351951910434
+        },
+        "drugclip_m4_matched": {
+          "pairwise_concordance": 0.4111111111111111,
+          "directional_skill": -0.1777777777777778,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.18072289156626506,
+            0.4090909090909091,
+            0.6428571428571429
+          ],
+          "spearman": -0.20682080721986212
+        },
+        "ecfp_rf_task": {
+          "pairwise_concordance": 0.34444444444444444,
+          "directional_skill": -0.3111111111111111,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.17647058823529413,
+            0.3448275862068966,
+            0.512931034482759
+          ],
+          "spearman": -0.4114413930863215
+        },
+        "max_train_similarity": {
+          "pairwise_concordance": 0.5944444444444444,
+          "directional_skill": 0.18888888888888888,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.3684017027863777,
+            0.5930232558139535,
+            0.7987050306015824
+          ],
+          "spearman": 0.22687224669603526
+        }
+      }
+    },
+    {
+      "dataset": "suven_2025",
+      "endpoint": "log10_M4_over_M2_selectivity",
+      "task_type": "continuous",
+      "endpoint_role": "selectivity",
+      "n": 8,
+      "n_scaffolds": 4,
+      "confirmatory_macro_eligible": false,
+      "methods": {
+        "drugclip_official": {
+          "pairwise_concordance": 0.5,
+          "directional_skill": 0.0,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.1302989130434783,
+            0.5,
+            0.875
+          ],
+          "spearman": 0.0
+        },
+        "drugclip_gpcr_triplet": {
+          "pairwise_concordance": 0.32142857142857145,
+          "directional_skill": -0.3571428571428571,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.0,
+            0.3076923076923077,
+            0.6959692028985519
+          ],
+          "spearman": -0.4523809523809524
+        },
+        "drugclip_m4_matched": {
+          "pairwise_concordance": 0.39285714285714285,
+          "directional_skill": -0.2142857142857143,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.125,
+            0.375,
+            0.7394021739130444
+          ],
+          "spearman": -0.3571428571428572
+        },
+        "ecfp_rf_task": {
+          "pairwise_concordance": 0.39285714285714285,
+          "directional_skill": -0.2142857142857143,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.0,
+            0.4,
+            0.7272727272727273
+          ],
+          "spearman": -0.2380952380952381
+        },
+        "max_train_similarity": {
+          "pairwise_concordance": 0.6428571428571429,
+          "directional_skill": 0.2857142857142858,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.2940563725490196,
+            0.6538461538461539,
+            0.9444444444444444
+          ],
+          "spearman": 0.38095238095238104
+        }
+      }
+    },
+    {
+      "dataset": "us20260055116_2026",
+      "endpoint": "human_GTPgammaS_PAM_bin",
+      "task_type": "ordinal",
+      "endpoint_role": "primary_function",
+      "n": 12,
+      "n_scaffolds": 2,
+      "confirmatory_macro_eligible": false,
+      "methods": {
+        "drugclip_official": {
+          "pairwise_concordance": 0.3333333333333333,
+          "directional_skill": -0.33333333333333337,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.1111111111111111,
+            0.32653061224489793,
+            0.6
+          ],
+          "spearman": -0.4383768218961453
+        },
+        "drugclip_gpcr_triplet": {
+          "pairwise_concordance": 0.35294117647058826,
+          "directional_skill": -0.2941176470588235,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.08571428571428572,
+            0.35294117647058826,
+            0.6531632653061228
+          ],
+          "spearman": -0.34704831733444835
+        },
+        "drugclip_m4_matched": {
+          "pairwise_concordance": 0.27450980392156865,
+          "directional_skill": -0.4509803921568627,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.05544871794871798,
+            0.26666666666666666,
+            0.5555555555555556
+          ],
+          "spearman": -0.5552773077351174
+        },
+        "ecfp_rf_task": {
+          "pairwise_concordance": 0.6862745098039216,
+          "directional_skill": 0.37254901960784315,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.34691915227629516,
+            0.6904761904761905,
+            0.9333333333333333
+          ],
+          "spearman": 0.3981922798889987
+        },
+        "max_train_similarity": {
+          "pairwise_concordance": 0.45098039215686275,
+          "directional_skill": -0.0980392156862745,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.1956389183457052,
+            0.44680851063829785,
+            0.7659574468085106
+          ],
+          "spearman": -0.14247246711624723
+        }
+      }
+    },
+    {
+      "dataset": "us20260055116_2026",
+      "endpoint": "human_pERK_PAM_bin",
+      "task_type": "ordinal",
+      "endpoint_role": "primary_function",
+      "n": 25,
+      "n_scaffolds": 9,
+      "confirmatory_macro_eligible": true,
+      "methods": {
+        "drugclip_official": {
+          "pairwise_concordance": 0.5770925110132159,
+          "directional_skill": 0.1541850220264318,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.3944954128440367,
+            0.5818181818181818,
+            0.7435594266185688
+          ],
+          "spearman": 0.16313444215771658
+        },
+        "drugclip_gpcr_triplet": {
+          "pairwise_concordance": 0.5418502202643172,
+          "directional_skill": 0.08370044052863435,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.39043650793650797,
+            0.5414847161572053,
+            0.7014661645999699
+          ],
+          "spearman": 0.10661857890406046
+        },
+        "drugclip_m4_matched": {
+          "pairwise_concordance": 0.5374449339207048,
+          "directional_skill": 0.07488986784140961,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.3807333628277372,
+            0.5412844036697247,
+            0.692677370030581
+          ],
+          "spearman": 0.10341200510243459
+        },
+        "ecfp_rf_task": {
+          "pairwise_concordance": 0.5066079295154186,
+          "directional_skill": 0.013215859030837107,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.2701193948231863,
+            0.5044642857142857,
+            0.7252549719530853
+          ],
+          "spearman": 0.024850946962600554
+        },
+        "max_train_similarity": {
+          "pairwise_concordance": 0.3392070484581498,
+          "directional_skill": -0.3215859030837004,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.18232044198895028,
+            0.3362638636627121,
+            0.5173913043478261
+          ],
+          "spearman": -0.3992952332321122
+        }
+      }
+    },
+    {
+      "dataset": "us20260055116_2026",
+      "endpoint": "rat_pERK_PAM_bin",
+      "task_type": "ordinal",
+      "endpoint_role": "primary_function",
+      "n": 25,
+      "n_scaffolds": 9,
+      "confirmatory_macro_eligible": true,
+      "methods": {
+        "drugclip_official": {
+          "pairwise_concordance": 0.39655172413793105,
+          "directional_skill": -0.2068965517241379,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.15852053915275996,
+            0.3973509933774834,
+            0.6350217391304349
+          ],
+          "spearman": -0.17782667134987842
+        },
+        "drugclip_gpcr_triplet": {
+          "pairwise_concordance": 0.45977011494252873,
+          "directional_skill": -0.08045977011494254,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.24339613237639554,
+            0.45596315449256625,
+            0.6837208079107934
+          ],
+          "spearman": -0.08122946715982102
+        },
+        "drugclip_m4_matched": {
+          "pairwise_concordance": 0.4367816091954023,
+          "directional_skill": -0.12643678160919536,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.20528851373357943,
+            0.4391067897165458,
+            0.6582355665328805
+          ],
+          "spearman": -0.12777175645139413
+        },
+        "ecfp_rf_task": {
+          "pairwise_concordance": 0.2988505747126437,
+          "directional_skill": -0.4022988505747126,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.12344054580896686,
+            0.28651685393258425,
+            0.5066287593984964
+          ],
+          "spearman": -0.3767290963412239
+        },
+        "max_train_similarity": {
+          "pairwise_concordance": 0.4281609195402299,
+          "directional_skill": -0.14367816091954022,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.2107778637770898,
+            0.42327315541601257,
+            0.658542765326302
+          ],
+          "spearman": -0.1425082842552598
+        }
+      }
+    },
+    {
+      "dataset": "vu6025733_2026",
+      "endpoint": "calcium_PAM_pEC50",
+      "task_type": "continuous",
+      "endpoint_role": "primary_function",
+      "n": 18,
+      "n_scaffolds": 2,
+      "confirmatory_macro_eligible": true,
+      "methods": {
+        "drugclip_official": {
+          "pairwise_concordance": 0.26143790849673204,
+          "directional_skill": -0.4771241830065359,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.1103435598377282,
+            0.2517482517482518,
+            0.4452067293270673
+          ],
+          "spearman": -0.6429308565531475
+        },
+        "drugclip_gpcr_triplet": {
+          "pairwise_concordance": 0.2679738562091503,
+          "directional_skill": -0.46405228758169936,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.11723005285678328,
+            0.2620689655172414,
+            0.4610065466448446
+          ],
+          "spearman": -0.6367389060887513
+        },
+        "drugclip_m4_matched": {
+          "pairwise_concordance": 0.29411764705882354,
+          "directional_skill": -0.4117647058823529,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.14181899910098894,
+            0.29333333333333333,
+            0.4722222222222222
+          ],
+          "spearman": -0.5810113519091847
+        },
+        "ecfp_rf_task": {
+          "pairwise_concordance": 0.48366013071895425,
+          "directional_skill": -0.0326797385620915,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.3120567375886525,
+            0.4794520547945205,
+            0.6879982019778246
+          ],
+          "spearman": -0.08978328173374613
+        },
+        "max_train_similarity": {
+          "pairwise_concordance": 0.7973856209150327,
+          "directional_skill": 0.5947712418300655,
+          "pairwise_concordance_bootstrap_95ci": [
+            0.6666095890410959,
+            0.8013698630136986,
+            0.9027777777777778
+          ],
+          "spearman": 0.7708978328173374
+        }
+      }
+    }
+  ],
+  "claim_boundary": "Retrospective multi-source functional transfer benchmark. It tests ranking and classification of known public compounds; it does not validate generated candidates or establish prospective/wet-lab PAM activity."
+}

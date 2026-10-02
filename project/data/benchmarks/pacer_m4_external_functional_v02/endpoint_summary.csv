@@ -1,0 +1,14 @@
+dataset,endpoint,task_type,endpoint_role,n_rows,n_zero_shot,n_scaffolds,class_counts,confirmatory_macro_eligible
+acadia_2025,PAM_RE_ge_50pct,binary,primary_function,45,45,6,"{""1.0"": 43, ""0.0"": 2}",False
+acadia_2025,PAM_pEC50,continuous,primary_function,43,43,6,{},True
+acadia_2025,PAM_relative_efficacy_pct,continuous,primary_function,45,45,6,{},True
+acadia_2025,intrinsic_agonist_RE_ge_50pct,binary,liability,45,45,6,"{""0.0"": 37, ""1.0"": 8}",False
+acadia_2025,intrinsic_agonist_RE_pct,continuous,liability,45,45,6,{},False
+monash_2015,reported_PAM_vs_inactive,binary,primary_function,16,14,3,"{""1.0"": 11, ""0.0"": 3}",False
+suven_2025,CRE_luc_PAM_pEC50,continuous,primary_function,45,45,14,{},True
+suven_2025,GloSensor_PAM_pEC50,continuous,primary_function,14,14,8,{},False
+suven_2025,log10_M4_over_M2_selectivity,continuous,selectivity,8,8,4,{},False
+us20260055116_2026,human_GTPgammaS_PAM_bin,ordinal,primary_function,12,12,2,"{""2.0"": 4, ""3.0"": 4, ""1.0"": 3, ""4.0"": 1}",False
+us20260055116_2026,human_pERK_PAM_bin,ordinal,primary_function,25,25,9,"{""4.0"": 9, ""3.0"": 7, ""2.0"": 5, ""1.0"": 4}",True
+us20260055116_2026,rat_pERK_PAM_bin,ordinal,primary_function,25,25,9,"{""1.0"": 15, ""3.0"": 6, ""2.0"": 4}",True
+vu6025733_2026,calcium_PAM_pEC50,continuous,primary_function,18,18,2,{},True

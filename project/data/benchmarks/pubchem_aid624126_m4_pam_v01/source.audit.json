@@ -1,0 +1,14 @@
+{
+  "dataset_id": "PUBCHEM_AID624126_CHRM4_PAM_PRIMARY_V01",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/bioassay/624126",
+  "assay": "Human CHRM4 PAM primary cell-based calcium screen, singlicate",
+  "pubchem_active_cids": 1450,
+  "pubchem_inactive_cids": 362354,
+  "requested_inactive_subset": 20000,
+  "selection": "all active CIDs plus SHA256(AID624126:CID)-ordered inactive CIDs",
+  "retrieved_unique_structures": 21450,
+  "retrieved_active": 1450,
+  "retrieved_inactive": 20000,
+  "label_quality": "screening_level",
+  "claim_boundary": "Large independent primary-screen benchmark, not confirmatory PAM ground truth. Singlicate hits may include assay artifacts and false positives."
+}

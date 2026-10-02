@@ -1,0 +1,19 @@
+{
+  "version": "PACER-M4 external functional benchmark v02",
+  "endpoint_records": 398,
+  "unique_molecules": 147,
+  "unique_scaffolds": 32,
+  "zero_shot_endpoint_units": 384,
+  "endpoints": 13,
+  "confirmatory_macro_endpoints": [
+    "PAM_pEC50",
+    "PAM_relative_efficacy_pct",
+    "CRE_luc_PAM_pEC50",
+    "human_pERK_PAM_bin",
+    "rat_pERK_PAM_bin",
+    "calcium_PAM_pEC50"
+  ],
+  "pooling_rule": "Raw labels are never pooled across assay endpoints.",
+  "independence_rule": "A molecule is counted once per endpoint; repeated endpoints on one molecule are not independent molecules.",
+  "claim_boundary": "Retrospective public functional benchmark; not prospective or wet-lab confirmation of a new PAM."
+}

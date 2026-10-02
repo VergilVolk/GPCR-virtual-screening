@@ -1,0 +1,25 @@
+{
+  "syntax": "PASS",
+  "imports": "PASS",
+  "builder_help": "PASS",
+  "smoke_help": "PASS",
+  "frozen_input_validation": "PASS",
+  "dry_run": "PASS",
+  "contract_tests": {
+    "run": 5,
+    "passed": 5
+  },
+  "all_three_cluster_protein_ff14SB_templates": "PASS",
+  "historical_sources_unchanged": "PASS",
+  "full_membrane_build": "NOT_RUN_MISSING_FORMAL_ASSETS",
+  "cuda_smoke": "LOCAL_NOT_RUN",
+  "equilibration": "NOT_RUN",
+  "restraint_release": "NOT_RUN",
+  "production": "NOT_STARTED",
+  "files_sha256": {
+    "project/scripts/pacer_stage4_prospective.py": "e96dc0979332f980415cad694d162e6387b1d353af208062a3a2512c1cfd9e3b",
+    "project/scripts/build_pacer_stage4_prospective_membrane.py": "98c2b3725f63917f3d62ccfd19045422a809150a4996b8703d739d7f13ed98b6",
+    "project/scripts/run_pacer_stage4_membrane_smoke.py": "12be8ebabf3408b6adc0b65cbeaf47f3335022d50aa7e4ce7db4a921212292c4",
+    "project/tests/test_pacer_stage4_prospective.py": "a43631938f0463fcd5d66ed2e5cbf584e2a57cfbe39d1f7f34114f7277fa4142"
+  }
+}

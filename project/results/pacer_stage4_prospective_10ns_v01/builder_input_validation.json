@@ -1,0 +1,49 @@
+{
+  "stage3d_input_validation": "PASS",
+  "candidates": [
+    "PACER0010",
+    "PACER0073",
+    "PACER0027"
+  ],
+  "selected": [
+    "PACER0010",
+    "PACER0073",
+    "PACER0027"
+  ],
+  "system_count": 12,
+  "missing_assets": [
+    "/mnt/c/projects/GPCR-virtual-screening/project/data/pdb/7TRS_OPM.pdb",
+    "/mnt/c/projects/GPCR-virtual-screening/project/results/pacer_dc_openmm_reference_qc_v01/probe_only/minimized.pdb",
+    "/mnt/c/projects/GPCR-virtual-screening/project/data/pdb/m4_ligands/ACH_ideal.sdf"
+  ],
+  "assets": {
+    "opm": {
+      "path": "/mnt/c/projects/GPCR-virtual-screening/project/data/pdb/7TRS_OPM.pdb",
+      "exists": false,
+      "sha256": null
+    },
+    "probe_reference": {
+      "path": "/mnt/c/projects/GPCR-virtual-screening/project/results/pacer_dc_openmm_reference_qc_v01/probe_only/minimized.pdb",
+      "exists": false,
+      "sha256": null
+    },
+    "7TRS": {
+      "path": "/mnt/c/projects/GPCR-virtual-screening/project/data/pdb/7TRS.pdb",
+      "exists": true,
+      "sha256": "53442edb5d1ce98d4fcbf9ae52d96f2b387c5ace1b913b40b54906227416fcc1"
+    },
+    "ACH_template": {
+      "path": "/mnt/c/projects/GPCR-virtual-screening/project/data/pdb/m4_ligands/ACH_ideal.sdf",
+      "exists": false,
+      "sha256": null
+    }
+  },
+  "production_started": false,
+  "dry_run": true,
+  "identity": {
+    "parent_graph": "PASS",
+    "microstate_charge": "PASS",
+    "heavy_atom_mapping": "PASS",
+    "stereo": "Full source SMILES identity; unspecified stereo is not inferred from coordinates"
+  }
+}

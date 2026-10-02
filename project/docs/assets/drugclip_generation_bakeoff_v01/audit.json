@@ -1,0 +1,44 @@
+{
+  "benchmark_role": "retrospective_selection_benchmark_not_lockbox",
+  "n_input_pairs": 28765,
+  "n_common_pairs": 28618,
+  "targets": [
+    "B2AR",
+    "CCR2",
+    "M2R",
+    "M4R"
+  ],
+  "bootstrap": {
+    "unit": "target-stratified Murcko scaffold",
+    "repeats": 200,
+    "seed": 20261002
+  },
+  "primary_metrics": [
+    "bedroc_alpha20",
+    "ef1pct",
+    "ef5pct"
+  ],
+  "secondary_metrics": [
+    "pr_auc",
+    "roc_auc"
+  ],
+  "input_sha256": {
+    "D:\\CLC\\project\\results\\gpcr_drugclip_screening_v01\\ensemble_embeddings.npz": "9f76804535edffb876bb69a7f876203d8f5b73da1ca2108c3304a10fabae521d",
+    "D:\\CLC\\project\\results\\gpcr_drugclip_screening_v01\\science2026_ensemble_embeddings.npz": "e17f59ce1b6c10104d6753752d71ecbb948165643873bbbe39910ab1339d755c",
+    "project\\data\\benchmarks\\gpcr_drugclip_screening_v01\\screening_pairs.csv": "306005f06e1fac4f690676efaba04e6001890a431a7850d03dd649d3b1808298",
+    "D:\\CLC\\project\\results\\gpcr_drugclip_screening_v01\\ensemble_pockets.csv": "6115b0981ae30f035b753acd6a11065e20ebf86f3a64187a04e181e38bc395f3",
+    "D:\\CLC\\project\\results\\gpcr_drugclip_screening_v01\\large_target_loso_3seed_result.predictions.csv": "536d46050342f293c3ef587b475c68bb3867388de78d110b32e67506b1f75630",
+    "D:\\CLC\\project\\results\\drugclip_science2026\\extended20_finetune_v01\\gpcr_only_ep80_seed20260925.predictions.csv": "57d6d1bb77af75bf10aa317f56a82614cb895fa73932a0ce6bb20660ec90d517",
+    "D:\\CLC\\project\\results\\drugclip_science2026\\migration_13target_v01\\loso_preserve0_seed20260925.predictions.csv": "282af75fc069cdbdc00a6e6aeff8d0da347c274d8891fd866645809e147bae48",
+    "D:\\CLC\\project\\results\\drugclip_science2026\\migration_13target_v01\\loso_preserve0_seed20260926.predictions.csv": "28331b793e78f1a53d88ff2025ca9fbb57b501144edf830ec20cf721f0f35e42",
+    "D:\\CLC\\project\\results\\drugclip_science2026\\migration_13target_v01\\loso_preserve0_seed20260927.predictions.csv": "204052dd4709cb42e2e0aeaa2896e8a4ad79e4bdc8b08fdf58e98bab3d82cd86",
+    "D:\\CLC\\project\\results\\drugclip_science2026\\family_aug_v01\\famaug_ep80_seed20260925.predictions.csv": "f6cc96df53dcd807ce44fe8366106ae918661df922c6871d44c99c00c72bbe33",
+    "D:\\CLC\\project\\results\\drugclip_science2026\\family_aug_v01\\famaug_ep80_seed20260926.predictions.csv": "221477cb8a51cc703c5a22539226389d3b4001cab46d39ec9220d05e6922569d",
+    "D:\\CLC\\project\\results\\drugclip_science2026\\family_aug_v01\\famaug_ep80_seed20260927.predictions.csv": "350321c371f5b37533f328945a1988b5de7739c443586de98b5eb54223642ffa",
+    "D:\\CLC\\project\\results\\drugclip_science2026\\extended20_finetune_v01\\loso20_ep80_seed20260925.predictions.csv": "be7d4f7178157da7b5ceef3e8351e6e94b083d72aea0d3ed27b41775b0b67b0c",
+    "D:\\CLC\\project\\results\\drugclip_science2026\\extended20_finetune_v01\\loso20_ep80_seed20260926.predictions.csv": "749cdc5e3e0c0d2db2469bfd6d0cfdc88af08ac43962de10c5fefd44d0f7d696",
+    "D:\\CLC\\project\\results\\drugclip_science2026\\extended20_finetune_v01\\loso20_ep80_seed20260927.predictions.csv": "91bf8ebfe8a7d1964128eda971daf849bbbc733f9cc7ba041176309860dfdf82",
+    "D:\\CLC\\project\\results\\gpcr_drugclip_screening_v01\\published_docking_baselines.csv": "28df04e719c79b9f917e40009fefd842aad8a0946a9b83687ccf012b3379651e"
+  },
+  "claim_boundary": "Same-input retrospective comparison. Labels and this benchmark were previously seen during development; results select deployment routes but cannot establish prospective superiority, affinity, or PAM efficacy."
+}

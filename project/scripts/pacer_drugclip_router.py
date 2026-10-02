@@ -146,7 +146,7 @@ def main() -> None:
     audit_path = args.audit or args.output.with_suffix(".audit.json")
     audit = {
         "protocol": asdict(config),
-        "frozen_protocol": config.is_frozen_v01,
+        "frozen_protocol": bool(config.is_frozen_v01),
         "input": str(args.input),
         "input_sha256": sha256(args.input),
         "output": str(args.output),

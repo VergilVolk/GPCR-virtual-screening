@@ -1,0 +1,46 @@
+{
+  "protocol_id": "drugclip2023_m4_heldout_loto_3seed_v01",
+  "scope": "frozen PACER-200 M4 candidates only",
+  "base_checkpoint_required": false,
+  "drugclip_checkout_required": false,
+  "representations_file": "pacer200_m4_2023_frozen_representations.npz",
+  "representations_sha256": "c22bc605d4ed54ec7115062d364419fb781a393b2ed44fe7da081b51af042658",
+  "adapters": [
+    {
+      "file": "drugclip2023_m4_loto_seed20260925.projection.pt",
+      "sha256": "a954c7c16fe857b5e3b02f1fbfdf7b2b1284d3559d86448b33736e16dd5d7398",
+      "bytes": 2631059
+    },
+    {
+      "file": "drugclip2023_m4_loto_seed20260926.projection.pt",
+      "sha256": "3cc92da9f066a36f9d65b47b7859e69ee7a456d48047a3e1bbd509283d50d4b9",
+      "bytes": 2631059
+    },
+    {
+      "file": "drugclip2023_m4_loto_seed20260927.projection.pt",
+      "sha256": "578ab8349fa8723f5609067e6511ebdfab8541dab8558e883bb7affeb7a8780c",
+      "bytes": 2631059
+    }
+  ],
+  "candidate_rows": 200,
+  "target": "M4R",
+  "molecule_representation_shape": [
+    200,
+    512
+  ],
+  "pocket_representation_shape": [
+    512
+  ],
+  "adapter_validation": {
+    "max_abs_error": 4.9670537349832955e-08,
+    "mean_abs_error": 6.4293529374152246e-09,
+    "threshold": 2e-06,
+    "passed": true
+  },
+  "source_sha256": {
+    "candidate_representations": "58c1bd77872a63d2328e78372e1577d3df9749789ffffd3b86d5fc43185d19fd",
+    "candidate_table": "3df43a327d085bbe883840810f9876bddd403d799cb3f381d26294f54592bb29",
+    "reference_representations": "9f76804535edffb876bb69a7f876203d8f5b73da1ca2108c3304a10fabae521d"
+  },
+  "claim_boundary": "Binding-candidate retrieval only; not PAM function or potency."
+}

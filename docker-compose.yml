@@ -1,0 +1,10 @@
+services:
+  pacer-m4:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      PACER_M4_API_ALLOW_EXECUTION: "0"
+    volumes:
+      - ./runs:/app/runs
+

@@ -10,6 +10,7 @@ PACER-M4 是面向人源 CHRM4/M4 正性别构调节剂（PAM）的分层计算�
 - 当前整体结果与边界：[`project/docs/PACER_M4_INTEGRATED_ALGORITHM_AND_BENCHMARK_V02.md`](project/docs/PACER_M4_INTEGRATED_ALGORITHM_AND_BENCHMARK_V02.md)
 - 代码、数据和产物地图：[`project/docs/CODE_AND_ARTIFACT_MAP_V01.md`](project/docs/CODE_AND_ARTIFACT_MAP_V01.md)
 - 最小复现指南：[`project/docs/REPRODUCTION_QUICKSTART_V01.md`](project/docs/REPRODUCTION_QUICKSTART_V01.md)
+- 本地 API 与 Docker：[`project/docs/LOCAL_API_AND_DOCKER_V01.md`](project/docs/LOCAL_API_AND_DOCKER_V01.md)
 
 ## 方法概览
 
@@ -60,6 +61,15 @@ python -m pacer_m4 run drugclip-route --dry-run -- \
 ```
 
 每个阶段保留自己的输入、输出和科学主张边界；命令入口不会把不同任务的分数合成虚假的端到端概率。
+
+可选本地 API：
+
+```bash
+pip install -e ".[api,core]"
+uvicorn pacer_m4.api:app --host 127.0.0.1 --port 8000
+```
+
+API 默认只允许查询和 dry-run。真正执行必须在可信本地环境显式设置 `PACER_M4_API_ALLOW_EXECUTION=1`。
 
 复算已经打包的 PACER-200 M4 DrugCLIP 排名：
 

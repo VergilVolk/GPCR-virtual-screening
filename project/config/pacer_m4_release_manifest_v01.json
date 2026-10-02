@@ -8,11 +8,16 @@
     {"path": "pacer_m4/stages.py", "role": "stage_registry"},
     {"path": "pacer_m4/runner.py", "role": "audited_stage_runner"},
     {"path": "pacer_m4/cli.py", "role": "command_line_interface"},
+    {"path": "pacer_m4/api.py", "role": "local_http_api"},
+    {"path": "Dockerfile", "role": "container_definition"},
+    {"path": ".dockerignore", "role": "container_context_policy"},
+    {"path": "docker-compose.yml", "role": "local_container_entry"},
     {"path": "project/docs/START_HERE_FOR_COLLABORATORS_V01.md", "role": "project_overview"},
     {"path": "project/docs/DOCUMENT_AND_EVIDENCE_INDEX_V01.md", "role": "evidence_index"},
     {"path": "project/docs/CODE_AND_ARTIFACT_MAP_V01.md", "role": "code_map"},
     {"path": "project/docs/REPRODUCTION_QUICKSTART_V01.md", "role": "reproduction_guide"},
     {"path": "project/docs/RELEASE_VALIDATION_V01.md", "role": "release_validation"},
+    {"path": "project/docs/LOCAL_API_AND_DOCKER_V01.md", "role": "service_guide"},
     {"path": "project/docs/PACER_M4_PROJECT_MAINLINE_DEVELOPMENT_AND_INFERENCE_V01.md", "role": "mainline"},
     {"path": "project/docs/PACER_M4_INTEGRATED_ALGORITHM_AND_BENCHMARK_V02.md", "role": "benchmark_summary"},
     {"path": "project/scripts/pacer_drugclip_router.py", "role": "binding_router"},
@@ -24,7 +29,8 @@
     {"path": "project/pacer_dc_training/pacer_factorial_kernel_graph.py", "role": "factorial_kernel_core"},
     {"path": "project/tests/test_pacer_drugclip_router.py", "role": "router_test"},
     {"path": "project/tests/test_pacer_factorial_kernel_graph.py", "role": "fkg_test"},
-    {"path": "project/tests/test_pacer_m4_cli.py", "role": "orchestration_test"}
+    {"path": "project/tests/test_pacer_m4_cli.py", "role": "orchestration_test"},
+    {"path": "project/tests/test_pacer_m4_api.py", "role": "api_test"}
   ],
   "optional": [
     {"path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01", "role": "offline_m4_inference_bundle"},

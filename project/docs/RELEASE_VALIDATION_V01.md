@@ -22,7 +22,7 @@ python project/scripts/validate_pacer_m4_release.py \
 python -m pytest project/tests -q
 ```
 
-结果：`32 passed, 2 skipped`。
+结果：`37 passed, 2 skipped`。
 
 两项 skip 是未分发的 Science-2026 大型开发 checkpoint 完整性测试。测试现在能区分“整套外部 checkpoint 未安装”和“checkpoint 只复制了一部分”：前者跳过，后者仍然失败。
 
@@ -67,7 +67,17 @@ python -m pip wheel . --no-deps --wheel-dir tmp/wheels
 
 新增 3 个测试验证非支配关系、front 分层和多样性选择。
 
-## 6. 仍需外部资源的部分
+## 6. 本地 API 烟雾测试
+
+实际启动 Uvicorn 后完成：
+
+- `GET /health`：200，`execution_allowed=false`；
+- `GET /v1/capabilities`：返回 19 个注册阶段；
+- `POST /v1/stages/drugclip-route/run`：返回 `dry_run` 和精确命令；
+- 默认真实执行请求：403；
+- API 自动测试：5 项通过。
+
+## 7. 仍需外部资源的部分
 
 - 任意新分子的完整 DrugCLIP backbone 编码；
 - Glide PDB/BEmin/BEavg 三路商业计算；
@@ -75,4 +85,3 @@ python -m pip wheel . --no-deps --wheel-dir tmp/wheels
 - 新候选的功能湿实验。
 
 统一命令入口会报告这些依赖，但不会伪造、插补或绕过它们。
-

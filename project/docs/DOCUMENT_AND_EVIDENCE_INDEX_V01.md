@@ -20,6 +20,7 @@
 | `PACER_M4_INTEGRATED_ALGORITHM_AND_BENCHMARK_V02.md` | 主线/结果 | 当前核心结果、基线与严格主张边界 |
 | `PROJECT_INTEGRATION_AND_BENCHMARK_V02.md` | 主线 | 模块联调、benchmark 矩阵与缺口 |
 | `RELEASE_VALIDATION_V01.md` | 主线/审计 | 安装、测试、wheel 构建和 PACER-200 端到端复算 |
+| `LOCAL_API_AND_DOCKER_V01.md` | 接口 | 统一 HTTP 接口、安全执行开关与容器边界 |
 | `../PROJECT_STATUS.md` | 主线/日志 | 按日期记录最新冻结状态与结果 |
 | `PACER_M4_RESEARCH_CHARTER.md` | 历史/约束 | 初始科学问题、验证原则和禁止事项 |
 | `PACER_M4_ABSTRACT_EVIDENCE_BANK.md` | 写作材料 | 摘要可用数字与禁止表述；部分内容需用最新结果替换 |

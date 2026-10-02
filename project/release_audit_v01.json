@@ -9,8 +9,8 @@
       "role": "repository_entry",
       "exists": true,
       "kind": "file",
-      "bytes": 4553,
-      "sha256": "0e4d12b5a6232d2259972663537790adaa24156118bcef8e463cbbd5b0c91740"
+      "bytes": 4911,
+      "sha256": "4e885a9a47f86bfe70a60b548f450f502afc3356923e60bd255f299394230544"
     },
     {
       "path": "LICENSE",
@@ -25,24 +25,24 @@
       "role": "python_package_metadata",
       "exists": true,
       "kind": "file",
-      "bytes": 450,
-      "sha256": "79b667c498a43f4bd833caa713129f76a599ee0f0a2f9356e3d2b502eba2cd2e"
+      "bytes": 744,
+      "sha256": "52f0142defd7a94bcbafd7b0d702293d8018cadc0a23d44bd42c24f2c8749fd4"
     },
     {
       "path": "pacer_m4/stages.py",
       "role": "stage_registry",
       "exists": true,
       "kind": "file",
-      "bytes": 7724,
-      "sha256": "b950f41c3010e3a75f16da278f07828959036a76ec78c50b192fd093de4d441d"
+      "bytes": 9439,
+      "sha256": "22a37d4f4e25c66b065406dddc326c2d2ebf42240135c125045feeac8e21605f"
     },
     {
       "path": "pacer_m4/runner.py",
       "role": "audited_stage_runner",
       "exists": true,
       "kind": "file",
-      "bytes": 2840,
-      "sha256": "a06a993d200ceab9fdc7026b943edfe6f16ab434cce67c6c3281835a634fe4c8"
+      "bytes": 3513,
+      "sha256": "26ec4708454e04c40ee31ce07330e26b9107b14f7ed36d54c1eb8c30d39136f2"
     },
     {
       "path": "pacer_m4/cli.py",
@@ -51,6 +51,38 @@
       "kind": "file",
       "bytes": 2435,
       "sha256": "8d4849a6433e8207616de854b06cfc99ac40d1685fd6149cea2a76b636436e0c"
+    },
+    {
+      "path": "pacer_m4/api.py",
+      "role": "local_http_api",
+      "exists": true,
+      "kind": "file",
+      "bytes": 3817,
+      "sha256": "e584fa8073ffeaa5b4fc4d00496882fc0edcee89a64fa6418004f3a9e4999c30"
+    },
+    {
+      "path": "Dockerfile",
+      "role": "container_definition",
+      "exists": true,
+      "kind": "file",
+      "bytes": 571,
+      "sha256": "bcf831be307ede1e8360ec1fdc59647ddb9601fb87bc0db2a09c41d6857e4a0d"
+    },
+    {
+      "path": ".dockerignore",
+      "role": "container_context_policy",
+      "exists": true,
+      "kind": "file",
+      "bytes": 270,
+      "sha256": "fe7de51be348cef380ab5bda57b8921b9b44531257ef0febaa81689c9b102686"
+    },
+    {
+      "path": "docker-compose.yml",
+      "role": "local_container_entry",
+      "exists": true,
+      "kind": "file",
+      "bytes": 162,
+      "sha256": "6994c0f504bcb2760a3ed1de583db4a5810d0894818e8d18c315da65f1337b11"
     },
     {
       "path": "project/docs/START_HERE_FOR_COLLABORATORS_V01.md",
@@ -65,8 +97,8 @@
       "role": "evidence_index",
       "exists": true,
       "kind": "file",
-      "bytes": 9572,
-      "sha256": "95a4be273a95651121702a0cf99839d2403d8be5eec6b5151ca3d8bfd6f051c8"
+      "bytes": 9672,
+      "sha256": "39cf1122c6ee78e3789fdb839cbf882377ffb3a3702d9ee73c3dbad834d6f733"
     },
     {
       "path": "project/docs/CODE_AND_ARTIFACT_MAP_V01.md",
@@ -89,8 +121,16 @@
       "role": "release_validation",
       "exists": true,
       "kind": "file",
-      "bytes": 2680,
-      "sha256": "41f2d49f0b494449c003c01c0ea374aa4285655120e53dd932a88b152de73727"
+      "bytes": 3004,
+      "sha256": "4a7c895a162d12be03a319d19f46bcfc9c4e86fd0bad927809853f4e7e2fc703"
+    },
+    {
+      "path": "project/docs/LOCAL_API_AND_DOCKER_V01.md",
+      "role": "service_guide",
+      "exists": true,
+      "kind": "file",
+      "bytes": 2785,
+      "sha256": "c69f70cda3a7405df15cf9a45e0eb11a4a5d312fe4f2e6f901a6bb6b63f56de1"
     },
     {
       "path": "project/docs/PACER_M4_PROJECT_MAINLINE_DEVELOPMENT_AND_INFERENCE_V01.md",
@@ -187,6 +227,14 @@
       "kind": "file",
       "bytes": 1216,
       "sha256": "75bf80fe65a7cc3a187c31f2c17bc417ed58cd9f0e0e3339ae7d072c0f668b8f"
+    },
+    {
+      "path": "project/tests/test_pacer_m4_api.py",
+      "role": "api_test",
+      "exists": true,
+      "kind": "file",
+      "bytes": 1591,
+      "sha256": "b786f769157a5f3c8f18e961a9ebe3f39cd32823dfc8daff580baee604520b61"
     }
   ],
   "optional": [

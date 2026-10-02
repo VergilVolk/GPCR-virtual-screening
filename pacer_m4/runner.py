@@ -46,6 +46,7 @@ def run_stage(
     root: Path | None = None,
     dry_run: bool = False,
     receipt_path: Path | None = None,
+    log_path: Path | None = None,
 ) -> dict[str, object]:
     if stage_id not in STAGES:
         raise KeyError(f"Unknown stage '{stage_id}'. Available: {', '.join(sorted(STAGES))}")
@@ -72,7 +73,24 @@ def run_stage(
     if dry_run:
         receipt.update({"status": "dry_run", "returncode": None})
     else:
-        completed = subprocess.run(command, cwd=root, check=False)
+        destination = None
+        handle = None
+        if log_path:
+            destination = log_path if log_path.is_absolute() else root / log_path
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            handle = destination.open("w", encoding="utf-8")
+        try:
+            completed = subprocess.run(
+                command,
+                cwd=root,
+                check=False,
+                stdout=handle,
+                stderr=subprocess.STDOUT if handle else None,
+                text=True if handle else None,
+            )
+        finally:
+            if handle:
+                handle.close()
         receipt.update(
             {
                 "status": "completed" if completed.returncode == 0 else "failed",
@@ -80,9 +98,10 @@ def run_stage(
                 "finished_utc": datetime.now(timezone.utc).isoformat(),
             }
         )
+        if destination:
+            receipt["log"] = str(destination)
     if receipt_path:
         destination = receipt_path if receipt_path.is_absolute() else root / receipt_path
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_text(json.dumps(receipt, indent=2), encoding="utf-8")
     return receipt
-

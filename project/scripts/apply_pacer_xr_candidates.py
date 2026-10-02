@@ -34,6 +34,15 @@ FILES = {
 
 def make_template() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
+    if not FINAL.exists():
+        raise SystemExit(
+            "[apply_pacer_xr_candidates] Candidate roster file is missing:\n"
+            f"  {FINAL}\n"
+            "This file ships with the repository (results are force-added). If you are\n"
+            "on a fresh clone, run `git fetch origin && git checkout origin/<service-branch>\n"
+            "-- project/results/pacer_candidates_v01/final/final_candidate_hypotheses.csv`.\n"
+            "The six-channel template cannot be built without the frozen candidate roster."
+        )
     candidates = pd.read_csv(FINAL, usecols=["candidate_id", "canonical_smiles"])
     for name in FILES:
         candidates[f"{name}_raw"] = np.nan

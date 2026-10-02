@@ -58,7 +58,7 @@ python -m pacer_m4 run <stage-id> -- <原脚本参数>
 python -m pytest project/tests -q
 ```
 
-未安装可选大型 checkpoint 时，对应 checkpoint 完整性测试应显示 `skipped`，而不是失败。当前冻结仓库预期为 `25 passed, 2 skipped`。
+未安装可选大型 checkpoint 时，对应 checkpoint 完整性测试应显示 `skipped`，而不是失败。当前冻结仓库预期为 `37 passed, 2 skipped`（早期文档写 25 passed 未随测试扩充更新；以 `pytest -q` 实际输出为准）。
 
 ## 4. 复算 PACER-200 M4 DrugCLIP 排名
 

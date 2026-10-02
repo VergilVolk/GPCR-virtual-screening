@@ -1,0 +1,100 @@
+{
+  "schema": "pacer.runtime_dependencies.v1",
+  "profile": "fkg",
+  "python": "3.11.16",
+  "python_executable": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\python.exe",
+  "python_version_check": {
+    "status": "PASS",
+    "expected": "3.11.16"
+  },
+  "python_dependencies": {
+    "numpy": {
+      "status": "PASS",
+      "version": "2.4.6",
+      "distribution": "numpy",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\Lib\\site-packages\\numpy\\__init__.py",
+      "role": "runtime"
+    },
+    "scipy": {
+      "status": "PASS",
+      "version": "1.15.3",
+      "distribution": "scipy",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\Lib\\site-packages\\scipy\\__init__.py",
+      "role": "runtime"
+    },
+    "torch": {
+      "status": "PASS",
+      "version": "2.6.0+cu126",
+      "distribution": "torch",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\Lib\\site-packages\\torch\\__init__.py",
+      "role": "runtime"
+    },
+    "MDAnalysis": {
+      "status": "PASS",
+      "version": "2.10.0",
+      "distribution": "MDAnalysis",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\Lib\\site-packages\\MDAnalysis\\__init__.py",
+      "role": "runtime"
+    },
+    "torch_geometric": {
+      "status": "PASS",
+      "version": "2.7.0",
+      "distribution": "torch-geometric",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\Lib\\site-packages\\torch_geometric\\__init__.py",
+      "role": "runtime"
+    },
+    "torch_cluster": {
+      "status": "PASS",
+      "version": "1.6.3+pt26cu126",
+      "distribution": "torch-cluster",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\Lib\\site-packages\\torch_cluster\\__init__.py",
+      "role": "runtime"
+    },
+    "torch_scatter": {
+      "status": "PASS",
+      "version": "2.1.2+pt26cu126",
+      "distribution": "torch-scatter",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\Lib\\site-packages\\torch_scatter\\__init__.py",
+      "role": "runtime"
+    },
+    "mdtraj": {
+      "status": "PASS",
+      "version": "1.11.1.post2",
+      "distribution": "mdtraj",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\Lib\\site-packages\\mdtraj\\__init__.py",
+      "role": "runtime"
+    },
+    "einops": {
+      "status": "PASS",
+      "version": "0.8.2",
+      "distribution": "einops",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\Lib\\site-packages\\einops\\__init__.py",
+      "role": "runtime"
+    },
+    "tqdm": {
+      "status": "PASS",
+      "version": "4.70.1",
+      "distribution": "tqdm",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\Lib\\site-packages\\tqdm\\__init__.py",
+      "role": "runtime"
+    },
+    "geom2vec": {
+      "status": "PASS",
+      "version": "1.0.0",
+      "distribution": "geom2vec",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\Lib\\site-packages\\geom2vec\\models\\representation\\visnet.py",
+      "role": "runtime"
+    }
+  },
+  "external_tools": {
+    "git": {
+      "status": "PASS",
+      "path": "C:\\Program Files\\Git\\cmd\\git.EXE",
+      "version": null,
+      "version_evidence": "recorded baseline; executable not invoked",
+      "role": "runtime"
+    }
+  },
+  "overall": "PASS",
+  "limitation": "Imports/presence only; no clean solve, native ABI, GPU platform or asset verification."
+}

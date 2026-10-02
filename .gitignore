@@ -94,3 +94,15 @@ project/tools/oneprot-embeddings/
 .conda_*
 __pycache__/
 .pytest_cache/
+
+# Track dependency-only audit receipts while all scientific results stay ignored.
+!project/results/
+project/results/*
+!project/results/dependency_audit_v01.json
+!project/results/dependency_runtime_evidence_v01.json
+!project/results/dependency_scientific_assets_v01.json
+!project/results/dependency_smoke_core_v01.json
+!project/results/dependency_smoke_drugclip_v01.json
+!project/results/dependency_smoke_md_v01.json
+!project/results/dependency_smoke_fkg_v01.json
+!project/results/dependency_smoke_overview_v01.json

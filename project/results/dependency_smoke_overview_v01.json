@@ -1,0 +1,308 @@
+{
+  "schema": "pacer.runtime_dependencies.v1",
+  "profile": "all",
+  "python": "3.9.23",
+  "python_executable": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\python.exe",
+  "python_version_check": {
+    "status": "PASS",
+    "expected": "separate stage runtimes"
+  },
+  "python_dependencies": {
+    "numpy": {
+      "status": "PASS",
+      "version": "1.26.4",
+      "distribution": "numpy",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\numpy\\__init__.py",
+      "role": "runtime"
+    },
+    "pandas": {
+      "status": "PASS",
+      "version": "2.3.1",
+      "distribution": "pandas",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\pandas\\__init__.py",
+      "role": "runtime"
+    },
+    "scipy": {
+      "status": "PASS",
+      "version": "1.13.1",
+      "distribution": "scipy",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\scipy\\__init__.py",
+      "role": "runtime"
+    },
+    "sklearn": {
+      "status": "PASS",
+      "version": "1.6.1",
+      "distribution": "scikit-learn",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\sklearn\\__init__.py",
+      "role": "runtime"
+    },
+    "rdkit": {
+      "status": "PASS",
+      "version": "2025.3.5",
+      "distribution": "rdkit",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\rdkit\\__init__.py",
+      "role": "runtime"
+    },
+    "torch": {
+      "status": "PASS",
+      "version": "2.8.0",
+      "distribution": "torch",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\torch\\__init__.py",
+      "role": "runtime"
+    },
+    "lightgbm": {
+      "status": "PASS",
+      "version": "4.6.0",
+      "distribution": "lightgbm",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\lightgbm\\__init__.py",
+      "role": "runtime"
+    },
+    "meeko": {
+      "status": "PASS",
+      "version": "0.7.1",
+      "distribution": "meeko",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\meeko\\__init__.py",
+      "import_messages": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\prody\\utilities\\misctools.py:424: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.\n  import pkg_resources\n",
+      "role": "runtime"
+    },
+    "scrubber": {
+      "status": "PASS",
+      "version": "0.1.1",
+      "distribution": "molscrub",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\scrubber\\__init__.py",
+      "role": "runtime"
+    },
+    "gemmi": {
+      "status": "PASS",
+      "version": "0.7.3",
+      "distribution": "gemmi",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\gemmi\\__init__.py",
+      "role": "runtime"
+    },
+    "matplotlib": {
+      "status": "PASS",
+      "version": "3.9.4",
+      "distribution": "matplotlib",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\matplotlib\\__init__.py",
+      "role": "runtime"
+    },
+    "openmm": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'openmm'",
+      "role": "runtime"
+    },
+    "openmmforcefields": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'openmmforcefields'",
+      "role": "runtime"
+    },
+    "openff": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'openff'",
+      "role": "runtime"
+    },
+    "pdbfixer": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'pdbfixer'",
+      "role": "runtime"
+    },
+    "parmed": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'parmed'",
+      "role": "runtime"
+    },
+    "importlib_resources": {
+      "status": "PASS",
+      "version": "6.5.2",
+      "distribution": "importlib_resources",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\importlib_resources\\__init__.py",
+      "role": "runtime"
+    },
+    "openff.units": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'openff'",
+      "role": "runtime"
+    },
+    "openff.interchange": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'openff'",
+      "role": "runtime"
+    },
+    "MDAnalysis": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'MDAnalysis'",
+      "role": "runtime"
+    },
+    "torch_geometric": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'torch_geometric'",
+      "role": "runtime"
+    },
+    "torch_cluster": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'torch_cluster'",
+      "role": "runtime"
+    },
+    "torch_scatter": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'torch_scatter'",
+      "role": "runtime"
+    },
+    "mdtraj": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'mdtraj'",
+      "role": "runtime"
+    },
+    "einops": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'einops'",
+      "role": "runtime"
+    },
+    "tqdm": {
+      "status": "PASS",
+      "version": "4.67.1",
+      "distribution": "tqdm",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\tqdm\\__init__.py",
+      "role": "runtime"
+    },
+    "lmdb": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'lmdb'",
+      "role": "runtime"
+    },
+    "biopandas": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'biopandas'",
+      "role": "runtime"
+    },
+    "iopath": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'iopath'",
+      "role": "runtime"
+    },
+    "ml_collections": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'ml_collections'",
+      "role": "runtime"
+    },
+    "tensorboardX": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'tensorboardX'",
+      "role": "runtime"
+    },
+    "tokenizers": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'tokenizers'",
+      "role": "runtime"
+    },
+    "yaml": {
+      "status": "PASS",
+      "version": "6.0.2",
+      "distribution": "PyYAML",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\yaml\\__init__.py",
+      "role": "runtime"
+    },
+    "pkg_resources": {
+      "status": "PASS",
+      "version": "80.9.0",
+      "distribution": "setuptools",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\pkg_resources\\__init__.py",
+      "role": "runtime"
+    },
+    "geom2vec": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'geom2vec'",
+      "role": "runtime"
+    },
+    "unimol": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'unimol'",
+      "role": "runtime"
+    },
+    "unicore": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'unicore'",
+      "role": "runtime"
+    },
+    "wandb": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'wandb'",
+      "role": "optional"
+    },
+    "looseversion": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'looseversion'",
+      "role": "runtime"
+    }
+  },
+  "external_tools": {
+    "vina": {
+      "status": "PASS",
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\tools\\vina_1.2.7.exe",
+      "version": "1.2.7",
+      "version_evidence": "recorded baseline; executable not invoked",
+      "role": "runtime"
+    },
+    "mk_prepare_receptor": {
+      "status": "PASS",
+      "path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\Scripts\\mk_prepare_receptor.exe",
+      "version": "meeko 0.7.1",
+      "version_evidence": "recorded baseline; executable not invoked",
+      "role": "runtime"
+    },
+    "tleap": {
+      "status": "FAIL",
+      "path": null,
+      "version": "AmberTools 24.8",
+      "version_evidence": "recorded baseline; executable not invoked",
+      "role": "runtime"
+    },
+    "antechamber": {
+      "status": "FAIL",
+      "path": null,
+      "version": "AmberTools 24.8",
+      "version_evidence": "recorded baseline; executable not invoked",
+      "role": "runtime"
+    },
+    "parmchk2": {
+      "status": "FAIL",
+      "path": null,
+      "version": "AmberTools 24.8",
+      "version_evidence": "recorded baseline; executable not invoked",
+      "role": "runtime"
+    },
+    "git": {
+      "status": "PASS",
+      "path": "C:\\Program Files\\Git\\cmd\\git.EXE",
+      "version": null,
+      "version_evidence": "recorded baseline; executable not invoked",
+      "role": "runtime"
+    }
+  },
+  "overall": "PARTIAL",
+  "limitation": "Imports/presence only; no clean solve, native ABI, GPU platform or asset verification."
+}

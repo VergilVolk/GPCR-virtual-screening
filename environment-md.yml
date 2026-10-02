@@ -1,0 +1,27 @@
+# Linux/WSL only: successful /root/miniforge3/envs/pacer-dc-md metadata.
+# Never mix the core requirements or Geom2Vec NumPy 2 stack into this runtime.
+name: pacer-md-frozen-v01
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.16
+  - pip
+  - numpy=1.26.4
+  - pandas=2.3.3
+  - scipy=1.17.1
+  - rdkit=2026.03.1
+  - openmm=8.6.1
+  - cuda-version=13.2
+  - cuda-nvrtc=13.2.86
+  - openmmforcefields=0.14.1
+  - importlib_resources=7.1.0
+  - openff-toolkit-base=0.16.5
+  - openff-interchange-base=0.3.29
+  - openff-units=0.2.2
+  - openff-forcefields=2026.01.0
+  - ambertools=24.8
+  - pdbfixer=1.12
+  - parmed=4.3.1
+  - mdanalysis=2.10.0
+# No mdtraj: unused by these formal MD entrypoints; installed mdtraj 1.11.1
+# requires NumPy ~=2.0 and produces a pip-check conflict in the old environment.

@@ -1,0 +1,10 @@
+# Frozen C1-BS256 / PACER-FKG runtime, Python and wheels from actual environment.
+name: pacer-fkg-frozen-v01
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.16
+  - pip
+  - git
+  - pip:
+      - -r requirements-pacer-fkg.txt

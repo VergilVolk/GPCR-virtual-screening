@@ -1,0 +1,33 @@
+# Linux/WSL legacy full encoder runtime; NOT needed by the PACER-200 bundle scorer.
+# Pinned sources and their CPU patch/build are documented separately.
+name: pacer-drugclip-legacy-frozen-v01
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.10.21
+  - pip
+  - pytorch=2.0.1
+  - cpuonly
+  - rdkit=2022.09.5
+  - numpy=1.26.4
+  - pandas=2.3.3
+  - scipy=1.15.2
+  - scikit-learn=1.7.2
+  - python-lmdb=2.3.0
+  - tqdm=4.70.0
+  - biopandas=0.5.2
+  - iopath=0.1.10
+  - ml-collections=1.0.0
+  - tensorboardx=2.6.2.2
+  - tokenizers=0.23.1
+  - setuptools=80.10.2
+  - pyyaml=6.0.3
+  - pip:
+      # biopandas metadata explicitly requires this; the existing environment
+      # has 1.3.0 instead. This metadata repair is NOT yet clean-install tested.
+      - looseversion==1.1.2
+      # Declared by pinned Uni-Core metadata; absent in the successful CPU env.
+      # No tested version evidence exists. This is an explicit unpinned blocker,
+      # not a claim that a clean solve has been validated.
+      - wandb

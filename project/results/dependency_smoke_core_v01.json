@@ -1,0 +1,108 @@
+{
+  "schema": "pacer.runtime_dependencies.v1",
+  "profile": "core",
+  "python": "3.9.23",
+  "python_executable": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\python.exe",
+  "python_version_check": {
+    "status": "PASS",
+    "expected": "3.9.23"
+  },
+  "python_dependencies": {
+    "numpy": {
+      "status": "PASS",
+      "version": "1.26.4",
+      "distribution": "numpy",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\numpy\\__init__.py",
+      "role": "runtime"
+    },
+    "pandas": {
+      "status": "PASS",
+      "version": "2.3.1",
+      "distribution": "pandas",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\pandas\\__init__.py",
+      "role": "runtime"
+    },
+    "scipy": {
+      "status": "PASS",
+      "version": "1.13.1",
+      "distribution": "scipy",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\scipy\\__init__.py",
+      "role": "runtime"
+    },
+    "sklearn": {
+      "status": "PASS",
+      "version": "1.6.1",
+      "distribution": "scikit-learn",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\sklearn\\__init__.py",
+      "role": "runtime"
+    },
+    "rdkit": {
+      "status": "PASS",
+      "version": "2025.3.5",
+      "distribution": "rdkit",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\rdkit\\__init__.py",
+      "role": "runtime"
+    },
+    "torch": {
+      "status": "PASS",
+      "version": "2.8.0",
+      "distribution": "torch",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\torch\\__init__.py",
+      "role": "runtime"
+    },
+    "lightgbm": {
+      "status": "PASS",
+      "version": "4.6.0",
+      "distribution": "lightgbm",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\lightgbm\\__init__.py",
+      "role": "runtime"
+    },
+    "meeko": {
+      "status": "PASS",
+      "version": "0.7.1",
+      "distribution": "meeko",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\meeko\\__init__.py",
+      "import_messages": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\prody\\utilities\\misctools.py:424: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.\n  import pkg_resources\n",
+      "role": "runtime"
+    },
+    "scrubber": {
+      "status": "PASS",
+      "version": "0.1.1",
+      "distribution": "molscrub",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\scrubber\\__init__.py",
+      "role": "runtime"
+    },
+    "gemmi": {
+      "status": "PASS",
+      "version": "0.7.3",
+      "distribution": "gemmi",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\gemmi\\__init__.py",
+      "role": "runtime"
+    },
+    "matplotlib": {
+      "status": "PASS",
+      "version": "3.9.4",
+      "distribution": "matplotlib",
+      "module_path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\lib\\site-packages\\matplotlib\\__init__.py",
+      "role": "runtime"
+    }
+  },
+  "external_tools": {
+    "vina": {
+      "status": "PASS",
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\tools\\vina_1.2.7.exe",
+      "version": "1.2.7",
+      "version_evidence": "recorded baseline; executable not invoked",
+      "role": "runtime"
+    },
+    "mk_prepare_receptor": {
+      "status": "PASS",
+      "path": "C:\\Users\\barne\\anaconda3\\envs\\chrm4_vs\\Scripts\\mk_prepare_receptor.exe",
+      "version": "meeko 0.7.1",
+      "version_evidence": "recorded baseline; executable not invoked",
+      "role": "runtime"
+    }
+  },
+  "overall": "PASS",
+  "limitation": "Imports/presence only; no clean solve, native ABI, GPU platform or asset verification."
+}

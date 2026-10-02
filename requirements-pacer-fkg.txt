@@ -1,0 +1,17 @@
+# Successful Windows C1-BS256 runtime. Wheel locations are ABI-specific.
+# Linux has NOT been rebuilt/tested; reject a source-build fallback for PyG wheels.
+--extra-index-url https://download.pytorch.org/whl/cu126
+--find-links https://data.pyg.org/whl/torch-2.6.0+cu126.html
+numpy==2.4.6
+scipy==1.15.3
+torch==2.6.0+cu126
+torch-geometric==2.7.0
+torch-cluster==1.6.3+pt26cu126
+torch-scatter==2.1.2+pt26cu126
+MDAnalysis==2.10.0
+mdtraj==1.11.1.post2
+einops==0.8.2
+tqdm==4.70.1
+# Install the verified local Geom2Vec checkout with --no-deps, separately.
+# Source identity is the pinned commit plus inference-source equivalence,
+# not merely the installed distribution version 1.0.0.

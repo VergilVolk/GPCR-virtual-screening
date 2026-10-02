@@ -1,0 +1,18 @@
+# Canonical core entrypoint: candidate chemistry, docking preparation, offline
+# DrugCLIP projections/router and reporting. Evidence: chrm4_vs (Python 3.9.23).
+# This is a direct/necessary dependency baseline, NOT a transitive lockfile.
+# Do not install into MD, legacy DrugCLIP or C1-BS256 environments:
+# use environment-md.yml, environment-drugclip.yml, environment-pacer-fkg.yml.
+# No Web/API layer, model assets, Vina binary, drivers or local source checkout.
+numpy==1.26.4
+pandas==2.3.1
+scipy==1.13.1
+scikit-learn==1.6.1
+rdkit==2025.3.5
+torch==2.8.0
+lightgbm==4.6.0
+meeko==0.7.1
+molscrub==0.1.1
+# Meeko imports gemmi but the installed Meeko metadata declares no dependencies.
+gemmi==0.7.3
+matplotlib==3.9.4

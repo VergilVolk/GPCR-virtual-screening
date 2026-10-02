@@ -1,0 +1,20 @@
+# Canonical core environment; mirrors the successful Windows chemistry runtime.
+# Linux reconstruction still requires a fresh solver/import validation.
+name: pacer-core-frozen-v01
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9.23
+  - pip
+  - numpy=1.26.4
+  - pandas=2.3.1
+  - scipy=1.13.1
+  - scikit-learn=1.6.1
+  - rdkit=2025.03.5
+  - lightgbm=4.6.0
+  # Meeko is supplied by pip below: its Conda build forces optional ProDy,
+  # whose historical metadata conflicts with this successful NumPy/Bio stack.
+  - gemmi=0.7.3
+  - matplotlib-base=3.9.4
+  - pip:
+      - -r requirements.txt

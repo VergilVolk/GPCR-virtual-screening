@@ -1,0 +1,156 @@
+{
+  "schema": "pacer.runtime_dependencies.v1",
+  "profile": "drugclip",
+  "python": "3.10.21",
+  "python_executable": "/root/micromamba/envs/drugclip-cpu/bin/python",
+  "python_version_check": {
+    "status": "PASS",
+    "expected": "3.10.21"
+  },
+  "python_dependencies": {
+    "numpy": {
+      "status": "PASS",
+      "version": "1.26.4",
+      "distribution": "numpy",
+      "module_path": "/root/micromamba/envs/drugclip-cpu/lib/python3.10/site-packages/numpy/__init__.py",
+      "role": "runtime"
+    },
+    "pandas": {
+      "status": "PASS",
+      "version": "2.3.3",
+      "distribution": "pandas",
+      "module_path": "/root/micromamba/envs/drugclip-cpu/lib/python3.10/site-packages/pandas/__init__.py",
+      "role": "runtime"
+    },
+    "scipy": {
+      "status": "PASS",
+      "version": "1.15.2",
+      "distribution": "scipy",
+      "module_path": "/root/micromamba/envs/drugclip-cpu/lib/python3.10/site-packages/scipy/__init__.py",
+      "role": "runtime"
+    },
+    "sklearn": {
+      "status": "PASS",
+      "version": "1.7.2",
+      "distribution": "scikit-learn",
+      "module_path": "/root/micromamba/envs/drugclip-cpu/lib/python3.10/site-packages/sklearn/__init__.py",
+      "role": "runtime"
+    },
+    "rdkit": {
+      "status": "PASS",
+      "version": "2022.09.5",
+      "distribution": "rdkit",
+      "module_path": "/root/micromamba/envs/drugclip-cpu/lib/python3.10/site-packages/rdkit/__init__.py",
+      "role": "runtime"
+    },
+    "torch": {
+      "status": "PASS",
+      "version": "2.0.1",
+      "distribution": "torch",
+      "module_path": "/root/micromamba/envs/drugclip-cpu/lib/python3.10/site-packages/torch/__init__.py",
+      "role": "runtime"
+    },
+    "tqdm": {
+      "status": "PASS",
+      "version": "4.70.0",
+      "distribution": "tqdm",
+      "module_path": "/root/micromamba/envs/drugclip-cpu/lib/python3.10/site-packages/tqdm/__init__.py",
+      "role": "runtime"
+    },
+    "lmdb": {
+      "status": "PASS",
+      "version": "2.3.0",
+      "distribution": "lmdb",
+      "module_path": "/root/micromamba/envs/drugclip-cpu/lib/python3.10/site-packages/lmdb/__init__.py",
+      "role": "runtime"
+    },
+    "biopandas": {
+      "status": "PASS",
+      "version": "0.5.2",
+      "distribution": "biopandas",
+      "module_path": "/root/micromamba/envs/drugclip-cpu/lib/python3.10/site-packages/biopandas/__init__.py",
+      "role": "runtime"
+    },
+    "iopath": {
+      "status": "PASS",
+      "version": "0.1.10",
+      "distribution": "iopath",
+      "module_path": "/root/micromamba/envs/drugclip-cpu/lib/python3.10/site-packages/iopath/__init__.py",
+      "role": "runtime"
+    },
+    "ml_collections": {
+      "status": "PASS",
+      "version": "1.0.0",
+      "distribution": "ml-collections",
+      "module_path": "/root/micromamba/envs/drugclip-cpu/lib/python3.10/site-packages/ml_collections/__init__.py",
+      "role": "runtime"
+    },
+    "tensorboardX": {
+      "status": "PASS",
+      "version": "2.6.2.2",
+      "distribution": "tensorboardX",
+      "module_path": "/root/micromamba/envs/drugclip-cpu/lib/python3.10/site-packages/tensorboardX/__init__.py",
+      "role": "runtime"
+    },
+    "tokenizers": {
+      "status": "PASS",
+      "version": "0.23.1",
+      "distribution": "tokenizers",
+      "module_path": "/root/micromamba/envs/drugclip-cpu/lib/python3.10/site-packages/tokenizers/__init__.py",
+      "role": "runtime"
+    },
+    "yaml": {
+      "status": "PASS",
+      "version": "6.0.3",
+      "distribution": "PyYAML",
+      "module_path": "/root/micromamba/envs/drugclip-cpu/lib/python3.10/site-packages/yaml/__init__.py",
+      "role": "runtime"
+    },
+    "pkg_resources": {
+      "status": "PASS",
+      "version": "80.10.2",
+      "distribution": "setuptools",
+      "module_path": "/root/micromamba/envs/drugclip-cpu/lib/python3.10/site-packages/pkg_resources/__init__.py",
+      "import_messages": "/root/micromamba/envs/drugclip-cpu/lib/python3.10/importlib/__init__.py:126: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.\n  return _bootstrap._gcd_import(name[level:], package, level)\n",
+      "role": "runtime"
+    },
+    "unimol": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'unimol'",
+      "role": "runtime"
+    },
+    "unicore": {
+      "status": "PASS",
+      "version": "0.0.1",
+      "distribution": "unicore",
+      "module_path": "/root/micromamba/envs/drugclip-cpu/lib/python3.10/site-packages/unicore/__init__.py",
+      "import_messages": "fused_multi_tensor is not installed corrected\nfused_rounding is not installed corrected\nfused_layer_norm is not installed corrected\nfused_softmax is not installed corrected\n",
+      "role": "runtime"
+    },
+    "wandb": {
+      "status": "FAIL",
+      "version": null,
+      "error": "ModuleNotFoundError: No module named 'wandb'",
+      "role": "optional"
+    },
+    "looseversion": {
+      "status": "PASS",
+      "version": "1.3.0",
+      "distribution": "looseversion",
+      "module_path": "/root/micromamba/envs/drugclip-cpu/lib/python3.10/site-packages/looseversion/__init__.py",
+      "role": "runtime"
+    }
+  },
+  "external_tools": {
+    "git": {
+      "status": "PASS",
+      "path": "/usr/bin/git",
+      "version": null,
+      "version_evidence": "recorded baseline; executable not invoked",
+      "role": "runtime"
+    }
+  },
+  "overall": "PARTIAL",
+  "limitation": "Imports/presence only; no clean solve, native ABI, GPU platform or asset verification."
+}

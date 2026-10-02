@@ -1,0 +1,1630 @@
+{
+  "schema": "pacer.dependency_map.v1",
+  "python_versions": {
+    "core": "3.9.23",
+    "drugclip": "3.10.21",
+    "md": "3.11.16",
+    "fkg": "3.11.16"
+  },
+  "imports": {
+    "numpy": {
+      "distribution": "numpy",
+      "profiles": [
+        "core",
+        "drugclip",
+        "md",
+        "fkg"
+      ],
+      "declarations": [
+        "requirements.txt",
+        "environment-drugclip.yml",
+        "environment-md.yml",
+        "requirements-pacer-fkg.txt"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "core": "1.26.4",
+        "drugclip": "1.26.4",
+        "md": "1.26.4",
+        "fkg": "2.4.6"
+      },
+      "metadata_evidence": {
+        "core": {
+          "top_level": null,
+          "imports": [],
+          "requires": []
+        },
+        "drugclip": {
+          "top_level": null,
+          "imports": [],
+          "requires": []
+        },
+        "md": {
+          "top_level": null,
+          "imports": [
+            "numpy"
+          ],
+          "requires": []
+        },
+        "fkg": {
+          "top_level": null,
+          "imports": [
+            "numpy"
+          ],
+          "requires": []
+        }
+      }
+    },
+    "pandas": {
+      "distribution": "pandas",
+      "profiles": [
+        "core",
+        "drugclip",
+        "md"
+      ],
+      "declarations": [
+        "requirements.txt",
+        "environment-drugclip.yml",
+        "environment-md.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "core": "2.3.1",
+        "drugclip": "2.3.3",
+        "md": "2.3.3"
+      },
+      "metadata_evidence": {
+        "core": {
+          "top_level": null,
+          "imports": [],
+          "requires": [
+            "numpy>=1.22.4; python_version < \"3.11\"",
+            "numpy>=1.23.2; python_version == \"3.11\"",
+            "numpy>=1.26.0; python_version >= \"3.12\"",
+            "python-dateutil>=2.8.2",
+            "pytz>=2020.1",
+            "tzdata>=2022.7"
+          ]
+        },
+        "drugclip": {
+          "top_level": null,
+          "imports": [],
+          "requires": [
+            "numpy>=1.22.4; python_version < \"3.11\"",
+            "numpy>=1.23.2; python_version == \"3.11\"",
+            "numpy>=1.26.0; python_version >= \"3.12\"",
+            "python-dateutil>=2.8.2",
+            "pytz>=2020.1",
+            "tzdata>=2022.7"
+          ]
+        },
+        "md": {
+          "top_level": null,
+          "imports": [
+            "pandas"
+          ],
+          "requires": [
+            "numpy>=1.22.4; python_version < \"3.11\"",
+            "numpy>=1.23.2; python_version == \"3.11\"",
+            "numpy>=1.26.0; python_version >= \"3.12\"",
+            "python-dateutil>=2.8.2",
+            "pytz>=2020.1",
+            "tzdata>=2022.7"
+          ]
+        }
+      }
+    },
+    "scipy": {
+      "distribution": "scipy",
+      "profiles": [
+        "core",
+        "drugclip",
+        "md",
+        "fkg"
+      ],
+      "declarations": [
+        "requirements.txt",
+        "environment-drugclip.yml",
+        "environment-md.yml",
+        "requirements-pacer-fkg.txt"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "core": "1.13.1",
+        "drugclip": "1.15.2",
+        "md": "1.17.1",
+        "fkg": "1.15.3"
+      },
+      "metadata_evidence": {
+        "core": {
+          "top_level": null,
+          "imports": [],
+          "requires": [
+            "numpy<2.3,>=1.22.4"
+          ]
+        },
+        "drugclip": {
+          "top_level": null,
+          "imports": [],
+          "requires": [
+            "numpy<2.5,>=1.23.5"
+          ]
+        },
+        "md": {
+          "top_level": null,
+          "imports": [
+            "scipy"
+          ],
+          "requires": [
+            "numpy<2.7,>=1.26.4"
+          ]
+        },
+        "fkg": {
+          "top_level": null,
+          "imports": [
+            "scipy"
+          ],
+          "requires": [
+            "numpy<2.5,>=1.23.5"
+          ]
+        }
+      }
+    },
+    "sklearn": {
+      "distribution": "scikit-learn",
+      "profiles": [
+        "core",
+        "drugclip"
+      ],
+      "declarations": [
+        "requirements.txt",
+        "environment-drugclip.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "core": "1.6.1",
+        "drugclip": "1.7.2",
+        "md": "1.9.1"
+      },
+      "metadata_evidence": {
+        "core": {
+          "top_level": null,
+          "imports": [],
+          "requires": [
+            "numpy>=1.19.5",
+            "scipy>=1.6.0",
+            "joblib>=1.2.0",
+            "threadpoolctl>=3.1.0"
+          ]
+        },
+        "drugclip": {
+          "top_level": null,
+          "imports": [],
+          "requires": [
+            "numpy>=1.22.0",
+            "scipy>=1.8.0",
+            "joblib>=1.2.0",
+            "threadpoolctl>=3.1.0"
+          ]
+        },
+        "md": {
+          "top_level": null,
+          "imports": [
+            "sklearn"
+          ],
+          "requires": [
+            "numpy>=1.24.1",
+            "scipy>=1.10.0",
+            "joblib>=1.4.0",
+            "narwhals>=2.0.1",
+            "threadpoolctl>=3.5.0"
+          ]
+        }
+      }
+    },
+    "rdkit": {
+      "distribution": "rdkit",
+      "profiles": [
+        "core",
+        "drugclip",
+        "md"
+      ],
+      "declarations": [
+        "requirements.txt",
+        "environment-drugclip.yml",
+        "environment-md.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "core": "2025.3.5",
+        "md": "2026.3.1"
+      },
+      "metadata_evidence": {
+        "core": {
+          "top_level": "rdkit\n",
+          "imports": [],
+          "requires": []
+        },
+        "md": {
+          "top_level": "rdkit\n",
+          "imports": [
+            "rdkit"
+          ],
+          "requires": []
+        }
+      }
+    },
+    "torch": {
+      "distribution": "torch",
+      "profiles": [
+        "core",
+        "drugclip",
+        "fkg"
+      ],
+      "declarations": [
+        "requirements.txt",
+        "environment-drugclip.yml",
+        "requirements-pacer-fkg.txt"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "core": "2.8.0",
+        "drugclip": "2.0.1",
+        "fkg": "2.6.0+cu126"
+      },
+      "metadata_evidence": {
+        "core": {
+          "top_level": "functorch\ntorch\ntorchgen\n",
+          "imports": [],
+          "requires": [
+            "filelock",
+            "typing-extensions >=4.10.0",
+            "sympy >=1.13.3",
+            "networkx",
+            "jinja2",
+            "fsspec",
+            "setuptools ; python_version >= \"3.12\"",
+            "nvidia-cuda-nvrtc-cu12==12.8.93; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-cuda-runtime-cu12==12.8.90; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-cuda-cupti-cu12==12.8.90; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-cudnn-cu12==9.10.2.21; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-cublas-cu12==12.8.4.1; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-cufft-cu12==11.3.3.83; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-curand-cu12==10.3.9.90; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-cusolver-cu12==11.7.3.90; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-cusparse-cu12==12.5.8.93; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-cusparselt-cu12==0.7.1; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-nccl-cu12==2.27.3; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-nvtx-cu12==12.8.90; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-nvjitlink-cu12==12.8.93; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-cufile-cu12==1.13.1.3; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "triton==3.4.0; platform_system == \"Linux\" and platform_machine == \"x86_64\""
+          ]
+        },
+        "drugclip": {
+          "top_level": "functorch\ntorch\ntorchgen\n",
+          "imports": [
+            "functorch",
+            "torch",
+            "torchgen"
+          ],
+          "requires": [
+            "filelock",
+            "typing-extensions",
+            "sympy",
+            "networkx",
+            "jinja2"
+          ]
+        },
+        "fkg": {
+          "top_level": "functorch\ntorch\ntorchgen\n",
+          "imports": [
+            "functorch",
+            "torch",
+            "torchgen"
+          ],
+          "requires": [
+            "filelock",
+            "typing-extensions>=4.10.0",
+            "networkx",
+            "jinja2",
+            "fsspec",
+            "nvidia-cuda-nvrtc-cu12==12.4.127; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-cuda-runtime-cu12==12.4.127; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-cuda-cupti-cu12==12.4.127; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-cudnn-cu12==9.1.0.70; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-cublas-cu12==12.4.5.8; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-cufft-cu12==11.2.1.3; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-curand-cu12==10.3.5.147; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-cusolver-cu12==11.6.1.9; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-cusparse-cu12==12.3.1.170; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-cusparselt-cu12==0.6.2; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-nccl-cu12==2.21.5; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-nvtx-cu12==12.4.127; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "nvidia-nvjitlink-cu12==12.4.127; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "triton==3.2.0; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+            "setuptools; python_version >= \"3.12\"",
+            "sympy==1.13.1; python_version >= \"3.9\""
+          ]
+        }
+      }
+    },
+    "lightgbm": {
+      "distribution": "lightgbm",
+      "profiles": [
+        "core"
+      ],
+      "declarations": [
+        "requirements.txt"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "core": "4.6.0"
+      },
+      "metadata_evidence": {
+        "core": {
+          "top_level": null,
+          "imports": [],
+          "requires": [
+            "numpy>=1.17.0",
+            "scipy"
+          ]
+        }
+      }
+    },
+    "meeko": {
+      "distribution": "meeko",
+      "profiles": [
+        "core"
+      ],
+      "declarations": [
+        "requirements.txt"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "core": "0.7.1"
+      },
+      "metadata_evidence": {
+        "core": {
+          "top_level": "meeko\n",
+          "imports": [],
+          "requires": []
+        }
+      }
+    },
+    "scrubber": {
+      "distribution": "molscrub",
+      "profiles": [
+        "core"
+      ],
+      "declarations": [
+        "requirements.txt"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "core": "0.1.1"
+      },
+      "metadata_evidence": {
+        "core": {
+          "top_level": "scrubber\n",
+          "imports": [],
+          "requires": [
+            "rdkit>=2022.03.1"
+          ]
+        }
+      }
+    },
+    "gemmi": {
+      "distribution": "gemmi",
+      "profiles": [
+        "core"
+      ],
+      "declarations": [
+        "requirements.txt"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "core": "0.7.3"
+      },
+      "metadata_evidence": {
+        "core": {
+          "top_level": null,
+          "imports": [],
+          "requires": []
+        }
+      }
+    },
+    "matplotlib": {
+      "distribution": "matplotlib",
+      "profiles": [
+        "core"
+      ],
+      "declarations": [
+        "requirements.txt"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "core": "3.9.4",
+        "drugclip": "3.10.9",
+        "md": "3.11.2",
+        "fkg": "3.11.2"
+      },
+      "metadata_evidence": {
+        "core": {
+          "top_level": null,
+          "imports": [],
+          "requires": [
+            "contourpy>=1.0.1",
+            "cycler>=0.10",
+            "fonttools>=4.22.0",
+            "kiwisolver>=1.3.1",
+            "numpy>=1.23",
+            "packaging>=20.0",
+            "pillow>=8",
+            "pyparsing>=2.3.1",
+            "python-dateutil>=2.7",
+            "importlib-resources>=3.2.0; python_version < \"3.10\""
+          ]
+        },
+        "drugclip": {
+          "top_level": null,
+          "imports": [],
+          "requires": [
+            "contourpy>=1.0.1",
+            "cycler>=0.10",
+            "fonttools>=4.22.0",
+            "kiwisolver>=1.3.1",
+            "numpy>=1.23",
+            "packaging>=20.0",
+            "pillow>=8",
+            "pyparsing>=3",
+            "python-dateutil>=2.7"
+          ]
+        },
+        "md": {
+          "top_level": null,
+          "imports": [
+            "pylab",
+            "matplotlib",
+            "mpl_toolkits"
+          ],
+          "requires": [
+            "contourpy>=1.0.1",
+            "cycler>=0.10",
+            "fonttools>=4.28.2",
+            "kiwisolver>=1.3.1",
+            "numpy>=1.25",
+            "packaging>=20.0",
+            "pillow>=9",
+            "pyparsing>=3",
+            "python-dateutil>=2.7"
+          ]
+        },
+        "fkg": {
+          "top_level": null,
+          "imports": [
+            "matplotlib",
+            "mpl_toolkits",
+            "pylab"
+          ],
+          "requires": [
+            "contourpy>=1.0.1",
+            "cycler>=0.10",
+            "fonttools>=4.28.2",
+            "kiwisolver>=1.3.1",
+            "numpy>=1.25",
+            "packaging>=20.0",
+            "pillow>=9",
+            "pyparsing>=3",
+            "python-dateutil>=2.7"
+          ]
+        }
+      }
+    },
+    "openmm": {
+      "distribution": "openmm",
+      "profiles": [
+        "md"
+      ],
+      "declarations": [
+        "environment-md.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "md": "8.6.1"
+      },
+      "metadata_evidence": {
+        "md": {
+          "top_level": "openmm\nsimtk\n",
+          "imports": [
+            "openmm",
+            "simtk"
+          ],
+          "requires": [
+            "numpy"
+          ]
+        }
+      },
+      "smoke_import": "openmm.app"
+    },
+    "openmmforcefields": {
+      "distribution": "openmmforcefields",
+      "profiles": [
+        "md"
+      ],
+      "declarations": [
+        "environment-md.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "md": "0.14.1"
+      },
+      "metadata_evidence": {
+        "md": {
+          "top_level": "openmmforcefields\n",
+          "imports": [
+            "openmmforcefields"
+          ],
+          "requires": []
+        }
+      },
+      "smoke_import": "openmmforcefields.generators"
+    },
+    "openff": {
+      "distribution": "openff-toolkit",
+      "profiles": [
+        "md"
+      ],
+      "declarations": [
+        "environment-md.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "md": "0.16.5"
+      },
+      "metadata_evidence": {
+        "md": {
+          "top_level": "openff\n",
+          "imports": [
+            "openff"
+          ],
+          "requires": []
+        }
+      },
+      "smoke_import": "openff.toolkit",
+      "declaration_names": [
+        "openff-toolkit-base"
+      ]
+    },
+    "pdbfixer": {
+      "distribution": "pdbfixer",
+      "profiles": [
+        "md"
+      ],
+      "declarations": [
+        "environment-md.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "md": "1.12.0"
+      },
+      "metadata_evidence": {
+        "md": {
+          "top_level": "pdbfixer\n",
+          "imports": [
+            "pdbfixer"
+          ],
+          "requires": [
+            "numpy",
+            "openmm>=8.2",
+            "legacy-cgi; python_version >= \"3.13\""
+          ]
+        }
+      }
+    },
+    "parmed": {
+      "distribution": "parmed",
+      "profiles": [
+        "md"
+      ],
+      "declarations": [
+        "environment-md.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "md": "4.3.1"
+      },
+      "metadata_evidence": {
+        "md": {
+          "top_level": "parmed\n",
+          "imports": [
+            "parmed"
+          ],
+          "requires": []
+        }
+      }
+    },
+    "importlib_resources": {
+      "distribution": "importlib_resources",
+      "profiles": [
+        "md"
+      ],
+      "declarations": [
+        "environment-md.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "core": "6.5.2",
+        "md": "7.1.0"
+      },
+      "metadata_evidence": {
+        "core": {
+          "top_level": "importlib_resources\n",
+          "imports": [],
+          "requires": [
+            "zipp>=3.1.0; python_version < \"3.10\""
+          ]
+        },
+        "md": {
+          "top_level": "importlib_resources\n",
+          "imports": [
+            "importlib_resources"
+          ],
+          "requires": [
+            "zipp>=3.1.0; python_version < \"3.10\""
+          ]
+        }
+      }
+    },
+    "openff.units": {
+      "distribution": "openff-units",
+      "profiles": [
+        "md"
+      ],
+      "declarations": [
+        "environment-md.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "md": "0.2.2"
+      },
+      "metadata_evidence": {
+        "md": {
+          "top_level": "openff\n",
+          "imports": [
+            "openff"
+          ],
+          "requires": []
+        }
+      }
+    },
+    "openff.interchange": {
+      "distribution": "openff-interchange",
+      "profiles": [
+        "md"
+      ],
+      "declarations": [
+        "environment-md.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "md": "0.3.29"
+      },
+      "metadata_evidence": {
+        "md": {
+          "top_level": "devtools\ndocs\nexamples\nopenff\nplugins\nregression_tests\nstubs\n",
+          "imports": [
+            "devtools",
+            "docs",
+            "examples",
+            "openff",
+            "plugins",
+            "regression_tests",
+            "stubs"
+          ],
+          "requires": []
+        }
+      },
+      "declaration_names": [
+        "openff-interchange-base"
+      ]
+    },
+    "MDAnalysis": {
+      "distribution": "MDAnalysis",
+      "profiles": [
+        "md",
+        "fkg"
+      ],
+      "declarations": [
+        "environment-md.yml",
+        "requirements-pacer-fkg.txt"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "md": "2.10.0",
+        "fkg": "2.10.0"
+      },
+      "metadata_evidence": {
+        "md": {
+          "top_level": "MDAnalysis\ndoc\n",
+          "imports": [
+            "MDAnalysis",
+            "doc"
+          ],
+          "requires": [
+            "numpy>=1.26.0",
+            "GridDataFormats>=0.4.0",
+            "mmtf-python>=1.0.0",
+            "joblib>=0.12",
+            "scipy>=1.5.0",
+            "matplotlib>=1.5.1",
+            "tqdm>=4.43.0",
+            "threadpoolctl",
+            "packaging",
+            "filelock",
+            "mda-xdrlib"
+          ]
+        },
+        "fkg": {
+          "top_level": "MDAnalysis\ndoc\n",
+          "imports": [
+            "MDAnalysis",
+            "doc"
+          ],
+          "requires": [
+            "numpy>=1.26.0",
+            "GridDataFormats>=0.4.0",
+            "mmtf-python>=1.0.0",
+            "joblib>=0.12",
+            "scipy>=1.5.0",
+            "matplotlib>=1.5.1",
+            "tqdm>=4.43.0",
+            "threadpoolctl",
+            "packaging",
+            "filelock",
+            "mda-xdrlib"
+          ]
+        }
+      }
+    },
+    "torch_geometric": {
+      "distribution": "torch-geometric",
+      "profiles": [
+        "fkg"
+      ],
+      "declarations": [
+        "requirements-pacer-fkg.txt"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "fkg": "2.7.0"
+      },
+      "metadata_evidence": {
+        "fkg": {
+          "top_level": null,
+          "imports": [
+            "torch_geometric"
+          ],
+          "requires": [
+            "aiohttp",
+            "fsspec",
+            "jinja2",
+            "numpy",
+            "psutil>=5.8.0",
+            "pyparsing",
+            "requests",
+            "tqdm",
+            "xxhash"
+          ]
+        }
+      }
+    },
+    "torch_cluster": {
+      "distribution": "torch-cluster",
+      "profiles": [
+        "fkg"
+      ],
+      "declarations": [
+        "requirements-pacer-fkg.txt"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "fkg": "1.6.3+pt26cu126"
+      },
+      "metadata_evidence": {
+        "fkg": {
+          "top_level": "torch_cluster\n",
+          "imports": [
+            "torch_cluster"
+          ],
+          "requires": [
+            "scipy"
+          ]
+        }
+      }
+    },
+    "torch_scatter": {
+      "distribution": "torch-scatter",
+      "profiles": [
+        "fkg"
+      ],
+      "declarations": [
+        "requirements-pacer-fkg.txt"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "fkg": "2.1.2+pt26cu126"
+      },
+      "metadata_evidence": {
+        "fkg": {
+          "top_level": "torch_scatter\n",
+          "imports": [
+            "torch_scatter"
+          ],
+          "requires": []
+        }
+      }
+    },
+    "mdtraj": {
+      "distribution": "mdtraj",
+      "profiles": [
+        "fkg"
+      ],
+      "declarations": [
+        "requirements-pacer-fkg.txt"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "md": "1.11.1",
+        "fkg": "1.11.1.post2"
+      },
+      "metadata_evidence": {
+        "md": {
+          "top_level": "mdtraj\n",
+          "imports": [
+            "mdtraj"
+          ],
+          "requires": [
+            "numpy~=2.0",
+            "scipy",
+            "pyparsing",
+            "packaging"
+          ]
+        },
+        "fkg": {
+          "top_level": "mdtraj\n",
+          "imports": [
+            "mdtraj"
+          ],
+          "requires": [
+            "numpy<2.5,~=2.0",
+            "scipy",
+            "pyparsing",
+            "packaging"
+          ]
+        }
+      }
+    },
+    "einops": {
+      "distribution": "einops",
+      "profiles": [
+        "fkg"
+      ],
+      "declarations": [
+        "requirements-pacer-fkg.txt"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "fkg": "0.8.2"
+      },
+      "metadata_evidence": {
+        "fkg": {
+          "top_level": null,
+          "imports": [
+            "einops"
+          ],
+          "requires": []
+        }
+      }
+    },
+    "tqdm": {
+      "distribution": "tqdm",
+      "profiles": [
+        "drugclip",
+        "fkg"
+      ],
+      "declarations": [
+        "environment-drugclip.yml",
+        "requirements-pacer-fkg.txt"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "core": "4.67.1",
+        "drugclip": "4.70.0",
+        "md": "4.70.1",
+        "fkg": "4.70.1"
+      },
+      "metadata_evidence": {
+        "core": {
+          "top_level": "tqdm\n",
+          "imports": [],
+          "requires": [
+            "colorama; platform_system == \"Windows\""
+          ]
+        },
+        "drugclip": {
+          "top_level": "tqdm\n",
+          "imports": [
+            "tqdm"
+          ],
+          "requires": [
+            "colorama; platform_system == \"Windows\""
+          ]
+        },
+        "md": {
+          "top_level": "tqdm\n",
+          "imports": [
+            "tqdm"
+          ],
+          "requires": [
+            "colorama; platform_system == \"Windows\""
+          ]
+        },
+        "fkg": {
+          "top_level": "tqdm\n",
+          "imports": [
+            "tqdm"
+          ],
+          "requires": [
+            "colorama; platform_system == \"Windows\""
+          ]
+        }
+      }
+    },
+    "lmdb": {
+      "distribution": "lmdb",
+      "profiles": [
+        "drugclip"
+      ],
+      "declarations": [
+        "environment-drugclip.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "drugclip": "2.3.0"
+      },
+      "metadata_evidence": {
+        "drugclip": {
+          "top_level": "cpython\nlmdb\n",
+          "imports": [
+            "cpython",
+            "lmdb"
+          ],
+          "requires": []
+        }
+      },
+      "declaration_names": [
+        "python-lmdb"
+      ]
+    },
+    "biopandas": {
+      "distribution": "biopandas",
+      "profiles": [
+        "drugclip"
+      ],
+      "declarations": [
+        "environment-drugclip.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "drugclip": "0.5.2"
+      },
+      "metadata_evidence": {
+        "drugclip": {
+          "top_level": "biopandas\ntests\n",
+          "imports": [
+            "biopandas",
+            "tests"
+          ],
+          "requires": [
+            "numpy>=1.16.2",
+            "pandas>=0.24.2",
+            "mmtf-python==1.1.3",
+            "looseversion==1.1.2",
+            "setuptools"
+          ]
+        }
+      }
+    },
+    "iopath": {
+      "distribution": "iopath",
+      "profiles": [
+        "drugclip"
+      ],
+      "declarations": [
+        "environment-drugclip.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "drugclip": "0.1.10"
+      },
+      "metadata_evidence": {
+        "drugclip": {
+          "top_level": "iopath\n",
+          "imports": [
+            "iopath"
+          ],
+          "requires": [
+            "tqdm",
+            "typing-extensions",
+            "portalocker",
+            "dataclasses; python_version < \"3.7\""
+          ]
+        }
+      }
+    },
+    "ml_collections": {
+      "distribution": "ml-collections",
+      "profiles": [
+        "drugclip"
+      ],
+      "declarations": [
+        "environment-drugclip.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "drugclip": "1.0.0"
+      },
+      "metadata_evidence": {
+        "drugclip": {
+          "top_level": null,
+          "imports": [],
+          "requires": [
+            "absl-py",
+            "six",
+            "PyYAML"
+          ]
+        }
+      }
+    },
+    "tensorboardX": {
+      "distribution": "tensorboardX",
+      "profiles": [
+        "drugclip"
+      ],
+      "declarations": [
+        "environment-drugclip.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "drugclip": "2.6.2.2"
+      },
+      "metadata_evidence": {
+        "drugclip": {
+          "top_level": "tensorboardX\n",
+          "imports": [
+            "tensorboardX"
+          ],
+          "requires": [
+            "numpy",
+            "packaging",
+            "protobuf>=3.20"
+          ]
+        }
+      }
+    },
+    "tokenizers": {
+      "distribution": "tokenizers",
+      "profiles": [
+        "drugclip"
+      ],
+      "declarations": [
+        "environment-drugclip.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "drugclip": "0.23.1"
+      },
+      "metadata_evidence": {
+        "drugclip": {
+          "top_level": null,
+          "imports": [],
+          "requires": [
+            "huggingface-hub>=0.16.4,<2.0"
+          ]
+        }
+      }
+    },
+    "yaml": {
+      "distribution": "PyYAML",
+      "profiles": [
+        "drugclip"
+      ],
+      "declarations": [
+        "environment-drugclip.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "core": "6.0.2",
+        "drugclip": "6.0.3",
+        "md": "6.0.3"
+      },
+      "metadata_evidence": {
+        "core": {
+          "top_level": "_yaml\nyaml\n",
+          "imports": [],
+          "requires": []
+        },
+        "drugclip": {
+          "top_level": "_yaml\nyaml\n",
+          "imports": [
+            "_yaml",
+            "yaml"
+          ],
+          "requires": []
+        },
+        "md": {
+          "top_level": "_yaml\nyaml\n",
+          "imports": [
+            "_yaml",
+            "yaml"
+          ],
+          "requires": []
+        }
+      }
+    },
+    "pkg_resources": {
+      "distribution": "setuptools",
+      "profiles": [
+        "drugclip"
+      ],
+      "declarations": [
+        "environment-drugclip.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "core": "80.9.0",
+        "drugclip": "80.10.2",
+        "md": "84.0.0",
+        "fkg": "83.0.0"
+      },
+      "metadata_evidence": {
+        "core": {
+          "top_level": "_distutils_hack\npkg_resources\nsetuptools\n",
+          "imports": [],
+          "requires": []
+        },
+        "drugclip": {
+          "top_level": "_distutils_hack\npkg_resources\nsetuptools\n",
+          "imports": [
+            "_distutils_hack",
+            "pkg_resources",
+            "setuptools"
+          ],
+          "requires": []
+        },
+        "md": {
+          "top_level": "_distutils_hack\nsetuptools\n",
+          "imports": [
+            "_distutils_hack",
+            "setuptools"
+          ],
+          "requires": []
+        },
+        "fkg": {
+          "top_level": "_distutils_hack\nsetuptools\n",
+          "imports": [
+            "_distutils_hack",
+            "setuptools"
+          ],
+          "requires": []
+        }
+      }
+    },
+    "geom2vec": {
+      "distribution": "geom2vec",
+      "profiles": [
+        "fkg"
+      ],
+      "declarations": [
+        "project/docs/DEPENDENCY_MANIFEST.md"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "fkg": "1.0.0"
+      },
+      "metadata_evidence": {
+        "fkg": {
+          "top_level": "geom2vec\n",
+          "imports": [
+            "geom2vec"
+          ],
+          "requires": [
+            "numpy",
+            "scipy",
+            "MDAnalysis",
+            "mdtraj",
+            "einops",
+            "tqdm"
+          ]
+        }
+      },
+      "smoke_import": "geom2vec.models.representation.visnet",
+      "kind": "local_source"
+    },
+    "unimol": {
+      "distribution": "DrugCLIP",
+      "profiles": [
+        "drugclip"
+      ],
+      "declarations": [
+        "project/docs/DEPENDENCY_MANIFEST.md"
+      ],
+      "role": "runtime",
+      "version_evidence": {},
+      "metadata_evidence": {},
+      "kind": "local_source"
+    },
+    "unicore": {
+      "distribution": "unicore",
+      "profiles": [
+        "drugclip"
+      ],
+      "declarations": [
+        "project/docs/DEPENDENCY_MANIFEST.md"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "drugclip": "0.0.1"
+      },
+      "metadata_evidence": {
+        "drugclip": {
+          "top_level": "unicore\nunicore_cli\n",
+          "imports": [
+            "unicore",
+            "unicore_cli"
+          ],
+          "requires": [
+            "numpy; python_version >= \"3.7\"",
+            "lmdb",
+            "torch>=2.0.0",
+            "tqdm",
+            "ml_collections",
+            "scipy",
+            "tensorboardX",
+            "tokenizers",
+            "wandb"
+          ]
+        }
+      },
+      "kind": "local_source"
+    },
+    "wandb": {
+      "distribution": "wandb",
+      "profiles": [
+        "drugclip"
+      ],
+      "declarations": [
+        "environment-drugclip.yml"
+      ],
+      "role": "optional",
+      "version_evidence": {},
+      "metadata_evidence": {
+        "drugclip": {
+          "requires": "unicore 0.0.1 Requires-Dist: wandb",
+          "note": "required by installation metadata; not CPU inference imports, unpinned and unvalidated"
+        }
+      }
+    },
+    "looseversion": {
+      "distribution": "looseversion",
+      "profiles": [
+        "drugclip"
+      ],
+      "declarations": [
+        "environment-drugclip.yml"
+      ],
+      "role": "runtime",
+      "version_evidence": {
+        "selected_from_biopandas_metadata": "1.1.2",
+        "installed_drugclip": "1.3.0"
+      },
+      "metadata_evidence": {
+        "drugclip": {
+          "requires": "biopandas 0.5.2 Requires-Dist: looseversion==1.1.2"
+        }
+      }
+    }
+  },
+  "entrypoints": {
+    "project/scripts/build_candidate_portfolio.py": {
+      "stage": "generation_filtering",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/score_candidates.py": {
+      "stage": "generation_filtering",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/compare_generators.py": {
+      "stage": "generation_filtering",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/fragment_generation.py": {
+      "stage": "generation_filtering",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/smiles_lstm_gen.py": {
+      "stage": "generation_filtering",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/smiles_gpt_gen.py": {
+      "stage": "generation_filtering",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/smiles_diffusion_gen.py": {
+      "stage": "generation_filtering",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/prepare_m4_gamd_ensemble.py": {
+      "stage": "docking",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/dock_m4_gamd_ensemble.py": {
+      "stage": "docking",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/analyze_m4_gamd_ensemble.py": {
+      "stage": "docking",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/rank_m4_gamd_candidates.py": {
+      "stage": "docking",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/score_pacer200_drugclip2023_m4_loto.py": {
+      "stage": "drugclip",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/pacer_drugclip_router.py": {
+      "stage": "drugclip",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/extract_drugclip_embeddings_cpu.py": {
+      "stage": "drugclip",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/rescore_cands200_famaug.py": {
+      "stage": "drugclip",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/prepare_pacer_dc_common_protein.py": {
+      "stage": "md",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/build_pacer_dc_reference_complexes.py": {
+      "stage": "md",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/build_pacer_dc_openmm_reference_systems.py": {
+      "stage": "md",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/build_pacer_dc_membrane_reference.py": {
+      "stage": "md",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/build_cm00734_stage_b_membrane_v01.py": {
+      "stage": "md",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/prepare_cm00734_stage_b_pose_v01.py": {
+      "stage": "md",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/run_pacer_dc_membrane_smoke.py": {
+      "stage": "md",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/run_pacer_dc_short_equilibration.py": {
+      "stage": "md",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/run_pacer_dc_restraint_release.py": {
+      "stage": "md",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/run_pacer_dc_production_md.py": {
+      "stage": "md",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/run_cm00734_stage_b_production_md_v01.py": {
+      "stage": "md",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/extract_pacer_dc_production_endpoints.py": {
+      "stage": "md",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/extract_pacer_dc_short_equilibration_endpoints.py": {
+      "stage": "md",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/extract_pacer_dc_trajectory_endpoints.py": {
+      "stage": "md",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/analyze_pacer_dc_trajectory_qc.py": {
+      "stage": "md",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/scripts/make_module_scoreboards_v01.py": {
+      "stage": "report",
+      "reason": "current pipeline entrypoint or preparation/report helper; static only"
+    },
+    "project/pacer_fkg_v02/run_phase1_bs256.py": {
+      "stage": "pacer_fkg",
+      "reason": "frozen encoder/application code; calibration module included only via imports, never executed"
+    },
+    "project/pacer_fkg_v02/run_phase3_fkg.py": {
+      "stage": "pacer_fkg",
+      "reason": "frozen encoder/application code; calibration module included only via imports, never executed"
+    },
+    "project/pacer_fkg_v02/run_close_loop_phase1_bs256_v01.py": {
+      "stage": "pacer_fkg",
+      "reason": "frozen encoder/application code; calibration module included only via imports, never executed"
+    },
+    "project/pacer_fkg_v02/run_close_loop_phase2a_frozen_apply_v01.py": {
+      "stage": "pacer_fkg",
+      "reason": "frozen encoder/application code; calibration module included only via imports, never executed"
+    },
+    "project/pacer_fkg_v02/run_close_loop_phase2b_graph_region_v01.py": {
+      "stage": "pacer_fkg",
+      "reason": "frozen encoder/application code; calibration module included only via imports, never executed"
+    },
+    "project/pacer_fkg_v02/run_cm00734_stage_b_phase1_bs256_v01.py": {
+      "stage": "pacer_fkg",
+      "reason": "frozen encoder/application code; calibration module included only via imports, never executed"
+    },
+    "project/pacer_fkg_v02/run_cm00734_stage_b_phase2a_frozen_apply_v01.py": {
+      "stage": "pacer_fkg",
+      "reason": "frozen encoder/application code; calibration module included only via imports, never executed"
+    },
+    "project/pacer_fkg_v02/run_cm00734_stage_b_phase2b_graph_region_v01.py": {
+      "stage": "pacer_fkg",
+      "reason": "frozen encoder/application code; calibration module included only via imports, never executed"
+    },
+    "project/scripts/build_drugclip_inputs.py": {
+      "stage": "drugclip",
+      "reason": "molecule/pocket LMDB preparation used by existing encoder wrapper; static only"
+    },
+    "project/scripts/build_drugclip_gpcr_ensemble_pockets.py": {
+      "stage": "drugclip",
+      "reason": "molecule/pocket LMDB preparation used by existing encoder wrapper; static only"
+    }
+  },
+  "external_tools": {
+    "vina": {
+      "commands": [
+        "vina",
+        "vina.exe"
+      ],
+      "profiles": [
+        "core"
+      ],
+      "recorded_version": "1.2.7",
+      "role": "runtime"
+    },
+    "mk_prepare_receptor": {
+      "commands": [
+        "mk_prepare_receptor",
+        "mk_prepare_receptor.py",
+        "mk_prepare_receptor.exe"
+      ],
+      "profiles": [
+        "core"
+      ],
+      "recorded_version": "meeko 0.7.1",
+      "role": "runtime"
+    },
+    "tleap": {
+      "commands": [
+        "tleap"
+      ],
+      "profiles": [
+        "md"
+      ],
+      "recorded_version": "AmberTools 24.8",
+      "role": "runtime"
+    },
+    "antechamber": {
+      "commands": [
+        "antechamber"
+      ],
+      "profiles": [
+        "md"
+      ],
+      "recorded_version": "AmberTools 24.8",
+      "role": "runtime"
+    },
+    "parmchk2": {
+      "commands": [
+        "parmchk2"
+      ],
+      "profiles": [
+        "md"
+      ],
+      "recorded_version": "AmberTools 24.8",
+      "role": "runtime"
+    },
+    "git": {
+      "commands": [
+        "git"
+      ],
+      "profiles": [
+        "drugclip",
+        "fkg"
+      ],
+      "recorded_version": null,
+      "role": "runtime"
+    }
+  },
+  "local_sources": {
+    "unimol": {
+      "distribution": "DrugCLIP",
+      "commit": "7a3a3fa33673f8668c811790f2e4681c98af44ef",
+      "path": "project/tools/DrugCLIP",
+      "source": "https://github.com/bowen-gao/DrugClip",
+      "required_for": "new-molecule base embeddings; not PACER-200 bundle"
+    },
+    "unicore": {
+      "distribution": "unicore",
+      "commit": "44f6386f4dcd7137fc1e5d5e768117d635d64a26",
+      "path": "project/tools/Uni-Core",
+      "source": "https://github.com/dptech-corp/Uni-Core",
+      "required_for": "base encoder; CPU native extensions disabled"
+    },
+    "geom2vec": {
+      "distribution": "geom2vec",
+      "commit": "371d642ec1061664f16e49fcac702d07fc8d0b51",
+      "path": "C:\\projects\\geom2vec-source",
+      "source": "https://github.com/dinner-group/geom2vec",
+      "required_for": "C1-BS256 frozen encoder; commit plus source equivalence check"
+    }
+  },
+  "scope_notes": [
+    "Scope is explicit entrypoints plus recursive internal import closure, including imports inside functions. No project module is executed by this scan.",
+    "Stage3D freeze manifest exists but no dedicated Stage3D .py exists at current HEAD. Its evidence is inspected and its chemistry/scaffold dependencies are covered by RDKit/pandas/NumPy; no new scientific implementation is invented.",
+    "rescore_cands200_famaug.py is read statically for second-opinion dependency coverage only; its hardcoded D:\\CLC paths are deployment blockers, not authorization to run it.",
+    "Training-named modules reached through imports are scanned as imported helpers only. Unreachable retraining/experimental entrypoints are excluded.",
+    "Local Geom2Vec source scan covers ViSNet/import registration and equivariant helper modules, not unused pretraining/optim/alternative architectures.",
+    "Full DrugCLIP/Uni-Core source checkouts absent in this Windows checkout: distribution metadata and pinned bootstrap source identities are recorded; fresh-source closure verification remains a deployment blocker."
+  ],
+  "optional_entrypoints": [
+    "project/scripts/fragment_generation.py",
+    "project/scripts/smiles_lstm_gen.py",
+    "project/scripts/smiles_gpt_gen.py",
+    "project/scripts/smiles_diffusion_gen.py",
+    "project/scripts/compare_generators.py"
+  ],
+  "explicit_subprocess_helpers": {
+    "project/scripts/extract_pacer_dc_production_endpoints.py": [
+      "project/scripts/extract_pacer_dc_trajectory_endpoints.py"
+    ],
+    "project/scripts/extract_pacer_dc_short_equilibration_endpoints.py": [
+      "project/scripts/extract_pacer_dc_trajectory_endpoints.py"
+    ]
+  },
+  "vendor_scan_files": [
+    "C:\\projects\\geom2vec-source\\src\\geom2vec\\__init__.py",
+    "C:\\projects\\geom2vec-source\\src\\geom2vec\\models\\__init__.py",
+    "C:\\projects\\geom2vec-source\\src\\geom2vec\\models\\factory.py",
+    "C:\\projects\\geom2vec-source\\src\\geom2vec\\models\\representation\\__init__.py",
+    "C:\\projects\\geom2vec-source\\src\\geom2vec\\models\\representation\\visnet.py",
+    "C:\\projects\\geom2vec-source\\src\\geom2vec\\models\\downstream\\lobe.py",
+    "C:\\projects\\geom2vec-source\\src\\geom2vec\\nn\\__init__.py",
+    "C:\\projects\\geom2vec-source\\src\\geom2vec\\nn\\equivariant.py",
+    "C:\\projects\\geom2vec-source\\src\\geom2vec\\nn\\equi_attention.py",
+    "C:\\projects\\geom2vec-source\\src\\geom2vec\\nn\\equi_layers.py",
+    "C:\\projects\\geom2vec-source\\src\\geom2vec\\nn\\mlps.py"
+  ]
+}

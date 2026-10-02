@@ -1,0 +1,128 @@
+{
+  "schema": "pacer.runtime_dependencies.v1",
+  "profile": "md",
+  "python": "3.11.16",
+  "python_executable": "/root/miniforge3/envs/pacer-dc-md/bin/python",
+  "python_version_check": {
+    "status": "PASS",
+    "expected": "3.11.16"
+  },
+  "python_dependencies": {
+    "numpy": {
+      "status": "PASS",
+      "version": "1.26.4",
+      "distribution": "numpy",
+      "module_path": "/root/miniforge3/envs/pacer-dc-md/lib/python3.11/site-packages/numpy/__init__.py",
+      "role": "runtime"
+    },
+    "pandas": {
+      "status": "PASS",
+      "version": "2.3.3",
+      "distribution": "pandas",
+      "module_path": "/root/miniforge3/envs/pacer-dc-md/lib/python3.11/site-packages/pandas/__init__.py",
+      "role": "runtime"
+    },
+    "scipy": {
+      "status": "PASS",
+      "version": "1.17.1",
+      "distribution": "scipy",
+      "module_path": "/root/miniforge3/envs/pacer-dc-md/lib/python3.11/site-packages/scipy/__init__.py",
+      "role": "runtime"
+    },
+    "rdkit": {
+      "status": "PASS",
+      "version": "2026.3.1",
+      "distribution": "rdkit",
+      "module_path": "/root/miniforge3/envs/pacer-dc-md/lib/python3.11/site-packages/rdkit/__init__.py",
+      "role": "runtime"
+    },
+    "openmm": {
+      "status": "PASS",
+      "version": "8.6.1",
+      "distribution": "openmm",
+      "module_path": "/root/miniforge3/envs/pacer-dc-md/lib/python3.11/site-packages/openmm/app/__init__.py",
+      "role": "runtime"
+    },
+    "openmmforcefields": {
+      "status": "PASS",
+      "version": "0.14.1",
+      "distribution": "openmmforcefields",
+      "module_path": "/root/miniforge3/envs/pacer-dc-md/lib/python3.11/site-packages/openmmforcefields/generators/__init__.py",
+      "role": "runtime"
+    },
+    "openff": {
+      "status": "PASS",
+      "version": "0.16.5",
+      "distribution": "openff-toolkit",
+      "module_path": "/root/miniforge3/envs/pacer-dc-md/lib/python3.11/site-packages/openff/toolkit/__init__.py",
+      "role": "runtime"
+    },
+    "pdbfixer": {
+      "status": "PASS",
+      "version": "1.12.0",
+      "distribution": "pdbfixer",
+      "module_path": "/root/miniforge3/envs/pacer-dc-md/lib/python3.11/site-packages/pdbfixer/__init__.py",
+      "role": "runtime"
+    },
+    "parmed": {
+      "status": "PASS",
+      "version": "4.3.1",
+      "distribution": "parmed",
+      "module_path": "/root/miniforge3/envs/pacer-dc-md/lib/python3.11/site-packages/parmed/__init__.py",
+      "role": "runtime"
+    },
+    "importlib_resources": {
+      "status": "PASS",
+      "version": "7.1.0",
+      "distribution": "importlib_resources",
+      "module_path": "/root/miniforge3/envs/pacer-dc-md/lib/python3.11/site-packages/importlib_resources/__init__.py",
+      "role": "runtime"
+    },
+    "openff.units": {
+      "status": "PASS",
+      "version": "0.2.2",
+      "distribution": "openff-units",
+      "module_path": "/root/miniforge3/envs/pacer-dc-md/lib/python3.11/site-packages/openff/units/__init__.py",
+      "role": "runtime"
+    },
+    "openff.interchange": {
+      "status": "PASS",
+      "version": "0.3.29",
+      "distribution": "openff-interchange",
+      "module_path": "/root/miniforge3/envs/pacer-dc-md/lib/python3.11/site-packages/openff/interchange/__init__.py",
+      "role": "runtime"
+    },
+    "MDAnalysis": {
+      "status": "PASS",
+      "version": "2.10.0",
+      "distribution": "MDAnalysis",
+      "module_path": "/root/miniforge3/envs/pacer-dc-md/lib/python3.11/site-packages/MDAnalysis/__init__.py",
+      "role": "runtime"
+    }
+  },
+  "external_tools": {
+    "tleap": {
+      "status": "PASS",
+      "path": "/root/miniforge3/envs/pacer-dc-md/bin/tleap",
+      "version": "AmberTools 24.8",
+      "version_evidence": "recorded baseline; executable not invoked",
+      "role": "runtime"
+    },
+    "antechamber": {
+      "status": "PASS",
+      "path": "/root/miniforge3/envs/pacer-dc-md/bin/antechamber",
+      "version": "AmberTools 24.8",
+      "version_evidence": "recorded baseline; executable not invoked",
+      "role": "runtime"
+    },
+    "parmchk2": {
+      "status": "PASS",
+      "path": "/root/miniforge3/envs/pacer-dc-md/bin/parmchk2",
+      "version": "AmberTools 24.8",
+      "version_evidence": "recorded baseline; executable not invoked",
+      "role": "runtime"
+    }
+  },
+  "overall": "PASS",
+  "limitation": "Imports/presence only; no clean solve, native ABI, GPU platform or asset verification."
+}

@@ -18,7 +18,10 @@ API 复用 `pacer_m4/stages.py` 中同一份阶段注册表，不重新实现 Dr
 ## 2. 本地启动
 
 ```bash
-pip install -e ".[api,core]"
+pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+pip install -r requirements.txt
+pip install -r requirements-api.txt
+pip install --no-deps -e .
 uvicorn pacer_m4.api:app --host 127.0.0.1 --port 8000
 ```
 
@@ -71,6 +74,8 @@ GET /v1/jobs/{job_id}
 docker compose up --build
 ```
 
+镜像固定使用 CPython 3.9.23。构建过程依次安装 CPU 版 PyTorch、`requirements.txt` 中的冻结核心依赖和 `requirements-api.txt` 中与 Python 3.9 兼容的服务依赖，然后运行环境审计和能力清单 smoke test。构建阶段任何版本不一致都会失败，而不是生成一个与实验环境不同的镜像。
+
 默认容器同样禁止执行。需要挂载外部数据、合法软件和结果目录后，才可在可信环境打开执行开关。Docker 镜像不包含：
 
 - Schrödinger Glide；
@@ -87,5 +92,5 @@ docker compose up --build
 - DrugCLIP 路由 dry-run 返回精确命令；
 - 默认执行请求返回 403；
 - API 自动测试 5 项通过；
-- 本机未安装 Docker，因此 Dockerfile 和 compose 已完成静态配置，但尚未在本机实际构建镜像。
-
+- Dockerfile 已与 CPython 3.9.23 冻结核心环境对齐，并在构建阶段设置环境审计；
+- 本机未安装 Docker，因此 Dockerfile 和 compose 可做静态检查，但镜像仍需在装有 Docker 的机器上执行一次实际构建验收。

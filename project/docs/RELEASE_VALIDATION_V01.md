@@ -79,7 +79,26 @@ python -m pip wheel . --no-deps --wheel-dir tmp/wheels
 - 默认真实执行请求：403；
 - API 自动测试：5 项通过。
 
-## 7. 仍需外部资源的部分
+## 7. Docker 一致性
+
+容器入口已从 Python 3.11 改为与冻结核心环境一致的 `python:3.9.23-slim-bookworm`。Docker 构建按以下顺序执行：
+
+1. 从 PyTorch CPU 索引安装 `torch==2.8.0`；
+2. 安装 `requirements.txt` 的冻结核心依赖；
+3. 安装 `requirements-api.txt` 中仍支持 Python 3.9 的 FastAPI/Uvicorn；
+4. 以 `--no-deps` 安装 PACER-M4 包；
+5. 执行核心环境审计和阶段能力 smoke test。
+
+Docker Hub 已确认基础镜像 tag 存在。本机没有 Docker 命令，因此这里不声称已经完成镜像实构建；最终提交前须在装有 Docker 的机器运行：
+
+```bash
+docker compose build --no-cache
+docker compose up -d
+curl http://127.0.0.1:8000/health
+docker compose down
+```
+
+## 8. 仍需外部资源的部分
 
 - 任意新分子的完整 DrugCLIP backbone 编码；
 - Glide PDB/BEmin/BEavg 三路商业计算；

@@ -9,8 +9,8 @@
       "role": "repository_entry",
       "exists": true,
       "kind": "file",
-      "bytes": 5314,
-      "sha256": "ec9eaf458f9657dc2f3107b27601ae64a0a292d91d7de1cfcea22f44cd99aba0"
+      "bytes": 5858,
+      "sha256": "880846a51f039ad35c374a8939410efe6b174a987cfc71dde02d1159c77ed9c0"
     },
     {
       "path": "LICENSE",
@@ -25,8 +25,8 @@
       "role": "python_package_metadata",
       "exists": true,
       "kind": "file",
-      "bytes": 743,
-      "sha256": "20f660c085e8e920f88b5199898f81281bd59c1507431549f71225288dfd1b39"
+      "bytes": 756,
+      "sha256": "70f090dd871d0c663f6060e3d067fccb09d0f65737222863bbe042869037a666"
     },
     {
       "path": "requirements.txt",
@@ -35,6 +35,14 @@
       "kind": "file",
       "bytes": 1098,
       "sha256": "b3c190249ddd5cfe9ddd7aa22df2c14164952929c277f48fa1a5d87eff2a71fa"
+    },
+    {
+      "path": "requirements-api.txt",
+      "role": "python39_api_environment",
+      "exists": true,
+      "kind": "file",
+      "bytes": 186,
+      "sha256": "2faea56ed6d0597c72a683808c4378fe548acd4ab9777504e4fd99e636f7c667"
     },
     {
       "path": "pacer_m4/stages.py",
@@ -73,8 +81,8 @@
       "role": "container_definition",
       "exists": true,
       "kind": "file",
-      "bytes": 571,
-      "sha256": "bcf831be307ede1e8360ec1fdc59647ddb9601fb87bc0db2a09c41d6857e4a0d"
+      "bytes": 1218,
+      "sha256": "f995691289f3f882fc5067e44a958d7716e641684e21d5cb3be8eb2921a7b45b"
     },
     {
       "path": ".dockerignore",
@@ -89,8 +97,8 @@
       "role": "local_container_entry",
       "exists": true,
       "kind": "file",
-      "bytes": 162,
-      "sha256": "6994c0f504bcb2760a3ed1de583db4a5810d0894818e8d18c315da65f1337b11"
+      "bytes": 211,
+      "sha256": "b20208cf7088e97c1ae883e0d0b6fcfde709d800c3dcc25d9d9adfa7ae9d493f"
     },
     {
       "path": "project/docs/START_HERE_FOR_COLLABORATORS_V01.md",
@@ -129,16 +137,24 @@
       "role": "release_validation",
       "exists": true,
       "kind": "file",
-      "bytes": 3504,
-      "sha256": "f999b41412d68aa1a65a5e7c11a45a7303367d6686c5186e72c0061d6955ff0a"
+      "bytes": 4252,
+      "sha256": "6ba6148d8d5f359ea92cb8cd3f3d5a2b4b7cfe69cf9cc1fc2bd1fc14eac64b2e"
+    },
+    {
+      "path": "project/docs/SUBMISSION_CHECKLIST_V01.md",
+      "role": "competition_submission_checklist",
+      "exists": true,
+      "kind": "file",
+      "bytes": 1861,
+      "sha256": "cdfa1c1342de7297ba09b9465ccdae9f3ed4a04ea99b0c91c5a792d82161d113"
     },
     {
       "path": "project/docs/LOCAL_API_AND_DOCKER_V01.md",
       "role": "service_guide",
       "exists": true,
       "kind": "file",
-      "bytes": 2785,
-      "sha256": "c69f70cda3a7405df15cf9a45e0eb11a4a5d312fe4f2e6f901a6bb6b63f56de1"
+      "bytes": 3409,
+      "sha256": "a74b166396baa87084d3b5bd72465b8719a9dfec34f91da4fca800ed14a130b5"
     },
     {
       "path": "project/docs/PACER_M4_PROJECT_MAINLINE_DEVELOPMENT_AND_INFERENCE_V01.md",

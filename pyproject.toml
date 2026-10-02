@@ -23,8 +23,8 @@ core = [
   "rdkit>=2023.9"
 ]
 api = [
-  "fastapi>=0.110",
-  "uvicorn>=0.27"
+  "fastapi>=0.110,<0.111",
+  "uvicorn>=0.27,<0.28"
 ]
 test = ["pytest>=8"]
 

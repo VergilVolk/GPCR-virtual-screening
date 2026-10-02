@@ -11,6 +11,7 @@ PACER-M4 是面向人源 CHRM4/M4 正性别构调节剂（PAM）的分层计算�
 - 代码、数据和产物地图：[`project/docs/CODE_AND_ARTIFACT_MAP_V01.md`](project/docs/CODE_AND_ARTIFACT_MAP_V01.md)
 - 最小复现指南：[`project/docs/REPRODUCTION_QUICKSTART_V01.md`](project/docs/REPRODUCTION_QUICKSTART_V01.md)
 - 本地 API 与 Docker：[`project/docs/LOCAL_API_AND_DOCKER_V01.md`](project/docs/LOCAL_API_AND_DOCKER_V01.md)
+- 比赛提交检查表：[`project/docs/SUBMISSION_CHECKLIST_V01.md`](project/docs/SUBMISSION_CHECKLIST_V01.md)
 
 ## 方法概览
 
@@ -75,11 +76,16 @@ python -m pacer_m4 run drugclip-route --dry-run -- \
 可选本地 API：
 
 ```bash
-pip install -e ".[api,core]"
+pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+pip install -r requirements.txt
+pip install -r requirements-api.txt
+pip install --no-deps -e .
 uvicorn pacer_m4.api:app --host 127.0.0.1 --port 8000
 ```
 
 API 默认只允许查询和 dry-run。真正执行必须在可信本地环境显式设置 `PACER_M4_API_ALLOW_EXECUTION=1`。
+
+Docker 镜像使用同一套 CPython 3.9.23 冻结核心依赖，并在构建阶段执行环境审计。它提供统一入口、轻量 CPU 分析和 API，不包含大型模型权重、商业软件、MD 轨迹或 GPU 驱动，因此不宣称单个镜像可以重跑全部重计算步骤。
 
 复算已经打包的 PACER-200 M4 DrugCLIP 排名：
 

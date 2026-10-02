@@ -1,0 +1,162 @@
+{
+  "protocol": "pacer_m4_core_environment_v01",
+  "python": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:49:16) [MSC v.1929 64 bit (AMD64)]",
+  "expected_python": "3.9.x (validated environment: 3.9.23)",
+  "python_match": true,
+  "packages": {
+    "numpy": {
+      "module": "numpy",
+      "expected": "1.26.4",
+      "installed": "1.26.4",
+      "version_match": true,
+      "import_ok": true,
+      "error": null
+    },
+    "pandas": {
+      "module": "pandas",
+      "expected": "2.3.1",
+      "installed": "2.3.1",
+      "version_match": true,
+      "import_ok": true,
+      "error": null
+    },
+    "scipy": {
+      "module": "scipy",
+      "expected": "1.13.1",
+      "installed": "1.13.1",
+      "version_match": true,
+      "import_ok": true,
+      "error": null
+    },
+    "scikit-learn": {
+      "module": "sklearn",
+      "expected": "1.6.1",
+      "installed": "1.6.1",
+      "version_match": true,
+      "import_ok": true,
+      "error": null
+    },
+    "rdkit": {
+      "module": "rdkit",
+      "expected": "2025.3.5",
+      "installed": "2025.3.5",
+      "version_match": true,
+      "import_ok": true,
+      "error": null
+    },
+    "torch": {
+      "module": "torch",
+      "expected": "2.8.0",
+      "installed": "2.8.0",
+      "version_match": true,
+      "import_ok": true,
+      "error": null
+    },
+    "lightgbm": {
+      "module": "lightgbm",
+      "expected": "4.6.0",
+      "installed": "4.6.0",
+      "version_match": true,
+      "import_ok": true,
+      "error": null
+    },
+    "meeko": {
+      "module": "meeko",
+      "expected": "0.7.1",
+      "installed": "0.7.1",
+      "version_match": true,
+      "import_ok": true,
+      "error": null
+    },
+    "molscrub": {
+      "module": "scrubber",
+      "expected": "0.1.1",
+      "installed": "0.1.1",
+      "version_match": true,
+      "import_ok": true,
+      "error": null
+    },
+    "gemmi": {
+      "module": "gemmi",
+      "expected": "0.7.3",
+      "installed": "0.7.3",
+      "version_match": true,
+      "import_ok": true,
+      "error": null
+    },
+    "matplotlib": {
+      "module": "matplotlib",
+      "expected": "3.9.4",
+      "installed": "3.9.4",
+      "version_match": true,
+      "import_ok": true,
+      "error": null
+    },
+    "reportlab": {
+      "module": "reportlab",
+      "expected": "4.2.5",
+      "installed": "4.2.5",
+      "version_match": true,
+      "import_ok": true,
+      "error": null
+    }
+  },
+  "scripts": {
+    "project/scripts/fragment_generation.py": {
+      "exists": true,
+      "syntax_ok": true,
+      "error": null
+    },
+    "project/scripts/score_candidates.py": {
+      "exists": true,
+      "syntax_ok": true,
+      "error": null
+    },
+    "project/scripts/select_pareto_candidates.py": {
+      "exists": true,
+      "syntax_ok": true,
+      "error": null
+    },
+    "project/scripts/export_candidate_sdf.py": {
+      "exists": true,
+      "syntax_ok": true,
+      "error": null
+    },
+    "project/scripts/dock_candidate_portfolio.py": {
+      "exists": true,
+      "syntax_ok": true,
+      "error": null
+    },
+    "project/scripts/dock_potency_coupling_features.py": {
+      "exists": true,
+      "syntax_ok": true,
+      "error": null
+    },
+    "project/scripts/dock_m4_gamd_ensemble.py": {
+      "exists": true,
+      "syntax_ok": true,
+      "error": null
+    },
+    "project/scripts/score_pacer200_drugclip2023_m4_loto.py": {
+      "exists": true,
+      "syntax_ok": true,
+      "error": null
+    },
+    "project/scripts/pacer_drugclip_router.py": {
+      "exists": true,
+      "syntax_ok": true,
+      "error": null
+    },
+    "project/scripts/build_pacer_m4_algorithm_report_v01.py": {
+      "exists": true,
+      "syntax_ok": true,
+      "error": null
+    }
+  },
+  "core_environment_valid": true,
+  "external_assets": {
+    "vina_binary_in_requirements": false,
+    "model_assets_in_requirements": false,
+    "api_dependencies_in_requirements": false
+  }
+}

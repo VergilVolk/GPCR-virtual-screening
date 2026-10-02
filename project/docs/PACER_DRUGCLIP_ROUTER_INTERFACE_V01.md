@@ -124,8 +124,12 @@ python project/scripts/pacer_drugclip_router.py `
 ## 6. Python API
 
 ```python
+import sys
 import pandas as pd
-from project.scripts.pacer_drugclip_router import RouterConfig, route_scores
+
+# 从仓库根目录运行时
+sys.path.insert(0, "project/scripts")
+from pacer_drugclip_router import RouterConfig, route_scores
 
 scores = pd.read_csv("two_model_scores.csv")
 

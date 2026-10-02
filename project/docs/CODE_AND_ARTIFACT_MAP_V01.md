@@ -5,6 +5,16 @@
 
 ## 1. 推荐代码入口
 
+仓库提供统一发现与调用入口：
+
+```bash
+python -m pacer_m4 stages
+python -m pacer_m4 capabilities
+python -m pacer_m4 run <stage-id> -- <原脚本参数>
+```
+
+该入口由 `pacer_m4/stages.py` 和 `pacer_m4/runner.py` 实现。它只负责安全调用、运行回执和能力报告，不改变下表各算法的定义。
+
 | 任务 | 入口 | 输入 | 输出 |
 |---|---|---|---|
 | DrugCLIP M4-safe 路由 | `project/scripts/pacer_drugclip_router.py` | 同一 target-molecule 行上的 2023/2026 两列分数 | 靶点内百分位、路由分数、最终排名、审计 JSON |
@@ -124,4 +134,3 @@ python -m pytest project/tests/test_project_benchmark_v02.py
 - 是否把 broad-AM、binding、potency 和 functional PAM 指标混为一谈；
 - 是否提交了轨迹、商业软件或不允许再分发的第三方权重；
 - 新候选是否明确标注为未经过湿实验确认。
-

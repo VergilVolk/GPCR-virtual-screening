@@ -19,6 +19,7 @@
 | `PACER_M4_PROJECT_MAINLINE_DEVELOPMENT_AND_INFERENCE_V01.md` | 主线 | 区分算法开发与候选推理，说明完整数据链 |
 | `PACER_M4_INTEGRATED_ALGORITHM_AND_BENCHMARK_V02.md` | 主线/结果 | 当前核心结果、基线与严格主张边界 |
 | `PROJECT_INTEGRATION_AND_BENCHMARK_V02.md` | 主线 | 模块联调、benchmark 矩阵与缺口 |
+| `RELEASE_VALIDATION_V01.md` | 主线/审计 | 安装、测试、wheel 构建和 PACER-200 端到端复算 |
 | `../PROJECT_STATUS.md` | 主线/日志 | 按日期记录最新冻结状态与结果 |
 | `PACER_M4_RESEARCH_CHARTER.md` | 历史/约束 | 初始科学问题、验证原则和禁止事项 |
 | `PACER_M4_ABSTRACT_EVIDENCE_BANK.md` | 写作材料 | 摘要可用数字与禁止表述；部分内容需用最新结果替换 |
@@ -152,4 +153,3 @@
 3. docking、DrugCLIP 和 PACER-FKG 分属不同任务，不得把各自最优数字拼成单一端到端 AUC。
 4. 动态轨迹窗口不是独立分子样本；统计单位优先为分子、药化系列、靶点或独立 replica。
 5. 未经湿实验确认的新分子统一称为“计算优先候选”。
-

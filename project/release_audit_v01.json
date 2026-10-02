@@ -9,8 +9,8 @@
       "role": "repository_entry",
       "exists": true,
       "kind": "file",
-      "bytes": 4099,
-      "sha256": "ff291461077486350abf5bc0828d1998473755f57009430fa6110908d5a08a62"
+      "bytes": 4553,
+      "sha256": "0e4d12b5a6232d2259972663537790adaa24156118bcef8e463cbbd5b0c91740"
     },
     {
       "path": "LICENSE",
@@ -21,36 +21,76 @@
       "sha256": "18a8e471d36dc66dba8e34b60e7eac51e802f15e5a1a5a4ee00bb3362dad8de3"
     },
     {
+      "path": "pyproject.toml",
+      "role": "python_package_metadata",
+      "exists": true,
+      "kind": "file",
+      "bytes": 450,
+      "sha256": "79b667c498a43f4bd833caa713129f76a599ee0f0a2f9356e3d2b502eba2cd2e"
+    },
+    {
+      "path": "pacer_m4/stages.py",
+      "role": "stage_registry",
+      "exists": true,
+      "kind": "file",
+      "bytes": 7724,
+      "sha256": "b950f41c3010e3a75f16da278f07828959036a76ec78c50b192fd093de4d441d"
+    },
+    {
+      "path": "pacer_m4/runner.py",
+      "role": "audited_stage_runner",
+      "exists": true,
+      "kind": "file",
+      "bytes": 2840,
+      "sha256": "a06a993d200ceab9fdc7026b943edfe6f16ab434cce67c6c3281835a634fe4c8"
+    },
+    {
+      "path": "pacer_m4/cli.py",
+      "role": "command_line_interface",
+      "exists": true,
+      "kind": "file",
+      "bytes": 2435,
+      "sha256": "8d4849a6433e8207616de854b06cfc99ac40d1685fd6149cea2a76b636436e0c"
+    },
+    {
       "path": "project/docs/START_HERE_FOR_COLLABORATORS_V01.md",
       "role": "project_overview",
       "exists": true,
       "kind": "file",
-      "bytes": 8133,
-      "sha256": "adebb043dbd02928d1445622c1d9d9a33a0078e968e5f520224aacf856de587f"
+      "bytes": 8238,
+      "sha256": "4767560c5c0bc053620834a513caa925b394f4c27267824403ed07e1cc1f30f5"
     },
     {
       "path": "project/docs/DOCUMENT_AND_EVIDENCE_INDEX_V01.md",
       "role": "evidence_index",
       "exists": true,
       "kind": "file",
-      "bytes": 9463,
-      "sha256": "ca24e228c1da1d61a3322d90db13607260b7add60aec7dd3221a63ebd5363401"
+      "bytes": 9572,
+      "sha256": "95a4be273a95651121702a0cf99839d2403d8be5eec6b5151ca3d8bfd6f051c8"
     },
     {
       "path": "project/docs/CODE_AND_ARTIFACT_MAP_V01.md",
       "role": "code_map",
       "exists": true,
       "kind": "file",
-      "bytes": 7055,
-      "sha256": "8e607985e0a1787316a4253ed6e0f770d58a34d3506bb9434a9bfe92c41255db"
+      "bytes": 7387,
+      "sha256": "e4ba19c22d46c5bef984fa54e4b761a16c9e4e8b51d6329b194d63a9e89b762f"
     },
     {
       "path": "project/docs/REPRODUCTION_QUICKSTART_V01.md",
       "role": "reproduction_guide",
       "exists": true,
       "kind": "file",
-      "bytes": 4281,
-      "sha256": "6c25a629e91451eef5baf22c157cef8fb35b8012800929719be5514e613bd35c"
+      "bytes": 4570,
+      "sha256": "a4d103b72fd27720992d5330668afdf2263b5d305c6504e609066c6f02eed6da"
+    },
+    {
+      "path": "project/docs/RELEASE_VALIDATION_V01.md",
+      "role": "release_validation",
+      "exists": true,
+      "kind": "file",
+      "bytes": 2680,
+      "sha256": "41f2d49f0b494449c003c01c0ea374aa4285655120e53dd932a88b152de73727"
     },
     {
       "path": "project/docs/PACER_M4_PROJECT_MAINLINE_DEVELOPMENT_AND_INFERENCE_V01.md",
@@ -105,8 +145,8 @@
       "role": "candidate_selection",
       "exists": true,
       "kind": "file",
-      "bytes": 5596,
-      "sha256": "34d84a0dca3e55ae4db0a3124b042315a4b2ca3a26cbcb6399540b7350e58fb0"
+      "bytes": 10046,
+      "sha256": "952ec49ce48c14ef391cba15ed6dde16e002410951b7b24730aca089781276b5"
     },
     {
       "path": "project/scripts/pacer_dc_score.py",
@@ -139,6 +179,14 @@
       "kind": "file",
       "bytes": 2475,
       "sha256": "742346937e238e7fab1e81ccbdbef88ea6856b62c0fabc37d30ce5f4eadebb05"
+    },
+    {
+      "path": "project/tests/test_pacer_m4_cli.py",
+      "role": "orchestration_test",
+      "exists": true,
+      "kind": "file",
+      "bytes": 1216,
+      "sha256": "75bf80fe65a7cc3a187c31f2c17bc417ed58cd9f0e0e3339ae7d072c0f668b8f"
     }
   ],
   "optional": [

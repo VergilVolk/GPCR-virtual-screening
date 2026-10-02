@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pacer-m4"
+version = "0.1.0"
+description = "Auditable orchestration tools for the PACER-M4 computational screening workflow"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "PACER-M4 team"}]
+
+[project.scripts]
+pacer-m4 = "pacer_m4.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["pacer_m4*"]
+

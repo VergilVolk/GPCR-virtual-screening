@@ -35,6 +35,21 @@ python project/scripts/validate_pacer_m4_release.py \
 
 该命令验证正式入口、核心脚本、测试和轻量产物是否存在，并写出 SHA256。大型 checkpoint 和 MD 轨迹属于可选外部资产；缺失时会报告，但不会把源码发布判为失败。
 
+也可以先查看统一阶段注册表：
+
+```bash
+python -m pacer_m4 stages
+python -m pacer_m4 capabilities
+```
+
+需要调用原脚本时使用：
+
+```bash
+python -m pacer_m4 run <stage-id> -- <原脚本参数>
+```
+
+加 `--dry-run` 可只生成命令和审计回执而不执行计算。
+
 ## 3. 运行核心测试
 
 ```bash
@@ -122,4 +137,3 @@ python -m pytest project/tests/test_pacer_factorial_kernel_graph.py -q
 | PACER-FKG | 四上下文动态交互的跨 replica 重现性 | 湿实验确认或通用 PAM 概率 |
 
 所有新分子在功能实验确认前统一称为“计算优先候选”。
-

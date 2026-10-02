@@ -50,6 +50,17 @@ python -m pytest project/tests/test_pacer_drugclip_router.py \
   project/tests/test_pacer_factorial_kernel_graph.py
 ```
 
+统一命令入口不会改变各模块算法，只负责发现、校验和调用已经审计的脚本：
+
+```bash
+python -m pacer_m4 stages
+python -m pacer_m4 capabilities --output project/capabilities_v01.json
+python -m pacer_m4 run drugclip-route --dry-run -- \
+  --input scores.csv --output routed.csv
+```
+
+每个阶段保留自己的输入、输出和科学主张边界；命令入口不会把不同任务的分数合成虚假的端到端概率。
+
 复算已经打包的 PACER-200 M4 DrugCLIP 排名：
 
 ```bash

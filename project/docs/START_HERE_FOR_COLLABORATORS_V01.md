@@ -99,6 +99,7 @@ Delta_INT = CP - P - C + A
 7. `PACER_DC_CLOSE_LOOP_20NS_FINAL_REPORT_v01.md`：已知 PAM 与 inactive 困难负样本闭环。
 8. `PACER_M4_LEAD_PAM_HYPOTHESES.md`：候选证据包和湿实验判据。
 9. `DOCUMENT_AND_EVIDENCE_INDEX_V01.md`：需要追溯全部方法、支线和原始结果时再查阅。
+10. `RELEASE_VALIDATION_V01.md`：代码测试、安装、wheel 构建和 PACER-200 逐位复算记录。
 
 ## 6. 哪些旧文档不能单独代表当前项目
 
@@ -111,4 +112,3 @@ Delta_INT = CP - P - C + A
 ## 7. 对外结论的边界
 
 当前最稳妥的整体表述是：PACER-M4 已建立从候选产生、结合检索、结构门控到四上下文动态功能复核的分层计算框架，并在公开结合基准和少量已知功能分子上获得可复现的模块级证据。项目尚未完成新候选的湿实验确认，也没有一个统一外部数据集能够为整个端到端流程给出单一“SOTA AUC”。最终候选必须以分层证据和不确定性报告，而不是包装成已验证 PAM。
-

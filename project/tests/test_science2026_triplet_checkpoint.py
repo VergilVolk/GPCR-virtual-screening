@@ -1,6 +1,7 @@
 from pathlib import Path
 import sys
 
+import pytest
 import torch
 
 
@@ -8,6 +9,20 @@ SCRIPTS = Path(__file__).resolve().parents[1] / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 
 from finetune_drugclip_science2026_context_loto import ContextMetric  # noqa: E402
+
+
+def _optional_checkpoint_set(root: Path, pattern: str) -> list[Path]:
+    """Return a complete optional checkpoint set or skip the external-asset test.
+
+    Large development checkpoints are intentionally excluded from the public
+    repository.  A missing directory is therefore not a code failure, while a
+    partially copied checkpoint set remains an error.
+    """
+    paths = sorted(root.glob(pattern))
+    if not paths:
+        pytest.skip(f"optional external checkpoint bundle is not installed: {root}")
+    assert len(paths) == 3, f"incomplete checkpoint bundle in {root}: found {len(paths)}/3"
+    return paths
 
 
 def test_deployable_triplet_checkpoints_reload_strictly():
@@ -18,8 +33,7 @@ def test_deployable_triplet_checkpoints_reload_strictly():
         / "litpcba_external_v01"
         / "deployable_triplet"
     )
-    paths = sorted(root.glob("pacer_cgm_triplet_seed*.pt"))
-    assert len(paths) == 3
+    paths = _optional_checkpoint_set(root, "pacer_cgm_triplet_seed*.pt")
     for path in paths:
         checkpoint = torch.load(path, map_location="cpu", weights_only=False)
         model = ContextMetric(
@@ -38,8 +52,7 @@ def test_deployable_projection_triplet_checkpoints_are_finite():
         / "litpcba_external_v01"
         / "deployable_projection_triplet"
     )
-    paths = sorted(root.glob("pacer_projection_triplet_seed*.pt"))
-    assert len(paths) == 3
+    paths = _optional_checkpoint_set(root, "pacer_projection_triplet_seed*.pt")
     for path in paths:
         checkpoint = torch.load(path, map_location="cpu", weights_only=False)
         assert checkpoint["n_pairs"] == 8906

@@ -1,0 +1,35 @@
+{
+  "release_id": "pacer_m4_submission_v01",
+  "updated": "2026-10-02",
+  "required": [
+    {"path": "README.md", "role": "repository_entry"},
+    {"path": "LICENSE", "role": "license"},
+    {"path": "project/docs/START_HERE_FOR_COLLABORATORS_V01.md", "role": "project_overview"},
+    {"path": "project/docs/DOCUMENT_AND_EVIDENCE_INDEX_V01.md", "role": "evidence_index"},
+    {"path": "project/docs/CODE_AND_ARTIFACT_MAP_V01.md", "role": "code_map"},
+    {"path": "project/docs/REPRODUCTION_QUICKSTART_V01.md", "role": "reproduction_guide"},
+    {"path": "project/docs/PACER_M4_PROJECT_MAINLINE_DEVELOPMENT_AND_INFERENCE_V01.md", "role": "mainline"},
+    {"path": "project/docs/PACER_M4_INTEGRATED_ALGORITHM_AND_BENCHMARK_V02.md", "role": "benchmark_summary"},
+    {"path": "project/scripts/pacer_drugclip_router.py", "role": "binding_router"},
+    {"path": "project/scripts/score_pacer200_drugclip2023_m4_loto.py", "role": "m4_offline_inference"},
+    {"path": "project/scripts/apply_pacer_xr_candidates.py", "role": "six_channel_docking"},
+    {"path": "project/scripts/run_pacer_fs_complete.py", "role": "potency_baseline"},
+    {"path": "project/scripts/select_pareto_candidates.py", "role": "candidate_selection"},
+    {"path": "project/scripts/pacer_dc_score.py", "role": "dynamic_compatibility_score"},
+    {"path": "project/pacer_dc_training/pacer_factorial_kernel_graph.py", "role": "factorial_kernel_core"},
+    {"path": "project/tests/test_pacer_drugclip_router.py", "role": "router_test"},
+    {"path": "project/tests/test_pacer_factorial_kernel_graph.py", "role": "fkg_test"}
+  ],
+  "optional": [
+    {"path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01", "role": "offline_m4_inference_bundle"},
+    {"path": "project/results/drugclip_generation_bakeoff_v01", "role": "drugclip_benchmark_outputs"},
+    {"path": "project/results/pacer_dc_close_loop_20ns_v01", "role": "four_context_closure_outputs"},
+    {"path": "project/results/pacer_dc_cm00734_stage_b_20ns_analysis_v01", "role": "hard_negative_outputs"}
+  ],
+  "large_external_assets": [
+    {"name": "MD trajectories", "policy": "not_distributed_in_git"},
+    {"name": "base DrugCLIP checkpoints", "policy": "not_required_for_packaged_PACER200_inference"},
+    {"name": "Schrodinger Glide", "policy": "commercial_external_dependency"}
+  ],
+  "claim_boundary": "The repository produces computationally prioritized candidates. Binding, docking, or retrospective dynamic evidence does not constitute experimental confirmation of PAM activity."
+}

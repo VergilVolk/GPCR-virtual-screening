@@ -1,5 +1,9 @@
 # CHRM4 PAM 项目主流程
 
+> **历史文件提示（2026-10-02）**：本文记录 OneProt/PACER-DC 开发阶段，已不再是仓库总入口。
+> 当前主线请从 `docs/START_HERE_FOR_COLLABORATORS_V01.md` 开始；当前动态方法为冻结
+> C1-BS256 + PACER-FKG，OneProt-MD 保留为历史消融。
+
 > **当前队员交付任务不是 PACER-FS，也不是单纯完成 MD 体系构建。**
 > 当前唯一交付入口为仓库根目录 `START_HERE_ONEPROT_PACER_DC.md`：复现
 > OneProt-MD，导出四上下文 embedding，并训练 PACER-DC Adapter/Triplet head。

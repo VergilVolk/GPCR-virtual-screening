@@ -1,5 +1,9 @@
 # 历史任务入口：OneProt-MD → PACER-DC Adapter
 
+> **归档补充（2026-10-02）**：当前仓库总入口已改为
+> `project/docs/START_HERE_FOR_COLLABORATORS_V01.md`。PACER-MCV 也只是后续物理基线，
+> 当前动态主结果来自冻结 C1-BS256 + PACER-FKG hard-negative 闭环。
+
 > **2026-09-27 状态：本路线已降级为失败/消融基线，不再是当前执行入口。**
 > OneProt-MD 与后续 Geom2Vec/FKG 均未在 compound-110 的独立 replica 上给出稳定协同方向。
 > 当前执行入口为 `project/docs/PACER_MCV_METHOD_AND_HANDOFF.md`：保留四上下文双差分，改用无需训练的物理构象特征 PACER-MCV。不要继续下载权重或训练 Adapter，除非 PACER-MCV 基线和多分子数据门禁已经完成。

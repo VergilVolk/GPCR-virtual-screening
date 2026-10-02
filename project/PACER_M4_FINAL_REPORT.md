@@ -1,5 +1,10 @@
 # PACER-M4 v1：功能效力预测、结构门控与分子生成闭环
 
+> **历史阶段报告提示（2026-10-02）**：本文冻结于 2026-08-30，保留 PACER-FS、早期生成和
+> 静态结构阶段的完整证据，但不含后续 DrugCLIP M4-safe 路由、PACER-XR 及 PACER-FKG
+> hard-negative 闭环。当前总览见 `docs/START_HERE_FOR_COLLABORATORS_V01.md` 和
+> `docs/PACER_M4_INTEGRATED_ALGORITHM_AND_BENCHMARK_V02.md`。
+
 > 冻结日期：2026-08-30
 > 结论等级：完整、可复现的计算方法学工作；PACER-FS 是历史内部 benchmark 的冻结主方法，PACER-AssayConditional 是专利知情的下一代开发方法；**独立 Suven 外测未通过 SOTA 门槛，未宣称发现经实验验证的新 PAM**。
 

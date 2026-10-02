@@ -1,0 +1,179 @@
+{
+  "release_id": "pacer_m4_submission_v01",
+  "manifest": "project\\config\\pacer_m4_release_manifest_v01.json",
+  "valid": true,
+  "strict_optional": false,
+  "required": [
+    {
+      "path": "README.md",
+      "role": "repository_entry",
+      "exists": true,
+      "kind": "file",
+      "bytes": 4099,
+      "sha256": "ff291461077486350abf5bc0828d1998473755f57009430fa6110908d5a08a62"
+    },
+    {
+      "path": "LICENSE",
+      "role": "license",
+      "exists": true,
+      "kind": "file",
+      "bytes": 1086,
+      "sha256": "18a8e471d36dc66dba8e34b60e7eac51e802f15e5a1a5a4ee00bb3362dad8de3"
+    },
+    {
+      "path": "project/docs/START_HERE_FOR_COLLABORATORS_V01.md",
+      "role": "project_overview",
+      "exists": true,
+      "kind": "file",
+      "bytes": 8133,
+      "sha256": "adebb043dbd02928d1445622c1d9d9a33a0078e968e5f520224aacf856de587f"
+    },
+    {
+      "path": "project/docs/DOCUMENT_AND_EVIDENCE_INDEX_V01.md",
+      "role": "evidence_index",
+      "exists": true,
+      "kind": "file",
+      "bytes": 9463,
+      "sha256": "ca24e228c1da1d61a3322d90db13607260b7add60aec7dd3221a63ebd5363401"
+    },
+    {
+      "path": "project/docs/CODE_AND_ARTIFACT_MAP_V01.md",
+      "role": "code_map",
+      "exists": true,
+      "kind": "file",
+      "bytes": 7055,
+      "sha256": "8e607985e0a1787316a4253ed6e0f770d58a34d3506bb9434a9bfe92c41255db"
+    },
+    {
+      "path": "project/docs/REPRODUCTION_QUICKSTART_V01.md",
+      "role": "reproduction_guide",
+      "exists": true,
+      "kind": "file",
+      "bytes": 4281,
+      "sha256": "6c25a629e91451eef5baf22c157cef8fb35b8012800929719be5514e613bd35c"
+    },
+    {
+      "path": "project/docs/PACER_M4_PROJECT_MAINLINE_DEVELOPMENT_AND_INFERENCE_V01.md",
+      "role": "mainline",
+      "exists": true,
+      "kind": "file",
+      "bytes": 13109,
+      "sha256": "cba6a2ab54d79fbf5597754b7afe18894f38eead2b150336ef2ad171a984e09a"
+    },
+    {
+      "path": "project/docs/PACER_M4_INTEGRATED_ALGORITHM_AND_BENCHMARK_V02.md",
+      "role": "benchmark_summary",
+      "exists": true,
+      "kind": "file",
+      "bytes": 3327,
+      "sha256": "31755e011d7cf5dd535f8a4a622dd45e1e00edd9d5766bea393216286bb72e0f"
+    },
+    {
+      "path": "project/scripts/pacer_drugclip_router.py",
+      "role": "binding_router",
+      "exists": true,
+      "kind": "file",
+      "bytes": 6906,
+      "sha256": "5d6469a02fa39961b42227bd209a89d190c65e7cb9e9bd15501c4220d994b278"
+    },
+    {
+      "path": "project/scripts/score_pacer200_drugclip2023_m4_loto.py",
+      "role": "m4_offline_inference",
+      "exists": true,
+      "kind": "file",
+      "bytes": 4363,
+      "sha256": "936e4d3af583d6176875d6d887c593a1162d8dba0cb4997b21906af03963eba5"
+    },
+    {
+      "path": "project/scripts/apply_pacer_xr_candidates.py",
+      "role": "six_channel_docking",
+      "exists": true,
+      "kind": "file",
+      "bytes": 6161,
+      "sha256": "ca604d8845069c3f76c26f62c76a0275e3a0a17ea40496ebd7219d1f5e9edebe"
+    },
+    {
+      "path": "project/scripts/run_pacer_fs_complete.py",
+      "role": "potency_baseline",
+      "exists": true,
+      "kind": "file",
+      "bytes": 1208,
+      "sha256": "1fdbce4713cae13cc1db2950a362aecfb3c6ff65bca27113309f56f22b0d56cb"
+    },
+    {
+      "path": "project/scripts/select_pareto_candidates.py",
+      "role": "candidate_selection",
+      "exists": true,
+      "kind": "file",
+      "bytes": 5596,
+      "sha256": "34d84a0dca3e55ae4db0a3124b042315a4b2ca3a26cbcb6399540b7350e58fb0"
+    },
+    {
+      "path": "project/scripts/pacer_dc_score.py",
+      "role": "dynamic_compatibility_score",
+      "exists": true,
+      "kind": "file",
+      "bytes": 12182,
+      "sha256": "11810f791bf4327def865b0119e083bf333a99fb404b382e47ddbd4f30307db4"
+    },
+    {
+      "path": "project/pacer_dc_training/pacer_factorial_kernel_graph.py",
+      "role": "factorial_kernel_core",
+      "exists": true,
+      "kind": "file",
+      "bytes": 9166,
+      "sha256": "1b91a7b12c9ecc3a3c99e0c648f22a4f00daf818ffa961a114496a4c53cb8f8d"
+    },
+    {
+      "path": "project/tests/test_pacer_drugclip_router.py",
+      "role": "router_test",
+      "exists": true,
+      "kind": "file",
+      "bytes": 1872,
+      "sha256": "99b769f6adf0c856bfd9dcbc01f06597ea109c0c46fc7cc677581c8edf5cc550"
+    },
+    {
+      "path": "project/tests/test_pacer_factorial_kernel_graph.py",
+      "role": "fkg_test",
+      "exists": true,
+      "kind": "file",
+      "bytes": 2475,
+      "sha256": "742346937e238e7fab1e81ccbdbef88ea6856b62c0fabc37d30ce5f4eadebb05"
+    }
+  ],
+  "optional": [
+    {
+      "path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01",
+      "role": "offline_m4_inference_bundle",
+      "exists": true,
+      "kind": "directory",
+      "files": 12
+    },
+    {
+      "path": "project/results/drugclip_generation_bakeoff_v01",
+      "role": "drugclip_benchmark_outputs",
+      "exists": true,
+      "kind": "directory",
+      "files": 10
+    },
+    {
+      "path": "project/results/pacer_dc_close_loop_20ns_v01",
+      "role": "four_context_closure_outputs",
+      "exists": true,
+      "kind": "directory",
+      "files": 4
+    },
+    {
+      "path": "project/results/pacer_dc_cm00734_stage_b_20ns_analysis_v01",
+      "role": "hard_negative_outputs",
+      "exists": true,
+      "kind": "directory",
+      "files": 2
+    }
+  ],
+  "missing_required": [],
+  "missing_optional": [],
+  "tracked_files_at_least_mb": 25.0,
+  "tracked_large_files": [],
+  "claim_boundary": "The repository produces computationally prioritized candidates. Binding, docking, or retrospective dynamic evidence does not constitute experimental confirmation of PAM activity."
+}

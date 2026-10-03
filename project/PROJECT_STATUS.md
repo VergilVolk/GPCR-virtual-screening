@@ -1,6 +1,25 @@
 # PACER-M4 当前状态
 
-更新时间：2026-10-01
+更新时间：2026-10-03
+
+## 2026-10-03 Stage4 prospective MD → PACER-FKG v02 最终收尾
+
+**Stage4 prospective computational evaluation: COMPLETE**
+
+**Wet-lab functional validation: NOT YET PERFORMED**
+
+已完成链：candidate generation / filtering → multi-conformation docking → M4-safe DrugCLIP → candidate selection → cluster-matched four-context prospective MD → PACER-FKG v02 frozen evaluation → scientific interpretation。
+
+- 冻结候选：PACER0010 → cluster 9；PACER0027 → cluster 4；PACER0073 → cluster 0。
+- 3 candidates × 4 contexts × 3 replicas = 12 systems / 36 trajectories；每条10 ns，总计360 ns。
+- Phase1：`PHASE1_FULL_FROZEN`，cache_count=36；Phase2a：`PHASE2A_FULL_FROZEN`，job_count=36、manifest_count=72；Phase2b：`STAGE4_FULL_FROZEN_EVALUATION_COMPLETE`。
+- 冻结SHA保持`b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd`；Stage4 R1/R2/R3全部evaluation-only，Stage4 R2没有参与历史calibration。
+- 实际每条1000个10 ps原始帧，`frames[::5]`后为200个50 ps分析帧、10个名义1 ns相关block；不能进行独立block统计推断。
+- 原manifest的`trajectory_ps=50`属于raw-frame metadata描述错误；实际10 ps原始间隔与冻结分析契约一致，不影响既有结果。正式记录见[STAGE4_TEMPORAL_METADATA_NOTE_v01.md](results/pacer_stage4_prospective_fkg_v02_v01/provenance/STAGE4_TEMPORAL_METADATA_NOTE_v01.md)，原manifest不修改。
+- PACER0010支持有限的probe-dependent/intrinsic dynamic pattern separation；PACER0027的STATE_MOTION candidate-alone perturbation较一致；PACER0073在PAM-related regions中的candidate-alone方向较稳定。
+- 没有候选在多数关键区域、跨两branch具备稳健一致的Delta_INT；不支持确定cooperative PAM mechanism，不输出功能标签、概率或效能。
+- 科学报告与摘要已完成独立只读复核；本次收尾仅检查已有回执及27项测试记录，不执行科学流程或测试。
+- 最终交接：[PACER_STAGE4_FINAL_HANDOFF_v01.md](docs/PACER_STAGE4_FINAL_HANDOFF_v01.md)。以下按日期保留的开发记录与Stage A/B结论属于历史阶段，不能替代Stage4最终状态。
 
 ## 2026-10-01 DrugCLIP 结合筛选线闭环
 
@@ -122,7 +141,7 @@ PACER-DC 当前主线已从“继续寻找新 encoder”转为：
 
 **冻结的 C1-BS256 encoder + PACER-FKG v02 → matched four-context Delta_INT → 跨 replica 方向一致性 → hard-negative specificity 审计。**
 
-Stage A 与 Stage B 已完成，不再进行 outcome-driven tuning。当前工作重点是结果归档、外部审计和为下一轮真正前瞻验证冻结 protocol。
+Stage A、Stage B及Stage4 prospective computational evaluation均已完成。冻结计算结果与科学解释保持不变，下一科学步骤为功能实验验证，不再对既有候选进行outcome-driven tuning。
 
 ## 已完成
 
@@ -148,19 +167,16 @@ Stage A 与 Stage B 已完成，不再进行 outcome-driven tuning。当前工�
 
 ## 下一执行点
 
-1. 完成 `PROJECT_STATUS.md` 与 Stage A+B 总结报告归档；
-2. 保留 Stage A / Stage B 冻结代码、receipt、result SHA 与 tag，不重跑、不调参；
-3. 下一轮若继续科学验证，必须在运行前冻结新增正/负样本清单与评价规则；
-4. 优先增加新的实验 inactive/binder hard negatives 和独立已知 PAM，而不是继续在 LY2119620 / CM00734 上优化；
-5. 只有在独立前瞻样本中复现方向性 discrimination 后，才讨论 classifier、threshold 或候选排名。
+1. Functional experimental validation：比较candidate alone、ACh alone、candidate + ACh，并保留匹配vehicle对照。
+2. 将intrinsic agonism、positive modulation、ago-PAM possibility及inactive binder作为待实验区分的假说；当前不赋予候选功能标签。
+3. 保留Stage A/B与Stage4的冻结代码、回执、结果和科学报告；不重跑docking、DrugCLIP、Stage3、MD、Phase1/Phase2，不基于Stage4重新校准或调阈值。
 
 自动报告：`project/results/pacer_dc_phase1_audit/REPORT.md`。
 # 当前协作任务入口
 
-PACER-FKG v02 的 Stage A + Stage B 已闭环。当前不再以 PACER-MCV 或原版 Geom2Vec 作为默认主线，也不继续对现有 LY2119620 / CM00734 结果做参数优化。
+PACER-FKG v02的Stage A + Stage B及Stage4前瞻计算评价均已闭环。当前不继续优化encoder或对既有结果做参数调整。
 
 当前入口为：
-**冻结结果归档 → 独立审计 → 下一轮预注册样本扩展 / 前瞻验证。**
+**Stage4最终交接 → 功能实验验证。**
 
-总结合并报告：
-`project/results/pacer_dc_stage_a_b_final_synthesis_v01/PACER_DC_STAGE_A_B_FINAL_SYNTHESIS_v01.md`。
+当前交接：[PACER_STAGE4_FINAL_HANDOFF_v01.md](docs/PACER_STAGE4_FINAL_HANDOFF_v01.md)。最终科学报告：[STAGE4_PROSPECTIVE_SCIENTIFIC_REPORT_v01.md](results/pacer_stage4_prospective_fkg_v02_v01/STAGE4_PROSPECTIVE_SCIENTIFIC_REPORT_v01.md)。Stage A/B历史总结仍保留于`project/results/pacer_dc_stage_a_b_final_synthesis_v01/PACER_DC_STAGE_A_B_FINAL_SYNTHESIS_v01.md`。

@@ -1,0 +1,49 @@
+{
+  "forbidden_operations_performed": {
+    "bandwidth_refit": false,
+    "calibration": false,
+    "graph_refit": false,
+    "md_rerun": false,
+    "normalization_refit": false,
+    "outcome_driven_tuning": false,
+    "region_refit": false,
+    "rff_refit": false,
+    "source_modification": false,
+    "threshold_selection": false,
+    "training": false
+  },
+  "historical_freeze_sha256": "b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd",
+  "implementation": [
+    {
+      "bytes": 25750,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\pacer_fkg_v02\\stage4_prospective_common_v01.py",
+      "sha256": "ab84553c5a08308a3074b9d328f02dff6960c8afdabb56acfc40821c78badb8c"
+    },
+    {
+      "bytes": 11952,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\pacer_fkg_v02\\run_stage4_prospective_phase1_bs256_v01.py",
+      "sha256": "3fc4390de466ab20a99ca97b4eba1a7a085e4b29a689706ebb2273b2192a59af"
+    },
+    {
+      "bytes": 7264,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\pacer_fkg_v02\\run_stage4_prospective_phase2a_frozen_apply_v01.py",
+      "sha256": "54414f5608be7d3459b1836db4000170dddf976597b6e4f37439e2980309803c"
+    },
+    {
+      "bytes": 10218,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\pacer_fkg_v02\\run_stage4_prospective_phase2b_graph_region_v01.py",
+      "sha256": "bd512cca2ad1f2e06b03e34df3a013d987c18697feab7ffa7a16470b5fdee9d7"
+    }
+  ],
+  "phase2a_receipt": {
+    "bytes": 33379,
+    "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\PHASE2A_FREEZE_RECEIPT_v01.json",
+    "sha256": "04e95f7fa9a2e85f95ce25bcc01daa59ad84cdfaf016cecfd02fe3b0dd940f60"
+  },
+  "result": {
+    "bytes": 19365166,
+    "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2b_graph_region\\STAGE4_PROSPECTIVE_RESULTS_v01.json",
+    "sha256": "ab224fa812588ccd89e5f988fd21d47a24f133a8c6cd25945564256f21be9a70"
+  },
+  "status": "STAGE4_FULL_FROZEN_EVALUATION_COMPLETE"
+}

@@ -1,7 +1,19 @@
 # PACER-M4 合作者阅读入口
 
-更新时间：2026-10-02  
+更新时间：2026-10-03
 用途：帮助新合作者在不翻阅全部开发记录的情况下，理解项目问题、算法主线、已有结果、候选推理流程和证据边界。
+
+## Stage4 当前交接入口
+
+**Stage4 prospective computational evaluation: COMPLETE**
+
+**Wet-lab functional validation: NOT YET PERFORMED**
+
+新成员接手Stage4请先读[PACER_STAGE4_FINAL_HANDOFF_v01.md](PACER_STAGE4_FINAL_HANDOFF_v01.md)。PACER0010/0027/0073各自cluster-matched四上下文共36条10 ns轨迹（360 ns），已完成冻结Phase1、Phase2a、Phase2b和独立科学解释。Stage4全部replica为evaluation-only；没有候选在多数关键区域、跨两branch具备稳健一致的Delta_INT，不支持确定cooperative PAM mechanism或候选功能标签。
+
+本次已完成链：candidate generation / filtering → multi-conformation docking → M4-safe DrugCLIP → candidate selection → cluster-matched four-context prospective MD → PACER-FKG v02 frozen evaluation → scientific interpretation。
+
+原manifest的50 ps raw声明已登记为源元数据描述错误；实际10 ps raw × stride 5 = 50 ps analysis，不影响冻结结果，原数据保留不改。下一科学步骤仅为功能实验验证，不重跑既有计算。下文回顾性模块结果保留其历史适用范围，不能替代Stage4候选结论。
 
 ## 1. 项目在解决什么问题
 

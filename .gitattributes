@@ -1,0 +1,7 @@
+# Stage4 receipts authenticate exact bytes; preserve them across platforms.
+project/results/pacer_stage4_prospective_fkg_v02_v01/** -text
+project/pacer_fkg_v02/stage4_prospective_common_v01.py -text
+project/pacer_fkg_v02/run_stage4_prospective_phase1_bs256_v01.py -text
+project/pacer_fkg_v02/run_stage4_prospective_phase2a_frozen_apply_v01.py -text
+project/pacer_fkg_v02/run_stage4_prospective_phase2b_graph_region_v01.py -text
+project/tests/test_stage4_prospective_fkg_v02_v01.py -text

@@ -13,6 +13,30 @@ PACER-M4 是面向人源 CHRM4/M4 正性别构调节剂（PAM）的分层计算�
 - 本地 API 与 Docker：[`project/docs/LOCAL_API_AND_DOCKER_V01.md`](project/docs/LOCAL_API_AND_DOCKER_V01.md)
 - 比赛提交检查表：[`project/docs/SUBMISSION_CHECKLIST_V01.md`](project/docs/SUBMISSION_CHECKLIST_V01.md)
 
+## Stage4 最终状态（2026-10-03）
+
+**Stage4 prospective computational evaluation: COMPLETE**
+
+**Wet-lab functional validation: NOT YET PERFORMED**
+
+本次已完成的候选计算链为：
+
+```text
+candidate generation / filtering
+  → multi-conformation docking
+  → M4-safe DrugCLIP
+  → candidate selection
+  → cluster-matched four-context prospective MD
+  → PACER-FKG v02 frozen evaluation
+  → scientific interpretation
+```
+
+PACER0010（cluster 9）、PACER0027（cluster 4）、PACER0073（cluster 0）共12 systems、36条10 ns轨迹、360 ns aggregate，已完成Phase1（36 caches）、Phase2a（72 manifests）及Phase2b冻结评价。Stage4 R1/R2/R3均为evaluation-only，未重新校准历史状态。
+
+局部动态模式可用于提出功能实验假说，但没有候选在多数关键区域、跨STATE_MOTION/SIGNED_DRIFT两branch表现稳健一致的Delta_INT。当前不支持确定cooperative PAM mechanism，不赋予PAM/ago-PAM/inactive标签或预测概率。下一科学步骤仅为功能实验验证。
+
+交接与最终产物见[`PACER_STAGE4_FINAL_HANDOFF_v01.md`](project/docs/PACER_STAGE4_FINAL_HANDOFF_v01.md)。源manifest把raw spacing写为50 ps；实际10 ps原始帧经`frames[::5]`形成正确50 ps分析间隔，已登记[时间元数据说明](project/results/pacer_stage4_prospective_fkg_v02_v01/provenance/STAGE4_TEMPORAL_METADATA_NOTE_v01.md)。该源字段错误不影响既有冻结分析，原manifest保留不改。
+
 ## 方法概览
 
 ```text

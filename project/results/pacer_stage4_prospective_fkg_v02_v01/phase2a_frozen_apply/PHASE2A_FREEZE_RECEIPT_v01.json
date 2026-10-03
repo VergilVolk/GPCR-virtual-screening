@@ -1,0 +1,733 @@
+{
+  "forbidden_operations_performed": {
+    "bandwidth_refit": false,
+    "calibration": false,
+    "graph_refit": false,
+    "md_rerun": false,
+    "normalization_refit": false,
+    "outcome_driven_tuning": false,
+    "region_refit": false,
+    "rff_refit": false,
+    "source_modification": false,
+    "threshold_selection": false,
+    "training": false
+  },
+  "historical_anchor": {
+    "consumed_assets": [
+      {
+        "bytes": 5130,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\V02_BLOCK_DEFINITIONS.json",
+        "sha256": "dfe5472b2b7ea9f93befa222cfdb15cf3538550fab59f1aeaeed9884e5916e0f"
+      },
+      {
+        "bytes": 631,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\V02_CONTRAST_DEFINITIONS.json",
+        "sha256": "7b897db161e5fb62f23670ca187c889a1f9c998ef661b9839cd05c7c20a5ae2e"
+      },
+      {
+        "bytes": 309375,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_dc_geom2vec_pilot_v01\\M4_MULTISTRUCTURE_GRAPH_v01.json",
+        "sha256": "25593c11dac0f70ad6811c8c6aa7a4f06c1755f14397f1162eaa1157026be122"
+      },
+      {
+        "bytes": 1243,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\V02_METHOD_SPEC.json",
+        "sha256": "ccae0585576332e2ad19eaf8a813ccbc56a3c1fe9e8f0e6c226ec72ebebe9e59"
+      },
+      {
+        "bytes": 32175,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_dc_four_context_v01\\compound110\\G2_REGION_MAP_v02.json",
+        "sha256": "a40fb6ca8131a2f6dfc18caf6f48b9930f1341c072b368e3cb3b7c3c21e593ec"
+      },
+      {
+        "bytes": 215,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\V02_SEEDS.json",
+        "sha256": "1bb280da1cf38884c7b34203fe18a96358e77ffa35ab2e82fdaf8de185ef0bb6"
+      },
+      {
+        "bytes": 34436,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\V02_CALIBRATION_INVENTORY.json",
+        "sha256": "2338f26a1dcf10e7760a0cb0293b21a5603906bad39a27f7eb4527cabd8db96a"
+      },
+      {
+        "bytes": 4224,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\STATE_MOTION\\normalization_center.npy",
+        "sha256": "2e1950951d57ca4775a6dd9e6e27f711c4d62f4c0dc352ff82c36eb83471b1ec"
+      },
+      {
+        "bytes": 4224,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\STATE_MOTION\\normalization_scale.npy",
+        "sha256": "f9cadd72ac4b68e0a810d9c434c1094e167903f1683a46946226de5cbb2fb430"
+      },
+      {
+        "bytes": 373,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\STATE_MOTION\\bandwidth.json",
+        "sha256": "336c4202d0c6b715ddafd8fedfdef48a41e257e2dda5e505f21f1c9dab9597c1"
+      },
+      {
+        "bytes": 1048704,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\STATE_MOTION\\rff_weights.npy",
+        "sha256": "34c6979797ca7d5ca34742f9b9e008bdb6cc9fa1c7e82c4aec2e2406ea1d3619"
+      },
+      {
+        "bytes": 2176,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\STATE_MOTION\\rff_bias.npy",
+        "sha256": "ae8dc92ed47e9edd49a56498ad78158c796477fa9d408e49b007b082173bf860"
+      },
+      {
+        "bytes": 2176,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\SIGNED_DRIFT\\normalization_center.npy",
+        "sha256": "ac7d18780e6b096e95d923d4be9f08cb0956065a0fa2f37fae1b27c4bdb5e1bd"
+      },
+      {
+        "bytes": 2176,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\SIGNED_DRIFT\\normalization_scale.npy",
+        "sha256": "a9caf251cc40d84c31fb0c7c469dc9fb1f9330b5040c572d8357cdfe45a50dd9"
+      },
+      {
+        "bytes": 373,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\SIGNED_DRIFT\\bandwidth.json",
+        "sha256": "882173a46651c36f4de1b6252b0f6b5cade813d2fa60c7c5111f6582d7e7ba72"
+      },
+      {
+        "bytes": 524416,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\SIGNED_DRIFT\\rff_weights.npy",
+        "sha256": "fb1d5a41c2a60e6464b92d57b1be5ee2b318a6f838796a04ee803508712925c0"
+      },
+      {
+        "bytes": 2176,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\SIGNED_DRIFT\\rff_bias.npy",
+        "sha256": "a4b5bfa9a00a80c57f448981b37a3fbd2ead1d5553e199521cfa544300168069"
+      }
+    ],
+    "freeze": {
+      "bytes": 23517,
+      "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\V02_FREEZE_MANIFEST.json",
+      "sha256": "b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd"
+    },
+    "frozen_implementation": [
+      {
+        "lf_sha256": "d3ed9764ff813b9f164e139668cab2f55d7112d7b04283812d4a5fe3beee2271",
+        "path": "C:\\projects\\GPCR-virtual-screening\\project\\pacer_fkg_v02\\run_phase1_bs256.py"
+      },
+      {
+        "lf_sha256": "ccf8af5247ff2c7325f1c451d36943f2e293dee0dff48625031d8bb10a2d6e11",
+        "path": "C:\\projects\\GPCR-virtual-screening\\project\\pacer_fkg_v02\\run_phase2_calibration.py"
+      },
+      {
+        "lf_sha256": "147cb31363fe733c72719494dd282c80c86a61e1b733ad2568b94eca3b1d224c",
+        "path": "C:\\projects\\GPCR-virtual-screening\\project\\pacer_fkg_v02\\run_phase3_fkg.py"
+      },
+      {
+        "lf_sha256": "2fd99945e641682df7de6d9623b344108ee20994723ee032f37312962e479237",
+        "path": "C:\\projects\\GPCR-virtual-screening\\project\\encoder_intermediate_v01\\core.py"
+      },
+      {
+        "lf_sha256": "4d41168854c28c64f66c9905b17d9090cf1c489acad12ec65760a64457a9e311",
+        "path": "C:\\projects\\GPCR-virtual-screening\\project\\encoder_atom_readout_v01\\experiment_d.py"
+      },
+      {
+        "lf_sha256": "f1e8337e3b6163a3ec3c9dde255ff4cf214c3305c8115a57fda2fbeba874adc3",
+        "path": "C:\\projects\\GPCR-virtual-screening\\project\\encoder_candidate_v01\\CANDIDATE_SPEC.json"
+      }
+    ],
+    "historical_calibration_replicas": [
+      2
+    ],
+    "mapping": {
+      "bytes": 6803,
+      "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_dc_four_context_v01\\compound110\\G2_RESIDUE_MAPPING_v01.csv",
+      "sha256": "3cb47de7fa555e635f66e6b1ff16846e6eaa95046c522fea6154d8e1f046b61d"
+    },
+    "prospective_replicas": "R1/R2/R3 evaluation only",
+    "verification_policy": "serialized-state hashes; no calibration replay/refit"
+  },
+  "job_count": 36,
+  "manifest_count": 72,
+  "manifests": [
+    {
+      "bytes": 12324,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster0__apo__replica_01__STATE_MOTION.json",
+      "sha256": "d7b5f69b94cdd67c9521be8e25ce74e3da9a6899464a77403b1ce5417e3987d7"
+    },
+    {
+      "bytes": 12324,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster0__apo__replica_01__SIGNED_DRIFT.json",
+      "sha256": "098d1224d092431c9d2cb9c82d34ba530e935d616749d1c3914e57db7cb629d9"
+    },
+    {
+      "bytes": 12324,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster0__apo__replica_02__STATE_MOTION.json",
+      "sha256": "8dce2c03f358d9e53a89eef9ae4f41a6bc376ab21e43fd8f832a804d4891bc40"
+    },
+    {
+      "bytes": 12324,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster0__apo__replica_02__SIGNED_DRIFT.json",
+      "sha256": "456a6ae96669a0e0ae056fb7936b791bb53be116a1cc10a8f17cc48a630621df"
+    },
+    {
+      "bytes": 12324,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster0__apo__replica_03__STATE_MOTION.json",
+      "sha256": "d87665c053dcda49775710fb71eb5ae94c927e84d16b7f490268d6591c88f9ed"
+    },
+    {
+      "bytes": 12324,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster0__apo__replica_03__SIGNED_DRIFT.json",
+      "sha256": "b5fa0ff627482305489025f1a5e14077f058a352857bdcaf8c669d829818b5e2"
+    },
+    {
+      "bytes": 12352,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster0__probe_only__replica_01__STATE_MOTION.json",
+      "sha256": "47672341d97a6c912b15a9e3f64f86129c2d50ecac96ef914ed8688c7cc4defe"
+    },
+    {
+      "bytes": 12352,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster0__probe_only__replica_01__SIGNED_DRIFT.json",
+      "sha256": "6da530214baf6410a2b7441d35d626c7429de62b5fb5024ac3ef916af3c77fac"
+    },
+    {
+      "bytes": 12352,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster0__probe_only__replica_02__STATE_MOTION.json",
+      "sha256": "db93811fc2b7302f8e20aa8209e208883b3f41c8d07a299793b901af5afcb0ac"
+    },
+    {
+      "bytes": 12352,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster0__probe_only__replica_02__SIGNED_DRIFT.json",
+      "sha256": "23333d1f602442a6b018c642632b6a0b06573b97bee1fd30ab466a5f608b4b73"
+    },
+    {
+      "bytes": 12352,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster0__probe_only__replica_03__STATE_MOTION.json",
+      "sha256": "205219605c336c21d4db3d504654ca570ceba7fd21bb362b2d0fa509545988f8"
+    },
+    {
+      "bytes": 12352,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster0__probe_only__replica_03__SIGNED_DRIFT.json",
+      "sha256": "45e62ef8b41bb094472bdeb609cb62ac5a49d96bbdb747ceb3728523c163fc51"
+    },
+    {
+      "bytes": 12388,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0073__candidate_no_probe__replica_01__STATE_MOTION.json",
+      "sha256": "88637f0e909349d01d7ac9805d0f45d90e9214e22b941704a3e88be3836417a5"
+    },
+    {
+      "bytes": 12388,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0073__candidate_no_probe__replica_01__SIGNED_DRIFT.json",
+      "sha256": "1615e7c6d0f2ccff28634dcd9ad0573aceb9ddb2c11433ef27903cdac0816853"
+    },
+    {
+      "bytes": 12388,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0073__candidate_no_probe__replica_02__STATE_MOTION.json",
+      "sha256": "fc28e0b7dc5489ff76066638d1883e184be2b57b714acadc2180edff4ab67726"
+    },
+    {
+      "bytes": 12388,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0073__candidate_no_probe__replica_02__SIGNED_DRIFT.json",
+      "sha256": "7eabd61ca285e57bf22b6ac30c6df480e6ff23b4f59592328ac6288dc2f9b12e"
+    },
+    {
+      "bytes": 12388,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0073__candidate_no_probe__replica_03__STATE_MOTION.json",
+      "sha256": "3811671741cb2f621e326b57a4d3073b45682b684cb961cec2a5800679ee53f9"
+    },
+    {
+      "bytes": 12388,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0073__candidate_no_probe__replica_03__SIGNED_DRIFT.json",
+      "sha256": "0d9bbb5bfa03b6bccef7bce443d4c3875c1daa1e3d4bd91d266d7e03d128d17e"
+    },
+    {
+      "bytes": 12377,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0073__candidate_probe__replica_01__STATE_MOTION.json",
+      "sha256": "5b77a27af9620de791997ea34f358d0df01019bdf6b00c39425b04a25217c332"
+    },
+    {
+      "bytes": 12377,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0073__candidate_probe__replica_01__SIGNED_DRIFT.json",
+      "sha256": "56369a0c49b965da3de89aaa219928fb80d6ac1abf8950bf256500924b105947"
+    },
+    {
+      "bytes": 12377,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0073__candidate_probe__replica_02__STATE_MOTION.json",
+      "sha256": "76fea8c6ecd8feafe9ff20b512d4e3b9bb246a351e5da180fc9340bb6258e614"
+    },
+    {
+      "bytes": 12377,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0073__candidate_probe__replica_02__SIGNED_DRIFT.json",
+      "sha256": "8be9cb3d2c698a569f4bb11866a8663cddb93753c01e35c597294924bcfb6945"
+    },
+    {
+      "bytes": 12377,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0073__candidate_probe__replica_03__STATE_MOTION.json",
+      "sha256": "23133ed649e6909c5132008fb2db6d5f4e32566a1f8bce3cae0289a700d851b1"
+    },
+    {
+      "bytes": 12377,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0073__candidate_probe__replica_03__SIGNED_DRIFT.json",
+      "sha256": "318b03cf6495e002f0f6be8b0061318db403bc3f841c733a846e477115c3c0a9"
+    },
+    {
+      "bytes": 12324,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster4__apo__replica_01__STATE_MOTION.json",
+      "sha256": "46f9d10df0ded1cdc7a47b07708a94c3adb52abaf86dd5174ae85bf4d0409945"
+    },
+    {
+      "bytes": 12324,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster4__apo__replica_01__SIGNED_DRIFT.json",
+      "sha256": "b8b9c1846739cf95bca804dbcf74705016a252fa0d44100a86f869bc8b293e7c"
+    },
+    {
+      "bytes": 12324,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster4__apo__replica_02__STATE_MOTION.json",
+      "sha256": "836f652e7fdf21f994cbcf1efbe793a10b1c311ea0fd68de2ab80a6f4df1ab31"
+    },
+    {
+      "bytes": 12324,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster4__apo__replica_02__SIGNED_DRIFT.json",
+      "sha256": "ed3fa11a6579f4977badcc7c7c7988264a31c37f9d02bfa7929b7429d44777a5"
+    },
+    {
+      "bytes": 12324,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster4__apo__replica_03__STATE_MOTION.json",
+      "sha256": "92a83ca70fa13e79935981e5a1199f899096ab2e4a47a7d368b31c23fde314f8"
+    },
+    {
+      "bytes": 12324,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster4__apo__replica_03__SIGNED_DRIFT.json",
+      "sha256": "911f9bd9b21acd957e117c884bf46086c96d23aa2aac5060749daea53aaf0f48"
+    },
+    {
+      "bytes": 12352,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster4__probe_only__replica_01__STATE_MOTION.json",
+      "sha256": "7279c9be02702e110400ad1c9c8ad1260bedb82afcf014b41cf82595f2896d02"
+    },
+    {
+      "bytes": 12352,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster4__probe_only__replica_01__SIGNED_DRIFT.json",
+      "sha256": "814520495750b8007f8bd1311c66d5466f9cf6997ac2ff5284a8f80f1aca38a5"
+    },
+    {
+      "bytes": 12352,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster4__probe_only__replica_02__STATE_MOTION.json",
+      "sha256": "95bb88ca9c61fdaff848d13fa8dad7b577aca8b6d2e2adbdc8427583f8e93a12"
+    },
+    {
+      "bytes": 12352,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster4__probe_only__replica_02__SIGNED_DRIFT.json",
+      "sha256": "0d4e51d87828387c58a9608a5712421fa43b6b8d88f1622fc332aba6769ace8a"
+    },
+    {
+      "bytes": 12352,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster4__probe_only__replica_03__STATE_MOTION.json",
+      "sha256": "fde47f76dafce2ced305622330c4e0bc364401c4aa92e2bcf888c828b86f4e2c"
+    },
+    {
+      "bytes": 12352,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster4__probe_only__replica_03__SIGNED_DRIFT.json",
+      "sha256": "53a6d509f073c406a82bc93fc8beda6da537e77a2241d9905edcd870a2ee9cee"
+    },
+    {
+      "bytes": 12388,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0027__candidate_no_probe__replica_01__STATE_MOTION.json",
+      "sha256": "a5a2f31fa2db6a2115a3138a2ad9e8adf90aff689eb85734310ecda0819ca57a"
+    },
+    {
+      "bytes": 12388,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0027__candidate_no_probe__replica_01__SIGNED_DRIFT.json",
+      "sha256": "794eec9427734784cb1f3c0b93fd766a01a84d4682f7dcc74e7985da61c6c28f"
+    },
+    {
+      "bytes": 12388,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0027__candidate_no_probe__replica_02__STATE_MOTION.json",
+      "sha256": "1749872cf715c3f7b9f97ddd634e9661731f9fa4e27f22d61636a8ebcefcf950"
+    },
+    {
+      "bytes": 12388,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0027__candidate_no_probe__replica_02__SIGNED_DRIFT.json",
+      "sha256": "0c819c48a1db9bdaf1465137fd4893a84dcdcb391cfc60dc54734414e798c0a2"
+    },
+    {
+      "bytes": 12388,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0027__candidate_no_probe__replica_03__STATE_MOTION.json",
+      "sha256": "75416ab085017bb9b3f583c7bda2d831e8b8cc92dc65068375197987e2c47703"
+    },
+    {
+      "bytes": 12388,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0027__candidate_no_probe__replica_03__SIGNED_DRIFT.json",
+      "sha256": "07b6213f2272892e5b8b67c33aed6864603a84eb0fbd86a5409cc258b4f59334"
+    },
+    {
+      "bytes": 12377,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0027__candidate_probe__replica_01__STATE_MOTION.json",
+      "sha256": "0cd3a569607b4214f3aef01fa73da1538a99758cf557e9bcfd3b4e7753b19ff5"
+    },
+    {
+      "bytes": 12377,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0027__candidate_probe__replica_01__SIGNED_DRIFT.json",
+      "sha256": "71fd839bda8df97c5a7898a7d9f19e9c4f1d7a0caaf284b062ac758e87c14ca2"
+    },
+    {
+      "bytes": 12377,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0027__candidate_probe__replica_02__STATE_MOTION.json",
+      "sha256": "22160b00aeb73231dd6aac673fda99b49aadf64a7bbd004058afaf31d3f7296e"
+    },
+    {
+      "bytes": 12377,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0027__candidate_probe__replica_02__SIGNED_DRIFT.json",
+      "sha256": "f326c75b6f06840e5abd3ac75e5fb5e0ac315b7ee2edd7f3839438c4ed99996f"
+    },
+    {
+      "bytes": 12377,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0027__candidate_probe__replica_03__STATE_MOTION.json",
+      "sha256": "58f18d430e6b878a8a5289ea355c04a8368800077381a49be74fdfffaae710dd"
+    },
+    {
+      "bytes": 12377,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0027__candidate_probe__replica_03__SIGNED_DRIFT.json",
+      "sha256": "2fcfbec0575c7a18dfe660ce3dadd908325862af57a0f377c25166e2f1a8ac28"
+    },
+    {
+      "bytes": 12324,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster9__apo__replica_01__STATE_MOTION.json",
+      "sha256": "7d0b3f0a638f1d79665903e2fe10e7d2aeb4442ab0811b5ebd322c5238366d64"
+    },
+    {
+      "bytes": 12324,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster9__apo__replica_01__SIGNED_DRIFT.json",
+      "sha256": "7d841501bca2af157e32a567eb974e9a56c5d420af9d423ede5790543bb6bd38"
+    },
+    {
+      "bytes": 12324,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster9__apo__replica_02__STATE_MOTION.json",
+      "sha256": "d28f523b51eb3d5abcea179a1a61403d897877ad228934ef23577f85150254c8"
+    },
+    {
+      "bytes": 12324,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster9__apo__replica_02__SIGNED_DRIFT.json",
+      "sha256": "8dca4e0ad9961be820c7affd56ee9314a415001ca8bf8ee4d6365a219e8cd7e4"
+    },
+    {
+      "bytes": 12324,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster9__apo__replica_03__STATE_MOTION.json",
+      "sha256": "fb0fdbcdbd22232f8d2f225c8451d3b3d0ead76a3b1a45231c8ae5d8592fc586"
+    },
+    {
+      "bytes": 12324,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster9__apo__replica_03__SIGNED_DRIFT.json",
+      "sha256": "a68b178eb31597c0090f45260e6232bbc7b61394ced8d8e7c8d1b086703c5dd4"
+    },
+    {
+      "bytes": 12352,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster9__probe_only__replica_01__STATE_MOTION.json",
+      "sha256": "75ebb192d108b596add81a993f333ece13d6cb1c6c7fd97568fa8ecc4f3d9e2b"
+    },
+    {
+      "bytes": 12352,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster9__probe_only__replica_01__SIGNED_DRIFT.json",
+      "sha256": "a6638f7d0e21ca8c4cdd7d86c9e79afa1cc81881025d760a007a5e2b3455d122"
+    },
+    {
+      "bytes": 12352,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster9__probe_only__replica_02__STATE_MOTION.json",
+      "sha256": "5e1b0efc73373e284e1ca8dd4ac8f71dfa99da7cb0d6aef2ead9b7ed920dfc08"
+    },
+    {
+      "bytes": 12352,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster9__probe_only__replica_02__SIGNED_DRIFT.json",
+      "sha256": "6f7b5463893c6bc31024ed9a6ecc02d4f21700d1d2d89f69805f6adda1b6c2b5"
+    },
+    {
+      "bytes": 12352,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster9__probe_only__replica_03__STATE_MOTION.json",
+      "sha256": "ef3f4480dab78f16e16c455dbfaab002c7a9ee23e0fb70fd227198b521317a6e"
+    },
+    {
+      "bytes": 12352,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\cluster9__probe_only__replica_03__SIGNED_DRIFT.json",
+      "sha256": "c3c68824cddcac814ed42f7be7518383fba53b83c7866e16b99b5536d77b6471"
+    },
+    {
+      "bytes": 12388,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0010__candidate_no_probe__replica_01__STATE_MOTION.json",
+      "sha256": "5075a7b8225ed27f2c202c32022b89a98e6830dcdb236c92f3f1066e4fefaa57"
+    },
+    {
+      "bytes": 12388,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0010__candidate_no_probe__replica_01__SIGNED_DRIFT.json",
+      "sha256": "27ceed2c2d558be8a385de39c3f22b5fb78af64fab92efb08517722b0a5d8c83"
+    },
+    {
+      "bytes": 12388,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0010__candidate_no_probe__replica_02__STATE_MOTION.json",
+      "sha256": "6a486576f6f58cb350dba9837caa04c0546d442d2ac0773ee2ae8c8cdaed0a0d"
+    },
+    {
+      "bytes": 12388,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0010__candidate_no_probe__replica_02__SIGNED_DRIFT.json",
+      "sha256": "735a35d7141d6e69f5335593fcfbbc6633aa7b6614c080853d5b5f0c879660d6"
+    },
+    {
+      "bytes": 12388,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0010__candidate_no_probe__replica_03__STATE_MOTION.json",
+      "sha256": "6dc8feb7ed5413e1380810d898abf18a0c542f77ce33f54a0393f1fe054795a7"
+    },
+    {
+      "bytes": 12388,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0010__candidate_no_probe__replica_03__SIGNED_DRIFT.json",
+      "sha256": "ba7f4ef49b07f1ae0af63e1b3424e23b9cefd80333d678c961184b878c4053e6"
+    },
+    {
+      "bytes": 12377,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0010__candidate_probe__replica_01__STATE_MOTION.json",
+      "sha256": "104f780763ce3d43a5c4c6a8c1feb83b528ffbed24607007fe100f8855813034"
+    },
+    {
+      "bytes": 12377,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0010__candidate_probe__replica_01__SIGNED_DRIFT.json",
+      "sha256": "3ab9b023bdd4a4e6f639529272370ef27baa6e4b81e1bb4597fd7992359289d6"
+    },
+    {
+      "bytes": 12377,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0010__candidate_probe__replica_02__STATE_MOTION.json",
+      "sha256": "df14e48ce3380bc105b2d09b822e9cfb440bd5c4a419e3db2c3a0dd76f9be1e3"
+    },
+    {
+      "bytes": 12377,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0010__candidate_probe__replica_02__SIGNED_DRIFT.json",
+      "sha256": "3e9c6facb7db9c50c15d1a8238090b16d25ce440a598278339de44c332eefb5e"
+    },
+    {
+      "bytes": 12377,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0010__candidate_probe__replica_03__STATE_MOTION.json",
+      "sha256": "ba74366cf8efb649f0811f9c445f951959a85887a6cf1c5b507dccfa08eaec03"
+    },
+    {
+      "bytes": 12377,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\manifests\\full\\PACER0010__candidate_probe__replica_03__SIGNED_DRIFT.json",
+      "sha256": "40b267723cd75a406aba4fe77ffa4e519fc7484dabe9c5c127d01c87ed2baad7"
+    }
+  ],
+  "phase1_receipt": {
+    "bytes": 14182,
+    "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\PHASE1_FREEZE_RECEIPT_v01.json",
+    "sha256": "55c42fdf7447deed150e4c36bcce8515983b4422e888ace6c341529a697b80f3"
+  },
+  "status": "PHASE2A_FULL_FROZEN",
+  "temporal_contract": {
+    "analysis_frame_spacing_ps": 50,
+    "analysis_frames": 200,
+    "block_duration_ns": 1.0,
+    "block_frames": 20,
+    "block_internal_span_ps": 950,
+    "blocks_per_trajectory": 10,
+    "first_raw_frame_index": 0,
+    "internal_lag_ps": 50,
+    "interpolation": false,
+    "last_raw_frame_index": 995,
+    "raw_frame_ids": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145,
+      150,
+      155,
+      160,
+      165,
+      170,
+      175,
+      180,
+      185,
+      190,
+      195,
+      200,
+      205,
+      210,
+      215,
+      220,
+      225,
+      230,
+      235,
+      240,
+      245,
+      250,
+      255,
+      260,
+      265,
+      270,
+      275,
+      280,
+      285,
+      290,
+      295,
+      300,
+      305,
+      310,
+      315,
+      320,
+      325,
+      330,
+      335,
+      340,
+      345,
+      350,
+      355,
+      360,
+      365,
+      370,
+      375,
+      380,
+      385,
+      390,
+      395,
+      400,
+      405,
+      410,
+      415,
+      420,
+      425,
+      430,
+      435,
+      440,
+      445,
+      450,
+      455,
+      460,
+      465,
+      470,
+      475,
+      480,
+      485,
+      490,
+      495,
+      500,
+      505,
+      510,
+      515,
+      520,
+      525,
+      530,
+      535,
+      540,
+      545,
+      550,
+      555,
+      560,
+      565,
+      570,
+      575,
+      580,
+      585,
+      590,
+      595,
+      600,
+      605,
+      610,
+      615,
+      620,
+      625,
+      630,
+      635,
+      640,
+      645,
+      650,
+      655,
+      660,
+      665,
+      670,
+      675,
+      680,
+      685,
+      690,
+      695,
+      700,
+      705,
+      710,
+      715,
+      720,
+      725,
+      730,
+      735,
+      740,
+      745,
+      750,
+      755,
+      760,
+      765,
+      770,
+      775,
+      780,
+      785,
+      790,
+      795,
+      800,
+      805,
+      810,
+      815,
+      820,
+      825,
+      830,
+      835,
+      840,
+      845,
+      850,
+      855,
+      860,
+      865,
+      870,
+      875,
+      880,
+      885,
+      890,
+      895,
+      900,
+      905,
+      910,
+      915,
+      920,
+      925,
+      930,
+      935,
+      940,
+      945,
+      950,
+      955,
+      960,
+      965,
+      970,
+      975,
+      980,
+      985,
+      990,
+      995
+    ],
+    "raw_frame_spacing_ps": 10,
+    "raw_frames": 1000,
+    "stride": 5,
+    "stride_definition": "frames[::5]"
+  }
+}

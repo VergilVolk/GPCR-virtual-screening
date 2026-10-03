@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "identity": {
+    "canonical_population": 200,
+    "docking_population": 200,
+    "drugclip_population": 200,
+    "canonical_docking_graph_overlap": 200,
+    "canonical_drugclip_graph_overlap": 200,
+    "docking_drugclip_graph_overlap": 200,
+    "missing": 0,
+    "extra": 0,
+    "duplicates": 0,
+    "docking_tasks_expected": 2000,
+    "docking_tasks_completed": 2000,
+    "receptor_clusters": 10,
+    "state_parent_mapping": "Full isomeric graph after explicit protonation neutralization; no truncated InChIKey matching",
+    "canonical_input_sha256": "0dd7689860879eaae8abe806699a05a1c261a439e7355b99628e982abe46f52b",
+    "drugclip_input_sha256": "bda22c9354a9ebf4a263ce92ccf1257c8b27e8e3e747404b0f4fa97c3fb34d89"
+  },
+  "merged_population": 200,
+  "gate_unchanged": true,
+  "router_order_unchanged": true,
+  "selected_count": 3,
+  "selected_candidates": [
+    "PACER0010",
+    "PACER0073",
+    "PACER0027"
+  ],
+  "scaffold_selection_matches_frozen_rule": true,
+  "pose_selection_matches_frozen_rule": true,
+  "selected_pose_graph_identity_pass": true,
+  "historical_drugclip_contamination": false
+}

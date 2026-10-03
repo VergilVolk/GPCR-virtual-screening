@@ -1,0 +1,9 @@
+{
+  "branches": {
+    "SIGNED_DRIFT": 272084,
+    "STATE_MOTION": 272340
+  },
+  "historical_base_seed": 271828,
+  "policy": "historical base plus branch input width",
+  "schema": "pacer_fkg_v02.seeds.v1"
+}

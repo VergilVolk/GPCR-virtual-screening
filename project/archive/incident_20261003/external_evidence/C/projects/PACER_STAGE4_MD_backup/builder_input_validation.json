@@ -1,0 +1,38 @@
+{
+  "stage3d_input_validation": "PASS",
+  "candidates": [
+    "PACER0010",
+    "PACER0073",
+    "PACER0027"
+  ],
+  "selected": [
+    "PACER0073"
+  ],
+  "system_count": 12,
+  "missing_assets": [],
+  "assets": {
+    "opm": {
+      "path": "/home/ubuntu/pacer_stage4_10ns/project/data/pdb/7TRS_OPM.pdb",
+      "exists": true,
+      "sha256": "2f9060a0281bd5ba787fefcfc24d244b695d9a86919a634c5cf12cef1c2a1aba"
+    },
+    "7TRS": {
+      "path": "/home/ubuntu/pacer_stage4_10ns/project/data/pdb/7TRS.pdb",
+      "exists": true,
+      "sha256": "53442edb5d1ce98d4fcbf9ae52d96f2b387c5ace1b913b40b54906227416fcc1"
+    },
+    "ACH_template": {
+      "path": "/home/ubuntu/pacer_stage4_10ns/project/data/pdb/m4_ligands/ACH_ideal.sdf",
+      "exists": true,
+      "sha256": "60b6bfcf9aa31efab1743ef6dce7dfca482e03b634e38723d7f84d535fa5b3cf"
+    }
+  },
+  "production_started": false,
+  "dry_run": true,
+  "identity": {
+    "parent_graph": "PASS",
+    "microstate_charge": "PASS",
+    "heavy_atom_mapping": "PASS",
+    "stereo": "Full source SMILES identity; unspecified stereo is not inferred from coordinates"
+  }
+}

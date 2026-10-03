@@ -1,0 +1,92 @@
+{
+  "schema": "pacer.prospective.stage2_qc.v1",
+  "frozen_implementation": "project/scripts/build_candidate_portfolio.py",
+  "frozen_implementation_sha256": "4751f7452a64ad644bbe0d2d2789d8f81707c5e6ee6d3e88b47a20e456b4d3ed",
+  "frozen_thresholds": {
+    "mw_range": [
+      250,
+      550
+    ],
+    "logp_range": [
+      -1,
+      5.5
+    ],
+    "tpsa_max": 140,
+    "rotb_max": 10,
+    "pains_must_be_zero": true,
+    "domain_local": [
+      0.55,
+      0.85
+    ],
+    "domain_exploratory": [
+      0.35,
+      0.55
+    ],
+    "n_neighbors_threshold": 0.45,
+    "n_neighbors_min": 3,
+    "strict_inactive_risk_max": 0.45,
+    "quota_local": 160,
+    "quota_exploratory": 40
+  },
+  "thresholds_modified": false,
+  "input_count": 2605,
+  "input_sha256": "a832c9cb2cfbed9b2e3db7902b48db5c384980cc70c551961c87f57db9e3be5d",
+  "audited_count": 2592,
+  "rejection_count": 2405,
+  "rejection_counts_by_rule_conjunctive": {
+    "exact_known_molecule": 13,
+    "pains_match": 0,
+    "druglike_composite_fail": 0,
+    "outside_applicability_domain": 931,
+    "strict_inactive_risk_ge_0.45": 55
+  },
+  "rejection_counts_primary_reason_exclusive": {
+    "exact_known_molecule": 13,
+    "outside_applicability_domain": 931,
+    "druglike_fail": 0,
+    "strict_inactive_risk": 15,
+    "portfolio_quota_cap": 1446
+  },
+  "primary_reason_sum": 2405,
+  "eligible_count": 1646,
+  "pass_count": 200,
+  "unique_final_molecules": 200,
+  "duplicate_candidate_ids": 0,
+  "candidate_ids_deterministic": true,
+  "independent_rule_violations": [],
+  "independent_rule_violation_count": 0,
+  "outputs": {
+    "predock_portfolio.csv": {
+      "sha256": "0dd7689860879eaae8abe806699a05a1c261a439e7355b99628e982abe46f52b",
+      "bytes": 50012,
+      "rows": 200
+    },
+    "all_generated_audit.csv": {
+      "sha256": "085c59bc874a68036ae93312c688a6badbc57c7072e7e23b0ca6914fce88da53",
+      "bytes": 625626,
+      "rows": 2592
+    },
+    "audit.json": {
+      "sha256": "cc1645d10632630f76415572fa1ec190b4dad5f999181e53e7e5ce5bb657bf98"
+    }
+  },
+  "producer_audit_json": {
+    "n_raw_unique": 2592,
+    "domain_counts": {
+      "exploratory": 1246,
+      "reject_domain": 931,
+      "local": 415
+    },
+    "n_eligible": 1646,
+    "n_predock": 200,
+    "generator_counts": {
+      "fragment": 200
+    },
+    "tier_counts": {
+      "local": 160,
+      "exploratory": 40
+    },
+    "policy": "No weighted total score. Exact known molecules excluded; local potency used only inside similarity domain; classifier probability is a risk flag."
+  },
+  "passed": true
+}

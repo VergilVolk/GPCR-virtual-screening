@@ -1,0 +1,149 @@
+{
+  "schema": "pacer.prospective.stage1_generation_receipt.v1",
+  "stage": "STAGE1_GENERATION",
+  "status": "STAGE1_GENERATION_COMPLETE",
+  "created_at": "2026-10-01T18:15:19.872Z",
+  "run_id": "PACER-PROSPECTIVE-20261002",
+  "production_baseline": {
+    "branch": "integration/final-freeze-v01",
+    "commit": "ddc11f970f508d89a75dac8ca30c41cfcd361731",
+    "tag": "pacer-code-freeze-v01",
+    "freeze_anchor_sha256": "b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd"
+  },
+  "implementation": {
+    "script": "project/scripts/fragment_generation.py",
+    "sha256": "ffc196290f8a8f3887e35f8e2a994cdb0e519375178bc53856387cb9d48be1fe",
+    "invoked_as": "python scripts/fragment_generation.py",
+    "cwd": "<worktree>/project",
+    "environment": "conda env chrm4_vs (python 3.9.23, rdkit 2025.03.5)",
+    "rng": "none in code; effective RNG = PYTHONHASHSEED",
+    "effective_rng_pin": {
+      "env": "PYTHONHASHSEED",
+      "value": "0",
+      "declared_before_authoritative_execution": true
+    }
+  },
+  "input_provenance": {
+    "seed_file": {
+      "path": "project\\data\\generated\\actives.smi",
+      "sha256": "a6fe474a513b93bd15114628d17ad634e21717463c09ff400e74810379ffa64f",
+      "bytes": 582
+    },
+    "seed_derivation_protocol": "PACER-SEED-DERIVATION-v01",
+    "seed_derivation_receipt": "STAGE1_SEED_DERIVATION_RECEIPT_v01.json",
+    "seed_derivation_receipt_sha256": "09758020f6b25d2a3c3f34f18d1257bcd953333ebd2a039a54d8db3d8f3b6b4a",
+    "n_seeds": 12,
+    "seed_ids": [
+      "CM00482",
+      "CM00681",
+      "CM00366",
+      "CM00825",
+      "CM00353",
+      "CM00123",
+      "CM00240",
+      "CM00478",
+      "CM00202",
+      "CM00651",
+      "CM00243",
+      "CM00758"
+    ],
+    "fallback_seeds_used": false,
+    "dataset_manifest_verification": {
+      "manifest": "CHRM4_PAM_Modeling_Handoff_v1.0/SHA256SUMS.txt",
+      "result": "all entries match on LF-normalised SHA256; the checkout is CRLF",
+      "raw_hashes_match": false,
+      "lf_normalised_hashes_match": true
+    },
+    "generator_parameters_frozen_in_code": {
+      "MW_RANGE": [
+        250,
+        550
+      ],
+      "LOGP_MAX": 5.5,
+      "HBD_MAX": 5,
+      "HBA_MAX": 10,
+      "ROTB_MAX": 10,
+      "TPSA_RANGE": [
+        40,
+        140
+      ],
+      "MIN_AROM_RINGS": 2,
+      "MIN_HBA": 2,
+      "MIN_HBD": 1,
+      "MAX_FRAGS": 5,
+      "MAX_GENERATE": 5000,
+      "MAX_ATTEMPTS": 200000
+    }
+  },
+  "summary": {
+    "raw_generated": 5000,
+    "valid": 2605,
+    "invalid": 2395,
+    "duplicates": 0,
+    "unique_valid": 2605,
+    "output_sha256": "a832c9cb2cfbed9b2e3db7902b48db5c384980cc70c551961c87f57db9e3be5d",
+    "output_bytes": 262621,
+    "output_path": "project/results/generated/generated_pam_analogs.csv",
+    "join_attempts": 17146,
+    "join_attempt_limit": 200000,
+    "generate_cap": 5000,
+    "generate_cap_reached": true
+  },
+  "duplicate_accounting_note": "The frozen implementation collects molecules into a Python set keyed by canonical SMILES, so intra-generator duplicate joins are absorbed before the 'generated' count is printed and no exact intra-generator duplicate figure is emitted by the frozen code. The reported duplicates value is therefore the measured duplicate count in the delivered output (0 raw, 0 canonical). Seed-level duplicates (multiple measurement groups per molecule) are accounted for in the seed-derivation receipt.",
+  "qc": {
+    "gate_results": {
+      "seed_reconstruction": "12/12 PASS",
+      "valid_count_positive": "2605 > 0 PASS",
+      "output_parses": "PASS",
+      "all_smiles_rdkit_valid": "invalid=0 PASS",
+      "no_duplicate_smiles": "raw=0 canonical=0 PASS",
+      "all_frozen_rules_reverified_independently": "violations=0 PASS",
+      "determinism_two_pinned_runs_byte_identical": "PASS (a832c9cb2cfbed9b)"
+    },
+    "passed": true,
+    "receipt": "STAGE1_QC_v01.json",
+    "receipt_sha256": "0cc0db38220ff9d637654482c7bd039f7cc00806f1db5c6679b14a44cb459193"
+  },
+  "defect_found_and_dispositioned": {
+    "defect": "The frozen generator is non-deterministic under default PYTHONHASHSEED.",
+    "root_cause": "frag_pool is built by iterating COMPAT, a defaultdict(set) of str; Python randomises string hashing per process, so recombination order and therefore the retained 5000-molecule set vary between processes.",
+    "evidence": {
+      "unpinned_run_a": {
+        "join_attempts": 28432,
+        "passed": 3212,
+        "output_sha256": "077aad8d8da2cbd89c994b9ea38d12faa05dcd75528d7d02f09bdbbb71a2e738"
+      },
+      "unpinned_run_b": {
+        "join_attempts": 20333,
+        "passed": 930,
+        "output_sha256": "4af697db9c6b73fe16412107a2ba3bf28b6b233227ccd550cc60ff89b867d0f2"
+      },
+      "pinned_run_a": {
+        "join_attempts": 17146,
+        "passed": 2605,
+        "output_sha256": "a832c9cb2cfbed9b2e3db7902b48db5c384980cc70c551961c87f57db9e3be5d"
+      },
+      "pinned_run_b": {
+        "join_attempts": 17146,
+        "passed": 2605,
+        "output_sha256": "a832c9cb2cfbed9b2e3db7902b48db5c384980cc70c551961c87f57db9e3be5d"
+      }
+    },
+    "disposition": "PYTHONHASHSEED=0 declared as the effective RNG pin in STAGE1_RUN_SPEC_v01.json and used for the authoritative execution. No scientific parameter, threshold, model weight or selection rule was changed.",
+    "historical_note": "The archived historical run reported 2954 passed molecules; that figure is consistent with an unpinned PYTHONHASHSEED and is NOT reproducible. The historical generated library is therefore not byte-recoverable, as declared in the integration preflight."
+  },
+  "artifacts": [
+    "STAGE1_RUN_SPEC_v01.json",
+    "STAGE1_SEED_DERIVATION_RECEIPT_v01.json",
+    "STAGE1_QC_v01.json",
+    "logs_stage1_pinned_A.txt",
+    "logs_stage1_pinned_B.txt",
+    "logs_stage1_generation.txt",
+    "logs_stage1_generation_rerun.txt",
+    "_stage1_pinned_A.csv",
+    "_stage1_pinned_B.csv",
+    "_stage1_first_run_copy.csv",
+    "tools/derive_seeds.py",
+    "tools/stage1_qc.py"
+  ]
+}

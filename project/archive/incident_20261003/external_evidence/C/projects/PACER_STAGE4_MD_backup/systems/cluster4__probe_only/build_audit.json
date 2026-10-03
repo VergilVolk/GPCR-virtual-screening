@@ -1,0 +1,3398 @@
+{
+  "status": "COMPLETE",
+  "candidate": "PACER0027",
+  "cluster": 4,
+  "context": "probe_only",
+  "canonical_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+  "state_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC([NH+]4CC([NH2+]C5Cc6ccccc6C5)C4)C3)c(N)c12",
+  "formal_state_charge": 2,
+  "source_assets": {
+    "opm": {
+      "path": "/home/ubuntu/pacer_stage4_10ns/project/data/pdb/7TRS_OPM.pdb",
+      "sha256": "2f9060a0281bd5ba787fefcfc24d244b695d9a86919a634c5cf12cef1c2a1aba"
+    },
+    "7TRS": {
+      "path": "/home/ubuntu/pacer_stage4_10ns/project/data/pdb/7TRS.pdb",
+      "sha256": "53442edb5d1ce98d4fcbf9ae52d96f2b387c5ace1b913b40b54906227416fcc1"
+    },
+    "ACH_template": {
+      "path": "/home/ubuntu/pacer_stage4_10ns/project/data/pdb/m4_ligands/ACH_ideal.sdf",
+      "sha256": "60b6bfcf9aa31efab1743ef6dce7dfca482e03b634e38723d7f84d535fa5b3cf"
+    }
+  },
+  "alignment": {
+    "cluster": 4,
+    "reference": "/home/ubuntu/pacer_stage4_10ns/project/data/pdb/7TRS_OPM.pdb",
+    "reference_sha256": "2f9060a0281bd5ba787fefcfc24d244b695d9a86919a634c5cf12cef1c2a1aba",
+    "alignment_atom_selection": "CA; full normalized-sequence correspondence",
+    "opm_reference_chain": "R",
+    "mobile_chain": " ",
+    "mobile": "/home/ubuntu/pacer_stage4_10ns/project/results/m4_gamd_ensemble/receptors/cluster_04_receptor.pdb",
+    "mobile_sha256": "a79858e958ffb4afe67b4a381f469360589d3cbbd79a0796ec24a7593431aca3",
+    "alignment": {
+      "ca_count": 270,
+      "rmsd_A": 1.781153142581475,
+      "rotation": [
+        [
+          0.9750772648251248,
+          0.1782064897513376,
+          0.13216192580187594
+        ],
+        [
+          0.1802417704481457,
+          -0.983616102760318,
+          -0.003502367245331329
+        ],
+        [
+          0.12937245381792908,
+          0.02723617816635707,
+          -0.99122195233561
+        ]
+      ],
+      "translation_A": [
+        -64.29060724828987,
+        37.80775857588309,
+        71.06647951256336
+      ],
+      "source_center_A": [
+        45.764799999999994,
+        49.40794814814816,
+        81.87609629629623
+      ],
+      "target_center_A": [
+        -0.16850370370370335,
+        -0.4051185185185196,
+        -4.215585185185185
+      ],
+      "correspondence": [
+        {
+          "mobile_resid": "630",
+          "reference_resid": "32",
+          "mobile_residue": "MET",
+          "reference_residue": "MET"
+        },
+        {
+          "mobile_resid": "631",
+          "reference_resid": "33",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "632",
+          "reference_resid": "34",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "633",
+          "reference_resid": "35",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "634",
+          "reference_resid": "36",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "635",
+          "reference_resid": "37",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "636",
+          "reference_resid": "38",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "637",
+          "reference_resid": "39",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "638",
+          "reference_resid": "40",
+          "mobile_residue": "GLY",
+          "reference_residue": "GLY"
+        },
+        {
+          "mobile_resid": "639",
+          "reference_resid": "41",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "640",
+          "reference_resid": "42",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "641",
+          "reference_resid": "43",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "642",
+          "reference_resid": "44",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "643",
+          "reference_resid": "45",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "644",
+          "reference_resid": "46",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "645",
+          "reference_resid": "47",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "646",
+          "reference_resid": "48",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "647",
+          "reference_resid": "49",
+          "mobile_residue": "GLY",
+          "reference_residue": "GLY"
+        },
+        {
+          "mobile_resid": "648",
+          "reference_resid": "50",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "649",
+          "reference_resid": "51",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "650",
+          "reference_resid": "52",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "651",
+          "reference_resid": "53",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "652",
+          "reference_resid": "54",
+          "mobile_residue": "MET",
+          "reference_residue": "MET"
+        },
+        {
+          "mobile_resid": "653",
+          "reference_resid": "55",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "654",
+          "reference_resid": "56",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "655",
+          "reference_resid": "57",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "656",
+          "reference_resid": "58",
+          "mobile_residue": "LYS",
+          "reference_residue": "LYS"
+        },
+        {
+          "mobile_resid": "657",
+          "reference_resid": "59",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "658",
+          "reference_resid": "60",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "659",
+          "reference_resid": "61",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "660",
+          "reference_resid": "62",
+          "mobile_residue": "GLN",
+          "reference_residue": "GLN"
+        },
+        {
+          "mobile_resid": "661",
+          "reference_resid": "63",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "662",
+          "reference_resid": "64",
+          "mobile_residue": "GLN",
+          "reference_residue": "GLN"
+        },
+        {
+          "mobile_resid": "663",
+          "reference_resid": "65",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "664",
+          "reference_resid": "66",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "665",
+          "reference_resid": "67",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "666",
+          "reference_resid": "68",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "667",
+          "reference_resid": "69",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "668",
+          "reference_resid": "70",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "669",
+          "reference_resid": "71",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "670",
+          "reference_resid": "72",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "671",
+          "reference_resid": "73",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "672",
+          "reference_resid": "74",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "673",
+          "reference_resid": "75",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "674",
+          "reference_resid": "76",
+          "mobile_residue": "CYS",
+          "reference_residue": "CYS"
+        },
+        {
+          "mobile_resid": "675",
+          "reference_resid": "77",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "676",
+          "reference_resid": "78",
+          "mobile_residue": "ASP",
+          "reference_residue": "ASP"
+        },
+        {
+          "mobile_resid": "677",
+          "reference_resid": "79",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "678",
+          "reference_resid": "80",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "679",
+          "reference_resid": "81",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "680",
+          "reference_resid": "82",
+          "mobile_residue": "GLY",
+          "reference_residue": "GLY"
+        },
+        {
+          "mobile_resid": "681",
+          "reference_resid": "83",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "682",
+          "reference_resid": "84",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "683",
+          "reference_resid": "85",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "684",
+          "reference_resid": "86",
+          "mobile_residue": "MET",
+          "reference_residue": "MET"
+        },
+        {
+          "mobile_resid": "685",
+          "reference_resid": "87",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "686",
+          "reference_resid": "88",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "687",
+          "reference_resid": "89",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "688",
+          "reference_resid": "90",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "689",
+          "reference_resid": "91",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "690",
+          "reference_resid": "92",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "691",
+          "reference_resid": "93",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "692",
+          "reference_resid": "94",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "693",
+          "reference_resid": "95",
+          "mobile_residue": "LYS",
+          "reference_residue": "LYS"
+        },
+        {
+          "mobile_resid": "694",
+          "reference_resid": "96",
+          "mobile_residue": "GLY",
+          "reference_residue": "GLY"
+        },
+        {
+          "mobile_resid": "695",
+          "reference_resid": "97",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "696",
+          "reference_resid": "98",
+          "mobile_residue": "TRP",
+          "reference_residue": "TRP"
+        },
+        {
+          "mobile_resid": "697",
+          "reference_resid": "99",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "698",
+          "reference_resid": "100",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "699",
+          "reference_resid": "101",
+          "mobile_residue": "GLY",
+          "reference_residue": "GLY"
+        },
+        {
+          "mobile_resid": "700",
+          "reference_resid": "102",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "701",
+          "reference_resid": "103",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "702",
+          "reference_resid": "104",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "703",
+          "reference_resid": "105",
+          "mobile_residue": "CYX",
+          "reference_residue": "CYS"
+        },
+        {
+          "mobile_resid": "704",
+          "reference_resid": "106",
+          "mobile_residue": "ASP",
+          "reference_residue": "ASP"
+        },
+        {
+          "mobile_resid": "705",
+          "reference_resid": "107",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "706",
+          "reference_resid": "108",
+          "mobile_residue": "TRP",
+          "reference_residue": "TRP"
+        },
+        {
+          "mobile_resid": "707",
+          "reference_resid": "109",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "708",
+          "reference_resid": "110",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "709",
+          "reference_resid": "111",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "710",
+          "reference_resid": "112",
+          "mobile_residue": "ASP",
+          "reference_residue": "ASP"
+        },
+        {
+          "mobile_resid": "711",
+          "reference_resid": "113",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "712",
+          "reference_resid": "114",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "713",
+          "reference_resid": "115",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "714",
+          "reference_resid": "116",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "715",
+          "reference_resid": "117",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "716",
+          "reference_resid": "118",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "717",
+          "reference_resid": "119",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "718",
+          "reference_resid": "120",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "719",
+          "reference_resid": "121",
+          "mobile_residue": "MET",
+          "reference_residue": "MET"
+        },
+        {
+          "mobile_resid": "720",
+          "reference_resid": "122",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "721",
+          "reference_resid": "123",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "722",
+          "reference_resid": "124",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "723",
+          "reference_resid": "125",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "724",
+          "reference_resid": "126",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "725",
+          "reference_resid": "127",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "726",
+          "reference_resid": "128",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "727",
+          "reference_resid": "129",
+          "mobile_residue": "ASP",
+          "reference_residue": "ASP"
+        },
+        {
+          "mobile_resid": "728",
+          "reference_resid": "130",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "729",
+          "reference_resid": "131",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "730",
+          "reference_resid": "132",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "731",
+          "reference_resid": "133",
+          "mobile_residue": "CYS",
+          "reference_residue": "CYS"
+        },
+        {
+          "mobile_resid": "732",
+          "reference_resid": "134",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "733",
+          "reference_resid": "135",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "734",
+          "reference_resid": "136",
+          "mobile_residue": "LYS",
+          "reference_residue": "LYS"
+        },
+        {
+          "mobile_resid": "735",
+          "reference_resid": "137",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "736",
+          "reference_resid": "138",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "737",
+          "reference_resid": "139",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "738",
+          "reference_resid": "140",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "739",
+          "reference_resid": "141",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "740",
+          "reference_resid": "142",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "741",
+          "reference_resid": "143",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "742",
+          "reference_resid": "144",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "743",
+          "reference_resid": "145",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "744",
+          "reference_resid": "146",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "745",
+          "reference_resid": "147",
+          "mobile_residue": "LYS",
+          "reference_residue": "LYS"
+        },
+        {
+          "mobile_resid": "746",
+          "reference_resid": "148",
+          "mobile_residue": "MET",
+          "reference_residue": "MET"
+        },
+        {
+          "mobile_resid": "747",
+          "reference_resid": "149",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "748",
+          "reference_resid": "150",
+          "mobile_residue": "GLY",
+          "reference_residue": "GLY"
+        },
+        {
+          "mobile_resid": "749",
+          "reference_resid": "151",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "750",
+          "reference_resid": "152",
+          "mobile_residue": "MET",
+          "reference_residue": "MET"
+        },
+        {
+          "mobile_resid": "751",
+          "reference_resid": "153",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "752",
+          "reference_resid": "154",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "753",
+          "reference_resid": "155",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "754",
+          "reference_resid": "156",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "755",
+          "reference_resid": "157",
+          "mobile_residue": "TRP",
+          "reference_residue": "TRP"
+        },
+        {
+          "mobile_resid": "756",
+          "reference_resid": "158",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "757",
+          "reference_resid": "159",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "758",
+          "reference_resid": "160",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "759",
+          "reference_resid": "161",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "760",
+          "reference_resid": "162",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "761",
+          "reference_resid": "163",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "762",
+          "reference_resid": "164",
+          "mobile_residue": "TRP",
+          "reference_residue": "TRP"
+        },
+        {
+          "mobile_resid": "763",
+          "reference_resid": "165",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "764",
+          "reference_resid": "166",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "765",
+          "reference_resid": "167",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "766",
+          "reference_resid": "168",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "767",
+          "reference_resid": "169",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "768",
+          "reference_resid": "170",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "769",
+          "reference_resid": "171",
+          "mobile_residue": "TRP",
+          "reference_residue": "TRP"
+        },
+        {
+          "mobile_resid": "770",
+          "reference_resid": "172",
+          "mobile_residue": "GLN",
+          "reference_residue": "GLN"
+        },
+        {
+          "mobile_resid": "771",
+          "reference_resid": "173",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "772",
+          "reference_resid": "174",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "773",
+          "reference_resid": "175",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "774",
+          "reference_resid": "176",
+          "mobile_residue": "GLY",
+          "reference_residue": "GLY"
+        },
+        {
+          "mobile_resid": "775",
+          "reference_resid": "177",
+          "mobile_residue": "LYS",
+          "reference_residue": "LYS"
+        },
+        {
+          "mobile_resid": "776",
+          "reference_resid": "178",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "777",
+          "reference_resid": "179",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "778",
+          "reference_resid": "180",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "779",
+          "reference_resid": "181",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "780",
+          "reference_resid": "182",
+          "mobile_residue": "ASP",
+          "reference_residue": "ASP"
+        },
+        {
+          "mobile_resid": "781",
+          "reference_resid": "183",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "782",
+          "reference_resid": "184",
+          "mobile_residue": "GLN",
+          "reference_residue": "GLN"
+        },
+        {
+          "mobile_resid": "783",
+          "reference_resid": "185",
+          "mobile_residue": "CYX",
+          "reference_residue": "CYS"
+        },
+        {
+          "mobile_resid": "784",
+          "reference_resid": "186",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "785",
+          "reference_resid": "187",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "786",
+          "reference_resid": "188",
+          "mobile_residue": "GLN",
+          "reference_residue": "GLN"
+        },
+        {
+          "mobile_resid": "787",
+          "reference_resid": "189",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "788",
+          "reference_resid": "190",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "789",
+          "reference_resid": "191",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "790",
+          "reference_resid": "192",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "791",
+          "reference_resid": "193",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "792",
+          "reference_resid": "194",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "793",
+          "reference_resid": "195",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "794",
+          "reference_resid": "196",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "795",
+          "reference_resid": "197",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "796",
+          "reference_resid": "198",
+          "mobile_residue": "GLY",
+          "reference_residue": "GLY"
+        },
+        {
+          "mobile_resid": "797",
+          "reference_resid": "199",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "798",
+          "reference_resid": "200",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "799",
+          "reference_resid": "201",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "800",
+          "reference_resid": "202",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "801",
+          "reference_resid": "203",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "802",
+          "reference_resid": "204",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "803",
+          "reference_resid": "205",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "804",
+          "reference_resid": "206",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "805",
+          "reference_resid": "207",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "806",
+          "reference_resid": "208",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "807",
+          "reference_resid": "209",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "808",
+          "reference_resid": "210",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "809",
+          "reference_resid": "211",
+          "mobile_residue": "MET",
+          "reference_residue": "MET"
+        },
+        {
+          "mobile_resid": "810",
+          "reference_resid": "212",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "811",
+          "reference_resid": "213",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "812",
+          "reference_resid": "214",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "813",
+          "reference_resid": "215",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "814",
+          "reference_resid": "216",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "815",
+          "reference_resid": "217",
+          "mobile_residue": "HID",
+          "reference_residue": "HIS"
+        },
+        {
+          "mobile_resid": "816",
+          "reference_resid": "218",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "817",
+          "reference_resid": "219",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "818",
+          "reference_resid": "220",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "819",
+          "reference_resid": "221",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "820",
+          "reference_resid": "222",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "821",
+          "reference_resid": "223",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "822",
+          "reference_resid": "224",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "823",
+          "reference_resid": "225",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "824",
+          "reference_resid": "226",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "828",
+          "reference_resid": "392",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "829",
+          "reference_resid": "393",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "830",
+          "reference_resid": "394",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "831",
+          "reference_resid": "395",
+          "mobile_residue": "GLU",
+          "reference_residue": "GLU"
+        },
+        {
+          "mobile_resid": "832",
+          "reference_resid": "396",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "833",
+          "reference_resid": "397",
+          "mobile_residue": "LYS",
+          "reference_residue": "LYS"
+        },
+        {
+          "mobile_resid": "834",
+          "reference_resid": "398",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "835",
+          "reference_resid": "399",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "836",
+          "reference_resid": "400",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "837",
+          "reference_resid": "401",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "838",
+          "reference_resid": "402",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "839",
+          "reference_resid": "403",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "840",
+          "reference_resid": "404",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "841",
+          "reference_resid": "405",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "842",
+          "reference_resid": "406",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "843",
+          "reference_resid": "407",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "844",
+          "reference_resid": "408",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "845",
+          "reference_resid": "409",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "846",
+          "reference_resid": "410",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "847",
+          "reference_resid": "411",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "848",
+          "reference_resid": "412",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "849",
+          "reference_resid": "413",
+          "mobile_residue": "TRP",
+          "reference_residue": "TRP"
+        },
+        {
+          "mobile_resid": "850",
+          "reference_resid": "414",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "851",
+          "reference_resid": "415",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "852",
+          "reference_resid": "416",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "853",
+          "reference_resid": "417",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "854",
+          "reference_resid": "418",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "855",
+          "reference_resid": "419",
+          "mobile_residue": "MET",
+          "reference_residue": "MET"
+        },
+        {
+          "mobile_resid": "856",
+          "reference_resid": "420",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "857",
+          "reference_resid": "421",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "858",
+          "reference_resid": "422",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "859",
+          "reference_resid": "423",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "860",
+          "reference_resid": "424",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "861",
+          "reference_resid": "425",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "862",
+          "reference_resid": "426",
+          "mobile_residue": "CYX",
+          "reference_residue": "CYS"
+        },
+        {
+          "mobile_resid": "863",
+          "reference_resid": "427",
+          "mobile_residue": "GLN",
+          "reference_residue": "GLN"
+        },
+        {
+          "mobile_resid": "864",
+          "reference_resid": "428",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "865",
+          "reference_resid": "429",
+          "mobile_residue": "CYX",
+          "reference_residue": "CYS"
+        },
+        {
+          "mobile_resid": "866",
+          "reference_resid": "430",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "867",
+          "reference_resid": "431",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "868",
+          "reference_resid": "432",
+          "mobile_residue": "ASP",
+          "reference_residue": "ASP"
+        },
+        {
+          "mobile_resid": "869",
+          "reference_resid": "433",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "870",
+          "reference_resid": "434",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "871",
+          "reference_resid": "435",
+          "mobile_residue": "TRP",
+          "reference_residue": "TRP"
+        },
+        {
+          "mobile_resid": "872",
+          "reference_resid": "436",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "873",
+          "reference_resid": "437",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "874",
+          "reference_resid": "438",
+          "mobile_residue": "GLY",
+          "reference_residue": "GLY"
+        },
+        {
+          "mobile_resid": "875",
+          "reference_resid": "439",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "876",
+          "reference_resid": "440",
+          "mobile_residue": "TRP",
+          "reference_residue": "TRP"
+        },
+        {
+          "mobile_resid": "877",
+          "reference_resid": "441",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "878",
+          "reference_resid": "442",
+          "mobile_residue": "CYS",
+          "reference_residue": "CYS"
+        },
+        {
+          "mobile_resid": "879",
+          "reference_resid": "443",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "880",
+          "reference_resid": "444",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "881",
+          "reference_resid": "445",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "882",
+          "reference_resid": "446",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "883",
+          "reference_resid": "447",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "884",
+          "reference_resid": "448",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "885",
+          "reference_resid": "449",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "886",
+          "reference_resid": "450",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "887",
+          "reference_resid": "451",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "888",
+          "reference_resid": "452",
+          "mobile_residue": "CYS",
+          "reference_residue": "CYS"
+        },
+        {
+          "mobile_resid": "889",
+          "reference_resid": "453",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "890",
+          "reference_resid": "454",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "891",
+          "reference_resid": "455",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "892",
+          "reference_resid": "456",
+          "mobile_residue": "CYS",
+          "reference_residue": "CYS"
+        },
+        {
+          "mobile_resid": "893",
+          "reference_resid": "457",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "894",
+          "reference_resid": "458",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "895",
+          "reference_resid": "459",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "896",
+          "reference_resid": "460",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "897",
+          "reference_resid": "461",
+          "mobile_residue": "LYS",
+          "reference_residue": "LYS"
+        },
+        {
+          "mobile_resid": "898",
+          "reference_resid": "462",
+          "mobile_residue": "LYS",
+          "reference_residue": "LYS"
+        },
+        {
+          "mobile_resid": "899",
+          "reference_resid": "463",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "900",
+          "reference_resid": "464",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "901",
+          "reference_resid": "465",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "902",
+          "reference_resid": "466",
+          "mobile_residue": "HID",
+          "reference_residue": "HIS"
+        }
+      ]
+    },
+    "output": "/home/ubuntu/pacer_stage4_10ns/project/results/pacer_stage4_prospective_10ns_v01/orientation/cluster4/oriented_receptor.pdb",
+    "output_sha256": "3f54fa663d71716fbb085b4affc61bf8b639d88a0c950a40f9d969de7515272f",
+    "candidate_pose": "project/results/pacer_stage3d_corrected_20261002_v01/md_shortlist_poses/PACER0027_c04_s00.pdbqt",
+    "candidate_pose_sha256": "88cd9f7b228a25f65e82c9d82a49f65653cd67eb2abe53c3280146cc001d737e",
+    "transformed_candidate_sha256": "a0d04e690ed88415914aa08467fe0d5065aafc10b4543cc932098ff5dad0c5a7",
+    "excluded_native_ach_atoms": 26,
+    "native_ach_source_sha256": "a79858e958ffb4afe67b4a381f469360589d3cbbd79a0796ec24a7593431aca3",
+    "probe_policy": "Remove native source ACH; add explicit experimental 7TRS ACh only in probe contexts",
+    "probe_reference": "/home/ubuntu/pacer_stage4_10ns/project/data/pdb/7TRS.pdb",
+    "probe_reference_sha256": "53442edb5d1ce98d4fcbf9ae52d96f2b387c5ace1b913b40b54906227416fcc1",
+    "probe_reference_receptor_chain": "R",
+    "probe_mapping": {
+      "ca_count": 270,
+      "rmsd_A": 1.781144342163654,
+      "rotation": [
+        [
+          -0.6844754388152419,
+          0.6921053720866288,
+          -0.229092836176759
+        ],
+        [
+          -0.7285562810554648,
+          -0.63797770109352,
+          0.24937962675819778
+        ],
+        [
+          0.026440858407264047,
+          0.3376012541982868,
+          0.940917782896269
+        ]
+      ],
+      "translation_A": [
+        193.28049618310638,
+        18.637228231232626,
+        -3.808298692912615
+      ],
+      "source_center_A": [
+        102.63777037037036,
+        109.2103962962963,
+        87.10976296296299
+      ],
+      "target_center_A": [
+        45.764799999999994,
+        49.40794814814816,
+        81.87609629629623
+      ],
+      "correspondence": [
+        {
+          "mobile_resid": "32",
+          "reference_resid": "630",
+          "mobile_residue": "MET",
+          "reference_residue": "MET"
+        },
+        {
+          "mobile_resid": "33",
+          "reference_resid": "631",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "34",
+          "reference_resid": "632",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "35",
+          "reference_resid": "633",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "36",
+          "reference_resid": "634",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "37",
+          "reference_resid": "635",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "38",
+          "reference_resid": "636",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "39",
+          "reference_resid": "637",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "40",
+          "reference_resid": "638",
+          "mobile_residue": "GLY",
+          "reference_residue": "GLY"
+        },
+        {
+          "mobile_resid": "41",
+          "reference_resid": "639",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "42",
+          "reference_resid": "640",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "43",
+          "reference_resid": "641",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "44",
+          "reference_resid": "642",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "45",
+          "reference_resid": "643",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "46",
+          "reference_resid": "644",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "47",
+          "reference_resid": "645",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "48",
+          "reference_resid": "646",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "49",
+          "reference_resid": "647",
+          "mobile_residue": "GLY",
+          "reference_residue": "GLY"
+        },
+        {
+          "mobile_resid": "50",
+          "reference_resid": "648",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "51",
+          "reference_resid": "649",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "52",
+          "reference_resid": "650",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "53",
+          "reference_resid": "651",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "54",
+          "reference_resid": "652",
+          "mobile_residue": "MET",
+          "reference_residue": "MET"
+        },
+        {
+          "mobile_resid": "55",
+          "reference_resid": "653",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "56",
+          "reference_resid": "654",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "57",
+          "reference_resid": "655",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "58",
+          "reference_resid": "656",
+          "mobile_residue": "LYS",
+          "reference_residue": "LYS"
+        },
+        {
+          "mobile_resid": "59",
+          "reference_resid": "657",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "60",
+          "reference_resid": "658",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "61",
+          "reference_resid": "659",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "62",
+          "reference_resid": "660",
+          "mobile_residue": "GLN",
+          "reference_residue": "GLN"
+        },
+        {
+          "mobile_resid": "63",
+          "reference_resid": "661",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "64",
+          "reference_resid": "662",
+          "mobile_residue": "GLN",
+          "reference_residue": "GLN"
+        },
+        {
+          "mobile_resid": "65",
+          "reference_resid": "663",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "66",
+          "reference_resid": "664",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "67",
+          "reference_resid": "665",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "68",
+          "reference_resid": "666",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "69",
+          "reference_resid": "667",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "70",
+          "reference_resid": "668",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "71",
+          "reference_resid": "669",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "72",
+          "reference_resid": "670",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "73",
+          "reference_resid": "671",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "74",
+          "reference_resid": "672",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "75",
+          "reference_resid": "673",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "76",
+          "reference_resid": "674",
+          "mobile_residue": "CYS",
+          "reference_residue": "CYS"
+        },
+        {
+          "mobile_resid": "77",
+          "reference_resid": "675",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "78",
+          "reference_resid": "676",
+          "mobile_residue": "ASP",
+          "reference_residue": "ASP"
+        },
+        {
+          "mobile_resid": "79",
+          "reference_resid": "677",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "80",
+          "reference_resid": "678",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "81",
+          "reference_resid": "679",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "82",
+          "reference_resid": "680",
+          "mobile_residue": "GLY",
+          "reference_residue": "GLY"
+        },
+        {
+          "mobile_resid": "83",
+          "reference_resid": "681",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "84",
+          "reference_resid": "682",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "85",
+          "reference_resid": "683",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "86",
+          "reference_resid": "684",
+          "mobile_residue": "MET",
+          "reference_residue": "MET"
+        },
+        {
+          "mobile_resid": "87",
+          "reference_resid": "685",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "88",
+          "reference_resid": "686",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "89",
+          "reference_resid": "687",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "90",
+          "reference_resid": "688",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "91",
+          "reference_resid": "689",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "92",
+          "reference_resid": "690",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "93",
+          "reference_resid": "691",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "94",
+          "reference_resid": "692",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "95",
+          "reference_resid": "693",
+          "mobile_residue": "LYS",
+          "reference_residue": "LYS"
+        },
+        {
+          "mobile_resid": "96",
+          "reference_resid": "694",
+          "mobile_residue": "GLY",
+          "reference_residue": "GLY"
+        },
+        {
+          "mobile_resid": "97",
+          "reference_resid": "695",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "98",
+          "reference_resid": "696",
+          "mobile_residue": "TRP",
+          "reference_residue": "TRP"
+        },
+        {
+          "mobile_resid": "99",
+          "reference_resid": "697",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "100",
+          "reference_resid": "698",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "101",
+          "reference_resid": "699",
+          "mobile_residue": "GLY",
+          "reference_residue": "GLY"
+        },
+        {
+          "mobile_resid": "102",
+          "reference_resid": "700",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "103",
+          "reference_resid": "701",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "104",
+          "reference_resid": "702",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "105",
+          "reference_resid": "703",
+          "mobile_residue": "CYS",
+          "reference_residue": "CYX"
+        },
+        {
+          "mobile_resid": "106",
+          "reference_resid": "704",
+          "mobile_residue": "ASP",
+          "reference_residue": "ASP"
+        },
+        {
+          "mobile_resid": "107",
+          "reference_resid": "705",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "108",
+          "reference_resid": "706",
+          "mobile_residue": "TRP",
+          "reference_residue": "TRP"
+        },
+        {
+          "mobile_resid": "109",
+          "reference_resid": "707",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "110",
+          "reference_resid": "708",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "111",
+          "reference_resid": "709",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "112",
+          "reference_resid": "710",
+          "mobile_residue": "ASP",
+          "reference_residue": "ASP"
+        },
+        {
+          "mobile_resid": "113",
+          "reference_resid": "711",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "114",
+          "reference_resid": "712",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "115",
+          "reference_resid": "713",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "116",
+          "reference_resid": "714",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "117",
+          "reference_resid": "715",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "118",
+          "reference_resid": "716",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "119",
+          "reference_resid": "717",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "120",
+          "reference_resid": "718",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "121",
+          "reference_resid": "719",
+          "mobile_residue": "MET",
+          "reference_residue": "MET"
+        },
+        {
+          "mobile_resid": "122",
+          "reference_resid": "720",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "123",
+          "reference_resid": "721",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "124",
+          "reference_resid": "722",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "125",
+          "reference_resid": "723",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "126",
+          "reference_resid": "724",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "127",
+          "reference_resid": "725",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "128",
+          "reference_resid": "726",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "129",
+          "reference_resid": "727",
+          "mobile_residue": "ASP",
+          "reference_residue": "ASP"
+        },
+        {
+          "mobile_resid": "130",
+          "reference_resid": "728",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "131",
+          "reference_resid": "729",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "132",
+          "reference_resid": "730",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "133",
+          "reference_resid": "731",
+          "mobile_residue": "CYS",
+          "reference_residue": "CYS"
+        },
+        {
+          "mobile_resid": "134",
+          "reference_resid": "732",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "135",
+          "reference_resid": "733",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "136",
+          "reference_resid": "734",
+          "mobile_residue": "LYS",
+          "reference_residue": "LYS"
+        },
+        {
+          "mobile_resid": "137",
+          "reference_resid": "735",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "138",
+          "reference_resid": "736",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "139",
+          "reference_resid": "737",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "140",
+          "reference_resid": "738",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "141",
+          "reference_resid": "739",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "142",
+          "reference_resid": "740",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "143",
+          "reference_resid": "741",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "144",
+          "reference_resid": "742",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "145",
+          "reference_resid": "743",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "146",
+          "reference_resid": "744",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "147",
+          "reference_resid": "745",
+          "mobile_residue": "LYS",
+          "reference_residue": "LYS"
+        },
+        {
+          "mobile_resid": "148",
+          "reference_resid": "746",
+          "mobile_residue": "MET",
+          "reference_residue": "MET"
+        },
+        {
+          "mobile_resid": "149",
+          "reference_resid": "747",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "150",
+          "reference_resid": "748",
+          "mobile_residue": "GLY",
+          "reference_residue": "GLY"
+        },
+        {
+          "mobile_resid": "151",
+          "reference_resid": "749",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "152",
+          "reference_resid": "750",
+          "mobile_residue": "MET",
+          "reference_residue": "MET"
+        },
+        {
+          "mobile_resid": "153",
+          "reference_resid": "751",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "154",
+          "reference_resid": "752",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "155",
+          "reference_resid": "753",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "156",
+          "reference_resid": "754",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "157",
+          "reference_resid": "755",
+          "mobile_residue": "TRP",
+          "reference_residue": "TRP"
+        },
+        {
+          "mobile_resid": "158",
+          "reference_resid": "756",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "159",
+          "reference_resid": "757",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "160",
+          "reference_resid": "758",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "161",
+          "reference_resid": "759",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "162",
+          "reference_resid": "760",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "163",
+          "reference_resid": "761",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "164",
+          "reference_resid": "762",
+          "mobile_residue": "TRP",
+          "reference_residue": "TRP"
+        },
+        {
+          "mobile_resid": "165",
+          "reference_resid": "763",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "166",
+          "reference_resid": "764",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "167",
+          "reference_resid": "765",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "168",
+          "reference_resid": "766",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "169",
+          "reference_resid": "767",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "170",
+          "reference_resid": "768",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "171",
+          "reference_resid": "769",
+          "mobile_residue": "TRP",
+          "reference_residue": "TRP"
+        },
+        {
+          "mobile_resid": "172",
+          "reference_resid": "770",
+          "mobile_residue": "GLN",
+          "reference_residue": "GLN"
+        },
+        {
+          "mobile_resid": "173",
+          "reference_resid": "771",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "174",
+          "reference_resid": "772",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "175",
+          "reference_resid": "773",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "176",
+          "reference_resid": "774",
+          "mobile_residue": "GLY",
+          "reference_residue": "GLY"
+        },
+        {
+          "mobile_resid": "177",
+          "reference_resid": "775",
+          "mobile_residue": "LYS",
+          "reference_residue": "LYS"
+        },
+        {
+          "mobile_resid": "178",
+          "reference_resid": "776",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "179",
+          "reference_resid": "777",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "180",
+          "reference_resid": "778",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "181",
+          "reference_resid": "779",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "182",
+          "reference_resid": "780",
+          "mobile_residue": "ASP",
+          "reference_residue": "ASP"
+        },
+        {
+          "mobile_resid": "183",
+          "reference_resid": "781",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "184",
+          "reference_resid": "782",
+          "mobile_residue": "GLN",
+          "reference_residue": "GLN"
+        },
+        {
+          "mobile_resid": "185",
+          "reference_resid": "783",
+          "mobile_residue": "CYS",
+          "reference_residue": "CYX"
+        },
+        {
+          "mobile_resid": "186",
+          "reference_resid": "784",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "187",
+          "reference_resid": "785",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "188",
+          "reference_resid": "786",
+          "mobile_residue": "GLN",
+          "reference_residue": "GLN"
+        },
+        {
+          "mobile_resid": "189",
+          "reference_resid": "787",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "190",
+          "reference_resid": "788",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "191",
+          "reference_resid": "789",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "192",
+          "reference_resid": "790",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "193",
+          "reference_resid": "791",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "194",
+          "reference_resid": "792",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "195",
+          "reference_resid": "793",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "196",
+          "reference_resid": "794",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "197",
+          "reference_resid": "795",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "198",
+          "reference_resid": "796",
+          "mobile_residue": "GLY",
+          "reference_residue": "GLY"
+        },
+        {
+          "mobile_resid": "199",
+          "reference_resid": "797",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "200",
+          "reference_resid": "798",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "201",
+          "reference_resid": "799",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "202",
+          "reference_resid": "800",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "203",
+          "reference_resid": "801",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "204",
+          "reference_resid": "802",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "205",
+          "reference_resid": "803",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "206",
+          "reference_resid": "804",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "207",
+          "reference_resid": "805",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "208",
+          "reference_resid": "806",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "209",
+          "reference_resid": "807",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "210",
+          "reference_resid": "808",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "211",
+          "reference_resid": "809",
+          "mobile_residue": "MET",
+          "reference_residue": "MET"
+        },
+        {
+          "mobile_resid": "212",
+          "reference_resid": "810",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "213",
+          "reference_resid": "811",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "214",
+          "reference_resid": "812",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "215",
+          "reference_resid": "813",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "216",
+          "reference_resid": "814",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "217",
+          "reference_resid": "815",
+          "mobile_residue": "HIS",
+          "reference_residue": "HID"
+        },
+        {
+          "mobile_resid": "218",
+          "reference_resid": "816",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "219",
+          "reference_resid": "817",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "220",
+          "reference_resid": "818",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "221",
+          "reference_resid": "819",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "222",
+          "reference_resid": "820",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "223",
+          "reference_resid": "821",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "224",
+          "reference_resid": "822",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "225",
+          "reference_resid": "823",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "226",
+          "reference_resid": "824",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "392",
+          "reference_resid": "828",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "393",
+          "reference_resid": "829",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "394",
+          "reference_resid": "830",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "395",
+          "reference_resid": "831",
+          "mobile_residue": "GLU",
+          "reference_residue": "GLU"
+        },
+        {
+          "mobile_resid": "396",
+          "reference_resid": "832",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "397",
+          "reference_resid": "833",
+          "mobile_residue": "LYS",
+          "reference_residue": "LYS"
+        },
+        {
+          "mobile_resid": "398",
+          "reference_resid": "834",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "399",
+          "reference_resid": "835",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "400",
+          "reference_resid": "836",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "401",
+          "reference_resid": "837",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "402",
+          "reference_resid": "838",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "403",
+          "reference_resid": "839",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "404",
+          "reference_resid": "840",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "405",
+          "reference_resid": "841",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "406",
+          "reference_resid": "842",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "407",
+          "reference_resid": "843",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "408",
+          "reference_resid": "844",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "409",
+          "reference_resid": "845",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "410",
+          "reference_resid": "846",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "411",
+          "reference_resid": "847",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "412",
+          "reference_resid": "848",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "413",
+          "reference_resid": "849",
+          "mobile_residue": "TRP",
+          "reference_residue": "TRP"
+        },
+        {
+          "mobile_resid": "414",
+          "reference_resid": "850",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "415",
+          "reference_resid": "851",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "416",
+          "reference_resid": "852",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "417",
+          "reference_resid": "853",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "418",
+          "reference_resid": "854",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "419",
+          "reference_resid": "855",
+          "mobile_residue": "MET",
+          "reference_residue": "MET"
+        },
+        {
+          "mobile_resid": "420",
+          "reference_resid": "856",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "421",
+          "reference_resid": "857",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "422",
+          "reference_resid": "858",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "423",
+          "reference_resid": "859",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "424",
+          "reference_resid": "860",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "425",
+          "reference_resid": "861",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "426",
+          "reference_resid": "862",
+          "mobile_residue": "CYS",
+          "reference_residue": "CYX"
+        },
+        {
+          "mobile_resid": "427",
+          "reference_resid": "863",
+          "mobile_residue": "GLN",
+          "reference_residue": "GLN"
+        },
+        {
+          "mobile_resid": "428",
+          "reference_resid": "864",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "429",
+          "reference_resid": "865",
+          "mobile_residue": "CYS",
+          "reference_residue": "CYX"
+        },
+        {
+          "mobile_resid": "430",
+          "reference_resid": "866",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "431",
+          "reference_resid": "867",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "432",
+          "reference_resid": "868",
+          "mobile_residue": "ASP",
+          "reference_residue": "ASP"
+        },
+        {
+          "mobile_resid": "433",
+          "reference_resid": "869",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "434",
+          "reference_resid": "870",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "435",
+          "reference_resid": "871",
+          "mobile_residue": "TRP",
+          "reference_residue": "TRP"
+        },
+        {
+          "mobile_resid": "436",
+          "reference_resid": "872",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "437",
+          "reference_resid": "873",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "438",
+          "reference_resid": "874",
+          "mobile_residue": "GLY",
+          "reference_residue": "GLY"
+        },
+        {
+          "mobile_resid": "439",
+          "reference_resid": "875",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "440",
+          "reference_resid": "876",
+          "mobile_residue": "TRP",
+          "reference_residue": "TRP"
+        },
+        {
+          "mobile_resid": "441",
+          "reference_resid": "877",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "442",
+          "reference_resid": "878",
+          "mobile_residue": "CYS",
+          "reference_residue": "CYS"
+        },
+        {
+          "mobile_resid": "443",
+          "reference_resid": "879",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "444",
+          "reference_resid": "880",
+          "mobile_residue": "VAL",
+          "reference_residue": "VAL"
+        },
+        {
+          "mobile_resid": "445",
+          "reference_resid": "881",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "446",
+          "reference_resid": "882",
+          "mobile_residue": "SER",
+          "reference_residue": "SER"
+        },
+        {
+          "mobile_resid": "447",
+          "reference_resid": "883",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "448",
+          "reference_resid": "884",
+          "mobile_residue": "ILE",
+          "reference_residue": "ILE"
+        },
+        {
+          "mobile_resid": "449",
+          "reference_resid": "885",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "450",
+          "reference_resid": "886",
+          "mobile_residue": "PRO",
+          "reference_residue": "PRO"
+        },
+        {
+          "mobile_resid": "451",
+          "reference_resid": "887",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "452",
+          "reference_resid": "888",
+          "mobile_residue": "CYS",
+          "reference_residue": "CYS"
+        },
+        {
+          "mobile_resid": "453",
+          "reference_resid": "889",
+          "mobile_residue": "TYR",
+          "reference_residue": "TYR"
+        },
+        {
+          "mobile_resid": "454",
+          "reference_resid": "890",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "455",
+          "reference_resid": "891",
+          "mobile_residue": "LEU",
+          "reference_residue": "LEU"
+        },
+        {
+          "mobile_resid": "456",
+          "reference_resid": "892",
+          "mobile_residue": "CYS",
+          "reference_residue": "CYS"
+        },
+        {
+          "mobile_resid": "457",
+          "reference_resid": "893",
+          "mobile_residue": "ASN",
+          "reference_residue": "ASN"
+        },
+        {
+          "mobile_resid": "458",
+          "reference_resid": "894",
+          "mobile_residue": "ALA",
+          "reference_residue": "ALA"
+        },
+        {
+          "mobile_resid": "459",
+          "reference_resid": "895",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "460",
+          "reference_resid": "896",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "461",
+          "reference_resid": "897",
+          "mobile_residue": "LYS",
+          "reference_residue": "LYS"
+        },
+        {
+          "mobile_resid": "462",
+          "reference_resid": "898",
+          "mobile_residue": "LYS",
+          "reference_residue": "LYS"
+        },
+        {
+          "mobile_resid": "463",
+          "reference_resid": "899",
+          "mobile_residue": "THR",
+          "reference_residue": "THR"
+        },
+        {
+          "mobile_resid": "464",
+          "reference_resid": "900",
+          "mobile_residue": "PHE",
+          "reference_residue": "PHE"
+        },
+        {
+          "mobile_resid": "465",
+          "reference_resid": "901",
+          "mobile_residue": "ARG",
+          "reference_residue": "ARG"
+        },
+        {
+          "mobile_resid": "466",
+          "reference_resid": "902",
+          "mobile_residue": "HIS",
+          "reference_residue": "HID"
+        }
+      ]
+    },
+    "transformed_probe_sha256": "8056546adb32cb3e79f5e0fbc6a79f987e5b50dd9c1c4fbb2aa9470c68ecd59f",
+    "protocol_source_sha256": "a026886f39298b8a747550d92cd63e5a3d37661952e2570817de51134f6bd31f"
+  },
+  "shared_base_sha256": "a3420c2eb958bffe36a7618857e71da0015045972d6c79b711821192a70efad5",
+  "ligands": [
+    "ACH"
+  ],
+  "protein_atoms": 4444,
+  "candidate_atoms": 0,
+  "probe_atoms": 26,
+  "total_particles": 149901,
+  "missing_protein_atoms_added": 0,
+  "hydrogen_qc": {
+    "seed": 1701,
+    "min_nonbonded_H_heavy_nm": 0.18540380349207605,
+    "closest_pair": " :TYR813:HH-CZ",
+    "passed": true
+  },
+  "hydrogen_attempts": [
+    {
+      "seed": 1701,
+      "min_nonbonded_H_heavy_nm": 0.18540380349207605,
+      "closest_pair": " :TYR813:HH-CZ",
+      "passed": true
+    }
+  ],
+  "cap_topology_policy": "Existing ACE/NME caps retained; TER placed after NME, preserving both receptor fragments",
+  "removed_clashing_solvent_residues": 0,
+  "initial_energy_kj_mol": -1718906.2079389715,
+  "minimized_energy_kj_mol": -1903851.4983681177,
+  "finite": true,
+  "outputs": {
+    "input.pdb": "2072c073bbc45d4e2fe2a586f91ddb8b4608023847751658952fb0e42856a005",
+    "minimized.pdb": "6af7b8dd5db452234ec4876218e5c5cef6dab0c9a32b975addd6b9795da734f0",
+    "system.xml": "5631b4a3319ca501817b2ff3474fee38d5a7f64cba3efac25973bc8a175f111c",
+    "state.xml": "722ce7785afa2f50a4b70a2d1fad5c7706912a873f51ae67d91f9967435acb23",
+    "parameters.json": "ef830153b01c838d2d4d9f961e5a6cfccae09c190ef089d14571db9a93c413f9"
+  },
+  "production_started": false
+}

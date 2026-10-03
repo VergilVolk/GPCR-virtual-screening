@@ -1,0 +1,3766 @@
+{
+  "schema": "pacer_fkg_v02.phase1_bs256_cache_manifest.v1",
+  "version": "PACER_FKG_V02_PHASE1_BS256_v01",
+  "mode": "full",
+  "system": "compound110__candidate_probe",
+  "replica": 1,
+  "shape": [
+    1000,
+    270,
+    256
+  ],
+  "dtype": "float32",
+  "frame_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498,
+    499,
+    500,
+    501,
+    502,
+    503,
+    504,
+    505,
+    506,
+    507,
+    508,
+    509,
+    510,
+    511,
+    512,
+    513,
+    514,
+    515,
+    516,
+    517,
+    518,
+    519,
+    520,
+    521,
+    522,
+    523,
+    524,
+    525,
+    526,
+    527,
+    528,
+    529,
+    530,
+    531,
+    532,
+    533,
+    534,
+    535,
+    536,
+    537,
+    538,
+    539,
+    540,
+    541,
+    542,
+    543,
+    544,
+    545,
+    546,
+    547,
+    548,
+    549,
+    550,
+    551,
+    552,
+    553,
+    554,
+    555,
+    556,
+    557,
+    558,
+    559,
+    560,
+    561,
+    562,
+    563,
+    564,
+    565,
+    566,
+    567,
+    568,
+    569,
+    570,
+    571,
+    572,
+    573,
+    574,
+    575,
+    576,
+    577,
+    578,
+    579,
+    580,
+    581,
+    582,
+    583,
+    584,
+    585,
+    586,
+    587,
+    588,
+    589,
+    590,
+    591,
+    592,
+    593,
+    594,
+    595,
+    596,
+    597,
+    598,
+    599,
+    600,
+    601,
+    602,
+    603,
+    604,
+    605,
+    606,
+    607,
+    608,
+    609,
+    610,
+    611,
+    612,
+    613,
+    614,
+    615,
+    616,
+    617,
+    618,
+    619,
+    620,
+    621,
+    622,
+    623,
+    624,
+    625,
+    626,
+    627,
+    628,
+    629,
+    630,
+    631,
+    632,
+    633,
+    634,
+    635,
+    636,
+    637,
+    638,
+    639,
+    640,
+    641,
+    642,
+    643,
+    644,
+    645,
+    646,
+    647,
+    648,
+    649,
+    650,
+    651,
+    652,
+    653,
+    654,
+    655,
+    656,
+    657,
+    658,
+    659,
+    660,
+    661,
+    662,
+    663,
+    664,
+    665,
+    666,
+    667,
+    668,
+    669,
+    670,
+    671,
+    672,
+    673,
+    674,
+    675,
+    676,
+    677,
+    678,
+    679,
+    680,
+    681,
+    682,
+    683,
+    684,
+    685,
+    686,
+    687,
+    688,
+    689,
+    690,
+    691,
+    692,
+    693,
+    694,
+    695,
+    696,
+    697,
+    698,
+    699,
+    700,
+    701,
+    702,
+    703,
+    704,
+    705,
+    706,
+    707,
+    708,
+    709,
+    710,
+    711,
+    712,
+    713,
+    714,
+    715,
+    716,
+    717,
+    718,
+    719,
+    720,
+    721,
+    722,
+    723,
+    724,
+    725,
+    726,
+    727,
+    728,
+    729,
+    730,
+    731,
+    732,
+    733,
+    734,
+    735,
+    736,
+    737,
+    738,
+    739,
+    740,
+    741,
+    742,
+    743,
+    744,
+    745,
+    746,
+    747,
+    748,
+    749,
+    750,
+    751,
+    752,
+    753,
+    754,
+    755,
+    756,
+    757,
+    758,
+    759,
+    760,
+    761,
+    762,
+    763,
+    764,
+    765,
+    766,
+    767,
+    768,
+    769,
+    770,
+    771,
+    772,
+    773,
+    774,
+    775,
+    776,
+    777,
+    778,
+    779,
+    780,
+    781,
+    782,
+    783,
+    784,
+    785,
+    786,
+    787,
+    788,
+    789,
+    790,
+    791,
+    792,
+    793,
+    794,
+    795,
+    796,
+    797,
+    798,
+    799,
+    800,
+    801,
+    802,
+    803,
+    804,
+    805,
+    806,
+    807,
+    808,
+    809,
+    810,
+    811,
+    812,
+    813,
+    814,
+    815,
+    816,
+    817,
+    818,
+    819,
+    820,
+    821,
+    822,
+    823,
+    824,
+    825,
+    826,
+    827,
+    828,
+    829,
+    830,
+    831,
+    832,
+    833,
+    834,
+    835,
+    836,
+    837,
+    838,
+    839,
+    840,
+    841,
+    842,
+    843,
+    844,
+    845,
+    846,
+    847,
+    848,
+    849,
+    850,
+    851,
+    852,
+    853,
+    854,
+    855,
+    856,
+    857,
+    858,
+    859,
+    860,
+    861,
+    862,
+    863,
+    864,
+    865,
+    866,
+    867,
+    868,
+    869,
+    870,
+    871,
+    872,
+    873,
+    874,
+    875,
+    876,
+    877,
+    878,
+    879,
+    880,
+    881,
+    882,
+    883,
+    884,
+    885,
+    886,
+    887,
+    888,
+    889,
+    890,
+    891,
+    892,
+    893,
+    894,
+    895,
+    896,
+    897,
+    898,
+    899,
+    900,
+    901,
+    902,
+    903,
+    904,
+    905,
+    906,
+    907,
+    908,
+    909,
+    910,
+    911,
+    912,
+    913,
+    914,
+    915,
+    916,
+    917,
+    918,
+    919,
+    920,
+    921,
+    922,
+    923,
+    924,
+    925,
+    926,
+    927,
+    928,
+    929,
+    930,
+    931,
+    932,
+    933,
+    934,
+    935,
+    936,
+    937,
+    938,
+    939,
+    940,
+    941,
+    942,
+    943,
+    944,
+    945,
+    946,
+    947,
+    948,
+    949,
+    950,
+    951,
+    952,
+    953,
+    954,
+    955,
+    956,
+    957,
+    958,
+    959,
+    960,
+    961,
+    962,
+    963,
+    964,
+    965,
+    966,
+    967,
+    968,
+    969,
+    970,
+    971,
+    972,
+    973,
+    974,
+    975,
+    976,
+    977,
+    978,
+    979,
+    980,
+    981,
+    982,
+    983,
+    984,
+    985,
+    986,
+    987,
+    988,
+    989,
+    990,
+    991,
+    992,
+    993,
+    994,
+    995,
+    996,
+    997,
+    998,
+    999
+  ],
+  "sequence": "MVFIATVTGSLSLVTVVGNILVMLSIKVNRQLQTVNNYFLFSLACADLIIGAFSMNLYTVYIIKGYWPLGAVVCDLWLALDYVVSNASVMNLLIISFDRYFCVTKPLTYPARRTTKMAGLMIAAAWVLSFVLWAPAILFWQFVVGKRTVPDNQCFIQFLSNPAVTFGTAIAAFYLPVVIMTVLYIHISLASRSRVAARERKVTRTIFAILLAFILTWTPYNVMVLVNTFCQSCIPDTVWSIGYWLCYVNSTINPACYALCNATFKKTFRH",
+  "selection": "chainID E and protein",
+  "preprocessing": {
+    "make_whole": false,
+    "center": false,
+    "align": false,
+    "pbc_transform": false
+  },
+  "checkpoint_sha256": "b8f1ef9b591c57f7687566bd60d3664800956ac280cf2ae8e64f54196cd8d417",
+  "geom2vec_source_commit": "371d642ec1061664f16e49fcac702d07fc8d0b51",
+  "trajectory_sha256": "14ce265e5f1f4c072a4f0add3881aeab59c9a83579582792df21e9c27af66b23",
+  "topology_sha256": "ebd5a544c56c44db0f949c583afa4e6212d7bc70e1b6993985e70a2cf78ae063",
+  "implementation": {
+    "runner": {
+      "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\pacer_fkg_v02\\run_phase1_bs256.py",
+      "sha256": "d3ed9764ff813b9f164e139668cab2f55d7112d7b04283812d4a5fe3beee2271"
+    },
+    "frozen_core": {
+      "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\encoder_intermediate_v01\\core.py",
+      "sha256": "7f441c5b6598a9473b865f00dd05f627a1e5e6cd22ac2f38828506be25977154"
+    },
+    "frozen_readout": {
+      "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\encoder_atom_readout_v01\\experiment_d.py",
+      "sha256": "f5417a0fad19efa40427dd000f712a162bbd0928555358ff3a73c1d0934ace34"
+    },
+    "candidate_spec": {
+      "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\encoder_candidate_v01\\CANDIDATE_SPEC.json",
+      "sha256": "fb1c14df8180892f0902de81685ab6a01e15b8c759b5a01d75831285a01e63db"
+    }
+  },
+  "created_at": "2026-09-29T15:45:10.079898+08:00",
+  "cache": {
+    "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\cache\\pacer_fkg_v02_longmd_v01\\bs256\\full\\compound110__candidate_probe\\replica_01\\C1_BS256.npy",
+    "sha256": "2ca4b4f1163f16f8fe1a97975c79085c95381d11357464a6098ea8c6a825cf95",
+    "bytes": 276480128
+  },
+  "source": {
+    "trajectory": {
+      "path": "C:\\projects\\PACER_DC_MD_backup\\compound110__candidate_probe\\replica_01\\trajectory.dcd",
+      "sha256": "14ce265e5f1f4c072a4f0add3881aeab59c9a83579582792df21e9c27af66b23",
+      "bytes": 2732984276
+    },
+    "topology": {
+      "path": "C:\\projects\\PACER_DC_MD_delivery_20260927\\compound110\\replica_02\\window_000\\topology\\candidate_probe_w000_minimized.pdb",
+      "sha256": "ebd5a544c56c44db0f949c583afa4e6212d7bc70e1b6993985e70a2cf78ae063",
+      "bytes": 18447524
+    },
+    "hash_verification_seconds": 1.9954795000012382
+  },
+  "model_provenance": {
+    "checkpoint": {
+      "checkpoint_path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\tools\\geom2vec_checkpoints\\visnet_l6_h64_rbf64_r75.pth",
+      "expected_sha256": "b8f1ef9b591c57f7687566bd60d3664800956ac280cf2ae8e64f54196cd8d417",
+      "actual_sha256": "b8f1ef9b591c57f7687566bd60d3664800956ac280cf2ae8e64f54196cd8d417",
+      "sha256_match": true,
+      "state_dict_structure": "flat string-to-tensor mapping",
+      "checkpoint_key_count": 161,
+      "model_state_key_count": 161,
+      "missing_keys": [],
+      "unexpected_keys": [],
+      "shape_mismatches": [],
+      "dtype_mismatches": [],
+      "nonfinite_keys": [],
+      "parameter_count_coverage": {
+        "matched": 152,
+        "total": 152,
+        "fraction": 1.0
+      },
+      "parameter_element_coverage": {
+        "matched": 437670,
+        "total": 437670,
+        "fraction": 1.0
+      },
+      "state_element_coverage": {
+        "matched": 437908,
+        "total": 437908,
+        "fraction": 1.0
+      },
+      "strict_load_attempted": true,
+      "strict_load_ok": true,
+      "strict_load_error": null,
+      "complete_strict_coverage": true,
+      "keys": [
+        {
+          "key": "mean",
+          "kind": "persistent_buffer",
+          "model_shape": [],
+          "checkpoint_shape": [],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "pos_normalizer.acc_count",
+          "kind": "persistent_buffer",
+          "model_shape": [
+            1
+          ],
+          "checkpoint_shape": [
+            1
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "pos_normalizer.acc_squared_sum",
+          "kind": "persistent_buffer",
+          "model_shape": [
+            3
+          ],
+          "checkpoint_shape": [
+            3
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "pos_normalizer.acc_sum",
+          "kind": "persistent_buffer",
+          "model_shape": [
+            3
+          ],
+          "checkpoint_shape": [
+            3
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "pos_normalizer.num_accumulations",
+          "kind": "persistent_buffer",
+          "model_shape": [
+            1
+          ],
+          "checkpoint_shape": [
+            1
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "prior_model.atomref.weight",
+          "kind": "parameter",
+          "model_shape": [
+            100,
+            1
+          ],
+          "checkpoint_shape": [
+            100,
+            1
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "prior_model.initial_atomref",
+          "kind": "persistent_buffer",
+          "model_shape": [
+            100,
+            1
+          ],
+          "checkpoint_shape": [
+            100,
+            1
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.distance_expansion.betas",
+          "kind": "persistent_buffer",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.distance_expansion.means",
+          "kind": "persistent_buffer",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.edge_embedding.edge_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.edge_embedding.edge_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.embedding.weight",
+          "kind": "parameter",
+          "model_shape": [
+            100,
+            64
+          ],
+          "checkpoint_shape": [
+            100,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.neighbor_embedding.combine.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.neighbor_embedding.combine.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            128
+          ],
+          "checkpoint_shape": [
+            64,
+            128
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.neighbor_embedding.distance_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.neighbor_embedding.distance_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.neighbor_embedding.embedding.weight",
+          "kind": "parameter",
+          "model_shape": [
+            100,
+            64
+          ],
+          "checkpoint_shape": [
+            100,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.out_norm.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.out_norm.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vec_out_norm.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.dk_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.dk_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.dv_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.dv_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.f_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.f_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.k_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.k_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.layernorm.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.layernorm.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.o_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            192
+          ],
+          "checkpoint_shape": [
+            192
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.o_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            192,
+            64
+          ],
+          "checkpoint_shape": [
+            192,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.q_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.q_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.s_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            128
+          ],
+          "checkpoint_shape": [
+            128
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.s_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            128,
+            64
+          ],
+          "checkpoint_shape": [
+            128,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.v_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.v_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.vec_layernorm.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.vec_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            192,
+            64
+          ],
+          "checkpoint_shape": [
+            192,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.w_src_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.0.w_trg_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.dk_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.dk_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.dv_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.dv_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.f_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.f_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.k_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.k_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.layernorm.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.layernorm.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.o_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            192
+          ],
+          "checkpoint_shape": [
+            192
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.o_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            192,
+            64
+          ],
+          "checkpoint_shape": [
+            192,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.q_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.q_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.s_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            128
+          ],
+          "checkpoint_shape": [
+            128
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.s_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            128,
+            64
+          ],
+          "checkpoint_shape": [
+            128,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.v_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.v_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.vec_layernorm.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.vec_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            192,
+            64
+          ],
+          "checkpoint_shape": [
+            192,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.w_src_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.1.w_trg_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.dk_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.dk_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.dv_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.dv_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.f_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.f_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.k_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.k_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.layernorm.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.layernorm.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.o_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            192
+          ],
+          "checkpoint_shape": [
+            192
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.o_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            192,
+            64
+          ],
+          "checkpoint_shape": [
+            192,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.q_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.q_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.s_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            128
+          ],
+          "checkpoint_shape": [
+            128
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.s_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            128,
+            64
+          ],
+          "checkpoint_shape": [
+            128,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.v_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.v_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.vec_layernorm.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.vec_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            192,
+            64
+          ],
+          "checkpoint_shape": [
+            192,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.w_src_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.2.w_trg_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.dk_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.dk_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.dv_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.dv_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.f_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.f_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.k_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.k_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.layernorm.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.layernorm.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.o_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            192
+          ],
+          "checkpoint_shape": [
+            192
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.o_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            192,
+            64
+          ],
+          "checkpoint_shape": [
+            192,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.q_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.q_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.s_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            128
+          ],
+          "checkpoint_shape": [
+            128
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.s_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            128,
+            64
+          ],
+          "checkpoint_shape": [
+            128,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.v_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.v_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.vec_layernorm.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.vec_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            192,
+            64
+          ],
+          "checkpoint_shape": [
+            192,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.w_src_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.3.w_trg_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.dk_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.dk_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.dv_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.dv_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.f_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.f_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.k_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.k_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.layernorm.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.layernorm.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.o_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            192
+          ],
+          "checkpoint_shape": [
+            192
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.o_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            192,
+            64
+          ],
+          "checkpoint_shape": [
+            192,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.q_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.q_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.s_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            128
+          ],
+          "checkpoint_shape": [
+            128
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.s_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            128,
+            64
+          ],
+          "checkpoint_shape": [
+            128,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.v_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.v_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.vec_layernorm.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.vec_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            192,
+            64
+          ],
+          "checkpoint_shape": [
+            192,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.w_src_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.4.w_trg_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.5.dk_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.5.dk_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.5.dv_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.5.dv_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.5.k_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.5.k_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.5.layernorm.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.5.layernorm.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.5.o_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            192
+          ],
+          "checkpoint_shape": [
+            192
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.5.o_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            192,
+            64
+          ],
+          "checkpoint_shape": [
+            192,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.5.q_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.5.q_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.5.s_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            128
+          ],
+          "checkpoint_shape": [
+            128
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.5.s_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            128,
+            64
+          ],
+          "checkpoint_shape": [
+            128,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.5.v_proj.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.5.v_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.5.vec_layernorm.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "representation_model.vis_mp_layers.5.vec_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            192,
+            64
+          ],
+          "checkpoint_shape": [
+            192,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "std",
+          "kind": "persistent_buffer",
+          "model_shape": [],
+          "checkpoint_shape": [],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "vec_out.output_network.0.update_net.0.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "vec_out.output_network.0.update_net.0.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            128
+          ],
+          "checkpoint_shape": [
+            64,
+            128
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "vec_out.output_network.0.update_net.2.bias",
+          "kind": "parameter",
+          "model_shape": [
+            64
+          ],
+          "checkpoint_shape": [
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "vec_out.output_network.0.update_net.2.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "vec_out.output_network.0.vec1_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            64,
+            64
+          ],
+          "checkpoint_shape": [
+            64,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "vec_out.output_network.0.vec2_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            32,
+            64
+          ],
+          "checkpoint_shape": [
+            32,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "vec_out.output_network.1.update_net.0.bias",
+          "kind": "parameter",
+          "model_shape": [
+            32
+          ],
+          "checkpoint_shape": [
+            32
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "vec_out.output_network.1.update_net.0.weight",
+          "kind": "parameter",
+          "model_shape": [
+            32,
+            64
+          ],
+          "checkpoint_shape": [
+            32,
+            64
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "vec_out.output_network.1.update_net.2.bias",
+          "kind": "parameter",
+          "model_shape": [
+            2
+          ],
+          "checkpoint_shape": [
+            2
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "vec_out.output_network.1.update_net.2.weight",
+          "kind": "parameter",
+          "model_shape": [
+            2,
+            32
+          ],
+          "checkpoint_shape": [
+            2,
+            32
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "vec_out.output_network.1.vec1_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            32,
+            32
+          ],
+          "checkpoint_shape": [
+            32,
+            32
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        },
+        {
+          "key": "vec_out.output_network.1.vec2_proj.weight",
+          "kind": "parameter",
+          "model_shape": [
+            1,
+            32
+          ],
+          "checkpoint_shape": [
+            1,
+            32
+          ],
+          "model_dtype": "torch.float32",
+          "checkpoint_dtype": "torch.float32",
+          "checkpoint_finite": true,
+          "shape_match": true,
+          "dtype_match": true
+        }
+      ]
+    },
+    "geom2vec_source": {
+      "pinned_commit": "371d642ec1061664f16e49fcac702d07fc8d0b51",
+      "checkout": "C:\\projects\\geom2vec-source",
+      "checkout_head": "371d642ec1061664f16e49fcac702d07fc8d0b51",
+      "checkout_head_matches_pin": true,
+      "tracked_inference_files_clean_against_pin": true,
+      "git_diff_output": "",
+      "installed_package_root": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\Lib\\site-packages\\geom2vec",
+      "installed_direct_url": "file:///C:/projects/geom2vec-source",
+      "inference_files": [
+        {
+          "file": "__init__.py",
+          "pinned_checkout_path": "C:\\projects\\geom2vec-source\\src\\geom2vec\\__init__.py",
+          "installed_path": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\Lib\\site-packages\\geom2vec\\__init__.py",
+          "pinned_checkout_sha256": "cfb18cc0d49c0e25eb128dd9d56a36941faac1254935d5b3ac218f8780a9cd74",
+          "installed_sha256": "cfb18cc0d49c0e25eb128dd9d56a36941faac1254935d5b3ac218f8780a9cd74",
+          "match": true
+        },
+        {
+          "file": "models/__init__.py",
+          "pinned_checkout_path": "C:\\projects\\geom2vec-source\\src\\geom2vec\\models\\__init__.py",
+          "installed_path": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\Lib\\site-packages\\geom2vec\\models\\__init__.py",
+          "pinned_checkout_sha256": "10e6de0c17f26d5476ca8fec45a98ddfa7f6d6cea4c947be8724f268b0ae4bbe",
+          "installed_sha256": "10e6de0c17f26d5476ca8fec45a98ddfa7f6d6cea4c947be8724f268b0ae4bbe",
+          "match": true
+        },
+        {
+          "file": "models/factory.py",
+          "pinned_checkout_path": "C:\\projects\\geom2vec-source\\src\\geom2vec\\models\\factory.py",
+          "installed_path": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\Lib\\site-packages\\geom2vec\\models\\factory.py",
+          "pinned_checkout_sha256": "a7fe57dd95bae65b06dc54db4a75dc73968e7b0f50402c0e6c659390c78352b4",
+          "installed_sha256": "a7fe57dd95bae65b06dc54db4a75dc73968e7b0f50402c0e6c659390c78352b4",
+          "match": true
+        },
+        {
+          "file": "models/representation/__init__.py",
+          "pinned_checkout_path": "C:\\projects\\geom2vec-source\\src\\geom2vec\\models\\representation\\__init__.py",
+          "installed_path": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\Lib\\site-packages\\geom2vec\\models\\representation\\__init__.py",
+          "pinned_checkout_sha256": "96d0bc3fdbb4fe3e0d3143a3686cda68a05e464be11a676f9dc4e6b22a74cec5",
+          "installed_sha256": "96d0bc3fdbb4fe3e0d3143a3686cda68a05e464be11a676f9dc4e6b22a74cec5",
+          "match": true
+        },
+        {
+          "file": "models/representation/visnet.py",
+          "pinned_checkout_path": "C:\\projects\\geom2vec-source\\src\\geom2vec\\models\\representation\\visnet.py",
+          "installed_path": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\Lib\\site-packages\\geom2vec\\models\\representation\\visnet.py",
+          "pinned_checkout_sha256": "f310a8516c209aa35b6d27c556ad3d6f13a997fce2eb6f927cd2764be8f92db8",
+          "installed_sha256": "f310a8516c209aa35b6d27c556ad3d6f13a997fce2eb6f927cd2764be8f92db8",
+          "match": true
+        },
+        {
+          "file": "nn/__init__.py",
+          "pinned_checkout_path": "C:\\projects\\geom2vec-source\\src\\geom2vec\\nn\\__init__.py",
+          "installed_path": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\Lib\\site-packages\\geom2vec\\nn\\__init__.py",
+          "pinned_checkout_sha256": "2d601b113a43c4d6dd639c27846f94adb6556a4e56d1ce348919f32f8abda4ae",
+          "installed_sha256": "2d601b113a43c4d6dd639c27846f94adb6556a4e56d1ce348919f32f8abda4ae",
+          "match": true
+        },
+        {
+          "file": "nn/equivariant.py",
+          "pinned_checkout_path": "C:\\projects\\geom2vec-source\\src\\geom2vec\\nn\\equivariant.py",
+          "installed_path": "C:\\Users\\barne\\anaconda3\\envs\\pacer_dc_geom2vec\\Lib\\site-packages\\geom2vec\\nn\\equivariant.py",
+          "pinned_checkout_sha256": "e2e8acb80ce9e064066c4e717d916aa26274867b736488924c3505915b276e0f",
+          "installed_sha256": "e2e8acb80ce9e064066c4e717d916aa26274867b736488924c3505915b276e0f",
+          "match": true
+        }
+      ],
+      "repository_radius_graph_override": {
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\pacer_dc_training\\extract_geom2vec_atom14.py",
+        "sha256": "50d6af4cd8294df6c6112bc9ba10cfad7cd63af15f49302aac73cecd9b2a8ce8",
+        "status_for_cuda_smoke": "not installed; official PyG torch-cluster backend is available"
+      },
+      "source_equivalent": true,
+      "substantive_inference_path_differences": []
+    }
+  },
+  "atom_mapping": {
+    "expected_heavy_atoms": 2139,
+    "backbone_atoms": [
+      "N",
+      "CA",
+      "C",
+      "O"
+    ],
+    "sidechain_present_residues": 261,
+    "glycine_count": 9
+  },
+  "replay": {
+    "bitwise_identical": false,
+    "max_abs": 2.384185791015625e-06,
+    "rmse": 1.4730952832370806e-07,
+    "relative_rmse": 1.7691491394733162e-07,
+    "limit": 0.0001,
+    "passed": true,
+    "frame_ids": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "elapsed_seconds": 73.62098699999842,
+  "output_scope": "C1-BS256 only; no normalization, RFF, PACER-FKG, contrasts, or biological metrics"
+}

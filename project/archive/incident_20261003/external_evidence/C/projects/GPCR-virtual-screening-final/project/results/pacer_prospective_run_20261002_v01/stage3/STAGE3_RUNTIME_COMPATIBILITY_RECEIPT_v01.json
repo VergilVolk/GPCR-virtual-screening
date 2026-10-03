@@ -1,0 +1,57 @@
+{
+  "schema": "pacer.prospective.stage3_runtime_compatibility_receipt.v1",
+  "checks": {
+    "torch_import": true,
+    "torch_version_2_0_1": true,
+    "drugclip_imports": true,
+    "checkpoint_loaded": true,
+    "missing_checkpoint_keys_empty": true,
+    "unexpected_checkpoint_keys_empty": true,
+    "molecule_shape_1x128": true,
+    "pocket_shape_3x128": true,
+    "finite_embeddings": true,
+    "finite_scores": true,
+    "three_frozen_m4_pockets": true,
+    "no_optimizer_or_training_path": true
+  },
+  "torch_version": "2.0.1",
+  "torch_cuda": false,
+  "audit": {
+    "checkpoint": "/mnt/c/projects/GPCR-virtual-screening-final/project/tools/DrugCLIP/artifacts/checkpoint_best.pt",
+    "device": "cpu",
+    "molecule_shape": [
+      1,
+      128
+    ],
+    "pocket_shape": [
+      3,
+      128
+    ],
+    "score_shape": [
+      3,
+      1
+    ],
+    "finite": true,
+    "score_range": [
+      -0.18953344225883484,
+      -0.12936976552009583
+    ],
+    "missing_checkpoint_keys": [],
+    "unexpected_checkpoint_keys": [],
+    "checkpoint_registry_remap": {
+      "from": {
+        "task": "binding_affinity",
+        "arch": "binding_affinity"
+      },
+      "to": {
+        "task": "drugclip",
+        "arch": "drugclip"
+      }
+    }
+  },
+  "score_range": [
+    -0.18953344225883484,
+    -0.12936976552009583
+  ],
+  "passed": true
+}

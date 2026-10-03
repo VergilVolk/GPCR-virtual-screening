@@ -1,0 +1,4101 @@
+{
+  "baseline_commit": "d083b6eab27554ec96ec38c544b51f292e154df2",
+  "baseline_tree": "d6350f63cd92b7c462fdfc473d1ccb61208fe9a8",
+  "commits": [
+    {
+      "hash": "b78148e9c283aa834118f99ac5a4feb613885e28",
+      "date": "2026-10-03 21:17:36 +0800",
+      "subject": "Finalize Stage4 prospective PACER-FKG evaluation",
+      "reachable": true,
+      "files": [
+        {
+          "change": "A",
+          "path": ".gitattributes",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "README.md",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/PROJECT_STATUS.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/PACER_STAGE4_FINAL_HANDOFF_v01.md",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/docs/START_HERE_FOR_COLLABORATORS_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/pacer_fkg_v02/run_stage4_prospective_phase1_bs256_v01.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/pacer_fkg_v02/run_stage4_prospective_phase2a_frozen_apply_v01.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/pacer_fkg_v02/run_stage4_prospective_phase2b_graph_region_v01.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/pacer_fkg_v02/stage4_prospective_common_v01.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/STAGE4_PROSPECTIVE_SCIENTIFIC_REPORT_v01.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/STAGE4_PROSPECTIVE_SCIENTIFIC_SUMMARY_v01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/input_audit/INPUT_AUTHENTICATION_v01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/PHASE1_FREEZE_RECEIPT_v01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/SMOKE_RECEIPT_v01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/PACER0010__candidate_no_probe__replica_01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/PACER0010__candidate_no_probe__replica_02.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/PACER0010__candidate_no_probe__replica_03.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/PACER0010__candidate_probe__replica_01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/PACER0010__candidate_probe__replica_02.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/PACER0010__candidate_probe__replica_03.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/PACER0027__candidate_no_probe__replica_01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/PACER0027__candidate_no_probe__replica_02.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/PACER0027__candidate_no_probe__replica_03.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/PACER0027__candidate_probe__replica_01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/PACER0027__candidate_probe__replica_02.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/PACER0027__candidate_probe__replica_03.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/PACER0073__candidate_no_probe__replica_01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/PACER0073__candidate_no_probe__replica_02.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/PACER0073__candidate_no_probe__replica_03.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/PACER0073__candidate_probe__replica_01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/PACER0073__candidate_probe__replica_02.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/PACER0073__candidate_probe__replica_03.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/cluster0__apo__replica_01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/cluster0__apo__replica_02.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/cluster0__apo__replica_03.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/cluster0__probe_only__replica_01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/cluster0__probe_only__replica_02.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/cluster0__probe_only__replica_03.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/cluster4__apo__replica_01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/cluster4__apo__replica_02.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/cluster4__apo__replica_03.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/cluster4__probe_only__replica_01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/cluster4__probe_only__replica_02.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/cluster4__probe_only__replica_03.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/cluster9__apo__replica_01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/cluster9__apo__replica_02.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/cluster9__apo__replica_03.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/cluster9__probe_only__replica_01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/cluster9__probe_only__replica_02.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/full/cluster9__probe_only__replica_03.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase1_bs256/manifests/smoke/PACER0073__candidate_probe__replica_01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/PHASE2A_FREEZE_RECEIPT_v01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0010__candidate_no_probe__replica_01__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0010__candidate_no_probe__replica_01__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0010__candidate_no_probe__replica_02__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0010__candidate_no_probe__replica_02__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0010__candidate_no_probe__replica_03__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0010__candidate_no_probe__replica_03__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0010__candidate_probe__replica_01__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0010__candidate_probe__replica_01__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0010__candidate_probe__replica_02__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0010__candidate_probe__replica_02__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0010__candidate_probe__replica_03__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0010__candidate_probe__replica_03__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0027__candidate_no_probe__replica_01__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0027__candidate_no_probe__replica_01__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0027__candidate_no_probe__replica_02__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0027__candidate_no_probe__replica_02__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0027__candidate_no_probe__replica_03__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0027__candidate_no_probe__replica_03__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0027__candidate_probe__replica_01__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0027__candidate_probe__replica_01__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0027__candidate_probe__replica_02__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0027__candidate_probe__replica_02__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0027__candidate_probe__replica_03__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0027__candidate_probe__replica_03__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0073__candidate_no_probe__replica_01__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0073__candidate_no_probe__replica_01__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0073__candidate_no_probe__replica_02__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0073__candidate_no_probe__replica_02__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0073__candidate_no_probe__replica_03__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0073__candidate_no_probe__replica_03__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0073__candidate_probe__replica_01__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0073__candidate_probe__replica_01__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0073__candidate_probe__replica_02__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0073__candidate_probe__replica_02__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0073__candidate_probe__replica_03__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/PACER0073__candidate_probe__replica_03__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster0__apo__replica_01__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster0__apo__replica_01__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster0__apo__replica_02__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster0__apo__replica_02__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster0__apo__replica_03__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster0__apo__replica_03__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster0__probe_only__replica_01__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster0__probe_only__replica_01__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster0__probe_only__replica_02__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster0__probe_only__replica_02__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster0__probe_only__replica_03__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster0__probe_only__replica_03__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster4__apo__replica_01__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster4__apo__replica_01__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster4__apo__replica_02__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster4__apo__replica_02__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster4__apo__replica_03__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster4__apo__replica_03__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster4__probe_only__replica_01__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster4__probe_only__replica_01__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster4__probe_only__replica_02__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster4__probe_only__replica_02__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster4__probe_only__replica_03__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster4__probe_only__replica_03__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster9__apo__replica_01__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster9__apo__replica_01__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster9__apo__replica_02__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster9__apo__replica_02__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster9__apo__replica_03__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster9__apo__replica_03__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster9__probe_only__replica_01__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster9__probe_only__replica_01__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster9__probe_only__replica_02__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster9__probe_only__replica_02__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster9__probe_only__replica_03__SIGNED_DRIFT.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2a_frozen_apply/manifests/full/cluster9__probe_only__replica_03__STATE_MOTION.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2b_graph_region/PHASE2B_FREEZE_RECEIPT_v01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/phase2b_graph_region/STAGE4_PROSPECTIVE_RESULTS_v01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/provenance/IMPLEMENTATION_VALIDATION_v01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/provenance/STAGE4_TEMPORAL_METADATA_NOTE_v01.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_fkg_v02_v01/provenance/TOPOLOGY_SELECTION_REPAIR_VALIDATION_v01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/tests/test_stage4_prospective_fkg_v02_v01.py",
+          "current_tree": true
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/heads/codex/pacer-m4-service-v01",
+        "refs/heads/incident/pacer-xr-protocol-deviation-20261003",
+        "refs/remotes/origin/codex/pacer-m4-service-v01",
+        "refs/remotes/origin/incident/pacer-xr-protocol-deviation-20261003"
+      ]
+    },
+    {
+      "hash": "29fe47b5bdc18516e97989f5dabcff3cfebe4e1b",
+      "date": "2026-10-02 21:56:39 +0800",
+      "subject": "Add prospective Stage4 membrane builder and bounded CUDA smoke",
+      "reachable": true,
+      "files": [
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_10ns_v01/BUILDER_HANDOFF.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_10ns_v01/builder_input_validation.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_10ns_v01/campaign.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_10ns_v01/job_matrix.csv",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_10ns_v01/local_implementation_validation.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_stage4_prospective_10ns_v01/master_manifest.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/build_pacer_stage4_prospective_membrane.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/pacer_stage4_prospective.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/run_pacer_stage4_membrane_smoke.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/tests/test_pacer_stage4_prospective.py",
+          "current_tree": true
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/heads/codex/pacer-m4-service-v01",
+        "refs/heads/incident/pacer-xr-protocol-deviation-20261003",
+        "refs/remotes/origin/codex/pacer-m4-service-v01",
+        "refs/remotes/origin/incident/pacer-xr-protocol-deviation-20261003"
+      ]
+    },
+    {
+      "hash": "78ce1f30bc2e4855a4aa71dc6a1074a1e97a90e9",
+      "date": "2026-10-03 13:16:30 +0800",
+      "subject": "submission: standardized results.csv generator + Model Card (attachment-5 compliance)",
+      "reachable": true,
+      "files": [
+        {
+          "change": "A",
+          "path": "project/docs/MODEL_CARD_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_submission_results_v01/results.csv",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_submission_results_v01/results.meta.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/generate_submission_results_v01.py",
+          "current_tree": true
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/heads/codex/pacer-m4-service-v01",
+        "refs/heads/incident/pacer-xr-protocol-deviation-20261003",
+        "refs/remotes/origin/codex/pacer-m4-service-v01",
+        "refs/remotes/origin/incident/pacer-xr-protocol-deviation-20261003"
+      ]
+    },
+    {
+      "hash": "fb550656a16db20d0025ccbdbed23b59558ef527",
+      "date": "2026-10-02 22:42:20 +0800",
+      "subject": "fix: fresh-clone crash in --create-template + doc count drift",
+      "reachable": true,
+      "files": [
+        {
+          "change": "M",
+          "path": "project/docs/REPRODUCTION_QUICKSTART_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_candidates_v01/final/final_candidate_hypotheses.csv",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/scripts/apply_pacer_xr_candidates.py",
+          "current_tree": true
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/heads/codex/pacer-m4-service-v01",
+        "refs/heads/incident/pacer-xr-protocol-deviation-20261003",
+        "refs/remotes/origin/codex/pacer-m4-service-v01",
+        "refs/remotes/origin/incident/pacer-xr-protocol-deviation-20261003"
+      ]
+    },
+    {
+      "hash": "9dfaca3553ae5c175aad4b778ee4f58cea8d9669",
+      "date": "2026-10-02 20:28:19 +0800",
+      "subject": "artifacts: force-add frozen npz representations + README (gitignored by pattern)",
+      "reachable": false,
+      "files": [
+        {
+          "change": "A",
+          "path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01/upstream_frozen_inputs/README.md",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01/upstream_frozen_inputs/cands_science2026.npz",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01/upstream_frozen_inputs/m4r_pocket_science2026_subsets.npz",
+          "current_tree": false
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/remotes/origin/codex/drugclip-blind-benchmark-v01"
+      ]
+    },
+    {
+      "hash": "1efe33287b4ad0d0e1e3d69f38fb9835a1baf159",
+      "date": "2026-10-02 20:28:07 +0800",
+      "subject": "artifacts: close Stage3 upstream gap - frozen 2026-side inputs",
+      "reachable": false,
+      "files": [
+        {
+          "change": "A",
+          "path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01/upstream_frozen_inputs/cands200_famaug_scores.csv",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01/upstream_frozen_inputs/predock_portfolio.csv",
+          "current_tree": false
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/remotes/origin/codex/drugclip-blind-benchmark-v01"
+      ]
+    },
+    {
+      "hash": "627825172102002363e54017258f820b1c8dd8e9",
+      "date": "2026-10-02 17:55:09 +0800",
+      "subject": "chore: record pre-Stage4 service and runtime audit baseline",
+      "reachable": true,
+      "files": [
+        {
+          "change": "A",
+          "path": "project/core_environment_audit.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "reproduced_scores.audit.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "reproduced_scores.csv",
+          "current_tree": true
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/heads/codex/pacer-m4-service-v01",
+        "refs/heads/incident/pacer-xr-protocol-deviation-20261003",
+        "refs/remotes/origin/codex/pacer-m4-service-v01",
+        "refs/remotes/origin/incident/pacer-xr-protocol-deviation-20261003"
+      ]
+    },
+    {
+      "hash": "05228ab1bf137629579d32e564531a6c43095991",
+      "date": "2026-10-02 17:21:21 +0800",
+      "subject": "benchmark: two-layer external M4 PAM functional benchmark v02",
+      "reachable": true,
+      "files": [
+        {
+          "change": "A",
+          "path": "project/data/benchmarks/pacer_m4_external_functional_v02/benchmark.audit.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/data/benchmarks/pacer_m4_external_functional_v02/endpoint_records.csv",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/data/benchmarks/pacer_m4_external_functional_v02/endpoint_summary.csv",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/data/benchmarks/pacer_m4_external_functional_v02/molecules.csv",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/data/benchmarks/pubchem_aid624126_m4_pam_v01/aid624126_screen_subset.csv",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/data/benchmarks/pubchem_aid624126_m4_pam_v01/source.audit.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/PACER_M4_EXTERNAL_FUNCTIONAL_BENCHMARK_V02.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_m4_external_functional_v02/benchmark_result.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_m4_external_functional_v02/confirmatory_endpoint_skills.csv",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_m4_external_functional_v02/figures/fig_extfunc_v02_two_layers.png",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pacer_m4_external_functional_v02/frozen_predictions_by_endpoint.csv",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pubchem_aid624126_m4_pam_v01/baseline_predictions.csv",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/pubchem_aid624126_m4_pam_v01/baseline_result.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/acquire_pubchem_m4_pam_screen.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/build_pacer_m4_external_functional_benchmark_v02.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/evaluate_pacer_m4_external_functional_benchmark_v02.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/evaluate_pubchem_m4_pam_screen_baselines.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/make_external_functional_benchmark_fig_v02.py",
+          "current_tree": true
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/heads/codex/pacer-m4-service-v01",
+        "refs/heads/incident/pacer-xr-protocol-deviation-20261003",
+        "refs/remotes/origin/codex/pacer-m4-service-v01",
+        "refs/remotes/origin/incident/pacer-xr-protocol-deviation-20261003"
+      ]
+    },
+    {
+      "hash": "eb45810ad23f8691613ba64b20bee02c62283f42",
+      "date": "2026-10-02 15:33:13 +0800",
+      "subject": "build: align submission container with frozen runtime",
+      "reachable": true,
+      "files": [
+        {
+          "change": "M",
+          "path": "Dockerfile",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "README.md",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "docker-compose.yml",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/config/pacer_m4_release_manifest_v01.json",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/docs/LOCAL_API_AND_DOCKER_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/docs/RELEASE_VALIDATION_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/SUBMISSION_CHECKLIST_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/release_audit_v01.json",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "pyproject.toml",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "requirements-api.txt",
+          "current_tree": true
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/heads/codex/pacer-m4-service-v01",
+        "refs/heads/incident/pacer-xr-protocol-deviation-20261003",
+        "refs/remotes/origin/codex/pacer-m4-service-v01",
+        "refs/remotes/origin/incident/pacer-xr-protocol-deviation-20261003"
+      ]
+    },
+    {
+      "hash": "492ce332f4727f441253b752a5711852657aa803",
+      "date": "2026-10-02 15:25:24 +0800",
+      "subject": "freeze PACER-M4 runtime dependencies",
+      "reachable": false,
+      "files": [
+        {
+          "change": "M",
+          "path": ".gitignore",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "environment-drugclip.yml",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "environment-md.yml",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "environment-pacer-fkg.yml",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "environment.yml",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/config/runtime_dependency_map_v01.json",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/docs/DEPENDENCY_MANIFEST.md",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/results/dependency_audit_v01.json",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/results/dependency_runtime_evidence_v01.json",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/results/dependency_scientific_assets_v01.json",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/results/dependency_smoke_core_v01.json",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/results/dependency_smoke_drugclip_v01.json",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/results/dependency_smoke_fkg_v01.json",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/results/dependency_smoke_md_v01.json",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/results/dependency_smoke_overview_v01.json",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/audit_runtime_dependencies.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/check_runtime_dependencies.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "requirements-pacer-fkg.txt",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "requirements.txt",
+          "current_tree": true
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/heads/codex/drugclip-blind-benchmark-v01"
+      ]
+    },
+    {
+      "hash": "c81cf4d26ecc4d7c7744887c7f381320a97c907f",
+      "date": "2026-10-02 15:11:29 +0800",
+      "subject": "build: freeze Python 3.9 core requirements",
+      "reachable": true,
+      "files": [
+        {
+          "change": "M",
+          "path": "README.md",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/config/pacer_m4_release_manifest_v01.json",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/docs/RELEASE_VALIDATION_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/docs/REPRODUCTION_QUICKSTART_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/release_audit_v01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/audit_core_environment.py",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "pyproject.toml",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "requirements.txt",
+          "current_tree": true
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/heads/codex/pacer-m4-service-v01",
+        "refs/heads/incident/pacer-xr-protocol-deviation-20261003",
+        "refs/remotes/origin/codex/pacer-m4-service-v01",
+        "refs/remotes/origin/incident/pacer-xr-protocol-deviation-20261003"
+      ]
+    },
+    {
+      "hash": "85c08f74d2b903869da91a357d7c491a18cd5b75",
+      "date": "2026-10-02 14:54:51 +0800",
+      "subject": "feat: expose PACER-M4 through guarded local API",
+      "reachable": true,
+      "files": [
+        {
+          "change": "A",
+          "path": ".dockerignore",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "Dockerfile",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "README.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "docker-compose.yml",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "pacer_m4/api.py",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "pacer_m4/runner.py",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "pacer_m4/stages.py",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/config/pacer_m4_release_manifest_v01.json",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/docs/DOCUMENT_AND_EVIDENCE_INDEX_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/LOCAL_API_AND_DOCKER_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/docs/RELEASE_VALIDATION_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/release_audit_v01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/tests/test_pacer_m4_api.py",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "pyproject.toml",
+          "current_tree": true
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/heads/codex/pacer-m4-service-v01",
+        "refs/heads/incident/pacer-xr-protocol-deviation-20261003",
+        "refs/remotes/origin/codex/pacer-m4-service-v01",
+        "refs/remotes/origin/incident/pacer-xr-protocol-deviation-20261003"
+      ]
+    },
+    {
+      "hash": "bfbf94dadd34da0b76c540d8a3a696dd0e373150",
+      "date": "2026-10-02 14:48:07 +0800",
+      "subject": "feat: add audited PACER-M4 stage runner",
+      "reachable": true,
+      "files": [
+        {
+          "change": "M",
+          "path": "README.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "pacer_m4/__init__.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "pacer_m4/__main__.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "pacer_m4/cli.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "pacer_m4/runner.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "pacer_m4/stages.py",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/config/pacer_m4_release_manifest_v01.json",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/docs/CODE_AND_ARTIFACT_MAP_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/docs/DOCUMENT_AND_EVIDENCE_INDEX_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/RELEASE_VALIDATION_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/docs/REPRODUCTION_QUICKSTART_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/docs/START_HERE_FOR_COLLABORATORS_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/release_audit_v01.json",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/scripts/select_pareto_candidates.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/tests/test_pacer_m4_cli.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/tests/test_select_pareto_candidates.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "pyproject.toml",
+          "current_tree": true
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/heads/codex/pacer-m4-service-v01",
+        "refs/heads/incident/pacer-xr-protocol-deviation-20261003",
+        "refs/remotes/origin/codex/pacer-m4-service-v01",
+        "refs/remotes/origin/incident/pacer-xr-protocol-deviation-20261003"
+      ]
+    },
+    {
+      "hash": "a8c4203c8b9cfb09f35bd8b88670d602aa266fa6",
+      "date": "2026-10-02 14:39:19 +0800",
+      "subject": "docs: establish PACER-M4 submission entry and evidence index",
+      "reachable": true,
+      "files": [
+        {
+          "change": "M",
+          "path": ".gitignore",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "README.md",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "START_HERE_ONEPROT_PACER_DC.md",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/PACER_M4_FINAL_REPORT.md",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/PIPELINE.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/config/pacer_m4_release_manifest_v01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/CODE_AND_ARTIFACT_MAP_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/DOCUMENT_AND_EVIDENCE_INDEX_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/REPRODUCTION_QUICKSTART_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/START_HERE_FOR_COLLABORATORS_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/release_audit_v01.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/validate_pacer_m4_release.py",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/tests/test_science2026_triplet_checkpoint.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/tests/test_validate_pacer_m4_release.py",
+          "current_tree": true
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/heads/codex/pacer-m4-service-v01",
+        "refs/heads/incident/pacer-xr-protocol-deviation-20261003",
+        "refs/remotes/origin/codex/pacer-m4-service-v01",
+        "refs/remotes/origin/incident/pacer-xr-protocol-deviation-20261003"
+      ]
+    },
+    {
+      "hash": "d1f145832907c42850baf2e189c7142454f66519",
+      "date": "2026-10-02 11:28:56 +0800",
+      "subject": "ship M4 LOTO adapters and offline inference bundle",
+      "reachable": true,
+      "files": [
+        {
+          "change": "A",
+          "path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01/README.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01/bundle_manifest.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01/drugclip2023_m4_loto_seed20260925.projection.pt",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01/drugclip2023_m4_loto_seed20260926.projection.pt",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01/drugclip2023_m4_loto_seed20260927.projection.pt",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01/pacer200_2023_gpcr_loto_scores.audit.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01/pacer200_2023_gpcr_loto_scores.csv",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01/pacer200_m4_2023_frozen_representations.npz",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01/pacer200_m4_safe_routed_ranking.audit.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01/pacer200_m4_safe_routed_ranking.csv",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01/pacer200_two_model_scores.csv",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01/requirements.txt",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/build_drugclip2023_m4_loto_bundle.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/export_drugclip2023_m4_loto_adapters.py",
+          "current_tree": true
+        },
+        {
+          "change": "M",
+          "path": "project/scripts/pacer_drugclip_router.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/score_pacer200_drugclip2023_m4_loto.py",
+          "current_tree": true
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/heads/codex/drugclip-blind-benchmark-v01",
+        "refs/heads/codex/pacer-m4-service-v01",
+        "refs/heads/incident/pacer-xr-protocol-deviation-20261003",
+        "refs/remotes/origin/codex/drugclip-blind-benchmark-v01",
+        "refs/remotes/origin/codex/pacer-m4-service-v01",
+        "refs/remotes/origin/incident/pacer-xr-protocol-deviation-20261003"
+      ]
+    },
+    {
+      "hash": "f35acdd9d330e88ed8c690f81986e0305f5a515f",
+      "date": "2026-10-02 10:27:55 +0800",
+      "subject": "fix router Python import example",
+      "reachable": true,
+      "files": [
+        {
+          "change": "M",
+          "path": "project/docs/PACER_DRUGCLIP_ROUTER_INTERFACE_V01.md",
+          "current_tree": true
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/heads/codex/drugclip-blind-benchmark-v01",
+        "refs/heads/codex/pacer-m4-service-v01",
+        "refs/heads/incident/pacer-xr-protocol-deviation-20261003",
+        "refs/remotes/origin/codex/drugclip-blind-benchmark-v01",
+        "refs/remotes/origin/codex/pacer-m4-service-v01",
+        "refs/remotes/origin/incident/pacer-xr-protocol-deviation-20261003"
+      ]
+    },
+    {
+      "hash": "cd53f989ec22ef6df406b4924ceadd51567b3ea0",
+      "date": "2026-10-02 10:27:27 +0800",
+      "subject": "add deployable PACER DrugCLIP routing interface",
+      "reachable": true,
+      "files": [
+        {
+          "change": "A",
+          "path": "project/docs/PACER_DRUGCLIP_ROUTER_INTERFACE_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/pacer_drugclip_router.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/tests/test_pacer_drugclip_router.py",
+          "current_tree": true
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/heads/codex/drugclip-blind-benchmark-v01",
+        "refs/heads/codex/pacer-m4-service-v01",
+        "refs/heads/incident/pacer-xr-protocol-deviation-20261003",
+        "refs/remotes/origin/codex/drugclip-blind-benchmark-v01",
+        "refs/remotes/origin/codex/pacer-m4-service-v01",
+        "refs/remotes/origin/incident/pacer-xr-protocol-deviation-20261003"
+      ]
+    },
+    {
+      "hash": "512f8fa866a8c187a9a4923e7de4550c1c264c56",
+      "date": "2026-10-02 10:19:51 +0800",
+      "subject": "benchmark DrugCLIP generations with GPCR-safe routing",
+      "reachable": true,
+      "files": [
+        {
+          "change": "A",
+          "path": "project/docs/DRUGCLIP_GENERATION_BAKEOFF_PROTOCOL_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/DRUGCLIP_GENERATION_BAKEOFF_RESULT_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/DRUGCLIP_LOCKBOX_ACQUISITION_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/PACER_M4_PROJECT_MAINLINE_DEVELOPMENT_AND_INFERENCE_V01.md",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/assets/drugclip_generation_bakeoff_v01/audit.json",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/assets/drugclip_generation_bakeoff_v01/generation_dumbbell.png",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/assets/drugclip_generation_bakeoff_v01/macro_metric_bars.png",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/assets/drugclip_generation_bakeoff_v01/macro_metrics.csv",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/assets/drugclip_generation_bakeoff_v01/matched_docking_comparison.csv",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/assets/drugclip_generation_bakeoff_v01/paired_delta_forest.png",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/assets/drugclip_generation_bakeoff_v01/per_target_metrics.csv",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/assets/drugclip_generation_bakeoff_v01/per_target_roc_heatmap.png",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/docs/assets/drugclip_generation_bakeoff_v01/scaffold_bootstrap_ci.csv",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/run_drugclip_generation_bakeoff.py",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/tests/test_drugclip_generation_bakeoff.py",
+          "current_tree": true
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/heads/codex/drugclip-blind-benchmark-v01",
+        "refs/heads/codex/pacer-m4-service-v01",
+        "refs/heads/incident/pacer-xr-protocol-deviation-20261003",
+        "refs/remotes/origin/codex/drugclip-blind-benchmark-v01",
+        "refs/remotes/origin/codex/pacer-m4-service-v01",
+        "refs/remotes/origin/incident/pacer-xr-protocol-deviation-20261003"
+      ]
+    },
+    {
+      "hash": "270dd0eb5e88c0c369d493a58bd739cf118ebcdb",
+      "date": "2026-10-02 09:38:34 +0800",
+      "subject": "evidence: same-test-set M4R head-to-head 2023-triplet vs 2026-famaug",
+      "reachable": false,
+      "files": [
+        {
+          "change": "A",
+          "path": "project/results/drugclip_science2026/family_aug_v01/m4_library_oldtriplet_ranking.csv",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/results/drugclip_science2026/family_aug_v01/m4r_head2head_2023vs2026.json",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/m4r_head2head_2023_vs_2026.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/screen_m4_library_oldtriplet.py",
+          "current_tree": false
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/remotes/origin/codex/drugclip-pacer-handoff"
+      ]
+    },
+    {
+      "hash": "d948297b1011707cfe54ad9dbe47df446506aac1",
+      "date": "2026-10-02 09:24:27 +0800",
+      "subject": "docs: repository organization -- mainline START_HERE entry + authoritative index",
+      "reachable": false,
+      "files": [
+        {
+          "change": "A",
+          "path": "START_HERE_MAINLINE.md",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "docs/REPOSITORY_MAINLINE_INDEX.md",
+          "current_tree": false
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/remotes/origin/codex/drugclip-pacer-handoff"
+      ]
+    },
+    {
+      "hash": "77f44dc6416f4d332bd2f0ff0bafbf4a9da9231c",
+      "date": "2026-10-02 09:22:56 +0800",
+      "subject": "figs: per-module horizontal scoreboards + cascade funnel",
+      "reachable": true,
+      "files": [
+        {
+          "change": "A",
+          "path": "project/results/project_wide_integration_benchmark_v02/figures/fig_v02_07_module_scoreboards.png",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/results/project_wide_integration_benchmark_v02/figures/fig_v02_08_cascade_funnel.png",
+          "current_tree": true
+        },
+        {
+          "change": "A",
+          "path": "project/scripts/make_module_scoreboards_v01.py",
+          "current_tree": true
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/heads/codex/drugclip-blind-benchmark-v01",
+        "refs/heads/codex/pacer-m4-service-v01",
+        "refs/heads/incident/pacer-xr-protocol-deviation-20261003",
+        "refs/remotes/origin/codex/drugclip-blind-benchmark-v01",
+        "refs/remotes/origin/codex/drugclip-pacer-handoff",
+        "refs/remotes/origin/codex/pacer-m4-service-v01",
+        "refs/remotes/origin/codex/project-integration-benchmark-v02",
+        "refs/remotes/origin/incident/pacer-xr-protocol-deviation-20261003"
+      ]
+    },
+    {
+      "hash": "ddc11f970f508d89a75dac8ca30c41cfcd361731",
+      "date": "2026-10-02 02:05:11 +0800",
+      "subject": "freeze: finalize manifest-driven PACER production pipeline v01",
+      "reachable": false,
+      "files": [
+        {
+          "change": "A",
+          "path": "project/drugclip_freeze/RUNBOOK.md",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/drugclip_freeze/__init__.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/drugclip_freeze/apply.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/drugclip_freeze/dual_model.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/drugclip_freeze/model_a.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/drugclip_freeze/model_b.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/drugclip_freeze/projection.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/FINAL_CODE_FREEZE_CANDIDATE_REPORT.md",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/FROZEN_MODULE_LEDGER_v01.json",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/RECEIPT_INDEX_v01.json",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/WSL_HISTORICAL_WORKSPACE_RECEIPT_v01.md",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/CM00734_PAYLOAD_REGRESSION_v01.json",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/FROZEN_EOL_NORMALISATION_APPLIED_v01.json",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/FROZEN_EOL_NORMALISATION_DRYRUN_v01.json",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/FROZEN_EOL_PREFLIGHT_AT_FREEZE_v01.json",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/PHASE1_ENCODER_REPLAY_v01.json",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/WSL_DIRTY_CODE_DIFF_v01.patch",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/WSL_DIRTY_FILES_BLOB_HASHES_v01.tsv",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/WSL_GIT_BRANCHES_v01.txt",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/WSL_GIT_BRANCH_v01.txt",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/WSL_GIT_DIFF_NUMSTAT_v01.txt",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/WSL_GIT_DIFF_STAT_IGNORE_CR_v01.txt",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/WSL_GIT_HEAD_v01.txt",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/WSL_GIT_LOG1_v01.txt",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/WSL_GIT_REMOTES_v01.txt",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/WSL_GIT_STASH_v01.txt",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/WSL_GIT_STATUS_PORCELAIN_v01.txt",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/WSL_RESULTS_FILES_v01.tsv",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/WSL_RESULTS_SHA256_v01.txt",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/WSL_RESULTS_TOTAL_BYTES_v01.txt",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/WSL_TOPFILES_v01.tsv",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/receipts/WSL_WORK_EXTRAS_SHA256_v01.txt",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/run_specs/CM00734_REGRESSION_v01.json",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/schemas/final_pipeline_run_spec_v1.schema.json",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/tools/_shim_helper.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/tools/diagnose_regression.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/tools/normalize_frozen_eol.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/tools/run_regression.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/integration_freeze/tools/verify_phase1_replay.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/pacer_fkg_v02/frozen_runner/__init__.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/pacer_fkg_v02/frozen_runner/blocks.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/pacer_fkg_v02/frozen_runner/cli.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/pacer_fkg_v02/frozen_runner/engines.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/pacer_fkg_v02/frozen_runner/fkg_phase1.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/pacer_fkg_v02/frozen_runner/fkg_phase2a.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/pacer_fkg_v02/frozen_runner/fkg_phase2b.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/pacer_fkg_v02/frozen_runner/io_utils.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/pacer_fkg_v02/frozen_runner/paths.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/pacer_fkg_v02/frozen_runner/regression.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/pacer_fkg_v02/frozen_runner/spec.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/tests/test_drugclip_freeze.py",
+          "current_tree": false
+        },
+        {
+          "change": "A",
+          "path": "project/tests/test_frozen_runner.py",
+          "current_tree": false
+        }
+      ],
+      "pre_merge_refs": [
+        "refs/heads/integration/final-freeze-v01",
+        "refs/tags/pacer-code-freeze-v01"
+      ]
+    }
+  ],
+  "merge_verification": "d6350f63cd92b7c462fdfc473d1ccb61208fe9a8\n9ca5356806b4683353aacae49e86fe636642ed39|e1fc9e86d38b25050cd3d7c17538da34ac120810 ddc11f970f508d89a75dac8ca30c41cfcd361731|Merge commit 'ddc11f970f508d89a75dac8ca30c41cfcd361731' into incident/pacer-xr-protocol-deviation-20261003\ne1fc9e86d38b25050cd3d7c17538da34ac120810|cc910a922e1ec64ccd28ad2d14a0fc84b946ca55 270dd0eb5e88c0c369d493a58bd739cf118ebcdb|Merge commit '270dd0eb5e88c0c369d493a58bd739cf118ebcdb' into incident/pacer-xr-protocol-deviation-20261003\ncc910a922e1ec64ccd28ad2d14a0fc84b946ca55|353afede8db9fb3d18a25b0b724ccdc3dcd228cd 492ce332f4727f441253b752a5711852657aa803|Merge commit '492ce332f4727f441253b752a5711852657aa803' into incident/pacer-xr-protocol-deviation-20261003\n353afede8db9fb3d18a25b0b724ccdc3dcd228cd|d083b6eab27554ec96ec38c544b51f292e154df2 9dfaca3553ae5c175aad4b778ee4f58cea8d9669|Merge commit '9dfaca3553ae5c175aad4b778ee4f58cea8d9669' into incident/pacer-xr-protocol-deviation-20261003\n",
+  "external_prior_inventory": [
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/generated/generated_pam_analogs.csv",
+      "bytes": 262621,
+      "sha256": "a832c9cb2cfbed9b2e3db7902b48db5c384980cc70c551961c87f57db9e3be5d",
+      "read_chars": 262621
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_candidates_v01/all_generated_audit.csv",
+      "bytes": 625626,
+      "sha256": "085c59bc874a68036ae93312c688a6badbc57c7072e7e23b0ca6914fce88da53",
+      "read_chars": 625626
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_candidates_v01/audit.json",
+      "bytes": 453,
+      "sha256": "cc1645d10632630f76415572fa1ec190b4dad5f999181e53e7e5ce5bb657bf98",
+      "read_chars": 453
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_candidates_v01/predock_portfolio.csv",
+      "bytes": 50012,
+      "sha256": "0dd7689860879eaae8abe806699a05a1c261a439e7355b99628e982abe46f52b",
+      "read_chars": 50012
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/_stage1_first_run_copy.csv",
+      "bytes": 331000,
+      "sha256": "077aad8d8da2cbd89c994b9ea38d12faa05dcd75528d7d02f09bdbbb71a2e738",
+      "read_chars": 331000
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/_stage1_pinned_A.csv",
+      "bytes": 262621,
+      "sha256": "a832c9cb2cfbed9b2e3db7902b48db5c384980cc70c551961c87f57db9e3be5d",
+      "read_chars": 262621
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/_stage1_pinned_B.csv",
+      "bytes": 262621,
+      "sha256": "a832c9cb2cfbed9b2e3db7902b48db5c384980cc70c551961c87f57db9e3be5d",
+      "read_chars": 262621
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/FINAL_RUN_REPORT.md",
+      "bytes": 9276,
+      "sha256": "6bc3319d740d00268c88c8e625075014dc1723a3a41a7df76bd6b3ecae2d189d",
+      "read_chars": 9263
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/logs_derive_seeds.txt",
+      "bytes": 672,
+      "sha256": "4275f3791bcec1db1ee6215ad58b2fc82b37d77ed3e09e72480850017b2ca253",
+      "read_chars": 335
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/logs_stage1_generation_rerun.txt",
+      "bytes": 5730,
+      "sha256": "ccb443b83276cd3dd4a5249e92dda1b932e494dfdb9ced3e8e35aa1b2b5e509e",
+      "read_chars": 2864
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/logs_stage1_generation.txt",
+      "bytes": 5734,
+      "sha256": "a8d0f4e849e48420e21ddffa5e448fd1adf78c0b9c758d2768f955cd20834936",
+      "read_chars": 2866
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/logs_stage1_pinned_A.txt",
+      "bytes": 5734,
+      "sha256": "852c1da333463a3fcacf8a83b65db18bfc12bbfc819cce085585c8529a1fda64",
+      "read_chars": 2866
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/logs_stage1_pinned_B.txt",
+      "bytes": 5734,
+      "sha256": "852c1da333463a3fcacf8a83b65db18bfc12bbfc819cce085585c8529a1fda64",
+      "read_chars": 2866
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/logs_stage2_filtering.txt",
+      "bytes": 2422,
+      "sha256": "b01726e3680edc4e9ed8e1e47cc561fb7bed49d07ba8c54d6950413c1be9bedb",
+      "read_chars": 1210
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/logs_stage2_qc.txt",
+      "bytes": 6370,
+      "sha256": "113b14fffad4da7126818c3f2672a8a1f4406435f318034eceddb342f8965d0f",
+      "read_chars": 3184
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/logs_stage3_orchestrate.txt",
+      "bytes": 5174,
+      "sha256": "6a4b0de888118ac8ba19cc2989533a0c4c5ff7bd271c1a23fb07a764c541fa9d",
+      "read_chars": 2586
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/README.md",
+      "bytes": 2438,
+      "sha256": "51d02d64854f4eccc6d920cd128fec4bed93ede3f368ebd42569cf7de69d0bf2",
+      "read_chars": 2438
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/STAGE1_GENERATION_RECEIPT_v01.json",
+      "bytes": 5971,
+      "sha256": "0833a5a79221fdcff41d41558cfc39fca0fd5dc003b21a6ad5b955001c5eba25",
+      "read_chars": 5971
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/STAGE1_QC_v01.json",
+      "bytes": 941,
+      "sha256": "0cc0db38220ff9d637654482c7bd039f7cc00806f1db5c6679b14a44cb459193",
+      "read_chars": 941
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/STAGE1_RUN_SPEC_v01.json",
+      "bytes": 4583,
+      "sha256": "bb5b497f938865a8a90a1cccd2f17278527b3cacb4e75e59fcf7416621aa685a",
+      "read_chars": 4553
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/STAGE1_SEED_DERIVATION_RECEIPT_v01.json",
+      "bytes": 3674,
+      "sha256": "09758020f6b25d2a3c3f34f18d1257bcd953333ebd2a039a54d8db3d8f3b6b4a",
+      "read_chars": 3674
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/STAGE2_FILTERING_RECEIPT_v01.json",
+      "bytes": 4915,
+      "sha256": "56bda891052a4ef1377d8eb954eee4d5b40b4139c0a9e401a67a8ee92f7dfc91",
+      "read_chars": 4915
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/STAGE2_QC_v01.json",
+      "bytes": 2631,
+      "sha256": "206acbc3c855c02bcbf102357c6997aa62d4c83cf4f703b4e87d5f6dc12074f9",
+      "read_chars": 2631
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/STAGE3_BLOCKED_RECEIPT_v01.json",
+      "bytes": 4504,
+      "sha256": "eeb2300956ed4d6818fc035080a1177bf1af275ad443805af35874dd2e13e1ae",
+      "read_chars": 4504
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/STAGE3_DRUGCLIP_RECEIPT_v01.json",
+      "bytes": 128010,
+      "sha256": "502cd42d13820317c324d3bd602e645e3501a8ebdaed6e11563195a5d6c78474",
+      "read_chars": 128010
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/STAGE3_OUTPUTS/model_a_scores.csv",
+      "bytes": 34286,
+      "sha256": "a263a866db1e4ccdf6ac05d83f81cae3d29704d2ba00cb0f13ee67d538ee05ba",
+      "read_chars": 34286
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/STAGE3_OUTPUTS/model_b_scores.csv",
+      "bytes": 27815,
+      "sha256": "4323130ee12c2774c8ba217bcd5235360e9e7f0ad288116b15db0350867c3364",
+      "read_chars": 27815
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/STAGE3_OUTPUTS/model_b_scores.json",
+      "bytes": 37990,
+      "sha256": "faac31c6a87b9979000590bc274bedbf64cfd648a0ba47eb755bf4975a4b1ca6",
+      "read_chars": 37990
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/STAGE3_OUTPUTS/STAGE3_DUAL_MODEL_DECISION_v01.json",
+      "bytes": 1017,
+      "sha256": "d8a68aeedd8a50038f1acacea821468d9019573f40a128a2ffaad6e5b1c631c2",
+      "read_chars": 1017
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/STAGE3_OUTPUTS/STAGE3_DUAL_MODEL_SHORTLIST_v01.csv",
+      "bytes": 858,
+      "sha256": "10fc0c8ed474a309271b0817bff38e2080847d3ca0a7272f6f9313a8fe7265ac",
+      "read_chars": 858
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/STAGE3_SHA256_MANIFEST_v01.txt",
+      "bytes": 3233,
+      "sha256": "6dacc46a66e1809399609ea60cc7f65286545d94e8e4025622ec8e33067a9a0f",
+      "read_chars": 3233
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/embeddings.audit.json",
+      "bytes": 1226,
+      "sha256": "e42c095d38c722301ed1c54b7c8ecb113fcf2c14c38bd56406f092ab6dbd628e",
+      "read_chars": 1226
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/embeddings.json",
+      "bytes": 1227,
+      "sha256": "1eb4fc087273e02a48c78b616ec7b73cdefecde78ea8b51e34ee49041eb829de",
+      "read_chars": 1227
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/ENV_EXPLICIT_lock.txt",
+      "bytes": 15285,
+      "sha256": "8913585e08f61fb267eaaba498a3d138aab609eff5673cf7ee9135aec00ad691",
+      "read_chars": 15285
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/ENV_EXPORT_final.yml",
+      "bytes": 6227,
+      "sha256": "e19092389e545963621bebb76bba0949a4a16f36ab441851bc0d9e5132e6f309",
+      "read_chars": 6227
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/full_extract_stdout.txt",
+      "bytes": 1420,
+      "sha256": "a51bbd203d826c770adb8a59d2209137b743563f14859f75d77933238aa8e0b6",
+      "read_chars": 1420
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/molecules.lmdb.audit.json",
+      "bytes": 74,
+      "sha256": "257610ffd0d1db97787bc57650620e92c77272e584b59afdc7471d6558ec3a2f",
+      "read_chars": 74
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/smoke_embeddings.audit.json",
+      "bytes": 1222,
+      "sha256": "dfe8eb58f258ae83cdd0e5adcf40bb64bcb944276ea74a5a53dbd2cc36c4701c",
+      "read_chars": 1222
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/smoke_extract_stdout.txt",
+      "bytes": 1416,
+      "sha256": "3c185fd856e4a79f021765c171a43fe37ee068f5fb972871e5859aa80e467c61",
+      "read_chars": 1416
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/smoke_molecules.csv",
+      "bytes": 101,
+      "sha256": "8f1db10f03fee6cf37c501655208ea68f285745a6e6fff63c97b1ef0962562cc",
+      "read_chars": 101
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/smoke_molecules.lmdb.audit.json",
+      "bytes": 70,
+      "sha256": "a7510bbd3d389c36317c6d1a0cc941f9ea211f79ab043952076b38bb500da836",
+      "read_chars": 70
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/STAGE3_RUNTIME_COMPATIBILITY_RECEIPT_v01.json",
+      "bytes": 1341,
+      "sha256": "b39816f9156c82d3b9b234793b55276c4e287a9d46de102ea0d2dc1cc32e039c",
+      "read_chars": 1341
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/tools/derive_seeds.py",
+      "bytes": 3599,
+      "sha256": "30e74a59b479e7c2e8a45261dedb93ae5a503e6e299c8cfc11884c5663258c06",
+      "read_chars": 3599
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/tools/stage1_qc.py",
+      "bytes": 4110,
+      "sha256": "2eae0076bd8a2600753ae8196b3f98c454e138a8271dab38d3362f8048f15a2c",
+      "read_chars": 4110
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/tools/stage2_qc.py",
+      "bytes": 6173,
+      "sha256": "82db1e6f12805519a3603e969eed0388ae1a154ebe05dd23ae1b7b892cc08141",
+      "read_chars": 6173
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/tools/stage3_orchestrate.py",
+      "bytes": 7922,
+      "sha256": "95b6f1f57085bd8f05a4fcc497b3cfd47eeed45be3e134c1aebbc28537d03318",
+      "read_chars": 7922
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/framewise_scores.csv",
+      "bytes": 397915,
+      "sha256": "7eab001a2bb579e964cb6f93f21b89236f3092991bd449581bc3b74b88682d93",
+      "read_chars": 397915
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/ledger.jsonl",
+      "bytes": 857741,
+      "sha256": "829f32c2f8c9f77cee977196b275d52f28129d395d7a28a746fc8e4268ba037a",
+      "read_chars": 857741
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/metadata.json",
+      "bytes": 605,
+      "sha256": "8d1703f4f3a40b7b73cc6fb74fb7b04f63ade20ba040608e6624607c5b0746d3",
+      "read_chars": 605
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/statewise_scores.csv",
+      "bytes": 397915,
+      "sha256": "c9959c05a319f9e7813400381b4179f56cfe0ee380a6c4f3d2205592eb6e7f9e",
+      "read_chars": 397915
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/2023_provenance_audit.json",
+      "bytes": 2554,
+      "sha256": "2e6f0a3e209a7b2c2d594ca8501fd3226ebc7e45744bf0855b53fd32dd9b7a00",
+      "read_chars": 2554
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/2023_scoring_stdout.log",
+      "bytes": 1047,
+      "sha256": "dd419df5065a5d89e6d43da8142713e4fcac09a0674bf86d0312323fe996aa09",
+      "read_chars": 1047
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/2026_extraction_stdout.log",
+      "bytes": 1578,
+      "sha256": "07920d35c2e1cebcfe4aa529fd836e72d68945e15cb6e91891069721efe4d142",
+      "read_chars": 1578
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/2026_provenance_audit.json",
+      "bytes": 5633,
+      "sha256": "c964ee42d0619bafe4417a4a20bd62107e76f0701eee3353bb4dbd313344c113",
+      "read_chars": 5633
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/bundle_manifest.json",
+      "bytes": 1942,
+      "sha256": "890f645d7c795d189834db7d20ff4f2df5334c0f616211e0d40ad6a835653198",
+      "read_chars": 1942
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/complete_apply_only.py",
+      "bytes": 13620,
+      "sha256": "e49d9de72d851d77a466d476ff1413effcf3a284b4275cd8b232072a50a35883",
+      "read_chars": 13620
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/COMPLETION_RECEIPT.json",
+      "bytes": 1557,
+      "sha256": "186ccd108367f1c69175c2ae8c81971d2d6bc73bcdc32bf453c025d205d1172c",
+      "read_chars": 1557
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/FINAL_VALIDATION.json",
+      "bytes": 1370,
+      "sha256": "07c6cfdd9ce3b0261acc699e17cb8f4acaee2370e619e81f292ee6fc14994d07",
+      "read_chars": 1370
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_2023_gpcr_loto_scores.audit.json",
+      "bytes": 1269,
+      "sha256": "13fffa1523d7172a6b6e9463cd92aad473003d72e3197d02ff1095a3969e6de3",
+      "read_chars": 1269
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_2023_gpcr_loto_scores.csv",
+      "bytes": 25928,
+      "sha256": "4763c4283b93c257ee348db0488d8e381977e6d6df60d3bf13df4074bbf28c15",
+      "read_chars": 25928
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_2026_family_aug_scores.csv",
+      "bytes": 24986,
+      "sha256": "813ac675668b3b36c17ed0d3752a76b2fabee9ebd2d21bf32877dcbd0ab464ca",
+      "read_chars": 24986
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_m4_safe_routed_ranking.audit.json",
+      "bytes": 971,
+      "sha256": "63da29cceb0788405fbc51af2c4eab105b0c2eb734077d81b2664c5697e103fd",
+      "read_chars": 971
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_m4_safe_routed_ranking.csv",
+      "bytes": 51455,
+      "sha256": "bda22c9354a9ebf4a263ce92ccf1257c8b27e8e3e747404b0f4fa97c3fb34d89",
+      "read_chars": 51455
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_science2026_representations.audit.json",
+      "bytes": 1217,
+      "sha256": "1eb29d3fdce11f33cfa4210006f877418a25f6f4bb9fdf8d62676d8f6a6754d8",
+      "read_chars": 1217
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_two_model_scores.csv",
+      "bytes": 22339,
+      "sha256": "493a886353129502dcd3a72978634e7bb5bfe74fe4ad0cdb75162fe96c1c3034",
+      "read_chars": 22339
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/router_provenance_audit.json",
+      "bytes": 1853,
+      "sha256": "8751cc2648877ee1bc38a497247a35ecc9a3e4d67d37c9d74270fd6a6e9c1f35",
+      "read_chars": 1853
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/router_stdout.log",
+      "bytes": 972,
+      "sha256": "74361edb8c9a9895e99076d71829468980bd9b5acb5408a725e615558d6cdc6e",
+      "read_chars": 972
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_stage3d_corrected_20261002_v01/identity_contract.py",
+      "bytes": 3389,
+      "sha256": "ab121b2f346fe5a00b15c6efb82ab79ec423c713395b864f2a6966615eb2c78d",
+      "read_chars": 3389
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_stage3d_corrected_20261002_v01/md_shortlist_pose_manifest.csv",
+      "bytes": 3823,
+      "sha256": "8ef3c4be8ff3800543d09e3b37c11331671e961c7bd3f29cc70850b787e311a6",
+      "read_chars": 3823
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_stage3d_corrected_20261002_v01/pacer_stage3d_diverse_shortlist.csv",
+      "bytes": 97794,
+      "sha256": "2116b0bc3cdf26a2f88ebdfd19e67d7410e7e8d4de4c8fde3e5ba24f7f377cbb",
+      "read_chars": 97794
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_stage3d_corrected_20261002_v01/pacer200_stage3d_merged.csv",
+      "bytes": 113681,
+      "sha256": "d2a679786ef3e39277476c4278ea569ccdd3450d2f581cb0f4de93cdeb45c6a9",
+      "read_chars": 113681
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_stage3d_corrected_20261002_v01/pacer200_structural_gate.csv",
+      "bytes": 60772,
+      "sha256": "34a9f08e62902f63606cbf3a69972f5d712d2d06135374cda3ba67c62cc67809",
+      "read_chars": 60772
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_stage3d_corrected_20261002_v01/run_corrected_stage3d.py",
+      "bytes": 9804,
+      "sha256": "1c659a3d14613cea71f1dd6088a4c5c4bbb300bf6d929636e536bebd6f6aa5ed",
+      "read_chars": 9804
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_stage3d_corrected_20261002_v01/stage3d_c_gate.py",
+      "bytes": 6045,
+      "sha256": "c86a804703dd043e6847c677d98624e4f54fd9ce51a2d4027c561d574c1b838d",
+      "read_chars": 6045
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_stage3d_corrected_20261002_v01/stage3d_def_merge_diversity_pose.py",
+      "bytes": 7886,
+      "sha256": "f2a804da6d5187d6051e227c3cc3144cf91db513929072c5572da06a530e8987",
+      "read_chars": 7866
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_stage3d_corrected_20261002_v01/stage3d_provenance_audit.json",
+      "bytes": 7125,
+      "sha256": "7ea6037409e95f6c604a35c3081351fc20be5de9c9aca6ce9925d763e4cce0e1",
+      "read_chars": 7125
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_stage3d_corrected_20261002_v01/stage3d_ranked_candidates.csv",
+      "bytes": 124799,
+      "sha256": "acc52dbd22fce024be6d42e6912ad37b68dec7c509cea94db87fc0b9229ba9c6",
+      "read_chars": 124799
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_stage3d_corrected_20261002_v01/stage3d_selected_candidates.csv",
+      "bytes": 3061,
+      "sha256": "5672be147ee2d6b1cc4ece4d0b95b0e90512fe6b54dfacb88de976353a507dd3",
+      "read_chars": 3061
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_stage3d_corrected_20261002_v01/stage3d_selection_manifest.json",
+      "bytes": 6034,
+      "sha256": "430986b24e6c63152bf6ea8f3846cd013969e6c321d3741ea4b22c493ed5c162",
+      "read_chars": 6034
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_stage3d_corrected_20261002_v01/stage3d_stdout.log",
+      "bytes": 2024,
+      "sha256": "d7d4ed075d4aaaac0f9c1d3320315ba79c2cf87a18e23a34747d744e9d396e23",
+      "read_chars": 2024
+    },
+    {
+      "path": "C:/projects/GPCR-virtual-screening/project/results/pacer_stage3d_corrected_20261002_v01/stage3d_validation.json",
+      "bytes": 1128,
+      "sha256": "b2da207ab4baffe4c5a0d4b31ebe86a3143974a7907346ce9d455845803f01ca",
+      "read_chars": 1128
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/builder_input_validation.json",
+      "bytes": 1105,
+      "sha256": "9cc962540650dd4c83bdb1ea0705eb67944b04c073718969c562bf9722eb644f",
+      "read_chars": 1105
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/cluster0__apo/replica_01/audit.json",
+      "bytes": 1418,
+      "sha256": "aab27bb54fdd1536337059c5d2a97e36ed8522b5bcc8b611672bb91110d6d9d1",
+      "read_chars": 1418
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/cluster0__apo/replica_01/npt_state.csv",
+      "bytes": 1363,
+      "sha256": "2be7ab524d62876a5d7babbeec68c4306318b7e54f2b2f969e7fc520f2878662",
+      "read_chars": 1363
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/cluster0__apo/replica_01/nvt_state.csv",
+      "bytes": 1366,
+      "sha256": "6a2f7fe1ba59406da58e0755ae6f2097eb3e43831687c9c90486673fbbaf886f",
+      "read_chars": 1366
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/cluster0__probe_only/replica_01/audit.json",
+      "bytes": 1429,
+      "sha256": "2e307150a1666fb5a2d1a95f5d4e9fd2e015072e92e3f62ffc26f57a3672de1a",
+      "read_chars": 1429
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/cluster0__probe_only/replica_01/npt_state.csv",
+      "bytes": 1365,
+      "sha256": "4eb8acdab499ee54a141a14f776abbcf6e52d64c393043f3cb27549271b4c4b2",
+      "read_chars": 1365
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/cluster0__probe_only/replica_01/nvt_state.csv",
+      "bytes": 1365,
+      "sha256": "16b1a254ba237e2270d69ad360c54c729a86b6ae6fd61ff56b58c4e278337aea",
+      "read_chars": 1365
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/cluster4__apo/replica_01/audit.json",
+      "bytes": 1426,
+      "sha256": "195d3bfefc304db47be7447e8bde8a8a7d53a467f8b15b6c15377268e42314c7",
+      "read_chars": 1426
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/cluster4__apo/replica_01/npt_state.csv",
+      "bytes": 1380,
+      "sha256": "6540e9afc98f85ad2da3592ec5fc1d8d9a43547eeff73fb1916f3678682b96f2",
+      "read_chars": 1380
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/cluster4__apo/replica_01/nvt_state.csv",
+      "bytes": 1382,
+      "sha256": "cf687dd0f6913d7cf9052dfd38dc565147a16a6ddd6c19e2d9cbb2d3e7ff5215",
+      "read_chars": 1382
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/cluster4__probe_only/replica_01/audit.json",
+      "bytes": 1432,
+      "sha256": "c698cdc0442a7b99c93834282c9fe8177b08fcdcebe995a7f47628e82e848e8f",
+      "read_chars": 1432
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/cluster4__probe_only/replica_01/npt_state.csv",
+      "bytes": 1382,
+      "sha256": "62782a9d878db087efc6b123f96672fdce53c2829b1e5ccf164161159f3c2e74",
+      "read_chars": 1382
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/cluster4__probe_only/replica_01/nvt_state.csv",
+      "bytes": 1378,
+      "sha256": "311bd001cb84773889f2bb9777ba26b697a4c192558d2ecc6d000fdc6471567f",
+      "read_chars": 1378
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/cluster9__apo/replica_01/audit.json",
+      "bytes": 1425,
+      "sha256": "5319384ff2c4397fe0f6d59c376a0be7c81faaec07abeb3d501f97e9e44a8610",
+      "read_chars": 1425
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/cluster9__apo/replica_01/npt_state.csv",
+      "bytes": 1382,
+      "sha256": "a949146dd94452ef38177aebcf6da9d18685540404cba8afefb9ea27a671a21d",
+      "read_chars": 1382
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/cluster9__apo/replica_01/nvt_state.csv",
+      "bytes": 1385,
+      "sha256": "cf99d2208c8d2e2d2311fc8b94626afd3a10da7c5e71354366fbfef55ea156e9",
+      "read_chars": 1385
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/cluster9__probe_only/replica_01/audit.json",
+      "bytes": 1433,
+      "sha256": "e8418ce6d2f8bc30b4cfd543bc57982b5d9a4c6b61ef1ff119ca43414f028ca6",
+      "read_chars": 1433
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/cluster9__probe_only/replica_01/npt_state.csv",
+      "bytes": 1378,
+      "sha256": "fa622589ce8b638971fc02f6ba051fb7f568ee251d9c6fc15dc2e010a1df6972",
+      "read_chars": 1378
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/cluster9__probe_only/replica_01/nvt_state.csv",
+      "bytes": 1395,
+      "sha256": "3e9ee95d1b764c4556da04701a38fece391a29186ec2c1f2e75960cfb738e92f",
+      "read_chars": 1395
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/PACER0010__candidate_no_probe/replica_01/audit.json",
+      "bytes": 1442,
+      "sha256": "6c7d2026b972c24a763baad0f0dfb17926b47e1283a5b876a069b5fd21d78c02",
+      "read_chars": 1442
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/PACER0010__candidate_no_probe/replica_01/npt_state.csv",
+      "bytes": 1382,
+      "sha256": "df552c23014c59b0ff708dc1d06d6822f7ceea92174bd2e8835b605fc2219a75",
+      "read_chars": 1382
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/PACER0010__candidate_no_probe/replica_01/nvt_state.csv",
+      "bytes": 1382,
+      "sha256": "6f9d1ab45945d7ee0d1ffd04117ad953f200ff2c24e319022126a8891a65edb7",
+      "read_chars": 1382
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/PACER0010__candidate_probe/replica_01/audit.json",
+      "bytes": 1439,
+      "sha256": "4b7691adbdcf37665de4ed01bc29f83a2dffc3bd86902e2709788ca5a320ee2b",
+      "read_chars": 1439
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/PACER0010__candidate_probe/replica_01/npt_state.csv",
+      "bytes": 1385,
+      "sha256": "e3950f1a33f84f35dfaac82290745350bf3b17ebcf93a933b79466937b151af6",
+      "read_chars": 1385
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/PACER0010__candidate_probe/replica_01/nvt_state.csv",
+      "bytes": 1382,
+      "sha256": "fe5bca579dd5e1cda5419f65a23066d49c41fb92a3c16780fa4e0b890d8a9214",
+      "read_chars": 1382
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/PACER0027__candidate_no_probe/replica_01/audit.json",
+      "bytes": 1446,
+      "sha256": "a049d66830d69949767c089619edb7b688ba3ed67d8c86fd80fcc2d9ecc8ffde",
+      "read_chars": 1446
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/PACER0027__candidate_no_probe/replica_01/npt_state.csv",
+      "bytes": 1389,
+      "sha256": "09125fa4d14bc51d18f7b0f6a7fd0aa99d951cd75e319ec0496152d218c201d2",
+      "read_chars": 1389
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/PACER0027__candidate_no_probe/replica_01/nvt_state.csv",
+      "bytes": 1375,
+      "sha256": "a3f96ea5d0aa98f7f84216d9d7156d91448887bbcfbb5527b99550f0845c9d95",
+      "read_chars": 1375
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/PACER0027__candidate_probe/replica_01/audit.json",
+      "bytes": 1442,
+      "sha256": "7ce0bb612c435264a30707787722f1858fcebe56a0c4fe86742316d35bf9244c",
+      "read_chars": 1442
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/PACER0027__candidate_probe/replica_01/npt_state.csv",
+      "bytes": 1389,
+      "sha256": "5dd35f54ce71ab1d59044278edf93cdfd14e88940756b6f9810107990db7439d",
+      "read_chars": 1389
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/PACER0027__candidate_probe/replica_01/nvt_state.csv",
+      "bytes": 1385,
+      "sha256": "a019f69cd603b2a27b6d81924b60e9c44d35965cea8fc456eacb263b21266500",
+      "read_chars": 1385
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/PACER0073__candidate_no_probe/replica_01/audit.json",
+      "bytes": 1438,
+      "sha256": "3df25bc2111518405a036905ab9825fedc20a341a41275d4f7310014ff4cfd71",
+      "read_chars": 1438
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/PACER0073__candidate_no_probe/replica_01/npt_state.csv",
+      "bytes": 1362,
+      "sha256": "128c3d6834717c62f13465e4630a578a8e2b718fe2c3b1e22be35be1b8518ed6",
+      "read_chars": 1362
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/PACER0073__candidate_no_probe/replica_01/nvt_state.csv",
+      "bytes": 1367,
+      "sha256": "efa134a9f66ab8a61a7e7fff7fc9a1ff3a1c4938af9687a20fbbd5909b7e6af5",
+      "read_chars": 1367
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/PACER0073__candidate_probe/replica_01/audit.json",
+      "bytes": 1433,
+      "sha256": "10e54f953431c8f2bc17ca3d4f1f02d2ef9d1ae351bb67a0d2d3793e09749af3",
+      "read_chars": 1433
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/PACER0073__candidate_probe/replica_01/npt_state.csv",
+      "bytes": 1358,
+      "sha256": "ae5f5d0b49cc9699f1e65fb9b7d935dfdfd03ee1edb264d3c49d63878540ba3c",
+      "read_chars": 1358
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/equilibration/PACER0073__candidate_probe/replica_01/nvt_state.csv",
+      "bytes": 1363,
+      "sha256": "31d21f55021550aa638ae8b796ba0d2662a6c03f6c8532a86d335af41f5d59a3",
+      "read_chars": 1363
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/job_matrix.csv",
+      "bytes": 9498,
+      "sha256": "9749068bd82ac80a7b88961ead6dbb7bef2b053f3feb5f7f237c7965cc2134f2",
+      "read_chars": 9498
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/master_manifest.json",
+      "bytes": 16382,
+      "sha256": "a9b5a208accd467326c9b31c0262eff3d96d8e4e6fc326ac8a64752e2cef2329",
+      "read_chars": 16382
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/orientation/cluster0/alignment_audit.json",
+      "bytes": 84098,
+      "sha256": "82a774eef5a595f2f86c2b7826033b6c7326b827b2c8b31f3309abc76654ba3f",
+      "read_chars": 84098
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/orientation/cluster4/alignment_audit.json",
+      "bytes": 84089,
+      "sha256": "0d3e09702105b59b6ce8a0cc62c4310389198780defc96534209df5990f00f14",
+      "read_chars": 84089
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/orientation/cluster9/alignment_audit.json",
+      "bytes": 84096,
+      "sha256": "1ffb24ed074dd6e6f97b51e65fad4929ddcff4f2ae0db1e209cc6ac0bdb6076a",
+      "read_chars": 84096
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster0__apo/replica_01/progress.json",
+      "bytes": 513,
+      "sha256": "3bb35c4195db898dfeeb70efa60cdb6b0f354ff6335dab352397d666b067d151",
+      "read_chars": 513
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster0__apo/replica_01/state.csv",
+      "bytes": 128407,
+      "sha256": "e44d86a3f94f05162a9f80fa99aad28778fd4cd952f792b553e13f488c4e3250",
+      "read_chars": 128407
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster0__apo/replica_02/progress.json",
+      "bytes": 514,
+      "sha256": "323e13c8b434c0cd4fe8403f30ffeb8fdecd9425ce8e90ec6c4216f8f9a7d0d0",
+      "read_chars": 514
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster0__apo/replica_02/state.csv",
+      "bytes": 128407,
+      "sha256": "bed07b53f0d96a03ecb041c501d34f76e97aa1e6944d5f79746d936474a7fb4f",
+      "read_chars": 128407
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster0__apo/replica_03/progress.json",
+      "bytes": 514,
+      "sha256": "e1839258f23dce64b803e3380714a584b0a9edfc2230adaae57469c6d364d6ec",
+      "read_chars": 514
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster0__apo/replica_03/state.csv",
+      "bytes": 128367,
+      "sha256": "2517402bd9c85eaae39235da341fb507da5325f233adb2b205074781768c9d81",
+      "read_chars": 128367
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster0__probe_only/replica_01/progress.json",
+      "bytes": 521,
+      "sha256": "6a1c3de53521538d4ba500d83906e9d859574b9bdb367ad355122ac6a5e7ebe2",
+      "read_chars": 521
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster0__probe_only/replica_01/state.csv",
+      "bytes": 128378,
+      "sha256": "50dec77d963e3d4247e3ca21b009081cf7d71980a5aa275abe3216c4e6940215",
+      "read_chars": 128378
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster0__probe_only/replica_02/progress.json",
+      "bytes": 520,
+      "sha256": "6748f31c3d3279688cf37d4e165f741e74d7d37c44e8efd881a48210905207e1",
+      "read_chars": 520
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster0__probe_only/replica_02/state.csv",
+      "bytes": 128347,
+      "sha256": "8ed77aad7fc5b6b2d71e7a6d73ed55b9155dc8adb2aaabc62859ca6b51e17f00",
+      "read_chars": 128347
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster0__probe_only/replica_03/progress.json",
+      "bytes": 521,
+      "sha256": "69d12328b0692d7de5f5e5a342333ff362aea83714966369c4d3a1488e1ee329",
+      "read_chars": 521
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster0__probe_only/replica_03/state.csv",
+      "bytes": 128353,
+      "sha256": "9932cca60a3c11d7dc1e6a67a64191ad1c769c76993bead2b98593de7235179c",
+      "read_chars": 128353
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster4__apo/replica_01/progress.json",
+      "bytes": 513,
+      "sha256": "1b65b6540a52a177ea14d29672300cc6e6808309f3f7aefe19759be8509c583a",
+      "read_chars": 513
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster4__apo/replica_01/state.csv",
+      "bytes": 130033,
+      "sha256": "3f3c93ded57df9df075ec58bb884c4c688e479bc6ce6e5fd8652353ac1a9eced",
+      "read_chars": 130033
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster4__apo/replica_02/progress.json",
+      "bytes": 513,
+      "sha256": "3b00d406f89a7e7f8266bd1f0bcccb83a4fc520e6e51cc4a457cbf27966cdaeb",
+      "read_chars": 513
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster4__apo/replica_02/state.csv",
+      "bytes": 130075,
+      "sha256": "1d6ea0e054623df2c5daa770aa26b291d56b5eb577dd4631abb431ef3040c3d9",
+      "read_chars": 130075
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster4__apo/replica_03/progress.json",
+      "bytes": 514,
+      "sha256": "c3f4264712a8320bf6195af75be5e7d70f77e071479cadbc05e4ce7912ecfc62",
+      "read_chars": 514
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster4__apo/replica_03/state.csv",
+      "bytes": 130018,
+      "sha256": "38a1bce9b7d9c3ffa854b145856d78f68c0aedc001901e8855d6514f94729eba",
+      "read_chars": 130018
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster4__probe_only/replica_01/progress.json",
+      "bytes": 521,
+      "sha256": "b0e280bae575178d79e71cda18ae715839c60e63413a92b8bd8e186e14c57353",
+      "read_chars": 521
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster4__probe_only/replica_01/state.csv",
+      "bytes": 130061,
+      "sha256": "d61ef3f213fbd688636890ab85edcc5074be16ae8a6feea7bb10b9e5f5e5eecc",
+      "read_chars": 130061
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster4__probe_only/replica_02/progress.json",
+      "bytes": 521,
+      "sha256": "d7b54927d31a0b95e7a9fc20f8d57a1b7f21a709fd236cb015f0e1b6bdcb7e04",
+      "read_chars": 521
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster4__probe_only/replica_02/state.csv",
+      "bytes": 130012,
+      "sha256": "332dbd4856699baeeb87268dad437d5c4e43fee9611246c0d5f297d7b07ed53e",
+      "read_chars": 130012
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster4__probe_only/replica_03/progress.json",
+      "bytes": 521,
+      "sha256": "1d801fa6a9ffb6663b2b7d47a1868633bec6cd312681b7cd4d1575f300776874",
+      "read_chars": 521
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster4__probe_only/replica_03/state.csv",
+      "bytes": 130012,
+      "sha256": "665697a22d60d472ac82d7f3bc8707f5efed58e2fe66d912dc16216df44204e9",
+      "read_chars": 130012
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster9__apo/replica_01/progress.json",
+      "bytes": 514,
+      "sha256": "a371fbbd35bd98b616a2effc8182cdd58d00ad0aff6b26f2c97a160c3f86a98b",
+      "read_chars": 514
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster9__apo/replica_01/state.csv",
+      "bytes": 129884,
+      "sha256": "83b33cb4c25b78961483f8e2b2161c40e6f8ab7edf7cf104a162f89e109b4dde",
+      "read_chars": 129884
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster9__apo/replica_02/progress.json",
+      "bytes": 514,
+      "sha256": "5ddfd3d9cb07c327904c907122ef7ac5eff670e064df87e0d4a90d7a29b18d42",
+      "read_chars": 514
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster9__apo/replica_02/state.csv",
+      "bytes": 129930,
+      "sha256": "8fcacf2cbc020e19b30e25b346a081b43fc7acd72211af7576a6526a1d221d1a",
+      "read_chars": 129930
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster9__apo/replica_03/progress.json",
+      "bytes": 514,
+      "sha256": "63f053f522741933c9de6f36457007cf4f8659c3b197fc3f6333323c60e71397",
+      "read_chars": 514
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster9__apo/replica_03/state.csv",
+      "bytes": 129953,
+      "sha256": "dc468b4527ff83d82e9c39fd10800a4ee24b58ccc7d96564a3ea716b86aee705",
+      "read_chars": 129953
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster9__probe_only/replica_01/progress.json",
+      "bytes": 521,
+      "sha256": "b389077c23c42ddb120e39137d34a04f94172dac6e78bd5746e59649f69c97f1",
+      "read_chars": 521
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster9__probe_only/replica_01/state.csv",
+      "bytes": 130004,
+      "sha256": "625b4fed1beb4e66f1f47d311720f6f7a21dbe3548c82a19b78bb4259b39950c",
+      "read_chars": 130004
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster9__probe_only/replica_02/progress.json",
+      "bytes": 521,
+      "sha256": "699f5c2b54016e8410b269a6ae6093b57c71c3c082f49a1a363f671585194163",
+      "read_chars": 521
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster9__probe_only/replica_02/state.csv",
+      "bytes": 129948,
+      "sha256": "ad572970010a2df1a4bafe811be2b3d6e810b236809000433d22c106ba2bc39e",
+      "read_chars": 129948
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster9__probe_only/replica_03/progress.json",
+      "bytes": 521,
+      "sha256": "a28358eb90bbb139786abe8eaf77487f72688e8b06ed0b062d52d86dd7c9de29",
+      "read_chars": 521
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/cluster9__probe_only/replica_03/state.csv",
+      "bytes": 129982,
+      "sha256": "df3084c512b0a36bb28f7a15156e3c255a0881b9489fe7de696ab6b183feff41",
+      "read_chars": 129982
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0010__candidate_no_probe/replica_01/progress.json",
+      "bytes": 530,
+      "sha256": "01ae7cb624c63f4dedf2533c9d89fa5e16f15fd4f9e39fb384f86379eac6b1cd",
+      "read_chars": 530
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0010__candidate_no_probe/replica_01/state.csv",
+      "bytes": 129957,
+      "sha256": "08fc7d5ec59e6bda82b2a934a9045f2c15996fc93e1646776b280b266f73704d",
+      "read_chars": 129957
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0010__candidate_no_probe/replica_02/progress.json",
+      "bytes": 530,
+      "sha256": "05d3491c97304896ce6e08fa1fff3bbdbde4d410b9fe4c7b8fbcff688b83dc6b",
+      "read_chars": 530
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0010__candidate_no_probe/replica_02/state.csv",
+      "bytes": 130041,
+      "sha256": "834e795418aea4754f517d476afe1903ad7afd11eee74f36ed279b5349a977fd",
+      "read_chars": 130041
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0010__candidate_no_probe/replica_03/progress.json",
+      "bytes": 529,
+      "sha256": "2e86abcc086c4914af1f54488c3d5f7ed312a029e1ca153d56548f08bbe72266",
+      "read_chars": 529
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0010__candidate_no_probe/replica_03/state.csv",
+      "bytes": 129943,
+      "sha256": "f1072a6134c054dbcd48ca66cb3b9b02fc18eb31e1b7b095cca16cfd0dca3110",
+      "read_chars": 129943
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0010__candidate_probe/replica_01/progress.json",
+      "bytes": 526,
+      "sha256": "699c8189bcd7f8399d09440d6851917920d2edfc3fb4ed0f04c8db65c5afab12",
+      "read_chars": 526
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0010__candidate_probe/replica_01/state.csv",
+      "bytes": 129897,
+      "sha256": "91d8b8c4f97f896a954bec163f03de144cf217c96438dbf1cc162b3c053c507a",
+      "read_chars": 129897
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0010__candidate_probe/replica_02/progress.json",
+      "bytes": 527,
+      "sha256": "98cb6c30ad67b8f10fd790e9b3af01da93d4c2ba595c2e0b34b89891f48debf0",
+      "read_chars": 527
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0010__candidate_probe/replica_02/state.csv",
+      "bytes": 129988,
+      "sha256": "03b5eff07ec590a60472dc868e01b5019dba42263730a9ff77a0b25ac977de36",
+      "read_chars": 129988
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0010__candidate_probe/replica_03/progress.json",
+      "bytes": 431,
+      "sha256": "cf4518f467a8fe35f65cbea1474ba7e6ff6637408bc77d66a1a3a2fe6c50cff4",
+      "read_chars": 431
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0010__candidate_probe/replica_03/state.csv",
+      "bytes": 129925,
+      "sha256": "2685f1427b34fc1c62b9449ceebeea8349736249620a5f15074089c7f7af546c",
+      "read_chars": 129925
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0027__candidate_no_probe/replica_01/progress.json",
+      "bytes": 530,
+      "sha256": "5274cb71040d060575b5ebaa3d8281abfe11eb728b6459bb202792f8a5b6366b",
+      "read_chars": 530
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0027__candidate_no_probe/replica_01/state.csv",
+      "bytes": 129911,
+      "sha256": "b006b24cb8734e0a8b64774ffe8d0b03df4cdf33995a15b4313d99d9941b09af",
+      "read_chars": 129911
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0027__candidate_no_probe/replica_02/progress.json",
+      "bytes": 529,
+      "sha256": "af48cdd2a4e81a61634524b9a07b4d26d5f753ff6d2d2c66add5d412b59aee96",
+      "read_chars": 529
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0027__candidate_no_probe/replica_02/state.csv",
+      "bytes": 130079,
+      "sha256": "8e99faccec017b61857d6b5fc33d141b2978f96ef953c277a63da33ee5a8c2f7",
+      "read_chars": 130079
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0027__candidate_no_probe/replica_03/progress.json",
+      "bytes": 529,
+      "sha256": "44370c587cabcffbbc253524f5f6f371612257271c8a43e2ec9d49d82fc7b891",
+      "read_chars": 529
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0027__candidate_no_probe/replica_03/state.csv",
+      "bytes": 130033,
+      "sha256": "d2d1da75904c1336f67e7ea8b85a518627cc0715e9a793980b363d505fd6b845",
+      "read_chars": 130033
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0027__candidate_probe/replica_01/progress.json",
+      "bytes": 526,
+      "sha256": "7b39a8b9a2bf4cf999a59a4f196799e06855d40415ec4d062a887844dcb3060c",
+      "read_chars": 526
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0027__candidate_probe/replica_01/state.csv",
+      "bytes": 130011,
+      "sha256": "d2287f4d7940d3454dbf24f1e9e27395698b1f551deb9f63142b501641fc61d4",
+      "read_chars": 130011
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0027__candidate_probe/replica_02/progress.json",
+      "bytes": 526,
+      "sha256": "39aa62c60437f0e91885be797991f4109ee605df3cce30d629ac567d0a9d5a46",
+      "read_chars": 526
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0027__candidate_probe/replica_02/state.csv",
+      "bytes": 129956,
+      "sha256": "4c4965df86bca9f9746223309bf84d8d706d4eef631d10378607f5e48e12bd84",
+      "read_chars": 129956
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0027__candidate_probe/replica_03/progress.json",
+      "bytes": 527,
+      "sha256": "c1b5933e94e20d3ad351a0c1571d9de58eedce938e37dda87def6f26b36b2ba6",
+      "read_chars": 527
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0027__candidate_probe/replica_03/state.csv",
+      "bytes": 130035,
+      "sha256": "5e4d0b554a1bc55ba4e2af18888400c80dc1c4cc53e0453f7a87cb54f2c9bd1c",
+      "read_chars": 130035
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0073__candidate_no_probe/replica_01/progress.json",
+      "bytes": 530,
+      "sha256": "259aa06164dd2a034e1fc56e51a26a8cf59c9e712d318b96210545e7769194ad",
+      "read_chars": 530
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0073__candidate_no_probe/replica_01/state.csv",
+      "bytes": 128410,
+      "sha256": "1bc33411b5909672aade4ac28ac39cf58f343a0341ea5bb4fa914a6400147216",
+      "read_chars": 128410
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0073__candidate_no_probe/replica_02/progress.json",
+      "bytes": 528,
+      "sha256": "ed44e3f4dadb21de2de495a162d2e4f50b8cfff0b413290b2a274b4197a07969",
+      "read_chars": 528
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0073__candidate_no_probe/replica_02/state.csv",
+      "bytes": 128399,
+      "sha256": "74631f104f3c4aed8a14bffbc762747c0af9843a97cadf280b895e003aff598f",
+      "read_chars": 128399
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0073__candidate_no_probe/replica_03/progress.json",
+      "bytes": 530,
+      "sha256": "800003d1c0781ad7eb47abb904e3bdf61d5977af6cf4c3d78ce4b11421fdee39",
+      "read_chars": 530
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0073__candidate_no_probe/replica_03/state.csv",
+      "bytes": 128377,
+      "sha256": "533c1ddfc2367e2b3daf388f3ac5782a0e4f887315aad620541a9f7037616176",
+      "read_chars": 128377
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0073__candidate_probe/replica_01/progress.json",
+      "bytes": 526,
+      "sha256": "57b9393a01db6886e3413c881eda7d4f22eb169a05d0558d418fa6750f01b196",
+      "read_chars": 526
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0073__candidate_probe/replica_01/state.csv",
+      "bytes": 128367,
+      "sha256": "81f43da7d379c87c61c81c9c6603e75c60f1103b6a5a8698f484a399b0b847a9",
+      "read_chars": 128367
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0073__candidate_probe/replica_02/progress.json",
+      "bytes": 526,
+      "sha256": "b73063a911b7207957036085ddb16bf30e34c581a0f268378f22248545f00050",
+      "read_chars": 526
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0073__candidate_probe/replica_02/state.csv",
+      "bytes": 128333,
+      "sha256": "04f7c68b9e09df0c6bdacf0e5713c74e8eccc2603f7afb8e428a43bf635d52b7",
+      "read_chars": 128333
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0073__candidate_probe/replica_03/progress.json",
+      "bytes": 527,
+      "sha256": "bdd8eb02109eda6e4c6e91fea06f5921bc3c0f2553402aaa79d845d80c8fb1ad",
+      "read_chars": 527
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/production/PACER0073__candidate_probe/replica_03/state.csv",
+      "bytes": 128387,
+      "sha256": "1291ba27b0e1d4b4bd19ffc303e7326c4d4a7abe971fb9fd0761100fe63e2d16",
+      "read_chars": 128387
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster0__apo/replica_01/audit.json",
+      "bytes": 1547,
+      "sha256": "5012a18e04e6db3e28814a37ad3aa13632b6db3fc2a65442e654654102f72a17",
+      "read_chars": 1547
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster0__apo/replica_01/stage_01_k_500.csv",
+      "bytes": 1354,
+      "sha256": "e455f09d714e9db6ea3d692c584cb43279e3d27335bc0473d9ed30007daa0d22",
+      "read_chars": 1354
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster0__apo/replica_01/stage_02_k_100.csv",
+      "bytes": 1352,
+      "sha256": "a41cdc26cbaaae2fcba34f1b84a1b5382141d8eb6c46d382e7db3aa0a99a2996",
+      "read_chars": 1352
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster0__apo/replica_01/stage_03_k_10.csv",
+      "bytes": 1355,
+      "sha256": "2fc03b76a62c259457a955889f5e8e2b447807807f92ee072edd1702bafd96fc",
+      "read_chars": 1355
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster0__apo/replica_01/stage_04_k_0.csv",
+      "bytes": 1360,
+      "sha256": "8e7718dd1ef50bc809aef39f71012f19df257c84abd2d97685f03d37bfd984ef",
+      "read_chars": 1360
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster0__probe_only/replica_01/audit.json",
+      "bytes": 1557,
+      "sha256": "dbd27eeca54a6f3aaa0b38a7af235d15ee9a866c1ff248b548ab3f92e4c45487",
+      "read_chars": 1557
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster0__probe_only/replica_01/stage_01_k_500.csv",
+      "bytes": 1360,
+      "sha256": "645b8c2b3d46cb22ad449caf01ea0bc010563ffe454c5505f5f2e04803d562a8",
+      "read_chars": 1360
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster0__probe_only/replica_01/stage_02_k_100.csv",
+      "bytes": 1357,
+      "sha256": "0678bd6b6685aa2918117b126ba020c4ad821e3e6bf85d19418c5cf0e95e6180",
+      "read_chars": 1357
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster0__probe_only/replica_01/stage_03_k_10.csv",
+      "bytes": 1357,
+      "sha256": "2c6f0a2dbb7ec10020121e330629f0f22b375d0d916f37664b630827b6af0eb5",
+      "read_chars": 1357
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster0__probe_only/replica_01/stage_04_k_0.csv",
+      "bytes": 1351,
+      "sha256": "256c3402960533c71c67a47a5715b5c562dd91c7464ce51f065c4e83aae7cc83",
+      "read_chars": 1351
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster4__apo/replica_01/audit.json",
+      "bytes": 1561,
+      "sha256": "f3491a35be2104729baad0736a17ed2ccc3e7e45aa6ae1975b9bdef2b7f921f4",
+      "read_chars": 1561
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster4__apo/replica_01/stage_01_k_500.csv",
+      "bytes": 1370,
+      "sha256": "1de2268c089522009cbd5fb14c1403ff7b4799b4203b677248400b4f70011aa4",
+      "read_chars": 1370
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster4__apo/replica_01/stage_02_k_100.csv",
+      "bytes": 1372,
+      "sha256": "68da973e44eca9a2b18c1463c0e1b4e93ee93e64aba99a222857b02140a8b71e",
+      "read_chars": 1372
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster4__apo/replica_01/stage_03_k_10.csv",
+      "bytes": 1364,
+      "sha256": "8e92e6fa12654bc5b4ddf2a47fccc4a5aa1476625a3e08390a03b337673b8f2f",
+      "read_chars": 1364
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster4__apo/replica_01/stage_04_k_0.csv",
+      "bytes": 1372,
+      "sha256": "a7e6de38bb7888abeb46d24fe16180a747bceab1b90c7830bd793dd1cefa6f10",
+      "read_chars": 1372
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster4__probe_only/replica_01/audit.json",
+      "bytes": 1567,
+      "sha256": "6b07ab3fdf15ed125db1f5479fba5b76855c802876f84b677eda2e00a33202a7",
+      "read_chars": 1567
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster4__probe_only/replica_01/stage_01_k_500.csv",
+      "bytes": 1368,
+      "sha256": "965cc4c10d4b8bb9423265862e85513efe0804a3c4c866bba196d382aed3b43a",
+      "read_chars": 1368
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster4__probe_only/replica_01/stage_02_k_100.csv",
+      "bytes": 1362,
+      "sha256": "cce4e448191f5b17b4346fd4500d32da93f545c340a4532ca5c0de6b7d130b30",
+      "read_chars": 1362
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster4__probe_only/replica_01/stage_03_k_10.csv",
+      "bytes": 1374,
+      "sha256": "7ae455ed36d8e1d34e4a4df48b40bb74c4e366995c8a7b5979743720d663a835",
+      "read_chars": 1374
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster4__probe_only/replica_01/stage_04_k_0.csv",
+      "bytes": 1371,
+      "sha256": "0d5afb2f28e547e22523ba40316d5e592a1a46b71ffe4620c80da80e4aa498a8",
+      "read_chars": 1371
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster9__apo/replica_01/audit.json",
+      "bytes": 1560,
+      "sha256": "d6f121a56944cd325e3a950d4dcd1f5eb95877acc01e420d2dc54c4d06af0739",
+      "read_chars": 1560
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster9__apo/replica_01/stage_01_k_500.csv",
+      "bytes": 1369,
+      "sha256": "a1104d70ae7d1631e623c4f5916dd62dece856c903a9e99d95ff709bf1d22f45",
+      "read_chars": 1369
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster9__apo/replica_01/stage_02_k_100.csv",
+      "bytes": 1367,
+      "sha256": "ebed69b5360370eb60d545226714c927af593f2ed8de59993e3ae4d9b3d36a08",
+      "read_chars": 1367
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster9__apo/replica_01/stage_03_k_10.csv",
+      "bytes": 1374,
+      "sha256": "c09164ad36fa20b9ee09980e17e2fed36d288e50c32a5d7d417f2cd043b8a7b3",
+      "read_chars": 1374
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster9__apo/replica_01/stage_04_k_0.csv",
+      "bytes": 1372,
+      "sha256": "90aed0bed7d2c705e4e032ac0471bf2a14c92ebeaf87ff972385b88bbcfb6885",
+      "read_chars": 1372
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster9__probe_only/replica_01/audit.json",
+      "bytes": 1568,
+      "sha256": "1db9ec0d39c03268c6eca5f5c6c89e9a92c49d260c496ae44ea17b13a0905147",
+      "read_chars": 1568
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster9__probe_only/replica_01/stage_01_k_500.csv",
+      "bytes": 1374,
+      "sha256": "cdd939d5e664c488d81adc76cae5976e043ebf8ceeda38430247cecfa054dbc0",
+      "read_chars": 1374
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster9__probe_only/replica_01/stage_02_k_100.csv",
+      "bytes": 1366,
+      "sha256": "6a57e1763b2fe066bee2a017672cc1d374cdd023911b3272e2d7c15c13dfb3fd",
+      "read_chars": 1366
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster9__probe_only/replica_01/stage_03_k_10.csv",
+      "bytes": 1363,
+      "sha256": "a13d6a1692a214c75e488cfa2ccf7608260a62bbc0ab8421c16b2fe0777738b2",
+      "read_chars": 1363
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/cluster9__probe_only/replica_01/stage_04_k_0.csv",
+      "bytes": 1364,
+      "sha256": "39b0a3f3a06bd0fa83f5e8ee3e6209d7502fc051489de82a816d79369d11d715",
+      "read_chars": 1364
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0010__candidate_no_probe/replica_01/audit.json",
+      "bytes": 1577,
+      "sha256": "be4f6fe43c8b8de87f39cbce578d13433910eff604a4fc7e1001eb16a428e7a9",
+      "read_chars": 1577
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0010__candidate_no_probe/replica_01/stage_01_k_500.csv",
+      "bytes": 1362,
+      "sha256": "5f089b2802277bbc7b7bd68c41ba7f27cf2667ea914aa269a6134a57c3a1ea7e",
+      "read_chars": 1362
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0010__candidate_no_probe/replica_01/stage_02_k_100.csv",
+      "bytes": 1369,
+      "sha256": "118678a3fcec298bd9064fb5630a9e12546d07e359a62877daded32236033177",
+      "read_chars": 1369
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0010__candidate_no_probe/replica_01/stage_03_k_10.csv",
+      "bytes": 1372,
+      "sha256": "efe20fb2f8915e4191fd6139c80ef18fb93fdf6c5fe30aa5d7f35d657f3c69b9",
+      "read_chars": 1372
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0010__candidate_no_probe/replica_01/stage_04_k_0.csv",
+      "bytes": 1368,
+      "sha256": "bd10f1d7259f9a8a37409002399a0b6953a8e85359637629ab4cce455d5cf619",
+      "read_chars": 1368
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0010__candidate_probe/replica_01/audit.json",
+      "bytes": 1572,
+      "sha256": "00103fbfb55aaac1fdab550a4d3b22ce079cb4fbb6ea36c64cd6ae3ab6e3288d",
+      "read_chars": 1572
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0010__candidate_probe/replica_01/stage_01_k_500.csv",
+      "bytes": 1368,
+      "sha256": "2a1428a3b550c34c8705665644a6677c5035113f53cf7ff895cad06f0ff292b8",
+      "read_chars": 1368
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0010__candidate_probe/replica_01/stage_02_k_100.csv",
+      "bytes": 1373,
+      "sha256": "ccccb3043523d8a771b1c5cb6924659feef195484c88c69b0f0d303d3dc1c2dd",
+      "read_chars": 1373
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0010__candidate_probe/replica_01/stage_03_k_10.csv",
+      "bytes": 1369,
+      "sha256": "9c0a7e57c72cf61b27127ad6eaa35ea14f1024c2d53adb751b445f55d34c9702",
+      "read_chars": 1369
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0010__candidate_probe/replica_01/stage_04_k_0.csv",
+      "bytes": 1379,
+      "sha256": "118bbd9b70334bc5ea4a561c42256eb159ee1834ff98bc331e4e28b21107b99e",
+      "read_chars": 1379
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0027__candidate_no_probe/replica_01/audit.json",
+      "bytes": 1575,
+      "sha256": "762b07d351120173863c9da901aa9a5a6f630e4bcbd8ee77177ef8bd0efd7028",
+      "read_chars": 1575
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0027__candidate_no_probe/replica_01/stage_01_k_500.csv",
+      "bytes": 1369,
+      "sha256": "7124e9bddea6d26d3cbf0d89970ce26eaeb437d9ed8e215ac0b25fe5931e9d34",
+      "read_chars": 1369
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0027__candidate_no_probe/replica_01/stage_02_k_100.csv",
+      "bytes": 1375,
+      "sha256": "ef4236278b7e46e5e9fa8ceebb784cd369cba709dbc0019b787f499bdf160c2f",
+      "read_chars": 1375
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0027__candidate_no_probe/replica_01/stage_03_k_10.csv",
+      "bytes": 1368,
+      "sha256": "cd399e37aed5c463b7eee4aae5d4bf8da24920a5dd4f12c83551af9343c1ad7f",
+      "read_chars": 1368
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0027__candidate_no_probe/replica_01/stage_04_k_0.csv",
+      "bytes": 1366,
+      "sha256": "e88ee696e4bece875b211b9cf7a7eae4962fd6980c47552c626cdbccd9091667",
+      "read_chars": 1366
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0027__candidate_probe/replica_01/audit.json",
+      "bytes": 1571,
+      "sha256": "901b12522b50524775c51023e90fbca9d853538178f8a8f2f041ccb600c6c971",
+      "read_chars": 1571
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0027__candidate_probe/replica_01/stage_01_k_500.csv",
+      "bytes": 1366,
+      "sha256": "98861df97ee55eb0db8f42e8c3a98477507565272994a8d187fcf5d58ecb9111",
+      "read_chars": 1366
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0027__candidate_probe/replica_01/stage_02_k_100.csv",
+      "bytes": 1377,
+      "sha256": "b2136e63e0b3fbbbe27673ee2d1071f8b35baa12770d4e013f70b866ae7578e5",
+      "read_chars": 1377
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0027__candidate_probe/replica_01/stage_03_k_10.csv",
+      "bytes": 1359,
+      "sha256": "db2a2cc038f8492df0b756b9e52c391d56e2b59eba27658539eddd0446ac18a5",
+      "read_chars": 1359
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0027__candidate_probe/replica_01/stage_04_k_0.csv",
+      "bytes": 1371,
+      "sha256": "4617a61af814beaa82721d8f5d7a713db9200ec3136714f03a24e1c0f62166e7",
+      "read_chars": 1371
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0073__candidate_no_probe/replica_01/audit.json",
+      "bytes": 1565,
+      "sha256": "ac74feb69e9d22f786952f4fbd3ef08f97976827b66dafd1835fcb44d50e0418",
+      "read_chars": 1565
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0073__candidate_no_probe/replica_01/stage_01_k_500.csv",
+      "bytes": 1359,
+      "sha256": "97ac42abb856633fe1daf9319abbd365021c925ae02d4b82d30cbf5b3ab3480f",
+      "read_chars": 1359
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0073__candidate_no_probe/replica_01/stage_02_k_100.csv",
+      "bytes": 1350,
+      "sha256": "525bf3ff3fa5c3866ce05b03914f92e9c004bc74ff60e8895a738fb1b296f058",
+      "read_chars": 1350
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0073__candidate_no_probe/replica_01/stage_03_k_10.csv",
+      "bytes": 1350,
+      "sha256": "4d6276e938d998724b00ceb15b84669e313f80368acca68269fbf19ad1c6ce99",
+      "read_chars": 1350
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0073__candidate_no_probe/replica_01/stage_04_k_0.csv",
+      "bytes": 1358,
+      "sha256": "031ac636988bbc9d1086c603da2e3401f9c10fa7438fb25f05dd13a2920b154c",
+      "read_chars": 1358
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0073__candidate_probe/replica_01/audit.json",
+      "bytes": 1563,
+      "sha256": "7486c70aea4893925e009e4afec8919138c67f6d72bcd10d7019b4d8bb0a9e99",
+      "read_chars": 1563
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0073__candidate_probe/replica_01/stage_01_k_500.csv",
+      "bytes": 1353,
+      "sha256": "41aa42810c4e020dceb95f6649f3e6414b6eca5745a3cb797af9cb0353683661",
+      "read_chars": 1353
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0073__candidate_probe/replica_01/stage_02_k_100.csv",
+      "bytes": 1349,
+      "sha256": "7dcfb3b10c7fba889faffddcd5daa18b3a2c603c2c4084b46e75d9d28c5ee0be",
+      "read_chars": 1349
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0073__candidate_probe/replica_01/stage_03_k_10.csv",
+      "bytes": 1347,
+      "sha256": "d8ffacb5e427ed15e84c964fa2e76e4f72a2681ed4c3f07159662e380a30aede",
+      "read_chars": 1347
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/restraint_release/PACER0073__candidate_probe/replica_01/stage_04_k_0.csv",
+      "bytes": 1353,
+      "sha256": "2fa61cd3c756947d2c1aee0dd9e85d60db938bce79c32e913a0ff03af481d325",
+      "read_chars": 1353
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster0__apo/audit.json",
+      "bytes": 1187,
+      "sha256": "dc2fe02848bc47f35a23b652f1c0c88acf9a92ecdc83aff1450a55bedd1a4a6a",
+      "read_chars": 1187
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster0__apo/preflight.json",
+      "bytes": 576,
+      "sha256": "cab3aad6b011b12786fb74b75e51e1b173229e07de5ee7c01ad5984f6b29197e",
+      "read_chars": 576
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster0__apo/refined_source_sha256.txt",
+      "bytes": 193,
+      "sha256": "4e06cd49e18fb0d680ee547e186682642835436e8e6b181a43ca12930237bfe7",
+      "read_chars": 193
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster0__apo/state.csv",
+      "bytes": 1153,
+      "sha256": "a43b7694e866636811e2ab378fe5d5daba1a260c0a5221f50a9546fadc3681c4",
+      "read_chars": 1153
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster0__probe_only/audit.json",
+      "bytes": 1194,
+      "sha256": "ca2b3514a1b28a0163423f13e4c0352cba747a27e46f4a647b530eae5600369c",
+      "read_chars": 1194
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster0__probe_only/preflight.json",
+      "bytes": 585,
+      "sha256": "d2b5876aad3783536a150a9acca7a832d6cd7c4d6e37b893a422b1797a4b97a0",
+      "read_chars": 585
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster0__probe_only/refined_source_sha256.txt",
+      "bytes": 193,
+      "sha256": "34b13850fd7401386ae4fc8a346266861d3534168637c1740db86e7d7551f122",
+      "read_chars": 193
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster0__probe_only/state.csv",
+      "bytes": 1152,
+      "sha256": "be29d3328410a0856188a1d9263a8db21972040181424d3bcc1bfff35319d51b",
+      "read_chars": 1152
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster4__apo/audit.json",
+      "bytes": 1187,
+      "sha256": "3229664f8756311f1b18395365a3c6ad2fc45f48e6c7487855d6fb6dbb9235a6",
+      "read_chars": 1187
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster4__apo/preflight.json",
+      "bytes": 577,
+      "sha256": "9b3e74a2ef28669d8e04e370eb56c68e42d1f4f0d163d6e269f2980f060831e5",
+      "read_chars": 577
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster4__apo/refined_source_sha256.txt",
+      "bytes": 193,
+      "sha256": "ca93ec5eb26c8dbfe7e0baa4620e661226a1581c8734e03e56bbbc1fac1385c3",
+      "read_chars": 193
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster4__apo/state.csv",
+      "bytes": 1162,
+      "sha256": "d3ac85905f11c5313910fb517f0e10000e01f67e51eb3c84c9fd4dfcfa7573b5",
+      "read_chars": 1162
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster4__probe_only/audit.json",
+      "bytes": 1195,
+      "sha256": "a72e8532274a0395a332daeafe666046da68823229fa2e9c7f6c28536dbdcb74",
+      "read_chars": 1195
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster4__probe_only/preflight.json",
+      "bytes": 584,
+      "sha256": "19b4f29fbf79766f0f14030924a656444d45196885cf7d299762bc1b77098473",
+      "read_chars": 584
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster4__probe_only/refined_source_sha256.txt",
+      "bytes": 193,
+      "sha256": "f09607a2a21a6655738d56f12024f99886943a388f16089e648ec0f15639f662",
+      "read_chars": 193
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster4__probe_only/state.csv",
+      "bytes": 1164,
+      "sha256": "7aa02b45f495fb2d5283a04c73b7faff58a995355f2802ec0e648ca344258ca4",
+      "read_chars": 1164
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster9__apo/audit.json",
+      "bytes": 1186,
+      "sha256": "b8e552c102aa905dbf8ac34abac12457baf8ba25062a19b0210b829079ee59d2",
+      "read_chars": 1186
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster9__apo/preflight.json",
+      "bytes": 576,
+      "sha256": "58c3c4b60d889f09f4fae8616d438ad0f9c3f9be211833ade44cf704c50dbc18",
+      "read_chars": 576
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster9__apo/refined_source_sha256.txt",
+      "bytes": 193,
+      "sha256": "68c9997facf96b0c6d503c31d08b82ca0a7955863686494286fe1a2edf3b6354",
+      "read_chars": 193
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster9__apo/state.csv",
+      "bytes": 1164,
+      "sha256": "80e470b100e009cf95a0adff2f4c259bfb07a04ff3a9e71b68a0ebe3568ac144",
+      "read_chars": 1164
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster9__probe_only/audit.json",
+      "bytes": 1195,
+      "sha256": "5fedb98bb97750e85f85cfcc523cbcf244b614e531a77dc2c75372f2594e0465",
+      "read_chars": 1195
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster9__probe_only/preflight.json",
+      "bytes": 584,
+      "sha256": "934546d0569e3387498f36930a01b4556f175e2b2575ef288e733b0f79e4299c",
+      "read_chars": 584
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster9__probe_only/refined_source_sha256.txt",
+      "bytes": 193,
+      "sha256": "008178683bd68279752c1c525bbddd1924181e3cd1e8f22fae544cdb30e38cfb",
+      "read_chars": 193
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/cluster9__probe_only/state.csv",
+      "bytes": 1164,
+      "sha256": "231adb9cc73e65d9f8c15c4a4969e6962eeb9110548df6255fcf47a34107f856",
+      "read_chars": 1164
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0010__candidate_no_probe/audit.json",
+      "bytes": 1203,
+      "sha256": "53a1bb2e10b241217765e982e559cd50429d3aac400083f56937b21d77037abc",
+      "read_chars": 1203
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0010__candidate_no_probe/preflight.json",
+      "bytes": 593,
+      "sha256": "5787d2f10dc2f368ab1e0eabe0b2daa2b71fc7c2c2fdcc868fca0ac629fdd3a3",
+      "read_chars": 593
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0010__candidate_no_probe/refined_source_sha256.txt",
+      "bytes": 193,
+      "sha256": "af28dc8bced44855bf4747111cb5272158970852f953c60a29acb81578144a91",
+      "read_chars": 193
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0010__candidate_no_probe/state.csv",
+      "bytes": 1153,
+      "sha256": "fb06a72f4ea408bf1826a723413865dd68e89f667924523d53ef864e7e4c7b4d",
+      "read_chars": 1153
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0010__candidate_probe/audit.json",
+      "bytes": 1201,
+      "sha256": "5fa8454a3fdbbf3a849246332235ea080b2e395a10486375b1cde92a92b3d2b4",
+      "read_chars": 1201
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0010__candidate_probe/preflight.json",
+      "bytes": 591,
+      "sha256": "098f2909854ba428ad0bd3b459d388941fe03dff6554091ed2dabbba1a28461b",
+      "read_chars": 591
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0010__candidate_probe/refined_source_sha256.txt",
+      "bytes": 193,
+      "sha256": "cb3377ad64f23b7fa7d085b8fb4c7b05134466a314864f7a834a6d896e023ebb",
+      "read_chars": 193
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0010__candidate_probe/state.csv",
+      "bytes": 1150,
+      "sha256": "31e9e53054dd1abf0ff744b0a9ab86644f371e938ded4a469b95f1897ebe2f6c",
+      "read_chars": 1150
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0027__candidate_no_probe/audit.json",
+      "bytes": 1204,
+      "sha256": "0d334cb51030b85070fd1559cfe5831ece159e0f67e8d24155ba83bdb5eebc28",
+      "read_chars": 1204
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0027__candidate_no_probe/preflight.json",
+      "bytes": 593,
+      "sha256": "25a9d374e6c946348c0ed615884d8913bc5d5fd64efc1e8c8ab51ff6785850d1",
+      "read_chars": 593
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0027__candidate_no_probe/refined_source_sha256.txt",
+      "bytes": 193,
+      "sha256": "2b3b3bd086ec87a35f46943d84008f72c8b039f291b475eb977e955b53ad4f8b",
+      "read_chars": 193
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0027__candidate_no_probe/state.csv",
+      "bytes": 1165,
+      "sha256": "c898014e51608b68bbccd2e0332bc892948124b116c38dc2034889e30405ce15",
+      "read_chars": 1165
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0027__candidate_probe/audit.json",
+      "bytes": 1199,
+      "sha256": "4f524428ac346742f7c2120f9ac327aee5fc4b5ad3a0af8d9c0fbcfddc4c24ab",
+      "read_chars": 1199
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0027__candidate_probe/preflight.json",
+      "bytes": 590,
+      "sha256": "0e1a264dafa90f6bb187ee338b666163bdd58477cb5c2bda185260c8351d99f0",
+      "read_chars": 590
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0027__candidate_probe/refined_source_sha256.txt",
+      "bytes": 193,
+      "sha256": "cedcb90e3845a344107d97458cd3cfcb3428a5a55d60080a376ae773f2272cac",
+      "read_chars": 193
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0027__candidate_probe/state.csv",
+      "bytes": 1173,
+      "sha256": "be117e7f6c8632ef11aa45089c3f3b7544f294b107b8e1559702319870819f32",
+      "read_chars": 1173
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0073__candidate_no_probe/audit.json",
+      "bytes": 1200,
+      "sha256": "58d69c5c5129d5448b7b06708984d4656f1530915d8055c878a408d165255614",
+      "read_chars": 1200
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0073__candidate_no_probe/preflight.json",
+      "bytes": 594,
+      "sha256": "52825e2e9ad86c063e0071d85de2e0f037f8d95d72b3c8f452c97212e7ce0034",
+      "read_chars": 594
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0073__candidate_no_probe/refined_source_sha256.txt",
+      "bytes": 193,
+      "sha256": "319bc6a88166bbc373505bb7f10b1e74fd444c6b12cb6c5f41504fd51d7ab417",
+      "read_chars": 193
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0073__candidate_no_probe/state.csv",
+      "bytes": 1158,
+      "sha256": "4eb06e44c0eab65e5e1d0d25cb0716e743c0fe3a3275193c96a53dcf2e70ad33",
+      "read_chars": 1158
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0073__candidate_probe/audit.json",
+      "bytes": 1199,
+      "sha256": "f1564971efb1ddc9792183db9916556cb8cb2abded7a9fb97e976887ac031b5d",
+      "read_chars": 1199
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0073__candidate_probe/preflight.json",
+      "bytes": 591,
+      "sha256": "6a91e136a5f2787594484f0129b17876ccc043c16f83accad0c5c8e9500d1ad8",
+      "read_chars": 591
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0073__candidate_probe/refined_source_sha256.txt",
+      "bytes": 193,
+      "sha256": "23274178422627a57c1cbdfc3e26e03d9be4357d5317306d5c4917794d82eedb",
+      "read_chars": 193
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/smoke/PACER0073__candidate_probe/state.csv",
+      "bytes": 1148,
+      "sha256": "775dc405acb9ab09d95399d327f5ac7eca55c2d608b6125f945f73d25130c006",
+      "read_chars": 1148
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/cluster0__apo/build_audit.json",
+      "bytes": 92992,
+      "sha256": "3bbeef4c47c8647b610e3727ca956895b76f3eedb38438f7b56faf4fbb8513aa",
+      "read_chars": 92992
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/cluster0__apo/build.log",
+      "bytes": 131,
+      "sha256": "bbcd0505973d5d4adf2dee71af1094f656b947c0f3e6490946b7f1988f8249ab",
+      "read_chars": 131
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/cluster0__apo/parameters.json",
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "read_chars": 3
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/cluster0__probe_only/build_audit.json",
+      "bytes": 93014,
+      "sha256": "90a52f3dc4fbd102b3af8c086fc090b3ad83a81fc5e91961a5d84ac77b17be8d",
+      "read_chars": 93014
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/cluster0__probe_only/build.log",
+      "bytes": 132,
+      "sha256": "4d40e955c0245f091054932d18f60bb4a3e0d0bd7e796d6c2d1f61696d3ce3c9",
+      "read_chars": 132
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/cluster0__probe_only/parameters.json",
+      "bytes": 1243,
+      "sha256": "ef830153b01c838d2d4d9f961e5a6cfccae09c190ef089d14571db9a93c413f9",
+      "read_chars": 1243
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/cluster4__apo/build_audit.json",
+      "bytes": 92993,
+      "sha256": "dcbef8a437f615538499a453fa73be76e147cc756e9a2ecf9c6c01bbc92df42d",
+      "read_chars": 92993
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/cluster4__apo/build.log",
+      "bytes": 133,
+      "sha256": "f340873f597ea2f6cae1dab003df5c1ff63b2e01d423d55737ff7077f7fb9c48",
+      "read_chars": 133
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/cluster4__apo/parameters.json",
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "read_chars": 3
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/cluster4__probe_only/build_audit.json",
+      "bytes": 93014,
+      "sha256": "9b7926ea91484ba768fb25585b445b759b2d66213056de1e6306543145fbb478",
+      "read_chars": 93014
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/cluster4__probe_only/build.log",
+      "bytes": 133,
+      "sha256": "a061ad9bbfe55a4555f4ff69b6eaff1ff9e7db037a695eb2489a53dfd2d84b81",
+      "read_chars": 133
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/cluster4__probe_only/parameters.json",
+      "bytes": 1243,
+      "sha256": "ef830153b01c838d2d4d9f961e5a6cfccae09c190ef089d14571db9a93c413f9",
+      "read_chars": 1243
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/cluster9__apo/build_audit.json",
+      "bytes": 92995,
+      "sha256": "4651b04d4202dde692c35e9637200f6e7c9091ab79ba55136c787ba579308613",
+      "read_chars": 92995
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/cluster9__apo/build.log",
+      "bytes": 133,
+      "sha256": "5e2e0e2e6d0a7aebc5e6fec7d719579de0e9c53f6dc7af30c7fc85a140661f42",
+      "read_chars": 133
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/cluster9__apo/parameters.json",
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "read_chars": 3
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/cluster9__probe_only/build_audit.json",
+      "bytes": 93014,
+      "sha256": "e22812aaf1559436cc3ffae933827d45a420e196c8e47b0a82618f843052db94",
+      "read_chars": 93014
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/cluster9__probe_only/build.log",
+      "bytes": 131,
+      "sha256": "c6532c42df8d29c1f3fb3979bb0d38a6c80655b9bef693b75f21be98fc74ec4c",
+      "read_chars": 131
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/cluster9__probe_only/parameters.json",
+      "bytes": 1243,
+      "sha256": "ef830153b01c838d2d4d9f961e5a6cfccae09c190ef089d14571db9a93c413f9",
+      "read_chars": 1243
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/PACER0010__candidate_no_probe/build_audit.json",
+      "bytes": 93030,
+      "sha256": "bc300a5620e62bf570157d15e80613d744cf5958b31204dc9181ac434ee02bb7",
+      "read_chars": 93030
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/PACER0010__candidate_no_probe/build.log",
+      "bytes": 133,
+      "sha256": "ee7e87be44dbd5bf7b367549d9c9ba63d4f9b9716862a2d8089b9282a996e886",
+      "read_chars": 133
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/PACER0010__candidate_no_probe/parameters.json",
+      "bytes": 2369,
+      "sha256": "c10f2e550f171e6254c5bded5c6940736bcb50b3e59539b54969435abe895f23",
+      "read_chars": 2369
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/PACER0010__candidate_probe/build_audit.json",
+      "bytes": 93039,
+      "sha256": "45ba6b2cd47984e4b07387f6cfde36c1cea621d1ecbd6a1da7073be3b8989185",
+      "read_chars": 93039
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/PACER0010__candidate_probe/build.log",
+      "bytes": 133,
+      "sha256": "bcbca26deafbd625ccb4aab750fdb995423441fa9f02a37abfac08f6c65cc6a7",
+      "read_chars": 133
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/PACER0010__candidate_probe/parameters.json",
+      "bytes": 3609,
+      "sha256": "c8d89482ef61a5c23042f6d8e510328f9ec999909c4edf8d51be40f661a9759c",
+      "read_chars": 3609
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/PACER0027__candidate_no_probe/build_audit.json",
+      "bytes": 93027,
+      "sha256": "4ac77bcbbaa51a0872de07c20d8d96895da7ffc706ab2fe8916a190f35365260",
+      "read_chars": 93027
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/PACER0027__candidate_no_probe/build.log",
+      "bytes": 132,
+      "sha256": "88c98dbffa1bafa3e8b7b91112b451b8c2d818dee15d50b60920d547fa1b29d7",
+      "read_chars": 132
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/PACER0027__candidate_no_probe/parameters.json",
+      "bytes": 2696,
+      "sha256": "81b0b12eb66ce350d6d082f1da84b14dfa4f6de4b2975aa7db9daac2ec72a150",
+      "read_chars": 2696
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/PACER0027__candidate_probe/build_audit.json",
+      "bytes": 93036,
+      "sha256": "5644b2fbf1036cb31603e0593352a6f49eb850f1f16e01120dc14bffa5df574a",
+      "read_chars": 93036
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/PACER0027__candidate_probe/build.log",
+      "bytes": 132,
+      "sha256": "d24e982399ad0bd21fdf509ce1175ebc94da69b831553cccf7a12191dbc99493",
+      "read_chars": 132
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/PACER0027__candidate_probe/parameters.json",
+      "bytes": 3936,
+      "sha256": "72b3c7d7ee2594badf40fdfaf21bf326912c122c1e4fe18f311a4847ad2ecdb0",
+      "read_chars": 3936
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/PACER0073__candidate_no_probe/build_audit.json",
+      "bytes": 93028,
+      "sha256": "384b801a388cd6fd36ed0521b5d1d8cb71ac8548e1255e7aad3f72b7a1a4d030",
+      "read_chars": 93028
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/PACER0073__candidate_no_probe/build.log",
+      "bytes": 132,
+      "sha256": "e492498edfcec46030336fcd146dad62649817df449b978964f055bc58dfac77",
+      "read_chars": 132
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/PACER0073__candidate_no_probe/parameters.json",
+      "bytes": 2105,
+      "sha256": "f2ec9985b37d59a3a2b83fa42f0bb6fb27cc91be747bc196c87a19a3d6f2c0d3",
+      "read_chars": 2105
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/PACER0073__candidate_probe/build_audit.json",
+      "bytes": 93037,
+      "sha256": "e0d9758368a4d51b0e5e50735573157bce527e69ac7e70fc2e5fd24b7b278617",
+      "read_chars": 93037
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/PACER0073__candidate_probe/build.log",
+      "bytes": 132,
+      "sha256": "0bfbb90f3e01eac8423e255d754518af08751d944f31c3602ad38838b794f324",
+      "read_chars": 132
+    },
+    {
+      "path": "C:/projects/PACER_STAGE4_MD_backup/systems/PACER0073__candidate_probe/parameters.json",
+      "bytes": 3345,
+      "sha256": "c5a1b8593e41cdda259d9ae8496e0fd80f2818b931ad8262eafc9a073e73895b",
+      "read_chars": 3345
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "checkpoint": "/mnt/c/projects/GPCR-virtual-screening-final/project/tools/DrugCLIP/artifacts/checkpoint_best.pt",
+  "pocket_inputs": [
+    "/mnt/c/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/7TRQ_pocket.lmdb",
+    "/mnt/c/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/7TRP_pocket.lmdb",
+    "/mnt/c/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/7TRS_pocket.lmdb"
+  ],
+  "device": "cpu",
+  "molecule_shape": [
+    200,
+    128
+  ],
+  "molecule_representation_shape": [
+    200,
+    512
+  ],
+  "checkpoint_registry_remap": {
+    "from": {
+      "task": "binding_affinity",
+      "arch": "binding_affinity"
+    },
+    "to": {
+      "task": "drugclip",
+      "arch": "drugclip"
+    }
+  },
+  "pocket_shape": [
+    3,
+    128
+  ],
+  "pocket_representation_shape": [
+    3,
+    512
+  ],
+  "score_shape": [
+    3,
+    200
+  ],
+  "finite": true,
+  "score_range": [
+    -0.28158822655677795,
+    0.2566775381565094
+  ],
+  "missing_checkpoint_keys": [],
+  "unexpected_checkpoint_keys": [],
+  "claim_boundary": "Frozen DrugCLIP binding-compatibility embeddings; not PAM efficacy."
+}

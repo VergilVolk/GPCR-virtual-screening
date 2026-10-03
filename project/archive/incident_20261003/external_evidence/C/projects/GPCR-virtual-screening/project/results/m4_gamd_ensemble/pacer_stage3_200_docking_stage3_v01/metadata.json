@@ -1,0 +1,25 @@
+{
+  "set": "custom",
+  "source": "project\\results\\pacer_candidates_v01\\predock_portfolio.csv",
+  "validation_scope": null,
+  "n_molecules": 200,
+  "clusters": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "exhaustiveness": 8,
+  "num_modes": 9,
+  "vina_version": "1.2.7",
+  "workers": 8,
+  "ligand_states": "molscrub 0.1.1, pH 7.0, protonation and tautomer enumeration; best state per cluster",
+  "box": "per-cluster co-simulated MK-97 centroid, 30 A cube",
+  "interpretation": "ensemble pose/affinity evidence only; not PAM functional efficacy"
+}

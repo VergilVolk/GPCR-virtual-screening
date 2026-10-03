@@ -1,0 +1,381 @@
+{
+  "protocol_id": "pacer_stage4_prospective_10ns_v01",
+  "execution_platform": "Linux GPU server",
+  "server_repository": "/data/GPCR-virtual-screening",
+  "conda_env": "pacer-dc-md",
+  "production_length_ns": 10,
+  "timestep_fs": 2,
+  "production_steps": 5000000,
+  "replicas_per_context": 3,
+  "paired_seeds": [
+    27101,
+    38201,
+    49301
+  ],
+  "trajectory_ps": 50,
+  "checkpoint_ps": 100,
+  "temperature_K": 300,
+  "pressure_bar": 1,
+  "thermostat": "LangevinMiddle",
+  "friction_per_ps": 1,
+  "forcefields": [
+    "amber14/protein.ff14SB.xml",
+    "amber14/lipid17.xml",
+    "amber14/tip3p.xml",
+    "openff_unconstrained-2.2.1.offxml"
+  ],
+  "ligand_charge_policy": "AM1-BCC via AmberTools",
+  "membrane": "POPC",
+  "ionic_strength_molar": 0.15,
+  "membrane_minimum_padding_nm": 1,
+  "nonbonded": {
+    "method": "PME",
+    "cutoff_nm": 1,
+    "ewald_error_tolerance": 0.0005
+  },
+  "constraints": "HBonds",
+  "rigid_water": true,
+  "membrane_barostat": {
+    "mode": "XYIsotropic/ZFree",
+    "frequency": 25,
+    "surface_tension_bar_nm": 0
+  },
+  "protein_heavy_restraint_k_initial": 1000,
+  "production_restraint_k": 0,
+  "historical_equilibration": {
+    "smoke_steps": 500,
+    "smoke_timestep_fs": 0.5,
+    "nvt_ps": 1,
+    "npt_ps": 1,
+    "timestep_fs": 0.5,
+    "restraint_schedule": [
+      500,
+      100,
+      10,
+      0
+    ],
+    "restraint_stage_ps": 0.5,
+    "restraint_timestep_fs": 1
+  },
+  "probe_smiles": "CC(=O)OCC[N+](C)(C)C",
+  "control_policy": "Cluster-matched four contexts; historical 7TRS controls are not eligible",
+  "control_policy_evidence": "CLOSE_LOOP_CONTRACT_v01 section 3: incompatible lineage requires own four contexts",
+  "apo_reuse": "NO",
+  "probe_only_reuse": "NO",
+  "expected_job_count": 36,
+  "source_hashes": {
+    "stage3d_selected_candidates.csv": "5672be147ee2d6b1cc4ece4d0b95b0e90512fe6b54dfacb88de976353a507dd3",
+    "md_shortlist_pose_manifest.csv": "8ef3c4be8ff3800543d09e3b37c11331671e961c7bd3f29cc70850b787e311a6"
+  },
+  "candidates": [
+    {
+      "candidate_id": "PACER0010",
+      "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12",
+      "source_cluster": "9",
+      "source_state": "0",
+      "source_state_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12",
+      "pose_file": "project/results/pacer_stage3d_corrected_20261002_v01/md_shortlist_poses/PACER0010_c09_s00.pdbqt",
+      "pose_source_file": "project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/poses/126806d1a73a_s00_c09.pdbqt",
+      "pose_file_sha256": "836a68d0cced23dc6e345a55d43e66119c27f26b9d49803635f97aed56e1e9de",
+      "docking_run": "pacer_stage3_200_docking_stage3_v01",
+      "selection_reason": "structural gate PASS; pose nearest the candidate's ensemble-median centroid (ensemble-consistent), then highest native pocket coverage, then Vina; not selected by lowest Vina alone",
+      "router_final_rank": "1",
+      "pacer_binding_score": "1.0",
+      "route": "m4_2023_gpcr_loto",
+      "diverse_rank": "1",
+      "murcko_scaffold": "O=C(Nc1cnn(C2Cc3ccccc3C2)c1)c1cc2ccc3nncn3c2s1",
+      "structural_gate_pass": "True",
+      "structural_evidence_summary": "{'cluster_coverage_fraction': 1.0, 'median_native_pocket_coverage': 0.775210084033613, 'median_n_contacted_residues': 14.0, 'pocket_contact_jaccard_mean': 0.5014059274250193, 'centroid_dispersion_max_A': 6.617441424220116, 'vina_affinity': -9.992, 'native_pocket_coverage': 0.7333333333333331, 'n_contacted_residues': 14, 'contacted_residues': '687;691;694;711;784;788;852;856;859;863;868;871;872;875'}",
+      "claim_boundary": "Structural plausibility evidence only; not PAM function, efficacy or potency.",
+      "receptor_file": "project/results/m4_gamd_ensemble/receptors/cluster_09_receptor.pdb",
+      "receptor_sha256": "8c4cb5f9553af64770d74621300c974bd6ee1922ec166a40a751ad0345825622",
+      "sdf_file": "project/results/pacer_stage4_prospective_10ns_v01/ligand_inputs/PACER0010_frozen_state.sdf",
+      "sdf_sha256": "1c09ac99f78f32de3d770c138fb9677ee0e512331373199376348b1a15c86413",
+      "state_formal_charge": 0,
+      "state_inchikey": "NUJRGUITKBZOPA-UHFFFAOYSA-N",
+      "stereo_identity_source": "source_state_smiles; SDF geometry does not define unspecified stereo",
+      "heavy_coordinates_unchanged": true,
+      "parameterization_status": "NOT_STARTED"
+    },
+    {
+      "candidate_id": "PACER0073",
+      "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(NC(=O)c4cc(F)nc(F)c4)C3)c(N)c12",
+      "source_cluster": "0",
+      "source_state": "0",
+      "source_state_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(NC(=O)c4cc(F)nc(F)c4)C3)c(N)c12",
+      "pose_file": "project/results/pacer_stage3d_corrected_20261002_v01/md_shortlist_poses/PACER0073_c00_s00.pdbqt",
+      "pose_source_file": "project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/poses/699298bb49d2_s00_c00.pdbqt",
+      "pose_file_sha256": "3c503fc44a107cca2612dc71d9b0d529577bb5447eb2ea329dbe3adc32bcc37a",
+      "docking_run": "pacer_stage3_200_docking_stage3_v01",
+      "selection_reason": "structural gate PASS; pose nearest the candidate's ensemble-median centroid (ensemble-consistent), then highest native pocket coverage, then Vina; not selected by lowest Vina alone",
+      "router_final_rank": "2",
+      "pacer_binding_score": "0.995",
+      "route": "m4_2023_gpcr_loto",
+      "diverse_rank": "2",
+      "murcko_scaffold": "O=C(NC1CN(c2cc3ccc4nncn4c3s2)C1)c1ccncc1",
+      "structural_gate_pass": "True",
+      "structural_evidence_summary": "{'cluster_coverage_fraction': 1.0, 'median_native_pocket_coverage': 0.7238095238095236, 'median_n_contacted_residues': 13.0, 'pocket_contact_jaccard_mean': 0.4859516719759237, 'centroid_dispersion_max_A': 4.109718381100615, 'vina_affinity': -10.82, 'native_pocket_coverage': 0.7142857142857141, 'n_contacted_residues': 13, 'contacted_residues': '630;687;690;691;784;788;859;864;868;869;871;872;875'}",
+      "claim_boundary": "Structural plausibility evidence only; not PAM function, efficacy or potency.",
+      "receptor_file": "project/results/m4_gamd_ensemble/receptors/cluster_00_receptor.pdb",
+      "receptor_sha256": "a6485488372e49c4999015fc93bc0d3d3328ff026da598f9be2c8ca9ccad52ff",
+      "sdf_file": "project/results/pacer_stage4_prospective_10ns_v01/ligand_inputs/PACER0073_frozen_state.sdf",
+      "sdf_sha256": "aefe8d9863b2e06d978866403f013a692c414f5548d22252a22acb165f3154f9",
+      "state_formal_charge": 0,
+      "state_inchikey": "XOFNWELKRWHBMT-UHFFFAOYSA-N",
+      "stereo_identity_source": "source_state_smiles; SDF geometry does not define unspecified stereo",
+      "heavy_coordinates_unchanged": true,
+      "parameterization_status": "NOT_STARTED"
+    },
+    {
+      "candidate_id": "PACER0027",
+      "canonical_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+      "source_cluster": "4",
+      "source_state": "0",
+      "source_state_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC([NH+]4CC([NH2+]C5Cc6ccccc6C5)C4)C3)c(N)c12",
+      "pose_file": "project/results/pacer_stage3d_corrected_20261002_v01/md_shortlist_poses/PACER0027_c04_s00.pdbqt",
+      "pose_source_file": "project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/poses/b55b59821a4b_s00_c04.pdbqt",
+      "pose_file_sha256": "88cd9f7b228a25f65e82c9d82a49f65653cd67eb2abe53c3280146cc001d737e",
+      "docking_run": "pacer_stage3_200_docking_stage3_v01",
+      "selection_reason": "structural gate PASS; pose nearest the candidate's ensemble-median centroid (ensemble-consistent), then highest native pocket coverage, then Vina; not selected by lowest Vina alone",
+      "router_final_rank": "4",
+      "pacer_binding_score": "0.985",
+      "route": "m4_2023_gpcr_loto",
+      "diverse_rank": "3",
+      "murcko_scaffold": "c1ccc2c(c1)CC(NC1CN(C3CN(c4cc5ccc6nncn6c5s4)C3)C1)C2",
+      "structural_gate_pass": "True",
+      "structural_evidence_summary": "{'cluster_coverage_fraction': 1.0, 'median_native_pocket_coverage': 0.678571428571428, 'median_n_contacted_residues': 14.0, 'pocket_contact_jaccard_mean': 0.4989652285341475, 'centroid_dispersion_max_A': 4.500159320054896, 'vina_affinity': -11.195, 'native_pocket_coverage': 0.8, 'n_contacted_residues': 15, 'contacted_residues': '633;687;690;691;694;782;784;785;786;868;871;872;873;875;876'}",
+      "claim_boundary": "Structural plausibility evidence only; not PAM function, efficacy or potency.",
+      "receptor_file": "project/results/m4_gamd_ensemble/receptors/cluster_04_receptor.pdb",
+      "receptor_sha256": "a79858e958ffb4afe67b4a381f469360589d3cbbd79a0796ec24a7593431aca3",
+      "sdf_file": "project/results/pacer_stage4_prospective_10ns_v01/ligand_inputs/PACER0027_frozen_state.sdf",
+      "sdf_sha256": "d9e2fdc4d1f0176b435abf7746ebb035ca33b8c751bd4d6e3ce0301c4bc0f15b",
+      "state_formal_charge": 2,
+      "state_inchikey": "NBEXSITXUGKMRA-UHFFFAOYSA-P",
+      "stereo_identity_source": "source_state_smiles; SDF geometry does not define unspecified stereo",
+      "heavy_coordinates_unchanged": true,
+      "parameterization_status": "NOT_STARTED"
+    }
+  ],
+  "job_matrix_sha256": "9749068bd82ac80a7b88961ead6dbb7bef2b053f3feb5f7f237c7965cc2134f2",
+  "evidence": {
+    "project/scripts/run_cm00734_stage_b_production_md_v01.py": "1fffc27819c2a03b2bee1e5ddb4424771d5562204e1cafc4b9ff9bf13efb85bf",
+    "project/scripts/build_pacer_dc_membrane_reference.py": "be7e091dc0830550b99953b09d78e159b3f2ac929a4cee748919a18c30d8b4b9",
+    "project/scripts/build_cm00734_stage_b_membrane_v01.py": "f91607335f89511d034d31017d05fbd02099382d9d4f3ac6d13bbafa783f53e3",
+    "project/scripts/run_pacer_dc_short_equilibration.py": "dc73389b278a9f464503621f0a5842a05b985eedc2da3cd2eeca90bb90b56a39",
+    "project/scripts/run_pacer_dc_restraint_release.py": "2522614be82e4c5bab4b68d7dab50dc369496fc6bc30193fcbbe4d94bde7a69c",
+    "project/docs/PACER_DC_CLOSE_LOOP_CONTRACT_v01.md": "00f06e55a0a5053ff725b33baeb46442ed05d8cf545c870f08c30b5f897a3bc1",
+    "project/docs/PACER_DC_CLOSE_LOOP_20NS_EXECUTION_PLAN_v01.md": "7ca63ef05482ed2948f64bb352b137da3b21a1d11613215a02efcccc07f88eac",
+    "project/environment_pacer_dc_md.yml": "d9309447c3cd93ca216afb02997c78d8b672cc472ed950c625858a26401f4af0"
+  },
+  "system_build_status": "COMPLETE",
+  "preflight_status": "NOT_RUN",
+  "ready_to_launch": false,
+  "production_started": false,
+  "blockers": [
+    "Equilibration/release and production are outside this implementation task",
+    "Actual membrane construction and CUDA smoke require formal OPM/ACh assets and server execution"
+  ],
+  "server_asset_inspection": "NOT_RUN_SSH_TARGET_REQUIRED",
+  "server_sync_status": "UNCONFIRMED",
+  "construction_protocol_reuse": "YES_HELPERS_AND_SCIENTIFIC_SETTINGS",
+  "opm_mapping_status": "BLOCKED_SERVER_REFERENCE_VERIFICATION",
+  "probe_mapping_status": "BLOCKED_SERVER_PROBE_PROVENANCE_VERIFICATION",
+  "local_alignment_feasibility": {
+    "path": "local_alignment_feasibility.json",
+    "sha256": "3ff06ac82562412613686c49a1b8379e1aa176ce3f8413f9d517c4e9db1778ff",
+    "matched_CA_per_cluster": 270,
+    "preserve_all_274_mobile_residues": true,
+    "coordinate_transform_executed": false
+  },
+  "unique_systems": 12,
+  "replicas": 3,
+  "production_launch_status": "NOT_STARTED",
+  "systems": [
+    {
+      "system": "cluster9__apo",
+      "candidate": "PACER0010",
+      "cluster": 9,
+      "context": "apo",
+      "ligands": [],
+      "build_status": "COMPLETE",
+      "build_audit_sha256": "4651b04d4202dde692c35e9637200f6e7c9091ab79ba55136c787ba579308613"
+    },
+    {
+      "system": "cluster9__probe_only",
+      "candidate": "PACER0010",
+      "cluster": 9,
+      "context": "probe_only",
+      "ligands": [
+        "ACH"
+      ],
+      "build_status": "COMPLETE",
+      "build_audit_sha256": "e22812aaf1559436cc3ffae933827d45a420e196c8e47b0a82618f843052db94"
+    },
+    {
+      "system": "PACER0010__candidate_no_probe",
+      "candidate": "PACER0010",
+      "cluster": 9,
+      "context": "candidate_no_probe",
+      "ligands": [
+        "PACER0010"
+      ],
+      "build_status": "COMPLETE",
+      "build_audit_sha256": "bc300a5620e62bf570157d15e80613d744cf5958b31204dc9181ac434ee02bb7"
+    },
+    {
+      "system": "PACER0010__candidate_probe",
+      "candidate": "PACER0010",
+      "cluster": 9,
+      "context": "candidate_probe",
+      "ligands": [
+        "ACH",
+        "PACER0010"
+      ],
+      "build_status": "COMPLETE",
+      "build_audit_sha256": "45ba6b2cd47984e4b07387f6cfde36c1cea621d1ecbd6a1da7073be3b8989185"
+    },
+    {
+      "system": "cluster0__apo",
+      "candidate": "PACER0073",
+      "cluster": 0,
+      "context": "apo",
+      "ligands": [],
+      "build_status": "COMPLETE",
+      "build_audit_sha256": "3bbeef4c47c8647b610e3727ca956895b76f3eedb38438f7b56faf4fbb8513aa"
+    },
+    {
+      "system": "cluster0__probe_only",
+      "candidate": "PACER0073",
+      "cluster": 0,
+      "context": "probe_only",
+      "ligands": [
+        "ACH"
+      ],
+      "build_status": "COMPLETE",
+      "build_audit_sha256": "90a52f3dc4fbd102b3af8c086fc090b3ad83a81fc5e91961a5d84ac77b17be8d"
+    },
+    {
+      "system": "PACER0073__candidate_no_probe",
+      "candidate": "PACER0073",
+      "cluster": 0,
+      "context": "candidate_no_probe",
+      "ligands": [
+        "PACER0073"
+      ],
+      "build_status": "COMPLETE",
+      "build_audit_sha256": "384b801a388cd6fd36ed0521b5d1d8cb71ac8548e1255e7aad3f72b7a1a4d030"
+    },
+    {
+      "system": "PACER0073__candidate_probe",
+      "candidate": "PACER0073",
+      "cluster": 0,
+      "context": "candidate_probe",
+      "ligands": [
+        "ACH",
+        "PACER0073"
+      ],
+      "build_status": "COMPLETE",
+      "build_audit_sha256": "e0d9758368a4d51b0e5e50735573157bce527e69ac7e70fc2e5fd24b7b278617"
+    },
+    {
+      "system": "cluster4__apo",
+      "candidate": "PACER0027",
+      "cluster": 4,
+      "context": "apo",
+      "ligands": [],
+      "build_status": "COMPLETE",
+      "build_audit_sha256": "dcbef8a437f615538499a453fa73be76e147cc756e9a2ecf9c6c01bbc92df42d"
+    },
+    {
+      "system": "cluster4__probe_only",
+      "candidate": "PACER0027",
+      "cluster": 4,
+      "context": "probe_only",
+      "ligands": [
+        "ACH"
+      ],
+      "build_status": "COMPLETE",
+      "build_audit_sha256": "9b7926ea91484ba768fb25585b445b759b2d66213056de1e6306543145fbb478"
+    },
+    {
+      "system": "PACER0027__candidate_no_probe",
+      "candidate": "PACER0027",
+      "cluster": 4,
+      "context": "candidate_no_probe",
+      "ligands": [
+        "PACER0027"
+      ],
+      "build_status": "COMPLETE",
+      "build_audit_sha256": "4ac77bcbbaa51a0872de07c20d8d96895da7ffc706ab2fe8916a190f35365260"
+    },
+    {
+      "system": "PACER0027__candidate_probe",
+      "candidate": "PACER0027",
+      "cluster": 4,
+      "context": "candidate_probe",
+      "ligands": [
+        "ACH",
+        "PACER0027"
+      ],
+      "build_status": "COMPLETE",
+      "build_audit_sha256": "5644b2fbf1036cb31603e0593352a6f49eb850f1f16e01120dc14bffa5df574a"
+    }
+  ],
+  "equilibration_status": "NOT_RUN",
+  "smoke_systems": [
+    {
+      "system": "cluster9__apo",
+      "status": "PASS"
+    },
+    {
+      "system": "cluster9__probe_only",
+      "status": "PASS"
+    },
+    {
+      "system": "PACER0010__candidate_no_probe",
+      "status": "PASS"
+    },
+    {
+      "system": "PACER0010__candidate_probe",
+      "status": "PASS"
+    },
+    {
+      "system": "cluster0__apo",
+      "status": "PASS"
+    },
+    {
+      "system": "cluster0__probe_only",
+      "status": "PASS"
+    },
+    {
+      "system": "PACER0073__candidate_no_probe",
+      "status": "PASS"
+    },
+    {
+      "system": "PACER0073__candidate_probe",
+      "status": "PASS"
+    },
+    {
+      "system": "cluster4__apo",
+      "status": "PASS"
+    },
+    {
+      "system": "cluster4__probe_only",
+      "status": "PASS"
+    },
+    {
+      "system": "PACER0027__candidate_no_probe",
+      "status": "PASS"
+    },
+    {
+      "system": "PACER0027__candidate_probe",
+      "status": "PASS"
+    }
+  ],
+  "cuda_smoke_status": "PASS",
+  "implementation_sources": {
+    "pacer_stage4_prospective.py": "e96dc0979332f980415cad694d162e6387b1d353af208062a3a2512c1cfd9e3b",
+    "build_pacer_stage4_prospective_membrane.py": "079bba4265861f71e94bee53275b207e32611bd53546db127ae50659d9fd6e2c",
+    "run_pacer_stage4_membrane_smoke.py": "12be8ebabf3408b6adc0b65cbeaf47f3335022d50aa7e4ce7db4a921212292c4"
+  }
+}

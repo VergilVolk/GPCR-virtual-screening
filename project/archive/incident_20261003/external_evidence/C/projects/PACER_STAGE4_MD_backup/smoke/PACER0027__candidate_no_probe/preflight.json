@@ -1,0 +1,15 @@
+{
+  "potential_kj_mol": -1901589.3880600464,
+  "max_force_kj_mol_nm": 3473.017169585418,
+  "max_constraint_error_nm": 1.3689138923800304e-06,
+  "finite": true,
+  "system": "PACER0027__candidate_no_probe",
+  "platform": "CUDA",
+  "device_index": "0",
+  "precision": "mixed",
+  "source_state_sha256": "45e78b86e906a56794694398ecf58a8a130987db3aa244907629ee2b5ae3d383",
+  "build_audit_sha256": "4ac77bcbbaa51a0872de07c20d8d96895da7ffc706ab2fe8916a190f35365260",
+  "used_cached_refinement": false,
+  "performed_deep_minimization": false,
+  "pre_refinement_max_force_kj_mol_nm": 3473.01722161264
+}

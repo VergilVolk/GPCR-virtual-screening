@@ -1,0 +1,56 @@
+{
+  "system": "cluster0__apo",
+  "replica": 1,
+  "matched_seed": 27101,
+  "schedule_k_kj_mol_nm2": [
+    500.0,
+    100.0,
+    10.0,
+    0.0
+  ],
+  "stage_ps": 0.5,
+  "total_ps": 2.0,
+  "timestep_fs": 1.0,
+  "final_temperature_K": 297.5529812295186,
+  "stages": [
+    {
+      "stage": 1,
+      "restraint_k_kj_mol_nm2": 500.0,
+      "simulated_ps": 0.5,
+      "potential_kj_mol": -800796.3942071206,
+      "volume_nm3": 766.5012534503011,
+      "volume_change_from_start_percent": -0.3720459800566345,
+      "finite": true
+    },
+    {
+      "stage": 2,
+      "restraint_k_kj_mol_nm2": 100.0,
+      "simulated_ps": 0.5,
+      "potential_kj_mol": -799836.8958951732,
+      "volume_nm3": 763.1600189381511,
+      "volume_change_from_start_percent": -0.806331451669251,
+      "finite": true
+    },
+    {
+      "stage": 3,
+      "restraint_k_kj_mol_nm2": 10.0,
+      "simulated_ps": 0.5,
+      "potential_kj_mol": -799623.785409198,
+      "volume_nm3": 761.6805089728657,
+      "volume_change_from_start_percent": -0.9986345302748001,
+      "finite": true
+    },
+    {
+      "stage": 4,
+      "restraint_k_kj_mol_nm2": 0.0,
+      "simulated_ps": 0.5,
+      "potential_kj_mol": -797983.83059633,
+      "volume_nm3": 756.7732448933962,
+      "volume_change_from_start_percent": -1.636468686282233,
+      "finite": true
+    }
+  ],
+  "passed": true,
+  "production_start_eligible": true,
+  "claim_boundary": "Passing creates an unrestrained production starting state. It does not demonstrate equilibrium convergence or any PAM-related biological effect."
+}

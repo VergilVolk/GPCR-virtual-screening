@@ -1,0 +1,6 @@
+shortlist_rank,candidate_id,canonical_smiles,model_a_state_max,model_a_old_rank,model_b_score,model_b_new_rank,selection_rule
+1,PACER0108,COc1nc(C)ccc1NC(=O)c1sc2c(c(C)c(Cl)c3nncn32)c1N,0.05443156510591507,21,0.13448545336723328,14,old_rank <= 50 AND new_rank <= 25
+2,PACER0157,COc1cc(NC(=O)c2sc3c(c(C)c(Cl)c4nncn43)c2N)ncc1Cl,0.050523530691862106,24,0.1803975303967794,6,old_rank <= 50 AND new_rank <= 25
+3,PACER0080,Cc1c(Cl)c2nnc(C)n2c2sc(-c3cc4ccc(C(=O)NC5CC5)cc4nn3)c(N)c12,0.04806743189692497,25,0.12802907079458237,18,old_rank <= 50 AND new_rank <= 25
+4,PACER0149,Cc1c(Cl)c2nncn2c2sc(-c3cc4ccc(C(=O)NC5CC5)cc4nn3)c(N)c12,0.03063916601240635,35,0.19707579414049783,4,old_rank <= 50 AND new_rank <= 25
+5,PACER0089,Cc1c(Cl)c2nnc(C)n2c2sc(-c3cncc(C(=O)NC4CC4)c3)c(N)c12,0.026169631630182266,38,0.1320609226822853,15,old_rank <= 50 AND new_rank <= 25

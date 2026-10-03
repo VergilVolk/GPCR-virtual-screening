@@ -1,0 +1,420 @@
+{
+  "cache_count": 36,
+  "forbidden_operations_performed": {
+    "bandwidth_refit": false,
+    "calibration": false,
+    "graph_refit": false,
+    "md_rerun": false,
+    "normalization_refit": false,
+    "outcome_driven_tuning": false,
+    "region_refit": false,
+    "rff_refit": false,
+    "source_modification": false,
+    "threshold_selection": false,
+    "training": false
+  },
+  "historical_freeze_sha256": "b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd",
+  "input_receipt_sha256": "108ffee7dcec98b0c35961d8590b1dca7585f758b487c1513da0e3a1c8233f6d",
+  "manifests": [
+    {
+      "bytes": 151357,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\cluster0__apo__replica_01.json",
+      "sha256": "5c961c36aee368314655c5683c05cfa25bfd2e040a2f3214463282faa7aad210"
+    },
+    {
+      "bytes": 151355,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\cluster0__apo__replica_02.json",
+      "sha256": "ef053bfda32dcc1f831cfb630dd7723f6b5db3cc5dfb8f7f3943386be1e38f7e"
+    },
+    {
+      "bytes": 151354,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\cluster0__apo__replica_03.json",
+      "sha256": "4859bebd9a2a17b572ff3a2415ec30e2770becc5f9f5b9faf34da3aae1cb77bb"
+    },
+    {
+      "bytes": 151412,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\cluster0__probe_only__replica_01.json",
+      "sha256": "f322d2bc6e960beebd831a93a4643345588acb6ab36d57f22673c1d8427276ef"
+    },
+    {
+      "bytes": 151413,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\cluster0__probe_only__replica_02.json",
+      "sha256": "585239737c6bfcc9744043f64f7c5b6b26136a60d49d6ec194e635f6a3847c50"
+    },
+    {
+      "bytes": 151413,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\cluster0__probe_only__replica_03.json",
+      "sha256": "1f644c57e623f33f66f09f811bd84eab7c2874c7ab673db04e2f876789c3feee"
+    },
+    {
+      "bytes": 151482,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\PACER0073__candidate_no_probe__replica_01.json",
+      "sha256": "ad80577ba25851fcb1a57d7ef3052f7f8e02ee84df418ecbab6ad1975c2b5c7c"
+    },
+    {
+      "bytes": 151484,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\PACER0073__candidate_no_probe__replica_02.json",
+      "sha256": "ec661710b9ee26fe883645381e64257c9ddd255ee47eb176e62c3aedc9c681b3"
+    },
+    {
+      "bytes": 151484,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\PACER0073__candidate_no_probe__replica_03.json",
+      "sha256": "8c680420ecd1592361218e5995c4104b5e8ceae2735c879f9f80190e5d4f6790"
+    },
+    {
+      "bytes": 151463,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\PACER0073__candidate_probe__replica_01.json",
+      "sha256": "935f90ab9d691802449f0e252fa3322ff761e353e1c51909dfb5496e0455e16a"
+    },
+    {
+      "bytes": 151462,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\PACER0073__candidate_probe__replica_02.json",
+      "sha256": "df835a3f6d90f5a1e17323faf549a76e6cd5c0528de97a9d36d2895c74b0c3c2"
+    },
+    {
+      "bytes": 151462,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\PACER0073__candidate_probe__replica_03.json",
+      "sha256": "2932c260ffdefa75cb5d36395388e31ec81b721439ff9601acf03d54ce5cfaf5"
+    },
+    {
+      "bytes": 151359,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\cluster4__apo__replica_01.json",
+      "sha256": "a808a6d9cdbc35cc6f36e55f0a1be506bfdfc1a00266661697c7cce16550b56c"
+    },
+    {
+      "bytes": 151359,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\cluster4__apo__replica_02.json",
+      "sha256": "6f214fc0756d69fa4276a4cb9e7ae4e4ea2ce77d77fb58274f9561395cb29f7f"
+    },
+    {
+      "bytes": 151358,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\cluster4__apo__replica_03.json",
+      "sha256": "b3170c1180bcf726a8a5928bd7ff9aa2877fd462605ee665973de6d58ab762e6"
+    },
+    {
+      "bytes": 151416,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\cluster4__probe_only__replica_01.json",
+      "sha256": "459a1fa9be202f168fcfd2e330b10fdb3b3ca55fb2b8cfcbd3683143e60bee8f"
+    },
+    {
+      "bytes": 151415,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\cluster4__probe_only__replica_02.json",
+      "sha256": "273919a4679ca9a5db7d6c0e17984226d4534916f403554b156417005b7a19ad"
+    },
+    {
+      "bytes": 151415,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\cluster4__probe_only__replica_03.json",
+      "sha256": "b2f63c6e7b1765b26533120bb964d1f815f8d46f2f2de83fc0326657b264d2dc"
+    },
+    {
+      "bytes": 151488,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\PACER0027__candidate_no_probe__replica_01.json",
+      "sha256": "042b075965626c92f5b2675bb313507a45b8fb5000d22908d5955037593f3243"
+    },
+    {
+      "bytes": 151487,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\PACER0027__candidate_no_probe__replica_02.json",
+      "sha256": "4000dd0b42ccaa9c5f7a12c9b786a2ce2cbd79080b6a9fb2adcce9613f441e6a"
+    },
+    {
+      "bytes": 151488,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\PACER0027__candidate_no_probe__replica_03.json",
+      "sha256": "3b88effa8d10126822267599b6fc0e3c00c203e6734e37101e68297dc6d9f012"
+    },
+    {
+      "bytes": 151464,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\PACER0027__candidate_probe__replica_01.json",
+      "sha256": "716170eeb98ac5460ef91d5a5977bf7eb97f1e9f78eb5323c0c61c52c76e1d1e"
+    },
+    {
+      "bytes": 151466,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\PACER0027__candidate_probe__replica_02.json",
+      "sha256": "ba2fbe27109af73426c9cd064594b727456a655458ae00342077964afc095565"
+    },
+    {
+      "bytes": 151463,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\PACER0027__candidate_probe__replica_03.json",
+      "sha256": "bfcff691a661c003858d4ef18cfc7f99ef98216a6e77d0f4fdf9f16ee7c66c53"
+    },
+    {
+      "bytes": 151359,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\cluster9__apo__replica_01.json",
+      "sha256": "eba065dd90fd3e366d560218210c5592b19e2a89bb84d9552693e4980e2840f3"
+    },
+    {
+      "bytes": 151360,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\cluster9__apo__replica_02.json",
+      "sha256": "17c4b39d923755a2b533bcac772dd169409402320f54b846c400fc0f0177e215"
+    },
+    {
+      "bytes": 151359,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\cluster9__apo__replica_03.json",
+      "sha256": "16b39fecdd0324d36dfa3f191ab2cb25c68baa8c80bc899229cfffc4804bd1a2"
+    },
+    {
+      "bytes": 151416,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\cluster9__probe_only__replica_01.json",
+      "sha256": "5d879ff6246eee61dd54371e8e724a782216faeba905ca66fb5494ec5064a9b3"
+    },
+    {
+      "bytes": 151415,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\cluster9__probe_only__replica_02.json",
+      "sha256": "e1da056999b1c643d68e1f387d37ba9a867725a6df84669e0f07fcf7253c0112"
+    },
+    {
+      "bytes": 151416,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\cluster9__probe_only__replica_03.json",
+      "sha256": "8984d305dee9dcd5b5aa1f9fa983eaa994a858764d2db1674bdb196ec3c73343"
+    },
+    {
+      "bytes": 151485,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\PACER0010__candidate_no_probe__replica_01.json",
+      "sha256": "e0710e04463460642305bf3df556ef998217381d9758c2da4313a4a9cebd11b9"
+    },
+    {
+      "bytes": 151487,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\PACER0010__candidate_no_probe__replica_02.json",
+      "sha256": "0a6a7a3940a9cfb043f3cc52b3b221980430d73a3185adb23eae5ede8668ccb9"
+    },
+    {
+      "bytes": 151486,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\PACER0010__candidate_no_probe__replica_03.json",
+      "sha256": "e3d755c9dc856a35a11e942782b7ce0a7cee0fec0d6b55bfcee56c329ca6eeb2"
+    },
+    {
+      "bytes": 151464,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\PACER0010__candidate_probe__replica_01.json",
+      "sha256": "fb619d91a118c0f8abf0facbe159acf98e051bbfcb093b7257a861526fffd5ea"
+    },
+    {
+      "bytes": 151465,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\PACER0010__candidate_probe__replica_02.json",
+      "sha256": "bbc700dac6651b49c65507fe3deaa05878bf5079f94cdd1e52b34b1c22beaec7"
+    },
+    {
+      "bytes": 151488,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\PACER0010__candidate_probe__replica_03.json",
+      "sha256": "3081c47a6b2ba760b2f3b29aecac7074cb18f6f4da56971501ca03969d79a192"
+    }
+  ],
+  "prospective_replica_policy": "R1/R2/R3 evaluation only",
+  "status": "PHASE1_FULL_FROZEN",
+  "temporal_contract": {
+    "analysis_frame_spacing_ps": 50,
+    "analysis_frames": 200,
+    "block_duration_ns": 1.0,
+    "block_frames": 20,
+    "block_internal_span_ps": 950,
+    "blocks_per_trajectory": 10,
+    "first_raw_frame_index": 0,
+    "internal_lag_ps": 50,
+    "interpolation": false,
+    "last_raw_frame_index": 995,
+    "raw_frame_ids": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145,
+      150,
+      155,
+      160,
+      165,
+      170,
+      175,
+      180,
+      185,
+      190,
+      195,
+      200,
+      205,
+      210,
+      215,
+      220,
+      225,
+      230,
+      235,
+      240,
+      245,
+      250,
+      255,
+      260,
+      265,
+      270,
+      275,
+      280,
+      285,
+      290,
+      295,
+      300,
+      305,
+      310,
+      315,
+      320,
+      325,
+      330,
+      335,
+      340,
+      345,
+      350,
+      355,
+      360,
+      365,
+      370,
+      375,
+      380,
+      385,
+      390,
+      395,
+      400,
+      405,
+      410,
+      415,
+      420,
+      425,
+      430,
+      435,
+      440,
+      445,
+      450,
+      455,
+      460,
+      465,
+      470,
+      475,
+      480,
+      485,
+      490,
+      495,
+      500,
+      505,
+      510,
+      515,
+      520,
+      525,
+      530,
+      535,
+      540,
+      545,
+      550,
+      555,
+      560,
+      565,
+      570,
+      575,
+      580,
+      585,
+      590,
+      595,
+      600,
+      605,
+      610,
+      615,
+      620,
+      625,
+      630,
+      635,
+      640,
+      645,
+      650,
+      655,
+      660,
+      665,
+      670,
+      675,
+      680,
+      685,
+      690,
+      695,
+      700,
+      705,
+      710,
+      715,
+      720,
+      725,
+      730,
+      735,
+      740,
+      745,
+      750,
+      755,
+      760,
+      765,
+      770,
+      775,
+      780,
+      785,
+      790,
+      795,
+      800,
+      805,
+      810,
+      815,
+      820,
+      825,
+      830,
+      835,
+      840,
+      845,
+      850,
+      855,
+      860,
+      865,
+      870,
+      875,
+      880,
+      885,
+      890,
+      895,
+      900,
+      905,
+      910,
+      915,
+      920,
+      925,
+      930,
+      935,
+      940,
+      945,
+      950,
+      955,
+      960,
+      965,
+      970,
+      975,
+      980,
+      985,
+      990,
+      995
+    ],
+    "raw_frame_spacing_ps": 10,
+    "raw_frames": 1000,
+    "stride": 5,
+    "stride_definition": "frames[::5]"
+  }
+}

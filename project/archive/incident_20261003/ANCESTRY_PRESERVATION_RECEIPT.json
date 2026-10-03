@@ -1,0 +1,48 @@
+{
+  "pre_merge_head": "d083b6eab27554ec96ec38c544b51f292e154df2",
+  "post_merge_head": "9ca5356806b4683353aacae49e86fe636642ed39",
+  "tree_before": "d6350f63cd92b7c462fdfc473d1ccb61208fe9a8",
+  "tree_after": "d6350f63cd92b7c462fdfc473d1ccb61208fe9a8",
+  "ls_files_s_exact_match": true,
+  "status_before": "clean",
+  "status_after_merges": "clean",
+  "diff_tree_before_after": "empty",
+  "original_22_reachable": 22,
+  "merge_strategy": "ours --no-ff; no cherry-pick, no rewrite, no tree replacement",
+  "merges": [
+    {
+      "tip": "9dfaca3553ae5c175aad4b778ee4f58cea8d9669",
+      "ref": "refs/remotes/origin/codex/drugclip-blind-benchmark-v01",
+      "merge": "353afede8db9fb3d18a25b0b724ccdc3dcd228cd",
+      "covers": [
+        "9dfaca3553ae5c175aad4b778ee4f58cea8d9669",
+        "1efe33287b4ad0d0e1e3d69f38fb9835a1baf159"
+      ]
+    },
+    {
+      "tip": "492ce332f4727f441253b752a5711852657aa803",
+      "ref": "refs/heads/codex/drugclip-blind-benchmark-v01",
+      "merge": "cc910a922e1ec64ccd28ad2d14a0fc84b946ca55",
+      "covers": [
+        "492ce332f4727f441253b752a5711852657aa803"
+      ]
+    },
+    {
+      "tip": "270dd0eb5e88c0c369d493a58bd739cf118ebcdb",
+      "ref": "refs/remotes/origin/codex/drugclip-pacer-handoff",
+      "merge": "e1fc9e86d38b25050cd3d7c17538da34ac120810",
+      "covers": [
+        "270dd0eb5e88c0c369d493a58bd739cf118ebcdb",
+        "d948297b1011707cfe54ad9dbe47df446506aac1"
+      ]
+    },
+    {
+      "tip": "ddc11f970f508d89a75dac8ca30c41cfcd361731",
+      "ref": "refs/heads/integration/final-freeze-v01;refs/tags/pacer-code-freeze-v01",
+      "merge": "9ca5356806b4683353aacae49e86fe636642ed39",
+      "covers": [
+        "ddc11f970f508d89a75dac8ca30c41cfcd361731"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "potential_kj_mol": -1750977.1051289216,
+  "max_force_kj_mol_nm": 5382.778986847171,
+  "max_constraint_error_nm": 5.471377578225578e-07,
+  "finite": true,
+  "system": "PACER0010__candidate_no_probe",
+  "steps": 500,
+  "timestep_fs": 0.5,
+  "simulated_ps": 0.25,
+  "barostat_enabled": false,
+  "heating_K": [
+    50,
+    100,
+    200,
+    300
+  ],
+  "checkpoint_roundtrip": true,
+  "platform": "CUDA",
+  "device_index": "0",
+  "production_started": false,
+  "build_audit_sha256": "bc300a5620e62bf570157d15e80613d744cf5958b31204dc9181ac434ee02bb7",
+  "outputs": {
+    "preflight.json": "5787d2f10dc2f368ab1e0eabe0b2daa2b71fc7c2c2fdcc868fca0ac629fdd3a3",
+    "refined_state.xml": "9d7a886fc06caf36a863f31079a7ae507a913e4539c09dd75e15f9c109293587",
+    "refined.pdb": "03762627f7ebe72b7edccbe75024c27636d9abe98666482136dfe597bad465ac",
+    "state.csv": "fb06a72f4ea408bf1826a723413865dd68e89f667924523d53ef864e7e4c7b4d",
+    "trajectory.dcd": "3b8a3f16be732bb500ea6b565c6879436edee54a865f844fd0f65788cfa0bfc5",
+    "final_state.xml": "37ba3f2397a49b06e8d5c9e6647ef6d1f37caabba19c900eadc5f9efea652146",
+    "smoke_checkpoint.chk": "a393caf6ea11bd7a9a1b7a6c95d3b96ea3b44d76713ad190e05bc112a189da2e"
+  }
+}

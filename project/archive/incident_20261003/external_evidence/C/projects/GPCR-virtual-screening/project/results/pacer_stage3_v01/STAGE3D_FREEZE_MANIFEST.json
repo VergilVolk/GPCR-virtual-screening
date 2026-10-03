@@ -1,0 +1,178 @@
+{
+  "schema": "pacer.stage3d.freeze_manifest.v1",
+  "stage": "STAGE3D",
+  "created_utc": "2026-10-02T06:05:02.713312+00:00",
+  "git": {
+    "HEAD": "d1f145832907c42850baf2e189c7142454f66519",
+    "branch": "codex/drugclip-blind-benchmark-v01",
+    "worktree": "C:\\projects\\GPCR-virtual-screening"
+  },
+  "inputs": {
+    "stage2_input": {
+      "path": "project/results/pacer_candidates_v01/predock_portfolio.csv",
+      "sha256": "0dd7689860879eaae8abe806699a05a1c261a439e7355b99628e982abe46f52b"
+    },
+    "docking_metadata": {
+      "path": "project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/metadata.json",
+      "sha256": "8d1703f4f3a40b7b73cc6fb74fb7b04f63ade20ba040608e6624607c5b0746d3"
+    },
+    "docking_ledger": {
+      "path": "project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/ledger.jsonl",
+      "sha256": "829f32c2f8c9f77cee977196b275d52f28129d395d7a28a746fc8e4268ba037a"
+    },
+    "docking_framewise_scores": {
+      "path": "project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/framewise_scores.csv",
+      "sha256": "7eab001a2bb579e964cb6f93f21b89236f3092991bd449581bc3b74b88682d93"
+    },
+    "docking_statewise_scores": {
+      "path": "project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/statewise_scores.csv",
+      "sha256": "c9959c05a319f9e7813400381b4179f56cfe0ee380a6c4f3d2205592eb6e7f9e"
+    },
+    "router_input": {
+      "path": "project/artifacts/drugclip2023_m4_loto_pacer200_v01/pacer200_two_model_scores.csv",
+      "sha256": "b145b91cfca1e768761113172796be1253ea3a4aa656a5d37df6c9b9c86c4445"
+    },
+    "router_output": {
+      "path": "project/results/pacer_stage3_v01/pacer200_m4_safe_routed_ranking.csv",
+      "sha256": "209facd6c81d70a48ae3137707e96c329f39b8960a784ec977bc17a83a1c4f9d"
+    },
+    "stage3a_docking_qc": {
+      "path": "project/results/pacer_stage3_v01/stage3a_docking_qc.json",
+      "sha256": "935105216427530a85677b760726847185a2176157ec0ac01c7fdcdf44638f33"
+    },
+    "structural_gate": {
+      "path": "project/results/pacer_stage3_v01/pacer200_structural_gate.csv",
+      "sha256": "b0dc774888051af3d9821df2eda0b07d9bc64e2432f1cd28b95960ba77098f81"
+    },
+    "merged": {
+      "path": "project/results/pacer_stage3_v01/pacer200_stage3d_merged.csv",
+      "sha256": "72ef23d31cb228437228f048f5b7d6ba1e6b277465a615b6207669187e3428d6"
+    },
+    "diverse_shortlist": {
+      "path": "project/results/pacer_stage3_v01/pacer_stage3d_diverse_shortlist.csv",
+      "sha256": "caaab138384226155fcb5e6737e4c04c5fa281122500c9530bd795007efc7974"
+    },
+    "pose_manifest": {
+      "path": "project/results/pacer_stage3_v01/md_shortlist_pose_manifest.csv",
+      "sha256": "44d11f1b8a41b81a51bc010bd1b94cc0a539fc8fec4c47cef211d29da3f0b68d"
+    }
+  },
+  "router": {
+    "protocol": "pacer_drugclip_m4_safe_router_v01",
+    "route": [
+      "m4_2023_gpcr_loto"
+    ],
+    "script": "project/scripts/pacer_drugclip_router.py",
+    "script_sha256": "22ec38f18ed96e20bf726602e3997cc1aad8e1cb13127ddb1279d459f11a290e",
+    "frozen_definition_commit": "f35acdd9d330e88ed8c690f81986e0305f5a515f",
+    "2026_branch_decisional": false,
+    "final_rank_source": "rankpct_2023_gpcr_loto only (2023 M4-LOTO held-out)",
+    "eligible_for_pam_claim": false
+  },
+  "docking": {
+    "run": "pacer_stage3_200_docking_stage3_v01",
+    "script": "project/scripts/dock_m4_gamd_ensemble.py",
+    "vina_version": "1.2.7",
+    "vina_executable": "project/tools/vina_1.2.7.exe",
+    "vina_executable_sha256": "e0c4b2715e0c1a74f6e92d0f3be0328ac97542eafbc111e6b1efad897a73cce5",
+    "ensemble_source": "tylerdt1/gpcr-am-ensemble-docking @ 44798c841ee77230b1f89fe41074e41b458c7070",
+    "clusters": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "box": "per-cluster co-simulated MK-97 centroid, 30 A cube",
+    "ligand_states": "molscrub 0.1.1, pH 7.0, protonation and tautomer enumeration; best state per cluster",
+    "tasks_expected": 2000,
+    "tasks_completed": 2000,
+    "tasks_failed": 0
+  },
+  "structural_gate": {
+    "role": "structural plausibility gate only; Vina never interpreted as PAM efficacy/potency",
+    "thresholds": {
+      "cluster_coverage_fraction": 0.8,
+      "median_native_pocket_coverage": 0.5,
+      "median_n_contacted_residues": 8,
+      "max_centroid_outlier_distance_A": 20.0
+    },
+    "pass": 200,
+    "fail": 0
+  },
+  "selection": {
+    "rule": "structural gate PASS -> frozen M4-safe final_rank -> one representative per Murcko scaffold",
+    "diverse_shortlist_rows": 133,
+    "distinct_scaffolds": 133,
+    "recommended_md_set_size": 3,
+    "recommended_md_set_ids": [
+      "PACER0100",
+      "PACER0047",
+      "PACER0046"
+    ],
+    "recommended_md_set_smiles": [
+      "Cc1nnc2sc(-n3cc(NC4CN(c5cc(F)nc(F)c5)C4)cn3)c(N)c2c1C",
+      "Cc1nnc2sc(-c3cncc(N4CC(Nc5cc(F)nc(F)c5)C4)c3)c(N)c2c1C",
+      "Cc1nnc2sc(NC3CN(c4cncc(-c5cc(F)nc(F)c5)c4)C3)c(N)c2c1C"
+    ],
+    "pose_freeze_rule": "pose nearest the candidate's ensemble-median centroid, then highest native pocket coverage, then Vina; not selected by lowest Vina alone"
+  },
+  "frozen_poses": [
+    {
+      "candidate_id": "PACER0100",
+      "canonical_smiles": "Cc1nnc2sc(-n3cc(NC4CN(c5cc(F)nc(F)c5)C4)cn3)c(N)c2c1C",
+      "source_cluster": 0,
+      "source_state": 0,
+      "pose_file": "project/results/pacer_stage3_v01/md_shortlist_poses/PACER0100_c00_s00.pdbqt",
+      "pose_file_sha256": "8b26a988d128901e7d09049cfe9c35f591137b0aa2ea6991c56686d14554bc5b",
+      "docking_run": "pacer_stage3_200_docking_stage3_v01",
+      "router_final_rank": 1,
+      "pacer_binding_score": 1.0,
+      "route": "m4_2023_gpcr_loto"
+    },
+    {
+      "candidate_id": "PACER0047",
+      "canonical_smiles": "Cc1nnc2sc(-c3cncc(N4CC(Nc5cc(F)nc(F)c5)C4)c3)c(N)c2c1C",
+      "source_cluster": 0,
+      "source_state": 0,
+      "pose_file": "project/results/pacer_stage3_v01/md_shortlist_poses/PACER0047_c00_s00.pdbqt",
+      "pose_file_sha256": "228d2a6f0ec4afceb19bbd72920cb88699b27129de43e032199765e50bfd647b",
+      "docking_run": "pacer_stage3_200_docking_stage3_v01",
+      "router_final_rank": 2,
+      "pacer_binding_score": 0.995,
+      "route": "m4_2023_gpcr_loto"
+    },
+    {
+      "candidate_id": "PACER0046",
+      "canonical_smiles": "Cc1nnc2sc(NC3CN(c4cncc(-c5cc(F)nc(F)c5)c4)C3)c(N)c2c1C",
+      "source_cluster": 6,
+      "source_state": 0,
+      "pose_file": "project/results/pacer_stage3_v01/md_shortlist_poses/PACER0046_c06_s00.pdbqt",
+      "pose_file_sha256": "4b50a358ff7f6addcb5c688db8b536ffa867303c604c1210636c3c64c768e75e",
+      "docking_run": "pacer_stage3_200_docking_stage3_v01",
+      "router_final_rank": 3,
+      "pacer_binding_score": 0.99,
+      "route": "m4_2023_gpcr_loto"
+    }
+  ],
+  "forbidden_operations_not_performed": {
+    "docking_rerun": false,
+    "router_modified": false,
+    "model_training": false,
+    "score_refitting": false,
+    "md_started": false,
+    "old_top50_intersect_top25": false,
+    "old_5_candidate_shortlist": false,
+    "old_fusion_rank": false,
+    "drugclip_m4_probability": false,
+    "vina_as_pam_score": false,
+    "2026_changed_m4_final_rank": false,
+    "weighted_fusion_created": false
+  },
+  "claim_boundary": "Binding-candidate prioritization + structural plausibility only. Not PAM function, efficacy, cooperativity, or potency. Functional interpretation requires four-context MD / PACER-FKG or experiment."
+}

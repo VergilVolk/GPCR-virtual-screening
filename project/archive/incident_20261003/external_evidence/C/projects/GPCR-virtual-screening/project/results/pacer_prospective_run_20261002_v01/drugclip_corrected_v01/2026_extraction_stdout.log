@@ -1,0 +1,58 @@
+fused_multi_tensor is not installed corrected
+fused_rounding is not installed corrected
+fused_layer_norm is not installed corrected
+fused_softmax is not installed corrected
+23567 0.1
+23567 0.1
+molecule_batches=5 molecules=40
+molecule_batches=10 molecules=80
+molecule_batches=15 molecules=120
+molecule_batches=20 molecules=160
+molecule_batches=25 molecules=200
+{
+  "checkpoint": "/mnt/c/projects/GPCR-virtual-screening/project/data/external/drugclip_science2026/litpcba_identity_90.pt",
+  "pocket_inputs": [
+    "/mnt/c/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/7TRQ_pocket.lmdb",
+    "/mnt/c/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/7TRP_pocket.lmdb",
+    "/mnt/c/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/7TRS_pocket.lmdb"
+  ],
+  "device": "cpu",
+  "molecule_shape": [
+    200,
+    128
+  ],
+  "molecule_representation_shape": [
+    200,
+    512
+  ],
+  "checkpoint_registry_remap": {
+    "from": {
+      "task": "drugclip",
+      "arch": "drugclip"
+    },
+    "to": {
+      "task": "drugclip",
+      "arch": "drugclip"
+    }
+  },
+  "pocket_shape": [
+    3,
+    128
+  ],
+  "pocket_representation_shape": [
+    3,
+    512
+  ],
+  "score_shape": [
+    3,
+    200
+  ],
+  "finite": true,
+  "score_range": [
+    -0.2759777903556824,
+    0.6453583240509033
+  ],
+  "missing_checkpoint_keys": [],
+  "unexpected_checkpoint_keys": [],
+  "claim_boundary": "Frozen DrugCLIP binding-compatibility embeddings; not PAM efficacy."
+}

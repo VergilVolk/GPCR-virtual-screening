@@ -1,0 +1,52 @@
+{
+  "thresholds": {
+    "g1_cluster_coverage": 0.8,
+    "g2_median_pocket_coverage": 0.5,
+    "g3_median_contacts": 8,
+    "g4_max_outlier_distance_A": 20.0
+  },
+  "n_candidates": 200,
+  "structural_gate_pass": 200,
+  "structural_gate_fail": 0,
+  "fail_by_reason": {},
+  "gate_component_pass": {
+    "gate_g1_cluster_coverage": 200,
+    "gate_g2_pocket_occupancy": 200,
+    "gate_g3_key_contacts": 200,
+    "gate_g4_no_catastrophic_outlier": 200
+  },
+  "output_sha256": "34a9f08e62902f63606cbf3a69972f5d712d2d06135374cda3ba67c62cc67809"
+}
+
+=== observed ranges (context for the thresholds) ===
+  cluster_coverage_fraction        min=1.0000 p25=1.0000 med=1.0000 p75=1.0000 max=1.0000
+  median_native_pocket_coverage    min=0.6077 p25=0.7418 med=0.7752 p75=0.7857 max=0.8619
+  median_n_contacted_residues      min=10.0000 p25=12.0000 med=13.0000 p75=13.5000 max=15.5000
+  centroid_dispersion_max_A        min=2.0264 p25=3.8914 med=4.6438 p75=5.7838 max=12.5486
+  pocket_contact_jaccard_mean      min=0.3937 p25=0.5035 med=0.5327 p75=0.5573 max=0.6658
+  vina_std                         min=0.2452 p25=0.4192 med=0.4780 p75=0.5509 max=0.8220
+{
+  "merged_rows": 200,
+  "final_rank_untouched_vs_router": true,
+  "eligible": 200,
+  "excluded_structural": 0,
+  "router_top50_excluded_by_structure": 0,
+  "router_top25_excluded_by_structure": 0,
+  "n_distinct_scaffolds_eligible": 140,
+  "diverse_shortlist_rows": 140,
+  "recommended_md_set": [
+    "PACER0010",
+    "PACER0073",
+    "PACER0027"
+  ],
+  "md_set_poses": [
+    "PACER0010 -> cluster 9 / PACER0010_c09_s00.pdbqt",
+    "PACER0073 -> cluster 0 / PACER0073_c00_s00.pdbqt",
+    "PACER0027 -> cluster 4 / PACER0027_c04_s00.pdbqt"
+  ],
+  "outputs": {
+    "pacer200_stage3d_merged.csv": "d2a679786ef3e39277476c4278ea569ccdd3450d2f581cb0f4de93cdeb45c6a9",
+    "pacer_stage3d_diverse_shortlist.csv": "2116b0bc3cdf26a2f88ebdfd19e67d7410e7e8d4de4c8fde3e5ba24f7f377cbb",
+    "md_shortlist_pose_manifest.csv": "8ef3c4be8ff3800543d09e3b37c11331671e961c7bd3f29cc70850b787e311a6"
+  }
+}

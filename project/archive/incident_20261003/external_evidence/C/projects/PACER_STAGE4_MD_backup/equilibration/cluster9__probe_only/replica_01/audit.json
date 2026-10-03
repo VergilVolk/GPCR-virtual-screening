@@ -1,0 +1,66 @@
+{
+  "system": "cluster9__probe_only",
+  "replica": 1,
+  "matched_seed": 27101,
+  "timestep_fs": 0.5,
+  "nvt_ps": 1.0,
+  "npt_ps": 1.0,
+  "membrane_barostat_present": true,
+  "volume_initial_nm3": 1458.1129154293376,
+  "volume_final_nm3": 1428.7569201870847,
+  "volume_change_percent": -2.0132868265287374,
+  "stages": [
+    {
+      "stage": "NVT",
+      "potential_kj_mol": -1552937.1167246553,
+      "kinetic_kj_mol": 314015.76382580685,
+      "temperature_K": 242.60424240160754,
+      "box_nm": [
+        [
+          12.740200000000002,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          13.3748,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          8.557119846343994
+        ]
+      ],
+      "finite": true
+    },
+    {
+      "stage": "NPT",
+      "potential_kj_mol": -1507349.011664577,
+      "kinetic_kj_mol": 360205.0991256446,
+      "temperature_K": 278.2894849541664,
+      "box_nm": [
+        [
+          12.63499839791121,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          13.26435821826838,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          8.525049586463041
+        ]
+      ],
+      "finite": true
+    }
+  ],
+  "numerically_stable": true,
+  "thermalized": true,
+  "passed": true,
+  "claim_boundary": "Short equilibration protocol validation only; not converged dynamics, independent sampling, or evidence of PAM function."
+}

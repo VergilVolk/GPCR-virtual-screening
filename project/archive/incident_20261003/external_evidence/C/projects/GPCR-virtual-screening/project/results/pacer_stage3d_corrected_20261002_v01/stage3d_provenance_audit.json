@@ -1,0 +1,158 @@
+{
+  "status": "PASS",
+  "canonical_input": {
+    "path": "project/results/pacer_candidates_v01/predock_portfolio.csv",
+    "sha256": "0dd7689860879eaae8abe806699a05a1c261a439e7355b99628e982abe46f52b"
+  },
+  "drugclip_input": {
+    "path": "project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_m4_safe_routed_ranking.csv",
+    "sha256": "bda22c9354a9ebf4a263ce92ccf1257c8b27e8e3e747404b0f4fa97c3fb34d89"
+  },
+  "docking_inputs": [
+    {
+      "path": "project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/metadata.json",
+      "sha256": "8d1703f4f3a40b7b73cc6fb74fb7b04f63ade20ba040608e6624607c5b0746d3"
+    },
+    {
+      "path": "project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/ledger.jsonl",
+      "sha256": "829f32c2f8c9f77cee977196b275d52f28129d395d7a28a746fc8e4268ba037a"
+    },
+    {
+      "path": "project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/framewise_scores.csv",
+      "sha256": "7eab001a2bb579e964cb6f93f21b89236f3092991bd449581bc3b74b88682d93"
+    },
+    {
+      "path": "project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/statewise_scores.csv",
+      "sha256": "c9959c05a319f9e7813400381b4179f56cfe0ee380a6c4f3d2205592eb6e7f9e"
+    }
+  ],
+  "identity": {
+    "canonical_population": 200,
+    "docking_population": 200,
+    "drugclip_population": 200,
+    "canonical_docking_graph_overlap": 200,
+    "canonical_drugclip_graph_overlap": 200,
+    "docking_drugclip_graph_overlap": 200,
+    "missing": 0,
+    "extra": 0,
+    "duplicates": 0,
+    "docking_tasks_expected": 2000,
+    "docking_tasks_completed": 2000,
+    "receptor_clusters": 10,
+    "state_parent_mapping": "Full isomeric graph after explicit protonation neutralization; no truncated InChIKey matching",
+    "canonical_input_sha256": "0dd7689860879eaae8abe806699a05a1c261a439e7355b99628e982abe46f52b",
+    "drugclip_input_sha256": "bda22c9354a9ebf4a263ce92ccf1257c8b27e8e3e747404b0f4fa97c3fb34d89"
+  },
+  "selection_policy": "structural gate PASS -> frozen M4-safe final_rank -> one representative per Murcko scaffold",
+  "selected_count": 3,
+  "config": "No separate config; frozen constants preserved in copied implementation",
+  "implementation": [
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/run_corrected_stage3d.py",
+      "sha256": "1c659a3d14613cea71f1dd6088a4c5c4bbb300bf6d929636e536bebd6f6aa5ed"
+    },
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/identity_contract.py",
+      "sha256": "ab121b2f346fe5a00b15c6efb82ab79ec423c713395b864f2a6966615eb2c78d"
+    },
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/stage3d_c_gate.py",
+      "sha256": "c86a804703dd043e6847c677d98624e4f54fd9ce51a2d4027c561d574c1b838d"
+    },
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/stage3d_def_merge_diversity_pose.py",
+      "sha256": "f2a804da6d5187d6051e227c3cc3144cf91db513929072c5572da06a530e8987"
+    }
+  ],
+  "source_implementation": [
+    {
+      "path": "project/results/pacer_stage3_v01/stage3d_c_gate.py",
+      "sha256": "7c3be00d017ecc80833750316eb5cc6b9fe7e6e63eeaeea3013310181e7b031b"
+    },
+    {
+      "path": "project/results/pacer_stage3_v01/stage3d_def_merge_diversity_pose.py",
+      "sha256": "3d625e7efff7fb38dbb407682215aab16d02d62d965c6099d0cf97ecd51944d0"
+    },
+    {
+      "path": "project/results/pacer_stage3_v01/STAGE3D_FREEZE_MANIFEST.json",
+      "sha256": "be780a482c7189c4c5a93169f0de46f1830134bb094068a2581f0694423e0167"
+    }
+  ],
+  "corrections": [
+    "corrected input and output wiring",
+    "full molecular graph plus candidate ID identity gate",
+    "reporting priority mapped by candidate identity instead of integer dataframe index"
+  ],
+  "historical_drugclip_bundle_used": false,
+  "old_stage3d_files_unchanged": true,
+  "outputs": [
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/identity_contract.py",
+      "sha256": "ab121b2f346fe5a00b15c6efb82ab79ec423c713395b864f2a6966615eb2c78d"
+    },
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/md_shortlist_pose_manifest.csv",
+      "sha256": "8ef3c4be8ff3800543d09e3b37c11331671e961c7bd3f29cc70850b787e311a6"
+    },
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/md_shortlist_poses/PACER0010_c09_s00.pdbqt",
+      "sha256": "836a68d0cced23dc6e345a55d43e66119c27f26b9d49803635f97aed56e1e9de"
+    },
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/md_shortlist_poses/PACER0027_c04_s00.pdbqt",
+      "sha256": "88cd9f7b228a25f65e82c9d82a49f65653cd67eb2abe53c3280146cc001d737e"
+    },
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/md_shortlist_poses/PACER0073_c00_s00.pdbqt",
+      "sha256": "3c503fc44a107cca2612dc71d9b0d529577bb5447eb2ea329dbe3adc32bcc37a"
+    },
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/pacer200_stage3d_merged.csv",
+      "sha256": "d2a679786ef3e39277476c4278ea569ccdd3450d2f581cb0f4de93cdeb45c6a9"
+    },
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/pacer200_structural_gate.csv",
+      "sha256": "34a9f08e62902f63606cbf3a69972f5d712d2d06135374cda3ba67c62cc67809"
+    },
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/pacer_stage3d_diverse_shortlist.csv",
+      "sha256": "2116b0bc3cdf26a2f88ebdfd19e67d7410e7e8d4de4c8fde3e5ba24f7f377cbb"
+    },
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/run_corrected_stage3d.py",
+      "sha256": "1c659a3d14613cea71f1dd6088a4c5c4bbb300bf6d929636e536bebd6f6aa5ed"
+    },
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/stage3d_c_gate.py",
+      "sha256": "c86a804703dd043e6847c677d98624e4f54fd9ce51a2d4027c561d574c1b838d"
+    },
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/stage3d_def_merge_diversity_pose.py",
+      "sha256": "f2a804da6d5187d6051e227c3cc3144cf91db513929072c5572da06a530e8987"
+    },
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/stage3d_ranked_candidates.csv",
+      "sha256": "acc52dbd22fce024be6d42e6912ad37b68dec7c509cea94db87fc0b9229ba9c6"
+    },
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/stage3d_selected_candidates.csv",
+      "sha256": "5672be147ee2d6b1cc4ece4d0b95b0e90512fe6b54dfacb88de976353a507dd3"
+    },
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/stage3d_selection_manifest.json",
+      "sha256": "430986b24e6c63152bf6ea8f3846cd013969e6c321d3741ea4b22c493ed5c162"
+    },
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/stage3d_stdout.log",
+      "sha256": "d7d4ed075d4aaaac0f9c1d3320315ba79c2cf87a18e23a34747d744e9d396e23"
+    },
+    {
+      "path": "project/results/pacer_stage3d_corrected_20261002_v01/stage3d_validation.json",
+      "sha256": "b2da207ab4baffe4c5a0d4b31ebe86a3143974a7907346ce9d455845803f01ca"
+    }
+  ],
+  "training": false,
+  "redocking": false,
+  "drugclip_inference": false,
+  "router_rerun": false
+}

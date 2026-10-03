@@ -1,0 +1,23 @@
+{
+  "protocol_id": "drugclip2023_m4_heldout_loto_3seed_v01",
+  "rows": 200,
+  "target": "M4R",
+  "output": "/mnt/c/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_2023_gpcr_loto_scores.csv",
+  "output_sha256": "4763c4283b93c257ee348db0488d8e381977e6d6df60d3bf13df4074bbf28c15",
+  "artifact_sha256": {
+    "prospective200_2023_frozen_representations.npz": "972872ab9ab91f76d3821fffb581f06a96e614c93774c8eef73628cfc62a356e",
+    "drugclip2023_m4_loto_seed20260925.projection.pt": "a954c7c16fe857b5e3b02f1fbfdf7b2b1284d3559d86448b33736e16dd5d7398",
+    "drugclip2023_m4_loto_seed20260926.projection.pt": "3cc92da9f066a36f9d65b47b7859e69ee7a456d48047a3e1bbd509283d50d4b9",
+    "drugclip2023_m4_loto_seed20260927.projection.pt": "578ab8349fa8723f5609067e6511ebdfab8541dab8558e883bb7affeb7a8780c"
+  },
+  "finite": true,
+  "score_range": [
+    -0.3277304470539093,
+    0.09303563088178635
+  ],
+  "claim_boundary": "Binding-candidate retrieval only; not PAM function or potency.",
+  "canonical_input": {
+    "path": "/mnt/c/projects/GPCR-virtual-screening/project/results/pacer_candidates_v01/predock_portfolio.csv",
+    "sha256": "0dd7689860879eaae8abe806699a05a1c261a439e7355b99628e982abe46f52b"
+  }
+}

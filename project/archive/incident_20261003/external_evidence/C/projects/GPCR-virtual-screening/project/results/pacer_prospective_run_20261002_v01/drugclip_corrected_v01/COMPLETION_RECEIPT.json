@@ -1,0 +1,36 @@
+{
+  "status": "COMPLETE",
+  "canonical_input": {
+    "path": "/mnt/c/projects/GPCR-virtual-screening/project/results/pacer_candidates_v01/predock_portfolio.csv",
+    "sha256": "0dd7689860879eaae8abe806699a05a1c261a439e7355b99628e982abe46f52b"
+  },
+  "backbone_2023_reused": true,
+  "validation": {
+    "rows": 200,
+    "graph_overlap": 200,
+    "missing": 0,
+    "extra": 0,
+    "duplicates": 0
+  },
+  "outputs": [
+    {
+      "path": "/mnt/c/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_2023_gpcr_loto_scores.csv",
+      "sha256": "4763c4283b93c257ee348db0488d8e381977e6d6df60d3bf13df4074bbf28c15"
+    },
+    {
+      "path": "/mnt/c/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_2026_family_aug_scores.csv",
+      "sha256": "813ac675668b3b36c17ed0d3752a76b2fabee9ebd2d21bf32877dcbd0ab464ca"
+    },
+    {
+      "path": "/mnt/c/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_two_model_scores.csv",
+      "sha256": "493a886353129502dcd3a72978634e7bb5bfe74fe4ad0cdb75162fe96c1c3034"
+    },
+    {
+      "path": "/mnt/c/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_m4_safe_routed_ranking.csv",
+      "sha256": "bda22c9354a9ebf4a263ce92ccf1257c8b27e8e3e747404b0f4fa97c3fb34d89"
+    }
+  ],
+  "training": false,
+  "redocking": false,
+  "stage3d_executed": false
+}

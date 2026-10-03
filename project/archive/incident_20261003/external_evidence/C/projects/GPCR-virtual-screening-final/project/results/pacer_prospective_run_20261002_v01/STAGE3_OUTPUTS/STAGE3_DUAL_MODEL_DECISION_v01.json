@@ -1,0 +1,39 @@
+{
+  "schema": "pacer.drugclip_freeze.dual_model_decision.v1",
+  "rule": "old_top50 INTERSECT new_top25",
+  "old_top": 50,
+  "new_top": 25,
+  "n_input": 200,
+  "n_dual_top": 5,
+  "dual_top_candidates": [
+    {
+      "candidate_id": "PACER0108",
+      "old_rank": 21,
+      "new_rank": 14
+    },
+    {
+      "candidate_id": "PACER0157",
+      "old_rank": 24,
+      "new_rank": 6
+    },
+    {
+      "candidate_id": "PACER0080",
+      "old_rank": 25,
+      "new_rank": 18
+    },
+    {
+      "candidate_id": "PACER0149",
+      "old_rank": 35,
+      "new_rank": 4
+    },
+    {
+      "candidate_id": "PACER0089",
+      "old_rank": 38,
+      "new_rank": 15
+    }
+  ],
+  "fusion_used": false,
+  "model_a_role": "M4 decision line (official frozen weights)",
+  "model_b_role": "second opinion (frozen projection-only apply)",
+  "claim_boundary": "Dual-model intersection is a prioritization device only; it is not a PAM probability, not a fused score and not experimental confirmation."
+}

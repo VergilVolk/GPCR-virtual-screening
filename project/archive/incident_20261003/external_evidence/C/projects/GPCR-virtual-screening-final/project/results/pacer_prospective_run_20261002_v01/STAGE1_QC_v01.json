@@ -1,0 +1,30 @@
+{
+  "schema": "pacer.prospective.stage1_qc.v1",
+  "input_csv": "project\\results\\generated\\generated_pam_analogs.csv",
+  "csv_parses": true,
+  "row_count": 2605,
+  "invalid_smiles": 0,
+  "duplicate_raw_smiles": 0,
+  "duplicate_canonical_smiles": 0,
+  "unique_canonical_smiles": 2605,
+  "rule_violation_count": 0,
+  "rule_violations": [],
+  "seeds_reconstructed": 12,
+  "seeds_expected": 12,
+  "seed_chemotype_tag_occurrences": 24,
+  "fallback_seeds_used": false,
+  "join_attempts": 17146,
+  "raw_generated": 5000,
+  "output_sha256": "a832c9cb2cfbed9b2e3db7902b48db5c384980cc70c551961c87f57db9e3be5d",
+  "output_bytes": 262621,
+  "determinism": {
+    "pinned_runs": [
+      "A",
+      "B"
+    ],
+    "identical": true,
+    "sha256_A": "a832c9cb2cfbed9b2e3db7902b48db5c384980cc70c551961c87f57db9e3be5d",
+    "sha256_B": "a832c9cb2cfbed9b2e3db7902b48db5c384980cc70c551961c87f57db9e3be5d"
+  },
+  "passed": true
+}

@@ -1,0 +1,107 @@
+{
+  "schema": "pacer.prospective.stage1_run_spec.v1",
+  "run_id": "PACER-PROSPECTIVE-20261002",
+  "created_at": "2026-10-01T18:13:08.348Z",
+  "stages_authorized": [
+    "stage1_generation",
+    "stage2_physchem_filtering",
+    "stage3_drugclip_dual_model"
+  ],
+  "stage3_3d_frozen_rule": "old_rank <= 50 AND new_rank <= 25",
+  "fail_closed": true,
+  "production_baseline": {
+    "branch": "integration/final-freeze-v01",
+    "commit": "ddc11f970f508d89a75dac8ca30c41cfcd361731",
+    "tag": "pacer-code-freeze-v01",
+    "freeze_anchor_sha256": "b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd"
+  },
+  "stage1": {
+    "implementation": "project/scripts/fragment_generation.py",
+    "implementation_sha256_raw": "ffc196290f8a8f3887e35f8e2a994cdb0e519375178bc53856387cb9d48be1fe",
+    "implementation_sha256_lf": "075ba6750164130ac782d9f36e30af305d8dd30e8cf96ee81671138e847782fb",
+    "invoked_as": "python scripts/fragment_generation.py",
+    "cwd": "<worktree>/project",
+    "rng": "NONE - the frozen implementation imports no random module and consumes no seed",
+    "seed_file": "project/data/generated/actives.smi",
+    "output_file": "project/results/generated/generated_pam_analogs.csv",
+    "generator_parameters_frozen_in_code": {
+      "MW_RANGE": [
+        250,
+        550
+      ],
+      "LOGP_MAX": 5.5,
+      "HBD_MAX": 5,
+      "HBA_MAX": 10,
+      "ROTB_MAX": 10,
+      "TPSA_RANGE": [
+        40,
+        140
+      ],
+      "MIN_AROM_RINGS": 2,
+      "MIN_HBA": 2,
+      "MIN_HBD": 1,
+      "MAX_FRAGS": 5,
+      "MAX_GENERATE": 5000,
+      "MAX_ATTEMPTS": 200000
+    },
+    "seed_derivation": {
+      "protocol_id": "PACER-SEED-DERIVATION-v01",
+      "declared_before_execution": true,
+      "rule": "per canonical_molecule_id take max(pEC50) over measurement groups; sort by (-pEC50, canonical_molecule_id); take top 12; map to canonical_smiles via compounds.csv; canonicalise with RDKit; preserve order",
+      "top_n": 12,
+      "rationale": "matches the frozen in-code comment '12 个高活性, 取自冻结数据 modeling_potency_exact_calcium.csv pEC50 最高的一批'; NOT the 6-entry _DEFAULT_SEEDS fallback",
+      "fallback_seeds_used": false,
+      "inputs": [
+        {
+          "role": "potency",
+          "path": "CHRM4_PAM_Modeling_Handoff_v1.0/data/modeling_potency_exact_calcium.csv",
+          "sha256_raw": "1db9dd1e58cea1bbaea2648edf511ebb1833ca970e7d25a8574f0c9deded0abf",
+          "sha256_lf": "332196ef3a3ae8ad0e5907c5b74e39f8f97df27b84cfe47d25d62c58ba4c760e"
+        },
+        {
+          "role": "compounds",
+          "path": "CHRM4_PAM_Modeling_Handoff_v1.0/data/compounds.csv",
+          "sha256_raw": "08145cb8f3ee9aa61ade526f289f34163a354f6911f3a388f71912970b0833b1",
+          "sha256_lf": "408df31dd6b9bbdb005a8bed6d73bcce781d43adc3cb861115a4c3c7301c6b7f"
+        }
+      ]
+    },
+    "qc_gates": [
+      "validate_rebuild reports full seed reconstruction",
+      "passed count > 0",
+      "output CSV parses, every SMILES RDKit-valid",
+      "no duplicate canonical SMILES in the output CSV",
+      "output SHA256 recorded"
+    ],
+    "effective_rng_pin": {
+      "env": "PYTHONHASHSEED",
+      "value": "0",
+      "reason": "The frozen generator imports no random module, but its fragment pool is built by iterating COMPAT (a defaultdict(set) of str). Python string hashing is randomised per process, so the iteration order and therefore the recombination order change between runs. Because the generator stops at MAX_GENERATE=5000, the retained molecule set differs per process. PYTHONHASHSEED is therefore the effective random seed of the frozen protocol and is pinned here.",
+      "pinned_before_authoritative_execution": true,
+      "scientific_parameters_changed": false,
+      "thresholds_changed": false,
+      "selection_rules_changed": false
+    },
+    "defect_log": [
+      {
+        "observed_at": "2026-10-01T18:14:16.426Z",
+        "defect": "non-deterministic generation under default PYTHONHASHSEED",
+        "evidence": {
+          "run_a": {
+            "join_attempts": 28432,
+            "generated": 5000,
+            "passed": 3212,
+            "output_sha256": "077aad8d8da2cbd89c994b9ea38d12faa05dcd75528d7d02f09bdbbb71a2e738"
+          },
+          "run_b": {
+            "join_attempts": 20333,
+            "generated": 5000,
+            "passed": 930,
+            "output_sha256": "4af697db9c6b73fe16412107a2ba3bf28b6b233227ccd550cc60ff89b867d0f2"
+          }
+        },
+        "disposition": "pin PYTHONHASHSEED=0, re-execute twice, require byte-identical output"
+      }
+    ]
+  }
+}

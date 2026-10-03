@@ -1,0 +1,128 @@
+{
+  "schema": "pacer.stage3d.corrected.freeze.v1",
+  "created_utc": "2026-10-02T12:56:53.732807+00:00",
+  "canonical_input": {
+    "path": "project/results/pacer_candidates_v01/predock_portfolio.csv",
+    "sha256": "0dd7689860879eaae8abe806699a05a1c261a439e7355b99628e982abe46f52b"
+  },
+  "drugclip_input": {
+    "path": "project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_m4_safe_routed_ranking.csv",
+    "sha256": "bda22c9354a9ebf4a263ce92ccf1257c8b27e8e3e747404b0f4fa97c3fb34d89"
+  },
+  "docking_inputs": [
+    {
+      "path": "project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/metadata.json",
+      "sha256": "8d1703f4f3a40b7b73cc6fb74fb7b04f63ade20ba040608e6624607c5b0746d3"
+    },
+    {
+      "path": "project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/ledger.jsonl",
+      "sha256": "829f32c2f8c9f77cee977196b275d52f28129d395d7a28a746fc8e4268ba037a"
+    },
+    {
+      "path": "project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/framewise_scores.csv",
+      "sha256": "7eab001a2bb579e964cb6f93f21b89236f3092991bd449581bc3b74b88682d93"
+    },
+    {
+      "path": "project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/statewise_scores.csv",
+      "sha256": "c9959c05a319f9e7813400381b4179f56cfe0ee380a6c4f3d2205592eb6e7f9e"
+    }
+  ],
+  "identity": {
+    "canonical_population": 200,
+    "docking_population": 200,
+    "drugclip_population": 200,
+    "canonical_docking_graph_overlap": 200,
+    "canonical_drugclip_graph_overlap": 200,
+    "docking_drugclip_graph_overlap": 200,
+    "missing": 0,
+    "extra": 0,
+    "duplicates": 0,
+    "docking_tasks_expected": 2000,
+    "docking_tasks_completed": 2000,
+    "receptor_clusters": 10,
+    "state_parent_mapping": "Full isomeric graph after explicit protonation neutralization; no truncated InChIKey matching",
+    "canonical_input_sha256": "0dd7689860879eaae8abe806699a05a1c261a439e7355b99628e982abe46f52b",
+    "drugclip_input_sha256": "bda22c9354a9ebf4a263ce92ccf1257c8b27e8e3e747404b0f4fa97c3fb34d89"
+  },
+  "structural_gate": {
+    "cluster_coverage_fraction": 0.8,
+    "median_native_pocket_coverage": 0.5,
+    "median_n_contacted_residues": 8,
+    "max_centroid_outlier_distance_A": 20.0
+  },
+  "selection_rule": "structural gate PASS -> frozen M4-safe final_rank -> one representative per Murcko scaffold",
+  "selected_count": 3,
+  "pose_selection_rule": "pose nearest the candidate's ensemble-median centroid, then highest native pocket coverage, then Vina; not selected by lowest Vina alone",
+  "frozen_poses": [
+    {
+      "candidate_id": "PACER0010",
+      "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12",
+      "stable_graph_identifier": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12",
+      "source_state": 0,
+      "source_state_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12",
+      "source_cluster": 9,
+      "source_pose": {
+        "path": "project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/poses/126806d1a73a_s00_c09.pdbqt",
+        "sha256": "836a68d0cced23dc6e345a55d43e66119c27f26b9d49803635f97aed56e1e9de"
+      },
+      "frozen_pose": {
+        "path": "project/results/pacer_stage3d_corrected_20261002_v01/md_shortlist_poses/PACER0010_c09_s00.pdbqt",
+        "sha256": "836a68d0cced23dc6e345a55d43e66119c27f26b9d49803635f97aed56e1e9de"
+      },
+      "router_final_rank": 1,
+      "diverse_rank": 1
+    },
+    {
+      "candidate_id": "PACER0073",
+      "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(NC(=O)c4cc(F)nc(F)c4)C3)c(N)c12",
+      "stable_graph_identifier": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(NC(=O)c4cc(F)nc(F)c4)C3)c(N)c12",
+      "source_state": 0,
+      "source_state_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(NC(=O)c4cc(F)nc(F)c4)C3)c(N)c12",
+      "source_cluster": 0,
+      "source_pose": {
+        "path": "project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/poses/699298bb49d2_s00_c00.pdbqt",
+        "sha256": "3c503fc44a107cca2612dc71d9b0d529577bb5447eb2ea329dbe3adc32bcc37a"
+      },
+      "frozen_pose": {
+        "path": "project/results/pacer_stage3d_corrected_20261002_v01/md_shortlist_poses/PACER0073_c00_s00.pdbqt",
+        "sha256": "3c503fc44a107cca2612dc71d9b0d529577bb5447eb2ea329dbe3adc32bcc37a"
+      },
+      "router_final_rank": 2,
+      "diverse_rank": 2
+    },
+    {
+      "candidate_id": "PACER0027",
+      "canonical_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+      "stable_graph_identifier": "Cc1c(Cl)c2nncn2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+      "source_state": 0,
+      "source_state_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC([NH+]4CC([NH2+]C5Cc6ccccc6C5)C4)C3)c(N)c12",
+      "source_cluster": 4,
+      "source_pose": {
+        "path": "project/results/m4_gamd_ensemble/pacer_stage3_200_docking_stage3_v01/poses/b55b59821a4b_s00_c04.pdbqt",
+        "sha256": "88cd9f7b228a25f65e82c9d82a49f65653cd67eb2abe53c3280146cc001d737e"
+      },
+      "frozen_pose": {
+        "path": "project/results/pacer_stage3d_corrected_20261002_v01/md_shortlist_poses/PACER0027_c04_s00.pdbqt",
+        "sha256": "88cd9f7b228a25f65e82c9d82a49f65653cd67eb2abe53c3280146cc001d737e"
+      },
+      "router_final_rank": 4,
+      "diverse_rank": 3
+    }
+  ],
+  "policy_sources": [
+    {
+      "path": "project/results/pacer_stage3_v01/stage3d_c_gate.py",
+      "sha256": "7c3be00d017ecc80833750316eb5cc6b9fe7e6e63eeaeea3013310181e7b031b"
+    },
+    {
+      "path": "project/results/pacer_stage3_v01/stage3d_def_merge_diversity_pose.py",
+      "sha256": "3d625e7efff7fb38dbb407682215aab16d02d62d965c6099d0cf97ecd51944d0"
+    },
+    {
+      "path": "project/results/pacer_stage3_v01/STAGE3D_FREEZE_MANIFEST.json",
+      "sha256": "be780a482c7189c4c5a93169f0de46f1830134bb094068a2581f0694423e0167"
+    }
+  ],
+  "policy_source_note": "Historical Stage3D artifacts used only as frozen policy/implementation evidence, never as DrugCLIP ranking input.",
+  "historical_drugclip_ranking_used": false
+}

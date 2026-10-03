@@ -1,0 +1,18 @@
+{
+  "n_raw_unique": 2592,
+  "domain_counts": {
+    "exploratory": 1246,
+    "reject_domain": 931,
+    "local": 415
+  },
+  "n_eligible": 1646,
+  "n_predock": 200,
+  "generator_counts": {
+    "fragment": 200
+  },
+  "tier_counts": {
+    "local": 160,
+    "exploratory": 40
+  },
+  "policy": "No weighted total score. Exact known molecules excluded; local potency used only inside similarity domain; classifier probability is a risk flag."
+}

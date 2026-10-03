@@ -1,0 +1,17 @@
+{
+  "enumerated_files": 3420,
+  "copied_files": 2724,
+  "large_or_raw_files_not_in_git": 692,
+  "binary_files_already_in_reachable_history": 4,
+  "recorded_nonlocal_reference_count": 11,
+  "prior_text_inventory_count": 339,
+  "prior_text_all_preserved": true,
+  "copied_bytes": 100341247,
+  "indexed_bytes": 77087365186,
+  "source_content_modified": false,
+  "scientific_computation_executed": false,
+  "no_lfs_policy_change": true,
+  "archive_text_policy": "external_evidence/** -text; no normalization",
+  "recorded_nonlocal_resolved_elsewhere_count": 11,
+  "unresolved_recorded_reference_count": 0
+}

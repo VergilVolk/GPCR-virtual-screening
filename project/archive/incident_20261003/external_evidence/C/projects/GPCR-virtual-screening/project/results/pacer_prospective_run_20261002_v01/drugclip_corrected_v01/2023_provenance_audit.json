@@ -1,0 +1,57 @@
+{
+  "canonical_input": {
+    "path": "/mnt/c/projects/GPCR-virtual-screening/project/results/pacer_candidates_v01/predock_portfolio.csv",
+    "sha256": "0dd7689860879eaae8abe806699a05a1c261a439e7355b99628e982abe46f52b"
+  },
+  "embeddings": {
+    "path": "/mnt/c/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/embeddings.npz",
+    "sha256": "f0a71918b707c13053444a7de9f41d47487201b92f8b79f5ccc5940f1fdcef3a"
+  },
+  "backbone_checkpoint": {
+    "path": "/mnt/c/projects/GPCR-virtual-screening-final/project/tools/DrugCLIP/artifacts/checkpoint_best.pt",
+    "sha256": "dc2c76d0f02f9bb079a613f09d538dcda1bf9075f2952d91dc1bea55571f667e"
+  },
+  "adapters": [
+    {
+      "file": "/mnt/c/projects/GPCR-virtual-screening/project/artifacts/drugclip2023_m4_loto_pacer200_v01/drugclip2023_m4_loto_seed20260925.projection.pt",
+      "sha256": "a954c7c16fe857b5e3b02f1fbfdf7b2b1284d3559d86448b33736e16dd5d7398"
+    },
+    {
+      "file": "/mnt/c/projects/GPCR-virtual-screening/project/artifacts/drugclip2023_m4_loto_pacer200_v01/drugclip2023_m4_loto_seed20260926.projection.pt",
+      "sha256": "3cc92da9f066a36f9d65b47b7859e69ee7a456d48047a3e1bbd509283d50d4b9"
+    },
+    {
+      "file": "/mnt/c/projects/GPCR-virtual-screening/project/artifacts/drugclip2023_m4_loto_pacer200_v01/drugclip2023_m4_loto_seed20260927.projection.pt",
+      "sha256": "578ab8349fa8723f5609067e6511ebdfab8541dab8558e883bb7affeb7a8780c"
+    }
+  ],
+  "pocket_representation_source": {
+    "path": "/mnt/c/projects/GPCR-virtual-screening/project/artifacts/drugclip2023_m4_loto_pacer200_v01/pacer200_m4_2023_frozen_representations.npz",
+    "sha256": "c22bc605d4ed54ec7115062d364419fb781a393b2ed44fe7da081b51af042658"
+  },
+  "pocket_representation_sha256": "3e92755dc1683390fe28ca8358b698d586b397316af964e95d8a7f3243975407",
+  "pocket_hash_encoding": "float32 C-order bytes",
+  "protocol_id": "drugclip2023_m4_heldout_loto_3seed_v01",
+  "seeds": [
+    20260925,
+    20260926,
+    20260927
+  ],
+  "aggregation": "mean of three normalized projected cosine scores; seed sd ddof=0",
+  "validation": {
+    "rows": 200,
+    "graph_overlap": 200,
+    "missing": 0,
+    "extra": 0,
+    "duplicates": 0
+  },
+  "finite": true,
+  "score_range": [
+    -0.32773045,
+    0.09303563
+  ],
+  "output": {
+    "path": "/mnt/c/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_2023_gpcr_loto_scores.csv",
+    "sha256": "4763c4283b93c257ee348db0488d8e381977e6d6df60d3bf13df4074bbf28c15"
+  }
+}

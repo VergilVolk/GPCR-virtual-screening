@@ -1,0 +1,6 @@
+Attempt 1: evidence-only copy stopped at Windows MAX_PATH when preserving source layering.
+FileNotFoundError: phase2a_frozen_apply/manifests/full/cluster0__apo__replica_01__SIGNED_DRIFT.json
+Sources were not changed. No scientific job was run.
+Attempt 2: explicit Windows extended-length path support; existing archive copies are
+accepted only when size/SHA-256 match the source, otherwise fail without overwrite.
+This is preservation retry, not a rerun of any Stage1-Stage4 calculation.

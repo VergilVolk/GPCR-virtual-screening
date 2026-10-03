@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "original_commit_count": 22,
+  "reachable_from_head": 22,
+  "copied_evidence_verified_against_source_worktree_and_staged_blob": 2724,
+  "preexisting_tracked_files_verified_unchanged": 1270,
+  "allowed_document_updates": [
+    "project/docs/INCIDENT_PACER_XR_PROTOCOL_DEVIATION_20261003.md",
+    "project/docs/RECENT_EXECUTION_ARCHIVE_20261002_20261003.md"
+  ],
+  "scientific_result_files_modified": false,
+  "ancestry_merge_tracked_index_identical": true,
+  "no_scientific_jobs_or_tests_executed": true
+}

@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "system": "cluster4__probe_only",
+  "replica": 2,
+  "seed": 38201,
+  "platform": "CUDA",
+  "device_index": "0",
+  "target_ns": 10.0,
+  "completed_ns": 10.0,
+  "timestep_fs": 2.0,
+  "restraint_k_kj_mol_nm2": 0.0,
+  "resumed": false,
+  "resume_mode": "new",
+  "wall_seconds_this_invocation": 3866.8403811454773,
+  "claim_boundary": "Completed trajectory is eligible for QC. Biological inference still requires convergence, three independent replicas, matched contexts, and frozen comparisons."
+}

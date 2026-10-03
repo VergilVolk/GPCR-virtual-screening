@@ -1,0 +1,130 @@
+{
+  "schema": "pacer.prospective.stage2_filtering_receipt.v1",
+  "stage": "STAGE2_FILTERING",
+  "status": "STAGE2_FILTERING_COMPLETE",
+  "created_at": "2026-10-01T18:16:32.260Z",
+  "run_id": "PACER-PROSPECTIVE-20261002",
+  "implementation": {
+    "script": "project/scripts/build_candidate_portfolio.py",
+    "sha256": "4751f7452a64ad644bbe0d2d2789d8f81707c5e6ee6d3e88b47a20e456b4d3ed",
+    "environment": "conda env chrm4_vs (python 3.9.23, rdkit 2025.03.5, scikit-learn 1.6.1, lightgbm 4.6.0)",
+    "frozen_thresholds": {
+      "mw_range": [
+        250,
+        550
+      ],
+      "logp_range": [
+        -1,
+        5.5
+      ],
+      "tpsa_max": 140,
+      "rotb_max": 10,
+      "pains_must_be_zero": true,
+      "domain_local": [
+        0.55,
+        0.85
+      ],
+      "domain_exploratory": [
+        0.35,
+        0.55
+      ],
+      "n_neighbors_threshold": 0.45,
+      "n_neighbors_min": 3,
+      "strict_inactive_risk_max": 0.45,
+      "quota_local": 160,
+      "quota_exploratory": 40
+    },
+    "thresholds_modified": false
+  },
+  "input": {
+    "source": "Stage 1 output of THIS run only",
+    "path": "project/results/generated/generated_pam_analogs.csv",
+    "sha256": "a832c9cb2cfbed9b2e3db7902b48db5c384980cc70c551961c87f57db9e3be5d",
+    "count": 2605,
+    "stage1_receipt": "STAGE1_GENERATION_RECEIPT_v01.json",
+    "stage1_receipt_sha256": "0833a5a79221fdcff41d41558cfc39fca0fd5dc003b21a6ad5b955001c5eba25"
+  },
+  "summary": {
+    "input_count": 2605,
+    "pass_count": 200,
+    "rejection_count": 2405,
+    "rejection_counts_by_rule": {
+      "exact_known_molecule": 13,
+      "pains_match": 0,
+      "druglike_composite_fail": 0,
+      "outside_applicability_domain": 931,
+      "strict_inactive_risk_ge_0.45": 55
+    },
+    "rejection_counts_primary_reason_exclusive": {
+      "exact_known_molecule": 13,
+      "outside_applicability_domain": 931,
+      "druglike_fail": 0,
+      "strict_inactive_risk": 15,
+      "portfolio_quota_cap": 1446
+    },
+    "primary_reason_sum_equals_rejections": true,
+    "eligible_count": 1646,
+    "unique_final_molecules": 200,
+    "output_sha256": "0dd7689860879eaae8abe806699a05a1c261a439e7355b99628e982abe46f52b",
+    "output_path": "project/results/pacer_candidates_v01/predock_portfolio.csv",
+    "companion_outputs": {
+      "predock_portfolio.csv": {
+        "sha256": "0dd7689860879eaae8abe806699a05a1c261a439e7355b99628e982abe46f52b",
+        "bytes": 50012,
+        "rows": 200
+      },
+      "all_generated_audit.csv": {
+        "sha256": "085c59bc874a68036ae93312c688a6badbc57c7072e7e23b0ca6914fce88da53",
+        "bytes": 625626,
+        "rows": 2592
+      },
+      "audit.json": {
+        "sha256": "cc1645d10632630f76415572fa1ec190b4dad5f999181e53e7e5ce5bb657bf98"
+      }
+    }
+  },
+  "qc": {
+    "gate_results": {
+      "frozen_quota_reached": "200/200 PASS",
+      "unique_final_molecules": "200 PASS",
+      "deterministic_candidate_ids": "true PASS",
+      "no_duplicate_candidate_ids": "0 duplicates PASS",
+      "independent_reverification_of_all_frozen_rules": "0 violations PASS",
+      "rejection_accounting_exact": "primary reasons sum to 2405 == 2405 PASS"
+    },
+    "passed": true,
+    "receipt": "STAGE2_QC_v01.json",
+    "receipt_sha256": "206acbc3c855c02bcbf102357c6997aa62d4c83cf4f703b4e87d5f6dc12074f9"
+  },
+  "environment_provisioning": {
+    "change": "installed lightgbm 4.6.0 into conda env chrm4_vs with --no-deps",
+    "reason": "project/scripts/build_candidate_portfolio.py imports LGBMRegressor at module import time; lightgbm was absent from every environment on this host",
+    "packages_before": {
+      "joblib": "1.5.1",
+      "numpy": "1.26.4",
+      "pandas": "2.3.1",
+      "rdkit": "2025.3.5",
+      "scikit-learn": "1.6.1",
+      "scipy": "1.13.1"
+    },
+    "packages_after": {
+      "joblib": "1.5.1",
+      "lightgbm": "4.6.0",
+      "numpy": "1.26.4",
+      "pandas": "2.3.1",
+      "rdkit": "2025.3.5",
+      "scikit-learn": "1.6.1",
+      "scipy": "1.13.1"
+    },
+    "existing_packages_changed": false,
+    "scientific_impact": "none on pass/reject: eligibility uses only domain_tier, druglike and strict_inactive_risk_ref. global_LGBM_pEC50_ref is reference-only and is not read by the eligibility filter.",
+    "caveat": "strict_inactive_risk_ref comes from RandomForestClassifier(random_state=42) in scikit-learn 1.6.1. Within this environment it is deterministic; cross-version drift of scikit-learn could shift the probabilities and is recorded as an environment-identity caveat."
+  },
+  "note": "rejection_counts_by_rule are conjunctive (rules overlap, so they do not sum). rejection_counts_primary_reason_exclusive applies the frozen precedence order exact-known -> domain -> druglike -> risk -> portfolio quota, and sums exactly to the rejection count.",
+  "artifacts": [
+    "STAGE2_QC_v01.json",
+    "logs_stage2_filtering.txt",
+    "logs_stage2_qc.txt",
+    "tools/stage2_qc.py"
+  ]
+}

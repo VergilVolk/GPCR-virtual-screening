@@ -1,0 +1,415 @@
+{
+  "branch": "STATE_MOTION",
+  "candidate": "PACER0010",
+  "cluster": 9,
+  "context": "A",
+  "descriptor": {
+    "bytes": 5529728,
+    "path": "C:\\projects\\GPCR-virtual-screening\\project\\cache\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\full\\cluster9__apo\\replica_03\\STATE_MOTION.npy",
+    "sha256": "7359c2d7b923bd7616515f8c18976c81db70120a829e22d39f4acb958dfbf324"
+  },
+  "forbidden_operations_performed": {
+    "bandwidth_refit": false,
+    "calibration": false,
+    "graph_refit": false,
+    "md_rerun": false,
+    "normalization_refit": false,
+    "outcome_driven_tuning": false,
+    "region_refit": false,
+    "rff_refit": false,
+    "source_modification": false,
+    "threshold_selection": false,
+    "training": false
+  },
+  "historical_anchor": {
+    "consumed_assets": [
+      {
+        "bytes": 5130,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\V02_BLOCK_DEFINITIONS.json",
+        "sha256": "dfe5472b2b7ea9f93befa222cfdb15cf3538550fab59f1aeaeed9884e5916e0f"
+      },
+      {
+        "bytes": 631,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\V02_CONTRAST_DEFINITIONS.json",
+        "sha256": "7b897db161e5fb62f23670ca187c889a1f9c998ef661b9839cd05c7c20a5ae2e"
+      },
+      {
+        "bytes": 309375,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_dc_geom2vec_pilot_v01\\M4_MULTISTRUCTURE_GRAPH_v01.json",
+        "sha256": "25593c11dac0f70ad6811c8c6aa7a4f06c1755f14397f1162eaa1157026be122"
+      },
+      {
+        "bytes": 1243,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\V02_METHOD_SPEC.json",
+        "sha256": "ccae0585576332e2ad19eaf8a813ccbc56a3c1fe9e8f0e6c226ec72ebebe9e59"
+      },
+      {
+        "bytes": 32175,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_dc_four_context_v01\\compound110\\G2_REGION_MAP_v02.json",
+        "sha256": "a40fb6ca8131a2f6dfc18caf6f48b9930f1341c072b368e3cb3b7c3c21e593ec"
+      },
+      {
+        "bytes": 215,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\V02_SEEDS.json",
+        "sha256": "1bb280da1cf38884c7b34203fe18a96358e77ffa35ab2e82fdaf8de185ef0bb6"
+      },
+      {
+        "bytes": 34436,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\V02_CALIBRATION_INVENTORY.json",
+        "sha256": "2338f26a1dcf10e7760a0cb0293b21a5603906bad39a27f7eb4527cabd8db96a"
+      },
+      {
+        "bytes": 4224,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\STATE_MOTION\\normalization_center.npy",
+        "sha256": "2e1950951d57ca4775a6dd9e6e27f711c4d62f4c0dc352ff82c36eb83471b1ec"
+      },
+      {
+        "bytes": 4224,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\STATE_MOTION\\normalization_scale.npy",
+        "sha256": "f9cadd72ac4b68e0a810d9c434c1094e167903f1683a46946226de5cbb2fb430"
+      },
+      {
+        "bytes": 373,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\STATE_MOTION\\bandwidth.json",
+        "sha256": "336c4202d0c6b715ddafd8fedfdef48a41e257e2dda5e505f21f1c9dab9597c1"
+      },
+      {
+        "bytes": 1048704,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\STATE_MOTION\\rff_weights.npy",
+        "sha256": "34c6979797ca7d5ca34742f9b9e008bdb6cc9fa1c7e82c4aec2e2406ea1d3619"
+      },
+      {
+        "bytes": 2176,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\STATE_MOTION\\rff_bias.npy",
+        "sha256": "ae8dc92ed47e9edd49a56498ad78158c796477fa9d408e49b007b082173bf860"
+      },
+      {
+        "bytes": 2176,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\SIGNED_DRIFT\\normalization_center.npy",
+        "sha256": "ac7d18780e6b096e95d923d4be9f08cb0956065a0fa2f37fae1b27c4bdb5e1bd"
+      },
+      {
+        "bytes": 2176,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\SIGNED_DRIFT\\normalization_scale.npy",
+        "sha256": "a9caf251cc40d84c31fb0c7c469dc9fb1f9330b5040c572d8357cdfe45a50dd9"
+      },
+      {
+        "bytes": 373,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\SIGNED_DRIFT\\bandwidth.json",
+        "sha256": "882173a46651c36f4de1b6252b0f6b5cade813d2fa60c7c5111f6582d7e7ba72"
+      },
+      {
+        "bytes": 524416,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\SIGNED_DRIFT\\rff_weights.npy",
+        "sha256": "fb1d5a41c2a60e6464b92d57b1be5ee2b318a6f838796a04ee803508712925c0"
+      },
+      {
+        "bytes": 2176,
+        "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\SIGNED_DRIFT\\rff_bias.npy",
+        "sha256": "a4b5bfa9a00a80c57f448981b37a3fbd2ead1d5553e199521cfa544300168069"
+      }
+    ],
+    "freeze": {
+      "bytes": 23517,
+      "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_fkg_v02_longmd_v01\\calibration\\V02_FREEZE_MANIFEST.json",
+      "sha256": "b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd"
+    },
+    "frozen_implementation": [
+      {
+        "lf_sha256": "d3ed9764ff813b9f164e139668cab2f55d7112d7b04283812d4a5fe3beee2271",
+        "path": "C:\\projects\\GPCR-virtual-screening\\project\\pacer_fkg_v02\\run_phase1_bs256.py"
+      },
+      {
+        "lf_sha256": "ccf8af5247ff2c7325f1c451d36943f2e293dee0dff48625031d8bb10a2d6e11",
+        "path": "C:\\projects\\GPCR-virtual-screening\\project\\pacer_fkg_v02\\run_phase2_calibration.py"
+      },
+      {
+        "lf_sha256": "147cb31363fe733c72719494dd282c80c86a61e1b733ad2568b94eca3b1d224c",
+        "path": "C:\\projects\\GPCR-virtual-screening\\project\\pacer_fkg_v02\\run_phase3_fkg.py"
+      },
+      {
+        "lf_sha256": "2fd99945e641682df7de6d9623b344108ee20994723ee032f37312962e479237",
+        "path": "C:\\projects\\GPCR-virtual-screening\\project\\encoder_intermediate_v01\\core.py"
+      },
+      {
+        "lf_sha256": "4d41168854c28c64f66c9905b17d9090cf1c489acad12ec65760a64457a9e311",
+        "path": "C:\\projects\\GPCR-virtual-screening\\project\\encoder_atom_readout_v01\\experiment_d.py"
+      },
+      {
+        "lf_sha256": "f1e8337e3b6163a3ec3c9dde255ff4cf214c3305c8115a57fda2fbeba874adc3",
+        "path": "C:\\projects\\GPCR-virtual-screening\\project\\encoder_candidate_v01\\CANDIDATE_SPEC.json"
+      }
+    ],
+    "historical_calibration_replicas": [
+      2
+    ],
+    "mapping": {
+      "bytes": 6803,
+      "path": "C:\\projects\\GPCR-virtual-screening-fkg-v02\\project\\results\\pacer_dc_four_context_v01\\compound110\\G2_RESIDUE_MAPPING_v01.csv",
+      "sha256": "3cb47de7fa555e635f66e6b1ff16846e6eaa95046c522fea6154d8e1f046b61d"
+    },
+    "prospective_replicas": "R1/R2/R3 evaluation only",
+    "verification_policy": "serialized-state hashes; no calibration replay/refit"
+  },
+  "historical_freeze_sha256": "b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd",
+  "implementation": [
+    {
+      "bytes": 25750,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\pacer_fkg_v02\\stage4_prospective_common_v01.py",
+      "sha256": "ab84553c5a08308a3074b9d328f02dff6960c8afdabb56acfc40821c78badb8c"
+    },
+    {
+      "bytes": 11952,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\pacer_fkg_v02\\run_stage4_prospective_phase1_bs256_v01.py",
+      "sha256": "3fc4390de466ab20a99ca97b4eba1a7a085e4b29a689706ebb2273b2192a59af"
+    },
+    {
+      "bytes": 7264,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\pacer_fkg_v02\\run_stage4_prospective_phase2a_frozen_apply_v01.py",
+      "sha256": "54414f5608be7d3459b1836db4000170dddf976597b6e4f37439e2980309803c"
+    },
+    {
+      "bytes": 10218,
+      "path": "C:\\projects\\GPCR-virtual-screening\\project\\pacer_fkg_v02\\run_stage4_prospective_phase2b_graph_region_v01.py",
+      "sha256": "bd512cca2ad1f2e06b03e34df3a013d987c18697feab7ffa7a16470b5fdee9d7"
+    }
+  ],
+  "input_manifest": {
+    "bytes": 151359,
+    "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\manifests\\full\\cluster9__apo__replica_03.json",
+    "sha256": "16b39fecdd0324d36dfa3f191ab2cb25c68baa8c80bc899229cfffc4804bd1a2"
+  },
+  "mode": "full",
+  "phase1_receipt": {
+    "bytes": 14182,
+    "path": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_prospective_fkg_v02_v01\\phase1_bs256\\PHASE1_FREEZE_RECEIPT_v01.json",
+    "sha256": "55c42fdf7447deed150e4c36bcce8515983b4422e888ace6c341529a697b80f3"
+  },
+  "prospective_replica_role": "FROZEN_STATE_EVALUATION_ONLY",
+  "replica": 3,
+  "rff": {
+    "bytes": 5529728,
+    "path": "C:\\projects\\GPCR-virtual-screening\\project\\cache\\pacer_stage4_prospective_fkg_v02_v01\\phase2a_frozen_apply\\full\\cluster9__apo\\replica_03\\STATE_MOTION_RFF.npy",
+    "sha256": "61ff72ae2ff80482c4dfcf5f4c1bfb8db6f57060131083ed27a314adcd59f491"
+  },
+  "seed": 49301,
+  "system": "cluster9__apo",
+  "temporal_contract": {
+    "analysis_frame_spacing_ps": 50,
+    "analysis_frames": 200,
+    "block_duration_ns": 1.0,
+    "block_frames": 20,
+    "block_internal_span_ps": 950,
+    "blocks_per_trajectory": 10,
+    "first_raw_frame_index": 0,
+    "internal_lag_ps": 50,
+    "interpolation": false,
+    "last_raw_frame_index": 995,
+    "raw_frame_ids": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145,
+      150,
+      155,
+      160,
+      165,
+      170,
+      175,
+      180,
+      185,
+      190,
+      195,
+      200,
+      205,
+      210,
+      215,
+      220,
+      225,
+      230,
+      235,
+      240,
+      245,
+      250,
+      255,
+      260,
+      265,
+      270,
+      275,
+      280,
+      285,
+      290,
+      295,
+      300,
+      305,
+      310,
+      315,
+      320,
+      325,
+      330,
+      335,
+      340,
+      345,
+      350,
+      355,
+      360,
+      365,
+      370,
+      375,
+      380,
+      385,
+      390,
+      395,
+      400,
+      405,
+      410,
+      415,
+      420,
+      425,
+      430,
+      435,
+      440,
+      445,
+      450,
+      455,
+      460,
+      465,
+      470,
+      475,
+      480,
+      485,
+      490,
+      495,
+      500,
+      505,
+      510,
+      515,
+      520,
+      525,
+      530,
+      535,
+      540,
+      545,
+      550,
+      555,
+      560,
+      565,
+      570,
+      575,
+      580,
+      585,
+      590,
+      595,
+      600,
+      605,
+      610,
+      615,
+      620,
+      625,
+      630,
+      635,
+      640,
+      645,
+      650,
+      655,
+      660,
+      665,
+      670,
+      675,
+      680,
+      685,
+      690,
+      695,
+      700,
+      705,
+      710,
+      715,
+      720,
+      725,
+      730,
+      735,
+      740,
+      745,
+      750,
+      755,
+      760,
+      765,
+      770,
+      775,
+      780,
+      785,
+      790,
+      795,
+      800,
+      805,
+      810,
+      815,
+      820,
+      825,
+      830,
+      835,
+      840,
+      845,
+      850,
+      855,
+      860,
+      865,
+      870,
+      875,
+      880,
+      885,
+      890,
+      895,
+      900,
+      905,
+      910,
+      915,
+      920,
+      925,
+      930,
+      935,
+      940,
+      945,
+      950,
+      955,
+      960,
+      965,
+      970,
+      975,
+      980,
+      985,
+      990,
+      995
+    ],
+    "raw_frame_spacing_ps": 10,
+    "raw_frames": 1000,
+    "stride": 5,
+    "stride_definition": "frames[::5]"
+  }
+}

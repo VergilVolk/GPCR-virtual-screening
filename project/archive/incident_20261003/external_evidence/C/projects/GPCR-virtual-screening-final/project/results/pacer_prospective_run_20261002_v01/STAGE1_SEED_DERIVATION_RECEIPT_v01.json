@@ -1,0 +1,100 @@
+{
+  "schema": "pacer.prospective.stage1_seed_derivation.v1",
+  "protocol_id": "PACER-SEED-DERIVATION-v01",
+  "inputs": {
+    "potency": {
+      "path": "CHRM4_PAM_Modeling_Handoff_v1.0\\data\\modeling_potency_exact_calcium.csv",
+      "sha256_lf": "332196ef3a3ae8ad0e5907c5b74e39f8f97df27b84cfe47d25d62c58ba4c760e",
+      "rows": 665,
+      "distinct_molecules": 430
+    },
+    "compounds": {
+      "path": "CHRM4_PAM_Modeling_Handoff_v1.0\\data\\compounds.csv",
+      "sha256_lf": "408df31dd6b9bbdb005a8bed6d73bcce781d43adc3cb861115a4c3c7301c6b7f",
+      "rows": 930
+    }
+  },
+  "top_n_requested": 12,
+  "n_selected": 12,
+  "skipped": [],
+  "fallback_seeds_used": false,
+  "seed_file": {
+    "path": "project\\data\\generated\\actives.smi",
+    "sha256": "a6fe474a513b93bd15114628d17ad634e21717463c09ff400e74810379ffa64f",
+    "bytes": 582
+  },
+  "selected": [
+    {
+      "canonical_molecule_id": "CM00482",
+      "pEC50": 8.0969,
+      "smiles_input": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)NC3Cc4ccccc4C3)c(N)c12",
+      "smiles_canonical": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)NC3Cc4ccccc4C3)c(N)c12"
+    },
+    {
+      "canonical_molecule_id": "CM00681",
+      "pEC50": 8.0969,
+      "smiles_input": "Cc1nnc2sc(C(=O)NC3CN(c4ccncc4Cl)C3)c(N)c2c1C",
+      "smiles_canonical": "Cc1nnc2sc(C(=O)NC3CN(c4ccncc4Cl)C3)c(N)c2c1C"
+    },
+    {
+      "canonical_molecule_id": "CM00366",
+      "pEC50": 8.0,
+      "smiles_input": "COc1cc(N2CC(NC(=O)c3sc4nnc(Cl)c(C)c4c3N)C2)c(Cl)cn1",
+      "smiles_canonical": "COc1cc(N2CC(NC(=O)c3sc4nnc(Cl)c(C)c4c3N)C2)c(Cl)cn1"
+    },
+    {
+      "canonical_molecule_id": "CM00825",
+      "pEC50": 8.0,
+      "smiles_input": "Cc1c(Cl)nnc2sc(C(=O)NC3Cc4ccccc4C3)c(N)c12",
+      "smiles_canonical": "Cc1c(Cl)nnc2sc(C(=O)NC3Cc4ccccc4C3)c(N)c12"
+    },
+    {
+      "canonical_molecule_id": "CM00353",
+      "pEC50": 7.9698,
+      "smiles_input": "Cc1nnc2sc(C(=O)NC3CN(c4cc(F)nc(F)c4)C3)c(N)c2c1C",
+      "smiles_canonical": "Cc1nnc2sc(C(=O)NC3CN(c4cc(F)nc(F)c4)C3)c(N)c2c1C"
+    },
+    {
+      "canonical_molecule_id": "CM00123",
+      "pEC50": 7.9208,
+      "smiles_input": "Cc1c(Cl)c2nncn2c2sc(C(=O)NC3Cc4ccccc4C3)c(N)c12",
+      "smiles_canonical": "Cc1c(Cl)c2nncn2c2sc(C(=O)NC3Cc4ccccc4C3)c(N)c12"
+    },
+    {
+      "canonical_molecule_id": "CM00240",
+      "pEC50": 7.9208,
+      "smiles_input": "Cc1cc2nncn2c2sc(C(=O)NC3CN(c4ccc(F)c(F)c4)C3)c(N)c12",
+      "smiles_canonical": "Cc1cc2nncn2c2sc(C(=O)NC3CN(c4ccc(F)c(F)c4)C3)c(N)c12"
+    },
+    {
+      "canonical_molecule_id": "CM00478",
+      "pEC50": 7.8099,
+      "smiles_input": "Cc1nnc2sc(C(=O)NC3CN(c4cncc(F)c4)C3)c(N)c2c1C",
+      "smiles_canonical": "Cc1nnc2sc(C(=O)NC3CN(c4cncc(F)c4)C3)c(N)c2c1C"
+    },
+    {
+      "canonical_molecule_id": "CM00202",
+      "pEC50": 7.7959,
+      "smiles_input": "Cc1c(Cl)c2nncn2c2sc(C(=O)NC3CC3)c(N)c12",
+      "smiles_canonical": "Cc1c(Cl)c2nncn2c2sc(C(=O)NC3CC3)c(N)c12"
+    },
+    {
+      "canonical_molecule_id": "CM00651",
+      "pEC50": 7.7701,
+      "smiles_input": "COc1cncc(N2CC(NC(=O)c3sc4nnc(C)c(C)c4c3N)C2)c1",
+      "smiles_canonical": "COc1cncc(N2CC(NC(=O)c3sc4nnc(C)c(C)c4c3N)C2)c1"
+    },
+    {
+      "canonical_molecule_id": "CM00243",
+      "pEC50": 7.7696,
+      "smiles_input": "COc1cc2ccc(-c3nc(C)ccc3-c3cnn(CC4(F)CCCC4)c3)cc2nn1",
+      "smiles_canonical": "COc1cc2ccc(-c3nc(C)ccc3-c3cnn(CC4(F)CCCC4)c3)cc2nn1"
+    },
+    {
+      "canonical_molecule_id": "CM00758",
+      "pEC50": 7.7696,
+      "smiles_input": "Cc1cc2nncn2c2sc(C(=O)NC3Cc4ccccc4C3)c(N)c12",
+      "smiles_canonical": "Cc1cc2nncn2c2sc(C(=O)NC3Cc4ccccc4C3)c(N)c12"
+    }
+  ]
+}

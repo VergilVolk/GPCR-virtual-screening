@@ -1,0 +1,15 @@
+{
+  "potential_kj_mol": -950216.3966638744,
+  "max_force_kj_mol_nm": 3276.1588280107826,
+  "max_constraint_error_nm": 1.4046485468793835e-06,
+  "finite": true,
+  "system": "cluster0__probe_only",
+  "platform": "CUDA",
+  "device_index": "0",
+  "precision": "mixed",
+  "source_state_sha256": "83e6ed84eb2d46e1f302d347d3afb09b984fb3c9293cc0b5086fc777b5ad5357",
+  "build_audit_sha256": "90a52f3dc4fbd102b3af8c086fc090b3ad83a81fc5e91961a5d84ac77b17be8d",
+  "used_cached_refinement": true,
+  "performed_deep_minimization": false,
+  "pre_refinement_max_force_kj_mol_nm": 3276.1589036075525
+}

@@ -1,0 +1,22 @@
+{
+  "protocol": {
+    "old_weight": 0.5,
+    "new_weight": 0.5,
+    "old_model_id": "drugclip2023_gpcr_loto",
+    "new_model_id": "drugclip2026_13t_family_aug",
+    "protocol_id": "pacer_drugclip_m4_safe_router_v01"
+  },
+  "frozen_protocol": true,
+  "input": "/mnt/c/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_two_model_scores.csv",
+  "input_sha256": "493a886353129502dcd3a72978634e7bb5bfe74fe4ad0cdb75162fe96c1c3034",
+  "output": "/mnt/c/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_m4_safe_routed_ranking.csv",
+  "output_sha256": "bda22c9354a9ebf4a263ce92ccf1257c8b27e8e3e747404b0f4fa97c3fb34d89",
+  "rows": 200,
+  "targets": {
+    "M4R": 200
+  },
+  "routes": {
+    "m4_2023_gpcr_loto": 200
+  },
+  "claim_boundary": "Binding-candidate retrieval only; PACER-FKG or experiment is required for a PAM-function claim."
+}

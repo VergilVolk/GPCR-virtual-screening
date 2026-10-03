@@ -1,0 +1,93 @@
+{
+  "schema": "pacer.prospective.stage3_blocked_receipt.v1",
+  "stage": "STAGE3_DRUGCLIP",
+  "status": "STAGE3_BLOCKED_FROZEN_ASSET",
+  "created_at": "2026-10-01T18:45:55.219Z",
+  "run_id": "PACER-PROSPECTIVE-20261002",
+  "blocked_asset": "environment_identity:drugclip-cpu",
+  "blocked_asset_detail": {
+    "frozen_spec": "project/environment_drugclip_cpu.yml",
+    "frozen_spec_sha256": "24781f5e90494f2d8e48239defa6ffa658f3e90c79bec9a526a6f2943ad3ecd9",
+    "pinned_dependency": "pytorch=2.0.1 (pytorch channel) + cpuonly",
+    "stages_completed_before_block": [
+      "3A asset restoration (partial)"
+    ],
+    "stages_not_started": [
+      "3B Model A",
+      "3C Model B",
+      "3D dual-model decision"
+    ]
+  },
+  "rationale": "The frozen environment spec cannot be realised on this host without changing the frozen spec. Under the default (strict) channel priority micromamba reports: 'pytorch =2.0.1 * is not installable because it conflicts with any installable versions previously reported' - the spec is unsolvable. Under flexible channel priority the environment resolves and installs, but the resulting pytorch 2.0.1 CPU binary cannot load: 'libtorch_cpu.so: undefined symbol: iJIT_NotifyEvent' - the Intel OpenMP runtime it links against is no longer distributed through the channels used. Substituting a different pytorch build (pip wheel, conda-forge pytorch-cpu, or a newer version) would change environment identity and is therefore not performed.",
+  "stage3a_asset_restoration": {
+    "drugclip_source": {
+      "path": "project/tools/DrugCLIP",
+      "required_commit": "7a3a3fa33673f8668c811790f2e4681c98af44ef",
+      "observed_commit": "7a3a3fa33673f8668c811790f2e4681c98af44ef",
+      "verified": true
+    },
+    "unicore_source": {
+      "path": "project/tools/Uni-Core",
+      "required_commit": "44f6386f4dcd7137fc1e5d5e768117d635d64a26",
+      "observed_commit": "44f6386f4dcd7137fc1e5d5e768117d635d64a26",
+      "verified": true
+    },
+    "official_checkpoint": {
+      "path": "project/tools/DrugCLIP/artifacts/checkpoint_best.pt",
+      "required_bytes": 1183713459,
+      "observed_bytes": 1183713459,
+      "bytes_match": true,
+      "required_sha256": "dc2c76d0f02f9bb079a613f09d538dcda1bf9075f2952d91dc1bea55571f667e",
+      "observed_sha256": "dc2c76d0f02f9bb079a613f09d538dcda1bf9075f2952d91dc1bea55571f667e",
+      "sha256_match": true,
+      "source": "Google Drive folder linked from the official DrugCLIP README (file id 1i87thnbNk8qeLF_tLx_BzelTukWbHaTR)",
+      "verified": true
+    },
+    "audited_cpu_patch": {
+      "script": "project/scripts/prepare_drugclip_cpu_checkout.py",
+      "applied": true,
+      "audit": "project/tools/DrugCLIP/artifacts/cpu_patch_audit.json",
+      "substitutions": 4,
+      "substitutions_all_device_placement_only": true,
+      "architecture_or_tensors_changed": false
+    },
+    "environment_identity": {
+      "env_name": "drugclip-cpu",
+      "created": true,
+      "python": "3.10.21",
+      "created_from_frozen_yaml_unchanged": true,
+      "solver_flag_required": "--channel-priority=flexible",
+      "final_state": "BROKEN - cannot import torch",
+      "torch_import_error": "ImportError: libtorch_cpu.so: undefined symbol: iJIT_NotifyEvent",
+      "verified": false
+    }
+  },
+  "remediation_required_from_human": [
+    "Option A: authorize a change to environment_drugclip_cpu.yml (e.g. a pytorch version whose CPU",
+    "runtime is installable today), which changes environment identity and therefore requires explicit approval.",
+    "Option B: supply a pre-built drugclip-cpu environment image or a peer transfer of a working env",
+    "(conda-pack / micromamba env export) that realises the frozen spec.",
+    "Option C: run Stage 3 on a host where the pinned pytorch=2.0.1 CPU build's Intel OpenMP runtime",
+    "is available.",
+    "In all options the checkpoint, repository commits and the apply-only code path already verified here",
+    "must remain exactly as frozen."
+  ],
+  "forbidden_operations_performed": {
+    "pocket_realign_fitting": false,
+    "adapter_training": false,
+    "finetuning": false,
+    "optimizer_created": false,
+    "backward_pass": false,
+    "model_weight_update": false,
+    "threshold_tuning": false,
+    "score_fusion_invented": false,
+    "checkpoint_substitution": false
+  },
+  "artifacts": [
+    "tools/stage3a_setup_runner.sh",
+    "tools/stage3a_envbuild.sh",
+    "tools/stage3a_envbuild2.sh",
+    "tools/stage3b_model_a.sh",
+    "tools/stage3_orchestrate.py"
+  ]
+}

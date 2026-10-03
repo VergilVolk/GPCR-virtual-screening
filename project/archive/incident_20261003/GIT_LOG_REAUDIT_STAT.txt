@@ -1,0 +1,682 @@
+commit 9ca5356806b4683353aacae49e86fe636642ed39
+Merge: e1fc9e8 ddc11f9
+Author: VergilVolk <barneygong329@gmail.com>
+Date:   Sat Oct 3 23:10:25 2026 +0800
+
+    Merge commit 'ddc11f970f508d89a75dac8ca30c41cfcd361731' into incident/pacer-xr-protocol-deviation-20261003
+
+commit e1fc9e86d38b25050cd3d7c17538da34ac120810
+Merge: cc910a9 270dd0e
+Author: VergilVolk <barneygong329@gmail.com>
+Date:   Sat Oct 3 23:10:23 2026 +0800
+
+    Merge commit '270dd0eb5e88c0c369d493a58bd739cf118ebcdb' into incident/pacer-xr-protocol-deviation-20261003
+
+commit cc910a922e1ec64ccd28ad2d14a0fc84b946ca55
+Merge: 353afed 492ce33
+Author: VergilVolk <barneygong329@gmail.com>
+Date:   Sat Oct 3 23:10:22 2026 +0800
+
+    Merge commit '492ce332f4727f441253b752a5711852657aa803' into incident/pacer-xr-protocol-deviation-20261003
+
+commit 353afede8db9fb3d18a25b0b724ccdc3dcd228cd
+Merge: d083b6e 9dfaca3
+Author: VergilVolk <barneygong329@gmail.com>
+Date:   Sat Oct 3 23:10:20 2026 +0800
+
+    Merge commit '9dfaca3553ae5c175aad4b778ee4f58cea8d9669' into incident/pacer-xr-protocol-deviation-20261003
+
+commit d083b6eab27554ec96ec38c544b51f292e154df2
+Author: VergilVolk <barneygong329@gmail.com>
+Date:   Sat Oct 3 23:02:40 2026 +0800
+
+    Document Stage3 PACER-XR protocol deviation
+
+ ...NCIDENT_PACER_XR_PROTOCOL_DEVIATION_20261003.md |  121 ++
+ .../RECENT_EXECUTION_ARCHIVE_20261002_20261003.md  | 2250 ++++++++++++++++++++
+ 2 files changed, 2371 insertions(+)
+
+commit b78148e9c283aa834118f99ac5a4feb613885e28
+Author: VergilVolk <barneygong329@gmail.com>
+Date:   Sat Oct 3 21:17:36 2026 +0800
+
+    Finalize Stage4 prospective PACER-FKG evaluation
+
+ .gitattributes                                     |      7 +
+ README.md                                          |     24 +
+ project/PROJECT_STATUS.md                          |     38 +-
+ project/docs/PACER_STAGE4_FINAL_HANDOFF_v01.md     |    180 +
+ project/docs/START_HERE_FOR_COLLABORATORS_V01.md   |     14 +-
+ .../run_stage4_prospective_phase1_bs256_v01.py     |    240 +
+ ..._stage4_prospective_phase2a_frozen_apply_v01.py |    149 +
+ ..._stage4_prospective_phase2b_graph_region_v01.py |    186 +
+ .../pacer_fkg_v02/stage4_prospective_common_v01.py |    505 +
+ .../STAGE4_PROSPECTIVE_SCIENTIFIC_REPORT_v01.md    |    671 +
+ .../STAGE4_PROSPECTIVE_SCIENTIFIC_SUMMARY_v01.json |  11700 +
+ .../input_audit/INPUT_AUTHENTICATION_v01.json      |  80423 ++++
+ .../phase1_bs256/PHASE1_FREEZE_RECEIPT_v01.json    |    420 +
+ .../phase1_bs256/SMOKE_RECEIPT_v01.json            |    245 +
+ .../PACER0010__candidate_no_probe__replica_01.json |   6197 +
+ .../PACER0010__candidate_no_probe__replica_02.json |   6197 +
+ .../PACER0010__candidate_no_probe__replica_03.json |   6197 +
+ .../PACER0010__candidate_probe__replica_01.json    |   6197 +
+ .../PACER0010__candidate_probe__replica_02.json    |   6197 +
+ .../PACER0010__candidate_probe__replica_03.json    |   6197 +
+ .../PACER0027__candidate_no_probe__replica_01.json |   6197 +
+ .../PACER0027__candidate_no_probe__replica_02.json |   6197 +
+ .../PACER0027__candidate_no_probe__replica_03.json |   6197 +
+ .../PACER0027__candidate_probe__replica_01.json    |   6197 +
+ .../PACER0027__candidate_probe__replica_02.json    |   6197 +
+ .../PACER0027__candidate_probe__replica_03.json    |   6197 +
+ .../PACER0073__candidate_no_probe__replica_01.json |   6197 +
+ .../PACER0073__candidate_no_probe__replica_02.json |   6197 +
+ .../PACER0073__candidate_no_probe__replica_03.json |   6197 +
+ .../PACER0073__candidate_probe__replica_01.json    |   6197 +
+ .../PACER0073__candidate_probe__replica_02.json    |   6197 +
+ .../PACER0073__candidate_probe__replica_03.json    |   6197 +
+ .../manifests/full/cluster0__apo__replica_01.json  |   6197 +
+ .../manifests/full/cluster0__apo__replica_02.json  |   6197 +
+ .../manifests/full/cluster0__apo__replica_03.json  |   6197 +
+ .../full/cluster0__probe_only__replica_01.json     |   6197 +
+ .../full/cluster0__probe_only__replica_02.json     |   6197 +
+ .../full/cluster0__probe_only__replica_03.json     |   6197 +
+ .../manifests/full/cluster4__apo__replica_01.json  |   6197 +
+ .../manifests/full/cluster4__apo__replica_02.json  |   6197 +
+ .../manifests/full/cluster4__apo__replica_03.json  |   6197 +
+ .../full/cluster4__probe_only__replica_01.json     |   6197 +
+ .../full/cluster4__probe_only__replica_02.json     |   6197 +
+ .../full/cluster4__probe_only__replica_03.json     |   6197 +
+ .../manifests/full/cluster9__apo__replica_01.json  |   6197 +
+ .../manifests/full/cluster9__apo__replica_02.json  |   6197 +
+ .../manifests/full/cluster9__apo__replica_03.json  |   6197 +
+ .../full/cluster9__probe_only__replica_01.json     |   6197 +
+ .../full/cluster9__probe_only__replica_02.json     |   6197 +
+ .../full/cluster9__probe_only__replica_03.json     |   6197 +
+ .../PACER0073__candidate_probe__replica_01.json    |   5201 +
+ .../PHASE2A_FREEZE_RECEIPT_v01.json                |    733 +
+ ...ndidate_no_probe__replica_01__SIGNED_DRIFT.json |    415 +
+ ...ndidate_no_probe__replica_01__STATE_MOTION.json |    415 +
+ ...ndidate_no_probe__replica_02__SIGNED_DRIFT.json |    415 +
+ ...ndidate_no_probe__replica_02__STATE_MOTION.json |    415 +
+ ...ndidate_no_probe__replica_03__SIGNED_DRIFT.json |    415 +
+ ...ndidate_no_probe__replica_03__STATE_MOTION.json |    415 +
+ ..._candidate_probe__replica_01__SIGNED_DRIFT.json |    415 +
+ ..._candidate_probe__replica_01__STATE_MOTION.json |    415 +
+ ..._candidate_probe__replica_02__SIGNED_DRIFT.json |    415 +
+ ..._candidate_probe__replica_02__STATE_MOTION.json |    415 +
+ ..._candidate_probe__replica_03__SIGNED_DRIFT.json |    415 +
+ ..._candidate_probe__replica_03__STATE_MOTION.json |    415 +
+ ...ndidate_no_probe__replica_01__SIGNED_DRIFT.json |    415 +
+ ...ndidate_no_probe__replica_01__STATE_MOTION.json |    415 +
+ ...ndidate_no_probe__replica_02__SIGNED_DRIFT.json |    415 +
+ ...ndidate_no_probe__replica_02__STATE_MOTION.json |    415 +
+ ...ndidate_no_probe__replica_03__SIGNED_DRIFT.json |    415 +
+ ...ndidate_no_probe__replica_03__STATE_MOTION.json |    415 +
+ ..._candidate_probe__replica_01__SIGNED_DRIFT.json |    415 +
+ ..._candidate_probe__replica_01__STATE_MOTION.json |    415 +
+ ..._candidate_probe__replica_02__SIGNED_DRIFT.json |    415 +
+ ..._candidate_probe__replica_02__STATE_MOTION.json |    415 +
+ ..._candidate_probe__replica_03__SIGNED_DRIFT.json |    415 +
+ ..._candidate_probe__replica_03__STATE_MOTION.json |    415 +
+ ...ndidate_no_probe__replica_01__SIGNED_DRIFT.json |    415 +
+ ...ndidate_no_probe__replica_01__STATE_MOTION.json |    415 +
+ ...ndidate_no_probe__replica_02__SIGNED_DRIFT.json |    415 +
+ ...ndidate_no_probe__replica_02__STATE_MOTION.json |    415 +
+ ...ndidate_no_probe__replica_03__SIGNED_DRIFT.json |    415 +
+ ...ndidate_no_probe__replica_03__STATE_MOTION.json |    415 +
+ ..._candidate_probe__replica_01__SIGNED_DRIFT.json |    415 +
+ ..._candidate_probe__replica_01__STATE_MOTION.json |    415 +
+ ..._candidate_probe__replica_02__SIGNED_DRIFT.json |    415 +
+ ..._candidate_probe__replica_02__STATE_MOTION.json |    415 +
+ ..._candidate_probe__replica_03__SIGNED_DRIFT.json |    415 +
+ ..._candidate_probe__replica_03__STATE_MOTION.json |    415 +
+ .../cluster0__apo__replica_01__SIGNED_DRIFT.json   |    415 +
+ .../cluster0__apo__replica_01__STATE_MOTION.json   |    415 +
+ .../cluster0__apo__replica_02__SIGNED_DRIFT.json   |    415 +
+ .../cluster0__apo__replica_02__STATE_MOTION.json   |    415 +
+ .../cluster0__apo__replica_03__SIGNED_DRIFT.json   |    415 +
+ .../cluster0__apo__replica_03__STATE_MOTION.json   |    415 +
+ ...ter0__probe_only__replica_01__SIGNED_DRIFT.json |    415 +
+ ...ter0__probe_only__replica_01__STATE_MOTION.json |    415 +
+ ...ter0__probe_only__replica_02__SIGNED_DRIFT.json |    415 +
+ ...ter0__probe_only__replica_02__STATE_MOTION.json |    415 +
+ ...ter0__probe_only__replica_03__SIGNED_DRIFT.json |    415 +
+ ...ter0__probe_only__replica_03__STATE_MOTION.json |    415 +
+ .../cluster4__apo__replica_01__SIGNED_DRIFT.json   |    415 +
+ .../cluster4__apo__replica_01__STATE_MOTION.json   |    415 +
+ .../cluster4__apo__replica_02__SIGNED_DRIFT.json   |    415 +
+ .../cluster4__apo__replica_02__STATE_MOTION.json   |    415 +
+ .../cluster4__apo__replica_03__SIGNED_DRIFT.json   |    415 +
+ .../cluster4__apo__replica_03__STATE_MOTION.json   |    415 +
+ ...ter4__probe_only__replica_01__SIGNED_DRIFT.json |    415 +
+ ...ter4__probe_only__replica_01__STATE_MOTION.json |    415 +
+ ...ter4__probe_only__replica_02__SIGNED_DRIFT.json |    415 +
+ ...ter4__probe_only__replica_02__STATE_MOTION.json |    415 +
+ ...ter4__probe_only__replica_03__SIGNED_DRIFT.json |    415 +
+ ...ter4__probe_only__replica_03__STATE_MOTION.json |    415 +
+ .../cluster9__apo__replica_01__SIGNED_DRIFT.json   |    415 +
+ .../cluster9__apo__replica_01__STATE_MOTION.json   |    415 +
+ .../cluster9__apo__replica_02__SIGNED_DRIFT.json   |    415 +
+ .../cluster9__apo__replica_02__STATE_MOTION.json   |    415 +
+ .../cluster9__apo__replica_03__SIGNED_DRIFT.json   |    415 +
+ .../cluster9__apo__replica_03__STATE_MOTION.json   |    415 +
+ ...ter9__probe_only__replica_01__SIGNED_DRIFT.json |    415 +
+ ...ter9__probe_only__replica_01__STATE_MOTION.json |    415 +
+ ...ter9__probe_only__replica_02__SIGNED_DRIFT.json |    415 +
+ ...ter9__probe_only__replica_02__STATE_MOTION.json |    415 +
+ ...ter9__probe_only__replica_03__SIGNED_DRIFT.json |    415 +
+ ...ter9__probe_only__replica_03__STATE_MOTION.json |    415 +
+ .../PHASE2B_FREEZE_RECEIPT_v01.json                |     49 +
+ .../STAGE4_PROSPECTIVE_RESULTS_v01.json            | 427895 ++++++++++++++++++
+ .../provenance/IMPLEMENTATION_VALIDATION_v01.json  |    817 +
+ .../STAGE4_TEMPORAL_METADATA_NOTE_v01.md           |     55 +
+ .../TOPOLOGY_SELECTION_REPAIR_VALIDATION_v01.json  |   2902 +
+ .../tests/test_stage4_prospective_fkg_v02_v01.py   |    319 +
+ 130 files changed, 785733 insertions(+), 12 deletions(-)
+
+commit 29fe47b5bdc18516e97989f5dabcff3cfebe4e1b
+Author: VergilVolk <barneygong329@gmail.com>
+Date:   Fri Oct 2 21:56:39 2026 +0800
+
+    Add prospective Stage4 membrane builder and bounded CUDA smoke
+
+ .../BUILDER_HANDOFF.md                             |  86 +++++
+ .../builder_input_validation.json                  |  49 +++
+ .../pacer_stage4_prospective_10ns_v01/campaign.py  | 199 +++++++++++
+ .../job_matrix.csv                                 |  37 ++
+ .../local_implementation_validation.json           |  25 ++
+ .../master_manifest.json                           | 381 +++++++++++++++++++++
+ .../build_pacer_stage4_prospective_membrane.py     | 205 +++++++++++
+ project/scripts/pacer_stage4_prospective.py        | 205 +++++++++++
+ project/scripts/run_pacer_stage4_membrane_smoke.py | 107 ++++++
+ project/tests/test_pacer_stage4_prospective.py     |  77 +++++
+ 10 files changed, 1371 insertions(+)
+
+commit 78ce1f30bc2e4855a4aa71dc6a1074a1e97a90e9
+Author: 2501_93004763 <2501_93004763@noreply.gitcode.com>
+Date:   Sat Oct 3 13:16:30 2026 +0800
+
+    submission: standardized results.csv generator + Model Card (attachment-5 compliance)
+    
+    - generate_submission_results_v01.py: main result entry per section 4;
+      emits UTF-8 results.csv with required fields (candidate_id, track,
+      SMILES, key metrics, model+version, structure file, remarks);
+      Stage3D-manifest mode outputs the frozen 3-candidate MD shortlist,
+      default mode the 200-candidate pre-MD ranking (tested, 200 rows)
+    - MODEL_CARD_V01.md: model inventory with open-source disclosure,
+      finetune provenance, scope and known limitations per section 3
+    - claim boundary ('confirmed PAM count = 0') embedded in every row
+
+ project/docs/MODEL_CARD_V01.md                     |  48 +++++
+ .../pacer_submission_results_v01/results.csv       | 201 +++++++++++++++++++++
+ .../pacer_submission_results_v01/results.meta.json |  11 ++
+ project/scripts/generate_submission_results_v01.py | 111 ++++++++++++
+ 4 files changed, 371 insertions(+)
+
+commit fb550656a16db20d0025ccbdbed23b59558ef527
+Author: 2501_93004763 <2501_93004763@noreply.gitcode.com>
+Date:   Fri Oct 2 22:42:20 2026 +0800
+
+    fix: fresh-clone crash in --create-template + doc count drift
+    
+    - final_candidate_hypotheses.csv (24-row frozen candidate roster, the
+      only input of make_template) was never committed on any branch -
+      force-added so a fresh clone can build the six-channel contract
+    - make_template() now exits with a targeted message + recovery command
+      instead of a raw FileNotFoundError traceback
+    - quickstart test count corrected 25 -> 37 passed (2 skipped), with a
+      note that pytest output is authoritative
+    
+    Verified both paths: missing file -> friendly SystemExit(1); present
+    file -> contract written.
+
+ project/docs/REPRODUCTION_QUICKSTART_V01.md        |  2 +-
+ .../final/final_candidate_hypotheses.csv           | 25 ++++++++++++++++++++++
+ project/scripts/apply_pacer_xr_candidates.py       |  9 ++++++++
+ 3 files changed, 35 insertions(+), 1 deletion(-)
+
+commit 9dfaca3553ae5c175aad4b778ee4f58cea8d9669
+Author: 2501_93004763 <2501_93004763@noreply.gitcode.com>
+Date:   Fri Oct 2 20:28:19 2026 +0800
+
+    artifacts: force-add frozen npz representations + README (gitignored by pattern)
+
+ .../upstream_frozen_inputs/README.md               |  35 +++++++++++++++++++++
+ .../upstream_frozen_inputs/cands_science2026.npz   | Bin 0 -> 478833 bytes
+ .../m4r_pocket_science2026_subsets.npz             | Bin 0 -> 19491 bytes
+ 3 files changed, 35 insertions(+)
+
+commit 1efe33287b4ad0d0e1e3d69f38fb9835a1baf159
+Author: 2501_93004763 <2501_93004763@noreply.gitcode.com>
+Date:   Fri Oct 2 20:28:07 2026 +0800
+
+    artifacts: close Stage3 upstream gap - frozen 2026-side inputs
+    
+    Adds the local-only assets the router chain depended on: famaug
+    scores CSV (sha-matched to handoff audit), frozen Science2026
+    molecule representations for the 200 candidates, M4R-only pocket
+    representation subset (10 pockets, extracted from the 69MB full npz),
+    and the predock portfolio. With these, Stage3 + score recomputation
+    close on any clone with CPU only - no base checkpoint, no lmdb,
+    no forward inference required (README documents the minimal path).
+
+ .../cands200_famaug_scores.csv                     | 201 +++++++++++++++++++++
+ .../upstream_frozen_inputs/predock_portfolio.csv   | 201 +++++++++++++++++++++
+ 2 files changed, 402 insertions(+)
+
+commit 627825172102002363e54017258f820b1c8dd8e9
+Author: VergilVolk <barneygong329@gmail.com>
+Date:   Fri Oct 2 17:55:09 2026 +0800
+
+    chore: record pre-Stage4 service and runtime audit baseline
+
+ project/core_environment_audit.json | 162 +++++++++++++++++++++++++++++
+ reproduced_scores.audit.json        |  19 ++++
+ reproduced_scores.csv               | 201 ++++++++++++++++++++++++++++++++++++
+ 3 files changed, 382 insertions(+)
+
+commit 05228ab1bf137629579d32e564531a6c43095991
+Author: 2501_93004763 <2501_93004763@noreply.gitcode.com>
+Date:   Fri Oct 2 17:21:21 2026 +0800
+
+    benchmark: two-layer external M4 PAM functional benchmark v02
+    
+    Layer 1 (confirmatory): 145 unique molecules / 384 endpoint units /
+    13 endpoints (6 enter macro) from 5 independent sources; all static
+    representations near-random macro directional skill (official +0.008,
+    triplet -0.054, m4-matched -0.068, ECFP-RF -0.136, similarity +0.056)
+    - honest negative evidence that binding retrieval cannot replace
+    functional PAM prediction.
+    
+    Layer 2 (large screen): PubChem AID 624126 M4 PAM primary screen,
+    frozen deterministic subset 21,445 molecules (1,445 active + 20,000
+    hash-sampled inactive), 15,421 scaffolds, 0.76% active-scaffold overlap
+    with training, median max-train-sim 0.234. 2D baselines: ROC~0.51-0.54
+    but EF@0.5% up to 4.1 - a benchmark that similarity alone cannot
+    saturate; DrugCLIP/docking scoring handed off to GPU host.
+    
+    Includes acquisition/build/eval scripts, two-layer figure, audit JSONs.
+
+ .../benchmark.audit.json                           |    19 +
+ .../endpoint_records.csv                           |   399 +
+ .../endpoint_summary.csv                           |    14 +
+ .../pacer_m4_external_functional_v02/molecules.csv |   148 +
+ .../aid624126_screen_subset.csv                    | 21451 +++++++++++++++++++
+ .../pubchem_aid624126_m4_pam_v01/source.audit.json |    14 +
+ .../PACER_M4_EXTERNAL_FUNCTIONAL_BENCHMARK_V02.md  |   103 +
+ .../benchmark_result.json                          |   844 +
+ .../confirmatory_endpoint_skills.csv               |    31 +
+ .../figures/fig_extfunc_v02_two_layers.png         |   Bin 0 -> 118943 bytes
+ .../frozen_predictions_by_endpoint.csv             |   385 +
+ .../baseline_predictions.csv                       | 21446 ++++++++++++++++++
+ .../baseline_result.json                           |   106 +
+ project/scripts/acquire_pubchem_m4_pam_screen.py   |   110 +
+ ...d_pacer_m4_external_functional_benchmark_v02.py |   178 +
+ ...e_pacer_m4_external_functional_benchmark_v02.py |   163 +
+ .../evaluate_pubchem_m4_pam_screen_baselines.py    |   130 +
+ .../make_external_functional_benchmark_fig_v02.py  |    68 +
+ 18 files changed, 45609 insertions(+)
+
+commit eb45810ad23f8691613ba64b20bee02c62283f42
+Author: 2501_93004763 <2501_93004763@noreply.gitcode.com>
+Date:   Fri Oct 2 15:33:13 2026 +0800
+
+    build: align submission container with frozen runtime
+
+ Dockerfile                                        | 16 ++++++--
+ README.md                                         |  8 +++-
+ docker-compose.yml                                |  3 +-
+ project/config/pacer_m4_release_manifest_v01.json |  2 +
+ project/docs/LOCAL_API_AND_DOCKER_V01.md          | 11 +++--
+ project/docs/RELEASE_VALIDATION_V01.md            | 21 +++++++++-
+ project/docs/SUBMISSION_CHECKLIST_V01.md          | 49 +++++++++++++++++++++++
+ project/release_audit_v01.json                    | 40 ++++++++++++------
+ pyproject.toml                                    |  4 +-
+ requirements-api.txt                              |  4 ++
+ 10 files changed, 134 insertions(+), 24 deletions(-)
+
+commit 492ce332f4727f441253b752a5711852657aa803
+Author: VergilVolk <barneygong329@gmail.com>
+Date:   Fri Oct 2 15:25:24 2026 +0800
+
+    freeze PACER-M4 runtime dependencies
+
+ .gitignore                                         |   12 +
+ environment-drugclip.yml                           |   33 +
+ environment-md.yml                                 |   27 +
+ environment-pacer-fkg.yml                          |   10 +
+ environment.yml                                    |   20 +
+ project/config/runtime_dependency_map_v01.json     | 1630 +++++
+ project/docs/DEPENDENCY_MANIFEST.md                |  166 +
+ project/results/dependency_audit_v01.json          | 6619 ++++++++++++++++++++
+ .../results/dependency_runtime_evidence_v01.json   | 1293 ++++
+ .../results/dependency_scientific_assets_v01.json  |  514 ++
+ project/results/dependency_smoke_core_v01.json     |  108 +
+ project/results/dependency_smoke_drugclip_v01.json |  156 +
+ project/results/dependency_smoke_fkg_v01.json      |  100 +
+ project/results/dependency_smoke_md_v01.json       |  128 +
+ project/results/dependency_smoke_overview_v01.json |  308 +
+ project/scripts/audit_runtime_dependencies.py      |  252 +
+ project/scripts/check_runtime_dependencies.py      |  111 +
+ requirements-pacer-fkg.txt                         |   17 +
+ requirements.txt                                   |   18 +
+ 19 files changed, 11522 insertions(+)
+
+commit c81cf4d26ecc4d7c7744887c7f381320a97c907f
+Author: 2501_93004763 <2501_93004763@noreply.gitcode.com>
+Date:   Fri Oct 2 15:11:29 2026 +0800
+
+    build: freeze Python 3.9 core requirements
+
+ README.md                                         |  10 ++
+ project/config/pacer_m4_release_manifest_v01.json |   2 +
+ project/docs/RELEASE_VALIDATION_V01.md            |   2 +
+ project/docs/REPRODUCTION_QUICKSTART_V01.md       |  10 +-
+ project/release_audit_v01.json                    |  32 ++++--
+ project/scripts/audit_core_environment.py         | 120 ++++++++++++++++++++++
+ pyproject.toml                                    |   2 +-
+ requirements.txt                                  |  32 ++++++
+ 8 files changed, 197 insertions(+), 13 deletions(-)
+
+commit 85c08f74d2b903869da91a357d7c491a18cd5b75
+Author: 2501_93004763 <2501_93004763@noreply.gitcode.com>
+Date:   Fri Oct 2 14:54:51 2026 +0800
+
+    feat: expose PACER-M4 through guarded local API
+
+ .dockerignore                                     |  25 +++++
+ Dockerfile                                        |  22 ++++
+ README.md                                         |  10 ++
+ docker-compose.yml                                |  10 ++
+ pacer_m4/api.py                                   | 129 ++++++++++++++++++++++
+ pacer_m4/runner.py                                |  23 +++-
+ pacer_m4/stages.py                                |  37 ++++++-
+ project/config/pacer_m4_release_manifest_v01.json |   8 +-
+ project/docs/DOCUMENT_AND_EVIDENCE_INDEX_V01.md   |   1 +
+ project/docs/LOCAL_API_AND_DOCKER_V01.md          |  91 +++++++++++++++
+ project/docs/RELEASE_VALIDATION_V01.md            |  15 ++-
+ project/release_audit_v01.json                    |  72 ++++++++++--
+ project/tests/test_pacer_m4_api.py                |  47 ++++++++
+ pyproject.toml                                    |  18 +++
+ 14 files changed, 489 insertions(+), 19 deletions(-)
+
+commit bfbf94dadd34da0b76c540d8a3a696dd0e373150
+Author: 2501_93004763 <2501_93004763@noreply.gitcode.com>
+Date:   Fri Oct 2 14:48:07 2026 +0800
+
+    feat: add audited PACER-M4 stage runner
+
+ README.md                                         |  11 +
+ pacer_m4/__init__.py                              |   8 +
+ pacer_m4/__main__.py                              |   6 +
+ pacer_m4/cli.py                                   |  63 +++++
+ pacer_m4/runner.py                                |  88 +++++++
+ pacer_m4/stages.py                                | 165 ++++++++++++
+ project/config/pacer_m4_release_manifest_v01.json |   8 +-
+ project/docs/CODE_AND_ARTIFACT_MAP_V01.md         |  11 +-
+ project/docs/DOCUMENT_AND_EVIDENCE_INDEX_V01.md   |   2 +-
+ project/docs/RELEASE_VALIDATION_V01.md            |  78 ++++++
+ project/docs/REPRODUCTION_QUICKSTART_V01.md       |  16 +-
+ project/docs/START_HERE_FOR_COLLABORATORS_V01.md  |   2 +-
+ project/release_audit_v01.json                    |  72 +++++-
+ project/scripts/select_pareto_candidates.py       | 302 +++++++++++++++++-----
+ project/tests/test_pacer_m4_cli.py                |  39 +++
+ project/tests/test_select_pareto_candidates.py    |  42 +++
+ pyproject.toml                                    |  19 ++
+ 17 files changed, 847 insertions(+), 85 deletions(-)
+
+commit a8c4203c8b9cfb09f35bd8b88670d602aa266fa6
+Author: 2501_93004763 <2501_93004763@noreply.gitcode.com>
+Date:   Fri Oct 2 14:39:19 2026 +0800
+
+    docs: establish PACER-M4 submission entry and evidence index
+
+ .gitignore                                         |   3 +-
+ README.md                                          |  86 ++++++++++
+ START_HERE_ONEPROT_PACER_DC.md                     |   4 +
+ project/PACER_M4_FINAL_REPORT.md                   |   5 +
+ project/PIPELINE.md                                |   4 +
+ project/config/pacer_m4_release_manifest_v01.json  |  35 ++++
+ project/docs/CODE_AND_ARTIFACT_MAP_V01.md          | 127 +++++++++++++++
+ project/docs/DOCUMENT_AND_EVIDENCE_INDEX_V01.md    | 155 ++++++++++++++++++
+ project/docs/REPRODUCTION_QUICKSTART_V01.md        | 125 ++++++++++++++
+ project/docs/START_HERE_FOR_COLLABORATORS_V01.md   | 114 +++++++++++++
+ project/release_audit_v01.json                     | 179 +++++++++++++++++++++
+ project/scripts/validate_pacer_m4_release.py       | 114 +++++++++++++
+ .../tests/test_science2026_triplet_checkpoint.py   |  21 ++-
+ project/tests/test_validate_pacer_m4_release.py    |  48 ++++++
+ 14 files changed, 1015 insertions(+), 5 deletions(-)
+
+commit d1f145832907c42850baf2e189c7142454f66519
+Author: 2501_93004763 <2501_93004763@noreply.gitcode.com>
+Date:   Fri Oct 2 11:28:56 2026 +0800
+
+    ship M4 LOTO adapters and offline inference bundle
+
+ .../drugclip2023_m4_loto_pacer200_v01/README.md    |  59 ++++++
+ .../bundle_manifest.json                           |  46 +++++
+ ...drugclip2023_m4_loto_seed20260925.projection.pt | Bin 0 -> 2631059 bytes
+ ...drugclip2023_m4_loto_seed20260926.projection.pt | Bin 0 -> 2631059 bytes
+ ...drugclip2023_m4_loto_seed20260927.projection.pt | Bin 0 -> 2631059 bytes
+ .../pacer200_2023_gpcr_loto_scores.audit.json      |  19 ++
+ .../pacer200_2023_gpcr_loto_scores.csv             | 201 +++++++++++++++++++++
+ .../pacer200_m4_2023_frozen_representations.npz    | Bin 0 -> 386211 bytes
+ .../pacer200_m4_safe_routed_ranking.audit.json     |  22 +++
+ .../pacer200_m4_safe_routed_ranking.csv            | 201 +++++++++++++++++++++
+ .../pacer200_two_model_scores.csv                  | 201 +++++++++++++++++++++
+ .../requirements.txt                               |   3 +
+ .../scripts/build_drugclip2023_m4_loto_bundle.py   |  88 +++++++++
+ .../export_drugclip2023_m4_loto_adapters.py        | 132 ++++++++++++++
+ project/scripts/pacer_drugclip_router.py           |   2 +-
+ .../scripts/score_pacer200_drugclip2023_m4_loto.py |  92 ++++++++++
+ 16 files changed, 1065 insertions(+), 1 deletion(-)
+
+commit f35acdd9d330e88ed8c690f81986e0305f5a515f
+Author: 2501_93004763 <2501_93004763@noreply.gitcode.com>
+Date:   Fri Oct 2 10:27:55 2026 +0800
+
+    fix router Python import example
+
+ project/docs/PACER_DRUGCLIP_ROUTER_INTERFACE_V01.md | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+commit cd53f989ec22ef6df406b4924ceadd51567b3ea0
+Author: 2501_93004763 <2501_93004763@noreply.gitcode.com>
+Date:   Fri Oct 2 10:27:27 2026 +0800
+
+    add deployable PACER DrugCLIP routing interface
+
+ .../docs/PACER_DRUGCLIP_ROUTER_INTERFACE_V01.md    | 211 +++++++++++++++++++++
+ project/scripts/pacer_drugclip_router.py           | 164 ++++++++++++++++
+ project/tests/test_pacer_drugclip_router.py        |  58 ++++++
+ 3 files changed, 433 insertions(+)
+
+commit 512f8fa866a8c187a9a4923e7de4550c1c264c56
+Author: 2501_93004763 <2501_93004763@noreply.gitcode.com>
+Date:   Fri Oct 2 10:19:51 2026 +0800
+
+    benchmark DrugCLIP generations with GPCR-safe routing
+
+ .../DRUGCLIP_GENERATION_BAKEOFF_PROTOCOL_V01.md    |  95 ++++++
+ .../docs/DRUGCLIP_GENERATION_BAKEOFF_RESULT_V01.md |  80 +++++
+ project/docs/DRUGCLIP_LOCKBOX_ACQUISITION_V01.md   |  42 +++
+ ...OJECT_MAINLINE_DEVELOPMENT_AND_INFERENCE_V01.md | 182 +++++++++++
+ .../drugclip_generation_bakeoff_v01/audit.json     |  44 +++
+ .../generation_dumbbell.png                        | Bin 0 -> 49518 bytes
+ .../macro_metric_bars.png                          | Bin 0 -> 157075 bytes
+ .../macro_metrics.csv                              |  19 ++
+ .../matched_docking_comparison.csv                 |  37 +++
+ .../paired_delta_forest.png                        | Bin 0 -> 71967 bytes
+ .../per_target_metrics.csv                         |  73 +++++
+ .../per_target_roc_heatmap.png                     | Bin 0 -> 172714 bytes
+ .../scaffold_bootstrap_ci.csv                      |  91 ++++++
+ project/scripts/run_drugclip_generation_bakeoff.py | 351 +++++++++++++++++++++
+ project/tests/test_drugclip_generation_bakeoff.py  |  21 ++
+ 15 files changed, 1035 insertions(+)
+
+commit 270dd0eb5e88c0c369d493a58bd739cf118ebcdb
+Author: 2501_93004763 <2501_93004763@noreply.gitcode.com>
+Date:   Fri Oct 2 09:38:34 2026 +0800
+
+    evidence: same-test-set M4R head-to-head 2023-triplet vs 2026-famaug
+    
+    Answering teammate challenge: the 0.69-vs-0.51 routing comparison was
+    cross-protocol (illegitimate). New fair fight on the identical GaMD M4R
+    screening pairs (25,249 rows, 2,301 actives), both sides never trained on
+    these pairs (2023: ChEMBL triplet external_result; 2026: LOSO held-out
+    predictions):
+    
+      config                  ROC    EF1%   BEDROC20  PR
+      2023-triplet 10pock max 0.6673 0.39   0.1263   0.1295
+      2023-triplet 10pock MEAN 0.7136 0.87  0.1802   0.1547  <- best
+      2026-famaug LOSO 3-seed 0.5095 1.65   0.1118   0.0926
+      2026 official raw       0.5401 1.56   0.1245   0.1070
+    
+    Verdict: 2023 base is genuinely the stronger M4 representation (ROC/PR/
+    BEDROC all favor 2023-mean); 2026 edges only the noisy top-1% slice EF.
+    Screening config frozen: 2023 external_result + MEAN pooling over 10 GaMD
+    M4 pockets. Library ranking regenerated (top-1% overlap with famaug
+    ranking only 8/285 -- genuinely independent second opinion).
+
+ .../m4_library_oldtriplet_ranking.csv              | 28520 +++++++++++++++++++
+ .../family_aug_v01/m4r_head2head_2023vs2026.json   |   101 +
+ project/scripts/m4r_head2head_2023_vs_2026.py      |    54 +
+ project/scripts/screen_m4_library_oldtriplet.py    |    41 +
+ 4 files changed, 28716 insertions(+)
+
+commit d948297b1011707cfe54ad9dbe47df446506aac1
+Author: 2501_93004763 <2501_93004763@noreply.gitcode.com>
+Date:   Fri Oct 2 09:24:27 2026 +0800
+
+    docs: repository organization -- mainline START_HERE entry + authoritative index
+    
+    Survey result: codex/project-integration-benchmark-v02 is the single
+    superset (verified: every business branch has zero commits not in v02).
+    Primary worktree fast-forwarded to v02 tip (77f44dc6).
+    
+    START_HERE_MAINLINE.md (root entry, tracked per repo convention; local
+    README.md stays untracked per the upstream .gitignore) points to
+    docs/REPOSITORY_MAINLINE_INDEX.md, which maps: the evidence-cascade
+    mainline definition, per-line frozen conclusions (DrugCLIP fine-tuning /
+    PACER-FKG Stage A+B / encoder C1-BS256 / OneProt retirement / CGDA
+    closure / PACER-MCV / four-context MD), worktree statuses (geom2vec_pilot
+    superseded), entry documents, next execution points, and no-retuning red
+    lines. Marks the two older START_HERE_* files as archived sub-line entries.
+
+ START_HERE_MAINLINE.md            | 24 +++++++++++++
+ docs/REPOSITORY_MAINLINE_INDEX.md | 73 +++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 97 insertions(+)
+
+commit 77f44dc6416f4d332bd2f0ff0bafbf4a9da9231c
+Author: 2501_93004763 <2501_93004763@noreply.gitcode.com>
+Date:   Fri Oct 2 09:22:56 2026 +0800
+
+    figs: per-module horizontal scoreboards + cascade funnel
+    
+    fig_v02_07: four same-protocol module leaderboards side by side
+    (binding 13T, static gating all-near-zero, dynamic three-class,
+    QSAR collapse) with explicit 'different rulers' caveat in title;
+    fig_v02_08: the only legitimate overall comparison - the candidate
+    funnel 200/24/5/(1-3 pending, log scale) from handoff audit v02
+
+ .../figures/fig_v02_07_module_scoreboards.png      | Bin 0 -> 198286 bytes
+ .../figures/fig_v02_08_cascade_funnel.png          | Bin 0 -> 66620 bytes
+ project/scripts/make_module_scoreboards_v01.py     | 125 +++++++++++++++++++++
+ 3 files changed, 125 insertions(+)
+
+commit ddc11f970f508d89a75dac8ca30c41cfcd361731
+Author: VergilVolk <barneygong329@gmail.com>
+Date:   Fri Oct 2 02:05:11 2026 +0800
+
+    freeze: finalize manifest-driven PACER production pipeline v01
+    
+    Integration base: 18100f9b6b42f27e43760daa5b3dfdd028b330d3
+    PACER-FKG freeze anchor: b48bc74a757a3d1421acb5c4bc0544ce5ca590e3959b971dad698e32146e11bd
+    Encoder checkpoint SHA256: b8f1ef9b591c57f7687566bd60d3664800956ac280cf2ae8e64f54196cd8d417
+    
+    No frozen scientific numerical asset is modified by this commit. The four frozen
+    v02 modules (run_phase1_bs256.py, run_phase2_calibration.py, run_phase3_fkg.py,
+    path_guard.py) are unchanged; V02_FREEZE_MANIFEST.json is unchanged.
+    
+    Added:
+    - project/pacer_fkg_v02/frozen_runner/  manifest-driven, apply-only Phase 1/2A/2B drivers
+                                            with fail-closed spec validation and an
+                                            import-only frozen re-export layer
+    - project/drugclip_freeze/             frozen DrugCLIP Model A (official checkpoint)
+                                            and Model B (projection-only) apply paths;
+                                            dual-model decision old_top50 INTERSECT new_top25
+    - project/integration_freeze/          run-spec JSON Schema, CM00734 regression spec,
+                                            receipts, and the code-freeze tooling
+    - project/tests/                       test_frozen_runner.py, test_drugclip_freeze.py
+    
+    Evidence:
+    - frozen anchor verifies strictly: VERIFIED_FROZEN, 12 pairs, 600 blocks,
+      200 calibration blocks, R2-only fitting, 41 protected v01 files
+    - block constructor bit-identical to both frozen implementations (1000x50 and 400x20)
+    - CM00734 payload regression: 1632 exact fields, 0 mismatched; 108 cosines with
+      max |delta| 6.4e-8 and 0 sign changes; primary signal -0.326839 reproduced
+    - frozen encoder replay on CUDA: relative RMSE 1.77e-7 vs limit 1e-4
+    - tests: 16/16 frozen_runner, 9/9 drugclip_freeze
+    
+    Mandatory fresh-checkout preflight: run
+    project/integration_freeze/tools/normalize_frozen_eol.py --apply
+    before using the frozen chain from a new checkout. The v02 freeze manifest pins a
+    MIXED line-ending state (run_phase2_calibration.py as LF, analyze_pacer_fkg_g2b/g2c.py
+    as CRLF), so a CRLF Windows checkout fails verify_frozen_anchor() until normalised.
+    
+    Claim boundary: prospective representation-space mechanistic evidence only. No PAM
+    classifier, no potency predictor, no PAM probability, no magnitude threshold.
+
+ project/drugclip_freeze/RUNBOOK.md                 | 132 ++++++
+ project/drugclip_freeze/__init__.py                |  21 +
+ project/drugclip_freeze/apply.py                   |  81 ++++
+ project/drugclip_freeze/dual_model.py              |  96 ++++
+ project/drugclip_freeze/model_a.py                 | 117 +++++
+ project/drugclip_freeze/model_b.py                 |  98 ++++
+ project/drugclip_freeze/projection.py              |  92 ++++
+ .../FINAL_CODE_FREEZE_CANDIDATE_REPORT.md          | 397 ++++++++++++++++
+ .../FROZEN_MODULE_LEDGER_v01.json                  |  29 ++
+ project/integration_freeze/RECEIPT_INDEX_v01.json  | 153 ++++++
+ .../WSL_HISTORICAL_WORKSPACE_RECEIPT_v01.md        | 155 +++++++
+ .../receipts/CM00734_PAYLOAD_REGRESSION_v01.json   |  88 ++++
+ .../FROZEN_EOL_NORMALISATION_APPLIED_v01.json      |  85 ++++
+ .../FROZEN_EOL_NORMALISATION_DRYRUN_v01.json       |  80 ++++
+ .../FROZEN_EOL_PREFLIGHT_AT_FREEZE_v01.json        |  79 ++++
+ .../receipts/PHASE1_ENCODER_REPLAY_v01.json        |  52 +++
+ .../receipts/WSL_DIRTY_CODE_DIFF_v01.patch         | 273 +++++++++++
+ .../receipts/WSL_DIRTY_FILES_BLOB_HASHES_v01.tsv   |   4 +
+ .../receipts/WSL_GIT_BRANCHES_v01.txt              |   3 +
+ .../receipts/WSL_GIT_BRANCH_v01.txt                |   1 +
+ .../receipts/WSL_GIT_DIFF_NUMSTAT_v01.txt          | 327 +++++++++++++
+ .../receipts/WSL_GIT_DIFF_STAT_IGNORE_CR_v01.txt   |   6 +
+ .../receipts/WSL_GIT_HEAD_v01.txt                  |   1 +
+ .../receipts/WSL_GIT_LOG1_v01.txt                  |   3 +
+ .../receipts/WSL_GIT_REMOTES_v01.txt               |   2 +
+ .../receipts/WSL_GIT_STASH_v01.txt                 |   0
+ .../receipts/WSL_GIT_STATUS_PORCELAIN_v01.txt      | 333 +++++++++++++
+ .../receipts/WSL_RESULTS_FILES_v01.tsv             | 514 +++++++++++++++++++++
+ .../receipts/WSL_RESULTS_SHA256_v01.txt            | 514 +++++++++++++++++++++
+ .../receipts/WSL_RESULTS_TOTAL_BYTES_v01.txt       |   2 +
+ .../receipts/WSL_TOPFILES_v01.tsv                  |   6 +
+ .../receipts/WSL_WORK_EXTRAS_SHA256_v01.txt        |   7 +
+ .../run_specs/CM00734_REGRESSION_v01.json          | 116 +++++
+ .../schemas/final_pipeline_run_spec_v1.schema.json | 309 +++++++++++++
+ project/integration_freeze/tools/_shim_helper.py   |  10 +
+ .../tools/diagnose_regression.py                   |  76 +++
+ .../tools/normalize_frozen_eol.py                  | 109 +++++
+ project/integration_freeze/tools/run_regression.py |  36 ++
+ .../tools/verify_phase1_replay.py                  | 105 +++++
+ project/pacer_fkg_v02/frozen_runner/__init__.py    |  21 +
+ project/pacer_fkg_v02/frozen_runner/blocks.py      | 104 +++++
+ project/pacer_fkg_v02/frozen_runner/cli.py         |  73 +++
+ project/pacer_fkg_v02/frozen_runner/engines.py     | 181 ++++++++
+ project/pacer_fkg_v02/frozen_runner/fkg_phase1.py  | 231 +++++++++
+ project/pacer_fkg_v02/frozen_runner/fkg_phase2a.py | 139 ++++++
+ project/pacer_fkg_v02/frozen_runner/fkg_phase2b.py | 228 +++++++++
+ project/pacer_fkg_v02/frozen_runner/io_utils.py    |  36 ++
+ project/pacer_fkg_v02/frozen_runner/paths.py       |  55 +++
+ project/pacer_fkg_v02/frozen_runner/regression.py  | 235 ++++++++++
+ project/pacer_fkg_v02/frozen_runner/spec.py        | 268 +++++++++++
+ project/tests/test_drugclip_freeze.py              | 127 +++++
+ project/tests/test_frozen_runner.py                | 180 ++++++++
+ 52 files changed, 6390 insertions(+)

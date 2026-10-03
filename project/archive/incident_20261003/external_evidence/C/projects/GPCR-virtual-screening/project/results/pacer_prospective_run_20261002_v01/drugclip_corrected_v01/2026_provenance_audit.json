@@ -1,0 +1,114 @@
+{
+  "canonical_input": {
+    "path": "/mnt/c/projects/GPCR-virtual-screening/project/results/pacer_candidates_v01/predock_portfolio.csv",
+    "sha256": "0dd7689860879eaae8abe806699a05a1c261a439e7355b99628e982abe46f52b"
+  },
+  "backbone_checkpoint": {
+    "path": "/mnt/c/projects/GPCR-virtual-screening/project/data/external/drugclip_science2026/litpcba_identity_90.pt",
+    "sha256": "997d343b0ba4b9436a30d76b7b3a0281f99d7e7f78f2e1fbdef5dc3bb0c67a31"
+  },
+  "representations": {
+    "path": "/mnt/c/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_science2026_representations.npz",
+    "sha256": "19e99f6bdecbc1dae26887a00afb70d82528c19863c11041249b8e3b6186ac3b"
+  },
+  "extraction_code": {
+    "path": "/mnt/c/projects/GPCR-virtual-screening/project/scripts/extract_drugclip_embeddings_cpu.py",
+    "sha256": "9521c2059e8200c9d2b01ebd386ec016981893311e1ea938a20f500afa68ee30"
+  },
+  "extraction_command": [
+    "/root/micromamba/envs/drugclip-cpu/bin/python",
+    "-B",
+    "/mnt/c/projects/GPCR-virtual-screening/project/scripts/extract_drugclip_embeddings_cpu.py",
+    "--drugclip",
+    "/mnt/c/projects/GPCR-virtual-screening-final/project/tools/DrugCLIP",
+    "--unicore",
+    "/mnt/c/projects/GPCR-virtual-screening-final/project/tools/Uni-Core",
+    "--checkpoint",
+    "/mnt/c/projects/GPCR-virtual-screening/project/data/external/drugclip_science2026/litpcba_identity_90.pt",
+    "--molecules",
+    "/mnt/c/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/molecules.lmdb",
+    "--pockets",
+    "/mnt/c/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/7TRQ_pocket.lmdb",
+    "/mnt/c/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/7TRP_pocket.lmdb",
+    "/mnt/c/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/7TRS_pocket.lmdb",
+    "--output",
+    "/mnt/c/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_science2026_representations.npz",
+    "--batch-size",
+    "8",
+    "--progress-every",
+    "5"
+  ],
+  "molecule_lmdb": {
+    "path": "/mnt/c/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/molecules.lmdb",
+    "sha256": "7df7484601ec725dc1a1bf00c88da68a311e95156c749918af12c950401fa456"
+  },
+  "pocket_lmdbs": [
+    {
+      "path": "/mnt/c/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/7TRQ_pocket.lmdb",
+      "sha256": "dbd6a4da928a1accbf396e3214eda3c8a2bcc5bccf23e2090e417e4d52082b53"
+    },
+    {
+      "path": "/mnt/c/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/7TRP_pocket.lmdb",
+      "sha256": "f2fb3795b497ec6541e414a876c7a4228b135accbb2ee81fb7c6e31ace4fc80c"
+    },
+    {
+      "path": "/mnt/c/projects/GPCR-virtual-screening-final/project/results/pacer_prospective_run_20261002_v01/stage3/7TRS_pocket.lmdb",
+      "sha256": "c6513c150fe987d82b7b53dfb51540de348aec7c4621f0fb063be449807a4f54"
+    }
+  ],
+  "checkout_commit": "7a3a3fa33673f8668c811790f2e4681c98af44ef",
+  "unicore_commit": "44f6386f4dcd7137fc1e5d5e768117d635d64a26",
+  "dictionaries": [
+    {
+      "path": "/mnt/c/projects/GPCR-virtual-screening-final/project/tools/DrugCLIP/data/dict_mol.txt",
+      "sha256": "132a2b085bf38eb1c1c7ee432ae8ac9274a32cf771bb83d21274ed52bd234cb6"
+    },
+    {
+      "path": "/mnt/c/projects/GPCR-virtual-screening-final/project/tools/DrugCLIP/data/dict_pkt.txt",
+      "sha256": "41768686325e8810b7eb9e385ff8836c3b55c63784bf95bafb0afbe1b877778b"
+    }
+  ],
+  "heads": [
+    {
+      "path": "/mnt/c/projects/GPCR-virtual-screening/project/results/drugclip_science2026/family_aug_v01/science2026_13target_ep80_famaug.seed20260925.projection.pt",
+      "sha256": "d33b31d69c4437327b41c939c57521e27f56abb7491f4b75d0ef86d1533e58fd"
+    },
+    {
+      "path": "/mnt/c/projects/GPCR-virtual-screening/project/results/drugclip_science2026/family_aug_v01/science2026_13target_ep80_famaug.seed20260926.projection.pt",
+      "sha256": "76d21a31436bdd51583b4f160ccca8ce7383af3848232bf14925a996a555c9a7"
+    },
+    {
+      "path": "/mnt/c/projects/GPCR-virtual-screening/project/results/drugclip_science2026/family_aug_v01/science2026_13target_ep80_famaug.seed20260927.projection.pt",
+      "sha256": "9cb96a2ce47d04180c526760791abfd19df3bf2f2db69a07dc306aea0f478a8b"
+    }
+  ],
+  "seeds": [
+    20260925,
+    20260926,
+    20260927
+  ],
+  "protocol": "Science2026 frozen backbone + frozen family-aug projections; updated prospective three crystallographic M4 pockets",
+  "pocket_ids": [
+    "7TRQ_M4_allosteric",
+    "7TRP_M4_allosteric",
+    "7TRS_M4_allosteric"
+  ],
+  "pocket_population_note": "Uses the three pockets declared in the updated prospective mainline, rather than reproducing the historical ten GaMD pocket population.",
+  "aggregation": "maximum normalized projected cosine over declared pockets per seed, then three-seed arithmetic mean",
+  "validation": {
+    "rows": 200,
+    "graph_overlap": 200,
+    "missing": 0,
+    "extra": 0,
+    "duplicates": 0
+  },
+  "finite": true,
+  "score_range": [
+    -0.23687808215618134,
+    0.17242391407489777
+  ],
+  "output": {
+    "path": "/mnt/c/projects/GPCR-virtual-screening/project/results/pacer_prospective_run_20261002_v01/drugclip_corrected_v01/prospective200_2026_family_aug_scores.csv",
+    "sha256": "813ac675668b3b36c17ed0d3752a76b2fabee9ebd2d21bf32877dcbd0ab464ca"
+  }
+}

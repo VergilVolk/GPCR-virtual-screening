@@ -5,16 +5,21 @@
 
 ## 一、主线是什么
 
-**PACER-M4 = 有拒绝机制的证据级联**（不是加权总分）：
+**四模块串行级联（官方术语，2026-10 定名），有拒绝机制的证据链**：
 
 ```
-① 结合检索        CGDA / DrugCLIP（微调线：13 靶 famaug 集成 ROC 0.6414
-                   vs 官方 0.5442 / ECFP4 0.5681；20 靶 ep80 0.6278）
-② 姿势/口袋       docking、IFP、PACER-FS（pose proposal，不判效力）
-③ 四上下文 MD     A/P/C/CP 构造 ΔPAM、ΔAGO、ΔINT（ΔINT = CP−P−C+A）
-④ 冻结判别        C1-BS256 encoder + PACER-FKG v02：跨 replica 方向一致性
-⑤ 证据卡输出      证据不足 → 拒绝下 PAM 结论
+模块1  M4 PAM候选分子生成与药化筛选（片段生成+药化过滤+新颖性 → 候选池）
+模块2  基于DrugCLIP迁移学习的M4智能靶点筛选算法
+       （微调线：13靶 famaug 集成 ROC 0.6414；M4 决胜配置 2023基座+mean池化
+        ROC 0.7136/BEDROC 0.1802；提交包 submission/ = 本模块）
+模块3  静态-动态构象组合分子对接算法（晶体+GaMD系综 Vina + IFP/PACER-FS，
+       pose proposal 不判效力）
+模块4  基于四条件受体动力学的PAM功能判别算法（A/P/C/CP 20ns → ΔINT
+       跨replica方向一致性 → 证据卡，可拒绝）
 ```
+
+逐级闸门漏斗：28,519 → ~1,400（模块2 top-5%）→ 几十（模块3 pose 通过）
+→ 5 个优先验证候选（模块4 幸存）。模块3 失败退回模块2 取下批切片。
 
 **当前最强冻结主张**：预冻结 hard-negative 检验——已知 PAM（LY2119620 /
 compound110）跨 replica 方向一致性为正（R1/R3 cosine +0.63/+0.58），实验

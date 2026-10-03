@@ -94,3 +94,8 @@ project/tools/oneprot-embeddings/
 .conda_*
 __pycache__/
 .pytest_cache/
+
+# submission package exceptions (附件5 要求 README/权重入库)
+!submission/README.md
+!submission/models/*.pt
+!submission/results/*.csv

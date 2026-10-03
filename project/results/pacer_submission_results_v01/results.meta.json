@@ -1,0 +1,11 @@
+{
+ "schema": "pacer.submission.results.v1",
+ "rows": 200,
+ "mode": "full_pacer200_pre_md",
+ "claim_boundary": "高优先级预测 PAM 候选（计算假设）；未做 M4+ACh 功能实验，确认 PAM 数量=0",
+ "provenance": {
+  "ranking": "project/artifacts/drugclip2023_m4_loto_pacer200_v01/pacer200_m4_safe_routed_ranking.csv",
+  "router_audit": "pacer200_m4_safe_routed_ranking.audit.json",
+  "stage3d_manifest": null
+ }
+}

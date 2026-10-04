@@ -1,19 +1,22 @@
 {
   "frozen_run": "2026-10-04",
   "module2_used_model": {
-    "name": "DrugCLIP-2023 GPCR-adapted projection ensemble",
-    "seeds": [20260925, 20260926, 20260927],
+    "name": "DrugCLIP-2023 M4-held-out adapter ensemble",
+    "protocol_id": "drugclip2023_m4_heldout_loto_3seed_v01",
+    "held_target": "M4R",
+    "seen_targets": ["B2AR", "CCR2", "M2R"],
+    "base_seeds": [20260925, 20260926, 20260927],
     "files": {
-      "seed20260925.projection.pt": "15ff4333c08761eefc5aaffd169c785e7f422c200eb187704e9f8ac8fce7e09a",
-      "seed20260926.projection.pt": "00d365cdfe7e1711540990122bb067320c408cf891507bc6ca9a8c4579a1dc4b",
-      "seed20260927.projection.pt": "b8aedfb507381c228ca09c02a250c9f98d101467b3ad64657a0f7db875fd0da6"
+      "drugclip2023_m4_loto_seed20260925.projection.pt": "a954c7c16fe857b5e3b02f1fbfdf7b2b1284d3559d86448b33736e16dd5d7398",
+      "drugclip2023_m4_loto_seed20260926.projection.pt": "3cc92da9f066a36f9d65b47b7859e69ee7a456d48047a3e1bbd509283d50d4b9",
+      "drugclip2023_m4_loto_seed20260927.projection.pt": "578ab8349fa8723f5609067e6511ebdfab8541dab8558e883bb7affeb7a8780c"
     }
   },
   "reference_models_not_used": {
-    "drugclip2023_m4_loto": [
-      "a954c7c16fe857b5e3b02f1fbfdf7b2b1284d3559d86448b33736e16dd5d7398",
-      "3cc92da9f066a36f9d65b47b7859e69ee7a456d48047a3e1bbd509283d50d4b9",
-      "578ab8349fa8723f5609067e6511ebdfab8541dab8558e883bb7affeb7a8780c"
+    "gpcr_retrieval_hard_triplet": [
+      "15ff4333c08761eefc5aaffd169c785e7f422c200eb187704e9f8ac8fce7e09a",
+      "00d365cdfe7e1711540990122bb067320c408cf891507bc6ca9a8c4579a1dc4b",
+      "b8aedfb507381c228ca09c02a250c9f98d101467b3ad64657a0f7db875fd0da6"
     ],
     "drugclip2026_family_aug": [
       "d33b31d69c4437327b41c939c57521e27f56abb7491f4b75d0ef86d1533e58fd",
@@ -21,5 +24,5 @@
       "9cb96a2ce47d04180c526760791abfd19df3bf2f2db69a07dc306aea0f478a8b"
     ]
   },
-  "historical_gap": "Raw console logs, hardware and wall-clock time were not retained for every run."
+  "historical_gap": "Raw console logs, hardware and wall-clock time were not retained."
 }

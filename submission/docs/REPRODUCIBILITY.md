@@ -7,12 +7,12 @@ python predict.py
 python verify_submission.py
 ```
 
-This path is CPU-only. It verifies frozen data and model hashes, checks canonical molecular identity across stages, recomputes the six-channel fusion, re-exports the four-context evidence, and compares the regenerated final table with `results/results.csv`.
+This path is CPU-only. It performs Module 2 forward inference on 2,605 molecules, verifies the top-200 order, checks canonical molecular identity, recomputes six-channel fusion, re-exports four-context evidence, and compares the final table with `results/results.csv`.
 
 ## Model retraining
 
 ```bash
-python train.py --representations REPRESENTATIONS.pt --projection BASE_PROJECTION.pt --benchmark BENCHMARK.csv
+python train.py --representations REPRESENTATIONS.npz --projection BASE_PROJECTION.pt --pairs PAIRS.csv --reference-predictions REFERENCE.csv
 ```
 
 The source code and final compact projection checkpoints are included. The large upstream DrugCLIP checkpoint and archived training representations are not included.

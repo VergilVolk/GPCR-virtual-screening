@@ -9,10 +9,11 @@
     "integrated_results": 8
   },
   "used_weight_sha256": {
-    "seed20260925.projection.pt": "15ff4333c08761eefc5aaffd169c785e7f422c200eb187704e9f8ac8fce7e09a",
-    "seed20260926.projection.pt": "00d365cdfe7e1711540990122bb067320c408cf891507bc6ca9a8c4579a1dc4b",
-    "seed20260927.projection.pt": "b8aedfb507381c228ca09c02a250c9f98d101467b3ad64657a0f7db875fd0da6"
+    "drugclip2023_m4_loto_seed20260925.projection.pt": "a954c7c16fe857b5e3b02f1fbfdf7b2b1284d3559d86448b33736e16dd5d7398",
+    "drugclip2023_m4_loto_seed20260926.projection.pt": "3cc92da9f066a36f9d65b47b7859e69ee7a456d48047a3e1bbd509283d50d4b9",
+    "drugclip2023_m4_loto_seed20260927.projection.pt": "578ab8349fa8723f5609067e6511ebdfab8541dab8558e883bb7affeb7a8780c"
   },
+  "module4_visnet_sha256": "b8f1ef9b591c57f7687566bd60d3664800956ac280cf2ae8e64f54196cd8d417",
   "result_sha256": {
     "01_candidate_audit_2592.csv": "085c59bc874a68036ae93312c688a6badbc57c7072e7e23b0ca6914fce88da53",
     "01_generated_candidates_2605.csv": "a832c9cb2cfbed9b2e3db7902b48db5c384980cc70c551961c87f57db9e3be5d",
@@ -21,5 +22,6 @@
     "04_four_context_3.csv": "a10ff90498ff64a54e46fb66c26298f2ef99ac00389fb578f865a0dc0f7e01de",
     "results.csv": "1e905469c1b97ed83b43e68840e6fb46d2facf7e9b9b475e77f7974a241b8a2f"
   },
-  "note": "Frozen-result replay and artifact identity check; docking and MD are not rerun."
+  "module2_forward_max_abs_error": 6.510734562592546e-09,
+  "note": "Module 2 is recomputed from representations and weights. Docking and MD are frozen-output replays."
 }

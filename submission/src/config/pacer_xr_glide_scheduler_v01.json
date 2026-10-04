@@ -1,0 +1,19 @@
+{
+  "version": "Glide execution scheduler v01; scheduling excluded from scientific identity",
+  "execution_model": "receptor_major_batched_campaign",
+  "campaign_concurrency": 1,
+  "njobs_per_campaign": 8,
+  "batch_bridge_sha256": "d7458632aa6c1a4abdff36b34365330a22f676ee0152d19c3000b7cc1646bfc7",
+  "scheduler_sha256_at_freeze": "c25b46140f6d255651c4cb5853034a341fcce3b497c539c49f9fc7dd2741b36d",
+  "rationale": {
+    "campaign_concurrency": "Two concurrent campaigns are rejected: with a shared Job Control host name the second campaign dies in [transfer] [local_copy]; with unique host names the second campaign still stalled >20 min with no subjob output (experiment_dual8). Concurrency 1 is the only configuration with clean end-to-end evidence.",
+    "njobs_per_campaign": "Measured on rerun ranks 1-10 against grid 7TRS: NJOBS 4 = 199.57 s, NJOBS 8 = 198.93 s, NJOBS 16 = 260.33 s. NJOBS 16 is 31% slower, so 8 is selected. All three reproduced reference scores exactly (delta 0.0).",
+    "resource_budget": "8 active subjobs on 32 logical CPUs (~25% utilisation observed), leaving system headroom as required."
+  },
+  "measured_wall_seconds": {
+    "njobs4_1campaign": 199.5700834,
+    "njobs8_1campaign": 198.9295701,
+    "njobs16_1campaign": 260.3276061
+  },
+  "host_identity": "unique per campaign work directory (see host_identity in pacer_xr_glide_scheduler_v01.py)"
+}

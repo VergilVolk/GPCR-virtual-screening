@@ -6,9 +6,9 @@ The files in `data/frozen/` were copied from the final project run on 2026-10-04
 
 ## DrugCLIP
 
-The model used for the final Module 2 ranking is the three-seed GPCR-adapted projection ensemble in `models/used_module2/`. Its training and validation record is `logs/module2_training_validation.json`.
+The model used for the final Module 2 ranking is the three-seed 2023 M4-held-out projection ensemble in `models/used_module2/`. This identity is confirmed by forward inference over all 2,605 packaged molecule representations: its scores and top-200 order reproduce the frozen table.
 
-The M4 leave-one-target-out 2023 experiment and the 2026 family-augmentation experiment are retained under `models/reference_not_used/`. They were not used to produce the frozen top-200 ranking. Their benchmark records are retained under `logs/`.
+The four-GPCR CE plus hardest-pocket triplet experiment and the 2026 family-augmentation experiment are retained under `models/reference_not_used/`. They were not used to produce the frozen top-200 ranking.
 
 DrugCLIP source: `bowen-gao/DrugCLIP`, archived project commit `7a3a3fa33673f8668c811790f2e4681c98af44ef`. The upstream base checkpoints and representations are not redistributed because of size and upstream terms.
 
@@ -19,6 +19,8 @@ M4 experimental coordinates were obtained from RCSB PDB. The six structural chan
 ## Four-context dynamics
 
 The four systems are apo, ACh only, candidate only, and candidate plus ACh. The compact package includes the frozen analysis record but not the large prepared membrane systems or trajectories. A missing trajectory is never treated as a negative functional result.
+
+The upstream Geom2Vec ViSNet checkpoint used for frozen feature extraction is bundled at `project/tools/geom2vec_checkpoints/visnet_l6_h64_rbf64_r75.pth` (SHA-256 `b8f1ef9b591c57f7687566bd60d3664800956ac280cf2ae8e64f54196cd8d417`, upstream commit `371d642ec1061664f16e49fcac702d07fc8d0b51`). It was not trained by this project.
 
 ## Limitations
 

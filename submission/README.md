@@ -21,7 +21,7 @@ python predict.py
 python verify_submission.py
 ```
 
-`predict.py` verifies the frozen data hashes, checks molecular identity across stages, recomputes the six-channel rank fusion, exports the three four-context records, and writes `results/results.csv`.
+`verify_submission.py` also performs a real Module 2 forward pass for all 2,605 molecules with the three packaged weights and checks the reproduced scores and top-200 order. `predict.py` verifies frozen data, recomputes six-channel fusion, exports four-context records, and writes `results/results.csv`.
 
 ## Results
 
@@ -40,7 +40,7 @@ The module files are retained separately because the final table is a summary, n
 
 Two comparison sets are also included and explicitly marked as unused:
 
-- `models/reference_not_used/drugclip2023_m4_loto/`
+- `models/reference_not_used/gpcr_retrieval_hard_triplet/`
 - `models/reference_not_used/drugclip2026_family_aug/`
 
 They did not contribute to the top-200 table or final ranking. See `models/MODEL_CARD.md` and `logs/training_manifest.json` for hashes and scope.
@@ -63,10 +63,12 @@ python module3_ensemble_dock.py --input data/frozen/six_channel_top5_plus_anchor
 python module4_four_context.py --summary data/frozen/four_context_results.json
 
 # Retrain the GPCR-adapted projections when the original representations are available
-python train.py --representations REPRESENTATIONS.pt --projection BASE_PROJECTION.pt --benchmark BENCHMARK.csv
+python train.py --representations REPRESENTATIONS.npz --projection BASE_PROJECTION.pt --pairs PAIRS.csv --reference-predictions REFERENCE.csv
 ```
 
 Full docking requires AutoDock Vina and licensed Schrodinger Glide. Full membrane MD requires OpenMM and prepared systems. These expensive jobs are not launched by the CPU replay; their frozen outputs and the production scripts used to create them are included.
+
+The frozen ViSNet checkpoint used by Module 4 is included under `project/tools/geom2vec_checkpoints/` and verified by SHA-256. A fresh trajectory run still requires the prepared membrane systems, MD trajectories and the matching scientific Python environment maintained by the team.
 
 ## Source and logs
 

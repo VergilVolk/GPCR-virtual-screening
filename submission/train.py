@@ -9,17 +9,24 @@ ROOT = Path(__file__).resolve().parent
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Train the GPCR-adapted DrugCLIP projection ensemble")
+    parser = argparse.ArgumentParser(description="Rebuild the M4-held-out DrugCLIP adapter ensemble")
     parser.add_argument("--representations", type=Path, required=True)
     parser.add_argument("--projection", type=Path, required=True)
-    parser.add_argument("--benchmark", type=Path, required=True)
-    parser.add_argument("--output", type=Path, default=ROOT / "models/retrained/model.json")
+    parser.add_argument("--pairs", type=Path, required=True)
+    parser.add_argument("--reference-predictions", type=Path, required=True)
+    parser.add_argument("--output-dir", type=Path, default=ROOT / "models/retrained")
     parser.add_argument("--seeds", default="20260925,20260926,20260927")
     args = parser.parse_args()
-    script = ROOT / "src/production/finetune_drugclip_gpcr_retrieval.py"
-    command = [sys.executable, str(script), "--representations", str(args.representations),
-               "--projection", str(args.projection), "--benchmark", str(args.benchmark),
-               "--output", str(args.output), "--seeds", args.seeds]
+
+    output = args.output_dir.resolve()
+    output.mkdir(parents=True, exist_ok=True)
+    script = ROOT / "src/production/export_drugclip2023_m4_loto_adapters.py"
+    command = [sys.executable, str(script),
+               "--representations", str(args.representations.resolve()),
+               "--projection", str(args.projection.resolve()),
+               "--pairs", str(args.pairs.resolve()),
+               "--reference-predictions", str(args.reference_predictions.resolve()),
+               "--output-dir", str(output), "--seeds", args.seeds]
     subprocess.run(command, cwd=script.parent, check=True)
 
 

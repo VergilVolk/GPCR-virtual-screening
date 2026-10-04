@@ -1,0 +1,3246 @@
+{
+  "receptors": {
+    "7TRS": {
+      "grid": "results/pacer_xr_rerun_glide_v01/smoke_7trs/grid/7TRS_smoke_grid.zip",
+      "prepared_receptor": "results/pacer_xr_rerun_glide_v01/smoke_7trs/receptor/7TRS_prepared.mae",
+      "center": [
+        110.2121366,
+        107.8369051,
+        68.1181557
+      ],
+      "inner": [
+        22.0,
+        22.0,
+        22.0
+      ],
+      "outer": [
+        44.0,
+        44.0,
+        44.0
+      ],
+      "source_receptor": "results/structure/ensemble/7TRS_R.pdb",
+      "vina_receptor": "results/structure/ensemble/7TRS_R_meeko.pdbqt",
+      "vina_center": [
+        110.2121366,
+        107.8369051,
+        68.1181557
+      ],
+      "vina_size": [
+        22,
+        22,
+        22
+      ]
+    },
+    "cluster_00": {
+      "grid": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_00/grid.zip",
+      "prepared_receptor": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_00/prepared_fixed.mae",
+      "source_receptor": "results/m4_gamd_ensemble/receptors/cluster_00_receptor.pdb",
+      "reference_ligand": "results/m4_gamd_ensemble/receptors/cluster_00_MK97.pdb",
+      "center": [
+        43.13213793103449,
+        49.740586206896566,
+        60.65044827586206
+      ],
+      "inner": [
+        30,
+        30,
+        30
+      ],
+      "outer": [
+        60,
+        60,
+        60
+      ],
+      "vina_receptor": "results/m4_gamd_ensemble/receptors/cluster_00.pdbqt",
+      "vina_center": [
+        43.13213793103449,
+        49.740586206896566,
+        60.65044827586206
+      ],
+      "vina_size": [
+        30,
+        30,
+        30
+      ],
+      "ACH_repair": {
+        "source": "https://files.rcsb.org/ligands/view/ACH.cif",
+        "CCD_mapping": {
+          "N1": "N1",
+          "C2": "C1",
+          "C3": "C2",
+          "O4": "O1",
+          "C5": "C3",
+          "O7": "O2",
+          "C6": "C4",
+          "C8": "C5",
+          "C9": "C6",
+          "C10": "C7"
+        },
+        "repair": "Rebuild only retained acetylcholine connectivity and formal charge from CCD with source-name mapping; remove spurious preprocessing-added ACH hydrogens; preserve all input heavy atoms and their coordinates.",
+        "removed_added_hydrogen_indices": [
+          4486
+        ],
+        "bonds_before": [
+          {
+            "a": "C1",
+            "b": "N1",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "H1",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "H2",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C5",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C6",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C7",
+            "order": 1
+          },
+          {
+            "a": "O1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "O1",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "H3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "H4",
+            "order": 1
+          },
+          {
+            "a": "O2",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C3",
+            "b": "C4",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H5",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H6",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H7",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "C6",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H8",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H9",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H10",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H11",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H12",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H13",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H14",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H15",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H16",
+            "order": 1
+          }
+        ],
+        "bonds_after": [
+          [
+            "N1",
+            "C1",
+            1
+          ],
+          [
+            "N1",
+            "C5",
+            1
+          ],
+          [
+            "N1",
+            "C6",
+            1
+          ],
+          [
+            "N1",
+            "C7",
+            1
+          ],
+          [
+            "C1",
+            "C2",
+            1
+          ],
+          [
+            "C2",
+            "O1",
+            1
+          ],
+          [
+            "O1",
+            "C3",
+            1
+          ],
+          [
+            "C3",
+            "O2",
+            2
+          ],
+          [
+            "C3",
+            "C4",
+            1
+          ],
+          [
+            "C1",
+            "H1",
+            1
+          ],
+          [
+            "C1",
+            "H2",
+            1
+          ],
+          [
+            "C2",
+            "H3",
+            1
+          ],
+          [
+            "C2",
+            "H4",
+            1
+          ],
+          [
+            "C4",
+            "H5",
+            1
+          ],
+          [
+            "C4",
+            "H6",
+            1
+          ],
+          [
+            "C4",
+            "H7",
+            1
+          ],
+          [
+            "C5",
+            "H8",
+            1
+          ],
+          [
+            "C5",
+            "H9",
+            1
+          ],
+          [
+            "C5",
+            "H10",
+            1
+          ],
+          [
+            "C6",
+            "H11",
+            1
+          ],
+          [
+            "C6",
+            "H12",
+            1
+          ],
+          [
+            "C6",
+            "H13",
+            1
+          ],
+          [
+            "C7",
+            "H14",
+            1
+          ],
+          [
+            "C7",
+            "H15",
+            1
+          ],
+          [
+            "C7",
+            "H16",
+            1
+          ]
+        ]
+      }
+    },
+    "cluster_01": {
+      "grid": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_01/grid.zip",
+      "prepared_receptor": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_01/prepared_fixed.mae",
+      "source_receptor": "results/m4_gamd_ensemble/receptors/cluster_01_receptor.pdb",
+      "reference_ligand": "results/m4_gamd_ensemble/receptors/cluster_01_MK97.pdb",
+      "center": [
+        43.33641379310345,
+        49.17631034482758,
+        60.76379310344827
+      ],
+      "inner": [
+        30,
+        30,
+        30
+      ],
+      "outer": [
+        60,
+        60,
+        60
+      ],
+      "vina_receptor": "results/m4_gamd_ensemble/receptors/cluster_01.pdbqt",
+      "vina_center": [
+        43.33641379310345,
+        49.17631034482758,
+        60.76379310344827
+      ],
+      "vina_size": [
+        30,
+        30,
+        30
+      ],
+      "ACH_repair": {
+        "source": "https://files.rcsb.org/ligands/view/ACH.cif",
+        "CCD_mapping": {
+          "N1": "N1",
+          "C2": "C1",
+          "C3": "C2",
+          "O4": "O1",
+          "C5": "C3",
+          "O7": "O2",
+          "C6": "C4",
+          "C8": "C5",
+          "C9": "C6",
+          "C10": "C7"
+        },
+        "repair": "Rebuild only retained acetylcholine connectivity and formal charge from CCD with source-name mapping; remove spurious preprocessing-added ACH hydrogens; preserve all input heavy atoms and their coordinates.",
+        "removed_added_hydrogen_indices": [
+          4486
+        ],
+        "bonds_before": [
+          {
+            "a": "C1",
+            "b": "N1",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "H1",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "H2",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C5",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C6",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C7",
+            "order": 1
+          },
+          {
+            "a": "O1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "O1",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "H3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "H4",
+            "order": 1
+          },
+          {
+            "a": "O2",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C3",
+            "b": "C4",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H5",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H6",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H7",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "C6",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H8",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H9",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H10",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H11",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H12",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H13",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H14",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H15",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H16",
+            "order": 1
+          }
+        ],
+        "bonds_after": [
+          [
+            "N1",
+            "C1",
+            1
+          ],
+          [
+            "N1",
+            "C5",
+            1
+          ],
+          [
+            "N1",
+            "C6",
+            1
+          ],
+          [
+            "N1",
+            "C7",
+            1
+          ],
+          [
+            "C1",
+            "C2",
+            1
+          ],
+          [
+            "C2",
+            "O1",
+            1
+          ],
+          [
+            "O1",
+            "C3",
+            1
+          ],
+          [
+            "C3",
+            "O2",
+            2
+          ],
+          [
+            "C3",
+            "C4",
+            1
+          ],
+          [
+            "C1",
+            "H1",
+            1
+          ],
+          [
+            "C1",
+            "H2",
+            1
+          ],
+          [
+            "C2",
+            "H3",
+            1
+          ],
+          [
+            "C2",
+            "H4",
+            1
+          ],
+          [
+            "C4",
+            "H5",
+            1
+          ],
+          [
+            "C4",
+            "H6",
+            1
+          ],
+          [
+            "C4",
+            "H7",
+            1
+          ],
+          [
+            "C5",
+            "H8",
+            1
+          ],
+          [
+            "C5",
+            "H9",
+            1
+          ],
+          [
+            "C5",
+            "H10",
+            1
+          ],
+          [
+            "C6",
+            "H11",
+            1
+          ],
+          [
+            "C6",
+            "H12",
+            1
+          ],
+          [
+            "C6",
+            "H13",
+            1
+          ],
+          [
+            "C7",
+            "H14",
+            1
+          ],
+          [
+            "C7",
+            "H15",
+            1
+          ],
+          [
+            "C7",
+            "H16",
+            1
+          ]
+        ]
+      }
+    },
+    "cluster_02": {
+      "grid": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_02/grid.zip",
+      "prepared_receptor": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_02/prepared_fixed.mae",
+      "source_receptor": "results/m4_gamd_ensemble/receptors/cluster_02_receptor.pdb",
+      "reference_ligand": "results/m4_gamd_ensemble/receptors/cluster_02_MK97.pdb",
+      "center": [
+        43.83865517241378,
+        49.33458620689657,
+        60.424068965517264
+      ],
+      "inner": [
+        30,
+        30,
+        30
+      ],
+      "outer": [
+        60,
+        60,
+        60
+      ],
+      "vina_receptor": "results/m4_gamd_ensemble/receptors/cluster_02.pdbqt",
+      "vina_center": [
+        43.83865517241378,
+        49.33458620689657,
+        60.424068965517264
+      ],
+      "vina_size": [
+        30,
+        30,
+        30
+      ],
+      "ACH_repair": {
+        "source": "https://files.rcsb.org/ligands/view/ACH.cif",
+        "CCD_mapping": {
+          "N1": "N1",
+          "C2": "C1",
+          "C3": "C2",
+          "O4": "O1",
+          "C5": "C3",
+          "O7": "O2",
+          "C6": "C4",
+          "C8": "C5",
+          "C9": "C6",
+          "C10": "C7"
+        },
+        "repair": "Rebuild only retained acetylcholine connectivity and formal charge from CCD with source-name mapping; remove spurious preprocessing-added ACH hydrogens; preserve all input heavy atoms and their coordinates.",
+        "removed_added_hydrogen_indices": [
+          4488
+        ],
+        "bonds_before": [
+          {
+            "a": "C1",
+            "b": "N1",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "H1",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "H2",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C5",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C6",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C7",
+            "order": 1
+          },
+          {
+            "a": "O1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "O1",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "H3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "H4",
+            "order": 1
+          },
+          {
+            "a": "O2",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C3",
+            "b": "C4",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H5",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H6",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H7",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "C6",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H8",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H9",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H10",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H11",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H12",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H13",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H14",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H15",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H16",
+            "order": 1
+          }
+        ],
+        "bonds_after": [
+          [
+            "N1",
+            "C1",
+            1
+          ],
+          [
+            "N1",
+            "C5",
+            1
+          ],
+          [
+            "N1",
+            "C6",
+            1
+          ],
+          [
+            "N1",
+            "C7",
+            1
+          ],
+          [
+            "C1",
+            "C2",
+            1
+          ],
+          [
+            "C2",
+            "O1",
+            1
+          ],
+          [
+            "O1",
+            "C3",
+            1
+          ],
+          [
+            "C3",
+            "O2",
+            2
+          ],
+          [
+            "C3",
+            "C4",
+            1
+          ],
+          [
+            "C1",
+            "H1",
+            1
+          ],
+          [
+            "C1",
+            "H2",
+            1
+          ],
+          [
+            "C2",
+            "H3",
+            1
+          ],
+          [
+            "C2",
+            "H4",
+            1
+          ],
+          [
+            "C4",
+            "H5",
+            1
+          ],
+          [
+            "C4",
+            "H6",
+            1
+          ],
+          [
+            "C4",
+            "H7",
+            1
+          ],
+          [
+            "C5",
+            "H8",
+            1
+          ],
+          [
+            "C5",
+            "H9",
+            1
+          ],
+          [
+            "C5",
+            "H10",
+            1
+          ],
+          [
+            "C6",
+            "H11",
+            1
+          ],
+          [
+            "C6",
+            "H12",
+            1
+          ],
+          [
+            "C6",
+            "H13",
+            1
+          ],
+          [
+            "C7",
+            "H14",
+            1
+          ],
+          [
+            "C7",
+            "H15",
+            1
+          ],
+          [
+            "C7",
+            "H16",
+            1
+          ]
+        ]
+      }
+    },
+    "cluster_03": {
+      "grid": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_03/grid.zip",
+      "prepared_receptor": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_03/prepared_fixed.mae",
+      "source_receptor": "results/m4_gamd_ensemble/receptors/cluster_03_receptor.pdb",
+      "reference_ligand": "results/m4_gamd_ensemble/receptors/cluster_03_MK97.pdb",
+      "center": [
+        43.893379310344805,
+        48.32693103448276,
+        59.754275862068965
+      ],
+      "inner": [
+        30,
+        30,
+        30
+      ],
+      "outer": [
+        60,
+        60,
+        60
+      ],
+      "vina_receptor": "results/m4_gamd_ensemble/receptors/cluster_03.pdbqt",
+      "vina_center": [
+        43.893379310344805,
+        48.32693103448276,
+        59.754275862068965
+      ],
+      "vina_size": [
+        30,
+        30,
+        30
+      ],
+      "ACH_repair": {
+        "source": "https://files.rcsb.org/ligands/view/ACH.cif",
+        "CCD_mapping": {
+          "N1": "N1",
+          "C2": "C1",
+          "C3": "C2",
+          "O4": "O1",
+          "C5": "C3",
+          "O7": "O2",
+          "C6": "C4",
+          "C8": "C5",
+          "C9": "C6",
+          "C10": "C7"
+        },
+        "repair": "Rebuild only retained acetylcholine connectivity and formal charge from CCD with source-name mapping; remove spurious preprocessing-added ACH hydrogens; preserve all input heavy atoms and their coordinates.",
+        "removed_added_hydrogen_indices": [
+          4486
+        ],
+        "bonds_before": [
+          {
+            "a": "C1",
+            "b": "N1",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "H1",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "H2",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C5",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C6",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C7",
+            "order": 1
+          },
+          {
+            "a": "O1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "O1",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "H3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "H4",
+            "order": 1
+          },
+          {
+            "a": "O2",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C3",
+            "b": "C4",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H5",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H6",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H7",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "C6",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H8",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H9",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H10",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H11",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H12",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H13",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H14",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H15",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H16",
+            "order": 1
+          }
+        ],
+        "bonds_after": [
+          [
+            "N1",
+            "C1",
+            1
+          ],
+          [
+            "N1",
+            "C5",
+            1
+          ],
+          [
+            "N1",
+            "C6",
+            1
+          ],
+          [
+            "N1",
+            "C7",
+            1
+          ],
+          [
+            "C1",
+            "C2",
+            1
+          ],
+          [
+            "C2",
+            "O1",
+            1
+          ],
+          [
+            "O1",
+            "C3",
+            1
+          ],
+          [
+            "C3",
+            "O2",
+            2
+          ],
+          [
+            "C3",
+            "C4",
+            1
+          ],
+          [
+            "C1",
+            "H1",
+            1
+          ],
+          [
+            "C1",
+            "H2",
+            1
+          ],
+          [
+            "C2",
+            "H3",
+            1
+          ],
+          [
+            "C2",
+            "H4",
+            1
+          ],
+          [
+            "C4",
+            "H5",
+            1
+          ],
+          [
+            "C4",
+            "H6",
+            1
+          ],
+          [
+            "C4",
+            "H7",
+            1
+          ],
+          [
+            "C5",
+            "H8",
+            1
+          ],
+          [
+            "C5",
+            "H9",
+            1
+          ],
+          [
+            "C5",
+            "H10",
+            1
+          ],
+          [
+            "C6",
+            "H11",
+            1
+          ],
+          [
+            "C6",
+            "H12",
+            1
+          ],
+          [
+            "C6",
+            "H13",
+            1
+          ],
+          [
+            "C7",
+            "H14",
+            1
+          ],
+          [
+            "C7",
+            "H15",
+            1
+          ],
+          [
+            "C7",
+            "H16",
+            1
+          ]
+        ]
+      }
+    },
+    "cluster_04": {
+      "grid": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_04/grid.zip",
+      "prepared_receptor": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_04/prepared_fixed.mae",
+      "source_receptor": "results/m4_gamd_ensemble/receptors/cluster_04_receptor.pdb",
+      "reference_ligand": "results/m4_gamd_ensemble/receptors/cluster_04_MK97.pdb",
+      "center": [
+        43.086620689655156,
+        49.07131034482759,
+        60.8033103448276
+      ],
+      "inner": [
+        30,
+        30,
+        30
+      ],
+      "outer": [
+        60,
+        60,
+        60
+      ],
+      "vina_receptor": "results/m4_gamd_ensemble/receptors/cluster_04.pdbqt",
+      "vina_center": [
+        43.086620689655156,
+        49.07131034482759,
+        60.8033103448276
+      ],
+      "vina_size": [
+        30,
+        30,
+        30
+      ],
+      "ACH_repair": {
+        "source": "https://files.rcsb.org/ligands/view/ACH.cif",
+        "CCD_mapping": {
+          "N1": "N1",
+          "C2": "C1",
+          "C3": "C2",
+          "O4": "O1",
+          "C5": "C3",
+          "O7": "O2",
+          "C6": "C4",
+          "C8": "C5",
+          "C9": "C6",
+          "C10": "C7"
+        },
+        "repair": "Rebuild only retained acetylcholine connectivity and formal charge from CCD with source-name mapping; remove spurious preprocessing-added ACH hydrogens; preserve all input heavy atoms and their coordinates.",
+        "removed_added_hydrogen_indices": [
+          4486
+        ],
+        "bonds_before": [
+          {
+            "a": "C1",
+            "b": "N1",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "H1",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "H2",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C5",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C6",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C7",
+            "order": 1
+          },
+          {
+            "a": "O1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "O1",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "H3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "H4",
+            "order": 1
+          },
+          {
+            "a": "O2",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C3",
+            "b": "C4",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H5",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H6",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H7",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "C6",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H8",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H9",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H10",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H11",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H12",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H13",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H14",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H15",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H16",
+            "order": 1
+          }
+        ],
+        "bonds_after": [
+          [
+            "N1",
+            "C1",
+            1
+          ],
+          [
+            "N1",
+            "C5",
+            1
+          ],
+          [
+            "N1",
+            "C6",
+            1
+          ],
+          [
+            "N1",
+            "C7",
+            1
+          ],
+          [
+            "C1",
+            "C2",
+            1
+          ],
+          [
+            "C2",
+            "O1",
+            1
+          ],
+          [
+            "O1",
+            "C3",
+            1
+          ],
+          [
+            "C3",
+            "O2",
+            2
+          ],
+          [
+            "C3",
+            "C4",
+            1
+          ],
+          [
+            "C1",
+            "H1",
+            1
+          ],
+          [
+            "C1",
+            "H2",
+            1
+          ],
+          [
+            "C2",
+            "H3",
+            1
+          ],
+          [
+            "C2",
+            "H4",
+            1
+          ],
+          [
+            "C4",
+            "H5",
+            1
+          ],
+          [
+            "C4",
+            "H6",
+            1
+          ],
+          [
+            "C4",
+            "H7",
+            1
+          ],
+          [
+            "C5",
+            "H8",
+            1
+          ],
+          [
+            "C5",
+            "H9",
+            1
+          ],
+          [
+            "C5",
+            "H10",
+            1
+          ],
+          [
+            "C6",
+            "H11",
+            1
+          ],
+          [
+            "C6",
+            "H12",
+            1
+          ],
+          [
+            "C6",
+            "H13",
+            1
+          ],
+          [
+            "C7",
+            "H14",
+            1
+          ],
+          [
+            "C7",
+            "H15",
+            1
+          ],
+          [
+            "C7",
+            "H16",
+            1
+          ]
+        ]
+      }
+    },
+    "cluster_05": {
+      "grid": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_05/grid.zip",
+      "prepared_receptor": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_05/prepared.mae",
+      "source_receptor": "results/m4_gamd_ensemble/receptors/cluster_05_receptor.pdb",
+      "reference_ligand": "results/m4_gamd_ensemble/receptors/cluster_05_MK97.pdb",
+      "center": [
+        43.050137931034484,
+        48.97575862068965,
+        60.28410344827586
+      ],
+      "inner": [
+        30,
+        30,
+        30
+      ],
+      "outer": [
+        60,
+        60,
+        60
+      ],
+      "vina_receptor": "results/m4_gamd_ensemble/receptors/cluster_05.pdbqt",
+      "vina_center": [
+        43.050137931034484,
+        48.97575862068965,
+        60.28410344827586
+      ],
+      "vina_size": [
+        30,
+        30,
+        30
+      ],
+      "ACH_repair": "Schrodinger preparation inferred valid ACH connectivity; output verified equivalent to repaired clusters."
+    },
+    "cluster_06": {
+      "grid": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_06/grid.zip",
+      "prepared_receptor": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_06/prepared_fixed.mae",
+      "source_receptor": "results/m4_gamd_ensemble/receptors/cluster_06_receptor.pdb",
+      "reference_ligand": "results/m4_gamd_ensemble/receptors/cluster_06_MK97.pdb",
+      "center": [
+        44.96910344827587,
+        48.501241379310336,
+        61.25903448275863
+      ],
+      "inner": [
+        30,
+        30,
+        30
+      ],
+      "outer": [
+        60,
+        60,
+        60
+      ],
+      "vina_receptor": "results/m4_gamd_ensemble/receptors/cluster_06.pdbqt",
+      "vina_center": [
+        44.96910344827587,
+        48.501241379310336,
+        61.25903448275863
+      ],
+      "vina_size": [
+        30,
+        30,
+        30
+      ],
+      "ACH_repair": {
+        "source": "https://files.rcsb.org/ligands/view/ACH.cif",
+        "CCD_mapping": {
+          "N1": "N1",
+          "C2": "C1",
+          "C3": "C2",
+          "O4": "O1",
+          "C5": "C3",
+          "O7": "O2",
+          "C6": "C4",
+          "C8": "C5",
+          "C9": "C6",
+          "C10": "C7"
+        },
+        "repair": "Rebuild only retained acetylcholine connectivity and formal charge from CCD with source-name mapping; remove spurious preprocessing-added ACH hydrogens; preserve all input heavy atoms and their coordinates.",
+        "removed_added_hydrogen_indices": [
+          4486
+        ],
+        "bonds_before": [
+          {
+            "a": "C1",
+            "b": "N1",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "H1",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "H2",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C5",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C6",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C7",
+            "order": 1
+          },
+          {
+            "a": "O1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "O1",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "H3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "H4",
+            "order": 1
+          },
+          {
+            "a": "O2",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C3",
+            "b": "C4",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H5",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H6",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H7",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "C6",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H8",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H9",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H10",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H11",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H12",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H13",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H14",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H15",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H16",
+            "order": 1
+          }
+        ],
+        "bonds_after": [
+          [
+            "N1",
+            "C1",
+            1
+          ],
+          [
+            "N1",
+            "C5",
+            1
+          ],
+          [
+            "N1",
+            "C6",
+            1
+          ],
+          [
+            "N1",
+            "C7",
+            1
+          ],
+          [
+            "C1",
+            "C2",
+            1
+          ],
+          [
+            "C2",
+            "O1",
+            1
+          ],
+          [
+            "O1",
+            "C3",
+            1
+          ],
+          [
+            "C3",
+            "O2",
+            2
+          ],
+          [
+            "C3",
+            "C4",
+            1
+          ],
+          [
+            "C1",
+            "H1",
+            1
+          ],
+          [
+            "C1",
+            "H2",
+            1
+          ],
+          [
+            "C2",
+            "H3",
+            1
+          ],
+          [
+            "C2",
+            "H4",
+            1
+          ],
+          [
+            "C4",
+            "H5",
+            1
+          ],
+          [
+            "C4",
+            "H6",
+            1
+          ],
+          [
+            "C4",
+            "H7",
+            1
+          ],
+          [
+            "C5",
+            "H8",
+            1
+          ],
+          [
+            "C5",
+            "H9",
+            1
+          ],
+          [
+            "C5",
+            "H10",
+            1
+          ],
+          [
+            "C6",
+            "H11",
+            1
+          ],
+          [
+            "C6",
+            "H12",
+            1
+          ],
+          [
+            "C6",
+            "H13",
+            1
+          ],
+          [
+            "C7",
+            "H14",
+            1
+          ],
+          [
+            "C7",
+            "H15",
+            1
+          ],
+          [
+            "C7",
+            "H16",
+            1
+          ]
+        ]
+      }
+    },
+    "cluster_07": {
+      "grid": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_07/grid.zip",
+      "prepared_receptor": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_07/prepared_fixed.mae",
+      "source_receptor": "results/m4_gamd_ensemble/receptors/cluster_07_receptor.pdb",
+      "reference_ligand": "results/m4_gamd_ensemble/receptors/cluster_07_MK97.pdb",
+      "center": [
+        42.757724137931035,
+        50.013206896551715,
+        60.80151724137931
+      ],
+      "inner": [
+        30,
+        30,
+        30
+      ],
+      "outer": [
+        60,
+        60,
+        60
+      ],
+      "vina_receptor": "results/m4_gamd_ensemble/receptors/cluster_07.pdbqt",
+      "vina_center": [
+        42.757724137931035,
+        50.013206896551715,
+        60.80151724137931
+      ],
+      "vina_size": [
+        30,
+        30,
+        30
+      ],
+      "ACH_repair": {
+        "source": "https://files.rcsb.org/ligands/view/ACH.cif",
+        "CCD_mapping": {
+          "N1": "N1",
+          "C2": "C1",
+          "C3": "C2",
+          "O4": "O1",
+          "C5": "C3",
+          "O7": "O2",
+          "C6": "C4",
+          "C8": "C5",
+          "C9": "C6",
+          "C10": "C7"
+        },
+        "repair": "Rebuild only retained acetylcholine connectivity and formal charge from CCD with source-name mapping; remove spurious preprocessing-added ACH hydrogens; preserve all input heavy atoms and their coordinates.",
+        "removed_added_hydrogen_indices": [
+          4486
+        ],
+        "bonds_before": [
+          {
+            "a": "C1",
+            "b": "N1",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "H1",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "H2",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C5",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C6",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C7",
+            "order": 1
+          },
+          {
+            "a": "O1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "O1",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "H3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "H4",
+            "order": 1
+          },
+          {
+            "a": "O2",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C3",
+            "b": "C4",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H5",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H6",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H7",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "C6",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H8",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H9",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H10",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H11",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H12",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H13",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H14",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H15",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H16",
+            "order": 1
+          }
+        ],
+        "bonds_after": [
+          [
+            "N1",
+            "C1",
+            1
+          ],
+          [
+            "N1",
+            "C5",
+            1
+          ],
+          [
+            "N1",
+            "C6",
+            1
+          ],
+          [
+            "N1",
+            "C7",
+            1
+          ],
+          [
+            "C1",
+            "C2",
+            1
+          ],
+          [
+            "C2",
+            "O1",
+            1
+          ],
+          [
+            "O1",
+            "C3",
+            1
+          ],
+          [
+            "C3",
+            "O2",
+            2
+          ],
+          [
+            "C3",
+            "C4",
+            1
+          ],
+          [
+            "C1",
+            "H1",
+            1
+          ],
+          [
+            "C1",
+            "H2",
+            1
+          ],
+          [
+            "C2",
+            "H3",
+            1
+          ],
+          [
+            "C2",
+            "H4",
+            1
+          ],
+          [
+            "C4",
+            "H5",
+            1
+          ],
+          [
+            "C4",
+            "H6",
+            1
+          ],
+          [
+            "C4",
+            "H7",
+            1
+          ],
+          [
+            "C5",
+            "H8",
+            1
+          ],
+          [
+            "C5",
+            "H9",
+            1
+          ],
+          [
+            "C5",
+            "H10",
+            1
+          ],
+          [
+            "C6",
+            "H11",
+            1
+          ],
+          [
+            "C6",
+            "H12",
+            1
+          ],
+          [
+            "C6",
+            "H13",
+            1
+          ],
+          [
+            "C7",
+            "H14",
+            1
+          ],
+          [
+            "C7",
+            "H15",
+            1
+          ],
+          [
+            "C7",
+            "H16",
+            1
+          ]
+        ]
+      }
+    },
+    "cluster_08": {
+      "grid": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_08/grid.zip",
+      "prepared_receptor": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_08/prepared_fixed.mae",
+      "source_receptor": "results/m4_gamd_ensemble/receptors/cluster_08_receptor.pdb",
+      "reference_ligand": "results/m4_gamd_ensemble/receptors/cluster_08_MK97.pdb",
+      "center": [
+        44.408034482758616,
+        48.23658620689655,
+        59.30424137931035
+      ],
+      "inner": [
+        30,
+        30,
+        30
+      ],
+      "outer": [
+        60,
+        60,
+        60
+      ],
+      "vina_receptor": "results/m4_gamd_ensemble/receptors/cluster_08.pdbqt",
+      "vina_center": [
+        44.408034482758616,
+        48.23658620689655,
+        59.30424137931035
+      ],
+      "vina_size": [
+        30,
+        30,
+        30
+      ],
+      "ACH_repair": {
+        "source": "https://files.rcsb.org/ligands/view/ACH.cif",
+        "CCD_mapping": {
+          "N1": "N1",
+          "C2": "C1",
+          "C3": "C2",
+          "O4": "O1",
+          "C5": "C3",
+          "O7": "O2",
+          "C6": "C4",
+          "C8": "C5",
+          "C9": "C6",
+          "C10": "C7"
+        },
+        "repair": "Rebuild only retained acetylcholine connectivity and formal charge from CCD with source-name mapping; remove spurious preprocessing-added ACH hydrogens; preserve all input heavy atoms and their coordinates.",
+        "removed_added_hydrogen_indices": [
+          4488
+        ],
+        "bonds_before": [
+          {
+            "a": "C1",
+            "b": "N1",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "H1",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "H2",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C5",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C6",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C7",
+            "order": 1
+          },
+          {
+            "a": "O1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "O1",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "H3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "H4",
+            "order": 1
+          },
+          {
+            "a": "O2",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C3",
+            "b": "C4",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H5",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H6",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H7",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "C6",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H8",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H9",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H10",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H11",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H12",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H13",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H14",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H15",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H16",
+            "order": 1
+          }
+        ],
+        "bonds_after": [
+          [
+            "N1",
+            "C1",
+            1
+          ],
+          [
+            "N1",
+            "C5",
+            1
+          ],
+          [
+            "N1",
+            "C6",
+            1
+          ],
+          [
+            "N1",
+            "C7",
+            1
+          ],
+          [
+            "C1",
+            "C2",
+            1
+          ],
+          [
+            "C2",
+            "O1",
+            1
+          ],
+          [
+            "O1",
+            "C3",
+            1
+          ],
+          [
+            "C3",
+            "O2",
+            2
+          ],
+          [
+            "C3",
+            "C4",
+            1
+          ],
+          [
+            "C1",
+            "H1",
+            1
+          ],
+          [
+            "C1",
+            "H2",
+            1
+          ],
+          [
+            "C2",
+            "H3",
+            1
+          ],
+          [
+            "C2",
+            "H4",
+            1
+          ],
+          [
+            "C4",
+            "H5",
+            1
+          ],
+          [
+            "C4",
+            "H6",
+            1
+          ],
+          [
+            "C4",
+            "H7",
+            1
+          ],
+          [
+            "C5",
+            "H8",
+            1
+          ],
+          [
+            "C5",
+            "H9",
+            1
+          ],
+          [
+            "C5",
+            "H10",
+            1
+          ],
+          [
+            "C6",
+            "H11",
+            1
+          ],
+          [
+            "C6",
+            "H12",
+            1
+          ],
+          [
+            "C6",
+            "H13",
+            1
+          ],
+          [
+            "C7",
+            "H14",
+            1
+          ],
+          [
+            "C7",
+            "H15",
+            1
+          ],
+          [
+            "C7",
+            "H16",
+            1
+          ]
+        ]
+      }
+    },
+    "cluster_09": {
+      "grid": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_09/grid.zip",
+      "prepared_receptor": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_09/prepared_fixed.mae",
+      "source_receptor": "results/m4_gamd_ensemble/receptors/cluster_09_receptor.pdb",
+      "reference_ligand": "results/m4_gamd_ensemble/receptors/cluster_09_MK97.pdb",
+      "center": [
+        46.356620689655166,
+        48.22786206896551,
+        60.75689655172414
+      ],
+      "inner": [
+        30,
+        30,
+        30
+      ],
+      "outer": [
+        60,
+        60,
+        60
+      ],
+      "vina_receptor": "results/m4_gamd_ensemble/receptors/cluster_09.pdbqt",
+      "vina_center": [
+        46.356620689655166,
+        48.22786206896551,
+        60.75689655172414
+      ],
+      "vina_size": [
+        30,
+        30,
+        30
+      ],
+      "ACH_repair": {
+        "source": "https://files.rcsb.org/ligands/view/ACH.cif",
+        "CCD_mapping": {
+          "N1": "N1",
+          "C2": "C1",
+          "C3": "C2",
+          "O4": "O1",
+          "C5": "C3",
+          "O7": "O2",
+          "C6": "C4",
+          "C8": "C5",
+          "C9": "C6",
+          "C10": "C7"
+        },
+        "repair": "Rebuild only retained acetylcholine connectivity and formal charge from CCD with source-name mapping; remove spurious preprocessing-added ACH hydrogens; preserve all input heavy atoms and their coordinates.",
+        "removed_added_hydrogen_indices": [
+          4486
+        ],
+        "bonds_before": [
+          {
+            "a": "C1",
+            "b": "N1",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "H1",
+            "order": 1
+          },
+          {
+            "a": "C1",
+            "b": "H2",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C5",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C6",
+            "order": 1
+          },
+          {
+            "a": "N1",
+            "b": "C7",
+            "order": 1
+          },
+          {
+            "a": "O1",
+            "b": "C2",
+            "order": 1
+          },
+          {
+            "a": "O1",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "H3",
+            "order": 1
+          },
+          {
+            "a": "C2",
+            "b": "H4",
+            "order": 1
+          },
+          {
+            "a": "O2",
+            "b": "C3",
+            "order": 1
+          },
+          {
+            "a": "C3",
+            "b": "C4",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H5",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H6",
+            "order": 1
+          },
+          {
+            "a": "C4",
+            "b": "H7",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "C6",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H8",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H9",
+            "order": 1
+          },
+          {
+            "a": "C5",
+            "b": "H10",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H11",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H12",
+            "order": 1
+          },
+          {
+            "a": "C6",
+            "b": "H13",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H14",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H15",
+            "order": 1
+          },
+          {
+            "a": "C7",
+            "b": "H16",
+            "order": 1
+          }
+        ],
+        "bonds_after": [
+          [
+            "N1",
+            "C1",
+            1
+          ],
+          [
+            "N1",
+            "C5",
+            1
+          ],
+          [
+            "N1",
+            "C6",
+            1
+          ],
+          [
+            "N1",
+            "C7",
+            1
+          ],
+          [
+            "C1",
+            "C2",
+            1
+          ],
+          [
+            "C2",
+            "O1",
+            1
+          ],
+          [
+            "O1",
+            "C3",
+            1
+          ],
+          [
+            "C3",
+            "O2",
+            2
+          ],
+          [
+            "C3",
+            "C4",
+            1
+          ],
+          [
+            "C1",
+            "H1",
+            1
+          ],
+          [
+            "C1",
+            "H2",
+            1
+          ],
+          [
+            "C2",
+            "H3",
+            1
+          ],
+          [
+            "C2",
+            "H4",
+            1
+          ],
+          [
+            "C4",
+            "H5",
+            1
+          ],
+          [
+            "C4",
+            "H6",
+            1
+          ],
+          [
+            "C4",
+            "H7",
+            1
+          ],
+          [
+            "C5",
+            "H8",
+            1
+          ],
+          [
+            "C5",
+            "H9",
+            1
+          ],
+          [
+            "C5",
+            "H10",
+            1
+          ],
+          [
+            "C6",
+            "H11",
+            1
+          ],
+          [
+            "C6",
+            "H12",
+            1
+          ],
+          [
+            "C6",
+            "H13",
+            1
+          ],
+          [
+            "C7",
+            "H14",
+            1
+          ],
+          [
+            "C7",
+            "H15",
+            1
+          ],
+          [
+            "C7",
+            "H16",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  "files": [
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_7trs/grid/7TRS_smoke_grid.zip",
+      "sha256": "5ae6ebb9cb0dc62fdc98f62426c3db47fc6c961cda33abe22d9563ab3cad4445"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_7trs/receptor/7TRS_prepared.mae",
+      "sha256": "253e3bee66380489c7f19e95795ba13c0ec37fd4bda58261343d7608f1f845de"
+    },
+    {
+      "path": "results/structure/ensemble/7TRS_R.pdb",
+      "sha256": "a67139d719ad2d1e1972ad8a4621b7161b7abe06fafe41d3ece6c5cc5a1447d8"
+    },
+    {
+      "path": "results/structure/ensemble/7TRS_R_meeko.pdbqt",
+      "sha256": "b18f7223aa975e7e3207d0160f2e0fe4a3a22965861a908143a569d156e3a62e"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_7trs/ligand/rank1_docking_ready.maegz",
+      "sha256": "a0d465baca1f4777debb8e2cfa574525ed3fc3a85681a7bd882e3dd63109f54c"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_00/grid.zip",
+      "sha256": "18e11960cd1dac05f0a9bbadcd78a72a177d42440dec24c4e49c488ca1e6b591"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_00/prepared_fixed.mae",
+      "sha256": "04019af774c04f765ab57698f801aed0ab1a972c9bb9f8da2e85959e3aec8ece"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_00_receptor.pdb",
+      "sha256": "a6485488372e49c4999015fc93bc0d3d3328ff026da598f9be2c8ca9ccad52ff"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_00_MK97.pdb",
+      "sha256": "8dbff2a4b98d2c4bc56fc6f349064eb6e8e4ba1c9a4c8a1a271735a17ef5dfa4"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_00.pdbqt",
+      "sha256": "9bc1d5f649b72928f04b945a8cb099b3e5e6004b632898765df9747fb0175f35"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_01/grid.zip",
+      "sha256": "885761a7012d759715757b4c17879015cf58ecfbc58bc2c1b47839b593ba534a"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_01/prepared_fixed.mae",
+      "sha256": "2f946fc3dda43dc651c900d303cbfe01765a511f64de9a69956580139618e951"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_01_receptor.pdb",
+      "sha256": "6c9b1cfcb3cdf67e8edaaaa676e766461683d736e765eb46b6ae18f5678193c9"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_01_MK97.pdb",
+      "sha256": "aa16d0d4894c1ec94ac0fa0811928f5db7455d5167c2b7fc5c9ea8d3ae2553f3"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_01.pdbqt",
+      "sha256": "cf9dd4bad4252c5e303485e629ffe66802958d88eae580e9bdc229ffe70c7b41"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_02/grid.zip",
+      "sha256": "268f4507f5c24553d121d45b56575a30a0c9a726a4b73ecedbd0d08766fbf83e"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_02/prepared_fixed.mae",
+      "sha256": "d2f331f8a2a4f187fb6ccefb1de1bc6e3626815f0db857d44b717c886efded86"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_02_receptor.pdb",
+      "sha256": "60c4ff8b6bbc1e43424f36aad10ddd464ea9c799813b714c3b39874ed2390a71"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_02_MK97.pdb",
+      "sha256": "b2f2adb553ee0176e16468d2a7a5917e981f1940ec2a559e37fcca3c6fc39710"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_02.pdbqt",
+      "sha256": "80ceed3eaee53f07360d7e01448f1434ab57ee85e9341dcb2be78c9e0e5fb4f0"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_03/grid.zip",
+      "sha256": "d9ce58c92dbd36ede1b8c5e157d8e20bb44b9c0d747bea5fc668e5c5f60dbe90"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_03/prepared_fixed.mae",
+      "sha256": "3410ba0557c8cce04f2a2e15748fa2d7fa5bf94b613493e84440dd03a2c4c272"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_03_receptor.pdb",
+      "sha256": "96b270eb13c1587bb14a5e57adb84a96472771be067fc542c7eda63c5fd77bef"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_03_MK97.pdb",
+      "sha256": "6f3ae4d57eb204f9647fefddc51d773a6f50f2344434ab82cefc8eb5fe5becd1"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_03.pdbqt",
+      "sha256": "f492117f5afc352476f21708b234f51a1051c279029bb8197d5dd3716829b4c5"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_04/grid.zip",
+      "sha256": "d4eacfa5e4311e668b9381d39cacd012bb7f845b0c404b900e289305a2fa8f62"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_04/prepared_fixed.mae",
+      "sha256": "7b5bc17c8f293b384751378693d43c16e81fb119da07c87cdbe5f40021157415"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_04_receptor.pdb",
+      "sha256": "a79858e958ffb4afe67b4a381f469360589d3cbbd79a0796ec24a7593431aca3"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_04_MK97.pdb",
+      "sha256": "08353ef7005d9a441f9dce4c6bdeb41be48d92bf5664d4ae245de8b3c7da3f8f"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_04.pdbqt",
+      "sha256": "2a2f85ee2dc6c5fdbfc27f3016c24a3257ab1eddc6eb867b2b98c0efe453488c"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_05/grid.zip",
+      "sha256": "9f1787f4a057285fc623a37c27113009e5e08c826d36e6cc2bce779070c08554"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_05/prepared.mae",
+      "sha256": "ec17126939fce8617bb362ccc8d3cc17b5fbae16c27b6596b6348bd05e061517"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_05_receptor.pdb",
+      "sha256": "16e847251f339bf7feecea541ed2a95d12784d1a6fd519f17bf4f29142bc5a56"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_05_MK97.pdb",
+      "sha256": "0448066f87152efe1343ca87b827bd91ab1ef7ae7b09fe10b0a63c6cea8c0b72"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_05.pdbqt",
+      "sha256": "9562c6184f18eebdcd57f7991052f308564d76bdb1ac1154992202c367649828"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_06/grid.zip",
+      "sha256": "6d9be26c6ad2a529e46fa67354c35f4a2a471239eeac110d87eec5602120f22e"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_06/prepared_fixed.mae",
+      "sha256": "82e88b967d12f0979dbde4f4b2450e359df3fdcbc5d95efe7a2231c8e73e5df7"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_06_receptor.pdb",
+      "sha256": "99c91997bb26a28e42c5e51e3ab63f393e9cc370d3cf662b3c576bb623f5bf94"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_06_MK97.pdb",
+      "sha256": "16f9b201fd2045d36221422fda304a05764f4d968040333798b1b308d7ab152c"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_06.pdbqt",
+      "sha256": "367172c71e92465a7827b5d00dd88d1c4e18658eb60585239bdb33973fc194ce"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_07/grid.zip",
+      "sha256": "6c0735c1f7726d351eaa2b7ac9243e6c01c33cb55a81bcdf18222a90fb23f4fe"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_07/prepared_fixed.mae",
+      "sha256": "c7ee682f3a4ca9b2693c534b232b906ee203f10b53739ff8d1dd6233c29890a2"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_07_receptor.pdb",
+      "sha256": "bf3aa9e7279e54c47523734d47fc21edd9ebbc0720ca060a8402be351ce566ff"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_07_MK97.pdb",
+      "sha256": "630af2bb8c3683e2ff08fca1e6a22433e4c21faaa3e49184393884aeb499d717"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_07.pdbqt",
+      "sha256": "3b53bd57177457642095b5c9c0f5d4a275ae1b36e172411d94ae3b618c4a5b32"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_08/grid.zip",
+      "sha256": "d6f6ba5548c2e23fd90c93b3fec8f8c9d31a5b66aa8f42031015bc628e9f605f"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_08/prepared_fixed.mae",
+      "sha256": "c626926ad109993fd36a00b6cc567e4f32a3454f39dc0bafe56f79be37ad5ad5"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_08_receptor.pdb",
+      "sha256": "9ebfca636871619fca6e5c595bf242319a34c6a0554a974bc605be9a1e85e22f"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_08_MK97.pdb",
+      "sha256": "b54c3870f9fae2ac522afabf61fa8610a6aa1f5e96f93cf35dd09273c322901f"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_08.pdbqt",
+      "sha256": "7cd865aea9b94c4e6116440102cd634c899696d194b92a09d7ff9e729a5f3d95"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/grids/cluster_09/grid.zip",
+      "sha256": "75a3707ef0d7d7eb854789b38fe9215f697c421736e8340f67a1e3663d5c6f52"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/receptors/cluster_09/prepared_fixed.mae",
+      "sha256": "610b64e0693ad5c7f52105b0bc0db03849fc00e415bf12efc923b20b5a348e5a"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_09_receptor.pdb",
+      "sha256": "8c4cb5f9553af64770d74621300c974bd6ee1922ec166a40a751ad0345825622"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_09_MK97.pdb",
+      "sha256": "f231a2ea2253362e0ff1802b764a63082bb0fe265e0923dc6f89c331f6aaf38e"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/receptors/cluster_09.pdbqt",
+      "sha256": "706be82abfea1900c5a7809bc48021b8d8da2745523e8d8d4391e73bef7976bd"
+    },
+    {
+      "path": "data/miao2026_m4r/M4R_ensemble_PMF.xvg",
+      "sha256": "f8f3294a809775f865b92a127340b28320869ef2296bcd676d6191317ac9278e"
+    },
+    {
+      "path": "results/m4_gamd_ensemble/ensemble_preparation_audit.json",
+      "sha256": "17d022d89057f1702d9a1844a7adbfc9adc5d5f6c49a6567585fc6f4e8c01a33"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_7trs/smoke_manifest.json",
+      "sha256": "cc5d249fe4df043e5ea27dc234e0184b219a649023ff6d1ed218e79e56af4bd4"
+    },
+    {
+      "path": "results/pacer_xr_rerun_glide_v01/smoke_ensemble/smoke_ensemble_manifest.json",
+      "sha256": "3a2e18f9607471dc5bc21879ef33938c4ee8b628cd4d013a7a687fc5e2baa89f"
+    }
+  ],
+  "pmf": {
+    "0": 0.0,
+    "1": 0.7780047454496,
+    "2": 1.5643744420501804,
+    "3": 1.206166038500477,
+    "4": 2.86214395730714,
+    "5": 2.947434690182245,
+    "6": 3.745614013539697,
+    "7": 2.717994018503159,
+    "8": 3.2480751539106976,
+    "9": 5.219181698603361
+  },
+  "rank1_ligand": "results/pacer_xr_rerun_glide_v01/smoke_7trs/ligand/rank1_docking_ready.maegz",
+  "suite": "2023-1 build 128",
+  "glide": "98128",
+  "schrodinger_executables": {
+    "glide.exe": "1ecc1b7257ac8309d5e083908db85f36c47f8097acf4a8b17ee00ca6a1a4a17b",
+    "ligprep.exe": "cd3341b0f0c67bf63cc07454348f0c6883fb941836dd13faa550ede7179aec9b",
+    "run.exe": "e846318e3569ac211a5d28a3d484c98bf379bf87da36f1a33d0b87cf916c398f"
+  },
+  "vina_executables": {
+    "vina.exe": "e0c4b2715e0c1a74f6e92d0f3be0328ac97542eafbc111e6b1efad897a73cce5",
+    "vina_1.2.7.exe": "e0c4b2715e0c1a74f6e92d0f3be0328ac97542eafbc111e6b1efad897a73cce5"
+  },
+  "preparation_versions": {
+    "molscrub": "0.1.1",
+    "rdkit": "2025.3.5",
+    "meeko": "0.7.1"
+  },
+  "protocol": {
+    "glide_precision": "SP",
+    "poses_per_lig": 5,
+    "postdock_npose": 5,
+    "forcefield": "OPLS_2005",
+    "max_states": 16,
+    "ph": 7,
+    "ligprep_flags": [
+      "-i",
+      "0",
+      "-nt",
+      "-ns",
+      "-bff",
+      "14"
+    ],
+    "vina_pdb": {
+      "exhaustiveness": 4,
+      "num_modes": 1,
+      "cpu": 1,
+      "seed": 42,
+      "preparation": "Parent canonical SMILES; RDKit ETKDGv3/MMFF300; Meeko, as dock_candidate_portfolio.py"
+    },
+    "vina_ensemble": {
+      "exhaustiveness": 8,
+      "num_modes": 9,
+      "energy_range": 3.0,
+      "cpu": 1,
+      "seed": 42,
+      "preparation": "Molscrub 0.1.1 pH7 max16; RDKit ETKDGv3 seed42+sid/MMFF300; Meeko"
+    }
+  }
+}

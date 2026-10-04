@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "verified_rows": {
+    "module1_library": 2605,
+    "module1_audit": 2592,
+    "module2_top200": 200,
+    "module3_six_channel": 8,
+    "module4_four_context": 3,
+    "integrated_results": 8
+  },
+  "used_weight_sha256": {
+    "seed20260925.projection.pt": "15ff4333c08761eefc5aaffd169c785e7f422c200eb187704e9f8ac8fce7e09a",
+    "seed20260926.projection.pt": "00d365cdfe7e1711540990122bb067320c408cf891507bc6ca9a8c4579a1dc4b",
+    "seed20260927.projection.pt": "b8aedfb507381c228ca09c02a250c9f98d101467b3ad64657a0f7db875fd0da6"
+  },
+  "result_sha256": {
+    "01_candidate_audit_2592.csv": "085c59bc874a68036ae93312c688a6badbc57c7072e7e23b0ca6914fce88da53",
+    "01_generated_candidates_2605.csv": "a832c9cb2cfbed9b2e3db7902b48db5c384980cc70c551961c87f57db9e3be5d",
+    "02_drugclip_top200.csv": "41c5a69e6c54825d0cbe9149a2f1fe9dbe5ea4ae2de137c161450607c3fa28eb",
+    "03_six_channel_8.csv": "cd59f0a8e86cfc29d5163d917aa14f8b38a475871eef609fd821eb08fd5af378",
+    "04_four_context_3.csv": "a10ff90498ff64a54e46fb66c26298f2ef99ac00389fb578f865a0dc0f7e01de",
+    "results.csv": "1e905469c1b97ed83b43e68840e6fb46d2facf7e9b9b475e77f7974a241b8a2f"
+  },
+  "note": "Frozen-result replay and artifact identity check; docking and MD are not rerun."
+}

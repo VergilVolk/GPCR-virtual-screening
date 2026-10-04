@@ -1,0 +1,205 @@
+{
+  "method": "DrugCLIP dual-projection rank-4 LoRA with balanced CE and hardest-pocket triplet",
+  "benchmark_rows": 2500,
+  "input_failures_excluded": 4,
+  "targets": [
+    "B2AR",
+    "CCR2",
+    "M2R",
+    "M4R"
+  ],
+  "split": "five-fold Murcko-scaffold OOF",
+  "metrics": {
+    "official": {
+      "n": 2500,
+      "recall_at_1": 0.358,
+      "recall_at_2": 0.8596,
+      "mrr": 0.6525333333333333,
+      "macro_recall_at_1": 0.4129569035947713,
+      "macro_mrr": 0.6390659892429194,
+      "pair_roc_auc": 0.7434210133333334,
+      "pair_pr_auc": 0.38372908738193484,
+      "per_target": {
+        "B2AR": {
+          "n": 64,
+          "recall_at_1": 0.765625,
+          "mrr": 0.85546875
+        },
+        "CCR2": {
+          "n": 16,
+          "recall_at_1": 0.125,
+          "mrr": 0.41666666666666663
+        },
+        "M2R": {
+          "n": 170,
+          "recall_at_1": 0.4176470588235294,
+          "mrr": 0.6343137254901962
+        },
+        "M4R": {
+          "n": 2250,
+          "recall_at_1": 0.34355555555555556,
+          "mrr": 0.6498148148148148
+        }
+      }
+    },
+    "random": {
+      "n": 2500,
+      "recall_at_1": 0.84,
+      "recall_at_2": 0.9556,
+      "mrr": 0.9119,
+      "macro_recall_at_1": 0.23469281045751633,
+      "macro_mrr": 0.5161936785130719,
+      "pair_roc_auc": 0.9154208533333336,
+      "pair_pr_auc": 0.7165054249109941,
+      "per_target": {
+        "B2AR": {
+          "n": 64,
+          "recall_at_1": 0.0,
+          "mrr": 0.33723958333333337
+        },
+        "CCR2": {
+          "n": 16,
+          "recall_at_1": 0.0,
+          "mrr": 0.296875
+        },
+        "M2R": {
+          "n": 170,
+          "recall_at_1": 0.0058823529411764705,
+          "mrr": 0.46421568627450976
+        },
+        "M4R": {
+          "n": 2250,
+          "recall_at_1": 0.9328888888888889,
+          "mrr": 0.9664444444444444
+        }
+      }
+    },
+    "ce": {
+      "n": 2500,
+      "recall_at_1": 0.9896,
+      "recall_at_2": 0.998,
+      "mrr": 0.9944,
+      "macro_recall_at_1": 0.924796364379085,
+      "macro_mrr": 0.9568272909858387,
+      "pair_roc_auc": 0.9964610133333334,
+      "pair_pr_auc": 0.9859948541298955,
+      "per_target": {
+        "B2AR": {
+          "n": 64,
+          "recall_at_1": 0.921875,
+          "mrr": 0.9544270833333333
+        },
+        "CCR2": {
+          "n": 16,
+          "recall_at_1": 0.8125,
+          "mrr": 0.890625
+        },
+        "M2R": {
+          "n": 170,
+          "recall_at_1": 0.9705882352941176,
+          "mrr": 0.9852941176470589
+        },
+        "M4R": {
+          "n": 2250,
+          "recall_at_1": 0.9942222222222222,
+          "mrr": 0.9969629629629629
+        }
+      }
+    },
+    "hard": {
+      "n": 2500,
+      "recall_at_1": 0.9892,
+      "recall_at_2": 0.9976,
+      "mrr": 0.9941333333333332,
+      "macro_recall_at_1": 0.9233257761437909,
+      "macro_mrr": 0.955440955201525,
+      "pair_roc_auc": 0.99645728,
+      "pair_pr_auc": 0.9858280445413077,
+      "per_target": {
+        "B2AR": {
+          "n": 64,
+          "recall_at_1": 0.921875,
+          "mrr": 0.9518229166666666
+        },
+        "CCR2": {
+          "n": 16,
+          "recall_at_1": 0.8125,
+          "mrr": 0.890625
+        },
+        "M2R": {
+          "n": 170,
+          "recall_at_1": 0.9647058823529412,
+          "mrr": 0.9823529411764705
+        },
+        "M4R": {
+          "n": 2250,
+          "recall_at_1": 0.9942222222222222,
+          "mrr": 0.9969629629629629
+        }
+      }
+    },
+    "ecfp_logistic": {
+      "n": 2500,
+      "recall_at_1": 0.9944,
+      "recall_at_2": 0.998,
+      "mrr": 0.9967666666666666,
+      "macro_recall_at_1": 0.9620287990196079,
+      "macro_mrr": 0.9744618566176471,
+      "pair_roc_auc": 0.9996493333333333,
+      "pair_pr_auc": 0.9991346551666288,
+      "per_target": {
+        "B2AR": {
+          "n": 64,
+          "recall_at_1": 0.953125,
+          "mrr": 0.9674479166666666
+        },
+        "CCR2": {
+          "n": 16,
+          "recall_at_1": 0.9375,
+          "mrr": 0.953125
+        },
+        "M2R": {
+          "n": 170,
+          "recall_at_1": 0.9588235294117647,
+          "mrr": 0.9779411764705882
+        },
+        "M4R": {
+          "n": 2250,
+          "recall_at_1": 0.9986666666666667,
+          "mrr": 0.9993333333333333
+        }
+      }
+    }
+  },
+  "hard_minus_official_macro_recall1_scaffold_bootstrap_95ci": [
+    0.4490309723567487,
+    0.5149214436951685,
+    0.5823749477965723
+  ],
+  "hard_minus_ce_macro_recall1_scaffold_bootstrap_95ci": [
+    -0.005320098784194563,
+    -0.0013966480446927498,
+    0.0
+  ],
+  "hard_minus_random_macro_recall1_scaffold_bootstrap_95ci": [
+    0.6218517637742722,
+    0.6868648000281334,
+    0.7388395410858648
+  ],
+  "hyperparameters": {
+    "rank": 4,
+    "epochs": 250,
+    "lr": 0.005,
+    "temperature": 0.07,
+    "margin": 0.1,
+    "hard_weight": 0.5,
+    "preserve_weight": 0.2,
+    "seeds": "20260925,20260926,20260927"
+  },
+  "claim_boundary": "Retrospective GPCR target retrieval; no potency, efficacy, or prospective-binding claim.",
+  "deployable_checkpoints": [
+    "project/results/gpcr_drugclip_retrieval_v01/finetune_result.seed20260925.projection.pt",
+    "project/results/gpcr_drugclip_retrieval_v01/finetune_result.seed20260926.projection.pt",
+    "project/results/gpcr_drugclip_retrieval_v01/finetune_result.seed20260927.projection.pt"
+  ]
+}

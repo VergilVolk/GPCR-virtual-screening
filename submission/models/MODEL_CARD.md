@@ -1,37 +1,25 @@
-# Model card: M4 pocket retrieval adapter
+# DrugCLIP projection models
 
-## Purpose
+## Model used in the frozen Module 2 run
 
-The model ranks small molecules by compatibility with an M4 allosteric pocket representation. It is an early binding filter and is not a direct predictor of PAM efficacy.
+`used_module2/` contains the three projection checkpoints used to rank the 2,605 generated molecules and produce `results/02_drugclip_top200.csv`.
 
-## Architecture
+- backbone space: archived DrugCLIP 2023 representations
+- task: four-GPCR pocket retrieval (B2AR, CCR2, M2R and M4R)
+- adaptation: rank-4 projection updates, three seeds
+- seeds: 20260925, 20260926 and 20260927
+- ensemble: arithmetic mean of the three cosine scores
 
-The package contains three projection-head checkpoints. Each head maps frozen 512-dimensional molecule and pocket representations into a normalized 256-dimensional space. Molecule-pocket similarity is the cosine score, averaged over seeds and pocket conformations.
+The checkpoints estimate molecule-pocket compatibility. They do not predict PAM efficacy.
 
-## Training protocol
+## Reference models not used for the frozen ranking
 
-- backbone representations: DrugCLIP-derived;
-- adaptation: muscarinic/GPCR family transfer with M4 held out from fitting;
-- seeds: 20260925, 20260926 and 20260927;
-- inference model: equal-weight three-seed ensemble;
-- validation: target-level and scaffold-aware checks recorded in the full repository.
+`reference_not_used/drugclip2023_m4_loto/` contains an M4 leave-one-target-out experiment.
+`reference_not_used/drugclip2026_family_aug/` contains the 2026 family-augmentation experiment.
+Both are supplied for audit and comparison only. Neither directory contributed to `02_drugclip_top200.csv` or the final candidate order.
 
-## Inputs
-
-NPZ files containing `molecule_ids`, `molecule_representations`, `pocket_ids` and `pocket_representations`.
-
-## Checkpoint hashes
-
-| Seed | SHA-256 |
-|---|---|
-| 20260925 | `a954c7c16fe857b5e3b02f1fbfdf7b2b1284d3559d86448b33736e16dd5d7398` |
-| 20260926 | `3cc92da9f066a36f9d65b47b7859e69ee7a456d48047a3e1bbd509283d50d4b9` |
-| 20260927 | `578ab8349fa8723f5609067e6511ebdfab8541dab8558e883bb7affeb7a8780c` |
-
-## Output
-
-A cosine binding score and rank for each molecule.
+The large upstream DrugCLIP base checkpoints are not redistributed in this package. Their local copies were about 1.18 GB each and exceed GitHub's file-size limit. The compact projection checkpoints, hashes and validation reports are included.
 
 ## Known limits
 
-The score estimates pocket compatibility. It does not establish affinity, cooperativity, intrinsic agonism, selectivity, safety or clinical activity. Scores should be combined with structural and functional evidence and tested experimentally.
+The original hardware and wall-clock time were not retained for every historical training job. This missing metadata is not reconstructed. The package preserves the final checkpoint bytes, seeds, training report and frozen inference outputs.

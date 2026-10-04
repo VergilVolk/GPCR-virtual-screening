@@ -1,49 +1,26 @@
 from __future__ import annotations
 
 import argparse
-import json
 import subprocess
 import sys
 from pathlib import Path
-
 
 ROOT = Path(__file__).resolve().parent
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Launch the documented DrugCLIP adapter training")
-    parser.add_argument("--repo-root", type=Path, default=ROOT.parent)
-    parser.add_argument("--representations", type=Path, default=Path("data/training/representations.pt"))
-    parser.add_argument("--projection", type=Path, default=Path("data/training/base_projection.pt"))
-    parser.add_argument("--contrasts", type=Path, default=Path("data/training/contrasts.csv"))
-    parser.add_argument("--output", type=Path, default=ROOT / "models/retrained")
+    parser = argparse.ArgumentParser(description="Train the GPCR-adapted DrugCLIP projection ensemble")
+    parser.add_argument("--representations", type=Path, required=True)
+    parser.add_argument("--projection", type=Path, required=True)
+    parser.add_argument("--benchmark", type=Path, required=True)
+    parser.add_argument("--output", type=Path, default=ROOT / "models/retrained/model.json")
     parser.add_argument("--seeds", default="20260925,20260926,20260927")
-    parser.add_argument("--epochs", type=int, default=80)
-    parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
-
-    packaged = ROOT / "src/production/drugclip_triplet_finetune.py"
-    script = packaged if packaged.exists() else args.repo_root / "project/scripts/finetune_drugclip_muscarinic_triplet.py"
-    if not script.exists():
-        raise FileNotFoundError(
-            "DrugCLIP triplet fine-tuning script was not found."
-        )
-    command = [
-        sys.executable, str(script),
-        "--representations", str(args.representations),
-        "--projection", str(args.projection),
-        "--contrasts", str(args.contrasts),
-        "--output", str(args.output),
-        "--seeds", args.seeds,
-        "--epochs", str(args.epochs),
-    ]
-    manifest = {
-        "entrypoint": str(script), "seeds": args.seeds, "epochs": args.epochs,
-        "note": "Target and scaffold separation must follow the frozen protocol in logs/training_manifest.json",
-    }
-    print(json.dumps(manifest, indent=2))
-    if not args.dry_run:
-        subprocess.run(command, cwd=args.repo_root, check=True)
+    script = ROOT / "src/production/finetune_drugclip_gpcr_retrieval.py"
+    command = [sys.executable, str(script), "--representations", str(args.representations),
+               "--projection", str(args.projection), "--benchmark", str(args.benchmark),
+               "--output", str(args.output), "--seeds", args.seeds]
+    subprocess.run(command, cwd=script.parent, check=True)
 
 
 if __name__ == "__main__":

@@ -69,7 +69,7 @@ FORBIDDEN = {name: False for name in (
     "graph_refit", "region_refit", "threshold_selection", "outcome_driven_tuning",
     "md_rerun", "source_modification",
 )}
-CLAIM = ("Prospective frozen PACER-FKG dynamic differential evaluation only. "
+CLAIM = ("Prospective frozen four-context dynamic differential evaluation only. "
          "No PAM/ago-PAM labels, probability, efficacy or independent-block inference.")
 AA = dict(zip(("ALA ARG ASN ASP CYS GLN GLU GLY HIS ILE LEU LYS MET PHE PRO SER THR TRP TYR VAL").split(),
               "ARNDCQEGHILKMFPSTWYV"))

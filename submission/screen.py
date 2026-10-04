@@ -7,11 +7,11 @@ from src.screen_core import screen, write_score_table
 
 
 ROOT = Path(__file__).resolve().parent
-MODEL_TAG = "DrugCLIP-2023 M4 leave-one-target-out adapter, 3-seed ensemble"
+MODEL_TAG = "DrugCLIP-2023 GPCR-adapted projection ensemble, 3 seeds"
 
 
 def model_paths() -> list[Path]:
-    return sorted(ROOT.glob("models/drugclip2023_m4_loto_seed*.projection.pt"))
+    return sorted((ROOT / "models/used_module2").glob("seed*.projection.pt"))
 
 
 def run_screen(molecules: Path, pockets: Path, output: Path) -> Path:

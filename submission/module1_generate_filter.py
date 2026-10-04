@@ -9,6 +9,8 @@ ROOT = Path(__file__).resolve().parent
 
 def evaluate_library(input_path: Path, output_path: Path) -> pd.DataFrame:
     table = pd.read_csv(input_path).rename(columns={"molecule_id": "candidate_id"})
+    if "candidate_id" not in table.columns:
+        table.insert(0, "candidate_id", [f"PACERGEN{i:05d}" for i in range(1, len(table) + 1)])
     rows = []
     for row in table.itertuples(index=False):
         mol = Chem.MolFromSmiles(row.smiles)

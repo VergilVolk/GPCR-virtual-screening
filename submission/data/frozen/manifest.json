@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "frozen_on": "2026-10-04",
+  "files": {
+    "candidate_audit_2592.csv": {"bytes": 625626, "sha256": "085c59bc874a68036ae93312c688a6badbc57c7072e7e23b0ca6914fce88da53"},
+    "candidate_id_mapping.csv": {"bytes": 170, "sha256": "ea0da704e1826926b7275d55faa5a3a16560e7cdd1932aea2c5a9756bf94e605"},
+    "drugclip_rerun_top200.csv": {"bytes": 21143, "sha256": "41c5a69e6c54825d0cbe9149a2f1fe9dbe5ea4ae2de137c161450607c3fa28eb"},
+    "four_context_results.json": {"bytes": 19365166, "sha256": "ab224fa812588ccd89e5f988fd21d47a24f133a8c6cd25945564256f21be9a70"},
+    "generated_candidates_2605.csv": {"bytes": 262621, "sha256": "a832c9cb2cfbed9b2e3db7902b48db5c384980cc70c551961c87f57db9e3be5d"},
+    "six_channel_top5_plus_anchors.csv": {"bytes": 3125, "sha256": "cd59f0a8e86cfc29d5163d917aa14f8b38a475871eef609fd821eb08fd5af378"}
+  }
+}

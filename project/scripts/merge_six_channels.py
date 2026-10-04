@@ -14,9 +14,10 @@ RECEPTORS = ['7TRQ', '7TRP', '7TRS']
 base = pd.read_csv(R + r'\module2_top200_output.csv')
 
 # --- Vina 三通道（CSV 已恢复/将恢复）---
+CSVNAMES = {'7TRQ': 'module3_static7TRQ_results.csv', '7TRP': 'module3_7TRP_results.csv', '7TRS': 'module3_7TRS_results.csv'}
 vina_scores = {}
 for name in RECEPTORS:
-    csv = f'{R}\\module3_{name}_results.csv'
+    csv = f'{R}\\{CSVNAMES[name]}'
     if os.path.exists(csv):
         d = pd.read_csv(csv)
         col = [c for c in d.columns if c.startswith('vina_')]

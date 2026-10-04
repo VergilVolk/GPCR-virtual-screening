@@ -1,0 +1,73 @@
+{
+  "reference_source": "tylerdt1/gpcr-am-ensemble-docking",
+  "reference_commit": "44798c841ee77230b1f89fe41074e41b458c7070",
+  "provenance_document": "docs/THOMPSON_MIAO_2026_EXACT_REPRODUCTION.md",
+  "channels": {
+    "Glide_PDB": {
+      "path": "results/pacer_xr_rerun_v01/references/PDB/M4R_PDB_Glide_scores.csv",
+      "column": "glide_gscore",
+      "sha256": "f2bd6ba5fb954c083f87fd332c1b3d147fe9d7ae7c9bd4521d543ec941c5f23b",
+      "git_blob": "e53bc82a61c3d808c00d0418d5e837922c881d6a",
+      "rows": 116392,
+      "finite_rows": 116392,
+      "nonfinite_rows": 0,
+      "source_url": "https://raw.githubusercontent.com/tylerdt1/gpcr-am-ensemble-docking/44798c841ee77230b1f89fe41074e41b458c7070/docking_scores/M4R/PDB/M4R_PDB_Glide_scores.csv",
+      "source_commit": "44798c841ee77230b1f89fe41074e41b458c7070"
+    },
+    "Glide_BEmin": {
+      "path": "results/pacer_xr_rerun_v01/references/Ensemble/M4R_Ensemble_Glide_BEmin_ranked.csv",
+      "column": "BE_min",
+      "sha256": "9ec75c666678801cb1562fac0a425e2f00c6c99b9e34cf96ee8be3e79e0d7a58",
+      "git_blob": "e4c00d306c7f14e3e6a8600408c243a164552693",
+      "rows": 117642,
+      "finite_rows": 117642,
+      "nonfinite_rows": 0,
+      "source_url": "https://raw.githubusercontent.com/tylerdt1/gpcr-am-ensemble-docking/44798c841ee77230b1f89fe41074e41b458c7070/docking_scores/M4R/Ensemble/M4R_Ensemble_Glide_BEmin_ranked.csv",
+      "source_commit": "44798c841ee77230b1f89fe41074e41b458c7070"
+    },
+    "Glide_BEavg": {
+      "path": "results/pacer_xr_rerun_v01/references/Ensemble/M4R_Ensemble_Glide_BEavg_ranked.csv",
+      "column": "BE_avg",
+      "sha256": "622b9c3f6bce22df5f140ef2d14cab440c42f734fc4f7b7988bee2f3db598088",
+      "git_blob": "454f531b32f16e6a04ba260c37c4c71671c1dd04",
+      "rows": 117642,
+      "finite_rows": 117642,
+      "nonfinite_rows": 0,
+      "source_url": "https://raw.githubusercontent.com/tylerdt1/gpcr-am-ensemble-docking/44798c841ee77230b1f89fe41074e41b458c7070/docking_scores/M4R/Ensemble/M4R_Ensemble_Glide_BEavg_ranked.csv",
+      "source_commit": "44798c841ee77230b1f89fe41074e41b458c7070"
+    },
+    "Vina_PDB": {
+      "path": "results/pacer_xr_rerun_v01/references/PDB/M4R_PDB_Vina_scores.csv",
+      "column": "vina_score",
+      "sha256": "1e49ed90954b518c6b4623e40b64680ec14e878fbfd9456d31ed418d31232434",
+      "git_blob": "c35622bb512049579eb826e5f786686b1dc8c3fe",
+      "rows": 117568,
+      "finite_rows": 117568,
+      "nonfinite_rows": 0,
+      "source_url": "https://raw.githubusercontent.com/tylerdt1/gpcr-am-ensemble-docking/44798c841ee77230b1f89fe41074e41b458c7070/docking_scores/M4R/PDB/M4R_PDB_Vina_scores.csv",
+      "source_commit": "44798c841ee77230b1f89fe41074e41b458c7070"
+    },
+    "Vina_BEmin": {
+      "path": "results/pacer_xr_rerun_v01/references/Ensemble/M4R_Ensemble_Vina_BEmin_ranked.csv",
+      "column": "BE_min",
+      "sha256": "2182888f6526ef5487f5e53d84ec8a7e4fdabc0453df12c4e42184c8950debe3",
+      "git_blob": "9e6d585d2df4e591103d8ec7d7c61845c73a15ee",
+      "rows": 115771,
+      "finite_rows": 115771,
+      "nonfinite_rows": 0,
+      "source_url": "https://raw.githubusercontent.com/tylerdt1/gpcr-am-ensemble-docking/44798c841ee77230b1f89fe41074e41b458c7070/docking_scores/M4R/Ensemble/M4R_Ensemble_Vina_BEmin_ranked.csv",
+      "source_commit": "44798c841ee77230b1f89fe41074e41b458c7070"
+    },
+    "Vina_BEavg": {
+      "path": "results/pacer_xr_rerun_v01/references/Ensemble/M4R_Ensemble_Vina_BEavg_ranked.csv",
+      "column": "BE_avg",
+      "sha256": "cd456411f4648faee4b2a83d87c594f8fdcc4f194e68254d61d5418449be3e7f",
+      "git_blob": "911d5c33f54877c4357e8a44d07a2e74612edb22",
+      "rows": 115771,
+      "finite_rows": 115771,
+      "nonfinite_rows": 0,
+      "source_url": "https://raw.githubusercontent.com/tylerdt1/gpcr-am-ensemble-docking/44798c841ee77230b1f89fe41074e41b458c7070/docking_scores/M4R/Ensemble/M4R_Ensemble_Vina_BEavg_ranked.csv",
+      "source_commit": "44798c841ee77230b1f89fe41074e41b458c7070"
+    }
+  }
+}

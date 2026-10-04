@@ -1,0 +1,16 @@
+{
+  "source_branch": "backup/pacer-xr-emergency-8mol-v01",
+  "source_commit": "e3ec527b",
+  "scope": "three historical anchors with complete Glide and Vina channels",
+  "channels": [
+    "Glide_PDB",
+    "Glide_BEmin",
+    "Glide_BEavg",
+    "Vina_PDB",
+    "Vina_BEmin",
+    "Vina_BEavg"
+  ],
+  "fusion": "equal mean of six empirical rank percentiles",
+  "missing_score_policy": "fail; no imputation",
+  "claim_boundary": "broad allosteric-modulator retrieval evidence, not PAM efficacy"
+}

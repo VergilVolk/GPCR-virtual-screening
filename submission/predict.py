@@ -6,7 +6,7 @@ from pathlib import Path
 import pandas as pd
 
 from module1_generate_filter import evaluate_library
-from module3_ensemble_dock import summarize
+from module3_ensemble_dock import fuse_six_channels
 from module4_fkg_eval import export_evidence
 from screen import run_screen
 
@@ -21,7 +21,7 @@ def run_pipeline(
     candidate_library: Path = ROOT / "data/demo/candidate_library.csv",
     molecule_representations: Path = ROOT / "data/demo/m4_candidate_representations.npz",
     pocket_representations: Path = ROOT / "data/demo/m4_pocket_representations.npz",
-    docking_summary: Path = ROOT / "data/demo/ensemble_docking_summary.csv",
+    docking_summary: Path = ROOT / "data/demo/six_channel_docking_summary.csv",
     functional_summary: Path = ROOT / "data/demo/prospective_four_context_summary.csv",
 ) -> pd.DataFrame:
     results = ROOT / "results"
@@ -34,7 +34,7 @@ def run_pipeline(
         results / "module2_binding.csv",
     )
     binding = pd.read_csv(results / "module2_binding.csv")
-    structure = summarize(
+    structure = fuse_six_channels(
         docking_summary,
         results / "module3_structure.csv",
     )
@@ -46,7 +46,7 @@ def run_pipeline(
 
     table = chemistry.merge(binding, left_on="smiles", right_on="molecule_id", how="left")
     table = table.merge(
-        structure, left_on="candidate_id", right_on="candidate_id", how="left",
+        structure, left_on="candidate_id", right_on="candidate_id", how="inner",
         suffixes=("", "_structure"),
     )
     prospective = function[function.evidence_set == "prospective_candidate"]
@@ -61,14 +61,14 @@ def run_pipeline(
     table["model_version"] = PIPELINE_VERSION
     table["claim_status"] = "high-priority computational candidate; experimental validation required"
     table = table.sort_values(
-        ["chemistry_pass", "structural_gate_pass", "selection_rank"],
-        ascending=[False, False, True],
+        ["chemistry_pass", "six_channel_complete", "pacer_xr_score"],
+        ascending=[False, False, False],
     ).reset_index(drop=True)
     table.insert(0, "final_rank", range(1, len(table) + 1))
     columns = [
         "final_rank", "candidate_id", "track", "smiles", "chemistry_pass", "qed",
-        "binding_score", "binding_rank", "best_vina", "mean_vina",
-        "cluster_coverage_fraction", "structural_gate_pass", "functional_evidence",
+        "binding_score", "binding_rank", "pacer_xr_score", "pacer_xr_rank",
+        "candidate_cascade_rank", "six_channel_complete", "functional_evidence",
         "model_version", "claim_status",
     ]
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -82,7 +82,7 @@ def main() -> None:
     parser.add_argument("--candidate-library", type=Path, default=ROOT / "data/demo/candidate_library.csv")
     parser.add_argument("--molecule-representations", type=Path, default=ROOT / "data/demo/m4_candidate_representations.npz")
     parser.add_argument("--pocket-representations", type=Path, default=ROOT / "data/demo/m4_pocket_representations.npz")
-    parser.add_argument("--docking-summary", type=Path, default=ROOT / "data/demo/ensemble_docking_summary.csv")
+    parser.add_argument("--docking-summary", type=Path, default=ROOT / "data/demo/six_channel_docking_summary.csv")
     parser.add_argument("--functional-summary", type=Path, default=ROOT / "data/demo/prospective_four_context_summary.csv")
     parser.add_argument("--demo", action="store_true")
     args = parser.parse_args()

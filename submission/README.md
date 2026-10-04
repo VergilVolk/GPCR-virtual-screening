@@ -37,11 +37,11 @@ python module4_fkg_eval.py --demo
 |---|---|---|---|
 | Chemistry | candidate ID and SMILES | validity, PAINS, physicochemical and QED checks | `module1_chemistry.csv` |
 | Pocket retrieval | frozen 512-dimensional molecule and M4-pocket representations | three M4 leave-one-target-out projection heads; cosine score | `module2_binding.csv` |
-| Structure | frozen state-wise docking summary | ten-state Vina ensemble, pocket occupancy and contact gates | `module3_structure.csv` |
+| Structure | six protocol-matched docking channels | Glide/Vina across PDB, BEmin and BEavg; equal-rank fusion | `module3_structure.csv` |
 | Function | four receptor contexts: apo, ACh, candidate, ACh+candidate | interaction contrast `CP - P - C + A` and cross-replica direction agreement | `module4_function.csv` |
 | Integration | outputs above | evidence-preserving merge | `results.csv` |
 
-The example contains 12 candidates. The structure table was computed over ten receptor conformations. The prospective dynamics set contains three candidates, four contexts and three replicas per candidate (36 trajectories, 10 ns each). Raw trajectories are not duplicated in this compact package because of their size; the frozen summaries and full analysis code remain in the repository.
+The example starts with 12 candidates. Three candidates have complete protocol-matched Glide and Vina evidence and continue to the final table. The prospective dynamics set contains those three candidates, four contexts and three replicas per candidate (36 trajectories, 10 ns each). Raw trajectories are not duplicated in this compact package because of their size; the frozen summaries and full analysis code remain in the repository.
 
 ## Training and model files
 
@@ -59,16 +59,18 @@ Remove `--dry-run` only in a full repository checkout and provide the training r
 
 The packaged demo replays frozen docking and MD summaries so it can run on a CPU laptop. Full production runs require:
 
-- AutoDock Vina 1.2.7 for state-wise docking;
+- AutoDock Vina 1.2.7 and Schrödinger Glide for the two docking engines;
 - the receptor ensemble and prepared structures listed in `data/README.md`;
 - OpenMM for membrane MD;
 - substantially more time and storage than the compact demo.
 
-Commercial Glide scores used in a separate public benchmark are not required by this submission and are not represented as locally generated results.
+Module 3 uses six channels: Glide-PDB, Glide-BEmin, Glide-BEavg, Vina-PDB, Vina-BEmin and Vina-BEavg. PDB denotes the experimental receptor structure. BEmin is the best PMF-adjusted score across the GaMD ensemble, while BEavg is the mean PMF-adjusted ensemble score. Each channel is converted to an empirical rank percentile against its frozen M4 reference distribution. The six percentiles are averaged without fitted weights. Missing channels are rejected rather than imputed. The compact demo recomputes the fusion from frozen raw scores and percentiles; rerunning Glide requires a valid Schrödinger installation and license.
+
+The production implementation is retained in `project/scripts/run_pacer_xr_full_rerun_v01.py`, with separate Glide and Vina runners, six-channel assembly and an acceptance validator. The public M4 benchmark results are stored in `results/module3_benchmark.csv`.
 
 ## Result fields
 
-`results/results.csv` includes candidate ID, track, SMILES, chemistry checks, M4 binding score, docking energy, ensemble coverage, structural gate, functional-evidence status, model version and claim status. Blank functional fields mean that the candidate has not completed prospective four-context MD.
+`results/results.csv` includes candidate ID, track, SMILES, chemistry checks, M4 binding score, six-channel docking consensus, functional-evidence status, model version and claim status.
 
 ## Limits
 

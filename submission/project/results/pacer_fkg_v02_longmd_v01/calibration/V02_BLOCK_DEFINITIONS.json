@@ -1,0 +1,258 @@
+{
+  "block_size": 20,
+  "blocks": [
+    {
+      "block_id": 0,
+      "start_frame": 0,
+      "stop_frame_exclusive": 20
+    },
+    {
+      "block_id": 1,
+      "start_frame": 20,
+      "stop_frame_exclusive": 40
+    },
+    {
+      "block_id": 2,
+      "start_frame": 40,
+      "stop_frame_exclusive": 60
+    },
+    {
+      "block_id": 3,
+      "start_frame": 60,
+      "stop_frame_exclusive": 80
+    },
+    {
+      "block_id": 4,
+      "start_frame": 80,
+      "stop_frame_exclusive": 100
+    },
+    {
+      "block_id": 5,
+      "start_frame": 100,
+      "stop_frame_exclusive": 120
+    },
+    {
+      "block_id": 6,
+      "start_frame": 120,
+      "stop_frame_exclusive": 140
+    },
+    {
+      "block_id": 7,
+      "start_frame": 140,
+      "stop_frame_exclusive": 160
+    },
+    {
+      "block_id": 8,
+      "start_frame": 160,
+      "stop_frame_exclusive": 180
+    },
+    {
+      "block_id": 9,
+      "start_frame": 180,
+      "stop_frame_exclusive": 200
+    },
+    {
+      "block_id": 10,
+      "start_frame": 200,
+      "stop_frame_exclusive": 220
+    },
+    {
+      "block_id": 11,
+      "start_frame": 220,
+      "stop_frame_exclusive": 240
+    },
+    {
+      "block_id": 12,
+      "start_frame": 240,
+      "stop_frame_exclusive": 260
+    },
+    {
+      "block_id": 13,
+      "start_frame": 260,
+      "stop_frame_exclusive": 280
+    },
+    {
+      "block_id": 14,
+      "start_frame": 280,
+      "stop_frame_exclusive": 300
+    },
+    {
+      "block_id": 15,
+      "start_frame": 300,
+      "stop_frame_exclusive": 320
+    },
+    {
+      "block_id": 16,
+      "start_frame": 320,
+      "stop_frame_exclusive": 340
+    },
+    {
+      "block_id": 17,
+      "start_frame": 340,
+      "stop_frame_exclusive": 360
+    },
+    {
+      "block_id": 18,
+      "start_frame": 360,
+      "stop_frame_exclusive": 380
+    },
+    {
+      "block_id": 19,
+      "start_frame": 380,
+      "stop_frame_exclusive": 400
+    },
+    {
+      "block_id": 20,
+      "start_frame": 400,
+      "stop_frame_exclusive": 420
+    },
+    {
+      "block_id": 21,
+      "start_frame": 420,
+      "stop_frame_exclusive": 440
+    },
+    {
+      "block_id": 22,
+      "start_frame": 440,
+      "stop_frame_exclusive": 460
+    },
+    {
+      "block_id": 23,
+      "start_frame": 460,
+      "stop_frame_exclusive": 480
+    },
+    {
+      "block_id": 24,
+      "start_frame": 480,
+      "stop_frame_exclusive": 500
+    },
+    {
+      "block_id": 25,
+      "start_frame": 500,
+      "stop_frame_exclusive": 520
+    },
+    {
+      "block_id": 26,
+      "start_frame": 520,
+      "stop_frame_exclusive": 540
+    },
+    {
+      "block_id": 27,
+      "start_frame": 540,
+      "stop_frame_exclusive": 560
+    },
+    {
+      "block_id": 28,
+      "start_frame": 560,
+      "stop_frame_exclusive": 580
+    },
+    {
+      "block_id": 29,
+      "start_frame": 580,
+      "stop_frame_exclusive": 600
+    },
+    {
+      "block_id": 30,
+      "start_frame": 600,
+      "stop_frame_exclusive": 620
+    },
+    {
+      "block_id": 31,
+      "start_frame": 620,
+      "stop_frame_exclusive": 640
+    },
+    {
+      "block_id": 32,
+      "start_frame": 640,
+      "stop_frame_exclusive": 660
+    },
+    {
+      "block_id": 33,
+      "start_frame": 660,
+      "stop_frame_exclusive": 680
+    },
+    {
+      "block_id": 34,
+      "start_frame": 680,
+      "stop_frame_exclusive": 700
+    },
+    {
+      "block_id": 35,
+      "start_frame": 700,
+      "stop_frame_exclusive": 720
+    },
+    {
+      "block_id": 36,
+      "start_frame": 720,
+      "stop_frame_exclusive": 740
+    },
+    {
+      "block_id": 37,
+      "start_frame": 740,
+      "stop_frame_exclusive": 760
+    },
+    {
+      "block_id": 38,
+      "start_frame": 760,
+      "stop_frame_exclusive": 780
+    },
+    {
+      "block_id": 39,
+      "start_frame": 780,
+      "stop_frame_exclusive": 800
+    },
+    {
+      "block_id": 40,
+      "start_frame": 800,
+      "stop_frame_exclusive": 820
+    },
+    {
+      "block_id": 41,
+      "start_frame": 820,
+      "stop_frame_exclusive": 840
+    },
+    {
+      "block_id": 42,
+      "start_frame": 840,
+      "stop_frame_exclusive": 860
+    },
+    {
+      "block_id": 43,
+      "start_frame": 860,
+      "stop_frame_exclusive": 880
+    },
+    {
+      "block_id": 44,
+      "start_frame": 880,
+      "stop_frame_exclusive": 900
+    },
+    {
+      "block_id": 45,
+      "start_frame": 900,
+      "stop_frame_exclusive": 920
+    },
+    {
+      "block_id": 46,
+      "start_frame": 920,
+      "stop_frame_exclusive": 940
+    },
+    {
+      "block_id": 47,
+      "start_frame": 940,
+      "stop_frame_exclusive": 960
+    },
+    {
+      "block_id": 48,
+      "start_frame": 960,
+      "stop_frame_exclusive": 980
+    },
+    {
+      "block_id": 49,
+      "start_frame": 980,
+      "stop_frame_exclusive": 1000
+    }
+  ],
+  "frame_count": 1000,
+  "partial_blocks": false,
+  "schema": "pacer_fkg_v02.block_definitions.v1"
+}

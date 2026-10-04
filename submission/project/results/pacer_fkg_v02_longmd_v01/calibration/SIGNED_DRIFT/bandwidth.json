@@ -1,0 +1,18 @@
+{
+  "algorithm": "median positive pairwise Euclidean distance",
+  "bandwidth": 29.29934899925964,
+  "branch": "SIGNED_DRIFT",
+  "calibration_blocks": 200,
+  "calibration_replica": 2,
+  "dtype": "float64",
+  "family": "RBF",
+  "residue_indices": [
+    0,
+    67,
+    134,
+    201,
+    269
+  ],
+  "samples": 1000,
+  "schema": "pacer_fkg_v02.bandwidth.v1"
+}

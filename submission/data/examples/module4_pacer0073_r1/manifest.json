@@ -1,0 +1,293 @@
+{
+  "candidate": "PACER0073",
+  "receptor_cluster": 0,
+  "source_root_at_extraction": "C:\\projects\\PACER_STAGE4_MD_backup",
+  "sample_kind": "first frozen-stride block of production R1",
+  "claim_boundary": "Input demonstration only; not full Stage4 authentication, three-replica evaluation or PAM evidence.",
+  "coordinate_unit": "angstrom",
+  "time_unit": "ps",
+  "interpolation": false,
+  "MDAnalysis_version": "2.10.0",
+  "systems": [
+    {
+      "system": "cluster0__apo",
+      "replica": 1,
+      "seed": 27101,
+      "atoms": 75941,
+      "source_topology": "systems/cluster0__apo/minimized.pdb",
+      "source_trajectory": "production/cluster0__apo/replica_01/trajectory.dcd",
+      "source_sha256": {
+        "topology": "80d8fffe1eb2a07dc4caaad7c31b00819fff968a986719486dfde5a9ef6f29e2",
+        "trajectory": "a8a8b7b29b52e407ea8e1c228c63d501f8ef30d5eb28e4e0ba4915c924a8ccf2"
+      },
+      "raw_frame_ids": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "source_times_ps": [
+        10.000000029814057,
+        60.00000017888434,
+        110.00000032795462,
+        160.0000004770249,
+        210.0000006260952,
+        260.00000077516546,
+        310.0000009242358,
+        360.00000107330607,
+        410.00000122237634,
+        460.0000013714466,
+        510.0000015205169,
+        560.0000016695872,
+        610.0000018186574,
+        660.0000019677277,
+        710.0000021167981,
+        760.0000022658684,
+        810.0000024149386,
+        860.0000025640089,
+        910.0000027130792,
+        960.0000028621495
+      ],
+      "sample_files": {
+        "topology": {
+          "path": "cluster0__apo/minimized.pdb",
+          "bytes": 6816140,
+          "sha256": "80d8fffe1eb2a07dc4caaad7c31b00819fff968a986719486dfde5a9ef6f29e2"
+        },
+        "trajectory": {
+          "path": "cluster0__apo/trajectory_sample.dcd",
+          "bytes": 18227796,
+          "sha256": "25a7652cfe81bceb6a9b8125105431a780225a43bdfe8a612c9dc32e4f58c6a2"
+        }
+      },
+      "coordinates_bitwise_equal": true,
+      "source_unchanged": true
+    },
+    {
+      "system": "cluster0__probe_only",
+      "replica": 1,
+      "seed": 27101,
+      "atoms": 75967,
+      "source_topology": "systems/cluster0__probe_only/minimized.pdb",
+      "source_trajectory": "production/cluster0__probe_only/replica_01/trajectory.dcd",
+      "source_sha256": {
+        "topology": "01f1e3dbb157c3564ca0854f11fa6e14380d28e28425db49c58d18b1a0d1a395",
+        "trajectory": "f0cd9d0a7b55657cc585ad5be731b780b255fece508acfd39da3de4f411dcc52"
+      },
+      "raw_frame_ids": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "source_times_ps": [
+        10.000000029814057,
+        60.00000017888434,
+        110.00000032795462,
+        160.0000004770249,
+        210.0000006260952,
+        260.00000077516546,
+        310.0000009242358,
+        360.00000107330607,
+        410.00000122237634,
+        460.0000013714466,
+        510.0000015205169,
+        560.0000016695872,
+        610.0000018186574,
+        660.0000019677277,
+        710.0000021167981,
+        760.0000022658684,
+        810.0000024149386,
+        860.0000025640089,
+        910.0000027130792,
+        960.0000028621495
+      ],
+      "sample_files": {
+        "topology": {
+          "path": "cluster0__probe_only/minimized.pdb",
+          "bytes": 6818835,
+          "sha256": "01f1e3dbb157c3564ca0854f11fa6e14380d28e28425db49c58d18b1a0d1a395"
+        },
+        "trajectory": {
+          "path": "cluster0__probe_only/trajectory_sample.dcd",
+          "bytes": 18234036,
+          "sha256": "03d92f7057497a2136d94a2d5377e5082fe73cc5cb9bcf7a211c37b4a3e7dee7"
+        }
+      },
+      "coordinates_bitwise_equal": true,
+      "source_unchanged": true
+    },
+    {
+      "system": "PACER0073__candidate_no_probe",
+      "replica": 1,
+      "seed": 27101,
+      "atoms": 75982,
+      "source_topology": "systems/PACER0073__candidate_no_probe/minimized.pdb",
+      "source_trajectory": "production/PACER0073__candidate_no_probe/replica_01/trajectory.dcd",
+      "source_sha256": {
+        "topology": "8dd70844841052cf0ac10a6f6186be34676b7e2cb313c6ad43b10a2fe1761cdb",
+        "trajectory": "f74413274fabce6c9994b3f8568711e662c18eed5809d5087f16683a8d4ba630"
+      },
+      "raw_frame_ids": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "source_times_ps": [
+        10.000000029814057,
+        60.00000017888434,
+        110.00000032795462,
+        160.0000004770249,
+        210.0000006260952,
+        260.00000077516546,
+        310.0000009242358,
+        360.00000107330607,
+        410.00000122237634,
+        460.0000013714466,
+        510.0000015205169,
+        560.0000016695872,
+        610.0000018186574,
+        660.0000019677277,
+        710.0000021167981,
+        760.0000022658684,
+        810.0000024149386,
+        860.0000025640089,
+        910.0000027130792,
+        960.0000028621495
+      ],
+      "sample_files": {
+        "topology": {
+          "path": "PACER0073__candidate_no_probe/minimized.pdb",
+          "bytes": 6820562,
+          "sha256": "8dd70844841052cf0ac10a6f6186be34676b7e2cb313c6ad43b10a2fe1761cdb"
+        },
+        "trajectory": {
+          "path": "PACER0073__candidate_no_probe/trajectory_sample.dcd",
+          "bytes": 18237636,
+          "sha256": "f6885b2157f7a7107dd2ddfac84c642fb4bccb9dbcf02fbd983b4c20018f5081"
+        }
+      },
+      "coordinates_bitwise_equal": true,
+      "source_unchanged": true
+    },
+    {
+      "system": "PACER0073__candidate_probe",
+      "replica": 1,
+      "seed": 27101,
+      "atoms": 76008,
+      "source_topology": "systems/PACER0073__candidate_probe/minimized.pdb",
+      "source_trajectory": "production/PACER0073__candidate_probe/replica_01/trajectory.dcd",
+      "source_sha256": {
+        "topology": "28161ea52cd401650b4f98fde3c24632195454c4d6377d3c6622e3767594209a",
+        "trajectory": "7dd8016d30b801b862b6ccefbe4d801d641dbdd05f3ae723f5d5dbd633433003"
+      },
+      "raw_frame_ids": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "source_times_ps": [
+        10.000000029814057,
+        60.00000017888434,
+        110.00000032795462,
+        160.0000004770249,
+        210.0000006260952,
+        260.00000077516546,
+        310.0000009242358,
+        360.00000107330607,
+        410.00000122237634,
+        460.0000013714466,
+        510.0000015205169,
+        560.0000016695872,
+        610.0000018186574,
+        660.0000019677277,
+        710.0000021167981,
+        760.0000022658684,
+        810.0000024149386,
+        860.0000025640089,
+        910.0000027130792,
+        960.0000028621495
+      ],
+      "sample_files": {
+        "topology": {
+          "path": "PACER0073__candidate_probe/minimized.pdb",
+          "bytes": 6823257,
+          "sha256": "28161ea52cd401650b4f98fde3c24632195454c4d6377d3c6622e3767594209a"
+        },
+        "trajectory": {
+          "path": "PACER0073__candidate_probe/trajectory_sample.dcd",
+          "bytes": 18243876,
+          "sha256": "17354cbb41b90ecf06fcb66bb60e7746e3f26aa9081e14b3d67c05fc679e7676"
+        }
+      },
+      "coordinates_bitwise_equal": true,
+      "source_unchanged": true
+    }
+  ]
+}

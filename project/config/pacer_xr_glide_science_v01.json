@@ -1,0 +1,8 @@
+{
+  "preparation_function_ast_sha256": "6bea9ba1eb0627c9907714487080e1e13c3002137aa5497f397df9cafa0b1a9e",
+  "shared_contract_sha256": "a5608eb8602523d609d375c4d67d25db6cf01500daea0af45bedb637882a7fa9",
+  "original_parser_sha256": "84235e7ef75e35498949bb6a8e0643f4ea775bca01d848f549984408cd72d4f4",
+  "assets_lock_sha256": "04b5d6107200315841bb3d05829613981d8bc8acdd4ebd97a5c92dd437c8e2a5",
+  "legacy_runner_sha256": "8ee314c5dd77a8a4fb213d5d5f013e1f842ffeb06b04627aa7d49de09763386e",
+  "version": "Glide SP production v01; scheduling excluded from scientific identity"
+}

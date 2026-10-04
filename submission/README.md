@@ -26,9 +26,23 @@ temporary synthetic inputs. It does not reproduce or disclose the submitted cand
 4. `module4_fkg_eval.py`: exports the frozen four-context result based on apo, ACh-only,
    candidate-only and candidate+ACh simulations.
 
-The original production scripts are kept in `src/production/`. They cover BRICS generation,
-SMILES-LSTM generation, Glide/Vina docking, six-channel fusion and the full four-context
-analysis. The top-level scripts are small inference interfaces around the same calculations.
+Copies of the production scripts are kept in `src/production/`. Their canonical locations in
+the full repository are `project/scripts/` and `project/pacer_fkg_v02/`. The top-level scripts
+are lightweight interfaces around the same scoring and fusion calculations.
+
+## Relation to the final screening run
+
+The final frozen candidate library was produced by the BRICS route. The SMILES-LSTM was a
+developed alternative generator and is included for reproducibility, but it is not presented
+as the source of that frozen library. The final binding stage used the three packaged M4
+leave-one-target-out DrugCLIP adapters. The structural stage used all six Glide/Vina channels.
+The four-context stage was run only for the selected historical validation molecules, not for
+every newly docked molecule.
+
+`predict.py` reproduces the chemistry checks, DrugCLIP adapter inference, six-channel fusion
+and Stage-4 result integration when their required inputs are supplied. It does not launch
+LigPrep/Glide, Vina or membrane MD itself. Those expensive production jobs remain separate
+because they require licensed software, prepared structures and trajectory storage.
 
 ## Unified inference entry
 

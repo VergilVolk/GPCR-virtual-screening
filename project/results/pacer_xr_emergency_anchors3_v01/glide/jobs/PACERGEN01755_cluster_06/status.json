@@ -1,0 +1,180 @@
+{
+  "job_key": "PACERGEN01755_cluster_06",
+  "fingerprint": "ddc76cbe9bf6c44a0a654bff8337d6506bb427f6f248dfe5a7d4f1d3baf5c2cb",
+  "inputs": {
+    "candidate_id": "PACERGEN01755",
+    "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12",
+    "receptor_id": "cluster_06",
+    "grid_sha256": "6d9be26c6ad2a529e46fa67354c35f4a2a471239eeac110d87eec5602120f22e",
+    "ligand_sha256": "2aae964e03cf7c86cd71592b131fd44ed0cc05d0f1e07732b6100a9cfa15cc72",
+    "center": [
+      44.96910344827587,
+      48.501241379310336,
+      61.25903448275863
+    ],
+    "protocol": {
+      "glide_precision": "SP",
+      "poses_per_lig": 5,
+      "postdock_npose": 5,
+      "forcefield": "OPLS_2005",
+      "max_states": 16,
+      "ph": 7,
+      "ligprep_flags": [
+        "-i",
+        "0",
+        "-nt",
+        "-ns",
+        "-bff",
+        "14"
+      ],
+      "vina_pdb": {
+        "exhaustiveness": 4,
+        "num_modes": 1,
+        "cpu": 1,
+        "seed": 42,
+        "preparation": "Parent canonical SMILES; RDKit ETKDGv3/MMFF300; Meeko, as dock_candidate_portfolio.py"
+      },
+      "vina_ensemble": {
+        "exhaustiveness": 8,
+        "num_modes": 9,
+        "energy_range": 3.0,
+        "cpu": 1,
+        "seed": 42,
+        "preparation": "Molscrub 0.1.1 pH7 max16; RDKit ETKDGv3 seed42+sid/MMFF300; Meeko"
+      }
+    },
+    "codes": {
+      "assemble_pacer_xr_six_channels_v01.py": "0bc486e07afc4708de16a9695d2db9bcd4e1149868e683f1d9e9fea5d024a307",
+      "audit_pacer_xr_glide_optimization_v01.py": "658bb6c21156e39250a8a65621e5ab58babe7ef30b805eab6c2426d5e32da1a3",
+      "benchmark_pacer_xr_glide_scheduler_v01.py": "9e486d7dde86451e26a867eb13079ac10adda8a76d7494af911472de1f5aa523",
+      "freeze_pacer_xr_assets_v01.py": "7b433f8155ff80dc2c9208a56bd382941ab5c1eea39893209d96e77c02064ab5",
+      "pacer_xr_glide_batch_bridge_v01.py": "d7458632aa6c1a4abdff36b34365330a22f676ee0152d19c3000b7cc1646bfc7",
+      "pacer_xr_glide_scheduler_v01.py": "c25b46140f6d255651c4cb5853034a341fcce3b497c539c49f9fc7dd2741b36d",
+      "pacer_xr_production_v01.py": "a5608eb8602523d609d375c4d67d25db6cf01500daea0af45bedb637882a7fa9",
+      "pacer_xr_schrodinger_v01.py": "84235e7ef75e35498949bb6a8e0643f4ea775bca01d848f549984408cd72d4f4",
+      "recover_pacer_xr_references_v01.py": "c44ec6c9b69c91e0fe36ee39e9813320da0af4d2c37224084775d75670d44f01",
+      "run_pacer_xr_full_rerun_v01.py": "5c0875c0fb956013b30bb98ce15b31c920f5ad65ed3e1418eefb692f06a0f2ae",
+      "run_pacer_xr_glide_rerun_v01.py": "539c3bd7079a7a1de0646dd571c6bfb0d6941e8b94c8de44e30a2a64424f85bb",
+      "run_pacer_xr_rerun_v01.py": "4bcfe589fbb85a4282bcde5aa9a10a14bd951d63d433714426c2324d136f824e",
+      "run_pacer_xr_vina_rerun_v01.py": "166b88c197d32774f13b992cb43fc551b8a6d4b497926f63ab474f5c1db1f252",
+      "validate_pacer_xr_acceptance_v01.py": "08ae0b831f0bae494dabbd41bf3b3d8212beeb2d141d80b9d97c1ad116896ff3",
+      "dock_m4_gamd_ensemble.py": "14ee8feed5f1d5490e1be62e62060bc6063622d83b73faeaa87ea1fb34b7ab67",
+      "apply_pacer_xr_candidates.py": "b2942e6d01ba3308cf208aa5f8fbb781694f0e72069aff9ea85cbd3a30977b2d"
+    },
+    "glide_executable_sha256": "1ecc1b7257ac8309d5e083908db85f36c47f8097acf4a8b17ee00ca6a1a4a17b"
+  },
+  "status": "PASS",
+  "attempt": 1,
+  "started_utc": 1791072705.9515154,
+  "work": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_anchors3_v01\\glide\\jobs\\PACERGEN01755_cluster_06\\attempt_0001",
+  "result": {
+    "candidate_id": "PACERGEN01755",
+    "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12",
+    "receptor_id": "cluster_06",
+    "cluster_id": 6,
+    "glide_gscore": -6.91788174264854,
+    "selected_variant_id": "PACERGEN01755__s00__v01",
+    "selected_entry_index": 2,
+    "n_poses": 5,
+    "n_returned_variants": 1,
+    "accepted_variants": 1,
+    "selected_pose": {
+      "candidate_id": "PACERGEN01755",
+      "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12",
+      "receptor_id": "cluster_06",
+      "grid_sha256": "6d9be26c6ad2a529e46fa67354c35f4a2a471239eeac110d87eec5602120f22e",
+      "molscrub_state_id": "PACERGEN01755__s00",
+      "prepared_variant_id": "PACERGEN01755__s00__v01",
+      "entry_index": 2,
+      "glide_pose_number": 134,
+      "glide_gscore": -6.91788174264854,
+      "pose_rank": 1
+    },
+    "poses": [
+      {
+        "candidate_id": "PACERGEN01755",
+        "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12",
+        "receptor_id": "cluster_06",
+        "grid_sha256": "6d9be26c6ad2a529e46fa67354c35f4a2a471239eeac110d87eec5602120f22e",
+        "molscrub_state_id": "PACERGEN01755__s00",
+        "prepared_variant_id": "PACERGEN01755__s00__v01",
+        "entry_index": 2,
+        "glide_pose_number": 134,
+        "glide_gscore": -6.91788174264854,
+        "pose_rank": 1
+      },
+      {
+        "candidate_id": "PACERGEN01755",
+        "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12",
+        "receptor_id": "cluster_06",
+        "grid_sha256": "6d9be26c6ad2a529e46fa67354c35f4a2a471239eeac110d87eec5602120f22e",
+        "molscrub_state_id": "PACERGEN01755__s00",
+        "prepared_variant_id": "PACERGEN01755__s00__v01",
+        "entry_index": 3,
+        "glide_pose_number": 291,
+        "glide_gscore": -6.61112410186558,
+        "pose_rank": 2
+      },
+      {
+        "candidate_id": "PACERGEN01755",
+        "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12",
+        "receptor_id": "cluster_06",
+        "grid_sha256": "6d9be26c6ad2a529e46fa67354c35f4a2a471239eeac110d87eec5602120f22e",
+        "molscrub_state_id": "PACERGEN01755__s00",
+        "prepared_variant_id": "PACERGEN01755__s00__v01",
+        "entry_index": 4,
+        "glide_pose_number": 174,
+        "glide_gscore": -6.2772829469887,
+        "pose_rank": 3
+      },
+      {
+        "candidate_id": "PACERGEN01755",
+        "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12",
+        "receptor_id": "cluster_06",
+        "grid_sha256": "6d9be26c6ad2a529e46fa67354c35f4a2a471239eeac110d87eec5602120f22e",
+        "molscrub_state_id": "PACERGEN01755__s00",
+        "prepared_variant_id": "PACERGEN01755__s00__v01",
+        "entry_index": 5,
+        "glide_pose_number": 302,
+        "glide_gscore": -5.77452937378918,
+        "pose_rank": 4
+      },
+      {
+        "candidate_id": "PACERGEN01755",
+        "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12",
+        "receptor_id": "cluster_06",
+        "grid_sha256": "6d9be26c6ad2a529e46fa67354c35f4a2a471239eeac110d87eec5602120f22e",
+        "molscrub_state_id": "PACERGEN01755__s00",
+        "prepared_variant_id": "PACERGEN01755__s00__v01",
+        "entry_index": 6,
+        "glide_pose_number": 385,
+        "glide_gscore": -5.2441298740235,
+        "pose_rank": 5
+      }
+    ],
+    "command": {
+      "argv": [
+        "C:\\Program Files\\Schrodinger2023-1\\glide.exe",
+        "dock.in",
+        "-WAIT",
+        "-LOCAL",
+        "-HOST",
+        "localhost",
+        "-NJOBS",
+        "1"
+      ],
+      "cwd": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_anchors3_v01\\glide\\jobs\\PACERGEN01755_cluster_06\\attempt_0001",
+      "exit_code": 0,
+      "elapsed_seconds": 42.44332480430603,
+      "log": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_anchors3_v01\\glide\\jobs\\PACERGEN01755_cluster_06\\attempt_0001\\glide.console.log"
+    },
+    "status": "PASS"
+  },
+  "artifacts": {
+    "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_anchors3_v01\\glide\\jobs\\PACERGEN01755_cluster_06\\attempt_0001\\dock_pv.maegz": "370ee5e5ed04ec8f3d01749684d4cdb9e580896b5839288be49284360adad815",
+    "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_anchors3_v01\\glide\\jobs\\PACERGEN01755_cluster_06\\attempt_0001\\poses.json": "e035b3329258a76c161c8a4f2848120c1cb3d7d2dab263c7138237101affd4bd",
+    "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_anchors3_v01\\glide\\jobs\\PACERGEN01755_cluster_06\\attempt_0001\\dock.in": "3d323a2df8e48e1eaa3c09e6fd890b1039425351ab784c08899e7ee24c689b5a",
+    "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_anchors3_v01\\glide\\jobs\\PACERGEN01755_cluster_06\\attempt_0001\\bridge_metadata.json": "2edfa492fceb5fa4c2dae505e7a92f8c9849e01164efa20f516f9ef33ff8bb59"
+  },
+  "completed_utc": 1791072752.0681431
+}

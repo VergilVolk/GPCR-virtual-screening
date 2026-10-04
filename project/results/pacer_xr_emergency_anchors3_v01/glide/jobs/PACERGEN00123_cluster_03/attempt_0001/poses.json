@@ -1,0 +1,50 @@
+[
+  {
+    "candidate_id": "PACERGEN00123",
+    "canonical_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+    "receptor_id": "cluster_03",
+    "grid_sha256": "d9ce58c92dbd36ede1b8c5e157d8e20bb44b9c0d747bea5fc668e5c5f60dbe90",
+    "molscrub_state_id": "PACERGEN00123__s00",
+    "prepared_variant_id": "PACERGEN00123__s00__v01",
+    "entry_index": 2,
+    "glide_pose_number": 8,
+    "glide_gscore": -6.4763501381656,
+    "pose_rank": 1
+  },
+  {
+    "candidate_id": "PACERGEN00123",
+    "canonical_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+    "receptor_id": "cluster_03",
+    "grid_sha256": "d9ce58c92dbd36ede1b8c5e157d8e20bb44b9c0d747bea5fc668e5c5f60dbe90",
+    "molscrub_state_id": "PACERGEN00123__s00",
+    "prepared_variant_id": "PACERGEN00123__s00__v01",
+    "entry_index": 3,
+    "glide_pose_number": 368,
+    "glide_gscore": -6.38933492624256,
+    "pose_rank": 2
+  },
+  {
+    "candidate_id": "PACERGEN00123",
+    "canonical_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+    "receptor_id": "cluster_03",
+    "grid_sha256": "d9ce58c92dbd36ede1b8c5e157d8e20bb44b9c0d747bea5fc668e5c5f60dbe90",
+    "molscrub_state_id": "PACERGEN00123__s00",
+    "prepared_variant_id": "PACERGEN00123__s00__v01",
+    "entry_index": 4,
+    "glide_pose_number": 13,
+    "glide_gscore": -5.66081925079896,
+    "pose_rank": 3
+  },
+  {
+    "candidate_id": "PACERGEN00123",
+    "canonical_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+    "receptor_id": "cluster_03",
+    "grid_sha256": "d9ce58c92dbd36ede1b8c5e157d8e20bb44b9c0d747bea5fc668e5c5f60dbe90",
+    "molscrub_state_id": "PACERGEN00123__s00",
+    "prepared_variant_id": "PACERGEN00123__s00__v01",
+    "entry_index": 5,
+    "glide_pose_number": 145,
+    "glide_gscore": -5.09152529404625,
+    "pose_rank": 4
+  }
+]

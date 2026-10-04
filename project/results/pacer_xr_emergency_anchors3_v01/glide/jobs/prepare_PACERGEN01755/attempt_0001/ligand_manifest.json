@@ -1,0 +1,26 @@
+{
+  "candidate_id": "PACERGEN01755",
+  "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12",
+  "rerun_final_rank": 17,
+  "ligand": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\glide\\jobs\\prepare_PACERGEN01755\\attempt_0001\\docking_ready.maegz",
+  "states": [
+    {
+      "molscrub_state_id": "PACERGEN01755__s00",
+      "state_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12",
+      "embedding_seed": 42,
+      "mmff_status": 0
+    }
+  ],
+  "variants": [
+    {
+      "candidate_id": "PACERGEN01755",
+      "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12",
+      "rerun_final_rank": 17,
+      "molscrub_state_id": "PACERGEN01755__s00",
+      "prepared_variant_id": "PACERGEN01755__s00__v01",
+      "prepared_title": "PACERGEN01755__s00__v01",
+      "prepared_smiles": "Cc1nnc(c(Cl)c2C)n1c(c23)sc(c3N)C(=O)Nc4cnn(c4)C(C5)Cc(c56)cccc6"
+    }
+  ],
+  "provenance": "Molscrub 0.1.1 pH7 cap16; RDKit ETKDGv3/MMFF300; LigPrep -i0 -nt -ns -bff14; all returned variants"
+}

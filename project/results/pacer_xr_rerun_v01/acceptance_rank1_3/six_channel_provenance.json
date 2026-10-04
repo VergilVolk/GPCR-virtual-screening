@@ -1,0 +1,23 @@
+{
+  "source_sha256": "41c5a69e6c54825d0cbe9149a2f1fe9dbe5ea4ae2de137c161450607c3fa28eb",
+  "n_candidates": 3,
+  "complete": true,
+  "scope": "acceptance_rank1_3",
+  "raw_sha256": "bec21a5335b91b3e0a524f8a7efea62211d2781cb964b7c6600c2b3c74e5d30a",
+  "glide_sha256": "77e8735fc8be13eb7b280277b018230c956f05231cf123302ed7d4b86ba73b2d",
+  "vina_sha256": "0ef9a0df475ba0cd8b6cdd662c44ccd231a35f64e240ad5103c7f82679a9446a",
+  "codes": {
+    "assemble_pacer_xr_six_channels_v01.py": "ff3c8ce7a1073aec47c9d8a6bd74f5a6a301f5fab9ae5da44bcaeee278d40d33",
+    "freeze_pacer_xr_assets_v01.py": "7b433f8155ff80dc2c9208a56bd382941ab5c1eea39893209d96e77c02064ab5",
+    "pacer_xr_production_v01.py": "a5608eb8602523d609d375c4d67d25db6cf01500daea0af45bedb637882a7fa9",
+    "pacer_xr_schrodinger_v01.py": "84235e7ef75e35498949bb6a8e0643f4ea775bca01d848f549984408cd72d4f4",
+    "recover_pacer_xr_references_v01.py": "c44ec6c9b69c91e0fe36ee39e9813320da0af4d2c37224084775d75670d44f01",
+    "run_pacer_xr_full_rerun_v01.py": "6a8ec6e2eac6641c81cee757dcf799b626cb8e12dcfb728e7deadac2d7e0139e",
+    "run_pacer_xr_glide_rerun_v01.py": "8ee314c5dd77a8a4fb213d5d5f013e1f842ffeb06b04627aa7d49de09763386e",
+    "run_pacer_xr_rerun_v01.py": "4bcfe589fbb85a4282bcde5aa9a10a14bd951d63d433714426c2324d136f824e",
+    "run_pacer_xr_vina_rerun_v01.py": "166b88c197d32774f13b992cb43fc551b8a6d4b497926f63ab474f5c1db1f252",
+    "validate_pacer_xr_acceptance_v01.py": "08ae0b831f0bae494dabbd41bf3b3d8212beeb2d141d80b9d97c1ad116896ff3",
+    "dock_m4_gamd_ensemble.py": "14ee8feed5f1d5490e1be62e62060bc6063622d83b73faeaa87ea1fb34b7ab67",
+    "apply_pacer_xr_candidates.py": "b2942e6d01ba3308cf208aa5f8fbb781694f0e72069aff9ea85cbd3a30977b2d"
+  }
+}

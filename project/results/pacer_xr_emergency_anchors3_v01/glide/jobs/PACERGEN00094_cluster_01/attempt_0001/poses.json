@@ -1,0 +1,50 @@
+[
+  {
+    "candidate_id": "PACERGEN00094",
+    "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(NC(=O)c4cc(F)nc(F)c4)C3)c(N)c12",
+    "receptor_id": "cluster_01",
+    "grid_sha256": "885761a7012d759715757b4c17879015cf58ecfbc58bc2c1b47839b593ba534a",
+    "molscrub_state_id": "PACERGEN00094__s00",
+    "prepared_variant_id": "PACERGEN00094__s00__v01",
+    "entry_index": 2,
+    "glide_pose_number": 17,
+    "glide_gscore": -8.15307768003501,
+    "pose_rank": 1
+  },
+  {
+    "candidate_id": "PACERGEN00094",
+    "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(NC(=O)c4cc(F)nc(F)c4)C3)c(N)c12",
+    "receptor_id": "cluster_01",
+    "grid_sha256": "885761a7012d759715757b4c17879015cf58ecfbc58bc2c1b47839b593ba534a",
+    "molscrub_state_id": "PACERGEN00094__s00",
+    "prepared_variant_id": "PACERGEN00094__s00__v01",
+    "entry_index": 3,
+    "glide_pose_number": 285,
+    "glide_gscore": -8.00597964513432,
+    "pose_rank": 2
+  },
+  {
+    "candidate_id": "PACERGEN00094",
+    "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(NC(=O)c4cc(F)nc(F)c4)C3)c(N)c12",
+    "receptor_id": "cluster_01",
+    "grid_sha256": "885761a7012d759715757b4c17879015cf58ecfbc58bc2c1b47839b593ba534a",
+    "molscrub_state_id": "PACERGEN00094__s00",
+    "prepared_variant_id": "PACERGEN00094__s00__v01",
+    "entry_index": 4,
+    "glide_pose_number": 167,
+    "glide_gscore": -7.72293138178904,
+    "pose_rank": 3
+  },
+  {
+    "candidate_id": "PACERGEN00094",
+    "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(NC(=O)c4cc(F)nc(F)c4)C3)c(N)c12",
+    "receptor_id": "cluster_01",
+    "grid_sha256": "885761a7012d759715757b4c17879015cf58ecfbc58bc2c1b47839b593ba534a",
+    "molscrub_state_id": "PACERGEN00094__s00",
+    "prepared_variant_id": "PACERGEN00094__s00__v01",
+    "entry_index": 5,
+    "glide_pose_number": 386,
+    "glide_gscore": -7.46242910212987,
+    "pose_rank": 4
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "candidate_id": "PACERGEN01755",
+    "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12",
+    "state_id": "PACERGEN01755__s00",
+    "state_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12",
+    "embedding_seed": 42,
+    "ligand": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_anchors3_v01\\vina\\jobs\\prepare_PACERGEN01755_ensemble\\attempt_0001\\state_00.pdbqt",
+    "ligand_sha256": "a55f9fa964d4182ef0e117ea13481e2d76f8c9806ac95b9d6c8c0b18ef6f89e6"
+  }
+]

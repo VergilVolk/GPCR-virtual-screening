@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "scope": "acceptance_rank1_3",
+  "fusion_executed": false,
+  "final_selection_executed": false,
+  "resume_counts": {
+    "resumed": 1,
+    "executed": 0,
+    "failed": 0
+  }
+}

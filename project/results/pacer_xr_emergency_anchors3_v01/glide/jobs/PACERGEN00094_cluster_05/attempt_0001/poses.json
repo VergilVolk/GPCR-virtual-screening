@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "PACERGEN00094",
+    "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(NC(=O)c4cc(F)nc(F)c4)C3)c(N)c12",
+    "receptor_id": "cluster_05",
+    "grid_sha256": "9f1787f4a057285fc623a37c27113009e5e08c826d36e6cc2bce779070c08554",
+    "molscrub_state_id": "PACERGEN00094__s00",
+    "prepared_variant_id": "PACERGEN00094__s00__v01",
+    "entry_index": 2,
+    "glide_pose_number": 296,
+    "glide_gscore": -7.41284486055877,
+    "pose_rank": 1
+  },
+  {
+    "candidate_id": "PACERGEN00094",
+    "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(NC(=O)c4cc(F)nc(F)c4)C3)c(N)c12",
+    "receptor_id": "cluster_05",
+    "grid_sha256": "9f1787f4a057285fc623a37c27113009e5e08c826d36e6cc2bce779070c08554",
+    "molscrub_state_id": "PACERGEN00094__s00",
+    "prepared_variant_id": "PACERGEN00094__s00__v01",
+    "entry_index": 3,
+    "glide_pose_number": 352,
+    "glide_gscore": -6.72112568077198,
+    "pose_rank": 2
+  },
+  {
+    "candidate_id": "PACERGEN00094",
+    "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(NC(=O)c4cc(F)nc(F)c4)C3)c(N)c12",
+    "receptor_id": "cluster_05",
+    "grid_sha256": "9f1787f4a057285fc623a37c27113009e5e08c826d36e6cc2bce779070c08554",
+    "molscrub_state_id": "PACERGEN00094__s00",
+    "prepared_variant_id": "PACERGEN00094__s00__v01",
+    "entry_index": 4,
+    "glide_pose_number": 262,
+    "glide_gscore": -6.70190753858131,
+    "pose_rank": 3
+  },
+  {
+    "candidate_id": "PACERGEN00094",
+    "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(NC(=O)c4cc(F)nc(F)c4)C3)c(N)c12",
+    "receptor_id": "cluster_05",
+    "grid_sha256": "9f1787f4a057285fc623a37c27113009e5e08c826d36e6cc2bce779070c08554",
+    "molscrub_state_id": "PACERGEN00094__s00",
+    "prepared_variant_id": "PACERGEN00094__s00__v01",
+    "entry_index": 5,
+    "glide_pose_number": 66,
+    "glide_gscore": -6.22554416753364,
+    "pose_rank": 4
+  },
+  {
+    "candidate_id": "PACERGEN00094",
+    "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(NC(=O)c4cc(F)nc(F)c4)C3)c(N)c12",
+    "receptor_id": "cluster_05",
+    "grid_sha256": "9f1787f4a057285fc623a37c27113009e5e08c826d36e6cc2bce779070c08554",
+    "molscrub_state_id": "PACERGEN00094__s00",
+    "prepared_variant_id": "PACERGEN00094__s00__v01",
+    "entry_index": 6,
+    "glide_pose_number": 215,
+    "glide_gscore": -6.22086917840438,
+    "pose_rank": 5
+  }
+]

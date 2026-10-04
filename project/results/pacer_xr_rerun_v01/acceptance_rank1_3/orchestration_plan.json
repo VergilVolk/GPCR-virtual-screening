@@ -1,0 +1,16 @@
+{
+  "scope": "acceptance_rank1_3",
+  "stages": [
+    "verify_rerun_top200",
+    "Glide_PDB_and_ensemble",
+    "Vina_PDB_and_ensemble",
+    "six_channel_assembly",
+    "reference_verification",
+    "PACER_XR",
+    "cascade",
+    "full200",
+    "natural_top20",
+    "final_shortlist20"
+  ],
+  "acceptance_stops_after_raw_assembly": true
+}

@@ -1,0 +1,15 @@
+{
+  "scope": "acceptance_rank1_3",
+  "n_candidates": 3,
+  "required_state_jobs": 53,
+  "completed_state_jobs": 53,
+  "errors": [],
+  "resume_counts": {
+    "resumed": 0,
+    "executed": 59,
+    "failed": 0
+  },
+  "source_sha256": "41c5a69e6c54825d0cbe9149a2f1fe9dbe5ea4ae2de137c161450607c3fa28eb",
+  "historical_reuse": false,
+  "historical_reuse_reason": "Protocol and preparation fingerprints not independently established; rerun all entries."
+}

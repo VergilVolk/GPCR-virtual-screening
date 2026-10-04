@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "C:\\Program Files\\Schrodinger2023-1\\ligprep.exe",
+    "-isd",
+    "ph7_3d.sdf",
+    "-omae",
+    "prepared.maegz",
+    "-i",
+    "0",
+    "-nt",
+    "-ns",
+    "-bff",
+    "14",
+    "-WAIT",
+    "-LOCAL",
+    "-HOST",
+    "localhost"
+  ],
+  "cwd": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\glide\\jobs\\prepare_PACERGEN01954\\attempt_0001",
+  "exit_code": 0,
+  "elapsed_seconds": 16.465006828308105,
+  "log": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\glide\\jobs\\prepare_PACERGEN01954\\attempt_0001\\ligprep.console.log"
+}

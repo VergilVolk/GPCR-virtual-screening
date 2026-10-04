@@ -1,0 +1,50 @@
+{
+  "candidate_id": "PACERGEN02306",
+  "canonical_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+  "rerun_final_rank": 3,
+  "ligand": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\glide\\jobs\\prepare_PACERGEN02306\\attempt_0001\\docking_ready.maegz",
+  "states": [
+    {
+      "molscrub_state_id": "PACERGEN02306__s00",
+      "state_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+      "embedding_seed": 42,
+      "mmff_status": 1
+    },
+    {
+      "molscrub_state_id": "PACERGEN02306__s01",
+      "state_smiles": "Cc1nnc2sc(C3CN(c4cc(=NC5Cc6ccccc6C5)c(Cl)c[nH]4)C3)c(N)c2c1C",
+      "embedding_seed": 43,
+      "mmff_status": 1
+    }
+  ],
+  "variants": [
+    {
+      "candidate_id": "PACERGEN02306",
+      "canonical_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+      "rerun_final_rank": 3,
+      "molscrub_state_id": "PACERGEN02306__s00",
+      "prepared_variant_id": "PACERGEN02306__s00__v01",
+      "prepared_title": "PACERGEN02306__s00__v01",
+      "prepared_smiles": "Cc1c(C)nnc(c12)sc(c2N)C3CN(C3)c(c4)ncc(Cl)c4NC(C5)Cc(c56)cccc6"
+    },
+    {
+      "candidate_id": "PACERGEN02306",
+      "canonical_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+      "rerun_final_rank": 3,
+      "molscrub_state_id": "PACERGEN02306__s01",
+      "prepared_variant_id": "PACERGEN02306__s01__v01",
+      "prepared_title": "PACERGEN02306__s01__v01",
+      "prepared_smiles": "Cc1c(C)nnc(c12)sc(c2N)C3CN(C3)c(c4)[nH]cc(Cl)/c4=N\\C(C5)Cc(c56)cccc6"
+    },
+    {
+      "candidate_id": "PACERGEN02306",
+      "canonical_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+      "rerun_final_rank": 3,
+      "molscrub_state_id": "PACERGEN02306__s01",
+      "prepared_variant_id": "PACERGEN02306__s01__v02",
+      "prepared_title": "PACERGEN02306__s01__v02",
+      "prepared_smiles": "Cc1c(C)nnc(c12)sc(c2N)C3CN(C3)c(c4)[nH]cc(Cl)/c4=N/C(C5)Cc(c56)cccc6"
+    }
+  ],
+  "provenance": "Molscrub 0.1.1 pH7 cap16; RDKit ETKDGv3/MMFF300; LigPrep -i0 -nt -ns -bff14; all returned variants"
+}

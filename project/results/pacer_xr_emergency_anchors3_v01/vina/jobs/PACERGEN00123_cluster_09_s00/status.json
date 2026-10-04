@@ -1,0 +1,114 @@
+{
+  "job_key": "PACERGEN00123_cluster_09_s00",
+  "fingerprint": "b21b63e53706eb66f6a26fcd19c768bb7358fa18203b140a4574acfe85e8aaf7",
+  "inputs": {
+    "candidate_id": "PACERGEN00123",
+    "canonical_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+    "state": {
+      "candidate_id": "PACERGEN00123",
+      "canonical_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+      "state_id": "PACERGEN00123__s00",
+      "state_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC([NH+]4CC([NH2+]C5Cc6ccccc6C5)C4)C3)c(N)c12",
+      "embedding_seed": 42,
+      "ligand": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_anchors3_v01\\vina\\jobs\\prepare_PACERGEN00123_ensemble\\attempt_0001\\state_00.pdbqt",
+      "ligand_sha256": "496d1a1b05c5ac08e26d4aab3ed4e42a4c19d87c7f90011b98faf42ad7d2db14"
+    },
+    "receptor_id": "cluster_09",
+    "receptor_sha256": "706be82abfea1900c5a7809bc48021b8d8da2745523e8d8d4391e73bef7976bd",
+    "center": [
+      46.356620689655166,
+      48.22786206896551,
+      60.75689655172414
+    ],
+    "size": [
+      30,
+      30,
+      30
+    ],
+    "protocol": {
+      "exhaustiveness": 8,
+      "num_modes": 9,
+      "energy_range": 3.0,
+      "cpu": 1,
+      "seed": 42,
+      "preparation": "Molscrub 0.1.1 pH7 max16; RDKit ETKDGv3 seed42+sid/MMFF300; Meeko"
+    },
+    "executable_sha256": "e0c4b2715e0c1a74f6e92d0f3be0328ac97542eafbc111e6b1efad897a73cce5",
+    "codes": {
+      "assemble_pacer_xr_six_channels_v01.py": "0bc486e07afc4708de16a9695d2db9bcd4e1149868e683f1d9e9fea5d024a307",
+      "audit_pacer_xr_glide_optimization_v01.py": "658bb6c21156e39250a8a65621e5ab58babe7ef30b805eab6c2426d5e32da1a3",
+      "benchmark_pacer_xr_glide_scheduler_v01.py": "9e486d7dde86451e26a867eb13079ac10adda8a76d7494af911472de1f5aa523",
+      "freeze_pacer_xr_assets_v01.py": "7b433f8155ff80dc2c9208a56bd382941ab5c1eea39893209d96e77c02064ab5",
+      "pacer_xr_glide_batch_bridge_v01.py": "d7458632aa6c1a4abdff36b34365330a22f676ee0152d19c3000b7cc1646bfc7",
+      "pacer_xr_glide_scheduler_v01.py": "c25b46140f6d255651c4cb5853034a341fcce3b497c539c49f9fc7dd2741b36d",
+      "pacer_xr_production_v01.py": "a5608eb8602523d609d375c4d67d25db6cf01500daea0af45bedb637882a7fa9",
+      "pacer_xr_schrodinger_v01.py": "84235e7ef75e35498949bb6a8e0643f4ea775bca01d848f549984408cd72d4f4",
+      "recover_pacer_xr_references_v01.py": "c44ec6c9b69c91e0fe36ee39e9813320da0af4d2c37224084775d75670d44f01",
+      "run_pacer_xr_full_rerun_v01.py": "5c0875c0fb956013b30bb98ce15b31c920f5ad65ed3e1418eefb692f06a0f2ae",
+      "run_pacer_xr_glide_rerun_v01.py": "539c3bd7079a7a1de0646dd571c6bfb0d6941e8b94c8de44e30a2a64424f85bb",
+      "run_pacer_xr_rerun_v01.py": "4bcfe589fbb85a4282bcde5aa9a10a14bd951d63d433714426c2324d136f824e",
+      "run_pacer_xr_vina_rerun_v01.py": "166b88c197d32774f13b992cb43fc551b8a6d4b497926f63ab474f5c1db1f252",
+      "validate_pacer_xr_acceptance_v01.py": "08ae0b831f0bae494dabbd41bf3b3d8212beeb2d141d80b9d97c1ad116896ff3",
+      "dock_m4_gamd_ensemble.py": "14ee8feed5f1d5490e1be62e62060bc6063622d83b73faeaa87ea1fb34b7ab67",
+      "apply_pacer_xr_candidates.py": "b2942e6d01ba3308cf208aa5f8fbb781694f0e72069aff9ea85cbd3a30977b2d"
+    },
+    "source_sha256": "41c5a69e6c54825d0cbe9149a2f1fe9dbe5ea4ae2de137c161450607c3fa28eb"
+  },
+  "status": "PASS",
+  "attempt": 1,
+  "started_utc": 1791072652.1242497,
+  "work": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_anchors3_v01\\vina\\jobs\\PACERGEN00123_cluster_09_s00\\attempt_0001",
+  "result": {
+    "candidate_id": "PACERGEN00123",
+    "canonical_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+    "receptor_id": "cluster_09",
+    "cluster_id": 9,
+    "state_id": "PACERGEN00123__s00",
+    "state_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC([NH+]4CC([NH2+]C5Cc6ccccc6C5)C4)C3)c(N)c12",
+    "vina_affinity": -9.872,
+    "pose": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_anchors3_v01\\vina\\jobs\\PACERGEN00123_cluster_09_s00\\attempt_0001\\pose.pdbqt",
+    "command": {
+      "argv": [
+        "C:\\projects\\GPCR-virtual-screening\\project\\tools\\vina_1.2.7.exe",
+        "--receptor",
+        "C:\\projects\\GPCR-virtual-screening\\project\\results\\m4_gamd_ensemble\\receptors\\cluster_09.pdbqt",
+        "--ligand",
+        "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_anchors3_v01\\vina\\jobs\\prepare_PACERGEN00123_ensemble\\attempt_0001\\state_00.pdbqt",
+        "--center_x",
+        "46.356620689655166",
+        "--size_x",
+        "30",
+        "--center_y",
+        "48.22786206896551",
+        "--size_y",
+        "30",
+        "--center_z",
+        "60.75689655172414",
+        "--size_z",
+        "30",
+        "--exhaustiveness",
+        "8",
+        "--num_modes",
+        "9",
+        "--cpu",
+        "1",
+        "--seed",
+        "42",
+        "--out",
+        "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_anchors3_v01\\vina\\jobs\\PACERGEN00123_cluster_09_s00\\attempt_0001\\pose.pdbqt",
+        "--energy_range",
+        "3.0"
+      ],
+      "cwd": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_anchors3_v01\\vina\\jobs\\PACERGEN00123_cluster_09_s00\\attempt_0001",
+      "exit_code": 0,
+      "elapsed_seconds": 43.84348011016846,
+      "log": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_anchors3_v01\\vina\\jobs\\PACERGEN00123_cluster_09_s00\\attempt_0001\\vina.console.log"
+    },
+    "status": "PASS"
+  },
+  "artifacts": {
+    "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_anchors3_v01\\vina\\jobs\\PACERGEN00123_cluster_09_s00\\attempt_0001\\pose.pdbqt": "97561b7860e85bebe1f4c9373e80a887d6637a51e6b9e79c98813184b6c6f9b3",
+    "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_anchors3_v01\\vina\\jobs\\PACERGEN00123_cluster_09_s00\\attempt_0001\\vina.command.json": "bba083edf25e070cc182a6ae930eb321ec9e5caf6ebb64f093bc94654c157828"
+  },
+  "completed_utc": 1791072696.0026648
+}

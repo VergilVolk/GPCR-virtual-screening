@@ -1,0 +1,107 @@
+{
+  "job_key": "PACERGEN02353_7TRS_s00",
+  "fingerprint": "e1ee31a8e603c63448886d1df03d583d1f246ea85fa20330dd9bd7b27c9c1b32",
+  "inputs": {
+    "candidate_id": "PACERGEN02353",
+    "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cc(C4CN(C5CC5)C4)ncc3Cl)c(N)c12",
+    "state": {
+      "candidate_id": "PACERGEN02353",
+      "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cc(C4CN(C5CC5)C4)ncc3Cl)c(N)c12",
+      "state_id": "PACERGEN02353__s00",
+      "state_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cc(C4CN(C5CC5)C4)ncc3Cl)c(N)c12",
+      "embedding_seed": 42,
+      "ligand": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\vina\\jobs\\prepare_PACERGEN02353_pdb\\attempt_0001\\state_00.pdbqt",
+      "ligand_sha256": "d252746f740ecf32b87aac28f7a4b0e9f0e810c37585b6b6dca00a657566d14f"
+    },
+    "receptor_id": "7TRS",
+    "receptor_sha256": "b18f7223aa975e7e3207d0160f2e0fe4a3a22965861a908143a569d156e3a62e",
+    "center": [
+      110.2121366,
+      107.8369051,
+      68.1181557
+    ],
+    "size": [
+      22,
+      22,
+      22
+    ],
+    "protocol": {
+      "exhaustiveness": 4,
+      "num_modes": 1,
+      "cpu": 1,
+      "seed": 42,
+      "preparation": "Parent canonical SMILES; RDKit ETKDGv3/MMFF300; Meeko, as dock_candidate_portfolio.py"
+    },
+    "executable_sha256": "e0c4b2715e0c1a74f6e92d0f3be0328ac97542eafbc111e6b1efad897a73cce5",
+    "codes": {
+      "assemble_pacer_xr_six_channels_v01.py": "ff3c8ce7a1073aec47c9d8a6bd74f5a6a301f5fab9ae5da44bcaeee278d40d33",
+      "freeze_pacer_xr_assets_v01.py": "7b433f8155ff80dc2c9208a56bd382941ab5c1eea39893209d96e77c02064ab5",
+      "pacer_xr_production_v01.py": "a5608eb8602523d609d375c4d67d25db6cf01500daea0af45bedb637882a7fa9",
+      "pacer_xr_schrodinger_v01.py": "84235e7ef75e35498949bb6a8e0643f4ea775bca01d848f549984408cd72d4f4",
+      "recover_pacer_xr_references_v01.py": "c44ec6c9b69c91e0fe36ee39e9813320da0af4d2c37224084775d75670d44f01",
+      "run_pacer_xr_full_rerun_v01.py": "6a8ec6e2eac6641c81cee757dcf799b626cb8e12dcfb728e7deadac2d7e0139e",
+      "run_pacer_xr_glide_rerun_v01.py": "8ee314c5dd77a8a4fb213d5d5f013e1f842ffeb06b04627aa7d49de09763386e",
+      "run_pacer_xr_rerun_v01.py": "4bcfe589fbb85a4282bcde5aa9a10a14bd951d63d433714426c2324d136f824e",
+      "run_pacer_xr_vina_rerun_v01.py": "166b88c197d32774f13b992cb43fc551b8a6d4b497926f63ab474f5c1db1f252",
+      "validate_pacer_xr_acceptance_v01.py": "c2541c80bdf3ab92a881bc356477f247f767c38bcfb7b6673167555b538d6b58",
+      "dock_m4_gamd_ensemble.py": "14ee8feed5f1d5490e1be62e62060bc6063622d83b73faeaa87ea1fb34b7ab67",
+      "apply_pacer_xr_candidates.py": "b2942e6d01ba3308cf208aa5f8fbb781694f0e72069aff9ea85cbd3a30977b2d"
+    },
+    "source_sha256": "41c5a69e6c54825d0cbe9149a2f1fe9dbe5ea4ae2de137c161450607c3fa28eb"
+  },
+  "status": "PASS",
+  "attempt": 1,
+  "started_utc": 1791063295.722631,
+  "work": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\vina\\jobs\\PACERGEN02353_7TRS_s00\\attempt_0001",
+  "result": {
+    "candidate_id": "PACERGEN02353",
+    "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cc(C4CN(C5CC5)C4)ncc3Cl)c(N)c12",
+    "receptor_id": "7TRS",
+    "cluster_id": null,
+    "state_id": "PACERGEN02353__s00",
+    "state_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cc(C4CN(C5CC5)C4)ncc3Cl)c(N)c12",
+    "vina_affinity": -8.014,
+    "pose": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\vina\\jobs\\PACERGEN02353_7TRS_s00\\attempt_0001\\pose.pdbqt",
+    "command": {
+      "argv": [
+        "C:\\projects\\GPCR-virtual-screening\\project\\tools\\vina.exe",
+        "--receptor",
+        "C:\\projects\\GPCR-virtual-screening\\project\\results\\structure\\ensemble\\7TRS_R_meeko.pdbqt",
+        "--ligand",
+        "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\vina\\jobs\\prepare_PACERGEN02353_pdb\\attempt_0001\\state_00.pdbqt",
+        "--center_x",
+        "110.2121366",
+        "--size_x",
+        "22",
+        "--center_y",
+        "107.8369051",
+        "--size_y",
+        "22",
+        "--center_z",
+        "68.1181557",
+        "--size_z",
+        "22",
+        "--exhaustiveness",
+        "4",
+        "--num_modes",
+        "1",
+        "--cpu",
+        "1",
+        "--seed",
+        "42",
+        "--out",
+        "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\vina\\jobs\\PACERGEN02353_7TRS_s00\\attempt_0001\\pose.pdbqt"
+      ],
+      "cwd": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\vina\\jobs\\PACERGEN02353_7TRS_s00\\attempt_0001",
+      "exit_code": 0,
+      "elapsed_seconds": 16.407698392868042,
+      "log": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\vina\\jobs\\PACERGEN02353_7TRS_s00\\attempt_0001\\vina.console.log"
+    },
+    "status": "PASS"
+  },
+  "artifacts": {
+    "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\vina\\jobs\\PACERGEN02353_7TRS_s00\\attempt_0001\\pose.pdbqt": "8f553cd61380c85fa3520248b15a80b344d6b797da418908470dd48740532334",
+    "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\vina\\jobs\\PACERGEN02353_7TRS_s00\\attempt_0001\\vina.command.json": "0965a20543133f58174cd78d731dc9110608170b23c784ff28a4c61db87689a0"
+  },
+  "completed_utc": 1791063312.1788402
+}

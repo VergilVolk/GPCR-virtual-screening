@@ -1,0 +1,134 @@
+{
+  "source_sha256": "41c5a69e6c54825d0cbe9149a2f1fe9dbe5ea4ae2de137c161450607c3fa28eb",
+  "scope": "acceptance_rank1_3",
+  "candidates": [
+    {
+      "candidate_id": "PACERGEN02353",
+      "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cc(C4CN(C5CC5)C4)ncc3Cl)c(N)c12",
+      "rerun_final_rank": 1,
+      "ligand": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_glide_v01\\smoke_7trs\\ligand\\rank1_docking_ready.maegz",
+      "states": [
+        {
+          "ligand_state_id": "PACERGEN02353__s00",
+          "state_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cc(C4C[NH+](C5CC5)C4)ncc3Cl)c(N)c12",
+          "protonation_tautomer_source": "molscrub 0.1.1 pH 7.0",
+          "embedding_seed": 42,
+          "mmff_status": 1
+        },
+        {
+          "ligand_state_id": "PACERGEN02353__s01",
+          "state_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N=c3cc(C4C[NH+](C5CC5)C4)[nH]cc3Cl)c(N)c12",
+          "protonation_tautomer_source": "molscrub 0.1.1 pH 7.0",
+          "embedding_seed": 43,
+          "mmff_status": 0
+        }
+      ],
+      "variants": [
+        {
+          "candidate_id": "PACERGEN02353",
+          "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cc(C4CN(C5CC5)C4)ncc3Cl)c(N)c12",
+          "rerun_final_rank": 1,
+          "molscrub_state_id": "PACERGEN02353__s00",
+          "prepared_variant_id": "PACERGEN02353__s00__v01",
+          "prepared_title": "PACERGEN02353__s00__v01",
+          "prepared_smiles": "Cc1nnc(c(Cl)c2C)n1c(c23)sc(c3N)Nc(c(Cl)cn4)cc4[C@@H]5C[N@@H+](C5)C6CC6"
+        },
+        {
+          "candidate_id": "PACERGEN02353",
+          "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cc(C4CN(C5CC5)C4)ncc3Cl)c(N)c12",
+          "rerun_final_rank": 1,
+          "molscrub_state_id": "PACERGEN02353__s01",
+          "prepared_variant_id": "PACERGEN02353__s01__v01",
+          "prepared_title": "PACERGEN02353__s01__v01",
+          "prepared_smiles": "Cc1nnc(c(Cl)c2C)n1c(c23)sc(c3N)/N=c(\\c(Cl)c[nH]4)cc4[C@@H]5C[N@@H+](C5)C6CC6"
+        },
+        {
+          "candidate_id": "PACERGEN02353",
+          "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cc(C4CN(C5CC5)C4)ncc3Cl)c(N)c12",
+          "rerun_final_rank": 1,
+          "molscrub_state_id": "PACERGEN02353__s01",
+          "prepared_variant_id": "PACERGEN02353__s01__v02",
+          "prepared_title": "PACERGEN02353__s01__v02",
+          "prepared_smiles": "Cc1nnc(c(Cl)c2C)n1c(c23)sc(c3N)\\N=c(\\c(Cl)c[nH]4)cc4[C@@H]5C[N@@H+](C5)C6CC6"
+        }
+      ],
+      "provenance": "Byte-exact docking-ready file from successful pH7 Molscrub/LigPrep smoke; no ligand regeneration"
+    },
+    {
+      "candidate_id": "PACERGEN01409",
+      "canonical_smiles": "FC1(c2ccc3cc(N4CC(NC5Cc6ccccc6C5)C4)nnc3c2)CCCC1",
+      "rerun_final_rank": 2,
+      "ligand": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\glide\\jobs\\prepare_PACERGEN01409\\attempt_0001\\docking_ready.maegz",
+      "states": [
+        {
+          "molscrub_state_id": "PACERGEN01409__s00",
+          "state_smiles": "FC1(c2ccc3cc(N4CC([NH2+]C5Cc6ccccc6C5)C4)nnc3c2)CCCC1",
+          "embedding_seed": 42,
+          "mmff_status": 0
+        }
+      ],
+      "variants": [
+        {
+          "candidate_id": "PACERGEN01409",
+          "canonical_smiles": "FC1(c2ccc3cc(N4CC(NC5Cc6ccccc6C5)C4)nnc3c2)CCCC1",
+          "rerun_final_rank": 2,
+          "molscrub_state_id": "PACERGEN01409__s00",
+          "prepared_variant_id": "PACERGEN01409__s00__v01",
+          "prepared_title": "PACERGEN01409__s00__v01",
+          "prepared_smiles": "c1cccc(c12)CC(C2)[NH2+]C3CN(C3)c(c4)nnc(c45)cc(cc5)C6(F)CCCC6"
+        }
+      ],
+      "provenance": "Molscrub 0.1.1 pH7 cap16; RDKit ETKDGv3/MMFF300; LigPrep -i0 -nt -ns -bff14; all returned variants"
+    },
+    {
+      "candidate_id": "PACERGEN02306",
+      "canonical_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+      "rerun_final_rank": 3,
+      "ligand": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\glide\\jobs\\prepare_PACERGEN02306\\attempt_0001\\docking_ready.maegz",
+      "states": [
+        {
+          "molscrub_state_id": "PACERGEN02306__s00",
+          "state_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+          "embedding_seed": 42,
+          "mmff_status": 1
+        },
+        {
+          "molscrub_state_id": "PACERGEN02306__s01",
+          "state_smiles": "Cc1nnc2sc(C3CN(c4cc(=NC5Cc6ccccc6C5)c(Cl)c[nH]4)C3)c(N)c2c1C",
+          "embedding_seed": 43,
+          "mmff_status": 1
+        }
+      ],
+      "variants": [
+        {
+          "candidate_id": "PACERGEN02306",
+          "canonical_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+          "rerun_final_rank": 3,
+          "molscrub_state_id": "PACERGEN02306__s00",
+          "prepared_variant_id": "PACERGEN02306__s00__v01",
+          "prepared_title": "PACERGEN02306__s00__v01",
+          "prepared_smiles": "Cc1c(C)nnc(c12)sc(c2N)C3CN(C3)c(c4)ncc(Cl)c4NC(C5)Cc(c56)cccc6"
+        },
+        {
+          "candidate_id": "PACERGEN02306",
+          "canonical_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+          "rerun_final_rank": 3,
+          "molscrub_state_id": "PACERGEN02306__s01",
+          "prepared_variant_id": "PACERGEN02306__s01__v01",
+          "prepared_title": "PACERGEN02306__s01__v01",
+          "prepared_smiles": "Cc1c(C)nnc(c12)sc(c2N)C3CN(C3)c(c4)[nH]cc(Cl)/c4=N\\C(C5)Cc(c56)cccc6"
+        },
+        {
+          "candidate_id": "PACERGEN02306",
+          "canonical_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+          "rerun_final_rank": 3,
+          "molscrub_state_id": "PACERGEN02306__s01",
+          "prepared_variant_id": "PACERGEN02306__s01__v02",
+          "prepared_title": "PACERGEN02306__s01__v02",
+          "prepared_smiles": "Cc1c(C)nnc(c12)sc(c2N)C3CN(C3)c(c4)[nH]cc(Cl)/c4=N/C(C5)Cc(c56)cccc6"
+        }
+      ],
+      "provenance": "Molscrub 0.1.1 pH7 cap16; RDKit ETKDGv3/MMFF300; LigPrep -i0 -nt -ns -bff14; all returned variants"
+    }
+  ]
+}

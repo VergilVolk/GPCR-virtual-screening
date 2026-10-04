@@ -1,0 +1,4 @@
+candidate_id,canonical_smiles,rerun_final_rank,Vina_PDB_raw,Vina_BEmin_raw,Vina_BEavg_raw,Vina_BEmin_cluster,n_clusters,status
+PACERGEN01755,Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12,17,-9.409,-11.059,-8.056101124195344,0,10,PASS
+PACERGEN00094,Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(NC(=O)c4cc(F)nc(F)c4)C3)c(N)c12,60,-8.923,-10.82,-7.739001124195343,0,10,PASS
+PACERGEN00123,Cc1c(Cl)c2nncn2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12,114,-8.904,-10.508,-7.779401124195343,0,10,PASS

@@ -1,0 +1,58 @@
+{
+  "source_sha256": "41c5a69e6c54825d0cbe9149a2f1fe9dbe5ea4ae2de137c161450607c3fa28eb",
+  "scope": "full200",
+  "candidates": [
+    {
+      "candidate_id": "PACERGEN01954",
+      "canonical_smiles": "Cc1c(Cl)nnc2sc(-c3ccc4cc(N5CC(NC6Cc7ccccc7C6)C5)nnc4c3)c(N)c12",
+      "rerun_final_rank": 4,
+      "ligand": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_rank4_5_v01\\glide\\jobs\\prepare_PACERGEN01954\\attempt_0002\\docking_ready.maegz",
+      "states": [
+        {
+          "molscrub_state_id": "PACERGEN01954__s00",
+          "state_smiles": "Cc1c(Cl)nnc2sc(-c3ccc4cc(N5CC([NH2+]C6Cc7ccccc7C6)C5)nnc4c3)c(N)c12",
+          "embedding_seed": 42,
+          "mmff_status": 1
+        }
+      ],
+      "variants": [
+        {
+          "candidate_id": "PACERGEN01954",
+          "canonical_smiles": "Cc1c(Cl)nnc2sc(-c3ccc4cc(N5CC(NC6Cc7ccccc7C6)C5)nnc4c3)c(N)c12",
+          "rerun_final_rank": 4,
+          "molscrub_state_id": "PACERGEN01954__s00",
+          "prepared_variant_id": "PACERGEN01954__s00__v01",
+          "prepared_title": "PACERGEN01954__s00__v01",
+          "prepared_smiles": "Cc1c(Cl)nnc(c12)sc(c2N)-c(cc3)cc(c34)nnc(c4)N(C5)CC5[NH2+]C(C6)Cc(c67)cccc7"
+        }
+      ],
+      "provenance": "Molscrub 0.1.1 pH7 cap16; RDKit ETKDGv3/MMFF300; LigPrep -i0 -nt -ns -bff14; all returned variants"
+    },
+    {
+      "candidate_id": "PACERGEN01955",
+      "canonical_smiles": "Cc1c(Cl)nnc2sc(-c3cc4ccc(N5CC(NC6Cc7ccccc7C6)C5)cc4nn3)c(N)c12",
+      "rerun_final_rank": 5,
+      "ligand": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_rank4_5_v01\\glide\\jobs\\prepare_PACERGEN01955\\attempt_0002\\docking_ready.maegz",
+      "states": [
+        {
+          "molscrub_state_id": "PACERGEN01955__s00",
+          "state_smiles": "Cc1c(Cl)nnc2sc(-c3cc4ccc(N5CC([NH2+]C6Cc7ccccc7C6)C5)cc4nn3)c(N)c12",
+          "embedding_seed": 42,
+          "mmff_status": 0
+        }
+      ],
+      "variants": [
+        {
+          "candidate_id": "PACERGEN01955",
+          "canonical_smiles": "Cc1c(Cl)nnc2sc(-c3cc4ccc(N5CC(NC6Cc7ccccc7C6)C5)cc4nn3)c(N)c12",
+          "rerun_final_rank": 5,
+          "molscrub_state_id": "PACERGEN01955__s00",
+          "prepared_variant_id": "PACERGEN01955__s00__v01",
+          "prepared_title": "PACERGEN01955__s00__v01",
+          "prepared_smiles": "Cc1c(Cl)nnc(c12)sc(c2N)-c(c3)nnc(c34)cc(cc4)N(C5)CC5[NH2+]C(C6)Cc(c67)cccc7"
+        }
+      ],
+      "provenance": "Molscrub 0.1.1 pH7 cap16; RDKit ETKDGv3/MMFF300; LigPrep -i0 -nt -ns -bff14; all returned variants"
+    }
+  ]
+}

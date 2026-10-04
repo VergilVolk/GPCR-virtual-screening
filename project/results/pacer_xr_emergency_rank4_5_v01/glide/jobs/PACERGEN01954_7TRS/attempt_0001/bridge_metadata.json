@@ -1,0 +1,23 @@
+{
+  "candidate_id": "PACERGEN01954",
+  "canonical_smiles": "Cc1c(Cl)nnc2sc(-c3ccc4cc(N5CC(NC6Cc7ccccc7C6)C5)nnc4c3)c(N)c12",
+  "receptor_id": "7TRS",
+  "grid_sha256": "5ae6ebb9cb0dc62fdc98f62426c3db47fc6c961cda33abe22d9563ab3cad4445",
+  "center": [
+    110.2121366,
+    107.8369051,
+    68.1181557
+  ],
+  "variants": [
+    {
+      "candidate_id": "PACERGEN01954",
+      "canonical_smiles": "Cc1c(Cl)nnc2sc(-c3ccc4cc(N5CC(NC6Cc7ccccc7C6)C5)nnc4c3)c(N)c12",
+      "rerun_final_rank": 4,
+      "molscrub_state_id": "PACERGEN01954__s00",
+      "prepared_variant_id": "PACERGEN01954__s00__v01",
+      "prepared_title": "PACERGEN01954__s00__v01",
+      "prepared_smiles": "Cc1c(Cl)nnc(c12)sc(c2N)-c(cc3)cc(c34)nnc(c4)N(C5)CC5[NH2+]C(C6)Cc(c67)cccc7"
+    }
+  ],
+  "poseviewer": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_rank4_5_v01\\glide\\jobs\\PACERGEN01954_7TRS\\attempt_0001\\dock_pv.maegz"
+}

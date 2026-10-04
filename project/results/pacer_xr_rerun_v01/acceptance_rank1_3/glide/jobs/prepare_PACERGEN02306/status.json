@@ -1,0 +1,116 @@
+{
+  "job_key": "prepare_PACERGEN02306",
+  "fingerprint": "49b51dbd7af49b505149f5a02913267e31a9678b0fd048a2c32d7a8eb926f8a0",
+  "inputs": {
+    "candidate_id": "PACERGEN02306",
+    "canonical_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+    "rank": 3,
+    "roster_sha256": "41c5a69e6c54825d0cbe9149a2f1fe9dbe5ea4ae2de137c161450607c3fa28eb",
+    "protocol": {
+      "glide_precision": "SP",
+      "poses_per_lig": 5,
+      "postdock_npose": 5,
+      "forcefield": "OPLS_2005",
+      "max_states": 16,
+      "ph": 7,
+      "ligprep_flags": [
+        "-i",
+        "0",
+        "-nt",
+        "-ns",
+        "-bff",
+        "14"
+      ],
+      "vina_pdb": {
+        "exhaustiveness": 4,
+        "num_modes": 1,
+        "cpu": 1,
+        "seed": 42,
+        "preparation": "Parent canonical SMILES; RDKit ETKDGv3/MMFF300; Meeko, as dock_candidate_portfolio.py"
+      },
+      "vina_ensemble": {
+        "exhaustiveness": 8,
+        "num_modes": 9,
+        "energy_range": 3.0,
+        "cpu": 1,
+        "seed": 42,
+        "preparation": "Molscrub 0.1.1 pH7 max16; RDKit ETKDGv3 seed42+sid/MMFF300; Meeko"
+      }
+    },
+    "codes": {
+      "assemble_pacer_xr_six_channels_v01.py": "91cb000eb3a87ff3c3ab59f24b3126c7c8790eb96773ab394bb4c8b439205211",
+      "freeze_pacer_xr_assets_v01.py": "7b433f8155ff80dc2c9208a56bd382941ab5c1eea39893209d96e77c02064ab5",
+      "pacer_xr_production_v01.py": "a5608eb8602523d609d375c4d67d25db6cf01500daea0af45bedb637882a7fa9",
+      "pacer_xr_schrodinger_v01.py": "84235e7ef75e35498949bb6a8e0643f4ea775bca01d848f549984408cd72d4f4",
+      "recover_pacer_xr_references_v01.py": "c44ec6c9b69c91e0fe36ee39e9813320da0af4d2c37224084775d75670d44f01",
+      "run_pacer_xr_full_rerun_v01.py": "6a8ec6e2eac6641c81cee757dcf799b626cb8e12dcfb728e7deadac2d7e0139e",
+      "run_pacer_xr_glide_rerun_v01.py": "8ee314c5dd77a8a4fb213d5d5f013e1f842ffeb06b04627aa7d49de09763386e",
+      "run_pacer_xr_rerun_v01.py": "4bcfe589fbb85a4282bcde5aa9a10a14bd951d63d433714426c2324d136f824e",
+      "run_pacer_xr_vina_rerun_v01.py": "166b88c197d32774f13b992cb43fc551b8a6d4b497926f63ab474f5c1db1f252",
+      "dock_m4_gamd_ensemble.py": "14ee8feed5f1d5490e1be62e62060bc6063622d83b73faeaa87ea1fb34b7ab67",
+      "apply_pacer_xr_candidates.py": "b2942e6d01ba3308cf208aa5f8fbb781694f0e72069aff9ea85cbd3a30977b2d"
+    },
+    "ligprep_executable_sha256": "cd3341b0f0c67bf63cc07454348f0c6883fb941836dd13faa550ede7179aec9b"
+  },
+  "status": "PASS",
+  "attempt": 1,
+  "started_utc": 1791062306.6405654,
+  "work": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\glide\\jobs\\prepare_PACERGEN02306\\attempt_0001",
+  "result": {
+    "candidate_id": "PACERGEN02306",
+    "canonical_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+    "rerun_final_rank": 3,
+    "ligand": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\glide\\jobs\\prepare_PACERGEN02306\\attempt_0001\\docking_ready.maegz",
+    "states": [
+      {
+        "molscrub_state_id": "PACERGEN02306__s00",
+        "state_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+        "embedding_seed": 42,
+        "mmff_status": 1
+      },
+      {
+        "molscrub_state_id": "PACERGEN02306__s01",
+        "state_smiles": "Cc1nnc2sc(C3CN(c4cc(=NC5Cc6ccccc6C5)c(Cl)c[nH]4)C3)c(N)c2c1C",
+        "embedding_seed": 43,
+        "mmff_status": 1
+      }
+    ],
+    "variants": [
+      {
+        "candidate_id": "PACERGEN02306",
+        "canonical_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+        "rerun_final_rank": 3,
+        "molscrub_state_id": "PACERGEN02306__s00",
+        "prepared_variant_id": "PACERGEN02306__s00__v01",
+        "prepared_title": "PACERGEN02306__s00__v01",
+        "prepared_smiles": "Cc1c(C)nnc(c12)sc(c2N)C3CN(C3)c(c4)ncc(Cl)c4NC(C5)Cc(c56)cccc6"
+      },
+      {
+        "candidate_id": "PACERGEN02306",
+        "canonical_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+        "rerun_final_rank": 3,
+        "molscrub_state_id": "PACERGEN02306__s01",
+        "prepared_variant_id": "PACERGEN02306__s01__v01",
+        "prepared_title": "PACERGEN02306__s01__v01",
+        "prepared_smiles": "Cc1c(C)nnc(c12)sc(c2N)C3CN(C3)c(c4)[nH]cc(Cl)/c4=N\\C(C5)Cc(c56)cccc6"
+      },
+      {
+        "candidate_id": "PACERGEN02306",
+        "canonical_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+        "rerun_final_rank": 3,
+        "molscrub_state_id": "PACERGEN02306__s01",
+        "prepared_variant_id": "PACERGEN02306__s01__v02",
+        "prepared_title": "PACERGEN02306__s01__v02",
+        "prepared_smiles": "Cc1c(C)nnc(c12)sc(c2N)C3CN(C3)c(c4)[nH]cc(Cl)/c4=N/C(C5)Cc(c56)cccc6"
+      }
+    ],
+    "provenance": "Molscrub 0.1.1 pH7 cap16; RDKit ETKDGv3/MMFF300; LigPrep -i0 -nt -ns -bff14; all returned variants"
+  },
+  "artifacts": {
+    "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\glide\\jobs\\prepare_PACERGEN02306\\attempt_0001\\docking_ready.maegz": "68e9570582c1c709321bb8a3caf005ee1136e71711285d96ff65ec0b6159ff15",
+    "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\glide\\jobs\\prepare_PACERGEN02306\\attempt_0001\\ph7_3d.sdf": "a9466d1ff2b950422a0dcc59406537bd2928d2478e29499a502edd225df67a06",
+    "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\glide\\jobs\\prepare_PACERGEN02306\\attempt_0001\\variants.json": "da3e0bdac198d3e884e4d8c914662d04f65a5fa1c6faf26d798d3a1073e31ec3",
+    "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\glide\\jobs\\prepare_PACERGEN02306\\attempt_0001\\ligand_manifest.json": "643746051bb3f3af74629d6f1a71741f3d1a69c5ca0e8635a91e05ea34b3b771"
+  },
+  "completed_utc": 1791062326.5919077
+}

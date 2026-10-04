@@ -1,0 +1,110 @@
+[
+  {
+    "candidate_id": "PACERGEN02353",
+    "ensemble": false,
+    "states": [
+      {
+        "candidate_id": "PACERGEN02353",
+        "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cc(C4CN(C5CC5)C4)ncc3Cl)c(N)c12",
+        "state_id": "PACERGEN02353__s00",
+        "state_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cc(C4CN(C5CC5)C4)ncc3Cl)c(N)c12",
+        "embedding_seed": 42,
+        "ligand": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\vina\\jobs\\prepare_PACERGEN02353_pdb\\attempt_0001\\state_00.pdbqt",
+        "ligand_sha256": "d252746f740ecf32b87aac28f7a4b0e9f0e810c37585b6b6dca00a657566d14f"
+      }
+    ]
+  },
+  {
+    "candidate_id": "PACERGEN02353",
+    "ensemble": true,
+    "states": [
+      {
+        "candidate_id": "PACERGEN02353",
+        "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cc(C4CN(C5CC5)C4)ncc3Cl)c(N)c12",
+        "state_id": "PACERGEN02353__s00",
+        "state_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cc(C4C[NH+](C5CC5)C4)ncc3Cl)c(N)c12",
+        "embedding_seed": 42,
+        "ligand": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\vina\\jobs\\prepare_PACERGEN02353_ensemble\\attempt_0001\\state_00.pdbqt",
+        "ligand_sha256": "f70fa39cf026243f52cbd2da6167f0c8a4f7606502919b9db5f082f9f7edb001"
+      },
+      {
+        "candidate_id": "PACERGEN02353",
+        "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cc(C4CN(C5CC5)C4)ncc3Cl)c(N)c12",
+        "state_id": "PACERGEN02353__s01",
+        "state_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N=c3cc(C4C[NH+](C5CC5)C4)[nH]cc3Cl)c(N)c12",
+        "embedding_seed": 43,
+        "ligand": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\vina\\jobs\\prepare_PACERGEN02353_ensemble\\attempt_0001\\state_01.pdbqt",
+        "ligand_sha256": "a218a431b0219e1e5c292e146916c069f6c22c9bb2091f4587a8e89b2ba576d9"
+      }
+    ]
+  },
+  {
+    "candidate_id": "PACERGEN01409",
+    "ensemble": false,
+    "states": [
+      {
+        "candidate_id": "PACERGEN01409",
+        "canonical_smiles": "FC1(c2ccc3cc(N4CC(NC5Cc6ccccc6C5)C4)nnc3c2)CCCC1",
+        "state_id": "PACERGEN01409__s00",
+        "state_smiles": "FC1(c2ccc3cc(N4CC(NC5Cc6ccccc6C5)C4)nnc3c2)CCCC1",
+        "embedding_seed": 42,
+        "ligand": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\vina\\jobs\\prepare_PACERGEN01409_pdb\\attempt_0001\\state_00.pdbqt",
+        "ligand_sha256": "50f2e823272aa4a624a74212ca066f9b0613fd8e9aaeeab3e4314379d03097a5"
+      }
+    ]
+  },
+  {
+    "candidate_id": "PACERGEN01409",
+    "ensemble": true,
+    "states": [
+      {
+        "candidate_id": "PACERGEN01409",
+        "canonical_smiles": "FC1(c2ccc3cc(N4CC(NC5Cc6ccccc6C5)C4)nnc3c2)CCCC1",
+        "state_id": "PACERGEN01409__s00",
+        "state_smiles": "FC1(c2ccc3cc(N4CC([NH2+]C5Cc6ccccc6C5)C4)nnc3c2)CCCC1",
+        "embedding_seed": 42,
+        "ligand": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\vina\\jobs\\prepare_PACERGEN01409_ensemble\\attempt_0001\\state_00.pdbqt",
+        "ligand_sha256": "f7f8caa1767e4318bd7a2bed24734917b64fef7db1c456ff93ec68f77eedc46a"
+      }
+    ]
+  },
+  {
+    "candidate_id": "PACERGEN02306",
+    "ensemble": false,
+    "states": [
+      {
+        "candidate_id": "PACERGEN02306",
+        "canonical_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+        "state_id": "PACERGEN02306__s00",
+        "state_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+        "embedding_seed": 42,
+        "ligand": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\vina\\jobs\\prepare_PACERGEN02306_pdb\\attempt_0001\\state_00.pdbqt",
+        "ligand_sha256": "638702c0f87994d49d10e5db8486e1f8ace8dbf264eb76777d62c4a968392378"
+      }
+    ]
+  },
+  {
+    "candidate_id": "PACERGEN02306",
+    "ensemble": true,
+    "states": [
+      {
+        "candidate_id": "PACERGEN02306",
+        "canonical_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+        "state_id": "PACERGEN02306__s00",
+        "state_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+        "embedding_seed": 42,
+        "ligand": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\vina\\jobs\\prepare_PACERGEN02306_ensemble\\attempt_0001\\state_00.pdbqt",
+        "ligand_sha256": "638702c0f87994d49d10e5db8486e1f8ace8dbf264eb76777d62c4a968392378"
+      },
+      {
+        "candidate_id": "PACERGEN02306",
+        "canonical_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+        "state_id": "PACERGEN02306__s01",
+        "state_smiles": "Cc1nnc2sc(C3CN(c4cc(=NC5Cc6ccccc6C5)c(Cl)c[nH]4)C3)c(N)c2c1C",
+        "embedding_seed": 43,
+        "ligand": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\acceptance_rank1_3\\vina\\jobs\\prepare_PACERGEN02306_ensemble\\attempt_0001\\state_01.pdbqt",
+        "ligand_sha256": "d2f4d99ab392f70cdb31c06557f8d9b3748500811a1641999fd961276fbe1b6c"
+      }
+    ]
+  }
+]

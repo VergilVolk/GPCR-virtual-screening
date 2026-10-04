@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "C:\\Program Files\\Schrodinger2023-1\\glide.exe",
+    "dock.in",
+    "-WAIT",
+    "-LOCAL",
+    "-HOST",
+    "localhost",
+    "-NJOBS",
+    "1"
+  ],
+  "cwd": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_rank4_5_v01\\glide\\jobs\\PACERGEN01954_cluster_04\\attempt_0001",
+  "exit_code": 0,
+  "elapsed_seconds": 134.65711998939514,
+  "log": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_emergency_rank4_5_v01\\glide\\jobs\\PACERGEN01954_cluster_04\\attempt_0001\\glide.console.log"
+}

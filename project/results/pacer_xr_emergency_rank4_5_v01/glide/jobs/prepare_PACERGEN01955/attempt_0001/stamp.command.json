@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "C:\\Program Files\\Schrodinger2023-1\\run.exe",
+    "C:\\projects\\GPCR-virtual-screening\\project\\scripts\\pacer_xr_schrodinger_v01.py",
+    "stamp",
+    "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\glide\\jobs\\prepare_PACERGEN01955\\attempt_0001\\bridge_metadata.json"
+  ],
+  "cwd": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\glide\\jobs\\prepare_PACERGEN01955\\attempt_0001",
+  "exit_code": 0,
+  "elapsed_seconds": 2.979764461517334,
+  "log": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_xr_rerun_v01\\glide\\jobs\\prepare_PACERGEN01955\\attempt_0001\\stamp.console.log"
+}

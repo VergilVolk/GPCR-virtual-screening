@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "PACERGEN01409",
+    "canonical_smiles": "FC1(c2ccc3cc(N4CC(NC5Cc6ccccc6C5)C4)nnc3c2)CCCC1",
+    "receptor_id": "cluster_03",
+    "grid_sha256": "d9ce58c92dbd36ede1b8c5e157d8e20bb44b9c0d747bea5fc668e5c5f60dbe90",
+    "molscrub_state_id": "PACERGEN01409__s00",
+    "prepared_variant_id": "PACERGEN01409__s00__v01",
+    "entry_index": 2,
+    "glide_pose_number": 29,
+    "glide_gscore": -6.77263792180453,
+    "pose_rank": 1
+  },
+  {
+    "candidate_id": "PACERGEN01409",
+    "canonical_smiles": "FC1(c2ccc3cc(N4CC(NC5Cc6ccccc6C5)C4)nnc3c2)CCCC1",
+    "receptor_id": "cluster_03",
+    "grid_sha256": "d9ce58c92dbd36ede1b8c5e157d8e20bb44b9c0d747bea5fc668e5c5f60dbe90",
+    "molscrub_state_id": "PACERGEN01409__s00",
+    "prepared_variant_id": "PACERGEN01409__s00__v01",
+    "entry_index": 3,
+    "glide_pose_number": 110,
+    "glide_gscore": -6.48597250825002,
+    "pose_rank": 2
+  },
+  {
+    "candidate_id": "PACERGEN01409",
+    "canonical_smiles": "FC1(c2ccc3cc(N4CC(NC5Cc6ccccc6C5)C4)nnc3c2)CCCC1",
+    "receptor_id": "cluster_03",
+    "grid_sha256": "d9ce58c92dbd36ede1b8c5e157d8e20bb44b9c0d747bea5fc668e5c5f60dbe90",
+    "molscrub_state_id": "PACERGEN01409__s00",
+    "prepared_variant_id": "PACERGEN01409__s00__v01",
+    "entry_index": 4,
+    "glide_pose_number": 14,
+    "glide_gscore": -6.28306216695345,
+    "pose_rank": 3
+  },
+  {
+    "candidate_id": "PACERGEN01409",
+    "canonical_smiles": "FC1(c2ccc3cc(N4CC(NC5Cc6ccccc6C5)C4)nnc3c2)CCCC1",
+    "receptor_id": "cluster_03",
+    "grid_sha256": "d9ce58c92dbd36ede1b8c5e157d8e20bb44b9c0d747bea5fc668e5c5f60dbe90",
+    "molscrub_state_id": "PACERGEN01409__s00",
+    "prepared_variant_id": "PACERGEN01409__s00__v01",
+    "entry_index": 5,
+    "glide_pose_number": 316,
+    "glide_gscore": -6.21965656687094,
+    "pose_rank": 4
+  },
+  {
+    "candidate_id": "PACERGEN01409",
+    "canonical_smiles": "FC1(c2ccc3cc(N4CC(NC5Cc6ccccc6C5)C4)nnc3c2)CCCC1",
+    "receptor_id": "cluster_03",
+    "grid_sha256": "d9ce58c92dbd36ede1b8c5e157d8e20bb44b9c0d747bea5fc668e5c5f60dbe90",
+    "molscrub_state_id": "PACERGEN01409__s00",
+    "prepared_variant_id": "PACERGEN01409__s00__v01",
+    "entry_index": 6,
+    "glide_pose_number": 24,
+    "glide_gscore": -6.21153526730447,
+    "pose_rank": 5
+  }
+]

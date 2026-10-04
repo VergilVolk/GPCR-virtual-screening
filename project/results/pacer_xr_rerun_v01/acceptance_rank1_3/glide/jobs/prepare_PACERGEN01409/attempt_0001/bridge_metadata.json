@@ -1,0 +1,13 @@
+{
+  "candidate_id": "PACERGEN01409",
+  "canonical_smiles": "FC1(c2ccc3cc(N4CC(NC5Cc6ccccc6C5)C4)nnc3c2)CCCC1",
+  "rerun_final_rank": 2,
+  "states": {
+    "PACERGEN01409__s00": {
+      "molscrub_state_id": "PACERGEN01409__s00",
+      "state_smiles": "FC1(c2ccc3cc(N4CC([NH2+]C5Cc6ccccc6C5)C4)nnc3c2)CCCC1",
+      "embedding_seed": 42,
+      "mmff_status": 0
+    }
+  }
+}

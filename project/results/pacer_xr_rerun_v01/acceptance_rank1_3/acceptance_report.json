@@ -1,0 +1,282 @@
+{
+  "status": "PASS",
+  "scope": "rerun_ranks_1_2_3_only",
+  "source_sha256": "41c5a69e6c54825d0cbe9149a2f1fe9dbe5ea4ae2de137c161450607c3fa28eb",
+  "glide_counts": {
+    "PDB": 3,
+    "ensemble": 30,
+    "BEmin": 3,
+    "BEavg": 3
+  },
+  "vina_counts": {
+    "PDB": 3,
+    "ensemble": 30,
+    "BEmin": 3,
+    "BEavg": 3
+  },
+  "rank1_glide_reproduction": {
+    "Glide_PDB_raw": {
+      "expected": -6.29971543794357,
+      "observed": -6.29971543794357,
+      "absolute_difference": 0.0
+    },
+    "Glide_BEmin_raw": {
+      "expected": -7.18155879467582,
+      "observed": -7.18155879467582,
+      "absolute_difference": 0.0
+    },
+    "Glide_BEavg_raw": {
+      "expected": -5.025427724052952,
+      "observed": -5.025427724052952,
+      "absolute_difference": 0.0
+    }
+  },
+  "vina_channels": [
+    {
+      "candidate_id": "PACERGEN02353",
+      "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cc(C4CN(C5CC5)C4)ncc3Cl)c(N)c12",
+      "rerun_final_rank": 1,
+      "Vina_PDB_raw": -8.014,
+      "Vina_BEmin_raw": -10.481,
+      "Vina_BEavg_raw": -7.385001124195344,
+      "Vina_BEmin_cluster": 0,
+      "n_clusters": 10,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "PACERGEN01409",
+      "canonical_smiles": "FC1(c2ccc3cc(N4CC(NC5Cc6ccccc6C5)C4)nnc3c2)CCCC1",
+      "rerun_final_rank": 2,
+      "Vina_PDB_raw": -9.672,
+      "Vina_BEmin_raw": -11.368,
+      "Vina_BEavg_raw": -8.250601124195345,
+      "Vina_BEmin_cluster": 0,
+      "n_clusters": 10,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "PACERGEN02306",
+      "canonical_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+      "rerun_final_rank": 3,
+      "Vina_PDB_raw": -9.486,
+      "Vina_BEmin_raw": -10.719,
+      "Vina_BEavg_raw": -8.247801124195345,
+      "Vina_BEmin_cluster": 0,
+      "n_clusters": 10,
+      "status": "PASS"
+    }
+  ],
+  "glide_channels": [
+    {
+      "candidate_id": "PACERGEN02353",
+      "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cc(C4CN(C5CC5)C4)ncc3Cl)c(N)c12",
+      "rerun_final_rank": 1,
+      "Glide_PDB_raw": -6.29971543794357,
+      "Glide_BEmin_raw": -7.18155879467582,
+      "Glide_BEavg_raw": -5.025427724052952,
+      "Glide_BEmin_cluster": 0,
+      "n_clusters": 10,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "PACERGEN01409",
+      "canonical_smiles": "FC1(c2ccc3cc(N4CC(NC5Cc6ccccc6C5)C4)nnc3c2)CCCC1",
+      "rerun_final_rank": 2,
+      "Glide_PDB_raw": -7.90300496262044,
+      "Glide_BEmin_raw": -8.54407258076699,
+      "Glide_BEavg_raw": -5.439474566382051,
+      "Glide_BEmin_cluster": 1,
+      "n_clusters": 10,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "PACERGEN02306",
+      "canonical_smiles": "Cc1nnc2sc(C3CN(c4cc(NC5Cc6ccccc6C5)c(Cl)cn4)C3)c(N)c2c1C",
+      "rerun_final_rank": 3,
+      "Glide_PDB_raw": -6.32582794506296,
+      "Glide_BEmin_raw": -8.57658629230106,
+      "Glide_BEavg_raw": -5.738535817319447,
+      "Glide_BEmin_cluster": 1,
+      "n_clusters": 10,
+      "status": "PASS"
+    }
+  ],
+  "vina_preparation_determinism": [
+    {
+      "candidate_id": "PACERGEN02353",
+      "state_id": "PACERGEN02353__s00",
+      "ensemble": false,
+      "sha256": "d252746f740ecf32b87aac28f7a4b0e9f0e810c37585b6b6dca00a657566d14f",
+      "PASS": true
+    },
+    {
+      "candidate_id": "PACERGEN02353",
+      "state_id": "PACERGEN02353__s00",
+      "ensemble": true,
+      "sha256": "f70fa39cf026243f52cbd2da6167f0c8a4f7606502919b9db5f082f9f7edb001",
+      "PASS": true
+    },
+    {
+      "candidate_id": "PACERGEN02353",
+      "state_id": "PACERGEN02353__s01",
+      "ensemble": true,
+      "sha256": "a218a431b0219e1e5c292e146916c069f6c22c9bb2091f4587a8e89b2ba576d9",
+      "PASS": true
+    },
+    {
+      "candidate_id": "PACERGEN01409",
+      "state_id": "PACERGEN01409__s00",
+      "ensemble": false,
+      "sha256": "50f2e823272aa4a624a74212ca066f9b0613fd8e9aaeeab3e4314379d03097a5",
+      "PASS": true
+    },
+    {
+      "candidate_id": "PACERGEN01409",
+      "state_id": "PACERGEN01409__s00",
+      "ensemble": true,
+      "sha256": "f7f8caa1767e4318bd7a2bed24734917b64fef7db1c456ff93ec68f77eedc46a",
+      "PASS": true
+    },
+    {
+      "candidate_id": "PACERGEN02306",
+      "state_id": "PACERGEN02306__s00",
+      "ensemble": false,
+      "sha256": "638702c0f87994d49d10e5db8486e1f8ace8dbf264eb76777d62c4a968392378",
+      "PASS": true
+    },
+    {
+      "candidate_id": "PACERGEN02306",
+      "state_id": "PACERGEN02306__s00",
+      "ensemble": true,
+      "sha256": "638702c0f87994d49d10e5db8486e1f8ace8dbf264eb76777d62c4a968392378",
+      "PASS": true
+    },
+    {
+      "candidate_id": "PACERGEN02306",
+      "state_id": "PACERGEN02306__s01",
+      "ensemble": true,
+      "sha256": "d2f4d99ab392f70cdb31c06557f8d9b3748500811a1641999fd961276fbe1b6c",
+      "PASS": true
+    }
+  ],
+  "vina_repeat_jobs": [
+    {
+      "candidate_id": "PACERGEN02353",
+      "receptor_id": "7TRS",
+      "expected_from_first_real_run": -8.014,
+      "repeat_affinity": -8.014,
+      "PASS": true
+    },
+    {
+      "candidate_id": "PACERGEN02353",
+      "receptor_id": "cluster_00",
+      "expected_from_first_real_run": -10.049,
+      "repeat_affinity": -10.049,
+      "PASS": true
+    }
+  ],
+  "reference_commit": "44798c841ee77230b1f89fe41074e41b458c7070",
+  "reference_channels": {
+    "Glide_PDB": {
+      "path": "results/pacer_xr_rerun_v01/references/PDB/M4R_PDB_Glide_scores.csv",
+      "column": "glide_gscore",
+      "sha256": "f2bd6ba5fb954c083f87fd332c1b3d147fe9d7ae7c9bd4521d543ec941c5f23b",
+      "git_blob": "e53bc82a61c3d808c00d0418d5e837922c881d6a",
+      "rows": 116392,
+      "finite_rows": 116392,
+      "nonfinite_rows": 0,
+      "source_url": "https://raw.githubusercontent.com/tylerdt1/gpcr-am-ensemble-docking/44798c841ee77230b1f89fe41074e41b458c7070/docking_scores/M4R/PDB/M4R_PDB_Glide_scores.csv",
+      "source_commit": "44798c841ee77230b1f89fe41074e41b458c7070"
+    },
+    "Glide_BEmin": {
+      "path": "results/pacer_xr_rerun_v01/references/Ensemble/M4R_Ensemble_Glide_BEmin_ranked.csv",
+      "column": "BE_min",
+      "sha256": "9ec75c666678801cb1562fac0a425e2f00c6c99b9e34cf96ee8be3e79e0d7a58",
+      "git_blob": "e4c00d306c7f14e3e6a8600408c243a164552693",
+      "rows": 117642,
+      "finite_rows": 117642,
+      "nonfinite_rows": 0,
+      "source_url": "https://raw.githubusercontent.com/tylerdt1/gpcr-am-ensemble-docking/44798c841ee77230b1f89fe41074e41b458c7070/docking_scores/M4R/Ensemble/M4R_Ensemble_Glide_BEmin_ranked.csv",
+      "source_commit": "44798c841ee77230b1f89fe41074e41b458c7070"
+    },
+    "Glide_BEavg": {
+      "path": "results/pacer_xr_rerun_v01/references/Ensemble/M4R_Ensemble_Glide_BEavg_ranked.csv",
+      "column": "BE_avg",
+      "sha256": "622b9c3f6bce22df5f140ef2d14cab440c42f734fc4f7b7988bee2f3db598088",
+      "git_blob": "454f531b32f16e6a04ba260c37c4c71671c1dd04",
+      "rows": 117642,
+      "finite_rows": 117642,
+      "nonfinite_rows": 0,
+      "source_url": "https://raw.githubusercontent.com/tylerdt1/gpcr-am-ensemble-docking/44798c841ee77230b1f89fe41074e41b458c7070/docking_scores/M4R/Ensemble/M4R_Ensemble_Glide_BEavg_ranked.csv",
+      "source_commit": "44798c841ee77230b1f89fe41074e41b458c7070"
+    },
+    "Vina_PDB": {
+      "path": "results/pacer_xr_rerun_v01/references/PDB/M4R_PDB_Vina_scores.csv",
+      "column": "vina_score",
+      "sha256": "1e49ed90954b518c6b4623e40b64680ec14e878fbfd9456d31ed418d31232434",
+      "git_blob": "c35622bb512049579eb826e5f786686b1dc8c3fe",
+      "rows": 117568,
+      "finite_rows": 117568,
+      "nonfinite_rows": 0,
+      "source_url": "https://raw.githubusercontent.com/tylerdt1/gpcr-am-ensemble-docking/44798c841ee77230b1f89fe41074e41b458c7070/docking_scores/M4R/PDB/M4R_PDB_Vina_scores.csv",
+      "source_commit": "44798c841ee77230b1f89fe41074e41b458c7070"
+    },
+    "Vina_BEmin": {
+      "path": "results/pacer_xr_rerun_v01/references/Ensemble/M4R_Ensemble_Vina_BEmin_ranked.csv",
+      "column": "BE_min",
+      "sha256": "2182888f6526ef5487f5e53d84ec8a7e4fdabc0453df12c4e42184c8950debe3",
+      "git_blob": "9e6d585d2df4e591103d8ec7d7c61845c73a15ee",
+      "rows": 115771,
+      "finite_rows": 115771,
+      "nonfinite_rows": 0,
+      "source_url": "https://raw.githubusercontent.com/tylerdt1/gpcr-am-ensemble-docking/44798c841ee77230b1f89fe41074e41b458c7070/docking_scores/M4R/Ensemble/M4R_Ensemble_Vina_BEmin_ranked.csv",
+      "source_commit": "44798c841ee77230b1f89fe41074e41b458c7070"
+    },
+    "Vina_BEavg": {
+      "path": "results/pacer_xr_rerun_v01/references/Ensemble/M4R_Ensemble_Vina_BEavg_ranked.csv",
+      "column": "BE_avg",
+      "sha256": "cd456411f4648faee4b2a83d87c594f8fdcc4f194e68254d61d5418449be3e7f",
+      "git_blob": "911d5c33f54877c4357e8a44d07a2e74612edb22",
+      "rows": 115771,
+      "finite_rows": 115771,
+      "nonfinite_rows": 0,
+      "source_url": "https://raw.githubusercontent.com/tylerdt1/gpcr-am-ensemble-docking/44798c841ee77230b1f89fe41074e41b458c7070/docking_scores/M4R/Ensemble/M4R_Ensemble_Vina_BEavg_ranked.csv",
+      "source_commit": "44798c841ee77230b1f89fe41074e41b458c7070"
+    }
+  },
+  "contract_tests": "PASS; see contract_tests.log",
+  "historical_smoke_hashes_unchanged": true,
+  "full_campaign_started": false,
+  "full_ranking_produced": false,
+  "final_top20_produced": false,
+  "execution_summaries": {
+    "glide": {
+      "scope": "acceptance_rank1_3",
+      "n_candidates": 3,
+      "required_evaluations": 33,
+      "completed_evaluations": 33,
+      "errors": [],
+      "resume_counts": {
+        "resumed": 0,
+        "executed": 36,
+        "failed": 0
+      },
+      "source_sha256": "41c5a69e6c54825d0cbe9149a2f1fe9dbe5ea4ae2de137c161450607c3fa28eb"
+    },
+    "vina": {
+      "scope": "acceptance_rank1_3",
+      "n_candidates": 3,
+      "required_state_jobs": 53,
+      "completed_state_jobs": 53,
+      "errors": [],
+      "resume_counts": {
+        "resumed": 0,
+        "executed": 59,
+        "failed": 0
+      },
+      "source_sha256": "41c5a69e6c54825d0cbe9149a2f1fe9dbe5ea4ae2de137c161450607c3fa28eb",
+      "historical_reuse": false,
+      "historical_reuse_reason": "Protocol and preparation fingerprints not independently established; rerun all entries."
+    }
+  }
+}

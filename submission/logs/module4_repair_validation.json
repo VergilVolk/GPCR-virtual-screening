@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "sample_pipeline": "actual MD coordinates -> C1-BS256 -> frozen STATE_MOTION/SIGNED_DRIFT -> RFF -> signed contrasts -> graph diffusion -> regions",
+  "real_contexts": 4,
+  "frames_per_context": 20,
+  "regional_csv_rows": 90,
+  "cuda_example_pass": true,
+  "cpu_example_pass": true,
+  "isolated_python_fresh_git_checkout_pass": true,
+  "dependency_pins_match_actual_environment": true,
+  "pip_check": "No broken requirements found.",
+  "fresh_dependency_install_tested": false,
+  "regression_tests": {
+    "run": 39,
+    "passed": 38,
+    "skipped": 1,
+    "skip_reason": "Optional GaMD receptor PDB is not packaged"
+  },
+  "existing_verify_submission_pass": true,
+  "existing_predict_pass": true,
+  "historical_source_mapping_and_numerical_definitions_unchanged": true,
+  "refitting_performed": false,
+  "full_production_md_rerun_performed": false,
+  "scope_limit": "One R1 block example; not a full three-replica scientific evaluation.",
+  "cpu_cuda_interchangeable": false
+}

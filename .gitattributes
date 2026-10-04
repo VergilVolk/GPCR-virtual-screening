@@ -3,3 +3,6 @@
 submission/data/frozen/*.csv -text whitespace=cr-at-eol
 submission/data/frozen/four_context_results.json -text
 submission/data/examples/module4_pacer0073_r1/** -text whitespace=cr-at-eol
+submission/vendor/geom2vec/** -text
+# Historical serialized scientific state is authenticated byte for byte.
+submission/project/results/** -text whitespace=cr-at-eol

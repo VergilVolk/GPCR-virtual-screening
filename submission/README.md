@@ -74,7 +74,12 @@ A traceable four-context MD input example is included in
 `data/examples/module4_pacer0073_r1/`: 20 frames per context from the actual
 PACER0073 replica-1 production runs, with unchanged corresponding PDB topologies.
 See its README for sample verification and regeneration commands. This sample
-demonstrates the actual input layout; it is not a full Stage4 result reproduction.
+is also consumed by `run_module4_example.py`, which performs actual frozen
+encoding, numerical-state application, four-context contrasts and graph/region
+analysis. It is not a full three-replica Stage4 result reproduction. Install the
+dedicated environment and run the example as described in
+`docs/MODULE4_REPRODUCIBILITY.md`; do not mix its PyTorch 2.6 environment with the
+PyTorch 2.8 result-replay environment.
 
 ## Source and logs
 

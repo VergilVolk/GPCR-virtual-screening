@@ -37,7 +37,9 @@ python src/examples/extract_four_context_sample.py --verify-only --output-dir da
 
 Verification checks all eight file hashes, atom/frame counts, finite coordinates
 and timestamps. The expected result is `PASS`, four contexts, 20 frames each.
-This command verifies MD inputs; it does not run the ViSNet encoder or FKG.
+This command verifies MD inputs. To execute ViSNet and the frozen FKG computation,
+install the environment in `docs/MODULE4_REPRODUCIBILITY.md`, then run
+`python run_module4_example.py --device cpu` (or `--device cuda`).
 
 ## Regenerate from the original Stage4 data
 
@@ -51,5 +53,5 @@ with the derived trajectories. The production data layout is unchanged.
 
 The existing Stage4 `--smoke` command authenticates all 36 full production inputs.
 This excerpt must not be renamed or substituted for those inputs. A dedicated
-core-analysis example entry point and its full encoder environment remain a
-separate follow-up task.
+core-analysis example entry point is provided as `run_module4_example.py` and
+does not bypass the full-production authentication gates.

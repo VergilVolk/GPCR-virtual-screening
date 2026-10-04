@@ -1,76 +1,77 @@
-# CHRM4 PAM 虚拟筛选 — 代码提交包（附件5 规范）
+# M4 PAM virtual screening submission
 
-一键复现 M4 靶点虚拟筛选：DrugCLIP 检索 + 微调投影 + 标准化候选清单。
+This directory is the compact evaluation package for our Track 3 entry. It covers the full decision chain used in the project:
 
-## 本包在四模块算法链中的位置
+1. candidate chemistry checks;
+2. M4 pocket retrieval with a DrugCLIP-derived adapter;
+3. multi-conformation docking evidence;
+4. four-context molecular-dynamics evidence.
 
-本包实现四模块级联中的**模块 2**（串行漏斗，逐级闸门）：
+The final output is a ranked list of computational candidates. It is not a claim that any listed molecule is an experimentally confirmed positive allosteric modulator (PAM).
 
-1. **M4 PAM候选分子生成与药化筛选**（片段生成+药化过滤+新颖性卡控 → 候选池）
-2. **基于DrugCLIP迁移学习的M4智能靶点筛选算法**（← 本包 `screen.py`；输出 top 切片）
-3. **静态-动态构象组合分子对接算法**（晶体+GaMD系综对接 + IFP/口袋相容闸门）
-4. **基于四条件受体动力学的PAM功能判别算法**（A/P/C/CP 20ns → ΔINT 方向一致性 → 证据卡）
+## Quick start
 
-## 环境
-
-- Python 3.11，依赖见 `requirements.txt`（`pip install -r requirements.txt`）
-- CPU 即可运行 demo 与筛选（无需 GPU；全量新分子编码需 GPU，见下）
-- 操作系统：Windows 10/11 或 Linux；无 CUDA 依赖（torch CPU 版）
-
-## 快速开始
+Tested on Windows 11 and Python 3.11. CPU execution is sufficient for the packaged example.
 
 ```bash
+python -m venv .venv
+.venv\Scripts\activate
 pip install -r requirements.txt
+python predict.py --demo
+```
 
-# 演示（自带 50 分子示例，约 5 秒）：
+The command writes `results/results.csv` and the four intermediate tables.
+
+Each stage can also be run separately:
+
+```bash
+python module1_generate_filter.py --demo
 python screen.py --demo
-
-# 全量 28,519 分子库（需主仓库在 ../project 下）：
-python screen.py --full
-
-# 复现训练（微调投影权重，需主仓库数据，约 3 分钟/种子 CPU）：
-python train.py --full-data --seed 20260925
-
-# 复现基准（13 靶 LOSO ×3 种子，约 40 分钟 CPU）：
-python train.py --loso --seed 20260925
+python module3_ensemble_dock.py --demo
+python module4_fkg_eval.py --demo
 ```
 
-## 输入输出
+## Inputs and outputs
 
-- 输入：分子与口袋的 DrugCLIP 512 维表征（npz；demo 自带，全量在主仓库）
-- 输出：`results/results.csv` — 标准候选清单（候选编号/赛道/SMILES/结合
-  分数/模型版本/备注），UTF-8，按分数降序
+| Stage | Input | Method | Output |
+|---|---|---|---|
+| Chemistry | candidate ID and SMILES | validity, PAINS, physicochemical and QED checks | `module1_chemistry.csv` |
+| Pocket retrieval | frozen 512-dimensional molecule and M4-pocket representations | three M4 leave-one-target-out projection heads; cosine score | `module2_binding.csv` |
+| Structure | frozen state-wise docking summary | ten-state Vina ensemble, pocket occupancy and contact gates | `module3_structure.csv` |
+| Function | four receptor contexts: apo, ACh, candidate, ACh+candidate | interaction contrast `CP - P - C + A` and cross-replica direction agreement | `module4_function.csv` |
+| Integration | outputs above | evidence-preserving merge | `results.csv` |
 
-## 目录
+The example contains 12 candidates. The structure table was computed over ten receptor conformations. The prospective dynamics set contains three candidates, four contexts and three replicas per candidate (36 trajectories, 10 ns each). Raw trajectories are not duplicated in this compact package because of their size; the frozen summaries and full analysis code remain in the repository.
 
+## Training and model files
+
+`models/` contains three M4 leave-one-target-out DrugCLIP adapter checkpoints. They are the exact inference weights used by `screen.py`. The base representations were generated with the documented DrugCLIP checkpoint; redistribution of upstream weights follows the upstream license.
+
+The adapter training entry is:
+
+```bash
+python train.py --repo-root .. --epochs 80 --dry-run
 ```
-submission/
-├── README.md            # 本文件
-├── requirements.txt     # 依赖
-├── screen.py            # 一键筛选（主运行入口）
-├── train.py             # 一键训练/基准复现入口
-├── src/                 # 投影头与筛选核心（含注释）
-├── models/              # 3 种子最终权重 + MODEL_CARD.md
-├── data/                # demo 数据 + 全量数据来源/许可/防泄漏说明
-├── notebooks/           # demo_screening.ipynb 可执行演示
-├── results/             # results.csv 候选清单
-└── logs/                # 训练日志/复现权重输出位置
-```
 
-## 结果说明
+Remove `--dry-run` only in a full repository checkout and provide the training representations, base projection and contrast table through the corresponding command-line options. Target separation, scaffold controls and the three seeds are recorded in `logs/training_manifest.json`.
 
-排序逻辑：10 个 GaMD M4 口袋构象余弦分 mean 池化 → 3 随机种子等权平均。
-不确定性：种子间分数标准差（notebook 中示例）。候选为**结合检索候选**，
-PAM 功能结论须走四上下文 MD 复核（备注列已注明）。
+## Docking and MD reproduction
 
-## 本项目实际贡献（相对开源基座）
+The packaged demo replays frozen docking and MD summaries so it can run on a CPU laptop. Full production runs require:
 
-1. 毒蕈碱族 triplet 双侧投影微调协议（3 种子，ChEMBL 标签）；
-2. 同测试集 head-to-head 证明 2023 基座 + mean 池化为 M4 最优配置
-   （ROC 0.7136 vs Science-2026 基座 0.5095，详见 models/MODEL_CARD.md）；
-3. 完整防泄漏评估链（LOSO + scaffold purge + frozen SHA）。
+- AutoDock Vina 1.2.7 for state-wise docking;
+- the receptor ensemble and prepared structures listed in `data/README.md`;
+- OpenMM for membrane MD;
+- substantially more time and storage than the compact demo.
 
-## 已知局限
+Commercial Glide scores used in a separate public benchmark are not required by this submission and are not represented as locally generated results.
 
-top-1% 切片富集（EF1%）不稳定（0.87），建议保留 top-5% 候选池；
-模型不预测 PAM 功能与效力。
+## Result fields
+
+`results/results.csv` includes candidate ID, track, SMILES, chemistry checks, M4 binding score, docking energy, ensemble coverage, structural gate, functional-evidence status, model version and claim status. Blank functional fields mean that the candidate has not completed prospective four-context MD.
+
+## Limits
+
+- DrugCLIP and docking assess binding compatibility, not PAM efficacy.
+- The four-context endpoint separated retrospective controls, but the prospective candidates did not yet show a robust, cross-replica cooperative signal.
+- All final candidates require experimental pharmacology, counter-screening and safety testing.

@@ -1,56 +1,50 @@
-#!/usr/bin/env python3
-"""一键训练入口（附件5 二-3）：微调 M4 筛选投影权重。
-
-两层入口设计：
-  --full-data   在主仓库全部数据上训练部署权重（复现 models/ 下的权重）
-  --loso        13 靶留出评估（复现论文基准数字，耗时较长）
-
-训练实际执行主仓库脚本（保持单一事实源）：
-  project/scripts/evaluate_drugclip_loso_family_aug.py
-"""
 from __future__ import annotations
-import argparse, subprocess, sys
+
+import argparse
+import json
+import subprocess
+import sys
 from pathlib import Path
 
-ROOT = Path(__file__).parent
-CLC = Path(__file__).resolve().parents[1]          # 主仓库根（提交包位于其下）
 
-SCRIPT = CLC / 'project' / 'scripts' / 'evaluate_drugclip_loso_family_aug.py'
-R = CLC / 'project' / 'results'
-D = CLC / 'project' / 'data' / 'benchmarks'
-COMMON = [
-    '--gpcr-representations', str(R / 'gpcr_drugclip_screening_v01' / 'science2026_ensemble_embeddings.npz'),
-    '--gpcr-pairs', str(D / 'gpcr_drugclip_screening_v01' / 'screening_pairs.csv'),
-    '--external-representations', str(R / 'drugclip_science2026' / 'litpcba_external_v01' / 'science2026_90.npz'),
-    '--external-pairs', str(D / 'litpcba_drugclip_external_v01' / 'pairs.csv'),
-    '--projection', str(R / 'drugclip_science2026' / 'litpcba_external_v01' / 'science2026_90.projection.pt'),
-    '--family-npz', str(D / 'drugclip_muscarinic_family_aug_v01' / 'family_science2026.npz'),
-    '--family-pairs', str(D / 'drugclip_muscarinic_family_aug_v01' / 'family_pairs_clean.csv'),
-]
+ROOT = Path(__file__).resolve().parent
 
 
-def main():
-    p = argparse.ArgumentParser(description=__doc__)
-    g = p.add_mutually_exclusive_group(required=True)
-    g.add_argument('--full-data', action='store_true', help='全量数据训练部署权重')
-    g.add_argument('--loso', action='store_true', help='13 靶留出基准评估')
-    p.add_argument('--seed', type=int, default=20260925)
-    p.add_argument('--epochs', type=int, default=80)
-    a = p.parse_args()
-    if not SCRIPT.exists():
-        sys.exit(f'主仓库脚本不存在: {SCRIPT}（提交包需位于主仓库内运行）')
-    out = ROOT / 'logs'
-    out.mkdir(exist_ok=True)
-    if a.full_data:
-        cmd = ['python', str(SCRIPT), *COMMON, '--seed', str(a.seed), '--epochs', str(a.epochs),
-               '--full-only', '--save-full-checkpoint',
-               str(out / f'retrained_seed{a.seed}.projection.pt')]
-    else:
-        cmd = ['python', str(SCRIPT), *COMMON, '--seed', str(a.seed), '--epochs', str(a.epochs),
-               '--output', str(out / f'loso_seed{a.seed}.json')]
-    print(' '.join(cmd), flush=True)
-    sys.exit(subprocess.call(cmd))
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Launch the documented DrugCLIP adapter training")
+    parser.add_argument("--repo-root", type=Path, default=ROOT.parent)
+    parser.add_argument("--representations", type=Path, default=Path("data/training/representations.pt"))
+    parser.add_argument("--projection", type=Path, default=Path("data/training/base_projection.pt"))
+    parser.add_argument("--contrasts", type=Path, default=Path("data/training/contrasts.csv"))
+    parser.add_argument("--output", type=Path, default=ROOT / "models/retrained")
+    parser.add_argument("--seeds", default="20260925,20260926,20260927")
+    parser.add_argument("--epochs", type=int, default=80)
+    parser.add_argument("--dry-run", action="store_true")
+    args = parser.parse_args()
+
+    script = args.repo_root / "project/scripts/finetune_drugclip_muscarinic_triplet.py"
+    if not script.exists():
+        raise FileNotFoundError(
+            "The full training script is not included in the compact archive. "
+            "Run this entry from the complete repository."
+        )
+    command = [
+        sys.executable, str(script),
+        "--representations", str(args.representations),
+        "--projection", str(args.projection),
+        "--contrasts", str(args.contrasts),
+        "--output", str(args.output),
+        "--seeds", args.seeds,
+        "--epochs", str(args.epochs),
+    ]
+    manifest = {
+        "entrypoint": str(script), "seeds": args.seeds, "epochs": args.epochs,
+        "note": "Target and scaffold separation must follow the frozen protocol in logs/training_manifest.json",
+    }
+    print(json.dumps(manifest, indent=2))
+    if not args.dry_run:
+        subprocess.run(command, cwd=args.repo_root, check=True)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

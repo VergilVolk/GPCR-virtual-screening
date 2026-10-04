@@ -1,0 +1,7 @@
+candidate_id,pharmacology_label,delta_int_direction_cosine,endpoint,interpretation,source,evidence_set
+LY2119620,known PAM,0.634,STATE_MOTION Delta_INT compound110_extension,reproducible positive direction,matched 20 ns retrospective control,retrospective_control
+compound110,known ago-PAM,0.584,STATE_MOTION Delta_INT compound110_extension,reproducible positive direction,matched 20 ns retrospective control,retrospective_control
+CM00734,experimentally inactive close analogue,-0.327,STATE_MOTION Delta_INT compound110_extension,opposite direction across replicas,frozen blinded retrospective control,retrospective_control
+PACER0010,unvalidated candidate,,four-context 10 ns x 3 replicas,limited probe and intrinsic mode separation; PAM function not resolved,prospective frozen evaluation,prospective_candidate
+PACER0027,unvalidated candidate,,four-context 10 ns x 3 replicas,candidate-alone response was reproducible; intrinsic activity requires follow-up,prospective frozen evaluation,prospective_candidate
+PACER0073,unvalidated candidate,,four-context 10 ns x 3 replicas,candidate-alone response was reproducible in selected regions; PAM function not resolved,prospective frozen evaluation,prospective_candidate

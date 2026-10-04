@@ -1,39 +1,37 @@
-# Model Card — M4 虚拟筛选模型 v01
+# Model card: M4 pocket retrieval adapter
 
-## 模型概述
-- **名称**：DrugCLIP(2023 基座) + muscarinic-triplet 双侧投影头
-- **文件**：`models/external_result.seed2026092{4,5,6}.projection.pt`（3 随机种子集成，每个 2.5MB）
-- **类型**：开源预训练分子-口袋检索模型（DrugCLIP，基座为 Uni-Mol 分子/口袋编码器）之上的轻量投影微调层（2 层线性 + ReLU + L2 归一化），非完整 backbone 微调
-- **调用方式**：`python screen.py --demo` / `--full`
+## Purpose
 
-## 训练
-- **微调数据**：ChEMBL 毒蕈碱族（M1-M5）triplet 对（内部靶留出协议）；**未使用** M4R GaMD 筛选评测对（该测试集用于 head-to-head 评估时模型从未见过）
-- **训练配置**：三随机种子 20260924/25/26；关键超参与种子记录见主仓库 `project/results/muscarinic_triplet_expansion_v01/`
-- **训练入口**：主仓库 `project/scripts/`（`train.py` 为一键包装）
+The model ranks small molecules by compatibility with an M4 allosteric pocket representation. It is an early binding filter and is not a direct predictor of PAM efficacy.
 
-## 评估（同测试集对决，2026-10-01）
-| 配置 | ROC | BEDROC20 | PR-AUC |
-|---|---:|---:|---:|
-| **本模型 + mean 池化（采用）** | **0.7136** | **0.1802** | **0.1547** |
-| 本模型 + max 池化 | 0.6673 | 0.1263 | 0.1295 |
-| 对照：Science-2026 基座 famaug LOSO | 0.5095 | 0.1118 | 0.0926 |
+## Architecture
 
-测试集：GaMD M4R 筛选对 25,249 行（2,301 活性）。
+The package contains three projection-head checkpoints. Each head maps frozen 512-dimensional molecule and pocket representations into a normalized 256-dimensional space. Molecule-pocket similarity is the cosine score, averaged over seeds and pocket conformations.
 
-## 输入输出
-- **输入**：分子 512 维 DrugCLIP 表征 + 10 个 GaMD M4 口袋表征（npz）
-- **输出**：每分子余弦结合分（10 口袋 mean 池化，3 种子平均），降序候选清单
+## Training protocol
 
-## 适用范围与已知局限
-- 适用于 CHRM4(M4R) 结合候选的大规模初筛排序（顶层切片建议 ≤5%）
-- **不预测变构正性调节（PAM）功能**：候选需经四上下文 MD（PACER-DC）功能复核
-- EF1%（top-1% 切片）在同测试集上低于随机基线（0.87），早期识别请以 BEDROC/PR 为参考并保留较大候选池
-- 表征依赖 DrugCLIP/Uni-Mol 编码环境（完整新分子编码流程见主仓库）
+- backbone representations: DrugCLIP-derived;
+- adaptation: muscarinic/GPCR family transfer with M4 held out from fitting;
+- seeds: 20260925, 20260926 and 20260927;
+- inference model: equal-weight three-seed ensemble;
+- validation: target-level and scaffold-aware checks recorded in the full repository.
 
-## 第三方组件
-| 组件 | 版本/来源 | 用途 | 许可 |
-|---|---|---|---|
-| DrugCLIP | 2023 官方 ckpt（主仓库 data/external/） | 分子-口袋检索基座 | Apache-2.0 |
-| Uni-Mol / Uni-Core | 主仓库 tools/Uni-Core | 表征编码器 | BSD-3 |
-| GaMD M4 构象 | figshare 33283491 + 内部聚类 | 口袋集合 | CC-BY(公开部分) |
-| ChEMBL | 33 | 微调标签 | CC-BY-4.0 |
+## Inputs
+
+NPZ files containing `molecule_ids`, `molecule_representations`, `pocket_ids` and `pocket_representations`.
+
+## Checkpoint hashes
+
+| Seed | SHA-256 |
+|---|---|
+| 20260925 | `a954c7c16fe857b5e3b02f1fbfdf7b2b1284d3559d86448b33736e16dd5d7398` |
+| 20260926 | `3cc92da9f066a36f9d65b47b7859e69ee7a456d48047a3e1bbd509283d50d4b9` |
+| 20260927 | `578ab8349fa8723f5609067e6511ebdfab8541dab8558e883bb7affeb7a8780c` |
+
+## Output
+
+A cosine binding score and rank for each molecule.
+
+## Known limits
+
+The score estimates pocket compatibility. It does not establish affinity, cooperativity, intrinsic agonism, selectivity, safety or clinical activity. Scores should be combined with structural and functional evidence and tested experimentally.

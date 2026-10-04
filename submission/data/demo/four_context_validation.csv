@@ -1,0 +1,4 @@
+candidate_id,pharmacology_label,delta_int_direction_cosine,endpoint,interpretation,source
+LY2119620,known PAM,0.634,STATE_MOTION Delta_INT compound110_extension,reproducible positive direction,matched 20 ns retrospective control
+compound110,known ago-PAM,0.584,STATE_MOTION Delta_INT compound110_extension,reproducible positive direction,matched 20 ns retrospective control
+CM00734,experimentally inactive close analogue,-0.327,STATE_MOTION Delta_INT compound110_extension,opposite direction across replicas,frozen blinded retrospective control

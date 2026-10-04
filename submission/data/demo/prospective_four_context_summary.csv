@@ -1,0 +1,4 @@
+candidate_id,pharmacology_label,delta_int_direction_cosine,endpoint,interpretation,source
+PACER0010,unvalidated candidate,,four-context 10 ns x 3 replicas,limited probe and intrinsic mode separation; PAM function not resolved,prospective frozen evaluation
+PACER0027,unvalidated candidate,,four-context 10 ns x 3 replicas,candidate-alone response was reproducible; intrinsic activity requires follow-up,prospective frozen evaluation
+PACER0073,unvalidated candidate,,four-context 10 ns x 3 replicas,candidate-alone response was reproducible in selected regions; PAM function not resolved,prospective frozen evaluation

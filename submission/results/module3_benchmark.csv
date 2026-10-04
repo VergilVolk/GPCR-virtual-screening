@@ -1,5 +1,0 @@
-method,roc_auc,pr_auc,log_auc_percent,ef_0_5_percent,ef_1_percent,ef_2_percent,ef_5_percent
-Vina-BEmin,0.7331,0.0406,10.14,0.26,0.78,1.26,2.16
-Glide-BEmin,0.6993,0.0969,16.13,20.40,13.73,8.39,4.32
-Six-channel equal-rank consensus,0.7710,0.0559,14.68,3.84,3.31,3.40,3.65
-One-percent cascade,0.7775,0.1067,19.78,20.40,13.73,7.48,4.60

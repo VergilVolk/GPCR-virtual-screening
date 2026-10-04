@@ -24,8 +24,8 @@ def run_screen(molecules: Path, pockets: Path, output: Path) -> Path:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Score molecules against the M4 pocket")
-    parser.add_argument("--molecules", type=Path, default=ROOT / "data/demo/m4_candidate_representations.npz")
-    parser.add_argument("--pockets", type=Path, default=ROOT / "data/demo/m4_pocket_representations.npz")
+    parser.add_argument("--molecules", type=Path, required=True)
+    parser.add_argument("--pockets", type=Path, required=True)
     parser.add_argument("--output", type=Path, default=ROOT / "results/module2_binding.csv")
     parser.add_argument("--demo", action="store_true")
     args = parser.parse_args()

@@ -22,11 +22,11 @@ def main() -> None:
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
-    script = args.repo_root / "project/scripts/finetune_drugclip_muscarinic_triplet.py"
+    packaged = ROOT / "src/production/drugclip_triplet_finetune.py"
+    script = packaged if packaged.exists() else args.repo_root / "project/scripts/finetune_drugclip_muscarinic_triplet.py"
     if not script.exists():
         raise FileNotFoundError(
-            "The full training script is not included in the compact archive. "
-            "Run this entry from the complete repository."
+            "DrugCLIP triplet fine-tuning script was not found."
         )
     command = [
         sys.executable, str(script),

@@ -1,79 +1,80 @@
-# M4 PAM virtual screening submission
+# M4 PAM virtual screening code
 
-This directory is the compact evaluation package for our Track 3 entry. It covers the full decision chain used in the project:
+This directory contains the four modules used in our Track 3 workflow. Screening results,
+candidate rankings, docking poses and MD trajectories are not included.
 
-1. candidate chemistry checks;
-2. M4 pocket retrieval with a DrugCLIP-derived adapter;
-3. multi-conformation docking evidence;
-4. four-context molecular-dynamics evidence.
+## Installation and check
 
-The final output is a ranked list of computational candidates. It is not a claim that any listed molecule is an experimentally confirmed positive allosteric modulator (PAM).
-
-## Quick start
-
-Tested on Windows 11 and Python 3.11. CPU execution is sufficient for the packaged example.
+Tested on Windows 11 with Python 3.11. The code-level smoke test runs on CPU.
 
 ```bash
-python -m venv .venv
-.venv\Scripts\activate
 pip install -r requirements.txt
-python predict.py --demo
+python verify_submission.py
 ```
 
-The command writes `results/results.csv` and the four intermediate tables.
+The check verifies the three packaged DrugCLIP adapter weights and runs all four modules on
+temporary synthetic inputs. It does not reproduce or disclose the submitted candidate list.
 
-Each stage can also be run separately:
+## Modules
+
+1. `module1_generate_filter.py`: applies the physicochemical and simplified pharmacophore
+   rules used after BRICS and SMILES-LSTM generation.
+2. `screen.py`: applies three M4 leave-one-target-out DrugCLIP projection heads and averages
+   their cosine scores.
+3. `module3_ensemble_dock.py`: combines Glide-PDB, Glide-BEmin, Glide-BEavg, Vina-PDB,
+   Vina-BEmin and Vina-BEavg after conversion to protocol-specific rank percentiles.
+4. `module4_fkg_eval.py`: exports the frozen four-context result based on apo, ACh-only,
+   candidate-only and candidate+ACh simulations.
+
+The original production scripts are kept in `src/production/`. They cover BRICS generation,
+SMILES-LSTM generation, Glide/Vina docking, six-channel fusion and the full four-context
+analysis. The top-level scripts are small inference interfaces around the same calculations.
+
+## Unified inference entry
 
 ```bash
-python module1_generate_filter.py --demo
-python screen.py --demo
-python module3_ensemble_dock.py --demo
-python module4_fkg_eval.py --demo
+python predict.py \
+  --library INPUT_LIBRARY.csv \
+  --molecule-representations MOLECULES.npz \
+  --pocket-representation M4_POCKET.npz \
+  --docking-six-channel SIX_CHANNEL.csv \
+  --stage4-summary STAGE4_SUMMARY.json \
+  --stage4-id-map OPTIONAL_ID_MAP.csv \
+  --output run/results.csv
 ```
 
-## Inputs and outputs
+Required identifiers must be consistent across the library, representation and docking files.
+If Stage 4 uses historical display IDs, provide a two-column map named `candidate_id` and
+`stage4_candidate_id`. Omit both Stage 4 options when four-context MD has not been run.
 
-| Stage | Input | Method | Output |
-|---|---|---|---|
-| Chemistry | candidate ID and SMILES | validity, PAINS, physicochemical and QED checks | `module1_chemistry.csv` |
-| Pocket retrieval | frozen 512-dimensional molecule and M4-pocket representations | three M4 leave-one-target-out projection heads; cosine score | `module2_binding.csv` |
-| Structure | six protocol-matched docking channels | Glide/Vina across PDB, BEmin and BEavg; equal-rank fusion | `module3_structure.csv` |
-| Function | four receptor contexts: apo, ACh, candidate, ACh+candidate | interaction contrast `CP - P - C + A` and cross-replica direction agreement | `module4_function.csv` |
-| Integration | outputs above | evidence-preserving merge | `results.csv` |
-
-The example starts with 12 candidates. Three candidates have complete protocol-matched Glide and Vina evidence and continue to the final table. The prospective dynamics set contains those three candidates, four contexts and three replicas per candidate (36 trajectories, 10 ns each). Raw trajectories are not duplicated in this compact package because of their size; the frozen summaries and full analysis code remain in the repository.
-
-## Training and model files
-
-`models/` contains three M4 leave-one-target-out DrugCLIP adapter checkpoints. They are the exact inference weights used by `screen.py`. The base representations were generated with the documented DrugCLIP checkpoint; redistribution of upstream weights follows the upstream license.
-
-The adapter training entry is:
+Build a local review page after inference:
 
 ```bash
-python train.py --repo-root .. --epochs 80 --dry-run
+python dashboard.py --results run/results.csv --output run/dashboard.html
 ```
 
-Remove `--dry-run` only in a full repository checkout and provide the training representations, base projection and contrast table through the corresponding command-line options. Target separation, scaffold controls and the three seeds are recorded in `logs/training_manifest.json`.
+## Expected input fields
 
-## Docking and MD reproduction
+- library CSV: `candidate_id` (or `molecule_id`) and `smiles`;
+- molecule NPZ: `molecule_ids`, `molecule_representations`;
+- pocket NPZ: `pocket_representations`;
+- docking CSV: `candidate_id` plus raw score and `rankpct` columns for all six channels;
+- Stage 4 JSON: output of the frozen prospective evaluation code.
 
-The packaged demo replays frozen docking and MD summaries so it can run on a CPU laptop. Full production runs require:
+## Training
 
-- AutoDock Vina 1.2.7 and Schrödinger Glide for the two docking engines;
-- the receptor ensemble and prepared structures listed in `data/README.md`;
-- OpenMM for membrane MD;
-- substantially more time and storage than the compact demo.
+`train.py` calls the repository's DrugCLIP triplet fine-tuning script. The three final adapter
+weights used by `screen.py` are in `models/`; their SHA-256 values are listed in the model card
+and checked by `verify_submission.py`.
 
-Module 3 uses six channels: Glide-PDB, Glide-BEmin, Glide-BEavg, Vina-PDB, Vina-BEmin and Vina-BEavg. PDB denotes the experimental receptor structure. BEmin is the best PMF-adjusted score across the GaMD ensemble, while BEavg is the mean PMF-adjusted ensemble score. Each channel is converted to an empirical rank percentile against its frozen M4 reference distribution. The six percentiles are averaged without fitted weights. Missing channels are rejected rather than imputed. The compact demo recomputes the fusion from frozen raw scores and percentiles; rerunning Glide requires a valid Schrödinger installation and license.
+## Full-run requirements
 
-The production implementation is retained in `project/scripts/run_pacer_xr_full_rerun_v01.py`, with separate Glide and Vina runners, six-channel assembly and an acceptance validator. The public M4 benchmark results are stored in `results/module3_benchmark.csv`.
+The compact smoke test does not invoke docking or MD. A full run needs AutoDock Vina,
+licensed Schrodinger Glide, OpenMM, prepared receptor structures and receptor trajectories.
+Those installations and large or licensed inputs are not bundled.
 
-## Result fields
+## Scope
 
-`results/results.csv` includes candidate ID, track, SMILES, chemistry checks, M4 binding score, six-channel docking consensus, functional-evidence status, model version and claim status.
-
-## Limits
-
-- DrugCLIP and docking assess binding compatibility, not PAM efficacy.
-- The four-context endpoint separated retrospective controls, but the prospective candidates did not yet show a robust, cross-replica cooperative signal.
-- All final candidates require experimental pharmacology, counter-screening and safety testing.
+DrugCLIP and docking measure binding compatibility. Four-context dynamics tests conditional
+structural responses. These calculations do not establish PAM efficacy without functional
+experiments.

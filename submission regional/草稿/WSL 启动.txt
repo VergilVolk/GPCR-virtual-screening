@@ -1,0 +1,7 @@
+sudo -i
+cd /root/work/GPCR-virtual-screening
+source /root/miniforge3/etc/profile.d/conda.sh
+conda activate pacer-dc-md
+pwd
+which python
+nvidia-smi

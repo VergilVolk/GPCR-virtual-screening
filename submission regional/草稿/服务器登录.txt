@@ -1,0 +1,9 @@
+ssh ubuntu@36.103.236.198
+cd /data/GPCR-virtual-screening
+conda activate pacer-dc-md
+
+nvidia-smi
+
+cat project/results/pacer_dc_production_v01/apo/replica_01/progress.json
+
+exit

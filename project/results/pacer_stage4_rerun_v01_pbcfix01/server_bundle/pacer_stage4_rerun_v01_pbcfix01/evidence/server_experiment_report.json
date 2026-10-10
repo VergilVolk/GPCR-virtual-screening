@@ -1,0 +1,15 @@
+{
+  "evidence_type": "User supplied server experiment; not independently rerun locally",
+  "before_restraint_kj_mol": 269484748,
+  "after_restraint_kj_mol": 322.347,
+  "minimized_potential_kj_mol": -1857111.364,
+  "max_force_kj_mol_nm": 2877.257,
+  "steps": 500,
+  "heating_K": [
+    50,
+    100,
+    200,
+    300
+  ],
+  "result": "PBC_FIX_SINGLE_APO_SMOKE_PASS"
+}

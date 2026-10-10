@@ -1,0 +1,6 @@
+{
+  "source_root": "/data/pacer_stage4_rerun_v01_deployment/pacer_stage4_rerun_v01",
+  "legacy_manifest_sha256": "a5effbfcf1c7da66bb9152dc400ef117ad16bed7942f3ac652d0b1bfb8d54fde",
+  "source_branch": "results/pacer-stage4-rerun-preparation-v01",
+  "source_commit": "b49aaa3f55c363ca1c7126b1012bcdf9c67b1b6d"
+}

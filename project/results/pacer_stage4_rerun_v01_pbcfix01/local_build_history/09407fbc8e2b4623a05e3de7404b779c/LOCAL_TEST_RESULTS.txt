@@ -1,0 +1,15 @@
+test_boundary (test_pacer_stage4_pbcfix01.IndependentDistances) ... ok
+test_orthogonal_and_multiple_wraps (test_pacer_stage4_pbcfix01.IndependentDistances) ... ok
+test_triclinic (test_pacer_stage4_pbcfix01.IndependentDistances) ... ok
+test_energy_before_after_and_independent_reference (test_pacer_stage4_pbcfix01.OpenMMRegression) ... ok
+test_lattice_invariance (test_pacer_stage4_pbcfix01.OpenMMRegression) ... ok
+test_no_wrap_equality (test_pacer_stage4_pbcfix01.OpenMMRegression) ... ok
+test_unknown_or_double_patch_rejected (test_pacer_stage4_pbcfix01.OpenMMRegression) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.213s
+
+OK
+
+Package: syntax, SHA256 members, 12 systems, 36 versioned jobs, runtime state and authorization anchors PASS.
+Local platform: OpenMM 8.1.1 Reference; isolated workspace dependency. CUDA server validation PENDING.

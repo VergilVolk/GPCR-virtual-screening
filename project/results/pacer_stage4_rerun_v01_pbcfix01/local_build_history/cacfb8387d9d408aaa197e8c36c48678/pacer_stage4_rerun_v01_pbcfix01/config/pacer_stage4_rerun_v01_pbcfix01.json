@@ -1,0 +1,81 @@
+{
+  "protocol_id": "pacer_stage4_rerun_v01_pbcfix01",
+  "production_steps": 5000000,
+  "production_ns": 10,
+  "timestep_fs": 2,
+  "trajectory_ps": 10,
+  "checkpoint_ps": 100,
+  "seeds": [
+    27101,
+    38201,
+    49301
+  ],
+  "contexts": {
+    "A": [],
+    "P": [
+      "ACH"
+    ],
+    "C": [
+      "candidate"
+    ],
+    "CP": [
+      "candidate",
+      "ACH"
+    ]
+  },
+  "temperature_K": 300,
+  "friction_per_ps": 1,
+  "pressure_bar": 1,
+  "initial_restraint_k": 1000,
+  "forcefields": [
+    "amber14/protein.ff14SB.xml",
+    "amber14/lipid17.xml",
+    "amber14/tip3p.xml",
+    "openff_unconstrained-2.2.1.offxml"
+  ],
+  "charge_method": "AM1-BCC",
+  "membrane": "POPC",
+  "padding_nm": 1,
+  "ionic_strength_M": 0.15,
+  "PME_cutoff_nm": 1,
+  "ewald_error_tolerance": 0.0005,
+  "constraints": "HBonds",
+  "rigid_water": true,
+  "barostat": {
+    "XY": "XYIsotropic",
+    "Z": "ZFree",
+    "frequency": 25,
+    "surface_tension_bar_nm": 0
+  },
+  "smoke": {
+    "steps": 500,
+    "timestep_fs": 0.5,
+    "heating_K": [
+      50,
+      100,
+      200,
+      300
+    ]
+  },
+  "equilibration": {
+    "nvt_ps": 1,
+    "npt_ps": 1,
+    "timestep_fs": 0.5
+  },
+  "release": {
+    "schedule": [
+      500,
+      100,
+      10,
+      0
+    ],
+    "stage_ps": 0.5,
+    "timestep_fs": 1
+  },
+  "control_policy": "12 distinct systems / 36 independently executed tasks; common cluster_01 receptor baseline; no shared trajectories",
+  "production_started": false,
+  "restraint_expression": "0.5*k*periodicdistance(x,y,z,x0,y0,z0)^2",
+  "initial_state_policy": "Re-minimized raw input.pdb; never old refined_state.xml",
+  "scientific_review_required": true,
+  "user_authorization_required_before_prepare": true
+}

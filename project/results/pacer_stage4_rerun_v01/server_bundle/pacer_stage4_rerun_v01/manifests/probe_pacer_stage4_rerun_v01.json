@@ -1,0 +1,172 @@
+{
+  "identity": "CC(=O)OCC[N+](C)(C)C",
+  "formal_charge": 1,
+  "atom_count": 26,
+  "sha256": "8c1dac94f29cb5a9b861eef78bd33947f18546200d50140403d362d2a87e5a70",
+  "historical_pose_sha256": "8056546adb32cb3e79f5e0fbc6a79f987e5b50dd9c1c4fbb2aa9470c68ecd59f",
+  "min_protein_heavy_distance_A": 1.8182386432537763,
+  "atom_mapping": [
+    {
+      "historical_index": 1,
+      "OPM_cluster_01_index": 1,
+      "element": "N",
+      "formal_charge": 1
+    },
+    {
+      "historical_index": 2,
+      "OPM_cluster_01_index": 2,
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 3,
+      "OPM_cluster_01_index": 3,
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 4,
+      "OPM_cluster_01_index": 4,
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 5,
+      "OPM_cluster_01_index": 5,
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 6,
+      "OPM_cluster_01_index": 6,
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 7,
+      "OPM_cluster_01_index": 7,
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 8,
+      "OPM_cluster_01_index": 8,
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 9,
+      "OPM_cluster_01_index": 9,
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 10,
+      "OPM_cluster_01_index": 10,
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 11,
+      "OPM_cluster_01_index": 11,
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 12,
+      "OPM_cluster_01_index": 12,
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 13,
+      "OPM_cluster_01_index": 13,
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 14,
+      "OPM_cluster_01_index": 14,
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 15,
+      "OPM_cluster_01_index": 15,
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 16,
+      "OPM_cluster_01_index": 16,
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 17,
+      "OPM_cluster_01_index": 17,
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 18,
+      "OPM_cluster_01_index": 18,
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 19,
+      "OPM_cluster_01_index": 19,
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 20,
+      "OPM_cluster_01_index": 20,
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 21,
+      "OPM_cluster_01_index": 21,
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 22,
+      "OPM_cluster_01_index": 22,
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 23,
+      "OPM_cluster_01_index": 23,
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 24,
+      "OPM_cluster_01_index": 24,
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 25,
+      "OPM_cluster_01_index": 25,
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "historical_index": 26,
+      "OPM_cluster_01_index": 26,
+      "element": "H",
+      "formal_charge": 0
+    }
+  ],
+  "contexts": [
+    "probe_only",
+    "candidate_probe"
+  ],
+  "native_receptor_ACh_retained": false,
+  "status": "PASS"
+}

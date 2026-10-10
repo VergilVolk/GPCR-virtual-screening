@@ -1,0 +1,2883 @@
+{
+  "status": "PASS",
+  "candidate_poses": [
+    {
+      "candidate_id": "PACERGEN02432",
+      "cascade_rank": 1,
+      "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cnn(-c4cnn(C5Cc6ccccc6C5)c4)c3)c(N)c12",
+      "canonical_smiles_sha256": "90470f7725f420e1aadc2f8b809a86e1191dc058b6e97d3b8dfe9f16bec35dc7",
+      "source_poseviewer_sha256": "542425a9f33274abe68e885a69b9472504a34f3b3e805eba11728dec49dcd1d5",
+      "entry_index": 2,
+      "selected_variant_id": "PACERGEN02432__s00__v01",
+      "glide_gscore": -10.5977417530992,
+      "BEmin": -9.8197370076496,
+      "pmf": 0.7780047454496,
+      "cluster": "cluster_01",
+      "title": "PACERGEN02432__s00__v01",
+      "state_smiles": "Cc1nnc(c(Cl)c2C)n1c(c23)sc(c3N)Nc4cnn(c4)-c5cnn(c5)C(C6)Cc(c67)cccc7",
+      "formal_charge": 0,
+      "raw_pose": "inputs/poses/PACERGEN02432_glide_cluster_01.mae",
+      "raw_pose_sha256": "52be440cd9c91da013948e5e65db1cd3b07112be8457d324f5dcac33a29b7f47",
+      "sdf": "inputs/ligands/PACERGEN02432_glide_cluster_01.sdf",
+      "sdf_sha256": "7df46ecebdf3f1fd297e069c9539e6fe256a99e035a307e5ae2da80598d3f641",
+      "oriented_sdf": "inputs/ligands/PACERGEN02432_OPM.sdf",
+      "oriented_sdf_sha256": "19d2b0f98694a8f30bffc3979a35133d7e8fd3ef509d72bb6eab4d3621f7451c",
+      "atom_count": 58,
+      "atom_mapping": [
+        {
+          "source_index": 1,
+          "sdf_index": 1,
+          "opm_index": 1,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 2,
+          "sdf_index": 2,
+          "opm_index": 2,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 3,
+          "sdf_index": 3,
+          "opm_index": 3,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 4,
+          "sdf_index": 4,
+          "opm_index": 4,
+          "atomic_number": 17
+        },
+        {
+          "source_index": 5,
+          "sdf_index": 5,
+          "opm_index": 5,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 6,
+          "sdf_index": 6,
+          "opm_index": 6,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 7,
+          "sdf_index": 7,
+          "opm_index": 7,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 8,
+          "sdf_index": 8,
+          "opm_index": 8,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 9,
+          "sdf_index": 9,
+          "opm_index": 9,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 10,
+          "sdf_index": 10,
+          "opm_index": 10,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 11,
+          "sdf_index": 11,
+          "opm_index": 11,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 12,
+          "sdf_index": 12,
+          "opm_index": 12,
+          "atomic_number": 16
+        },
+        {
+          "source_index": 13,
+          "sdf_index": 13,
+          "opm_index": 13,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 14,
+          "sdf_index": 14,
+          "opm_index": 14,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 15,
+          "sdf_index": 15,
+          "opm_index": 15,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 16,
+          "sdf_index": 16,
+          "opm_index": 16,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 17,
+          "sdf_index": 17,
+          "opm_index": 17,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 18,
+          "sdf_index": 18,
+          "opm_index": 18,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 19,
+          "sdf_index": 19,
+          "opm_index": 19,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 20,
+          "sdf_index": 20,
+          "opm_index": 20,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 21,
+          "sdf_index": 21,
+          "opm_index": 21,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 22,
+          "sdf_index": 22,
+          "opm_index": 22,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 23,
+          "sdf_index": 23,
+          "opm_index": 23,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 24,
+          "sdf_index": 24,
+          "opm_index": 24,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 25,
+          "sdf_index": 25,
+          "opm_index": 25,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 26,
+          "sdf_index": 26,
+          "opm_index": 26,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 27,
+          "sdf_index": 27,
+          "opm_index": 27,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 28,
+          "sdf_index": 28,
+          "opm_index": 28,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 29,
+          "sdf_index": 29,
+          "opm_index": 29,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 30,
+          "sdf_index": 30,
+          "opm_index": 30,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 31,
+          "sdf_index": 31,
+          "opm_index": 31,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 32,
+          "sdf_index": 32,
+          "opm_index": 32,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 33,
+          "sdf_index": 33,
+          "opm_index": 33,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 34,
+          "sdf_index": 34,
+          "opm_index": 34,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 35,
+          "sdf_index": 35,
+          "opm_index": 35,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 36,
+          "sdf_index": 36,
+          "opm_index": 36,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 37,
+          "sdf_index": 37,
+          "opm_index": 37,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 38,
+          "sdf_index": 38,
+          "opm_index": 38,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 39,
+          "sdf_index": 39,
+          "opm_index": 39,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 40,
+          "sdf_index": 40,
+          "opm_index": 40,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 41,
+          "sdf_index": 41,
+          "opm_index": 41,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 42,
+          "sdf_index": 42,
+          "opm_index": 42,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 43,
+          "sdf_index": 43,
+          "opm_index": 43,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 44,
+          "sdf_index": 44,
+          "opm_index": 44,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 45,
+          "sdf_index": 45,
+          "opm_index": 45,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 46,
+          "sdf_index": 46,
+          "opm_index": 46,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 47,
+          "sdf_index": 47,
+          "opm_index": 47,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 48,
+          "sdf_index": 48,
+          "opm_index": 48,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 49,
+          "sdf_index": 49,
+          "opm_index": 49,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 50,
+          "sdf_index": 50,
+          "opm_index": 50,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 51,
+          "sdf_index": 51,
+          "opm_index": 51,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 52,
+          "sdf_index": 52,
+          "opm_index": 52,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 53,
+          "sdf_index": 53,
+          "opm_index": 53,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 54,
+          "sdf_index": 54,
+          "opm_index": 54,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 55,
+          "sdf_index": 55,
+          "opm_index": 55,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 56,
+          "sdf_index": 56,
+          "opm_index": 56,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 57,
+          "sdf_index": 57,
+          "opm_index": 57,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 58,
+          "sdf_index": 58,
+          "opm_index": 58,
+          "atomic_number": 1
+        }
+      ],
+      "parent_microstate_identity": "PASS",
+      "stereo_policy": "Prepared Glide isomeric state authoritative; retain pose stereo, do not invent unspecified parent stereo",
+      "max_SDF_roundtrip_error_A": 4.9000000004184585e-05,
+      "min_candidate_protein_heavy_A": 2.993878308851967,
+      "min_candidate_ACH_heavy_A": 8.267604690560777,
+      "status": "PASS",
+      "source_poseviewer": "inputs/poses/original_cluster_01_pv.maegz"
+    },
+    {
+      "candidate_id": "PACERGEN00123",
+      "cascade_rank": 2,
+      "canonical_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+      "canonical_smiles_sha256": "c9939a392a29a6e940a6d7ccb805db459cceef6f133b97c933312c886f1c2c36",
+      "source_poseviewer_sha256": "542425a9f33274abe68e885a69b9472504a34f3b3e805eba11728dec49dcd1d5",
+      "entry_index": 3,
+      "selected_variant_id": "PACERGEN00123__s00__v01",
+      "glide_gscore": -10.3932788220934,
+      "BEmin": -9.6152740766438,
+      "pmf": 0.7780047454496,
+      "cluster": "cluster_01",
+      "title": "PACERGEN00123__s00__v01",
+      "state_smiles": "Cc1c(Cl)c(nnc2)n2c(c13)sc(c3N)N(C4)CC4[N@H+](C5)C[C@H]5[NH2+]C(C6)Cc(c67)cccc7",
+      "formal_charge": 2,
+      "raw_pose": "inputs/poses/PACERGEN00123_glide_cluster_01.mae",
+      "raw_pose_sha256": "b8012922ac30c22caac925045bd2ff2aa2a4ad30fb68b7f5352ffb3c47a842ee",
+      "sdf": "inputs/ligands/PACERGEN00123_glide_cluster_01.sdf",
+      "sdf_sha256": "38c71c83ed95ba11e4b0274f773bb6638270c6eb768b38341edd847b70b7b065",
+      "oriented_sdf": "inputs/ligands/PACERGEN00123_OPM.sdf",
+      "oriented_sdf_sha256": "c66f64d8caf704d94c04f912656c00c8d0e65e97c3d30260c103dc6bae0526ee",
+      "atom_count": 61,
+      "atom_mapping": [
+        {
+          "source_index": 1,
+          "sdf_index": 1,
+          "opm_index": 1,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 2,
+          "sdf_index": 2,
+          "opm_index": 2,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 3,
+          "sdf_index": 3,
+          "opm_index": 3,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 4,
+          "sdf_index": 4,
+          "opm_index": 4,
+          "atomic_number": 17
+        },
+        {
+          "source_index": 5,
+          "sdf_index": 5,
+          "opm_index": 5,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 6,
+          "sdf_index": 6,
+          "opm_index": 6,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 7,
+          "sdf_index": 7,
+          "opm_index": 7,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 8,
+          "sdf_index": 8,
+          "opm_index": 8,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 9,
+          "sdf_index": 9,
+          "opm_index": 9,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 10,
+          "sdf_index": 10,
+          "opm_index": 10,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 11,
+          "sdf_index": 11,
+          "opm_index": 11,
+          "atomic_number": 16
+        },
+        {
+          "source_index": 12,
+          "sdf_index": 12,
+          "opm_index": 12,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 13,
+          "sdf_index": 13,
+          "opm_index": 13,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 14,
+          "sdf_index": 14,
+          "opm_index": 14,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 15,
+          "sdf_index": 15,
+          "opm_index": 15,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 16,
+          "sdf_index": 16,
+          "opm_index": 16,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 17,
+          "sdf_index": 17,
+          "opm_index": 17,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 18,
+          "sdf_index": 18,
+          "opm_index": 18,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 19,
+          "sdf_index": 19,
+          "opm_index": 19,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 20,
+          "sdf_index": 20,
+          "opm_index": 20,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 21,
+          "sdf_index": 21,
+          "opm_index": 21,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 22,
+          "sdf_index": 22,
+          "opm_index": 22,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 23,
+          "sdf_index": 23,
+          "opm_index": 23,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 24,
+          "sdf_index": 24,
+          "opm_index": 24,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 25,
+          "sdf_index": 25,
+          "opm_index": 25,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 26,
+          "sdf_index": 26,
+          "opm_index": 26,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 27,
+          "sdf_index": 27,
+          "opm_index": 27,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 28,
+          "sdf_index": 28,
+          "opm_index": 28,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 29,
+          "sdf_index": 29,
+          "opm_index": 29,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 30,
+          "sdf_index": 30,
+          "opm_index": 30,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 31,
+          "sdf_index": 31,
+          "opm_index": 31,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 32,
+          "sdf_index": 32,
+          "opm_index": 32,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 33,
+          "sdf_index": 33,
+          "opm_index": 33,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 34,
+          "sdf_index": 34,
+          "opm_index": 34,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 35,
+          "sdf_index": 35,
+          "opm_index": 35,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 36,
+          "sdf_index": 36,
+          "opm_index": 36,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 37,
+          "sdf_index": 37,
+          "opm_index": 37,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 38,
+          "sdf_index": 38,
+          "opm_index": 38,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 39,
+          "sdf_index": 39,
+          "opm_index": 39,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 40,
+          "sdf_index": 40,
+          "opm_index": 40,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 41,
+          "sdf_index": 41,
+          "opm_index": 41,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 42,
+          "sdf_index": 42,
+          "opm_index": 42,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 43,
+          "sdf_index": 43,
+          "opm_index": 43,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 44,
+          "sdf_index": 44,
+          "opm_index": 44,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 45,
+          "sdf_index": 45,
+          "opm_index": 45,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 46,
+          "sdf_index": 46,
+          "opm_index": 46,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 47,
+          "sdf_index": 47,
+          "opm_index": 47,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 48,
+          "sdf_index": 48,
+          "opm_index": 48,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 49,
+          "sdf_index": 49,
+          "opm_index": 49,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 50,
+          "sdf_index": 50,
+          "opm_index": 50,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 51,
+          "sdf_index": 51,
+          "opm_index": 51,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 52,
+          "sdf_index": 52,
+          "opm_index": 52,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 53,
+          "sdf_index": 53,
+          "opm_index": 53,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 54,
+          "sdf_index": 54,
+          "opm_index": 54,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 55,
+          "sdf_index": 55,
+          "opm_index": 55,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 56,
+          "sdf_index": 56,
+          "opm_index": 56,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 57,
+          "sdf_index": 57,
+          "opm_index": 57,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 58,
+          "sdf_index": 58,
+          "opm_index": 58,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 59,
+          "sdf_index": 59,
+          "opm_index": 59,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 60,
+          "sdf_index": 60,
+          "opm_index": 60,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 61,
+          "sdf_index": 61,
+          "opm_index": 61,
+          "atomic_number": 1
+        }
+      ],
+      "parent_microstate_identity": "PASS",
+      "stereo_policy": "Prepared Glide isomeric state authoritative; retain pose stereo, do not invent unspecified parent stereo",
+      "max_SDF_roundtrip_error_A": 5.000000000165983e-05,
+      "min_candidate_protein_heavy_A": 2.6489028501581635,
+      "min_candidate_ACH_heavy_A": 7.500374196521298,
+      "status": "PASS",
+      "source_poseviewer": "inputs/poses/original_cluster_01_pv.maegz"
+    },
+    {
+      "candidate_id": "PACERGEN00462",
+      "cascade_rank": 3,
+      "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+      "canonical_smiles_sha256": "7cf0f5850dbe338e81dd427ed595b51c3757f6f12e7a476c8f1e4e5e8238ed24",
+      "source_poseviewer_sha256": "542425a9f33274abe68e885a69b9472504a34f3b3e805eba11728dec49dcd1d5",
+      "entry_index": 4,
+      "selected_variant_id": "PACERGEN00462__s00__v01",
+      "glide_gscore": -10.2091140447889,
+      "BEmin": -9.4311092993393,
+      "pmf": 0.7780047454496,
+      "cluster": "cluster_01",
+      "title": "PACERGEN00462__s00__v01",
+      "state_smiles": "Cc1nnc(c(Cl)c2C)n1c(c23)sc(c3N)N(C4)CC4[N@H+](C5)C[C@H]5[NH2+]C(C6)Cc(c67)cccc7",
+      "formal_charge": 2,
+      "raw_pose": "inputs/poses/PACERGEN00462_glide_cluster_01.mae",
+      "raw_pose_sha256": "bb520cf6872cc0f21e7c27ac55d26857d26dad17dd9193431547368703b804ba",
+      "sdf": "inputs/ligands/PACERGEN00462_glide_cluster_01.sdf",
+      "sdf_sha256": "e4681b5e07e5ed500489179effb35c705a04a46757059985735f1986515248d1",
+      "oriented_sdf": "inputs/ligands/PACERGEN00462_OPM.sdf",
+      "oriented_sdf_sha256": "ad79486e03120c9df587b4a70618475c615f6c53beab5bb87275fb1500cccc4a",
+      "atom_count": 64,
+      "atom_mapping": [
+        {
+          "source_index": 1,
+          "sdf_index": 1,
+          "opm_index": 1,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 2,
+          "sdf_index": 2,
+          "opm_index": 2,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 3,
+          "sdf_index": 3,
+          "opm_index": 3,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 4,
+          "sdf_index": 4,
+          "opm_index": 4,
+          "atomic_number": 17
+        },
+        {
+          "source_index": 5,
+          "sdf_index": 5,
+          "opm_index": 5,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 6,
+          "sdf_index": 6,
+          "opm_index": 6,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 7,
+          "sdf_index": 7,
+          "opm_index": 7,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 8,
+          "sdf_index": 8,
+          "opm_index": 8,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 9,
+          "sdf_index": 9,
+          "opm_index": 9,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 10,
+          "sdf_index": 10,
+          "opm_index": 10,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 11,
+          "sdf_index": 11,
+          "opm_index": 11,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 12,
+          "sdf_index": 12,
+          "opm_index": 12,
+          "atomic_number": 16
+        },
+        {
+          "source_index": 13,
+          "sdf_index": 13,
+          "opm_index": 13,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 14,
+          "sdf_index": 14,
+          "opm_index": 14,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 15,
+          "sdf_index": 15,
+          "opm_index": 15,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 16,
+          "sdf_index": 16,
+          "opm_index": 16,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 17,
+          "sdf_index": 17,
+          "opm_index": 17,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 18,
+          "sdf_index": 18,
+          "opm_index": 18,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 19,
+          "sdf_index": 19,
+          "opm_index": 19,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 20,
+          "sdf_index": 20,
+          "opm_index": 20,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 21,
+          "sdf_index": 21,
+          "opm_index": 21,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 22,
+          "sdf_index": 22,
+          "opm_index": 22,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 23,
+          "sdf_index": 23,
+          "opm_index": 23,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 24,
+          "sdf_index": 24,
+          "opm_index": 24,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 25,
+          "sdf_index": 25,
+          "opm_index": 25,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 26,
+          "sdf_index": 26,
+          "opm_index": 26,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 27,
+          "sdf_index": 27,
+          "opm_index": 27,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 28,
+          "sdf_index": 28,
+          "opm_index": 28,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 29,
+          "sdf_index": 29,
+          "opm_index": 29,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 30,
+          "sdf_index": 30,
+          "opm_index": 30,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 31,
+          "sdf_index": 31,
+          "opm_index": 31,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 32,
+          "sdf_index": 32,
+          "opm_index": 32,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 33,
+          "sdf_index": 33,
+          "opm_index": 33,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 34,
+          "sdf_index": 34,
+          "opm_index": 34,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 35,
+          "sdf_index": 35,
+          "opm_index": 35,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 36,
+          "sdf_index": 36,
+          "opm_index": 36,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 37,
+          "sdf_index": 37,
+          "opm_index": 37,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 38,
+          "sdf_index": 38,
+          "opm_index": 38,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 39,
+          "sdf_index": 39,
+          "opm_index": 39,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 40,
+          "sdf_index": 40,
+          "opm_index": 40,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 41,
+          "sdf_index": 41,
+          "opm_index": 41,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 42,
+          "sdf_index": 42,
+          "opm_index": 42,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 43,
+          "sdf_index": 43,
+          "opm_index": 43,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 44,
+          "sdf_index": 44,
+          "opm_index": 44,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 45,
+          "sdf_index": 45,
+          "opm_index": 45,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 46,
+          "sdf_index": 46,
+          "opm_index": 46,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 47,
+          "sdf_index": 47,
+          "opm_index": 47,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 48,
+          "sdf_index": 48,
+          "opm_index": 48,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 49,
+          "sdf_index": 49,
+          "opm_index": 49,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 50,
+          "sdf_index": 50,
+          "opm_index": 50,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 51,
+          "sdf_index": 51,
+          "opm_index": 51,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 52,
+          "sdf_index": 52,
+          "opm_index": 52,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 53,
+          "sdf_index": 53,
+          "opm_index": 53,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 54,
+          "sdf_index": 54,
+          "opm_index": 54,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 55,
+          "sdf_index": 55,
+          "opm_index": 55,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 56,
+          "sdf_index": 56,
+          "opm_index": 56,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 57,
+          "sdf_index": 57,
+          "opm_index": 57,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 58,
+          "sdf_index": 58,
+          "opm_index": 58,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 59,
+          "sdf_index": 59,
+          "opm_index": 59,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 60,
+          "sdf_index": 60,
+          "opm_index": 60,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 61,
+          "sdf_index": 61,
+          "opm_index": 61,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 62,
+          "sdf_index": 62,
+          "opm_index": 62,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 63,
+          "sdf_index": 63,
+          "opm_index": 63,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 64,
+          "sdf_index": 64,
+          "opm_index": 64,
+          "atomic_number": 1
+        }
+      ],
+      "parent_microstate_identity": "PASS",
+      "stereo_policy": "Prepared Glide isomeric state authoritative; retain pose stereo, do not invent unspecified parent stereo",
+      "max_SDF_roundtrip_error_A": 5.000000000165983e-05,
+      "min_candidate_protein_heavy_A": 2.7075280989619475,
+      "min_candidate_ACH_heavy_A": 7.3008908190730075,
+      "status": "PASS",
+      "source_poseviewer": "inputs/poses/original_cluster_01_pv.maegz"
+    }
+  ],
+  "poseviewer_frame_check": {
+    "ca_count": 274,
+    "rmsd_A": 9.569585273730736e-15,
+    "rotation": [
+      [
+        0.9999999999999997,
+        1.869400301427565e-16,
+        2.440138056371298e-16
+      ],
+      [
+        2.8922718961423586e-16,
+        0.9999999999999997,
+        -4.610350803141452e-17
+      ],
+      [
+        3.650035502252577e-17,
+        -1.2182011807384326e-16,
+        0.9999999999999999
+      ]
+    ],
+    "translation_A": [
+      0.0,
+      1.4210854715202004e-14,
+      0.0
+    ],
+    "source_center_A": [
+      46.99044525547444,
+      49.48471532846719,
+      81.74372627737226
+    ],
+    "target_center_A": [
+      46.99044525547444,
+      49.48471532846719,
+      81.74372627737226
+    ],
+    "correspondence": [
+      {
+        "mobile_resid": "630",
+        "reference_resid": "630",
+        "mobile_residue": "MET",
+        "reference_residue": "MET"
+      },
+      {
+        "mobile_resid": "631",
+        "reference_resid": "631",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "632",
+        "reference_resid": "632",
+        "mobile_residue": "PHE",
+        "reference_residue": "PHE"
+      },
+      {
+        "mobile_resid": "633",
+        "reference_resid": "633",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "634",
+        "reference_resid": "634",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "635",
+        "reference_resid": "635",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "636",
+        "reference_resid": "636",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "637",
+        "reference_resid": "637",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "638",
+        "reference_resid": "638",
+        "mobile_residue": "GLY",
+        "reference_residue": "GLY"
+      },
+      {
+        "mobile_resid": "639",
+        "reference_resid": "639",
+        "mobile_residue": "SER",
+        "reference_residue": "SER"
+      },
+      {
+        "mobile_resid": "640",
+        "reference_resid": "640",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "641",
+        "reference_resid": "641",
+        "mobile_residue": "SER",
+        "reference_residue": "SER"
+      },
+      {
+        "mobile_resid": "642",
+        "reference_resid": "642",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "643",
+        "reference_resid": "643",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "644",
+        "reference_resid": "644",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "645",
+        "reference_resid": "645",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "646",
+        "reference_resid": "646",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "647",
+        "reference_resid": "647",
+        "mobile_residue": "GLY",
+        "reference_residue": "GLY"
+      },
+      {
+        "mobile_resid": "648",
+        "reference_resid": "648",
+        "mobile_residue": "ASN",
+        "reference_residue": "ASN"
+      },
+      {
+        "mobile_resid": "649",
+        "reference_resid": "649",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "650",
+        "reference_resid": "650",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "651",
+        "reference_resid": "651",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "652",
+        "reference_resid": "652",
+        "mobile_residue": "MET",
+        "reference_residue": "MET"
+      },
+      {
+        "mobile_resid": "653",
+        "reference_resid": "653",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "654",
+        "reference_resid": "654",
+        "mobile_residue": "SER",
+        "reference_residue": "SER"
+      },
+      {
+        "mobile_resid": "655",
+        "reference_resid": "655",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "656",
+        "reference_resid": "656",
+        "mobile_residue": "LYS",
+        "reference_residue": "LYS"
+      },
+      {
+        "mobile_resid": "657",
+        "reference_resid": "657",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "658",
+        "reference_resid": "658",
+        "mobile_residue": "ASN",
+        "reference_residue": "ASN"
+      },
+      {
+        "mobile_resid": "659",
+        "reference_resid": "659",
+        "mobile_residue": "ARG",
+        "reference_residue": "ARG"
+      },
+      {
+        "mobile_resid": "660",
+        "reference_resid": "660",
+        "mobile_residue": "GLN",
+        "reference_residue": "GLN"
+      },
+      {
+        "mobile_resid": "661",
+        "reference_resid": "661",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "662",
+        "reference_resid": "662",
+        "mobile_residue": "GLN",
+        "reference_residue": "GLN"
+      },
+      {
+        "mobile_resid": "663",
+        "reference_resid": "663",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "664",
+        "reference_resid": "664",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "665",
+        "reference_resid": "665",
+        "mobile_residue": "ASN",
+        "reference_residue": "ASN"
+      },
+      {
+        "mobile_resid": "666",
+        "reference_resid": "666",
+        "mobile_residue": "ASN",
+        "reference_residue": "ASN"
+      },
+      {
+        "mobile_resid": "667",
+        "reference_resid": "667",
+        "mobile_residue": "TYR",
+        "reference_residue": "TYR"
+      },
+      {
+        "mobile_resid": "668",
+        "reference_resid": "668",
+        "mobile_residue": "PHE",
+        "reference_residue": "PHE"
+      },
+      {
+        "mobile_resid": "669",
+        "reference_resid": "669",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "670",
+        "reference_resid": "670",
+        "mobile_residue": "PHE",
+        "reference_residue": "PHE"
+      },
+      {
+        "mobile_resid": "671",
+        "reference_resid": "671",
+        "mobile_residue": "SER",
+        "reference_residue": "SER"
+      },
+      {
+        "mobile_resid": "672",
+        "reference_resid": "672",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "673",
+        "reference_resid": "673",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "674",
+        "reference_resid": "674",
+        "mobile_residue": "CYS",
+        "reference_residue": "CYS"
+      },
+      {
+        "mobile_resid": "675",
+        "reference_resid": "675",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "676",
+        "reference_resid": "676",
+        "mobile_residue": "ASP",
+        "reference_residue": "ASP"
+      },
+      {
+        "mobile_resid": "677",
+        "reference_resid": "677",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "678",
+        "reference_resid": "678",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "679",
+        "reference_resid": "679",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "680",
+        "reference_resid": "680",
+        "mobile_residue": "GLY",
+        "reference_residue": "GLY"
+      },
+      {
+        "mobile_resid": "681",
+        "reference_resid": "681",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "682",
+        "reference_resid": "682",
+        "mobile_residue": "PHE",
+        "reference_residue": "PHE"
+      },
+      {
+        "mobile_resid": "683",
+        "reference_resid": "683",
+        "mobile_residue": "SER",
+        "reference_residue": "SER"
+      },
+      {
+        "mobile_resid": "684",
+        "reference_resid": "684",
+        "mobile_residue": "MET",
+        "reference_residue": "MET"
+      },
+      {
+        "mobile_resid": "685",
+        "reference_resid": "685",
+        "mobile_residue": "ASN",
+        "reference_residue": "ASN"
+      },
+      {
+        "mobile_resid": "686",
+        "reference_resid": "686",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "687",
+        "reference_resid": "687",
+        "mobile_residue": "TYR",
+        "reference_residue": "TYR"
+      },
+      {
+        "mobile_resid": "688",
+        "reference_resid": "688",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "689",
+        "reference_resid": "689",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "690",
+        "reference_resid": "690",
+        "mobile_residue": "TYR",
+        "reference_residue": "TYR"
+      },
+      {
+        "mobile_resid": "691",
+        "reference_resid": "691",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "692",
+        "reference_resid": "692",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "693",
+        "reference_resid": "693",
+        "mobile_residue": "LYS",
+        "reference_residue": "LYS"
+      },
+      {
+        "mobile_resid": "694",
+        "reference_resid": "694",
+        "mobile_residue": "GLY",
+        "reference_residue": "GLY"
+      },
+      {
+        "mobile_resid": "695",
+        "reference_resid": "695",
+        "mobile_residue": "TYR",
+        "reference_residue": "TYR"
+      },
+      {
+        "mobile_resid": "696",
+        "reference_resid": "696",
+        "mobile_residue": "TRP",
+        "reference_residue": "TRP"
+      },
+      {
+        "mobile_resid": "697",
+        "reference_resid": "697",
+        "mobile_residue": "PRO",
+        "reference_residue": "PRO"
+      },
+      {
+        "mobile_resid": "698",
+        "reference_resid": "698",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "699",
+        "reference_resid": "699",
+        "mobile_residue": "GLY",
+        "reference_residue": "GLY"
+      },
+      {
+        "mobile_resid": "700",
+        "reference_resid": "700",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "701",
+        "reference_resid": "701",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "702",
+        "reference_resid": "702",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "703",
+        "reference_resid": "703",
+        "mobile_residue": "CYX",
+        "reference_residue": "CYS"
+      },
+      {
+        "mobile_resid": "704",
+        "reference_resid": "704",
+        "mobile_residue": "ASP",
+        "reference_residue": "ASP"
+      },
+      {
+        "mobile_resid": "705",
+        "reference_resid": "705",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "706",
+        "reference_resid": "706",
+        "mobile_residue": "TRP",
+        "reference_residue": "TRP"
+      },
+      {
+        "mobile_resid": "707",
+        "reference_resid": "707",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "708",
+        "reference_resid": "708",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "709",
+        "reference_resid": "709",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "710",
+        "reference_resid": "710",
+        "mobile_residue": "ASP",
+        "reference_residue": "ASP"
+      },
+      {
+        "mobile_resid": "711",
+        "reference_resid": "711",
+        "mobile_residue": "TYR",
+        "reference_residue": "TYR"
+      },
+      {
+        "mobile_resid": "712",
+        "reference_resid": "712",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "713",
+        "reference_resid": "713",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "714",
+        "reference_resid": "714",
+        "mobile_residue": "SER",
+        "reference_residue": "SER"
+      },
+      {
+        "mobile_resid": "715",
+        "reference_resid": "715",
+        "mobile_residue": "ASN",
+        "reference_residue": "ASN"
+      },
+      {
+        "mobile_resid": "716",
+        "reference_resid": "716",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "717",
+        "reference_resid": "717",
+        "mobile_residue": "SER",
+        "reference_residue": "SER"
+      },
+      {
+        "mobile_resid": "718",
+        "reference_resid": "718",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "719",
+        "reference_resid": "719",
+        "mobile_residue": "MET",
+        "reference_residue": "MET"
+      },
+      {
+        "mobile_resid": "720",
+        "reference_resid": "720",
+        "mobile_residue": "ASN",
+        "reference_residue": "ASN"
+      },
+      {
+        "mobile_resid": "721",
+        "reference_resid": "721",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "722",
+        "reference_resid": "722",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "723",
+        "reference_resid": "723",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "724",
+        "reference_resid": "724",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "725",
+        "reference_resid": "725",
+        "mobile_residue": "SER",
+        "reference_residue": "SER"
+      },
+      {
+        "mobile_resid": "726",
+        "reference_resid": "726",
+        "mobile_residue": "PHE",
+        "reference_residue": "PHE"
+      },
+      {
+        "mobile_resid": "727",
+        "reference_resid": "727",
+        "mobile_residue": "ASP",
+        "reference_residue": "ASP"
+      },
+      {
+        "mobile_resid": "728",
+        "reference_resid": "728",
+        "mobile_residue": "ARG",
+        "reference_residue": "ARG"
+      },
+      {
+        "mobile_resid": "729",
+        "reference_resid": "729",
+        "mobile_residue": "TYR",
+        "reference_residue": "TYR"
+      },
+      {
+        "mobile_resid": "730",
+        "reference_resid": "730",
+        "mobile_residue": "PHE",
+        "reference_residue": "PHE"
+      },
+      {
+        "mobile_resid": "731",
+        "reference_resid": "731",
+        "mobile_residue": "CYS",
+        "reference_residue": "CYS"
+      },
+      {
+        "mobile_resid": "732",
+        "reference_resid": "732",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "733",
+        "reference_resid": "733",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "734",
+        "reference_resid": "734",
+        "mobile_residue": "LYS",
+        "reference_residue": "LYS"
+      },
+      {
+        "mobile_resid": "735",
+        "reference_resid": "735",
+        "mobile_residue": "PRO",
+        "reference_residue": "PRO"
+      },
+      {
+        "mobile_resid": "736",
+        "reference_resid": "736",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "737",
+        "reference_resid": "737",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "738",
+        "reference_resid": "738",
+        "mobile_residue": "TYR",
+        "reference_residue": "TYR"
+      },
+      {
+        "mobile_resid": "739",
+        "reference_resid": "739",
+        "mobile_residue": "PRO",
+        "reference_residue": "PRO"
+      },
+      {
+        "mobile_resid": "740",
+        "reference_resid": "740",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "741",
+        "reference_resid": "741",
+        "mobile_residue": "ARG",
+        "reference_residue": "ARG"
+      },
+      {
+        "mobile_resid": "742",
+        "reference_resid": "742",
+        "mobile_residue": "ARG",
+        "reference_residue": "ARG"
+      },
+      {
+        "mobile_resid": "743",
+        "reference_resid": "743",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "744",
+        "reference_resid": "744",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "745",
+        "reference_resid": "745",
+        "mobile_residue": "LYS",
+        "reference_residue": "LYS"
+      },
+      {
+        "mobile_resid": "746",
+        "reference_resid": "746",
+        "mobile_residue": "MET",
+        "reference_residue": "MET"
+      },
+      {
+        "mobile_resid": "747",
+        "reference_resid": "747",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "748",
+        "reference_resid": "748",
+        "mobile_residue": "GLY",
+        "reference_residue": "GLY"
+      },
+      {
+        "mobile_resid": "749",
+        "reference_resid": "749",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "750",
+        "reference_resid": "750",
+        "mobile_residue": "MET",
+        "reference_residue": "MET"
+      },
+      {
+        "mobile_resid": "751",
+        "reference_resid": "751",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "752",
+        "reference_resid": "752",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "753",
+        "reference_resid": "753",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "754",
+        "reference_resid": "754",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "755",
+        "reference_resid": "755",
+        "mobile_residue": "TRP",
+        "reference_residue": "TRP"
+      },
+      {
+        "mobile_resid": "756",
+        "reference_resid": "756",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "757",
+        "reference_resid": "757",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "758",
+        "reference_resid": "758",
+        "mobile_residue": "SER",
+        "reference_residue": "SER"
+      },
+      {
+        "mobile_resid": "759",
+        "reference_resid": "759",
+        "mobile_residue": "PHE",
+        "reference_residue": "PHE"
+      },
+      {
+        "mobile_resid": "760",
+        "reference_resid": "760",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "761",
+        "reference_resid": "761",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "762",
+        "reference_resid": "762",
+        "mobile_residue": "TRP",
+        "reference_residue": "TRP"
+      },
+      {
+        "mobile_resid": "763",
+        "reference_resid": "763",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "764",
+        "reference_resid": "764",
+        "mobile_residue": "PRO",
+        "reference_residue": "PRO"
+      },
+      {
+        "mobile_resid": "765",
+        "reference_resid": "765",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "766",
+        "reference_resid": "766",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "767",
+        "reference_resid": "767",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "768",
+        "reference_resid": "768",
+        "mobile_residue": "PHE",
+        "reference_residue": "PHE"
+      },
+      {
+        "mobile_resid": "769",
+        "reference_resid": "769",
+        "mobile_residue": "TRP",
+        "reference_residue": "TRP"
+      },
+      {
+        "mobile_resid": "770",
+        "reference_resid": "770",
+        "mobile_residue": "GLN",
+        "reference_residue": "GLN"
+      },
+      {
+        "mobile_resid": "771",
+        "reference_resid": "771",
+        "mobile_residue": "PHE",
+        "reference_residue": "PHE"
+      },
+      {
+        "mobile_resid": "772",
+        "reference_resid": "772",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "773",
+        "reference_resid": "773",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "774",
+        "reference_resid": "774",
+        "mobile_residue": "GLY",
+        "reference_residue": "GLY"
+      },
+      {
+        "mobile_resid": "775",
+        "reference_resid": "775",
+        "mobile_residue": "LYS",
+        "reference_residue": "LYS"
+      },
+      {
+        "mobile_resid": "776",
+        "reference_resid": "776",
+        "mobile_residue": "ARG",
+        "reference_residue": "ARG"
+      },
+      {
+        "mobile_resid": "777",
+        "reference_resid": "777",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "778",
+        "reference_resid": "778",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "779",
+        "reference_resid": "779",
+        "mobile_residue": "PRO",
+        "reference_residue": "PRO"
+      },
+      {
+        "mobile_resid": "780",
+        "reference_resid": "780",
+        "mobile_residue": "ASP",
+        "reference_residue": "ASP"
+      },
+      {
+        "mobile_resid": "781",
+        "reference_resid": "781",
+        "mobile_residue": "ASN",
+        "reference_residue": "ASN"
+      },
+      {
+        "mobile_resid": "782",
+        "reference_resid": "782",
+        "mobile_residue": "GLN",
+        "reference_residue": "GLN"
+      },
+      {
+        "mobile_resid": "783",
+        "reference_resid": "783",
+        "mobile_residue": "CYX",
+        "reference_residue": "CYS"
+      },
+      {
+        "mobile_resid": "784",
+        "reference_resid": "784",
+        "mobile_residue": "PHE",
+        "reference_residue": "PHE"
+      },
+      {
+        "mobile_resid": "785",
+        "reference_resid": "785",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "786",
+        "reference_resid": "786",
+        "mobile_residue": "GLN",
+        "reference_residue": "GLN"
+      },
+      {
+        "mobile_resid": "787",
+        "reference_resid": "787",
+        "mobile_residue": "PHE",
+        "reference_residue": "PHE"
+      },
+      {
+        "mobile_resid": "788",
+        "reference_resid": "788",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "789",
+        "reference_resid": "789",
+        "mobile_residue": "SER",
+        "reference_residue": "SER"
+      },
+      {
+        "mobile_resid": "790",
+        "reference_resid": "790",
+        "mobile_residue": "ASN",
+        "reference_residue": "ASN"
+      },
+      {
+        "mobile_resid": "791",
+        "reference_resid": "791",
+        "mobile_residue": "PRO",
+        "reference_residue": "PRO"
+      },
+      {
+        "mobile_resid": "792",
+        "reference_resid": "792",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "793",
+        "reference_resid": "793",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "794",
+        "reference_resid": "794",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "795",
+        "reference_resid": "795",
+        "mobile_residue": "PHE",
+        "reference_residue": "PHE"
+      },
+      {
+        "mobile_resid": "796",
+        "reference_resid": "796",
+        "mobile_residue": "GLY",
+        "reference_residue": "GLY"
+      },
+      {
+        "mobile_resid": "797",
+        "reference_resid": "797",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "798",
+        "reference_resid": "798",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "799",
+        "reference_resid": "799",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "800",
+        "reference_resid": "800",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "801",
+        "reference_resid": "801",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "802",
+        "reference_resid": "802",
+        "mobile_residue": "PHE",
+        "reference_residue": "PHE"
+      },
+      {
+        "mobile_resid": "803",
+        "reference_resid": "803",
+        "mobile_residue": "TYR",
+        "reference_residue": "TYR"
+      },
+      {
+        "mobile_resid": "804",
+        "reference_resid": "804",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "805",
+        "reference_resid": "805",
+        "mobile_residue": "PRO",
+        "reference_residue": "PRO"
+      },
+      {
+        "mobile_resid": "806",
+        "reference_resid": "806",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "807",
+        "reference_resid": "807",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "808",
+        "reference_resid": "808",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "809",
+        "reference_resid": "809",
+        "mobile_residue": "MET",
+        "reference_residue": "MET"
+      },
+      {
+        "mobile_resid": "810",
+        "reference_resid": "810",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "811",
+        "reference_resid": "811",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "812",
+        "reference_resid": "812",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "813",
+        "reference_resid": "813",
+        "mobile_residue": "TYR",
+        "reference_residue": "TYR"
+      },
+      {
+        "mobile_resid": "814",
+        "reference_resid": "814",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "815",
+        "reference_resid": "815",
+        "mobile_residue": "HID",
+        "reference_residue": "HIS"
+      },
+      {
+        "mobile_resid": "816",
+        "reference_resid": "816",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "817",
+        "reference_resid": "817",
+        "mobile_residue": "SER",
+        "reference_residue": "SER"
+      },
+      {
+        "mobile_resid": "818",
+        "reference_resid": "818",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "819",
+        "reference_resid": "819",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "820",
+        "reference_resid": "820",
+        "mobile_residue": "SER",
+        "reference_residue": "SER"
+      },
+      {
+        "mobile_resid": "821",
+        "reference_resid": "821",
+        "mobile_residue": "ARG",
+        "reference_residue": "ARG"
+      },
+      {
+        "mobile_resid": "822",
+        "reference_resid": "822",
+        "mobile_residue": "SER",
+        "reference_residue": "SER"
+      },
+      {
+        "mobile_resid": "823",
+        "reference_resid": "823",
+        "mobile_residue": "ARG",
+        "reference_residue": "ARG"
+      },
+      {
+        "mobile_resid": "824",
+        "reference_resid": "824",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "825",
+        "reference_resid": "825",
+        "mobile_residue": "HID",
+        "reference_residue": "HIS"
+      },
+      {
+        "mobile_resid": "828",
+        "reference_resid": "828",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "829",
+        "reference_resid": "829",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "830",
+        "reference_resid": "830",
+        "mobile_residue": "ARG",
+        "reference_residue": "ARG"
+      },
+      {
+        "mobile_resid": "831",
+        "reference_resid": "831",
+        "mobile_residue": "GLU",
+        "reference_residue": "GLU"
+      },
+      {
+        "mobile_resid": "832",
+        "reference_resid": "832",
+        "mobile_residue": "ARG",
+        "reference_residue": "ARG"
+      },
+      {
+        "mobile_resid": "833",
+        "reference_resid": "833",
+        "mobile_residue": "LYS",
+        "reference_residue": "LYS"
+      },
+      {
+        "mobile_resid": "834",
+        "reference_resid": "834",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "835",
+        "reference_resid": "835",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "836",
+        "reference_resid": "836",
+        "mobile_residue": "ARG",
+        "reference_residue": "ARG"
+      },
+      {
+        "mobile_resid": "837",
+        "reference_resid": "837",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "838",
+        "reference_resid": "838",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "839",
+        "reference_resid": "839",
+        "mobile_residue": "PHE",
+        "reference_residue": "PHE"
+      },
+      {
+        "mobile_resid": "840",
+        "reference_resid": "840",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "841",
+        "reference_resid": "841",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "842",
+        "reference_resid": "842",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "843",
+        "reference_resid": "843",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "844",
+        "reference_resid": "844",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "845",
+        "reference_resid": "845",
+        "mobile_residue": "PHE",
+        "reference_residue": "PHE"
+      },
+      {
+        "mobile_resid": "846",
+        "reference_resid": "846",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "847",
+        "reference_resid": "847",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "848",
+        "reference_resid": "848",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "849",
+        "reference_resid": "849",
+        "mobile_residue": "TRP",
+        "reference_residue": "TRP"
+      },
+      {
+        "mobile_resid": "850",
+        "reference_resid": "850",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "851",
+        "reference_resid": "851",
+        "mobile_residue": "PRO",
+        "reference_residue": "PRO"
+      },
+      {
+        "mobile_resid": "852",
+        "reference_resid": "852",
+        "mobile_residue": "TYR",
+        "reference_residue": "TYR"
+      },
+      {
+        "mobile_resid": "853",
+        "reference_resid": "853",
+        "mobile_residue": "ASN",
+        "reference_residue": "ASN"
+      },
+      {
+        "mobile_resid": "854",
+        "reference_resid": "854",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "855",
+        "reference_resid": "855",
+        "mobile_residue": "MET",
+        "reference_residue": "MET"
+      },
+      {
+        "mobile_resid": "856",
+        "reference_resid": "856",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "857",
+        "reference_resid": "857",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "858",
+        "reference_resid": "858",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "859",
+        "reference_resid": "859",
+        "mobile_residue": "ASN",
+        "reference_residue": "ASN"
+      },
+      {
+        "mobile_resid": "860",
+        "reference_resid": "860",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "861",
+        "reference_resid": "861",
+        "mobile_residue": "PHE",
+        "reference_residue": "PHE"
+      },
+      {
+        "mobile_resid": "862",
+        "reference_resid": "862",
+        "mobile_residue": "CYX",
+        "reference_residue": "CYS"
+      },
+      {
+        "mobile_resid": "863",
+        "reference_resid": "863",
+        "mobile_residue": "GLN",
+        "reference_residue": "GLN"
+      },
+      {
+        "mobile_resid": "864",
+        "reference_resid": "864",
+        "mobile_residue": "SER",
+        "reference_residue": "SER"
+      },
+      {
+        "mobile_resid": "865",
+        "reference_resid": "865",
+        "mobile_residue": "CYX",
+        "reference_residue": "CYS"
+      },
+      {
+        "mobile_resid": "866",
+        "reference_resid": "866",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "867",
+        "reference_resid": "867",
+        "mobile_residue": "PRO",
+        "reference_residue": "PRO"
+      },
+      {
+        "mobile_resid": "868",
+        "reference_resid": "868",
+        "mobile_residue": "ASP",
+        "reference_residue": "ASP"
+      },
+      {
+        "mobile_resid": "869",
+        "reference_resid": "869",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "870",
+        "reference_resid": "870",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "871",
+        "reference_resid": "871",
+        "mobile_residue": "TRP",
+        "reference_residue": "TRP"
+      },
+      {
+        "mobile_resid": "872",
+        "reference_resid": "872",
+        "mobile_residue": "SER",
+        "reference_residue": "SER"
+      },
+      {
+        "mobile_resid": "873",
+        "reference_resid": "873",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "874",
+        "reference_resid": "874",
+        "mobile_residue": "GLY",
+        "reference_residue": "GLY"
+      },
+      {
+        "mobile_resid": "875",
+        "reference_resid": "875",
+        "mobile_residue": "TYR",
+        "reference_residue": "TYR"
+      },
+      {
+        "mobile_resid": "876",
+        "reference_resid": "876",
+        "mobile_residue": "TRP",
+        "reference_residue": "TRP"
+      },
+      {
+        "mobile_resid": "877",
+        "reference_resid": "877",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "878",
+        "reference_resid": "878",
+        "mobile_residue": "CYS",
+        "reference_residue": "CYS"
+      },
+      {
+        "mobile_resid": "879",
+        "reference_resid": "879",
+        "mobile_residue": "TYR",
+        "reference_residue": "TYR"
+      },
+      {
+        "mobile_resid": "880",
+        "reference_resid": "880",
+        "mobile_residue": "VAL",
+        "reference_residue": "VAL"
+      },
+      {
+        "mobile_resid": "881",
+        "reference_resid": "881",
+        "mobile_residue": "ASN",
+        "reference_residue": "ASN"
+      },
+      {
+        "mobile_resid": "882",
+        "reference_resid": "882",
+        "mobile_residue": "SER",
+        "reference_residue": "SER"
+      },
+      {
+        "mobile_resid": "883",
+        "reference_resid": "883",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "884",
+        "reference_resid": "884",
+        "mobile_residue": "ILE",
+        "reference_residue": "ILE"
+      },
+      {
+        "mobile_resid": "885",
+        "reference_resid": "885",
+        "mobile_residue": "ASN",
+        "reference_residue": "ASN"
+      },
+      {
+        "mobile_resid": "886",
+        "reference_resid": "886",
+        "mobile_residue": "PRO",
+        "reference_residue": "PRO"
+      },
+      {
+        "mobile_resid": "887",
+        "reference_resid": "887",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "888",
+        "reference_resid": "888",
+        "mobile_residue": "CYS",
+        "reference_residue": "CYS"
+      },
+      {
+        "mobile_resid": "889",
+        "reference_resid": "889",
+        "mobile_residue": "TYR",
+        "reference_residue": "TYR"
+      },
+      {
+        "mobile_resid": "890",
+        "reference_resid": "890",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "891",
+        "reference_resid": "891",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "892",
+        "reference_resid": "892",
+        "mobile_residue": "CYS",
+        "reference_residue": "CYS"
+      },
+      {
+        "mobile_resid": "893",
+        "reference_resid": "893",
+        "mobile_residue": "ASN",
+        "reference_residue": "ASN"
+      },
+      {
+        "mobile_resid": "894",
+        "reference_resid": "894",
+        "mobile_residue": "ALA",
+        "reference_residue": "ALA"
+      },
+      {
+        "mobile_resid": "895",
+        "reference_resid": "895",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "896",
+        "reference_resid": "896",
+        "mobile_residue": "PHE",
+        "reference_residue": "PHE"
+      },
+      {
+        "mobile_resid": "897",
+        "reference_resid": "897",
+        "mobile_residue": "LYS",
+        "reference_residue": "LYS"
+      },
+      {
+        "mobile_resid": "898",
+        "reference_resid": "898",
+        "mobile_residue": "LYS",
+        "reference_residue": "LYS"
+      },
+      {
+        "mobile_resid": "899",
+        "reference_resid": "899",
+        "mobile_residue": "THR",
+        "reference_residue": "THR"
+      },
+      {
+        "mobile_resid": "900",
+        "reference_resid": "900",
+        "mobile_residue": "PHE",
+        "reference_residue": "PHE"
+      },
+      {
+        "mobile_resid": "901",
+        "reference_resid": "901",
+        "mobile_residue": "ARG",
+        "reference_residue": "ARG"
+      },
+      {
+        "mobile_resid": "902",
+        "reference_resid": "902",
+        "mobile_residue": "HID",
+        "reference_residue": "HIS"
+      },
+      {
+        "mobile_resid": "903",
+        "reference_resid": "903",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "904",
+        "reference_resid": "904",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      },
+      {
+        "mobile_resid": "905",
+        "reference_resid": "905",
+        "mobile_residue": "LEU",
+        "reference_residue": "LEU"
+      }
+    ]
+  },
+  "coordinates_generated_or_optimized": false,
+  "production_started": false
+}

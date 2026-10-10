@@ -1,0 +1,4365 @@
+[
+  {
+    "candidate_id": "PACERGEN02432",
+    "cascade_rank": 1,
+    "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cnn(-c4cnn(C5Cc6ccccc6C5)c4)c3)c(N)c12",
+    "canonical_smiles_sha256": "90470f7725f420e1aadc2f8b809a86e1191dc058b6e97d3b8dfe9f16bec35dc7",
+    "source_poseviewer_sha256": "542425a9f33274abe68e885a69b9472504a34f3b3e805eba11728dec49dcd1d5",
+    "entry_index": 2,
+    "selected_variant_id": "PACERGEN02432__s00__v01",
+    "glide_gscore": -10.5977417530992,
+    "BEmin": -9.8197370076496,
+    "pmf": 0.7780047454496,
+    "cluster": "cluster_01",
+    "title": "PACERGEN02432__s00__v01",
+    "state_smiles": "Cc1nnc(c(Cl)c2C)n1c(c23)sc(c3N)Nc4cnn(c4)-c5cnn(c5)C(C6)Cc(c67)cccc7",
+    "formal_charge": 0,
+    "source_poseviewer": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_rerun_v01\\server_bundle\\pacer_stage4_rerun_v01\\inputs\\poses\\original_cluster_01_pv.maegz",
+    "raw_pose": "inputs/poses/PACERGEN02432_glide_cluster_01.mae",
+    "raw_pose_sha256": "52be440cd9c91da013948e5e65db1cd3b07112be8457d324f5dcac33a29b7f47",
+    "sdf": "inputs/ligands/PACERGEN02432_glide_cluster_01.sdf",
+    "sdf_sha256": "7df46ecebdf3f1fd297e069c9539e6fe256a99e035a307e5ae2da80598d3f641",
+    "oriented_sdf": "inputs/ligands/PACERGEN02432_OPM.sdf",
+    "oriented_sdf_sha256": "19d2b0f98694a8f30bffc3979a35133d7e8fd3ef509d72bb6eab4d3621f7451c",
+    "atom_count": 58,
+    "atom_mapping": [
+      {
+        "source_index": 1,
+        "sdf_index": 1,
+        "opm_index": 1,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 2,
+        "sdf_index": 2,
+        "opm_index": 2,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 3,
+        "sdf_index": 3,
+        "opm_index": 3,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 4,
+        "sdf_index": 4,
+        "opm_index": 4,
+        "atomic_number": 17
+      },
+      {
+        "source_index": 5,
+        "sdf_index": 5,
+        "opm_index": 5,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 6,
+        "sdf_index": 6,
+        "opm_index": 6,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 7,
+        "sdf_index": 7,
+        "opm_index": 7,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 8,
+        "sdf_index": 8,
+        "opm_index": 8,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 9,
+        "sdf_index": 9,
+        "opm_index": 9,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 10,
+        "sdf_index": 10,
+        "opm_index": 10,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 11,
+        "sdf_index": 11,
+        "opm_index": 11,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 12,
+        "sdf_index": 12,
+        "opm_index": 12,
+        "atomic_number": 16
+      },
+      {
+        "source_index": 13,
+        "sdf_index": 13,
+        "opm_index": 13,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 14,
+        "sdf_index": 14,
+        "opm_index": 14,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 15,
+        "sdf_index": 15,
+        "opm_index": 15,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 16,
+        "sdf_index": 16,
+        "opm_index": 16,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 17,
+        "sdf_index": 17,
+        "opm_index": 17,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 18,
+        "sdf_index": 18,
+        "opm_index": 18,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 19,
+        "sdf_index": 19,
+        "opm_index": 19,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 20,
+        "sdf_index": 20,
+        "opm_index": 20,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 21,
+        "sdf_index": 21,
+        "opm_index": 21,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 22,
+        "sdf_index": 22,
+        "opm_index": 22,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 23,
+        "sdf_index": 23,
+        "opm_index": 23,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 24,
+        "sdf_index": 24,
+        "opm_index": 24,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 25,
+        "sdf_index": 25,
+        "opm_index": 25,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 26,
+        "sdf_index": 26,
+        "opm_index": 26,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 27,
+        "sdf_index": 27,
+        "opm_index": 27,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 28,
+        "sdf_index": 28,
+        "opm_index": 28,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 29,
+        "sdf_index": 29,
+        "opm_index": 29,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 30,
+        "sdf_index": 30,
+        "opm_index": 30,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 31,
+        "sdf_index": 31,
+        "opm_index": 31,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 32,
+        "sdf_index": 32,
+        "opm_index": 32,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 33,
+        "sdf_index": 33,
+        "opm_index": 33,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 34,
+        "sdf_index": 34,
+        "opm_index": 34,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 35,
+        "sdf_index": 35,
+        "opm_index": 35,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 36,
+        "sdf_index": 36,
+        "opm_index": 36,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 37,
+        "sdf_index": 37,
+        "opm_index": 37,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 38,
+        "sdf_index": 38,
+        "opm_index": 38,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 39,
+        "sdf_index": 39,
+        "opm_index": 39,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 40,
+        "sdf_index": 40,
+        "opm_index": 40,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 41,
+        "sdf_index": 41,
+        "opm_index": 41,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 42,
+        "sdf_index": 42,
+        "opm_index": 42,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 43,
+        "sdf_index": 43,
+        "opm_index": 43,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 44,
+        "sdf_index": 44,
+        "opm_index": 44,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 45,
+        "sdf_index": 45,
+        "opm_index": 45,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 46,
+        "sdf_index": 46,
+        "opm_index": 46,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 47,
+        "sdf_index": 47,
+        "opm_index": 47,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 48,
+        "sdf_index": 48,
+        "opm_index": 48,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 49,
+        "sdf_index": 49,
+        "opm_index": 49,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 50,
+        "sdf_index": 50,
+        "opm_index": 50,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 51,
+        "sdf_index": 51,
+        "opm_index": 51,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 52,
+        "sdf_index": 52,
+        "opm_index": 52,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 53,
+        "sdf_index": 53,
+        "opm_index": 53,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 54,
+        "sdf_index": 54,
+        "opm_index": 54,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 55,
+        "sdf_index": 55,
+        "opm_index": 55,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 56,
+        "sdf_index": 56,
+        "opm_index": 56,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 57,
+        "sdf_index": 57,
+        "opm_index": 57,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 58,
+        "sdf_index": 58,
+        "opm_index": 58,
+        "atomic_number": 1
+      }
+    ],
+    "parent_microstate_identity": "PASS",
+    "stereo_policy": "Prepared Glide isomeric state authoritative; retain pose stereo, do not invent unspecified parent stereo",
+    "max_SDF_roundtrip_error_A": 4.9000000004184585e-05,
+    "min_candidate_protein_heavy_A": 2.993878308851967,
+    "min_candidate_ACH_heavy_A": 8.267604690560777,
+    "status": "PASS",
+    "atoms": [
+      {
+        "index": 1,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          44.249058,
+          49.741474,
+          64.303635
+        ]
+      },
+      {
+        "index": 2,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          44.119518,
+          49.367119,
+          62.82946
+        ]
+      },
+      {
+        "index": 3,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          44.977558,
+          48.369503,
+          62.28141
+        ]
+      },
+      {
+        "index": 4,
+        "atomic_number": 17,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          46.143963,
+          47.529129,
+          63.242237
+        ]
+      },
+      {
+        "index": 5,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          44.868118,
+          48.063179,
+          60.896107
+        ]
+      },
+      {
+        "index": 6,
+        "atomic_number": 7,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          45.575455,
+          47.175491,
+          60.183567
+        ]
+      },
+      {
+        "index": 7,
+        "atomic_number": 7,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          45.104939,
+          47.252457,
+          58.863892
+        ]
+      },
+      {
+        "index": 8,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          44.139153,
+          48.175396,
+          58.844269
+        ]
+      },
+      {
+        "index": 9,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          43.373856,
+          48.562057,
+          57.61972
+        ]
+      },
+      {
+        "index": 10,
+        "atomic_number": 7,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          43.991283,
+          48.664825,
+          60.081715
+        ]
+      },
+      {
+        "index": 11,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          43.150223,
+          49.621502,
+          60.656639
+        ]
+      },
+      {
+        "index": 12,
+        "atomic_number": 16,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          41.959263,
+          50.461071,
+          59.727226
+        ]
+      },
+      {
+        "index": 13,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          41.407391,
+          51.322105,
+          61.16304
+        ]
+      },
+      {
+        "index": 14,
+        "atomic_number": 7,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          40.306232,
+          52.174213,
+          61.072865
+        ]
+      },
+      {
+        "index": 15,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          39.280663,
+          52.241428,
+          62.045883
+        ]
+      },
+      {
+        "index": 16,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          38.536839,
+          53.357155,
+          62.526234
+        ]
+      },
+      {
+        "index": 17,
+        "atomic_number": 7,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.72641,
+          53.034416,
+          63.524479
+        ]
+      },
+      {
+        "index": 18,
+        "atomic_number": 7,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.873348,
+          51.698639,
+          63.667549
+        ]
+      },
+      {
+        "index": 19,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.165268,
+          50.995358,
+          64.659164
+        ]
+      },
+      {
+        "index": 20,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.196644,
+          49.970985,
+          64.508835
+        ]
+      },
+      {
+        "index": 21,
+        "atomic_number": 7,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          35.76482,
+          49.566166,
+          65.698174
+        ]
+      },
+      {
+        "index": 22,
+        "atomic_number": 7,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.451881,
+          50.314098,
+          66.604851
+        ]
+      },
+      {
+        "index": 23,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.260635,
+          50.122829,
+          68.034233
+        ]
+      },
+      {
+        "index": 24,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          34.796425,
+          50.176182,
+          68.518639
+        ]
+      },
+      {
+        "index": 25,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          34.783707,
+          49.266151,
+          69.714279
+        ]
+      },
+      {
+        "index": 26,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          33.806778,
+          49.176304,
+          70.720871
+        ]
+      },
+      {
+        "index": 27,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          34.012318,
+          48.246239,
+          71.764236
+        ]
+      },
+      {
+        "index": 28,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          35.168579,
+          47.428963,
+          71.781662
+        ]
+      },
+      {
+        "index": 29,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.136284,
+          47.533276,
+          70.758148
+        ]
+      },
+      {
+        "index": 30,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          35.919201,
+          48.471115,
+          69.732178
+        ]
+      },
+      {
+        "index": 31,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.794918,
+          48.776306,
+          68.543098
+        ]
+      },
+      {
+        "index": 32,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.337811,
+          51.176437,
+          65.995636
+        ]
+      },
+      {
+        "index": 33,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          38.79261,
+          51.194176,
+          62.77684
+        ]
+      },
+      {
+        "index": 34,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          42.144672,
+          51.036507,
+          62.309528
+        ]
+      },
+      {
+        "index": 35,
+        "atomic_number": 7,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          41.947147,
+          51.623341,
+          63.56377
+        ]
+      },
+      {
+        "index": 36,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          43.145836,
+          50.02504,
+          62.013157
+        ]
+      },
+      {
+        "index": 37,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          43.319908,
+          49.551022,
+          64.833817
+        ]
+      },
+      {
+        "index": 38,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          45.024006,
+          49.195469,
+          64.836853
+        ]
+      },
+      {
+        "index": 39,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          44.496307,
+          50.797283,
+          64.402359
+        ]
+      },
+      {
+        "index": 40,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          43.710384,
+          47.973759,
+          56.766548
+        ]
+      },
+      {
+        "index": 41,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          43.532433,
+          49.615746,
+          57.390133
+        ]
+      },
+      {
+        "index": 42,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          42.308018,
+          48.376255,
+          57.756741
+        ]
+      },
+      {
+        "index": 43,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          40.326832,
+          52.877548,
+          60.347717
+        ]
+      },
+      {
+        "index": 44,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          38.598797,
+          54.390945,
+          62.220016
+        ]
+      },
+      {
+        "index": 45,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          35.79784,
+          49.526535,
+          63.609188
+        ]
+      },
+      {
+        "index": 46,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.803982,
+          50.907974,
+          68.56311
+        ]
+      },
+      {
+        "index": 47,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          34.466282,
+          51.176735,
+          68.763489
+        ]
+      },
+      {
+        "index": 48,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          34.13649,
+          49.746311,
+          67.771584
+        ]
+      },
+      {
+        "index": 49,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          32.928013,
+          49.804325,
+          70.700439
+        ]
+      },
+      {
+        "index": 50,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          33.27977,
+          48.156715,
+          72.55304
+        ]
+      },
+      {
+        "index": 51,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          35.311836,
+          46.718498,
+          72.582039
+        ]
+      },
+      {
+        "index": 52,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.019585,
+          46.911022,
+          70.765877
+        ]
+      },
+      {
+        "index": 53,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.586102,
+          48.008057,
+          67.795433
+        ]
+      },
+      {
+        "index": 54,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.86058,
+          48.788219,
+          68.763664
+        ]
+      },
+      {
+        "index": 55,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.980274,
+          51.839481,
+          66.553078
+        ]
+      },
+      {
+        "index": 56,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          39.051071,
+          50.145874,
+          62.762081
+        ]
+      },
+      {
+        "index": 57,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          41.35247,
+          52.438301,
+          63.618774
+        ]
+      },
+      {
+        "index": 58,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          42.641247,
+          51.557789,
+          64.294891
+        ]
+      }
+    ],
+    "bonds": [
+      {
+        "a": 1,
+        "b": 2,
+        "order": 1
+      },
+      {
+        "a": 1,
+        "b": 37,
+        "order": 1
+      },
+      {
+        "a": 1,
+        "b": 38,
+        "order": 1
+      },
+      {
+        "a": 1,
+        "b": 39,
+        "order": 1
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "order": 2
+      },
+      {
+        "a": 2,
+        "b": 36,
+        "order": 1
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "order": 1
+      },
+      {
+        "a": 3,
+        "b": 5,
+        "order": 1
+      },
+      {
+        "a": 5,
+        "b": 6,
+        "order": 2
+      },
+      {
+        "a": 5,
+        "b": 10,
+        "order": 1
+      },
+      {
+        "a": 6,
+        "b": 7,
+        "order": 1
+      },
+      {
+        "a": 7,
+        "b": 8,
+        "order": 2
+      },
+      {
+        "a": 8,
+        "b": 9,
+        "order": 1
+      },
+      {
+        "a": 8,
+        "b": 10,
+        "order": 1
+      },
+      {
+        "a": 9,
+        "b": 40,
+        "order": 1
+      },
+      {
+        "a": 9,
+        "b": 41,
+        "order": 1
+      },
+      {
+        "a": 9,
+        "b": 42,
+        "order": 1
+      },
+      {
+        "a": 10,
+        "b": 11,
+        "order": 1
+      },
+      {
+        "a": 11,
+        "b": 12,
+        "order": 1
+      },
+      {
+        "a": 11,
+        "b": 36,
+        "order": 2
+      },
+      {
+        "a": 12,
+        "b": 13,
+        "order": 1
+      },
+      {
+        "a": 13,
+        "b": 14,
+        "order": 1
+      },
+      {
+        "a": 13,
+        "b": 34,
+        "order": 2
+      },
+      {
+        "a": 14,
+        "b": 15,
+        "order": 1
+      },
+      {
+        "a": 14,
+        "b": 43,
+        "order": 1
+      },
+      {
+        "a": 15,
+        "b": 16,
+        "order": 1
+      },
+      {
+        "a": 15,
+        "b": 33,
+        "order": 2
+      },
+      {
+        "a": 16,
+        "b": 17,
+        "order": 2
+      },
+      {
+        "a": 16,
+        "b": 44,
+        "order": 1
+      },
+      {
+        "a": 17,
+        "b": 18,
+        "order": 1
+      },
+      {
+        "a": 18,
+        "b": 19,
+        "order": 1
+      },
+      {
+        "a": 18,
+        "b": 33,
+        "order": 1
+      },
+      {
+        "a": 19,
+        "b": 20,
+        "order": 1
+      },
+      {
+        "a": 19,
+        "b": 32,
+        "order": 2
+      },
+      {
+        "a": 20,
+        "b": 21,
+        "order": 2
+      },
+      {
+        "a": 20,
+        "b": 45,
+        "order": 1
+      },
+      {
+        "a": 21,
+        "b": 22,
+        "order": 1
+      },
+      {
+        "a": 22,
+        "b": 23,
+        "order": 1
+      },
+      {
+        "a": 22,
+        "b": 32,
+        "order": 1
+      },
+      {
+        "a": 23,
+        "b": 24,
+        "order": 1
+      },
+      {
+        "a": 23,
+        "b": 31,
+        "order": 1
+      },
+      {
+        "a": 23,
+        "b": 46,
+        "order": 1
+      },
+      {
+        "a": 24,
+        "b": 25,
+        "order": 1
+      },
+      {
+        "a": 24,
+        "b": 47,
+        "order": 1
+      },
+      {
+        "a": 24,
+        "b": 48,
+        "order": 1
+      },
+      {
+        "a": 25,
+        "b": 26,
+        "order": 2
+      },
+      {
+        "a": 25,
+        "b": 30,
+        "order": 1
+      },
+      {
+        "a": 26,
+        "b": 27,
+        "order": 1
+      },
+      {
+        "a": 26,
+        "b": 49,
+        "order": 1
+      },
+      {
+        "a": 27,
+        "b": 28,
+        "order": 2
+      },
+      {
+        "a": 27,
+        "b": 50,
+        "order": 1
+      },
+      {
+        "a": 28,
+        "b": 29,
+        "order": 1
+      },
+      {
+        "a": 28,
+        "b": 51,
+        "order": 1
+      },
+      {
+        "a": 29,
+        "b": 30,
+        "order": 2
+      },
+      {
+        "a": 29,
+        "b": 52,
+        "order": 1
+      },
+      {
+        "a": 30,
+        "b": 31,
+        "order": 1
+      },
+      {
+        "a": 31,
+        "b": 53,
+        "order": 1
+      },
+      {
+        "a": 31,
+        "b": 54,
+        "order": 1
+      },
+      {
+        "a": 32,
+        "b": 55,
+        "order": 1
+      },
+      {
+        "a": 33,
+        "b": 56,
+        "order": 1
+      },
+      {
+        "a": 34,
+        "b": 35,
+        "order": 1
+      },
+      {
+        "a": 34,
+        "b": 36,
+        "order": 1
+      },
+      {
+        "a": 35,
+        "b": 57,
+        "order": 1
+      },
+      {
+        "a": 35,
+        "b": 58,
+        "order": 1
+      }
+    ],
+    "properties": {
+      "s_m_title": "PACERGEN02432__s00__v01",
+      "b_lp_Chiralities_Consistent": 1,
+      "b_sd_chiral_flag": 0,
+      "i_f3d_flags": 0,
+      "i_i_glide_confnum": 10,
+      "i_i_glide_lignum": 19,
+      "i_i_glide_posenum": 114,
+      "i_i_glide_rotatable_bonds": 4,
+      "i_lp_mmshare_version": 61128,
+      "i_m_ct_format": 2,
+      "i_m_source_file_index": 1,
+      "i_pacer_rerun_final_rank": 15,
+      "i_sd_version": 0,
+      "r_i_docking_score": -10.5977417530992,
+      "r_i_glide_ecoul": -3.8509247303009,
+      "r_i_glide_eff_state_penalty": 0.0,
+      "r_i_glide_einternal": 9.66304969787598,
+      "r_i_glide_emodel": -94.0901410915936,
+      "r_i_glide_energy": -62.9418289661407,
+      "r_i_glide_erotb": 0.308292460471598,
+      "r_i_glide_esite": 0.0,
+      "r_i_glide_evdw": -59.0909042358398,
+      "r_i_glide_gscore": -10.5977417530992,
+      "r_i_glide_hbond": -0.197675018973138,
+      "r_i_glide_ligand_efficiency": -0.294381715363867,
+      "r_i_glide_ligand_efficiency_ln": -2.31214093263219,
+      "r_i_glide_ligand_efficiency_sa": -0.972027006375201,
+      "r_i_glide_lipo": -5.49790063451437,
+      "r_i_glide_metal": -0.0,
+      "r_i_glide_rewards": -1.67827463874616,
+      "r_lp_Energy": 72.144268,
+      "s_i_glide_gridfile": "grid",
+      "s_lp_Force_Field": "OPLS_2005",
+      "s_lp_Variant": "PACERGEN02432__s00-1",
+      "s_m_source_file": "ph7_3d.sdf",
+      "s_pacer_candidate_id": "PACERGEN02432",
+      "s_pacer_canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cnn(-c4cnn(C5Cc6ccccc6C5)c4)c3)c(N)c12",
+      "s_pacer_molscrub_state_id": "PACERGEN02432__s00",
+      "s_pacer_prepared_variant_id": "PACERGEN02432__s00__v01",
+      "s_sd_candidate\\_id": "PACERGEN02432",
+      "s_sd_ligand\\_state\\_id": "PACERGEN02432__s00",
+      "s_sd_parent\\_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cnn(-c4cnn(C5Cc6ccccc6C5)c4)c3)c(N)c12",
+      "s_sd_state\\_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cnn(-c4cnn(C5Cc6ccccc6C5)c4)c3)c(N)c12"
+    }
+  },
+  {
+    "candidate_id": "PACERGEN00123",
+    "cascade_rank": 2,
+    "canonical_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+    "canonical_smiles_sha256": "c9939a392a29a6e940a6d7ccb805db459cceef6f133b97c933312c886f1c2c36",
+    "source_poseviewer_sha256": "542425a9f33274abe68e885a69b9472504a34f3b3e805eba11728dec49dcd1d5",
+    "entry_index": 3,
+    "selected_variant_id": "PACERGEN00123__s00__v01",
+    "glide_gscore": -10.3932788220934,
+    "BEmin": -9.6152740766438,
+    "pmf": 0.7780047454496,
+    "cluster": "cluster_01",
+    "title": "PACERGEN00123__s00__v01",
+    "state_smiles": "Cc1c(Cl)c(nnc2)n2c(c13)sc(c3N)N(C4)CC4[N@H+](C5)C[C@H]5[NH2+]C(C6)Cc(c67)cccc7",
+    "formal_charge": 2,
+    "source_poseviewer": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_rerun_v01\\server_bundle\\pacer_stage4_rerun_v01\\inputs\\poses\\original_cluster_01_pv.maegz",
+    "raw_pose": "inputs/poses/PACERGEN00123_glide_cluster_01.mae",
+    "raw_pose_sha256": "b8012922ac30c22caac925045bd2ff2aa2a4ad30fb68b7f5352ffb3c47a842ee",
+    "sdf": "inputs/ligands/PACERGEN00123_glide_cluster_01.sdf",
+    "sdf_sha256": "38c71c83ed95ba11e4b0274f773bb6638270c6eb768b38341edd847b70b7b065",
+    "oriented_sdf": "inputs/ligands/PACERGEN00123_OPM.sdf",
+    "oriented_sdf_sha256": "c66f64d8caf704d94c04f912656c00c8d0e65e97c3d30260c103dc6bae0526ee",
+    "atom_count": 61,
+    "atom_mapping": [
+      {
+        "source_index": 1,
+        "sdf_index": 1,
+        "opm_index": 1,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 2,
+        "sdf_index": 2,
+        "opm_index": 2,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 3,
+        "sdf_index": 3,
+        "opm_index": 3,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 4,
+        "sdf_index": 4,
+        "opm_index": 4,
+        "atomic_number": 17
+      },
+      {
+        "source_index": 5,
+        "sdf_index": 5,
+        "opm_index": 5,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 6,
+        "sdf_index": 6,
+        "opm_index": 6,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 7,
+        "sdf_index": 7,
+        "opm_index": 7,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 8,
+        "sdf_index": 8,
+        "opm_index": 8,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 9,
+        "sdf_index": 9,
+        "opm_index": 9,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 10,
+        "sdf_index": 10,
+        "opm_index": 10,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 11,
+        "sdf_index": 11,
+        "opm_index": 11,
+        "atomic_number": 16
+      },
+      {
+        "source_index": 12,
+        "sdf_index": 12,
+        "opm_index": 12,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 13,
+        "sdf_index": 13,
+        "opm_index": 13,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 14,
+        "sdf_index": 14,
+        "opm_index": 14,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 15,
+        "sdf_index": 15,
+        "opm_index": 15,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 16,
+        "sdf_index": 16,
+        "opm_index": 16,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 17,
+        "sdf_index": 17,
+        "opm_index": 17,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 18,
+        "sdf_index": 18,
+        "opm_index": 18,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 19,
+        "sdf_index": 19,
+        "opm_index": 19,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 20,
+        "sdf_index": 20,
+        "opm_index": 20,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 21,
+        "sdf_index": 21,
+        "opm_index": 21,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 22,
+        "sdf_index": 22,
+        "opm_index": 22,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 23,
+        "sdf_index": 23,
+        "opm_index": 23,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 24,
+        "sdf_index": 24,
+        "opm_index": 24,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 25,
+        "sdf_index": 25,
+        "opm_index": 25,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 26,
+        "sdf_index": 26,
+        "opm_index": 26,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 27,
+        "sdf_index": 27,
+        "opm_index": 27,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 28,
+        "sdf_index": 28,
+        "opm_index": 28,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 29,
+        "sdf_index": 29,
+        "opm_index": 29,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 30,
+        "sdf_index": 30,
+        "opm_index": 30,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 31,
+        "sdf_index": 31,
+        "opm_index": 31,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 32,
+        "sdf_index": 32,
+        "opm_index": 32,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 33,
+        "sdf_index": 33,
+        "opm_index": 33,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 34,
+        "sdf_index": 34,
+        "opm_index": 34,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 35,
+        "sdf_index": 35,
+        "opm_index": 35,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 36,
+        "sdf_index": 36,
+        "opm_index": 36,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 37,
+        "sdf_index": 37,
+        "opm_index": 37,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 38,
+        "sdf_index": 38,
+        "opm_index": 38,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 39,
+        "sdf_index": 39,
+        "opm_index": 39,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 40,
+        "sdf_index": 40,
+        "opm_index": 40,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 41,
+        "sdf_index": 41,
+        "opm_index": 41,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 42,
+        "sdf_index": 42,
+        "opm_index": 42,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 43,
+        "sdf_index": 43,
+        "opm_index": 43,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 44,
+        "sdf_index": 44,
+        "opm_index": 44,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 45,
+        "sdf_index": 45,
+        "opm_index": 45,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 46,
+        "sdf_index": 46,
+        "opm_index": 46,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 47,
+        "sdf_index": 47,
+        "opm_index": 47,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 48,
+        "sdf_index": 48,
+        "opm_index": 48,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 49,
+        "sdf_index": 49,
+        "opm_index": 49,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 50,
+        "sdf_index": 50,
+        "opm_index": 50,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 51,
+        "sdf_index": 51,
+        "opm_index": 51,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 52,
+        "sdf_index": 52,
+        "opm_index": 52,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 53,
+        "sdf_index": 53,
+        "opm_index": 53,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 54,
+        "sdf_index": 54,
+        "opm_index": 54,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 55,
+        "sdf_index": 55,
+        "opm_index": 55,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 56,
+        "sdf_index": 56,
+        "opm_index": 56,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 57,
+        "sdf_index": 57,
+        "opm_index": 57,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 58,
+        "sdf_index": 58,
+        "opm_index": 58,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 59,
+        "sdf_index": 59,
+        "opm_index": 59,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 60,
+        "sdf_index": 60,
+        "opm_index": 60,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 61,
+        "sdf_index": 61,
+        "opm_index": 61,
+        "atomic_number": 1
+      }
+    ],
+    "parent_microstate_identity": "PASS",
+    "stereo_policy": "Prepared Glide isomeric state authoritative; retain pose stereo, do not invent unspecified parent stereo",
+    "max_SDF_roundtrip_error_A": 5.000000000165983e-05,
+    "min_candidate_protein_heavy_A": 2.6489028501581635,
+    "min_candidate_ACH_heavy_A": 7.500374196521298,
+    "status": "PASS",
+    "atoms": [
+      {
+        "index": 1,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          44.010784,
+          49.627266,
+          65.036743
+        ]
+      },
+      {
+        "index": 2,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          44.222576,
+          49.130939,
+          63.613968
+        ]
+      },
+      {
+        "index": 3,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          45.171558,
+          48.086605,
+          63.376514
+        ]
+      },
+      {
+        "index": 4,
+        "atomic_number": 17,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          46.127697,
+          47.394794,
+          64.64563
+        ]
+      },
+      {
+        "index": 5,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          45.331768,
+          47.60788,
+          62.044235
+        ]
+      },
+      {
+        "index": 6,
+        "atomic_number": 7,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          46.136631,
+          46.644947,
+          61.563965
+        ]
+      },
+      {
+        "index": 7,
+        "atomic_number": 7,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          45.897621,
+          46.563633,
+          60.177704
+        ]
+      },
+      {
+        "index": 8,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          44.970108,
+          47.482567,
+          59.903843
+        ]
+      },
+      {
+        "index": 9,
+        "atomic_number": 7,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          44.630108,
+          48.104084,
+          61.024933
+        ]
+      },
+      {
+        "index": 10,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          43.740948,
+          49.135029,
+          61.287212
+        ]
+      },
+      {
+        "index": 11,
+        "atomic_number": 16,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          42.869461,
+          49.865891,
+          60.005676
+        ]
+      },
+      {
+        "index": 12,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          42.122692,
+          51.01231,
+          61.134441
+        ]
+      },
+      {
+        "index": 13,
+        "atomic_number": 7,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          41.262856,
+          52.032555,
+          60.623672
+        ]
+      },
+      {
+        "index": 14,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          40.174164,
+          52.532108,
+          61.447247
+        ]
+      },
+      {
+        "index": 15,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          39.25967,
+          52.363407,
+          60.223785
+        ]
+      },
+      {
+        "index": 16,
+        "atomic_number": 7,
+        "formal_charge": 1,
+        "name": "    ",
+        "xyz": [
+          38.088829,
+          51.460304,
+          60.414669
+        ]
+      },
+      {
+        "index": 17,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.146729,
+          51.851746,
+          61.465752
+        ]
+      },
+      {
+        "index": 18,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.2061,
+          50.438126,
+          62.049229
+        ]
+      },
+      {
+        "index": 19,
+        "atomic_number": 7,
+        "formal_charge": 1,
+        "name": "    ",
+        "xyz": [
+          37.734993,
+          50.381142,
+          63.431797
+        ]
+      },
+      {
+        "index": 20,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.767097,
+          50.550346,
+          64.53466
+        ]
+      },
+      {
+        "index": 21,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          35.869396,
+          49.310539,
+          64.782288
+        ]
+      },
+      {
+        "index": 22,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          35.678192,
+          49.323689,
+          66.27636
+        ]
+      },
+      {
+        "index": 23,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          34.769661,
+          48.559155,
+          67.029427
+        ]
+      },
+      {
+        "index": 24,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          34.766167,
+          48.715656,
+          68.434006
+        ]
+      },
+      {
+        "index": 25,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          35.658989,
+          49.617981,
+          69.060234
+        ]
+      },
+      {
+        "index": 26,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.568024,
+          50.373405,
+          68.288216
+        ]
+      },
+      {
+        "index": 27,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.559292,
+          50.20417,
+          66.892746
+        ]
+      },
+      {
+        "index": 28,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.454304,
+          50.872509,
+          65.88765
+        ]
+      },
+      {
+        "index": 29,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          38.286999,
+          50.131821,
+          61.008976
+        ]
+      },
+      {
+        "index": 30,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          40.43074,
+          51.714542,
+          59.470814
+        ]
+      },
+      {
+        "index": 31,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          42.539528,
+          50.837822,
+          62.461273
+        ]
+      },
+      {
+        "index": 32,
+        "atomic_number": 7,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          42.154808,
+          51.621815,
+          63.562363
+        ]
+      },
+      {
+        "index": 33,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          43.484783,
+          49.728382,
+          62.538818
+        ]
+      },
+      {
+        "index": 34,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          42.951199,
+          49.776497,
+          65.238113
+        ]
+      },
+      {
+        "index": 35,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          44.537495,
+          50.569279,
+          65.180801
+        ]
+      },
+      {
+        "index": 36,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          44.359035,
+          48.927334,
+          65.794357
+        ]
+      },
+      {
+        "index": 37,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          44.567772,
+          47.683277,
+          58.921932
+        ]
+      },
+      {
+        "index": 38,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          39.924294,
+          51.896065,
+          62.294174
+        ]
+      },
+      {
+        "index": 39,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          40.324585,
+          53.569668,
+          61.747021
+        ]
+      },
+      {
+        "index": 40,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          38.971615,
+          53.323631,
+          59.791065
+        ]
+      },
+      {
+        "index": 41,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.594597,
+          51.357311,
+          59.5378
+        ]
+      },
+      {
+        "index": 42,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.516911,
+          52.632195,
+          62.132004
+        ]
+      },
+      {
+        "index": 43,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.176327,
+          52.115582,
+          61.052124
+        ]
+      },
+      {
+        "index": 44,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.296513,
+          49.85535,
+          61.893101
+        ]
+      },
+      {
+        "index": 45,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          38.136562,
+          49.454529,
+          63.589325
+        ]
+      },
+      {
+        "index": 46,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          38.472687,
+          51.059731,
+          63.544949
+        ]
+      },
+      {
+        "index": 47,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.1115,
+          51.393394,
+          64.308136
+        ]
+      },
+      {
+        "index": 48,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          34.917774,
+          49.372868,
+          64.252327
+        ]
+      },
+      {
+        "index": 49,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.36729,
+          48.379753,
+          64.503731
+        ]
+      },
+      {
+        "index": 50,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          34.09156,
+          47.86895,
+          66.54892
+        ]
+      },
+      {
+        "index": 51,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          34.076996,
+          48.14201,
+          69.035431
+        ]
+      },
+      {
+        "index": 52,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          35.646793,
+          49.731083,
+          70.135208
+        ]
+      },
+      {
+        "index": 53,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.255188,
+          51.059219,
+          68.762131
+        ]
+      },
+      {
+        "index": 54,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          38.445091,
+          50.41993,
+          65.96212
+        ]
+      },
+      {
+        "index": 55,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.545174,
+          51.942707,
+          66.078239
+        ]
+      },
+      {
+        "index": 56,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          38.01263,
+          49.333008,
+          60.318451
+        ]
+      },
+      {
+        "index": 57,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          39.278133,
+          49.952549,
+          61.427425
+        ]
+      },
+      {
+        "index": 58,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          40.734798,
+          52.255695,
+          58.573341
+        ]
+      },
+      {
+        "index": 59,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          40.305737,
+          50.646862,
+          59.284386
+        ]
+      },
+      {
+        "index": 60,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          41.905079,
+          52.578136,
+          63.356888
+        ]
+      },
+      {
+        "index": 61,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          42.639439,
+          51.524132,
+          64.448738
+        ]
+      }
+    ],
+    "bonds": [
+      {
+        "a": 1,
+        "b": 2,
+        "order": 1
+      },
+      {
+        "a": 1,
+        "b": 34,
+        "order": 1
+      },
+      {
+        "a": 1,
+        "b": 35,
+        "order": 1
+      },
+      {
+        "a": 1,
+        "b": 36,
+        "order": 1
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "order": 2
+      },
+      {
+        "a": 2,
+        "b": 33,
+        "order": 1
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "order": 1
+      },
+      {
+        "a": 3,
+        "b": 5,
+        "order": 1
+      },
+      {
+        "a": 5,
+        "b": 6,
+        "order": 2
+      },
+      {
+        "a": 5,
+        "b": 9,
+        "order": 1
+      },
+      {
+        "a": 6,
+        "b": 7,
+        "order": 1
+      },
+      {
+        "a": 7,
+        "b": 8,
+        "order": 2
+      },
+      {
+        "a": 8,
+        "b": 9,
+        "order": 1
+      },
+      {
+        "a": 8,
+        "b": 37,
+        "order": 1
+      },
+      {
+        "a": 9,
+        "b": 10,
+        "order": 1
+      },
+      {
+        "a": 10,
+        "b": 11,
+        "order": 1
+      },
+      {
+        "a": 10,
+        "b": 33,
+        "order": 2
+      },
+      {
+        "a": 11,
+        "b": 12,
+        "order": 1
+      },
+      {
+        "a": 12,
+        "b": 13,
+        "order": 1
+      },
+      {
+        "a": 12,
+        "b": 31,
+        "order": 2
+      },
+      {
+        "a": 13,
+        "b": 14,
+        "order": 1
+      },
+      {
+        "a": 13,
+        "b": 30,
+        "order": 1
+      },
+      {
+        "a": 14,
+        "b": 15,
+        "order": 1
+      },
+      {
+        "a": 14,
+        "b": 38,
+        "order": 1
+      },
+      {
+        "a": 14,
+        "b": 39,
+        "order": 1
+      },
+      {
+        "a": 15,
+        "b": 16,
+        "order": 1
+      },
+      {
+        "a": 15,
+        "b": 30,
+        "order": 1
+      },
+      {
+        "a": 15,
+        "b": 40,
+        "order": 1
+      },
+      {
+        "a": 16,
+        "b": 17,
+        "order": 1
+      },
+      {
+        "a": 16,
+        "b": 29,
+        "order": 1
+      },
+      {
+        "a": 16,
+        "b": 41,
+        "order": 1
+      },
+      {
+        "a": 17,
+        "b": 18,
+        "order": 1
+      },
+      {
+        "a": 17,
+        "b": 42,
+        "order": 1
+      },
+      {
+        "a": 17,
+        "b": 43,
+        "order": 1
+      },
+      {
+        "a": 18,
+        "b": 19,
+        "order": 1
+      },
+      {
+        "a": 18,
+        "b": 29,
+        "order": 1
+      },
+      {
+        "a": 18,
+        "b": 44,
+        "order": 1
+      },
+      {
+        "a": 19,
+        "b": 20,
+        "order": 1
+      },
+      {
+        "a": 19,
+        "b": 45,
+        "order": 1
+      },
+      {
+        "a": 19,
+        "b": 46,
+        "order": 1
+      },
+      {
+        "a": 20,
+        "b": 21,
+        "order": 1
+      },
+      {
+        "a": 20,
+        "b": 28,
+        "order": 1
+      },
+      {
+        "a": 20,
+        "b": 47,
+        "order": 1
+      },
+      {
+        "a": 21,
+        "b": 22,
+        "order": 1
+      },
+      {
+        "a": 21,
+        "b": 48,
+        "order": 1
+      },
+      {
+        "a": 21,
+        "b": 49,
+        "order": 1
+      },
+      {
+        "a": 22,
+        "b": 23,
+        "order": 2
+      },
+      {
+        "a": 22,
+        "b": 27,
+        "order": 1
+      },
+      {
+        "a": 23,
+        "b": 24,
+        "order": 1
+      },
+      {
+        "a": 23,
+        "b": 50,
+        "order": 1
+      },
+      {
+        "a": 24,
+        "b": 25,
+        "order": 2
+      },
+      {
+        "a": 24,
+        "b": 51,
+        "order": 1
+      },
+      {
+        "a": 25,
+        "b": 26,
+        "order": 1
+      },
+      {
+        "a": 25,
+        "b": 52,
+        "order": 1
+      },
+      {
+        "a": 26,
+        "b": 27,
+        "order": 2
+      },
+      {
+        "a": 26,
+        "b": 53,
+        "order": 1
+      },
+      {
+        "a": 27,
+        "b": 28,
+        "order": 1
+      },
+      {
+        "a": 28,
+        "b": 54,
+        "order": 1
+      },
+      {
+        "a": 28,
+        "b": 55,
+        "order": 1
+      },
+      {
+        "a": 29,
+        "b": 56,
+        "order": 1
+      },
+      {
+        "a": 29,
+        "b": 57,
+        "order": 1
+      },
+      {
+        "a": 30,
+        "b": 58,
+        "order": 1
+      },
+      {
+        "a": 30,
+        "b": 59,
+        "order": 1
+      },
+      {
+        "a": 31,
+        "b": 32,
+        "order": 1
+      },
+      {
+        "a": 31,
+        "b": 33,
+        "order": 1
+      },
+      {
+        "a": 32,
+        "b": 60,
+        "order": 1
+      },
+      {
+        "a": 32,
+        "b": 61,
+        "order": 1
+      }
+    ],
+    "properties": {
+      "s_m_title": "PACERGEN00123__s00__v01",
+      "b_lp_Chiralities_Consistent": 1,
+      "b_sd_chiral_flag": 0,
+      "i_f3d_flags": 0,
+      "i_i_glide_confnum": 86,
+      "i_i_glide_lignum": 142,
+      "i_i_glide_posenum": 200,
+      "i_i_glide_rotatable_bonds": 4,
+      "i_lp_mmshare_version": 61128,
+      "i_m_ct_format": 2,
+      "i_m_source_file_index": 1,
+      "i_pacer_rerun_final_rank": 114,
+      "i_sd_version": 0,
+      "r_i_docking_score": -10.3932788220934,
+      "r_i_glide_ecoul": -9.14293003082275,
+      "r_i_glide_eff_state_penalty": 0.0,
+      "r_i_glide_einternal": 14.1009664535522,
+      "r_i_glide_emodel": -86.8811010965953,
+      "r_i_glide_energy": -59.4495973587036,
+      "r_i_glide_erotb": 0.349286975448303,
+      "r_i_glide_esite": -0.0326746015341868,
+      "r_i_glide_evdw": -50.3066673278809,
+      "r_i_glide_gscore": -10.3932788220934,
+      "r_i_glide_hbond": -0.311609857143829,
+      "r_i_glide_ligand_efficiency": -0.314947843093739,
+      "r_i_glide_ligand_efficiency_ln": -2.31141139651587,
+      "r_i_glide_ligand_efficiency_sa": -1.01020601770391,
+      "r_i_glide_lipo": -4.6282452430344,
+      "r_i_glide_metal": -0.0,
+      "r_i_glide_rewards": -1.88326322481183,
+      "r_lp_Energy": 100.015023,
+      "s_i_glide_gridfile": "grid",
+      "s_lp_Force_Field": "OPLS_2005",
+      "s_lp_Variant": "PACERGEN00123__s00-1",
+      "s_m_source_file": "ph7_3d.sdf",
+      "s_pacer_candidate_id": "PACERGEN00123",
+      "s_pacer_canonical_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+      "s_pacer_molscrub_state_id": "PACERGEN00123__s00",
+      "s_pacer_prepared_variant_id": "PACERGEN00123__s00__v01",
+      "s_sd_candidate\\_id": "PACERGEN00123",
+      "s_sd_ligand\\_state\\_id": "PACERGEN00123__s00",
+      "s_sd_parent\\_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+      "s_sd_state\\_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC([NH+]4CC([NH2+]C5Cc6ccccc6C5)C4)C3)c(N)c12",
+      "s_st_Chirality_1": "16_ANS_15_17_29_41",
+      "s_st_Chirality_2": "18_ANS_17_19_29_44"
+    }
+  },
+  {
+    "candidate_id": "PACERGEN00462",
+    "cascade_rank": 3,
+    "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+    "canonical_smiles_sha256": "7cf0f5850dbe338e81dd427ed595b51c3757f6f12e7a476c8f1e4e5e8238ed24",
+    "source_poseviewer_sha256": "542425a9f33274abe68e885a69b9472504a34f3b3e805eba11728dec49dcd1d5",
+    "entry_index": 4,
+    "selected_variant_id": "PACERGEN00462__s00__v01",
+    "glide_gscore": -10.2091140447889,
+    "BEmin": -9.4311092993393,
+    "pmf": 0.7780047454496,
+    "cluster": "cluster_01",
+    "title": "PACERGEN00462__s00__v01",
+    "state_smiles": "Cc1nnc(c(Cl)c2C)n1c(c23)sc(c3N)N(C4)CC4[N@H+](C5)C[C@H]5[NH2+]C(C6)Cc(c67)cccc7",
+    "formal_charge": 2,
+    "source_poseviewer": "C:\\projects\\GPCR-virtual-screening\\project\\results\\pacer_stage4_rerun_v01\\server_bundle\\pacer_stage4_rerun_v01\\inputs\\poses\\original_cluster_01_pv.maegz",
+    "raw_pose": "inputs/poses/PACERGEN00462_glide_cluster_01.mae",
+    "raw_pose_sha256": "bb520cf6872cc0f21e7c27ac55d26857d26dad17dd9193431547368703b804ba",
+    "sdf": "inputs/ligands/PACERGEN00462_glide_cluster_01.sdf",
+    "sdf_sha256": "e4681b5e07e5ed500489179effb35c705a04a46757059985735f1986515248d1",
+    "oriented_sdf": "inputs/ligands/PACERGEN00462_OPM.sdf",
+    "oriented_sdf_sha256": "ad79486e03120c9df587b4a70618475c615f6c53beab5bb87275fb1500cccc4a",
+    "atom_count": 64,
+    "atom_mapping": [
+      {
+        "source_index": 1,
+        "sdf_index": 1,
+        "opm_index": 1,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 2,
+        "sdf_index": 2,
+        "opm_index": 2,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 3,
+        "sdf_index": 3,
+        "opm_index": 3,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 4,
+        "sdf_index": 4,
+        "opm_index": 4,
+        "atomic_number": 17
+      },
+      {
+        "source_index": 5,
+        "sdf_index": 5,
+        "opm_index": 5,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 6,
+        "sdf_index": 6,
+        "opm_index": 6,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 7,
+        "sdf_index": 7,
+        "opm_index": 7,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 8,
+        "sdf_index": 8,
+        "opm_index": 8,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 9,
+        "sdf_index": 9,
+        "opm_index": 9,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 10,
+        "sdf_index": 10,
+        "opm_index": 10,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 11,
+        "sdf_index": 11,
+        "opm_index": 11,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 12,
+        "sdf_index": 12,
+        "opm_index": 12,
+        "atomic_number": 16
+      },
+      {
+        "source_index": 13,
+        "sdf_index": 13,
+        "opm_index": 13,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 14,
+        "sdf_index": 14,
+        "opm_index": 14,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 15,
+        "sdf_index": 15,
+        "opm_index": 15,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 16,
+        "sdf_index": 16,
+        "opm_index": 16,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 17,
+        "sdf_index": 17,
+        "opm_index": 17,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 18,
+        "sdf_index": 18,
+        "opm_index": 18,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 19,
+        "sdf_index": 19,
+        "opm_index": 19,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 20,
+        "sdf_index": 20,
+        "opm_index": 20,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 21,
+        "sdf_index": 21,
+        "opm_index": 21,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 22,
+        "sdf_index": 22,
+        "opm_index": 22,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 23,
+        "sdf_index": 23,
+        "opm_index": 23,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 24,
+        "sdf_index": 24,
+        "opm_index": 24,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 25,
+        "sdf_index": 25,
+        "opm_index": 25,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 26,
+        "sdf_index": 26,
+        "opm_index": 26,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 27,
+        "sdf_index": 27,
+        "opm_index": 27,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 28,
+        "sdf_index": 28,
+        "opm_index": 28,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 29,
+        "sdf_index": 29,
+        "opm_index": 29,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 30,
+        "sdf_index": 30,
+        "opm_index": 30,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 31,
+        "sdf_index": 31,
+        "opm_index": 31,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 32,
+        "sdf_index": 32,
+        "opm_index": 32,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 33,
+        "sdf_index": 33,
+        "opm_index": 33,
+        "atomic_number": 7
+      },
+      {
+        "source_index": 34,
+        "sdf_index": 34,
+        "opm_index": 34,
+        "atomic_number": 6
+      },
+      {
+        "source_index": 35,
+        "sdf_index": 35,
+        "opm_index": 35,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 36,
+        "sdf_index": 36,
+        "opm_index": 36,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 37,
+        "sdf_index": 37,
+        "opm_index": 37,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 38,
+        "sdf_index": 38,
+        "opm_index": 38,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 39,
+        "sdf_index": 39,
+        "opm_index": 39,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 40,
+        "sdf_index": 40,
+        "opm_index": 40,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 41,
+        "sdf_index": 41,
+        "opm_index": 41,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 42,
+        "sdf_index": 42,
+        "opm_index": 42,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 43,
+        "sdf_index": 43,
+        "opm_index": 43,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 44,
+        "sdf_index": 44,
+        "opm_index": 44,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 45,
+        "sdf_index": 45,
+        "opm_index": 45,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 46,
+        "sdf_index": 46,
+        "opm_index": 46,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 47,
+        "sdf_index": 47,
+        "opm_index": 47,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 48,
+        "sdf_index": 48,
+        "opm_index": 48,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 49,
+        "sdf_index": 49,
+        "opm_index": 49,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 50,
+        "sdf_index": 50,
+        "opm_index": 50,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 51,
+        "sdf_index": 51,
+        "opm_index": 51,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 52,
+        "sdf_index": 52,
+        "opm_index": 52,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 53,
+        "sdf_index": 53,
+        "opm_index": 53,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 54,
+        "sdf_index": 54,
+        "opm_index": 54,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 55,
+        "sdf_index": 55,
+        "opm_index": 55,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 56,
+        "sdf_index": 56,
+        "opm_index": 56,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 57,
+        "sdf_index": 57,
+        "opm_index": 57,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 58,
+        "sdf_index": 58,
+        "opm_index": 58,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 59,
+        "sdf_index": 59,
+        "opm_index": 59,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 60,
+        "sdf_index": 60,
+        "opm_index": 60,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 61,
+        "sdf_index": 61,
+        "opm_index": 61,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 62,
+        "sdf_index": 62,
+        "opm_index": 62,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 63,
+        "sdf_index": 63,
+        "opm_index": 63,
+        "atomic_number": 1
+      },
+      {
+        "source_index": 64,
+        "sdf_index": 64,
+        "opm_index": 64,
+        "atomic_number": 1
+      }
+    ],
+    "parent_microstate_identity": "PASS",
+    "stereo_policy": "Prepared Glide isomeric state authoritative; retain pose stereo, do not invent unspecified parent stereo",
+    "max_SDF_roundtrip_error_A": 5.000000000165983e-05,
+    "min_candidate_protein_heavy_A": 2.7075280989619475,
+    "min_candidate_ACH_heavy_A": 7.3008908190730075,
+    "status": "PASS",
+    "atoms": [
+      {
+        "index": 1,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          43.858601,
+          49.646252,
+          65.134766
+        ]
+      },
+      {
+        "index": 2,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          44.136059,
+          49.181412,
+          63.712738
+        ]
+      },
+      {
+        "index": 3,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          45.117378,
+          48.165417,
+          63.525047
+        ]
+      },
+      {
+        "index": 4,
+        "atomic_number": 17,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          46.017536,
+          47.493797,
+          64.845451
+        ]
+      },
+      {
+        "index": 5,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          45.37059,
+          47.705662,
+          62.20546
+        ]
+      },
+      {
+        "index": 6,
+        "atomic_number": 7,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          46.245193,
+          46.775661,
+          61.806499
+        ]
+      },
+      {
+        "index": 7,
+        "atomic_number": 7,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          46.129524,
+          46.677734,
+          60.41502
+        ]
+      },
+      {
+        "index": 8,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          45.198128,
+          47.557652,
+          60.039158
+        ]
+      },
+      {
+        "index": 9,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          44.798859,
+          47.791153,
+          58.618713
+        ]
+      },
+      {
+        "index": 10,
+        "atomic_number": 7,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          44.728489,
+          48.176456,
+          61.13147
+        ]
+      },
+      {
+        "index": 11,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          43.784672,
+          49.182632,
+          61.354153
+        ]
+      },
+      {
+        "index": 12,
+        "atomic_number": 16,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          42.936611,
+          49.910915,
+          60.048798
+        ]
+      },
+      {
+        "index": 13,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          42.121494,
+          51.035545,
+          61.143711
+        ]
+      },
+      {
+        "index": 14,
+        "atomic_number": 7,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          41.266174,
+          52.042152,
+          60.5994
+        ]
+      },
+      {
+        "index": 15,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          40.110813,
+          52.488552,
+          61.359436
+        ]
+      },
+      {
+        "index": 16,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          39.283367,
+          52.316978,
+          60.074745
+        ]
+      },
+      {
+        "index": 17,
+        "atomic_number": 7,
+        "formal_charge": 1,
+        "name": "    ",
+        "xyz": [
+          38.138786,
+          51.363911,
+          60.159489
+        ]
+      },
+      {
+        "index": 18,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.095711,
+          51.704453,
+          61.129864
+        ]
+      },
+      {
+        "index": 19,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.245609,
+          50.328854,
+          61.785858
+        ]
+      },
+      {
+        "index": 20,
+        "atomic_number": 7,
+        "formal_charge": 1,
+        "name": "    ",
+        "xyz": [
+          37.785324,
+          50.376377,
+          63.164314
+        ]
+      },
+      {
+        "index": 21,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.832947,
+          50.60384,
+          64.26844
+        ]
+      },
+      {
+        "index": 22,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          35.92168,
+          49.390057,
+          64.587509
+        ]
+      },
+      {
+        "index": 23,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          35.799095,
+          49.445202,
+          66.088203
+        ]
+      },
+      {
+        "index": 24,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          34.930321,
+          48.70253,
+          66.903625
+        ]
+      },
+      {
+        "index": 25,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          35.001484,
+          48.882275,
+          68.30304
+        ]
+      },
+      {
+        "index": 26,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          35.938148,
+          49.781109,
+          68.865105
+        ]
+      },
+      {
+        "index": 27,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.813179,
+          50.510353,
+          68.031845
+        ]
+      },
+      {
+        "index": 28,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.715454,
+          50.328106,
+          66.642601
+        ]
+      },
+      {
+        "index": 29,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.566833,
+          50.959446,
+          65.584221
+        ]
+      },
+      {
+        "index": 30,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          38.339455,
+          50.035614,
+          60.754425
+        ]
+      },
+      {
+        "index": 31,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          40.524635,
+          51.735146,
+          59.382957
+        ]
+      },
+      {
+        "index": 32,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          42.488304,
+          50.863163,
+          62.482952
+        ]
+      },
+      {
+        "index": 33,
+        "atomic_number": 7,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          42.047264,
+          51.64463,
+          63.563221
+        ]
+      },
+      {
+        "index": 34,
+        "atomic_number": 6,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          43.447742,
+          49.767097,
+          62.598583
+        ]
+      },
+      {
+        "index": 35,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          42.825069,
+          49.956024,
+          65.267097
+        ]
+      },
+      {
+        "index": 36,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          44.015427,
+          48.854752,
+          65.867149
+        ]
+      },
+      {
+        "index": 37,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          44.521317,
+          50.474098,
+          65.387985
+        ]
+      },
+      {
+        "index": 38,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          45.351151,
+          47.121643,
+          57.958858
+        ]
+      },
+      {
+        "index": 39,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          45.024216,
+          48.816742,
+          58.326649
+        ]
+      },
+      {
+        "index": 40,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          43.736343,
+          47.59713,
+          58.483135
+        ]
+      },
+      {
+        "index": 41,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          39.838806,
+          51.824463,
+          62.175835
+        ]
+      },
+      {
+        "index": 42,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          40.204716,
+          53.524799,
+          61.687508
+        ]
+      },
+      {
+        "index": 43,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          38.987232,
+          53.276791,
+          59.646965
+        ]
+      },
+      {
+        "index": 44,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.72678,
+          51.257145,
+          59.241821
+        ]
+      },
+      {
+        "index": 45,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.341133,
+          52.54945,
+          61.7766
+        ]
+      },
+      {
+        "index": 46,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.136551,
+          51.848007,
+          60.635059
+        ]
+      },
+      {
+        "index": 47,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.372593,
+          49.68364,
+          61.671944
+        ]
+      },
+      {
+        "index": 48,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          38.242741,
+          49.488831,
+          63.387386
+        ]
+      },
+      {
+        "index": 49,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          38.494164,
+          51.093342,
+          63.217911
+        ]
+      },
+      {
+        "index": 50,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.189236,
+          51.451111,
+          64.023804
+        ]
+      },
+      {
+        "index": 51,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          34.948101,
+          49.461224,
+          64.100685
+        ]
+      },
+      {
+        "index": 52,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          36.385147,
+          48.442398,
+          64.309975
+        ]
+      },
+      {
+        "index": 53,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          34.224754,
+          48.006405,
+          66.473473
+        ]
+      },
+      {
+        "index": 54,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          34.340157,
+          48.323288,
+          68.949036
+        ]
+      },
+      {
+        "index": 55,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          35.990967,
+          49.905178,
+          69.937027
+        ]
+      },
+      {
+        "index": 56,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.541073,
+          51.187691,
+          68.451759
+        ]
+      },
+      {
+        "index": 57,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          38.536449,
+          50.475403,
+          65.640671
+        ]
+      },
+      {
+        "index": 58,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          37.70578,
+          52.029816,
+          65.733536
+        ]
+      },
+      {
+        "index": 59,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          38.06974,
+          49.240028,
+          60.057869
+        ]
+      },
+      {
+        "index": 60,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          39.329227,
+          49.85677,
+          61.177078
+        ]
+      },
+      {
+        "index": 61,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          40.868046,
+          52.318336,
+          58.526924
+        ]
+      },
+      {
+        "index": 62,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          40.447689,
+          50.672054,
+          59.151394
+        ]
+      },
+      {
+        "index": 63,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          41.775826,
+          52.591679,
+          63.337921
+        ]
+      },
+      {
+        "index": 64,
+        "atomic_number": 1,
+        "formal_charge": 0,
+        "name": "    ",
+        "xyz": [
+          42.536446,
+          51.577194,
+          64.451332
+        ]
+      }
+    ],
+    "bonds": [
+      {
+        "a": 1,
+        "b": 2,
+        "order": 1
+      },
+      {
+        "a": 1,
+        "b": 35,
+        "order": 1
+      },
+      {
+        "a": 1,
+        "b": 36,
+        "order": 1
+      },
+      {
+        "a": 1,
+        "b": 37,
+        "order": 1
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "order": 2
+      },
+      {
+        "a": 2,
+        "b": 34,
+        "order": 1
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "order": 1
+      },
+      {
+        "a": 3,
+        "b": 5,
+        "order": 1
+      },
+      {
+        "a": 5,
+        "b": 6,
+        "order": 2
+      },
+      {
+        "a": 5,
+        "b": 10,
+        "order": 1
+      },
+      {
+        "a": 6,
+        "b": 7,
+        "order": 1
+      },
+      {
+        "a": 7,
+        "b": 8,
+        "order": 2
+      },
+      {
+        "a": 8,
+        "b": 9,
+        "order": 1
+      },
+      {
+        "a": 8,
+        "b": 10,
+        "order": 1
+      },
+      {
+        "a": 9,
+        "b": 38,
+        "order": 1
+      },
+      {
+        "a": 9,
+        "b": 39,
+        "order": 1
+      },
+      {
+        "a": 9,
+        "b": 40,
+        "order": 1
+      },
+      {
+        "a": 10,
+        "b": 11,
+        "order": 1
+      },
+      {
+        "a": 11,
+        "b": 12,
+        "order": 1
+      },
+      {
+        "a": 11,
+        "b": 34,
+        "order": 2
+      },
+      {
+        "a": 12,
+        "b": 13,
+        "order": 1
+      },
+      {
+        "a": 13,
+        "b": 14,
+        "order": 1
+      },
+      {
+        "a": 13,
+        "b": 32,
+        "order": 2
+      },
+      {
+        "a": 14,
+        "b": 15,
+        "order": 1
+      },
+      {
+        "a": 14,
+        "b": 31,
+        "order": 1
+      },
+      {
+        "a": 15,
+        "b": 16,
+        "order": 1
+      },
+      {
+        "a": 15,
+        "b": 41,
+        "order": 1
+      },
+      {
+        "a": 15,
+        "b": 42,
+        "order": 1
+      },
+      {
+        "a": 16,
+        "b": 17,
+        "order": 1
+      },
+      {
+        "a": 16,
+        "b": 31,
+        "order": 1
+      },
+      {
+        "a": 16,
+        "b": 43,
+        "order": 1
+      },
+      {
+        "a": 17,
+        "b": 18,
+        "order": 1
+      },
+      {
+        "a": 17,
+        "b": 30,
+        "order": 1
+      },
+      {
+        "a": 17,
+        "b": 44,
+        "order": 1
+      },
+      {
+        "a": 18,
+        "b": 19,
+        "order": 1
+      },
+      {
+        "a": 18,
+        "b": 45,
+        "order": 1
+      },
+      {
+        "a": 18,
+        "b": 46,
+        "order": 1
+      },
+      {
+        "a": 19,
+        "b": 20,
+        "order": 1
+      },
+      {
+        "a": 19,
+        "b": 30,
+        "order": 1
+      },
+      {
+        "a": 19,
+        "b": 47,
+        "order": 1
+      },
+      {
+        "a": 20,
+        "b": 21,
+        "order": 1
+      },
+      {
+        "a": 20,
+        "b": 48,
+        "order": 1
+      },
+      {
+        "a": 20,
+        "b": 49,
+        "order": 1
+      },
+      {
+        "a": 21,
+        "b": 22,
+        "order": 1
+      },
+      {
+        "a": 21,
+        "b": 29,
+        "order": 1
+      },
+      {
+        "a": 21,
+        "b": 50,
+        "order": 1
+      },
+      {
+        "a": 22,
+        "b": 23,
+        "order": 1
+      },
+      {
+        "a": 22,
+        "b": 51,
+        "order": 1
+      },
+      {
+        "a": 22,
+        "b": 52,
+        "order": 1
+      },
+      {
+        "a": 23,
+        "b": 24,
+        "order": 2
+      },
+      {
+        "a": 23,
+        "b": 28,
+        "order": 1
+      },
+      {
+        "a": 24,
+        "b": 25,
+        "order": 1
+      },
+      {
+        "a": 24,
+        "b": 53,
+        "order": 1
+      },
+      {
+        "a": 25,
+        "b": 26,
+        "order": 2
+      },
+      {
+        "a": 25,
+        "b": 54,
+        "order": 1
+      },
+      {
+        "a": 26,
+        "b": 27,
+        "order": 1
+      },
+      {
+        "a": 26,
+        "b": 55,
+        "order": 1
+      },
+      {
+        "a": 27,
+        "b": 28,
+        "order": 2
+      },
+      {
+        "a": 27,
+        "b": 56,
+        "order": 1
+      },
+      {
+        "a": 28,
+        "b": 29,
+        "order": 1
+      },
+      {
+        "a": 29,
+        "b": 57,
+        "order": 1
+      },
+      {
+        "a": 29,
+        "b": 58,
+        "order": 1
+      },
+      {
+        "a": 30,
+        "b": 59,
+        "order": 1
+      },
+      {
+        "a": 30,
+        "b": 60,
+        "order": 1
+      },
+      {
+        "a": 31,
+        "b": 61,
+        "order": 1
+      },
+      {
+        "a": 31,
+        "b": 62,
+        "order": 1
+      },
+      {
+        "a": 32,
+        "b": 33,
+        "order": 1
+      },
+      {
+        "a": 32,
+        "b": 34,
+        "order": 1
+      },
+      {
+        "a": 33,
+        "b": 63,
+        "order": 1
+      },
+      {
+        "a": 33,
+        "b": 64,
+        "order": 1
+      }
+    ],
+    "properties": {
+      "s_m_title": "PACERGEN00462__s00__v01",
+      "b_lp_Chiralities_Consistent": 1,
+      "b_sd_chiral_flag": 0,
+      "i_f3d_flags": 0,
+      "i_i_glide_confnum": 86,
+      "i_i_glide_lignum": 177,
+      "i_i_glide_posenum": 313,
+      "i_i_glide_rotatable_bonds": 4,
+      "i_lp_mmshare_version": 61128,
+      "i_m_ct_format": 2,
+      "i_m_source_file_index": 1,
+      "i_pacer_rerun_final_rank": 137,
+      "i_sd_version": 0,
+      "r_i_docking_score": -10.2091140447889,
+      "r_i_glide_ecoul": -8.83443450927734,
+      "r_i_glide_eff_state_penalty": 0.0,
+      "r_i_glide_einternal": 16.279203414917,
+      "r_i_glide_emodel": -88.3024074365201,
+      "r_i_glide_energy": -60.0852355957031,
+      "r_i_glide_erotb": 0.331423853196388,
+      "r_i_glide_esite": -0.0284029602722575,
+      "r_i_glide_evdw": -51.2508010864258,
+      "r_i_glide_gscore": -10.2091140447889,
+      "r_i_glide_hbond": -0.32,
+      "r_i_glide_ligand_efficiency": -0.300268060140849,
+      "r_i_glide_ligand_efficiency_ln": -2.2554796484433,
+      "r_i_glide_ligand_efficiency_sa": -0.972751950035567,
+      "r_i_glide_lipo": -4.55504564413293,
+      "r_i_glide_metal": -0.0,
+      "r_i_glide_rewards": -1.74938406286718,
+      "r_lp_Energy": 100.998174,
+      "s_i_glide_gridfile": "grid",
+      "s_lp_Force_Field": "OPLS_2005",
+      "s_lp_Variant": "PACERGEN00462__s00-1",
+      "s_m_source_file": "ph7_3d.sdf",
+      "s_pacer_candidate_id": "PACERGEN00462",
+      "s_pacer_canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+      "s_pacer_molscrub_state_id": "PACERGEN00462__s00",
+      "s_pacer_prepared_variant_id": "PACERGEN00462__s00__v01",
+      "s_sd_candidate\\_id": "PACERGEN00462",
+      "s_sd_ligand\\_state\\_id": "PACERGEN00462__s00",
+      "s_sd_parent\\_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+      "s_sd_state\\_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC([NH+]4CC([NH2+]C5Cc6ccccc6C5)C4)C3)c(N)c12",
+      "s_st_Chirality_1": "17_ANS_16_18_30_44",
+      "s_st_Chirality_2": "19_ANS_18_20_30_47"
+    }
+  }
+]

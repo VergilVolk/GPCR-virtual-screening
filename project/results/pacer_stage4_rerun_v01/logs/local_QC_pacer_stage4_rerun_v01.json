@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "systems": 12,
+  "jobs": 36,
+  "total_ns": 360,
+  "python_sources_syntax_checked": 20,
+  "package_hashes_verified": 49,
+  "package_sha256": "ba9dd81ba973fb48c6a15f1d3055995f10cf2cc0763caaef867578ee659de1a4",
+  "protected_files_checked": 16736,
+  "production_started": false,
+  "limitations": [
+    "Linux CUDA and MD stack execution unavailable locally; server steps pending"
+  ]
+}

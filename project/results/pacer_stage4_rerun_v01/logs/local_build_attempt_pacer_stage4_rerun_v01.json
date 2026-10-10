@@ -1,0 +1,6 @@
+{
+  "status": "BLOCKED_LOCAL_DEPENDENCIES",
+  "exit_code": 1,
+  "command": "python server_bundle/pacer_stage4_rerun_v01/scripts/build_pacer_stage4_rerun_v01.py --all",
+  "production_started": false
+}

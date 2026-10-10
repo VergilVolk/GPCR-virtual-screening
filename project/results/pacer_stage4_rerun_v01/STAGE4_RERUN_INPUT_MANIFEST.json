@@ -1,0 +1,1245 @@
+{
+  "protocol_id": "pacer_stage4_rerun_v01",
+  "status": "READY_FOR_SERVER_PREFLIGHT",
+  "ready_for_server_preflight": true,
+  "ready_for_production": false,
+  "frozen_ranking_sha256": "6fff7e34d94466ff288b52281b1c3a64fef4ea6cd9da84ca45bc703429a04559",
+  "candidates": [
+    {
+      "candidate_id": "PACERGEN02432",
+      "cascade_rank": 1,
+      "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(Nc3cnn(-c4cnn(C5Cc6ccccc6C5)c4)c3)c(N)c12",
+      "canonical_smiles_sha256": "90470f7725f420e1aadc2f8b809a86e1191dc058b6e97d3b8dfe9f16bec35dc7",
+      "source_poseviewer_sha256": "542425a9f33274abe68e885a69b9472504a34f3b3e805eba11728dec49dcd1d5",
+      "entry_index": 2,
+      "selected_variant_id": "PACERGEN02432__s00__v01",
+      "glide_gscore": -10.5977417530992,
+      "BEmin": -9.8197370076496,
+      "pmf": 0.7780047454496,
+      "cluster": "cluster_01",
+      "title": "PACERGEN02432__s00__v01",
+      "state_smiles": "Cc1nnc(c(Cl)c2C)n1c(c23)sc(c3N)Nc4cnn(c4)-c5cnn(c5)C(C6)Cc(c67)cccc7",
+      "formal_charge": 0,
+      "raw_pose": "inputs/poses/PACERGEN02432_glide_cluster_01.mae",
+      "raw_pose_sha256": "52be440cd9c91da013948e5e65db1cd3b07112be8457d324f5dcac33a29b7f47",
+      "sdf": "inputs/ligands/PACERGEN02432_glide_cluster_01.sdf",
+      "sdf_sha256": "7df46ecebdf3f1fd297e069c9539e6fe256a99e035a307e5ae2da80598d3f641",
+      "oriented_sdf": "inputs/ligands/PACERGEN02432_OPM.sdf",
+      "oriented_sdf_sha256": "19d2b0f98694a8f30bffc3979a35133d7e8fd3ef509d72bb6eab4d3621f7451c",
+      "atom_count": 58,
+      "atom_mapping": [
+        {
+          "source_index": 1,
+          "sdf_index": 1,
+          "opm_index": 1,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 2,
+          "sdf_index": 2,
+          "opm_index": 2,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 3,
+          "sdf_index": 3,
+          "opm_index": 3,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 4,
+          "sdf_index": 4,
+          "opm_index": 4,
+          "atomic_number": 17
+        },
+        {
+          "source_index": 5,
+          "sdf_index": 5,
+          "opm_index": 5,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 6,
+          "sdf_index": 6,
+          "opm_index": 6,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 7,
+          "sdf_index": 7,
+          "opm_index": 7,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 8,
+          "sdf_index": 8,
+          "opm_index": 8,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 9,
+          "sdf_index": 9,
+          "opm_index": 9,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 10,
+          "sdf_index": 10,
+          "opm_index": 10,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 11,
+          "sdf_index": 11,
+          "opm_index": 11,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 12,
+          "sdf_index": 12,
+          "opm_index": 12,
+          "atomic_number": 16
+        },
+        {
+          "source_index": 13,
+          "sdf_index": 13,
+          "opm_index": 13,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 14,
+          "sdf_index": 14,
+          "opm_index": 14,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 15,
+          "sdf_index": 15,
+          "opm_index": 15,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 16,
+          "sdf_index": 16,
+          "opm_index": 16,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 17,
+          "sdf_index": 17,
+          "opm_index": 17,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 18,
+          "sdf_index": 18,
+          "opm_index": 18,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 19,
+          "sdf_index": 19,
+          "opm_index": 19,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 20,
+          "sdf_index": 20,
+          "opm_index": 20,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 21,
+          "sdf_index": 21,
+          "opm_index": 21,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 22,
+          "sdf_index": 22,
+          "opm_index": 22,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 23,
+          "sdf_index": 23,
+          "opm_index": 23,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 24,
+          "sdf_index": 24,
+          "opm_index": 24,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 25,
+          "sdf_index": 25,
+          "opm_index": 25,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 26,
+          "sdf_index": 26,
+          "opm_index": 26,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 27,
+          "sdf_index": 27,
+          "opm_index": 27,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 28,
+          "sdf_index": 28,
+          "opm_index": 28,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 29,
+          "sdf_index": 29,
+          "opm_index": 29,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 30,
+          "sdf_index": 30,
+          "opm_index": 30,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 31,
+          "sdf_index": 31,
+          "opm_index": 31,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 32,
+          "sdf_index": 32,
+          "opm_index": 32,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 33,
+          "sdf_index": 33,
+          "opm_index": 33,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 34,
+          "sdf_index": 34,
+          "opm_index": 34,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 35,
+          "sdf_index": 35,
+          "opm_index": 35,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 36,
+          "sdf_index": 36,
+          "opm_index": 36,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 37,
+          "sdf_index": 37,
+          "opm_index": 37,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 38,
+          "sdf_index": 38,
+          "opm_index": 38,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 39,
+          "sdf_index": 39,
+          "opm_index": 39,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 40,
+          "sdf_index": 40,
+          "opm_index": 40,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 41,
+          "sdf_index": 41,
+          "opm_index": 41,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 42,
+          "sdf_index": 42,
+          "opm_index": 42,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 43,
+          "sdf_index": 43,
+          "opm_index": 43,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 44,
+          "sdf_index": 44,
+          "opm_index": 44,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 45,
+          "sdf_index": 45,
+          "opm_index": 45,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 46,
+          "sdf_index": 46,
+          "opm_index": 46,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 47,
+          "sdf_index": 47,
+          "opm_index": 47,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 48,
+          "sdf_index": 48,
+          "opm_index": 48,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 49,
+          "sdf_index": 49,
+          "opm_index": 49,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 50,
+          "sdf_index": 50,
+          "opm_index": 50,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 51,
+          "sdf_index": 51,
+          "opm_index": 51,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 52,
+          "sdf_index": 52,
+          "opm_index": 52,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 53,
+          "sdf_index": 53,
+          "opm_index": 53,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 54,
+          "sdf_index": 54,
+          "opm_index": 54,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 55,
+          "sdf_index": 55,
+          "opm_index": 55,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 56,
+          "sdf_index": 56,
+          "opm_index": 56,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 57,
+          "sdf_index": 57,
+          "opm_index": 57,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 58,
+          "sdf_index": 58,
+          "opm_index": 58,
+          "atomic_number": 1
+        }
+      ],
+      "parent_microstate_identity": "PASS",
+      "stereo_policy": "Prepared Glide isomeric state authoritative; retain pose stereo, do not invent unspecified parent stereo",
+      "max_SDF_roundtrip_error_A": 4.9000000004184585e-05,
+      "min_candidate_protein_heavy_A": 2.993878308851967,
+      "min_candidate_ACH_heavy_A": 8.267604690560777,
+      "status": "PASS",
+      "source_poseviewer": "inputs/poses/original_cluster_01_pv.maegz"
+    },
+    {
+      "candidate_id": "PACERGEN00123",
+      "cascade_rank": 2,
+      "canonical_smiles": "Cc1c(Cl)c2nncn2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+      "canonical_smiles_sha256": "c9939a392a29a6e940a6d7ccb805db459cceef6f133b97c933312c886f1c2c36",
+      "source_poseviewer_sha256": "542425a9f33274abe68e885a69b9472504a34f3b3e805eba11728dec49dcd1d5",
+      "entry_index": 3,
+      "selected_variant_id": "PACERGEN00123__s00__v01",
+      "glide_gscore": -10.3932788220934,
+      "BEmin": -9.6152740766438,
+      "pmf": 0.7780047454496,
+      "cluster": "cluster_01",
+      "title": "PACERGEN00123__s00__v01",
+      "state_smiles": "Cc1c(Cl)c(nnc2)n2c(c13)sc(c3N)N(C4)CC4[N@H+](C5)C[C@H]5[NH2+]C(C6)Cc(c67)cccc7",
+      "formal_charge": 2,
+      "raw_pose": "inputs/poses/PACERGEN00123_glide_cluster_01.mae",
+      "raw_pose_sha256": "b8012922ac30c22caac925045bd2ff2aa2a4ad30fb68b7f5352ffb3c47a842ee",
+      "sdf": "inputs/ligands/PACERGEN00123_glide_cluster_01.sdf",
+      "sdf_sha256": "38c71c83ed95ba11e4b0274f773bb6638270c6eb768b38341edd847b70b7b065",
+      "oriented_sdf": "inputs/ligands/PACERGEN00123_OPM.sdf",
+      "oriented_sdf_sha256": "c66f64d8caf704d94c04f912656c00c8d0e65e97c3d30260c103dc6bae0526ee",
+      "atom_count": 61,
+      "atom_mapping": [
+        {
+          "source_index": 1,
+          "sdf_index": 1,
+          "opm_index": 1,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 2,
+          "sdf_index": 2,
+          "opm_index": 2,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 3,
+          "sdf_index": 3,
+          "opm_index": 3,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 4,
+          "sdf_index": 4,
+          "opm_index": 4,
+          "atomic_number": 17
+        },
+        {
+          "source_index": 5,
+          "sdf_index": 5,
+          "opm_index": 5,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 6,
+          "sdf_index": 6,
+          "opm_index": 6,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 7,
+          "sdf_index": 7,
+          "opm_index": 7,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 8,
+          "sdf_index": 8,
+          "opm_index": 8,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 9,
+          "sdf_index": 9,
+          "opm_index": 9,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 10,
+          "sdf_index": 10,
+          "opm_index": 10,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 11,
+          "sdf_index": 11,
+          "opm_index": 11,
+          "atomic_number": 16
+        },
+        {
+          "source_index": 12,
+          "sdf_index": 12,
+          "opm_index": 12,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 13,
+          "sdf_index": 13,
+          "opm_index": 13,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 14,
+          "sdf_index": 14,
+          "opm_index": 14,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 15,
+          "sdf_index": 15,
+          "opm_index": 15,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 16,
+          "sdf_index": 16,
+          "opm_index": 16,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 17,
+          "sdf_index": 17,
+          "opm_index": 17,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 18,
+          "sdf_index": 18,
+          "opm_index": 18,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 19,
+          "sdf_index": 19,
+          "opm_index": 19,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 20,
+          "sdf_index": 20,
+          "opm_index": 20,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 21,
+          "sdf_index": 21,
+          "opm_index": 21,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 22,
+          "sdf_index": 22,
+          "opm_index": 22,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 23,
+          "sdf_index": 23,
+          "opm_index": 23,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 24,
+          "sdf_index": 24,
+          "opm_index": 24,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 25,
+          "sdf_index": 25,
+          "opm_index": 25,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 26,
+          "sdf_index": 26,
+          "opm_index": 26,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 27,
+          "sdf_index": 27,
+          "opm_index": 27,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 28,
+          "sdf_index": 28,
+          "opm_index": 28,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 29,
+          "sdf_index": 29,
+          "opm_index": 29,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 30,
+          "sdf_index": 30,
+          "opm_index": 30,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 31,
+          "sdf_index": 31,
+          "opm_index": 31,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 32,
+          "sdf_index": 32,
+          "opm_index": 32,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 33,
+          "sdf_index": 33,
+          "opm_index": 33,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 34,
+          "sdf_index": 34,
+          "opm_index": 34,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 35,
+          "sdf_index": 35,
+          "opm_index": 35,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 36,
+          "sdf_index": 36,
+          "opm_index": 36,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 37,
+          "sdf_index": 37,
+          "opm_index": 37,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 38,
+          "sdf_index": 38,
+          "opm_index": 38,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 39,
+          "sdf_index": 39,
+          "opm_index": 39,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 40,
+          "sdf_index": 40,
+          "opm_index": 40,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 41,
+          "sdf_index": 41,
+          "opm_index": 41,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 42,
+          "sdf_index": 42,
+          "opm_index": 42,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 43,
+          "sdf_index": 43,
+          "opm_index": 43,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 44,
+          "sdf_index": 44,
+          "opm_index": 44,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 45,
+          "sdf_index": 45,
+          "opm_index": 45,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 46,
+          "sdf_index": 46,
+          "opm_index": 46,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 47,
+          "sdf_index": 47,
+          "opm_index": 47,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 48,
+          "sdf_index": 48,
+          "opm_index": 48,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 49,
+          "sdf_index": 49,
+          "opm_index": 49,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 50,
+          "sdf_index": 50,
+          "opm_index": 50,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 51,
+          "sdf_index": 51,
+          "opm_index": 51,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 52,
+          "sdf_index": 52,
+          "opm_index": 52,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 53,
+          "sdf_index": 53,
+          "opm_index": 53,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 54,
+          "sdf_index": 54,
+          "opm_index": 54,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 55,
+          "sdf_index": 55,
+          "opm_index": 55,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 56,
+          "sdf_index": 56,
+          "opm_index": 56,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 57,
+          "sdf_index": 57,
+          "opm_index": 57,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 58,
+          "sdf_index": 58,
+          "opm_index": 58,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 59,
+          "sdf_index": 59,
+          "opm_index": 59,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 60,
+          "sdf_index": 60,
+          "opm_index": 60,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 61,
+          "sdf_index": 61,
+          "opm_index": 61,
+          "atomic_number": 1
+        }
+      ],
+      "parent_microstate_identity": "PASS",
+      "stereo_policy": "Prepared Glide isomeric state authoritative; retain pose stereo, do not invent unspecified parent stereo",
+      "max_SDF_roundtrip_error_A": 5.000000000165983e-05,
+      "min_candidate_protein_heavy_A": 2.6489028501581635,
+      "min_candidate_ACH_heavy_A": 7.500374196521298,
+      "status": "PASS",
+      "source_poseviewer": "inputs/poses/original_cluster_01_pv.maegz"
+    },
+    {
+      "candidate_id": "PACERGEN00462",
+      "cascade_rank": 3,
+      "canonical_smiles": "Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12",
+      "canonical_smiles_sha256": "7cf0f5850dbe338e81dd427ed595b51c3757f6f12e7a476c8f1e4e5e8238ed24",
+      "source_poseviewer_sha256": "542425a9f33274abe68e885a69b9472504a34f3b3e805eba11728dec49dcd1d5",
+      "entry_index": 4,
+      "selected_variant_id": "PACERGEN00462__s00__v01",
+      "glide_gscore": -10.2091140447889,
+      "BEmin": -9.4311092993393,
+      "pmf": 0.7780047454496,
+      "cluster": "cluster_01",
+      "title": "PACERGEN00462__s00__v01",
+      "state_smiles": "Cc1nnc(c(Cl)c2C)n1c(c23)sc(c3N)N(C4)CC4[N@H+](C5)C[C@H]5[NH2+]C(C6)Cc(c67)cccc7",
+      "formal_charge": 2,
+      "raw_pose": "inputs/poses/PACERGEN00462_glide_cluster_01.mae",
+      "raw_pose_sha256": "bb520cf6872cc0f21e7c27ac55d26857d26dad17dd9193431547368703b804ba",
+      "sdf": "inputs/ligands/PACERGEN00462_glide_cluster_01.sdf",
+      "sdf_sha256": "e4681b5e07e5ed500489179effb35c705a04a46757059985735f1986515248d1",
+      "oriented_sdf": "inputs/ligands/PACERGEN00462_OPM.sdf",
+      "oriented_sdf_sha256": "ad79486e03120c9df587b4a70618475c615f6c53beab5bb87275fb1500cccc4a",
+      "atom_count": 64,
+      "atom_mapping": [
+        {
+          "source_index": 1,
+          "sdf_index": 1,
+          "opm_index": 1,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 2,
+          "sdf_index": 2,
+          "opm_index": 2,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 3,
+          "sdf_index": 3,
+          "opm_index": 3,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 4,
+          "sdf_index": 4,
+          "opm_index": 4,
+          "atomic_number": 17
+        },
+        {
+          "source_index": 5,
+          "sdf_index": 5,
+          "opm_index": 5,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 6,
+          "sdf_index": 6,
+          "opm_index": 6,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 7,
+          "sdf_index": 7,
+          "opm_index": 7,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 8,
+          "sdf_index": 8,
+          "opm_index": 8,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 9,
+          "sdf_index": 9,
+          "opm_index": 9,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 10,
+          "sdf_index": 10,
+          "opm_index": 10,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 11,
+          "sdf_index": 11,
+          "opm_index": 11,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 12,
+          "sdf_index": 12,
+          "opm_index": 12,
+          "atomic_number": 16
+        },
+        {
+          "source_index": 13,
+          "sdf_index": 13,
+          "opm_index": 13,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 14,
+          "sdf_index": 14,
+          "opm_index": 14,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 15,
+          "sdf_index": 15,
+          "opm_index": 15,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 16,
+          "sdf_index": 16,
+          "opm_index": 16,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 17,
+          "sdf_index": 17,
+          "opm_index": 17,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 18,
+          "sdf_index": 18,
+          "opm_index": 18,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 19,
+          "sdf_index": 19,
+          "opm_index": 19,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 20,
+          "sdf_index": 20,
+          "opm_index": 20,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 21,
+          "sdf_index": 21,
+          "opm_index": 21,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 22,
+          "sdf_index": 22,
+          "opm_index": 22,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 23,
+          "sdf_index": 23,
+          "opm_index": 23,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 24,
+          "sdf_index": 24,
+          "opm_index": 24,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 25,
+          "sdf_index": 25,
+          "opm_index": 25,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 26,
+          "sdf_index": 26,
+          "opm_index": 26,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 27,
+          "sdf_index": 27,
+          "opm_index": 27,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 28,
+          "sdf_index": 28,
+          "opm_index": 28,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 29,
+          "sdf_index": 29,
+          "opm_index": 29,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 30,
+          "sdf_index": 30,
+          "opm_index": 30,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 31,
+          "sdf_index": 31,
+          "opm_index": 31,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 32,
+          "sdf_index": 32,
+          "opm_index": 32,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 33,
+          "sdf_index": 33,
+          "opm_index": 33,
+          "atomic_number": 7
+        },
+        {
+          "source_index": 34,
+          "sdf_index": 34,
+          "opm_index": 34,
+          "atomic_number": 6
+        },
+        {
+          "source_index": 35,
+          "sdf_index": 35,
+          "opm_index": 35,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 36,
+          "sdf_index": 36,
+          "opm_index": 36,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 37,
+          "sdf_index": 37,
+          "opm_index": 37,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 38,
+          "sdf_index": 38,
+          "opm_index": 38,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 39,
+          "sdf_index": 39,
+          "opm_index": 39,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 40,
+          "sdf_index": 40,
+          "opm_index": 40,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 41,
+          "sdf_index": 41,
+          "opm_index": 41,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 42,
+          "sdf_index": 42,
+          "opm_index": 42,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 43,
+          "sdf_index": 43,
+          "opm_index": 43,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 44,
+          "sdf_index": 44,
+          "opm_index": 44,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 45,
+          "sdf_index": 45,
+          "opm_index": 45,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 46,
+          "sdf_index": 46,
+          "opm_index": 46,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 47,
+          "sdf_index": 47,
+          "opm_index": 47,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 48,
+          "sdf_index": 48,
+          "opm_index": 48,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 49,
+          "sdf_index": 49,
+          "opm_index": 49,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 50,
+          "sdf_index": 50,
+          "opm_index": 50,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 51,
+          "sdf_index": 51,
+          "opm_index": 51,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 52,
+          "sdf_index": 52,
+          "opm_index": 52,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 53,
+          "sdf_index": 53,
+          "opm_index": 53,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 54,
+          "sdf_index": 54,
+          "opm_index": 54,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 55,
+          "sdf_index": 55,
+          "opm_index": 55,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 56,
+          "sdf_index": 56,
+          "opm_index": 56,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 57,
+          "sdf_index": 57,
+          "opm_index": 57,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 58,
+          "sdf_index": 58,
+          "opm_index": 58,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 59,
+          "sdf_index": 59,
+          "opm_index": 59,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 60,
+          "sdf_index": 60,
+          "opm_index": 60,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 61,
+          "sdf_index": 61,
+          "opm_index": 61,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 62,
+          "sdf_index": 62,
+          "opm_index": 62,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 63,
+          "sdf_index": 63,
+          "opm_index": 63,
+          "atomic_number": 1
+        },
+        {
+          "source_index": 64,
+          "sdf_index": 64,
+          "opm_index": 64,
+          "atomic_number": 1
+        }
+      ],
+      "parent_microstate_identity": "PASS",
+      "stereo_policy": "Prepared Glide isomeric state authoritative; retain pose stereo, do not invent unspecified parent stereo",
+      "max_SDF_roundtrip_error_A": 5.000000000165983e-05,
+      "min_candidate_protein_heavy_A": 2.7075280989619475,
+      "min_candidate_ACH_heavy_A": 7.3008908190730075,
+      "status": "PASS",
+      "source_poseviewer": "inputs/poses/original_cluster_01_pv.maegz"
+    }
+  ],
+  "local_dependencies": {
+    "rdkit": true,
+    "openmm": false,
+    "openff": false,
+    "pdbfixer": false,
+    "openmmforcefields": false
+  },
+  "systems_built": 0,
+  "systems": 12,
+  "jobs": 36,
+  "total_production_ns": 360,
+  "production_started": false,
+  "blockers": [
+    "Local MD stack unavailable; complete parameterization, 12 membrane builds and topology/overlap checks on Linux",
+    "Both RTX 5090 devices / driver / OpenMM CUDA runtime and 12 system smokes unverified",
+    "36 matched equilibration/release QC receipts required before production"
+  ],
+  "protected_history_check": "PASS: complete file size/mtime inventory unchanged; source input hashes verified",
+  "control_sharing": "A/P physically shareable for cluster_01, but no trajectories shared; all 36 tasks execute separately",
+  "assets": {
+    "inputs/ligands/PACERGEN00123_glide_cluster_01.sdf": "38c71c83ed95ba11e4b0274f773bb6638270c6eb768b38341edd847b70b7b065",
+    "inputs/ligands/PACERGEN00123_OPM.sdf": "c66f64d8caf704d94c04f912656c00c8d0e65e97c3d30260c103dc6bae0526ee",
+    "inputs/ligands/PACERGEN00462_glide_cluster_01.sdf": "e4681b5e07e5ed500489179effb35c705a04a46757059985735f1986515248d1",
+    "inputs/ligands/PACERGEN00462_OPM.sdf": "ad79486e03120c9df587b4a70618475c615f6c53beab5bb87275fb1500cccc4a",
+    "inputs/ligands/PACERGEN02432_glide_cluster_01.sdf": "7df46ecebdf3f1fd297e069c9539e6fe256a99e035a307e5ae2da80598d3f641",
+    "inputs/ligands/PACERGEN02432_OPM.sdf": "19d2b0f98694a8f30bffc3979a35133d7e8fd3ef509d72bb6eab4d3621f7451c",
+    "inputs/poses/original_cluster_01_pv.maegz": "542425a9f33274abe68e885a69b9472504a34f3b3e805eba11728dec49dcd1d5",
+    "inputs/poses/PACERGEN00123_glide_cluster_01.mae": "b8012922ac30c22caac925045bd2ff2aa2a4ad30fb68b7f5352ffb3c47a842ee",
+    "inputs/poses/PACERGEN00462_glide_cluster_01.mae": "bb520cf6872cc0f21e7c27ac55d26857d26dad17dd9193431547368703b804ba",
+    "inputs/poses/PACERGEN02432_glide_cluster_01.mae": "52be440cd9c91da013948e5e65db1cd3b07112be8457d324f5dcac33a29b7f47",
+    "inputs/probe/7TRS.pdb": "53442edb5d1ce98d4fcbf9ae52d96f2b387c5ace1b913b40b54906227416fcc1",
+    "inputs/probe/ACH_cluster_01_OPM.sdf": "8c1dac94f29cb5a9b861eef78bd33947f18546200d50140403d362d2a87e5a70",
+    "inputs/probe/ACH_ideal.sdf": "60b6bfcf9aa31efab1743ef6dce7dfca482e03b634e38723d7f84d535fa5b3cf",
+    "inputs/probe/historical_OPM_ACH.sdf": "8056546adb32cb3e79f5e0fbc6a79f987e5b50dd9c1c4fbb2aa9470c68ecd59f",
+    "inputs/probe/historical_QC_probe_reference.pdb": "53442edb5d1ce98d4fcbf9ae52d96f2b387c5ace1b913b40b54906227416fcc1",
+    "inputs/receptors/7TRS_OPM.pdb": "2f9060a0281bd5ba787fefcfc24d244b695d9a86919a634c5cf12cef1c2a1aba",
+    "inputs/receptors/cluster_01_receptor.pdb": "6c9b1cfcb3cdf67e8edaaaa676e766461683d736e765eb46b6ae18f5678193c9",
+    "inputs/receptors/docking_prepared_cluster_01.mae": "2f946fc3dda43dc651c900d303cbfe01765a511f64de9a69956580139618e951",
+    "inputs/receptors/glide_cluster_01.mae": "f1a77839bbc35b75a8de2758e4933be69fd0d99809474b5a5ffb728358d5bce8",
+    "inputs/receptors/glide_cluster_01.pdb": "a29b1a8dfe3489d6bfb56f4bd37e48ae075924827f92772c1ade05e1c7bf2cea",
+    "inputs/receptors/oriented_cluster_01.pdb": "6fabd2b3caea8e0214dfbca55ab6e7c2fc5ada0e9894a6eb91d56997b6051702"
+  }
+}

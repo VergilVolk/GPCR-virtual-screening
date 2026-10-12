@@ -8,112 +8,133 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<div class="app">
-  <aside class="sidebar">
-    <div class="logo"><span class="logo-mark">M4</span><div><strong>M4 PAM 平台</strong><small>Virtual Screening</small></div></div>
-    <button class="collapse" aria-label="收起菜单">‹</button>
+<section class="auth" id="auth">
+  <div class="auth-scene">
+    <div class="scene-grid"></div>
+    <div class="brand"><span>M4</span><div><strong>M4 Allosteric Discovery</strong><small>COMPUTATIONAL WORKSPACE</small></div></div>
+    <div class="auth-copy">
+      <p>CHRM4 · POSITIVE ALLOSTERIC MODULATOR</p>
+      <h1>从分子集合到<br>可决策的候选结果</h1>
+      <span>统一运行虚拟筛选、构象评分与受体动力学分析。</span>
+    </div>
+    <div class="molecular-field" aria-hidden="true">
+      <i class="atom a1"></i><i class="atom a2"></i><i class="atom a3"></i><i class="atom a4"></i>
+      <b class="bond b1"></b><b class="bond b2"></b><b class="bond b3"></b>
+    </div>
+    <div class="scene-foot"><span>Drug discovery informatics</span><span>Version 1.0</span></div>
+  </div>
+  <div class="auth-panel">
+    <form id="login-form">
+      <div class="auth-title"><span class="mobile-brand">M4</span><p>WELCOME BACK</p><h2>登录工作区</h2><small>访问筛选任务、候选结果与分析工具</small></div>
+      <label>邮箱地址<input id="email" type="email" placeholder="name@lab.org"></label>
+      <label>密码<input id="password" type="password" placeholder="••••••••"></label>
+      <div class="auth-options"><label><input type="checkbox" checked> 保持登录</label><button type="button">忘记密码？</button></div>
+      <button class="auth-primary" type="submit">登录</button>
+      <div class="divider"><span>或</span></div>
+      <button class="demo-button" type="button" id="demo-login"><span>▶</span><div><strong>进入 Demo 工作区</strong><small>无需账号 · 使用示例数据</small></div><b>→</b></button>
+      <p class="auth-note">Demo 数据只保存在当前浏览器会话。</p>
+    </form>
+  </div>
+</section>
+
+<div class="workspace" id="workspace">
+  <aside class="rail">
+    <div class="rail-brand">M4</div>
     <nav>
-      <p>工作区</p>
-      <button class="nav-item active" data-view="dashboard"><i>⌂</i><span>项目概览</span></button>
-      <button class="nav-item" data-view="screen"><i>＋</i><span>新建筛选</span></button>
-      <button class="nav-item" data-view="jobs"><i>◫</i><span>任务中心</span><b id="job-count">3</b></button>
-      <button class="nav-item" data-view="candidates"><i>◇</i><span>候选分子</span></button>
-      <p>分析工具</p>
-      <button class="nav-item" data-view="molecule"><i>⌬</i><span>分子预筛</span></button>
-      <button class="nav-item" data-view="pocket"><i>◎</i><span>靶点匹配</span></button>
-      <button class="nav-item" data-view="docking"><i>◉</i><span>构象评分</span></button>
-      <button class="nav-item" data-view="dynamics"><i>∿</i><span>动力学分析</span></button>
+      <button class="active" data-page="pipeline" title="Pipeline"><svg viewBox="0 0 24 24"><path d="M5 6h4v4H5zM15 14h4v4h-4zM9 8h3a4 4 0 0 1 4 4v2"/></svg></button>
+      <button data-page="library" title="Molecule library"><svg viewBox="0 0 24 24"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9zM4 7.5l8 4.5 8-4.5M12 12v9"/></svg></button>
+      <button data-page="jobs" title="Jobs"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg></button>
+      <button data-page="reports" title="Reports"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19V3"/></svg></button>
     </nav>
-    <div class="system-card"><span class="online"></span><div><strong>计算服务正常</strong><small>v1.0.0 · CHRM4</small></div></div>
+    <button class="rail-help" title="Help">?</button>
   </aside>
 
-  <main>
-    <header class="topbar">
-      <button class="mobile-menu" aria-label="打开菜单">☰</button>
-      <div class="project-switch"><small>当前项目</small><button>CHRM4 正性别构调节剂筛选 <span>⌄</span></button></div>
-      <div class="top-actions"><button class="icon-btn" aria-label="帮助">?</button><button class="icon-btn notice" aria-label="通知">♢</button><div class="avatar">TM</div></div>
+  <main class="main">
+    <header class="appbar">
+      <div><p>CHRM4 / M4 RECEPTOR</p><h2>正性别构调节剂智能筛选</h2></div>
+      <div class="app-actions">
+        <span class="demo-chip">DEMO</span>
+        <button class="outline" id="open-run">New run</button>
+        <button class="user-menu" id="user-menu"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><path d="M5 20c.8-4 3.1-6 7-6s6.2 2 7 6"/></svg><span>Demo session</span><b>⌄</b></button>
+      </div>
+      <div class="account-pop" id="account-pop"><small>当前会话</small><strong>Demo workspace</strong><button id="logout">退出登录</button></div>
     </header>
 
-    <div class="content">
-      <section class="view active" id="view-dashboard">
-        <div class="page-head"><div><p class="kicker">PROJECT OVERVIEW</p><h1>CHRM4 正性别构调节剂智能筛选</h1><p>从分子输入到候选结果，在同一工作区完成。</p></div><button class="primary jump" data-target="screen">＋ 新建筛选任务</button></div>
+    <div class="page">
+      <section class="app-page active" id="page-pipeline">
+        <div class="page-title"><div><p>ACTIVE RUN · M4-2026-10</p><h1>Screening pipeline</h1></div><div class="run-state"><i></i><span><b>Run completed</b><small>Updated 12 Oct 2026 · 14:20</small></span></div></div>
 
-        <div class="stat-grid">
-          <article><span class="stat-icon violet">⌬</span><div><small>分子库</small><strong>2,605</strong><em>已完成结构检查</em></div></article>
-          <article><span class="stat-icon blue">◎</span><div><small>已筛选</small><strong>200</strong><em>进入精细评分</em></div></article>
-          <article><span class="stat-icon amber">◉</span><div><small>候选结果</small><strong>8</strong><em>可查看完整排名</em></div></article>
-          <article><span class="stat-icon green">∿</span><div><small>深度分析</small><strong>3</strong><em>四条件分析完成</em></div></article>
-        </div>
+        <section class="pipeline">
+          <article class="stage complete"><header><span>01</span><b>Input</b><i>✓</i></header><h3>Molecule intake</h3><strong>2,605</strong><small>valid structures</small><footer>Output · audited library</footer></article>
+          <div class="connector"><i></i></div>
+          <article class="stage complete"><header><span>02</span><b>Match</b><i>✓</i></header><h3>Pocket scoring</h3><strong>200</strong><small>ranked molecules</small><footer>Output · target scores</footer></article>
+          <div class="connector"><i></i></div>
+          <article class="stage complete"><header><span>03</span><b>Refine</b><i>✓</i></header><h3>Pose consensus</h3><strong>8</strong><small>priority records</small><footer>Output · six-pose rank</footer></article>
+          <div class="connector"><i></i></div>
+          <article class="stage complete selected"><header><span>04</span><b>Analyze</b><i>✓</i></header><h3>Receptor dynamics</h3><strong>3</strong><small>completed analyses</small><footer>Output · response profile</footer></article>
+        </section>
 
-        <div class="dashboard-grid">
-          <article class="panel task-panel">
-            <div class="panel-head"><div><h2>最近任务</h2><p>运行状态与结果</p></div><button class="text-btn jump" data-target="jobs">全部任务 →</button></div>
-            <div class="task-row"><span class="task-type green">∿</span><div><strong>M4 · 四条件动力学</strong><small>3 个候选 · 2026-10-12</small></div><div class="progress"><i style="width:100%"></i></div><span class="badge done">已完成</span></div>
-            <div class="task-row"><span class="task-type amber">◉</span><div><strong>M4 · 六路构象评分</strong><small>8 个记录 · 2026-10-12</small></div><div class="progress"><i style="width:100%"></i></div><span class="badge done">已完成</span></div>
-            <div class="task-row"><span class="task-type violet">◎</span><div><strong>M4 · 口袋匹配筛选</strong><small>2,605 个分子 · 2026-10-12</small></div><div class="progress"><i style="width:100%"></i></div><span class="badge done">已完成</span></div>
+        <div class="analysis-grid">
+          <article class="card performance">
+            <div class="card-head"><div><h3>Model performance</h3><p>M4 retrospective test set</p></div><div class="legend"><span><i class="base"></i>Baseline</span><span><i class="adapt"></i>Adapted</span></div></div>
+            <div class="metric-switch"><button class="active" data-metric="roc">ROC–AUC</button><button data-metric="pr">PR–AUC</button><button data-metric="bedroc">BEDROC20</button></div>
+            <div class="roc-wrap">
+              <svg id="roc-chart" viewBox="0 0 560 240" role="img" aria-label="Model performance curve">
+                <g class="grid"><path d="M48 18V210H540M48 162H540M48 114H540M48 66H540M171 18V210M294 18V210M417 18V210"/></g>
+                <path class="chance" d="M48 210 540 18"/>
+                <path class="curve base-line" d="M48 210 C95 167 139 143 205 116 S352 72 540 18"/>
+                <path class="curve adapted-line" d="M48 210 C66 129 115 82 188 55 S370 28 540 18"/>
+                <g class="axis"><text x="44" y="228">0</text><text x="286" y="228">False positive rate</text><text x="526" y="228">1.0</text><text x="12" y="214">0</text><text x="9" y="24">1.0</text></g>
+              </svg>
+              <div class="metric-value"><span>Adapted model</span><strong id="metric-after">0.714</strong><small id="metric-gain">+0.174 vs baseline</small></div>
+            </div>
           </article>
 
-          <article class="panel quick-panel">
-            <div class="panel-head"><div><h2>快速开始</h2><p>选择一项功能</p></div></div>
-            <button class="quick jump" data-target="screen"><span class="violet">⌬</span><div><strong>批量筛选分子</strong><small>输入 SMILES / CSV / SDF</small></div><i>→</i></button>
-            <button class="quick jump" data-target="candidates"><span class="blue">◇</span><div><strong>查看候选排名</strong><small>比较综合分数与状态</small></div><i>→</i></button>
-            <button class="quick jump" data-target="dynamics"><span class="green">∿</span><div><strong>分析动力学结果</strong><small>查看条件对比与区域响应</small></div><i>→</i></button>
+          <article class="card funnel">
+            <div class="card-head"><div><h3>Candidate reduction</h3><p>Current run</p></div><button class="icon-more">•••</button></div>
+            <div class="funnel-chart">
+              <div style="--w:100%"><span>Generated</span><b>2,605</b></div>
+              <div style="--w:92%"><span>Audited</span><b>2,592</b></div>
+              <div style="--w:60%"><span>Ranked</span><b>200</b></div>
+              <div style="--w:38%"><span>Consensus</span><b>8</b></div>
+              <div style="--w:25%"><span>Dynamics</span><b>3</b></div>
+            </div>
+            <div class="funnel-foot"><div><strong>0.12%</strong><small>end-to-end retention</small></div><div><strong>4 stages</strong><small>completed</small></div></div>
           </article>
         </div>
 
-        <article class="panel candidate-preview">
-          <div class="panel-head"><div><h2>优先候选</h2><p>按综合评分排序</p></div><button class="text-btn jump" data-target="candidates">打开结果表 →</button></div>
-          <div class="candidate-strip" id="candidate-strip"></div>
-        </article>
-      </section>
+        <div class="bottom-grid">
+          <article class="card candidate-card">
+            <div class="card-head"><div><h3>Priority candidates</h3><p>Composite rank · top 8</p></div><div class="table-actions"><input id="candidate-search" placeholder="Search candidate"><button id="export-csv">Export</button></div></div>
+            <div class="table-scroll"><table><thead><tr><th>Rank</th><th>Candidate</th><th>DrugCLIP</th><th>Consensus</th><th>Glide</th><th>Vina</th><th>Dynamics</th></tr></thead><tbody id="candidate-body"></tbody></table></div>
+          </article>
 
-      <section class="view" id="view-screen">
-        <div class="page-head compact"><div><p class="kicker">NEW SCREENING JOB</p><h1>新建筛选任务</h1><p>配置输入和所需输出，提交后可在任务中心查看进度。</p></div></div>
-        <div class="screen-layout">
-          <form class="panel screening-form" id="screen-form">
-            <div class="form-section"><span class="step">1</span><div class="form-body"><h2>任务信息</h2><div class="field-row"><label>任务名称<input id="job-name" required value="M4 candidate screen"></label><label>靶点<select><option>CHRM4 / M4 receptor</option><option disabled>更多靶点即将支持</option></select></label></div></div></div>
-            <div class="form-section"><span class="step">2</span><div class="form-body"><h2>输入分子</h2><div class="input-tabs"><button type="button" class="active">粘贴 SMILES</button><label for="file-input">上传 CSV / SDF</label></div><textarea id="smiles-input" placeholder="每行一个 SMILES，可写为：&#10;candidate_001,CCN1CCC...&#10;candidate_002,COc1ccc..."></textarea><input id="file-input" type="file" accept=".csv,.sdf,.smi,.txt"><div class="input-meta"><span id="input-status">尚未输入分子</span><button type="button" id="load-demo">载入示例</button></div></div></div>
-            <div class="form-section"><span class="step">3</span><div class="form-body"><h2>选择输出</h2><div class="output-grid">
-              <label><input type="checkbox" checked><span><i>⌬</i><strong>结构检查</strong><small>格式、重复与基础性质</small></span></label>
-              <label><input type="checkbox" checked><span><i>◎</i><strong>靶点匹配</strong><small>输出匹配分数与排名</small></span></label>
-              <label><input type="checkbox" checked><span><i>◉</i><strong>构象评分</strong><small>输出多构象综合评分</small></span></label>
-              <label><input type="checkbox"><span><i>∿</i><strong>动力学分析</strong><small>输出条件对比结果</small></span></label>
-            </div></div></div>
-            <div class="form-actions"><span><b id="valid-count">0</b> 个分子待处理</span><button type="submit" class="primary">提交任务 →</button></div>
-          </form>
-          <aside class="panel job-summary"><h3>任务输出</h3><ul><li><span>01</span><div><strong>输入审计表</strong><small>accepted / rejected / reason</small></div></li><li><span>02</span><div><strong>候选排名表</strong><small>score / rank / model version</small></div></li><li><span>03</span><div><strong>结构评分表</strong><small>pose / energy / consensus</small></div></li><li><span>04</span><div><strong>结果包</strong><small>CSV + JSON + summary</small></div></li></ul><div class="summary-note">任务提交后会生成唯一编号，并保存输入、参数和结果文件。</div></aside>
+          <article class="card distribution">
+            <div class="card-head"><div><h3>Score distribution</h3><p>Eight priority records</p></div></div>
+            <div class="histogram" id="histogram"></div>
+            <div class="dist-axis"><span>0.55</span><span>Consensus score</span><span>0.95</span></div>
+            <div class="selected-candidate"><span id="selected-dot"></span><div><small>Selected</small><strong id="selected-name">PACER0010</strong></div><b id="selected-score">0.7304</b></div>
+          </article>
         </div>
       </section>
 
-      <section class="view" id="view-jobs">
-        <div class="page-head compact"><div><p class="kicker">JOBS</p><h1>任务中心</h1><p>管理运行记录、查看输出并下载结果。</p></div><button class="primary jump" data-target="screen">＋ 新建任务</button></div>
-        <article class="panel table-panel"><div class="toolbar"><div class="search">⌕ <input placeholder="搜索任务名称或编号"></div><select><option>全部状态</option><option>已完成</option><option>运行中</option></select></div><div class="table-wrap"><table><thead><tr><th>任务</th><th>类型</th><th>输入</th><th>创建时间</th><th>状态</th><th>操作</th></tr></thead><tbody id="jobs-body"></tbody></table></div></article>
-      </section>
-
-      <section class="view" id="view-candidates">
-        <div class="page-head compact"><div><p class="kicker">CANDIDATES</p><h1>候选分子</h1><p>筛选、排序并打开单分子分析结果。</p></div><button class="secondary" id="export-csv">↓ 导出 CSV</button></div>
-        <article class="panel table-panel"><div class="toolbar"><div class="search">⌕ <input id="candidate-search" placeholder="搜索候选编号"></div><div class="filter-group"><button class="filter active" data-filter="all">全部 8</button><button class="filter" data-filter="deep">深度分析 3</button></div></div><div class="table-wrap"><table class="candidate-table"><thead><tr><th>排名</th><th>候选编号</th><th>DrugCLIP</th><th>综合评分</th><th>构象评分</th><th>动力学</th><th></th></tr></thead><tbody id="candidate-body"></tbody></table></div></article>
-      </section>
-
-      <section class="view" id="view-detail">
-        <button class="back jump" data-target="candidates">← 返回候选列表</button>
-        <div class="detail-head"><div><p class="kicker">CANDIDATE REPORT</p><h1 id="detail-name">PACER0010</h1><p id="detail-generated">PACERGEN01755</p></div><div class="detail-actions"><button class="secondary">↓ 下载结果</button><button class="primary">加入下一轮</button></div></div>
-        <div class="detail-grid">
-          <article class="panel score-card"><small>综合评分</small><strong id="detail-score">0.7304</strong><div class="score-meter"><i id="detail-meter"></i></div><span>六路构象综合排名</span></article>
-          <article class="panel"><h3>计算状态</h3><div class="result-status"><span>✓</span><div><strong>分析完成</strong><small>结果可用于下一轮候选决策</small></div></div><div class="kv"><span>功能判断</span><b>Unresolved</b></div><div class="kv"><span>实验状态</span><b>Not performed</b></div></article>
-          <article class="panel response-card"><div class="panel-head"><div><h3>条件响应</h3><p>R1–R3 direction cosine</p></div><b id="detail-direction">−0.1251</b></div><div class="response-axis"><span>−0.2</span><span>0</span><span>+0.2</span><i id="detail-dot"></i></div><p id="detail-note">四条件分析完成，功能身份仍待确认。</p></article>
-        </div>
-        <article class="panel"><div class="panel-head"><div><h2>构象评分</h2><p>Glide / Vina · PDB / BEmin / BEavg</p></div></div><div class="bar-chart" id="score-bars"></div></article>
-      </section>
-
-      <section class="view tool-view" id="view-molecule" data-tool="结构检查"><div class="tool-placeholder"></div></section>
-      <section class="view tool-view" id="view-pocket" data-tool="靶点匹配"><div class="tool-placeholder"></div></section>
-      <section class="view tool-view" id="view-docking" data-tool="构象评分"><div class="tool-placeholder"></div></section>
-      <section class="view tool-view" id="view-dynamics" data-tool="动力学分析"><div class="tool-placeholder"></div></section>
+      <section class="app-page empty-page" id="page-library"><div><p>MOLECULE LIBRARY</p><h1>2,605 structures</h1><span>Import, inspect and organize screening inputs.</span><button class="solid" data-open-run>Import molecules</button></div></section>
+      <section class="app-page empty-page" id="page-jobs"><div><p>COMPUTE JOBS</p><h1>3 completed runs</h1><span>Review parameters, runtime state and downloadable outputs.</span><button class="solid" data-open-run>Create new run</button></div></section>
+      <section class="app-page empty-page" id="page-reports"><div><p>REPORTS</p><h1>Candidate analysis</h1><span>Open comparison views and export project summaries.</span><button class="solid" data-page-back>Return to pipeline</button></div></section>
     </div>
   </main>
 </div>
-<div class="toast" id="toast"><span>✓</span><div><strong>任务已提交</strong><small id="toast-text">正在初始化计算环境</small></div></div>
+
+<div class="modal-backdrop" id="run-modal">
+  <form class="run-modal" id="run-form">
+    <header><div><p>NEW SCREENING RUN</p><h2>Configure pipeline</h2></div><button type="button" id="close-run">×</button></header>
+    <label>Run name<input id="run-name" value="M4 candidate screening"></label>
+    <div class="upload"><input id="run-file" type="file" accept=".csv,.sdf,.smi,.txt"><label for="run-file"><span>↑</span><strong>Upload molecule library</strong><small>CSV, SDF, SMI or TXT · max 50 MB</small></label><p id="file-name">No file selected</p></div>
+    <fieldset><legend>Pipeline</legend><label><input type="checkbox" checked><span>Input audit</span></label><label><input type="checkbox" checked><span>Pocket scoring</span></label><label><input type="checkbox" checked><span>Pose consensus</span></label><label><input type="checkbox"><span>Dynamics</span></label></fieldset>
+    <footer><button type="button" class="ghost" id="use-demo">Use demo library</button><button type="submit" class="solid">Create run</button></footer>
+  </form>
+</div>
+<div class="toast" id="toast"><i>✓</i><span><strong>Run created</strong><small>Demo input has been added to the queue.</small></span></div>
 <script src="assets/app.js"></script>
 </body>
 </html>

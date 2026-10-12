@@ -38,6 +38,8 @@ logs/
 tmp/
 
 # External/raw data and caches
+project/cache/pacer_stage4_pbcfix01_fkg_v02_v01/
+project/cache/pacer_stage4_pbcfix01_deployment_sample_v01/
 project/data/m4_gamd_figshare_*/
 project/data/miao2026_m4r/
 project/data/deeprli_m4_*/

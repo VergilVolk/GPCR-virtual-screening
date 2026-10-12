@@ -1,0 +1,36 @@
+{
+  "bandwidth": "historical shared-node RBF median positive pairwise Euclidean distance",
+  "bandwidth_population": "five fixed evenly-spaced residues from each of all 200 R2 blocks",
+  "block_frames": 20,
+  "blocks_per_trajectory": 50,
+  "historical_sources": [
+    {
+      "bytes": 15688,
+      "path": "project/pacer_dc_training/analyze_pacer_fkg_g2b.py",
+      "sha256": "d672c6e007d05c27cd3c4aebd0226b9ba2c871f6bf802d8b79cc4117012ba749"
+    },
+    {
+      "bytes": 17260,
+      "path": "project/pacer_dc_training/analyze_pacer_fkg_g2c.py",
+      "sha256": "db669a5e020cf38cfd0dea50966a643593364a6b2241f68c72e8b248618d5477"
+    }
+  ],
+  "normalization": "per-channel median and max(1.4826*MAD, 1e-6)",
+  "rff": {
+    "family": "Gaussian RBF random Fourier features",
+    "features": 512
+  },
+  "schema": "pacer_fkg_v02.phase2_method.v1",
+  "scope": "block construction and R2-only numerical calibration; no PACER outcomes",
+  "temporal_branches": {
+    "SIGNED_DRIFT": {
+      "definition": "mean(diff(Z))",
+      "width": 256
+    },
+    "STATE_MOTION": {
+      "definition": "concat(mean(Z), sqrt(mean(diff(Z)^2)))",
+      "width": 512
+    }
+  },
+  "version": "PACER_FKG_V02_PHASE2_CALIBRATION_v01"
+}

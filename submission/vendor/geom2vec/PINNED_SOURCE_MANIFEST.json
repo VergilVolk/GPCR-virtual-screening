@@ -1,0 +1,276 @@
+{
+  "upstream": "https://github.com/dinner-group/geom2vec",
+  "commit": "371d642ec1061664f16e49fcac702d07fc8d0b51",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 40217,
+      "sha256": "bf5100628e814f20323c81549988c1aba6b99f2d5bcb0c5887a83fab70899d61"
+    },
+    {
+      "path": "README.md",
+      "bytes": 18822,
+      "sha256": "14860bfcc3c1c93dd0867253143ece60755561fe0bdca2fd3f1acfb0e68b7dc4"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 1073,
+      "sha256": "f9db86fcd6be397f96e0eb9410b463d28622753b8bc4e1554b6a2f131191f362"
+    },
+    {
+      "path": "setup.py",
+      "bytes": 1093,
+      "sha256": "797360a6f3a0f1729ef6188f05197d53143f751a23b994395657f8d7aefc0926"
+    },
+    {
+      "path": "src/geom2vec/__init__.py",
+      "bytes": 1302,
+      "sha256": "8c1b5dc27e4b0566e65fa11c44951df60b6343012757dbb2c5484c442da27d04"
+    },
+    {
+      "path": "src/geom2vec/data/__init__.py",
+      "bytes": 732,
+      "sha256": "f951af7e2bd1e52ba0b97c18d1a72c1e794eca7e67ad76090e6047696131f848"
+    },
+    {
+      "path": "src/geom2vec/data/environment.py",
+      "bytes": 11573,
+      "sha256": "e94f63cd8cc3280be2cba16c60651fd1d1bf0e445e8c7948f7bcd4b2cdabbdf2"
+    },
+    {
+      "path": "src/geom2vec/data/features.py",
+      "bytes": 12279,
+      "sha256": "dbc27f3bb1b29f0e9ea34ee55bd3d5200dc54166b59bd5f66a48af53de8cfc8d"
+    },
+    {
+      "path": "src/geom2vec/data/io.py",
+      "bytes": 47984,
+      "sha256": "9e4981c56bfbc6038e16ca3ff95086178809fe180681ea8f7515e3a11a541711"
+    },
+    {
+      "path": "src/geom2vec/data/preprocessing.py",
+      "bytes": 22618,
+      "sha256": "0e851d8feaba7b8c9d635180db7f2846b8ca09e51fd573ce51cb736ba76f40e6"
+    },
+    {
+      "path": "src/geom2vec/models/__init__.py",
+      "bytes": 62,
+      "sha256": "f3ecc72edd2b6e312d5aabff2c5c70ed81cfc1be15931ad0ceaad27aa4fd0923"
+    },
+    {
+      "path": "src/geom2vec/models/downstream/__init__.py",
+      "bytes": 2442,
+      "sha256": "6c1509310b926afe9c0b86968b3ec74ff824b96612dd70f4ce22e3a2d8044ec8"
+    },
+    {
+      "path": "src/geom2vec/models/downstream/env_fusion.py",
+      "bytes": 2885,
+      "sha256": "2ecb887a2660bce954b6c7d6e6aedca0dca632f31079c715b3b56ffc315df5f1"
+    },
+    {
+      "path": "src/geom2vec/models/downstream/lobe.py",
+      "bytes": 16674,
+      "sha256": "11e1d354362432536de8ed6181aee213220a97ba6eba375c4f70ea3c2b7539a7"
+    },
+    {
+      "path": "src/geom2vec/models/downstream/spib/__init__.py",
+      "bytes": 120,
+      "sha256": "6330600b294ceec2d43250c4284d3eced9c397068c290313f80f3d5d0461afb1"
+    },
+    {
+      "path": "src/geom2vec/models/downstream/spib/base.py",
+      "bytes": 2641,
+      "sha256": "c4c610b04870a20f9937071af8b63c4f6d68d295a4025a1f2f99d21eba7ab991"
+    },
+    {
+      "path": "src/geom2vec/models/downstream/spib/spib.py",
+      "bytes": 26110,
+      "sha256": "0ed938820e1990d382ba38a15af21b9486ced125d3e559a94e8eb70504a1a0ea"
+    },
+    {
+      "path": "src/geom2vec/models/downstream/spib/vae.py",
+      "bytes": 5157,
+      "sha256": "6818b8e3684e8b0a1d6cdd49ec30521160613ae58a0b2f4ab91807591c2d990d"
+    },
+    {
+      "path": "src/geom2vec/models/downstream/vamp/__init__.py",
+      "bytes": 1513,
+      "sha256": "b145bf82db3828a4549999db30ba492235e64185a17594a827ecace99ce394ec"
+    },
+    {
+      "path": "src/geom2vec/models/downstream/vamp/dataprocessing.py",
+      "bytes": 34885,
+      "sha256": "e5c1613e5d26735aa48d01771077c9c2c0dd3ebe073691428005e50573f506d6"
+    },
+    {
+      "path": "src/geom2vec/models/downstream/vamp/model.py",
+      "bytes": 9657,
+      "sha256": "192708c79e94e93f3ec314cbc10548fa85c210a64e68639f3a99dfbbc2cc9c4d"
+    },
+    {
+      "path": "src/geom2vec/models/downstream/vamp/ops.py",
+      "bytes": 8744,
+      "sha256": "ab764919a85178cce397174ee5458aa0ccf7f9be4da1df114bd250a886dc36fd"
+    },
+    {
+      "path": "src/geom2vec/models/downstream/vamp/stopvampnet.py",
+      "bytes": 18464,
+      "sha256": "894ef85043bea9035e2b197d9499ae22d3a6e9b8301c53e36c39f50a2836c8a0"
+    },
+    {
+      "path": "src/geom2vec/models/downstream/vamp/vampnet.py",
+      "bytes": 22246,
+      "sha256": "f33767a9e7ef25965c520979b05df8526f1923a467732423f6c72182eff330fc"
+    },
+    {
+      "path": "src/geom2vec/models/downstream/vamp/workflow.py",
+      "bytes": 74844,
+      "sha256": "828e4963794f09cb2aa8b8731a3b1a51c18351c397885755b311f9ab23acb4b4"
+    },
+    {
+      "path": "src/geom2vec/models/factory.py",
+      "bytes": 4769,
+      "sha256": "76e41a6235b39cc106863ee8e73ae9c21ba59a12207fa1ce72e432054857e1d5"
+    },
+    {
+      "path": "src/geom2vec/models/representation/__init__.py",
+      "bytes": 49,
+      "sha256": "8d3dd93fa635060eef33ced5ad7f075045df6b0698e1800c5a18e0e4f625389a"
+    },
+    {
+      "path": "src/geom2vec/models/representation/torchmd/__init__.py",
+      "bytes": 87,
+      "sha256": "c676c1c4a7a0906a28abe8d67977b5cfb32823d337acca660305eb72d57d822d"
+    },
+    {
+      "path": "src/geom2vec/models/representation/torchmd/args.py",
+      "bytes": 3574,
+      "sha256": "c15b8e74e66492183e0b0ef1c226915dc98d8137fb049915b3ab87bba4d679d7"
+    },
+    {
+      "path": "src/geom2vec/models/representation/torchmd/et.py",
+      "bytes": 16340,
+      "sha256": "7b6de87472f4a4b94cafa0a8f6275eba3d879513e925e5358c0767b72c2c1f29"
+    },
+    {
+      "path": "src/geom2vec/models/representation/torchmd/main_model.py",
+      "bytes": 7195,
+      "sha256": "ff00c2ed6092fe9cd58c976cb2bd33f649a4a6de0b67769dfd9bf12fb64572aa"
+    },
+    {
+      "path": "src/geom2vec/models/representation/torchmd/output_modules.py",
+      "bytes": 2504,
+      "sha256": "aa338fffa74166e513865d3773622dd7461af871cfc74cadeac034225c412c16"
+    },
+    {
+      "path": "src/geom2vec/models/representation/torchmd/prior.py",
+      "bytes": 2968,
+      "sha256": "a0451f088ab6b71a8bce4ac425d06434022af16c8ad9afbcc7ab0303e0e8193c"
+    },
+    {
+      "path": "src/geom2vec/models/representation/torchmd/tensornet.py",
+      "bytes": 20496,
+      "sha256": "1b0d7f57fba374acf2c6ce0d4f94d29d0400109b588327032110628648962914"
+    },
+    {
+      "path": "src/geom2vec/models/representation/torchmd/utils.py",
+      "bytes": 10750,
+      "sha256": "e297afcb84a4c32236b4588faa47e6ef65c2b391ecbcee4f0c8717e24f5eaf60"
+    },
+    {
+      "path": "src/geom2vec/models/representation/torchmd/wrapper.py",
+      "bytes": 1642,
+      "sha256": "45d4dd788e6e12e3ace47bf28a4ebdebce77cf9338a0821c53a46c697a11301c"
+    },
+    {
+      "path": "src/geom2vec/models/representation/visnet.py",
+      "bytes": 44610,
+      "sha256": "e4a8df1d562629b5279ce3e9aa0602f6fc4ee611f2b8087bfe7dee03f914658f"
+    },
+    {
+      "path": "src/geom2vec/nn/__init__.py",
+      "bytes": 761,
+      "sha256": "7148b0e39404e2314b2c222307300c8754194c9743a301587eaaecaa4644d384"
+    },
+    {
+      "path": "src/geom2vec/nn/equi_attention.py",
+      "bytes": 8021,
+      "sha256": "8cd255719e50f7ef7eaf09f78b9da35335c6584afc8ad42b5ad3d6994e4214a6"
+    },
+    {
+      "path": "src/geom2vec/nn/equi_layers.py",
+      "bytes": 4874,
+      "sha256": "09e7b0cc96af400ceb822ceddc26c2e122e7e7118c489a556d9f2a18aaadba24"
+    },
+    {
+      "path": "src/geom2vec/nn/equivariant.py",
+      "bytes": 21423,
+      "sha256": "68883e383632ee7f6299d38bc3291c138e23dff657a34020ff5f08bbc3c16ee0"
+    },
+    {
+      "path": "src/geom2vec/nn/gvp.py",
+      "bytes": 14396,
+      "sha256": "1f0e09b1cbbd5d20d970420c52bb2a46beea06fb8200e52c328841aa71dfbe6d"
+    },
+    {
+      "path": "src/geom2vec/nn/local_conv.py",
+      "bytes": 8301,
+      "sha256": "a3765d8cb3b2f8caaee60e9f3f149a0ff3b29c124bb51ec1110c612bc1ef085b"
+    },
+    {
+      "path": "src/geom2vec/nn/mlps.py",
+      "bytes": 1433,
+      "sha256": "6b09da8709bb9b2630908b55111abdb6dc40946ea93bc610e17312d4faeea701"
+    },
+    {
+      "path": "src/geom2vec/nn/triton/__init__.py",
+      "bytes": 179,
+      "sha256": "10368b359261fb3863bb99b904f55c04f284580ebd11fa3e347e5398a9c2e7a7"
+    },
+    {
+      "path": "src/geom2vec/nn/triton/eqsdpa/__init__.py",
+      "bytes": 180,
+      "sha256": "8bfae552a995bca074f0cfcaa35537db7a0adaafc8da12474195bff8ebb1e091"
+    },
+    {
+      "path": "src/geom2vec/nn/triton/eqsdpa/attention.py",
+      "bytes": 9131,
+      "sha256": "d11ef65455bbb3638f13f92aaf70d56a1a1054972fd239d6b3c0acccf9fd90b9"
+    },
+    {
+      "path": "src/geom2vec/nn/triton/eqsdpa/backward_kernel.py",
+      "bytes": 17757,
+      "sha256": "b6979dc08ddfba8d5cffddd31d6a3d4f56da2b4cc19c2f9b42e5a53469c0af87"
+    },
+    {
+      "path": "src/geom2vec/nn/triton/eqsdpa/forward_kernel.py",
+      "bytes": 9116,
+      "sha256": "00f49e1107243a17378763ae43a7fe5dfcc77198655373df1d54361b8c091ca4"
+    },
+    {
+      "path": "src/geom2vec/train/__init__.py",
+      "bytes": 13,
+      "sha256": "75ad4f4c2943325f88064ad2beae890b59674be2bf0404b30afc5584dc4de4bb"
+    },
+    {
+      "path": "src/geom2vec/train/datasets/__init__.py",
+      "bytes": 63,
+      "sha256": "5225817baec640e27f93efc35282812d1fe48fa9133666f330e9a9395b2d4bd9"
+    },
+    {
+      "path": "src/geom2vec/train/datasets/denali.py",
+      "bytes": 2782,
+      "sha256": "d3621a641e03a4ce4790f50fe4f0c9f4ad537b76ce614e1206bad2ef0e833892"
+    },
+    {
+      "path": "src/geom2vec/train/datasets/pcqm4m.py",
+      "bytes": 2844,
+      "sha256": "a056b4f60050cad694af32be823a90e264d496bf65fec45fdb2a02c4d88d69f6"
+    },
+    {
+      "path": "src/geom2vec/train/pretrain_tensornet.py",
+      "bytes": 5669,
+      "sha256": "eef446b02a293b40957ce2fb59135d6cfa4e6b411f2e7fca20cc24ee3416f3d4"
+    }
+  ]
+}

@@ -20,6 +20,8 @@
     "02_drugclip_top200.csv": "41c5a69e6c54825d0cbe9149a2f1fe9dbe5ea4ae2de137c161450607c3fa28eb",
     "03_six_channel_8.csv": "cd59f0a8e86cfc29d5163d917aa14f8b38a475871eef609fd821eb08fd5af378",
     "04_four_context_3.csv": "a10ff90498ff64a54e46fb66c26298f2ef99ac00389fb578f865a0dc0f7e01de",
+    "module4_example_reference_cpu.csv": "eb9d9cb3ec731b43051e9c92c6f2a4500002f4e175f664772b0ec78675d1831a",
+    "module4_example_reference_cuda.csv": "36c93fc33420f447ac2ac422ea667842f2a1a67ca0192b6d0086bb609a5f7e5b",
     "results.csv": "1e905469c1b97ed83b43e68840e6fb46d2facf7e9b9b475e77f7974a241b8a2f"
   },
   "module2_forward_max_abs_error": 6.510734562592546e-09,

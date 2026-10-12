@@ -1,0 +1,26 @@
+{
+  "axes": {
+    "conditional_pam_effect": {
+      "compound110__candidate_probe": 1,
+      "probe_only": -1
+    },
+    "intrinsic_agonism": {
+      "apo": -1,
+      "compound110__candidate_no_probe": 1
+    },
+    "synergy_interaction": {
+      "apo": 1,
+      "compound110__candidate_no_probe": -1,
+      "compound110__candidate_probe": 1,
+      "probe_only": -1
+    }
+  },
+  "contexts": [
+    "apo",
+    "probe_only",
+    "compound110__candidate_no_probe",
+    "compound110__candidate_probe"
+  ],
+  "schema": "pacer_fkg_v02.contrast_definitions.v1",
+  "status": "DEFINED_BUT_NOT_EVALUATED_IN_PHASE2"
+}

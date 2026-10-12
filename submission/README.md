@@ -38,6 +38,12 @@ PASS: frozen four-module replay, model hashes and final table
 
 三名历史锚点 PACER0010、PACER0027、PACER0073 的 `functional_prediction` 均为 `unresolved`，`experimental_pam_validation` 均为 `not_performed`。
 
+## 可追溯的 Module 4 计算样例
+
+`data/examples/module4_pacer0073_r1/` 提供 PACER0073 第一重复每个条件 20 帧的真实生产轨迹样例及对应 PDB 拓扑。`run_module4_example.py` 会执行冻结编码、数值状态应用、四条件对比和图/区域分析；它不是完整三重复 Stage 4 结果的重跑。
+
+该样例使用独立的 PyTorch 2.6 环境，不能与 PyTorch 2.8 的结果重放环境混用。安装与核验命令见 `docs/MODULE4_REPRODUCIBILITY.md`。
+
 ## 能复现什么
 
 - Module 2 冻结表示上的模型前向计算与 Top-200；

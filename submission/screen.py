@@ -11,7 +11,7 @@ MODEL_TAG = "DrugCLIP-2023 GPCR-adapted projection ensemble, 3 seeds"
 
 
 def model_paths() -> list[Path]:
-    return sorted((ROOT / "models/used_module2").glob("seed*.projection.pt"))
+    return sorted((ROOT / "models/used_module2").glob("drugclip2023_m4_loto_seed*.projection.pt"))
 
 
 def run_screen(molecules: Path, pockets: Path, output: Path) -> Path:

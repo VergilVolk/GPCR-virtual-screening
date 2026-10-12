@@ -1,0 +1,91 @@
+candidate,replica,branch,contrast,formula,region,residues,blocks,vector_norm,interpretation
+PACER0073,1,STATE_MOTION,Delta_PAM,"{""CP"": 1.0, ""P"": -1.0}",compound110_extension,8,1,0.0913664698600769,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_PAM,"{""CP"": 1.0, ""P"": -1.0}",cooperativity_mutagenesis,13,1,0.07631180435419083,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_PAM,"{""CP"": 1.0, ""P"": -1.0}",distal_control,12,1,0.09953580051660538,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_PAM,"{""CP"": 1.0, ""P"": -1.0}",intracellular_microswitches,9,1,0.06721995025873184,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_PAM,"{""CP"": 1.0, ""P"": -1.0}",orthosteric_activation_core,13,1,0.06983181089162827,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_PAM,"{""CP"": 1.0, ""P"": -1.0}",orthosteric_contact_union,14,1,0.07245419174432755,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_PAM,"{""CP"": 1.0, ""P"": -1.0}",pam_contact_consensus,12,1,0.07194247096776962,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_PAM,"{""CP"": 1.0, ""P"": -1.0}",pam_contact_union,16,1,0.06685621291399002,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_PAM,"{""CP"": 1.0, ""P"": -1.0}",stable_core_control,12,1,0.07774470001459122,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_AGO,"{""A"": -1.0, ""C"": 1.0}",compound110_extension,8,1,0.11251243948936462,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_AGO,"{""A"": -1.0, ""C"": 1.0}",cooperativity_mutagenesis,13,1,0.09268472343683243,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_AGO,"{""A"": -1.0, ""C"": 1.0}",distal_control,12,1,0.12199599295854568,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_AGO,"{""A"": -1.0, ""C"": 1.0}",intracellular_microswitches,9,1,0.09022767841815948,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_AGO,"{""A"": -1.0, ""C"": 1.0}",orthosteric_activation_core,13,1,0.0688340812921524,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_AGO,"{""A"": -1.0, ""C"": 1.0}",orthosteric_contact_union,14,1,0.06787656247615814,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_AGO,"{""A"": -1.0, ""C"": 1.0}",pam_contact_consensus,12,1,0.11183927208185196,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_AGO,"{""A"": -1.0, ""C"": 1.0}",pam_contact_union,16,1,0.10649477690458298,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_AGO,"{""A"": -1.0, ""C"": 1.0}",stable_core_control,12,1,0.06969626992940903,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_INT,"{""A"": 1.0, ""C"": -1.0, ""CP"": 1.0, ""P"": -1.0}",compound110_extension,8,1,0.1406017541885376,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_INT,"{""A"": 1.0, ""C"": -1.0, ""CP"": 1.0, ""P"": -1.0}",cooperativity_mutagenesis,13,1,0.10231558978557587,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_INT,"{""A"": 1.0, ""C"": -1.0, ""CP"": 1.0, ""P"": -1.0}",distal_control,12,1,0.16824829578399658,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_INT,"{""A"": 1.0, ""C"": -1.0, ""CP"": 1.0, ""P"": -1.0}",intracellular_microswitches,9,1,0.10681391507387161,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_INT,"{""A"": 1.0, ""C"": -1.0, ""CP"": 1.0, ""P"": -1.0}",orthosteric_activation_core,13,1,0.09950555115938187,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_INT,"{""A"": 1.0, ""C"": -1.0, ""CP"": 1.0, ""P"": -1.0}",orthosteric_contact_union,14,1,0.10168150067329407,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_INT,"{""A"": 1.0, ""C"": -1.0, ""CP"": 1.0, ""P"": -1.0}",pam_contact_consensus,12,1,0.11750511825084686,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_INT,"{""A"": 1.0, ""C"": -1.0, ""CP"": 1.0, ""P"": -1.0}",pam_contact_union,16,1,0.1156700924038887,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Delta_INT,"{""A"": 1.0, ""C"": -1.0, ""CP"": 1.0, ""P"": -1.0}",stable_core_control,12,1,0.10046321898698807,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Probe_effect,"{""A"": -1.0, ""P"": 1.0}",compound110_extension,8,1,0.10502313822507858,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Probe_effect,"{""A"": -1.0, ""P"": 1.0}",cooperativity_mutagenesis,13,1,0.07944589108228683,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Probe_effect,"{""A"": -1.0, ""P"": 1.0}",distal_control,12,1,0.10146071761846542,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Probe_effect,"{""A"": -1.0, ""P"": 1.0}",intracellular_microswitches,9,1,0.08767586201429367,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Probe_effect,"{""A"": -1.0, ""P"": 1.0}",orthosteric_activation_core,13,1,0.07901403307914734,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Probe_effect,"{""A"": -1.0, ""P"": 1.0}",orthosteric_contact_union,14,1,0.08089538663625717,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Probe_effect,"{""A"": -1.0, ""P"": 1.0}",pam_contact_consensus,12,1,0.09766680002212524,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Probe_effect,"{""A"": -1.0, ""P"": 1.0}",pam_contact_union,16,1,0.08913195878267288,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Probe_effect,"{""A"": -1.0, ""P"": 1.0}",stable_core_control,12,1,0.07796290516853333,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Probe_background_effect,"{""C"": -1.0, ""CP"": 1.0}",compound110_extension,8,1,0.08899865299463272,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Probe_background_effect,"{""C"": -1.0, ""CP"": 1.0}",cooperativity_mutagenesis,13,1,0.061952125281095505,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Probe_background_effect,"{""C"": -1.0, ""CP"": 1.0}",distal_control,12,1,0.11224409937858582,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Probe_background_effect,"{""C"": -1.0, ""CP"": 1.0}",intracellular_microswitches,9,1,0.0640779361128807,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Probe_background_effect,"{""C"": -1.0, ""CP"": 1.0}",orthosteric_activation_core,13,1,0.07149490714073181,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Probe_background_effect,"{""C"": -1.0, ""CP"": 1.0}",orthosteric_contact_union,14,1,0.06963935494422913,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Probe_background_effect,"{""C"": -1.0, ""CP"": 1.0}",pam_contact_consensus,12,1,0.06714721024036407,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Probe_background_effect,"{""C"": -1.0, ""CP"": 1.0}",pam_contact_union,16,1,0.06548276543617249,single-block calculation example; no PAM classification
+PACER0073,1,STATE_MOTION,Probe_background_effect,"{""C"": -1.0, ""CP"": 1.0}",stable_core_control,12,1,0.07885722070932388,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_PAM,"{""CP"": 1.0, ""P"": -1.0}",compound110_extension,8,1,0.23303116858005524,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_PAM,"{""CP"": 1.0, ""P"": -1.0}",cooperativity_mutagenesis,13,1,0.16145002841949463,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_PAM,"{""CP"": 1.0, ""P"": -1.0}",distal_control,12,1,0.19698013365268707,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_PAM,"{""CP"": 1.0, ""P"": -1.0}",intracellular_microswitches,9,1,0.11678662151098251,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_PAM,"{""CP"": 1.0, ""P"": -1.0}",orthosteric_activation_core,13,1,0.13715435564517975,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_PAM,"{""CP"": 1.0, ""P"": -1.0}",orthosteric_contact_union,14,1,0.14400412142276764,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_PAM,"{""CP"": 1.0, ""P"": -1.0}",pam_contact_consensus,12,1,0.18667219579219818,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_PAM,"{""CP"": 1.0, ""P"": -1.0}",pam_contact_union,16,1,0.1746542602777481,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_PAM,"{""CP"": 1.0, ""P"": -1.0}",stable_core_control,12,1,0.15839479863643646,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_AGO,"{""A"": -1.0, ""C"": 1.0}",compound110_extension,8,1,0.24553002417087555,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_AGO,"{""A"": -1.0, ""C"": 1.0}",cooperativity_mutagenesis,13,1,0.1656835973262787,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_AGO,"{""A"": -1.0, ""C"": 1.0}",distal_control,12,1,0.24270357191562653,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_AGO,"{""A"": -1.0, ""C"": 1.0}",intracellular_microswitches,9,1,0.18878670036792755,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_AGO,"{""A"": -1.0, ""C"": 1.0}",orthosteric_activation_core,13,1,0.1458878219127655,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_AGO,"{""A"": -1.0, ""C"": 1.0}",orthosteric_contact_union,14,1,0.1462276428937912,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_AGO,"{""A"": -1.0, ""C"": 1.0}",pam_contact_consensus,12,1,0.17728562653064728,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_AGO,"{""A"": -1.0, ""C"": 1.0}",pam_contact_union,16,1,0.1828281581401825,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_AGO,"{""A"": -1.0, ""C"": 1.0}",stable_core_control,12,1,0.1777203530073166,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_INT,"{""A"": 1.0, ""C"": -1.0, ""CP"": 1.0, ""P"": -1.0}",compound110_extension,8,1,0.32183533906936646,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_INT,"{""A"": 1.0, ""C"": -1.0, ""CP"": 1.0, ""P"": -1.0}",cooperativity_mutagenesis,13,1,0.21514199674129486,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_INT,"{""A"": 1.0, ""C"": -1.0, ""CP"": 1.0, ""P"": -1.0}",distal_control,12,1,0.32843872904777527,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_INT,"{""A"": 1.0, ""C"": -1.0, ""CP"": 1.0, ""P"": -1.0}",intracellular_microswitches,9,1,0.23344406485557556,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_INT,"{""A"": 1.0, ""C"": -1.0, ""CP"": 1.0, ""P"": -1.0}",orthosteric_activation_core,13,1,0.20875483751296997,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_INT,"{""A"": 1.0, ""C"": -1.0, ""CP"": 1.0, ""P"": -1.0}",orthosteric_contact_union,14,1,0.21259355545043945,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_INT,"{""A"": 1.0, ""C"": -1.0, ""CP"": 1.0, ""P"": -1.0}",pam_contact_consensus,12,1,0.2171020358800888,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_INT,"{""A"": 1.0, ""C"": -1.0, ""CP"": 1.0, ""P"": -1.0}",pam_contact_union,16,1,0.20656408369541168,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Delta_INT,"{""A"": 1.0, ""C"": -1.0, ""CP"": 1.0, ""P"": -1.0}",stable_core_control,12,1,0.2746357321739197,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Probe_effect,"{""A"": -1.0, ""P"": 1.0}",compound110_extension,8,1,0.24475517868995667,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Probe_effect,"{""A"": -1.0, ""P"": 1.0}",cooperativity_mutagenesis,13,1,0.1689070165157318,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Probe_effect,"{""A"": -1.0, ""P"": 1.0}",distal_control,12,1,0.20990221202373505,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Probe_effect,"{""A"": -1.0, ""P"": 1.0}",intracellular_microswitches,9,1,0.18919774889945984,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Probe_effect,"{""A"": -1.0, ""P"": 1.0}",orthosteric_activation_core,13,1,0.14727343618869781,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Probe_effect,"{""A"": -1.0, ""P"": 1.0}",orthosteric_contact_union,14,1,0.1503671407699585,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Probe_effect,"{""A"": -1.0, ""P"": 1.0}",pam_contact_consensus,12,1,0.18243026733398438,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Probe_effect,"{""A"": -1.0, ""P"": 1.0}",pam_contact_union,16,1,0.1696399301290512,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Probe_effect,"{""A"": -1.0, ""P"": 1.0}",stable_core_control,12,1,0.22270353138446808,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Probe_background_effect,"{""C"": -1.0, ""CP"": 1.0}",compound110_extension,8,1,0.23230406641960144,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Probe_background_effect,"{""C"": -1.0, ""CP"": 1.0}",cooperativity_mutagenesis,13,1,0.13510523736476898,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Probe_background_effect,"{""C"": -1.0, ""CP"": 1.0}",distal_control,12,1,0.23049382865428925,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Probe_background_effect,"{""C"": -1.0, ""CP"": 1.0}",intracellular_microswitches,9,1,0.1390121728181839,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Probe_background_effect,"{""C"": -1.0, ""CP"": 1.0}",orthosteric_activation_core,13,1,0.15474028885364532,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Probe_background_effect,"{""C"": -1.0, ""CP"": 1.0}",orthosteric_contact_union,14,1,0.1548592746257782,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Probe_background_effect,"{""C"": -1.0, ""CP"": 1.0}",pam_contact_consensus,12,1,0.1386490911245346,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Probe_background_effect,"{""C"": -1.0, ""CP"": 1.0}",pam_contact_union,16,1,0.13595154881477356,single-block calculation example; no PAM classification
+PACER0073,1,SIGNED_DRIFT,Probe_background_effect,"{""C"": -1.0, ""CP"": 1.0}",stable_core_control,12,1,0.16996246576309204,single-block calculation example; no PAM classification

@@ -1,5 +1,5 @@
 const D=window.PACER_DATA,$=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)],login=$('#login'),app=$('#app'),tooltip=$('#tooltip');
-const launchScreen=$('#launch-screen');window.setTimeout(()=>launchScreen?.classList.add('done'),2350);
+const launchScreen=$('#launch-screen');window.setTimeout(()=>launchScreen?.classList.add('done'),3150);
 function showView(id){$$('.view').forEach(v=>v.classList.toggle('active',v.id===id));$$('.sidebar [data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===id));window.scrollTo(0,0)}
 function enter(){sessionStorage.setItem('m4_demo_session','active');login.classList.add('hidden');app.classList.add('visible');showView('overview')}
 function leave(){sessionStorage.removeItem('m4_demo_session');app.classList.remove('visible');login.classList.remove('hidden');$('#account-pop').classList.remove('open');$('#account-button').setAttribute('aria-expanded','false')}

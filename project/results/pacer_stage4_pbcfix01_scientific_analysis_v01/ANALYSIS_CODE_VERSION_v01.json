@@ -1,0 +1,13 @@
+{
+  "analysis_version": "v01",
+  "utc": "2026-10-12T04:17:36.238243+00:00",
+  "script_sha256": "8141380a2dbc9db68ffc7ad525ba1864a72c7d5b0c88c369dc0e1112ca3a41b5",
+  "report_renderer_sha256": "6ad0ab3c684dfde63e48c4c2297b1ce48f6adbb7ece05826d92c5f53d405c63b",
+  "python": "3.14.6 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:29:05) [MSC v.1942 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "matplotlib": "3.11.0",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "git_head": "97e863dd4a0d1f256cde900579dd28e0b0b47d7b",
+  "command": "C:\\Users\\barne\\anaconda3\\python.exe project\\results\\pacer_stage4_pbcfix01_scientific_analysis_v01\\analyze_v01.py",
+  "method": "L2 norm, cosine, empirical correlated-block quantiles; no inferential tests or fitted scores"
+}

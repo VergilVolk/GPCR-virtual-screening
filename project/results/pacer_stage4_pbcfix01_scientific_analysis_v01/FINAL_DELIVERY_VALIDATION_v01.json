@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "input_hashes_rechecked": 123,
+  "all_input_hashes_unchanged": true,
+  "block_distributions_replayed_from_delivered_csv": 486,
+  "png_pdf_pairs_verified": 7,
+  "source_code_hashes_match_version_record": true,
+  "no_replica_exclusion": true,
+  "tracked_git_diff": "",
+  "visual_review": "Heatmap, magnitude, specificity and region dependence layouts inspected as PNG; PDF saved from same figures",
+  "report_sha256": "dee02d0ca0411e9ca8eaaa9b0a2bba9f7d4b48d1dafda6e102fb11ff0aba4b84",
+  "finalizer_sha256": "e0624490fba8d8c4d1f76a4cf3323f1f879d237a745756c123dce288446e1cfb"
+}

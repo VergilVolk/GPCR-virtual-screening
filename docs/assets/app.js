@@ -1,57 +1,37 @@
-const candidates = {
-  PACER0010: {
-    generated: "PACERGEN01755", score: "0.7304", direction: -0.1251,
-    note: "四条件分析已完成，但功能身份仍未解决，需要实验验证。"
-  },
-  PACER0027: {
-    generated: "PACERGEN00123", score: "0.7307", direction: -0.0699,
-    note: "四条件分析已完成；现有计算证据不足以判断 PAM 功能。"
-  },
-  PACER0073: {
-    generated: "PACERGEN00094", score: "0.7041", direction: 0.1008,
-    note: "正构激活核心出现重复同向变化（+0.603 / +0.211 / +0.261），仍属于待实验验证的动力学证据。"
-  }
-};
-
-const nameEl = document.querySelector("#candidate-name");
-const generatedEl = document.querySelector("#candidate-generated");
-const scoreEl = document.querySelector("#candidate-score");
-const directionEl = document.querySelector("#direction-value");
-const directionBar = document.querySelector("#direction-bar");
-const noteEl = document.querySelector("#candidate-note");
-
-document.querySelectorAll(".candidate-tabs button").forEach((button) => {
-  button.addEventListener("click", () => {
-    document.querySelectorAll(".candidate-tabs button").forEach((item) => item.classList.remove("active"));
-    button.classList.add("active");
-    const id = button.dataset.id;
-    const candidate = candidates[id];
-    nameEl.textContent = id;
-    generatedEl.textContent = candidate.generated;
-    scoreEl.textContent = candidate.score;
-    directionEl.textContent = candidate.direction >= 0
-      ? "+" + candidate.direction.toFixed(4)
-      : "−" + Math.abs(candidate.direction).toFixed(4);
-    directionBar.style.left = (50 + candidate.direction * 100) + "%";
-    noteEl.textContent = candidate.note;
-  });
-});
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
-
-document.querySelector("#copy-command").addEventListener("click", async (event) => {
-  const command = "cd submission\npython -m pip install -r requirements.txt\npython predict.py\npython verify_submission.py";
-  try {
-    await navigator.clipboard.writeText(command);
-    event.currentTarget.textContent = "已复制";
-  } catch {
-    event.currentTarget.textContent = "请手动复制";
-  }
-});
+const candidates=[
+{rank:1,id:"PACERGEN01954",alias:"—",drugclip:.1707,score:.9055,glide:-8.320,vina:-12.235,dynamic:false,direction:null},
+{rank:2,id:"PACERGEN01409",alias:"—",drugclip:.2103,score:.8913,glide:-8.544,vina:-11.368,dynamic:false,direction:null},
+{rank:3,id:"PACERGEN01955",alias:"—",drugclip:.1671,score:.8328,glide:-8.193,vina:-11.928,dynamic:false,direction:null},
+{rank:4,id:"PACERGEN02306",alias:"—",drugclip:.1904,score:.7757,glide:-8.577,vina:-10.719,dynamic:false,direction:null},
+{rank:5,id:"PACERGEN00123",alias:"PACER0027",drugclip:.0505,score:.7307,glide:-9.584,vina:-10.508,dynamic:true,direction:-.0699},
+{rank:6,id:"PACERGEN01755",alias:"PACER0010",drugclip:.1316,score:.7304,glide:-7.698,vina:-11.059,dynamic:true,direction:-.1251},
+{rank:7,id:"PACERGEN00094",alias:"PACER0073",drugclip:.0763,score:.7041,glide:-8.196,vina:-10.820,dynamic:true,direction:.1008},
+{rank:8,id:"PACERGEN02353",alias:"—",drugclip:.2104,score:.5936,glide:-7.182,vina:-10.481,dynamic:false,direction:null}
+];
+const jobs=[
+{id:"JOB-M4-041",name:"M4 four-context dynamics",type:"动力学分析",input:"3 candidates",time:"2026-10-12 14:20",status:"已完成"},
+{id:"JOB-M4-040",name:"M4 six-pose consensus",type:"构象评分",input:"8 records",time:"2026-10-12 13:05",status:"已完成"},
+{id:"JOB-M4-039",name:"M4 pocket screen",type:"靶点匹配",input:"2,605 molecules",time:"2026-10-12 10:18",status:"已完成"}
+];
+const views=document.querySelectorAll(".view"),navItems=document.querySelectorAll(".nav-item");
+function showView(name){views.forEach(function(v){v.classList.toggle("active",v.id==="view-"+name)});navItems.forEach(function(n){n.classList.toggle("active",n.dataset.view===name)});document.querySelector(".sidebar").classList.remove("open");window.scrollTo({top:0,behavior:"smooth"})}
+navItems.forEach(function(n){n.addEventListener("click",function(){showView(n.dataset.view)})});
+document.querySelectorAll(".jump").forEach(function(b){b.addEventListener("click",function(){showView(b.dataset.target)})});
+document.querySelector(".mobile-menu").addEventListener("click",function(){document.querySelector(".sidebar").classList.toggle("open")});
+function renderCandidateStrip(){document.querySelector("#candidate-strip").innerHTML=candidates.slice(0,3).map(function(c){return '<div class="candidate-mini" data-candidate="'+c.id+'"><small>#'+String(c.rank).padStart(2,"0")+' · '+c.id+'</small><strong>'+(c.alias==="—"?"New candidate":c.alias)+'</strong><b>'+c.score.toFixed(4)+'</b><span>Open result →</span></div>'}).join("");document.querySelectorAll(".candidate-mini").forEach(function(x){x.addEventListener("click",function(){openCandidate(x.dataset.candidate)})})}
+function renderJobs(){document.querySelector("#jobs-body").innerHTML=jobs.map(function(j){return '<tr><td><div class="candidate-id"><strong>'+j.name+'</strong><small>'+j.id+'</small></div></td><td>'+j.type+'</td><td>'+j.input+'</td><td>'+j.time+'</td><td><span class="badge '+(j.status==="已完成"?"done":"running")+'">'+j.status+'</span></td><td><button class="open-detail">'+(j.status==="已完成"?"查看结果":"查看进度")+'</button></td></tr>'}).join("");document.querySelector("#job-count").textContent=jobs.length}
+let candidateFilter="all";
+function renderCandidates(query){query=query||"";const rows=candidates.filter(function(c){return(candidateFilter==="all"||c.dynamic)&&(c.id+" "+c.alias).toLowerCase().includes(query.toLowerCase())});document.querySelector("#candidate-body").innerHTML=rows.map(function(c){return '<tr><td><b>#'+String(c.rank).padStart(2,"0")+'</b></td><td><div class="candidate-id"><strong>'+(c.alias==="—"?c.id:c.alias)+'</strong><small>'+(c.alias==="—"?"New candidate":c.id)+'</small></div></td><td>'+c.drugclip.toFixed(4)+'</td><td class="score">'+c.score.toFixed(4)+'</td><td>G '+c.glide.toFixed(2)+' / V '+c.vina.toFixed(2)+'</td><td><span class="status-pill '+(c.dynamic?"":"muted")+'">'+(c.dynamic?"分析完成":"未运行")+'</span></td><td><button class="open-detail" data-candidate="'+c.id+'">打开 →</button></td></tr>'}).join("");document.querySelectorAll("[data-candidate].open-detail").forEach(function(b){b.addEventListener("click",function(){openCandidate(b.dataset.candidate)})})}
+document.querySelector("#candidate-search").addEventListener("input",function(e){renderCandidates(e.target.value)});
+document.querySelectorAll(".filter").forEach(function(b){b.addEventListener("click",function(){document.querySelectorAll(".filter").forEach(function(x){x.classList.remove("active")});b.classList.add("active");candidateFilter=b.dataset.filter;renderCandidates(document.querySelector("#candidate-search").value)})});
+function openCandidate(id){const c=candidates.find(function(x){return x.id===id});document.querySelector("#detail-name").textContent=c.alias==="—"?c.id:c.alias;document.querySelector("#detail-generated").textContent=c.alias==="—"?"New generated candidate":c.id;document.querySelector("#detail-score").textContent=c.score.toFixed(4);document.querySelector("#detail-meter").style.width=(c.score*100)+"%";const d=c.direction;document.querySelector("#detail-direction").textContent=d===null?"Not run":(d>=0?"+":"−")+Math.abs(d).toFixed(4);document.querySelector("#detail-dot").style.left=d===null?"50%":(50+d*250)+"%";document.querySelector("#detail-note").textContent=c.dynamic?(c.alias==="PACER0073"?"Orthosteric activation core: +0.603 / +0.211 / +0.261; experimental confirmation pending.":"Four-context analysis completed; functional identity remains unresolved."):"Four-context dynamics has not been run for this candidate.";const vals=[c.glide*.86,c.glide,c.glide*.64,c.vina*.79,c.vina,c.vina*.72],labels=["G-PDB","G-min","G-avg","V-PDB","V-min","V-avg"],max=Math.max.apply(null,vals.map(Math.abs));document.querySelector("#score-bars").innerHTML=vals.map(function(v,i){return '<div class="bar-item"><i style="--h:'+(Math.abs(v)/max*100)+'%"></i><b>'+v.toFixed(2)+'</b><small>'+labels[i]+'</small></div>'}).join("");showView("detail")}
+const input=document.querySelector("#smiles-input");
+function updateInput(){const lines=input.value.split(/\r?\n/).map(function(x){return x.trim()}).filter(Boolean);document.querySelector("#valid-count").textContent=lines.length;document.querySelector("#input-status").textContent=lines.length?lines.length+" 行输入已识别":"尚未输入分子"}
+input.addEventListener("input",updateInput);
+document.querySelector("#load-demo").addEventListener("click",function(){input.value="demo_001,Cc1c(Cl)c2nnc(C)n2c2sc(C(=O)Nc3cnn(C4Cc5ccccc5C4)c3)c(N)c12\ndemo_002,Cc1c(Cl)c2nnc(C)n2c2sc(N3CC(NC(=O)c4cc(F)nc(F)c4)C3)c(N)c12\ndemo_003,Cc1c(Cl)c2nncn2c2sc(N3CC(N4CC(NC5Cc6ccccc6C5)C4)C3)c(N)c12";updateInput()});
+document.querySelector("#file-input").addEventListener("change",async function(e){const file=e.target.files[0];if(!file)return;input.value=await file.text();updateInput();document.querySelector("#input-status").textContent=file.name+" · "+document.querySelector("#valid-count").textContent+" 行"});
+document.querySelector("#screen-form").addEventListener("submit",function(e){e.preventDefault();const count=Number(document.querySelector("#valid-count").textContent);if(!count){input.focus();document.querySelector("#input-status").textContent="请先输入至少一个分子";return}const id="JOB-M4-"+String(42+jobs.length-3).padStart(3,"0");jobs.unshift({id:id,name:document.querySelector("#job-name").value,type:"组合筛选",input:count+" molecules",time:new Date().toLocaleString("zh-CN",{hour12:false}),status:"运行中"});renderJobs();const toast=document.querySelector("#toast");document.querySelector("#toast-text").textContent=id+" · "+count+" 个输入";toast.classList.add("show");setTimeout(function(){toast.classList.remove("show")},3000);setTimeout(function(){showView("jobs")},650)});
+document.querySelector("#export-csv").addEventListener("click",function(){const header="rank,candidate_id,historical_id,drugclip_score,six_channel_score,glide_bemin,vina_bemin,dynamics\n",rows=candidates.map(function(c){return[c.rank,c.id,c.alias,c.drugclip,c.score,c.glide,c.vina,c.dynamic?"complete":"not_run"].join(",")}).join("\n"),link=document.createElement("a");link.href=URL.createObjectURL(new Blob([header+rows],{type:"text/csv"}));link.download="pacer_m4_candidates.csv";link.click();URL.revokeObjectURL(link.href)});
+const toolCopy={molecule:["分子预筛","输入 SMILES、CSV 或 SDF，输出格式检查、重复审计和基础性质表。","导入分子文件"],pocket:["靶点匹配","输入候选分子，输出 CHRM4 口袋匹配分数与候选排名。","选择候选文件"],docking:["构象评分","输入候选与受体结构，输出多构象评分、排序和结果文件。","导入任务输入"],dynamics:["动力学分析","输入候选编号或轨迹结果，输出条件对比与区域响应。","选择候选 / 轨迹"]};
+document.querySelectorAll(".tool-view").forEach(function(section){const key=section.id.replace("view-",""),copy=toolCopy[key];section.querySelector(".tool-placeholder").innerHTML='<div class="tool-hero"><div><p class="kicker">ANALYSIS TOOL</p><h1>'+copy[0]+'</h1><p>'+copy[1]+'</p></div><button class="primary tool-jobs">查看运行任务</button></div><div class="tool-grid"><article class="panel"><div class="drop-zone"><span>＋</span><b>'+copy[2]+'</b><small>拖放文件到这里，或点击选择</small></div><button class="primary" style="margin-top:14px;width:100%">开始'+copy[0]+'</button></article><article class="panel"><div class="panel-head"><div><h2>输出预览</h2><p>任务完成后自动显示</p></div></div><div class="result-empty"><span>▥</span><p>暂无输出<br>请先提交左侧输入</p></div></article></div>';section.querySelector(".tool-jobs").addEventListener("click",function(){showView("jobs")})});
+renderCandidateStrip();renderJobs();renderCandidates();openCandidate("PACERGEN01755");showView("dashboard");

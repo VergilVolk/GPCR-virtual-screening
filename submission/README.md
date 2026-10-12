@@ -1,79 +1,55 @@
-# M4 PAM virtual screening
+# 冻结复现包：CHRM4 PAM 动态—药理协同智能筛选
 
-This package contains the code, frozen inputs, model adapters and result tables for the four-stage Track 3 workflow.
+本目录是答辩与评审的最小可核验入口，对应四个模块：
 
-## Workflow
+1. 候选生成与药物化学过滤；
+2. GPCR 迁移后的 DrugCLIP 口袋匹配；
+3. Glide/Vina 六路构象共识排序；
+4. apo、ACh、候选、候选+ACh 四条件受体动力学分析。
 
-1. M4 PAM candidate generation and medicinal-chemistry filtering.
-2. M4 pocket retrieval with a GPCR-adapted DrugCLIP model.
-3. Six-channel docking: Glide and Vina on the experimental structure, ensemble best-energy summary (BEmin), and ensemble mean-energy summary (BEavg).
-4. Four-context receptor dynamics: apo, ACh, candidate, and candidate plus ACh.
+前三个模块用于优先排序可能的 M4 结合候选；第四模块寻找可重复的条件依赖构象变化。任何单一计算步骤都不能证明 PAM 活性。
 
-The first three stages prioritize plausible binders. Stage 4 tests reproducible conditional structural responses. None of these calculations alone proves PAM efficacy.
+## 快速核验
 
-## Quick verification
-
-Tested with Python 3.11 on Windows 11. The frozen replay runs on CPU.
+已在 Windows 11、Python 3.11、CPU 环境测试：
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 python predict.py
 python verify_submission.py
 ```
 
-`verify_submission.py` also performs a real Module 2 forward pass for all 2,605 molecules with the three packaged weights and checks the reproduced scores and top-200 order. `predict.py` verifies frozen data, recomputes six-channel fusion, exports four-context records, and writes `results/results.csv`.
+`verify_submission.py` 会对 2,605 个分子完成 Module 2 的真实前向计算，核对三个模型权重哈希、Top-200 顺序、分子身份、六路融合、四条件记录和最终结果表。成功时输出：
 
-## Results
-
-- `results/01_generated_candidates_2605.csv`: generated valid molecules.
-- `results/01_candidate_audit_2592.csv`: deduplicated candidate audit after removal of known reference molecules.
-- `results/02_drugclip_top200.csv`: reranked top 200 from the 2,605-molecule library.
-- `results/03_six_channel_8.csv`: five leading candidates plus three historical anchors, with all six docking channels.
-- `results/04_four_context_3.csv`: four-context evidence for the three anchors.
-- `results/results.csv`: standardized eight-candidate evidence table.
-
-The module files are retained separately because the final table is a summary, not a replacement for the intermediate evidence.
-
-## Models
-
-`models/used_module2/` contains the three projection checkpoints used for the frozen Module 2 ranking.
-
-Two comparison sets are also included and explicitly marked as unused:
-
-- `models/reference_not_used/gpcr_retrieval_hard_triplet/`
-- `models/reference_not_used/drugclip2026_family_aug/`
-
-They did not contribute to the top-200 table or final ranking. See `models/MODEL_CARD.md` and `logs/training_manifest.json` for hashes and scope.
-
-The upstream 1.18 GB DrugCLIP base checkpoints are not redistributed. The compact adapted projections used by this project are included.
-
-## Entrypoints
-
-```bash
-# Recheck generated structures and medicinal-chemistry rules
-python module1_generate_filter.py --input data/frozen/generated_candidates_2605.csv
-
-# Score precomputed DrugCLIP representations with the packaged model
-python screen.py --molecules MOLECULES.npz --pockets M4_POCKETS.npz
-
-# Recompute the six-channel fusion
-python module3_ensemble_dock.py --input data/frozen/six_channel_top5_plus_anchors.csv
-
-# Export four-context evidence
-python module4_four_context.py --summary data/frozen/four_context_results.json
-
-# Retrain the GPCR-adapted projections when the original representations are available
-python train.py --representations REPRESENTATIONS.npz --projection BASE_PROJECTION.pt --pairs PAIRS.csv --reference-predictions REFERENCE.csv
+```text
+PASS: frozen four-module replay, model hashes and final table
 ```
 
-Full docking requires AutoDock Vina and licensed Schrodinger Glide. Full membrane MD requires OpenMM and prepared systems. These expensive jobs are not launched by the CPU replay; their frozen outputs and the production scripts used to create them are included.
+## 冻结结果层级
 
-The frozen ViSNet checkpoint used by Module 4 is included under `project/tools/geom2vec_checkpoints/` and verified by SHA-256. A fresh trajectory run still requires the prepared membrane systems, MD trajectories and the matching scientific Python environment maintained by the team.
+| 文件 | 含义 | 数量 |
+| --- | --- | ---: |
+| `results/01_generated_candidates_2605.csv` | 生成且通过初筛的分子 | 2,605 |
+| `results/01_candidate_audit_2592.csv` | 去除已知参考分子后的审计集合 | 2,592 |
+| `results/02_drugclip_top200.csv` | DrugCLIP 排序前 200 | 200 |
+| `results/03_six_channel_8.csv` | 5 个新候选 + 3 个历史锚点 | 8 |
+| `results/04_four_context_3.csv` | 进入四条件动力学的历史锚点 | 3 |
+| `results/results.csv` | 标准化的八候选证据表 | 8 |
 
-## Source and logs
+三名历史锚点 PACER0010、PACER0027、PACER0073 的 `functional_prediction` 均为 `unresolved`，`experimental_pam_validation` 均为 `not_performed`。
 
-`src/production/` contains the retained generation, DrugCLIP training, Glide/Vina, six-channel fusion and four-context analysis scripts. `logs/` contains the model manifest, the actual Module 2 validation report, comparison-model benchmarks and replay audit.
+## 能复现什么
 
-Raw console output, original hardware and wall-clock time were not preserved for every historical experiment. This is stated as a provenance limitation rather than reconstructed after the fact.
+- Module 2 冻结表示上的模型前向计算与 Top-200；
+- 六路结构评分的融合与排序；
+- 四条件动力学冻结摘要的导出；
+- 最终表及模型、输入文件的完整性校验。
 
-Glide is commercial software and is not redistributed. DrugCLIP and public molecular data remain subject to their original licenses and terms.
+## 不能从本包推断什么
+
+- 不能把 DrugCLIP 或 docking 分数解释为 PAM 活性；
+- 不能仅凭动力学方向余弦宣称机制成立；
+- 不能在缺少湿实验时宣称候选已验证；
+- 不含完整 Glide、膜体系和原始轨迹，因此不声称一键重跑昂贵生产计算。
+
+进一步参见 [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md)、[`docs/REPRODUCIBILITY_MATRIX.md`](docs/REPRODUCIBILITY_MATRIX.md)、[`docs/SUBMISSION_CLAIMS.md`](docs/SUBMISSION_CLAIMS.md) 和 [`docs/DATA_PROVENANCE.md`](docs/DATA_PROVENANCE.md)。

@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite it using this metadata."
+title: "面向 CHRM4 正性别构调节剂发现的动态—药理协同智能筛选"
+type: software
+authors:
+  - name: "Anonymous Undergraduate Project Team"
+version: 1.0.0
+date-released: 2026-10-12
+repository-code: "https://github.com/VergilVolk/GPCR-virtual-screening"
+license: MIT
+keywords:
+  - CHRM4
+  - positive allosteric modulator
+  - virtual screening
+  - DrugCLIP
+  - molecular dynamics
+  - reproducibility

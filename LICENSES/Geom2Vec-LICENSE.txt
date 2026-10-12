@@ -1,0 +1,10 @@
+Geom2Vec licensing notice
+
+The bundled checkpoint directory records that most Geom2Vec code is under the
+MIT License, while files derived from GraphVAMPnets are under GNU GPL v3.
+
+The authoritative bundled notice is located at:
+submission/project/tools/geom2vec_checkpoints/LICENSE.geom2vec
+
+Users must consult and comply with that original file. This notice does not
+replace or modify the upstream terms.

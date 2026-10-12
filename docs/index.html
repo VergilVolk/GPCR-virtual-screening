@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="面向 CHRM4 正性别构调节剂发现的动态—药理协同智能筛选平台">
+  <title>PACER-M4｜动态—药理协同智能筛选平台</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="PACER-M4 首页"><span class="brand-mark">P</span><span>PACER—M4</span></a>
+    <nav aria-label="主导航"><a href="#workflow">四模块</a><a href="#evidence">验证结果</a><a href="#candidates">候选证据</a><a href="#reproduce">开放复现</a></nav>
+    <a class="nav-cta" href="https://github.com/VergilVolk/GPCR-virtual-screening">GitHub ↗</a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">TRACK 03 · CHRM4 · OPEN REPRODUCIBILITY</p>
+        <h1>让虚拟筛选从<br><em>“给出分数”</em>走向<br>“形成证据链”</h1>
+        <p class="lead">面向 CHRM4 正性别构调节剂发现的动态—药理协同智能筛选平台。串联候选生成、口袋迁移学习、六路结构共识与四条件受体动力学。</p>
+        <div class="hero-actions"><a class="button primary" href="#workflow">查看四模块</a><a class="button ghost" href="https://github.com/VergilVolk/GPCR-virtual-screening/tree/main/submission">复现冻结结果</a></div>
+        <p class="boundary"><span>证据边界</span> 计算结果用于候选优先级排序；PAM 功能仍需湿实验验证。</p>
+      </div>
+      <div class="hero-visual reveal" aria-label="筛选平台总览">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="molecule"><span></span><i></i><b></b><em></em></div>
+        <div class="stat-card stat-a"><strong>0.714</strong><small>M4 ROC-AUC</small></div>
+        <div class="stat-card stat-b"><strong>0.777</strong><small>六路级联</small></div>
+        <div class="stat-card stat-c"><strong>3</strong><small>待验证候选</small></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="平台特性"><div><span>冻结产物</span><span>真实前向</span><span>模型哈希</span><span>候选可追溯</span><span>CPU 可核验</span><span>结论有边界</span></div></section>
+
+    <section id="workflow" class="section-shell block">
+      <div class="section-head reveal"><p class="eyebrow">01 / WORKFLOW</p><h2>一条链路，四种互补证据</h2><p>不是把算法堆在一起，而是让每一层回答不同的问题，并把淘汰与保留过程完整记录。</p></div>
+      <div class="module-grid">
+        <article class="module module-1 reveal"><div class="module-number">01</div><p class="module-kicker">Chemical space</p><h3>候选生成与过滤</h3><p>生成面向目标化学空间的候选，并进行药物化学规则与参考泄漏审计。</p><div class="mini-funnel"><span style="--w:100%">2,605 生成分子</span><span style="--w:88%">2,592 审计集合</span></div></article>
+        <article class="module module-2 reveal"><div class="module-number">02</div><p class="module-kicker">Pocket retrieval</p><h3>DrugCLIP 迁移学习</h3><p>三种 M4 留出投影从多 GPCR 迁移口袋—配体表征，完成 2,605 个分子的真实前向排序。</p><div class="spark-bars" aria-label="ROC-AUC 由0.540提升到0.714"><i style="--v:54%"><small>0.540</small></i><i class="accent" style="--v:71.4%"><small>0.714</small></i></div></article>
+        <article class="module module-3 reveal"><div class="module-number">03</div><p class="module-kicker">Structural consensus</p><h3>六路构象共识排序</h3><p>融合 Glide 与 Vina 在实验结构、BEmin、BEavg 三类构象上的六路证据，降低单次对接偶然性。</p><div class="six-dots"><i>G<sub>PDB</sub></i><i>G<sub>min</sub></i><i>G<sub>avg</sub></i><i>V<sub>PDB</sub></i><i>V<sub>min</sub></i><i>V<sub>avg</sub></i></div></article>
+        <article class="module module-4 reveal"><div class="module-number">04</div><p class="module-kicker">Receptor dynamics</p><h3>四条件动力学分析</h3><p>比较 apo、ACh、候选、候选+ACh，寻找候选对受体响应的条件依赖变化，而不是把 docking 当成功能。</p><div class="condition-grid"><span>apo</span><span>ACh</span><span>候选</span><span>候选 + ACh</span></div></article>
+      </div>
+    </section>
+
+    <section id="evidence" class="evidence-wrap">
+      <div class="section-shell block">
+        <div class="section-head light reveal"><p class="eyebrow">02 / VALIDATION</p><h2>结果先经过验证，再进入叙事</h2><p>以下数字来自正式区赛材料；网站不生成新结论，只展示冻结结果。</p></div>
+        <div class="evidence-grid">
+          <article class="chart-card reveal"><div class="chart-title"><span>M4 测试集</span><small>基线 → 迁移后</small></div><div class="metric-row"><div><label>ROC-AUC</label><div class="track"><i style="--before:54%;--after:71.4%"></i></div><b>0.540 → 0.714</b></div><div><label>PR-AUC</label><div class="track"><i style="--before:48%;--after:70%"></i></div><b>0.107 → 0.155</b></div><div><label>BEDROC20</label><div class="track"><i style="--before:50%;--after:72%"></i></div><b>0.125 → 0.180</b></div></div></article>
+          <article class="chart-card reveal"><div class="chart-title"><span>13 靶点严格留出</span><small>跨靶点评估</small></div><div class="big-pair"><div><small>ROC-AUC</small><strong>0.641</strong><em>+0.097</em></div><div><small>PR-AUC</small><strong>0.248</strong><em>+0.070</em></div></div><p class="chart-note">严格留出用于检验迁移能力，不把训练靶点信息泄露到评估中。</p></article>
+          <article class="chart-card accent-card reveal"><div class="chart-title"><span>六路结构排序</span><small>正式基准</small></div><div class="dial"><svg viewBox="0 0 120 120" role="img" aria-label="级联ROC-AUC 0.777"><circle cx="60" cy="60" r="48"></circle><circle class="dial-value" cx="60" cy="60" r="48"></circle></svg><div><strong>0.777</strong><small>级联 ROC-AUC</small></div></div><div class="dial-foot"><span>共识 <b>0.771</b></span><span>EF0.5 <b>≈20.4</b></span><span>EF1 <b>≈13.7</b></span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="candidates" class="section-shell block">
+      <div class="section-head reveal"><p class="eyebrow">03 / CANDIDATE EVIDENCE</p><h2>三名候选，一眼看清证据与边界</h2><p>选择候选查看六路综合分数与四条件结论。所有状态直接读取冻结结果的公开口径。</p></div>
+      <div class="candidate-layout reveal">
+        <div class="candidate-tabs" role="tablist" aria-label="候选选择">
+          <button class="active" data-id="PACER0010" role="tab">PACER0010 <small>0.7304</small></button>
+          <button data-id="PACER0027" role="tab">PACER0027 <small>0.7307</small></button>
+          <button data-id="PACER0073" role="tab">PACER0073 <small>0.7041</small></button>
+        </div>
+        <article class="candidate-panel" aria-live="polite">
+          <div class="candidate-meta"><div><p>答辩编号</p><h3 id="candidate-name">PACER0010</h3><span id="candidate-generated">PACERGEN01755</span></div><div class="score-ring"><strong id="candidate-score">0.7304</strong><small>六路综合</small></div></div>
+          <div class="status-grid"><div><small>四条件动力学</small><b>complete_unresolved</b></div><div><small>功能判断</small><b>unresolved</b></div><div><small>湿实验</small><b>not_performed</b></div></div>
+          <div class="direction"><span>R1–R3 方向余弦</span><div class="zero-line"><i id="direction-bar"></i></div><b id="direction-value">−0.1251</b></div>
+          <p id="candidate-note" class="candidate-note">四条件分析已完成，但功能身份仍未解决，需要实验验证。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell funnel-section block">
+      <div class="section-head reveal"><p class="eyebrow">04 / TRACEABILITY</p><h2>每一次缩小，都可以追溯</h2></div>
+      <div class="pipeline reveal" aria-label="筛选漏斗"><div><strong>2,605</strong><span>生成分子</span></div><i>→</i><div><strong>2,592</strong><span>泄漏审计后</span></div><i>→</i><div><strong>200</strong><span>DrugCLIP Top</span></div><i>→</i><div><strong>8</strong><span>六路记录</span><small>5 新 + 3 锚点</small></div><i>→</i><div class="final"><strong>3</strong><span>四条件候选</span><small>待湿实验</small></div></div>
+    </section>
+
+    <section id="reproduce" class="reproduce">
+      <div class="section-shell reproduce-grid"><div class="reproduce-copy reveal"><p class="eyebrow">OPEN SOURCE · REPRODUCIBLE</p><h2>不是展示截图，<br>是可以运行的证据包。</h2><p>公开包在普通 CPU 上完成三模型真实前向、Top-200 校验、六路融合、四条件记录导出与逐列一致性检查。</p><a class="button pale" href="https://github.com/VergilVolk/GPCR-virtual-screening">打开开源仓库 ↗</a></div><div class="terminal reveal"><div class="terminal-head"><span></span><span></span><span></span><b>frozen-replay</b></div><pre><code><em>$</em> cd submission
+<em>$</em> python -m pip install -r requirements.txt
+<em>$</em> python predict.py
+<em>$</em> python verify_submission.py
+
+<span>PASS</span>: frozen four-module replay,
+      model hashes and final table</code></pre><button id="copy-command">复制命令</button></div></div>
+    </section>
+  </main>
+
+  <footer><div><span class="brand-mark">P</span><strong>PACER—M4</strong></div><p>面向 CHRM4 正性别构调节剂发现的动态—药理协同智能筛选</p><p>计算筛选 ≠ 实验确证 · Evidence before claim</p></footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

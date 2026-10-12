@@ -1,0 +1,11 @@
+DrugCLIP licensing notice
+
+The upstream repository states that its source code is licensed under the
+Apache License 2.0 and that model weights and model outputs are licensed under
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
+
+The authoritative copy bundled with the upstream source is located at:
+project/tools/DrugCLIP-official/LICENSE
+
+Users must consult and comply with that original file. This notice does not
+replace or modify the upstream terms.

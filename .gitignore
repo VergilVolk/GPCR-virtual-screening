@@ -97,3 +97,9 @@ project/tools/oneprot-embeddings/
 .conda_*
 __pycache__/
 .pytest_cache/
+
+# Independent post-hoc PACERGEN-200 evaluation only (including figure PDFs)
+!project/results/
+project/results/*
+!project/results/pacer_rerun_admet_synthesis_v01/
+!project/results/pacer_rerun_admet_synthesis_v01/**

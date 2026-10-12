@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETE_WITH_EXPLICIT_GAPS",
+  "molecule_records": 200,
+  "route_search_executed": 0,
+  "NOT_ASSESSED": 200,
+  "NO_ROUTE_FOUND": 0,
+  "verified_starting_material_availability": 0,
+  "yields_estimated": 0,
+  "costs_estimated": 0
+}

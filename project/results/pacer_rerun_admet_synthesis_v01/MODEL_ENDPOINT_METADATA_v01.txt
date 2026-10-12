@@ -1,0 +1,53 @@
+id,category,name,size,task_type,units,minimum,maximum,species,AUPRC,AUROC,R^2,MAE,url
+molecular_weight,Physicochemical,Molecular Weight,,regression,Dalton,0.0,inf,-,,,,,https://www.rdkit.org/docs/source/rdkit.Chem.Descriptors.html#rdkit.Chem.Descriptors.MolWt
+logP,Physicochemical,LogP,,regression,log-ratio,-inf,inf,-,,,,,https://www.rdkit.org/docs/source/rdkit.Chem.Crippen.html#rdkit.Chem.Crippen.MolLogP
+hydrogen_bond_acceptors,Physicochemical,Hydrogen Bond Acceptors,,regression,#,0.0,inf,-,,,,,https://www.rdkit.org/docs/source/rdkit.Chem.rdMolDescriptors.html#rdkit.Chem.rdMolDescriptors.CalcNumHBA
+hydrogen_bond_donors,Physicochemical,Hydrogen Bond Donors,,regression,#,0.0,inf,-,,,,,https://www.rdkit.org/docs/source/rdkit.Chem.rdMolDescriptors.html#rdkit.Chem.rdMolDescriptors.CalcNumHBD
+Lipinski,Physicochemical,Lipinski Rule of 5,,regression,# of 4,0.0,4.0,-,,,,,https://en.wikipedia.org/wiki/Lipinski%27s_rule_of_five#Components_of_the_rule
+QED,Physicochemical,Quantitative Estimate of Druglikeness (QED),,regression,-,0.0,1.0,-,,,,,https://www.rdkit.org/docs/source/rdkit.Chem.QED.html#rdkit.Chem.QED.qed
+stereo_centers,Physicochemical,Stereo Centers,,regression,#,0.0,inf,-,,,,,https://www.rdkit.org/docs/source/rdkit.Chem.rdMolDescriptors.html#rdkit.Chem.rdMolDescriptors.CalcNumAtomStereoCenters
+tpsa,Physicochemical,Topological Polar Surface Area (TPSA),,regression,Å^2,0.0,inf,-,,,,,https://www.rdkit.org/docs/source/rdkit.Chem.rdMolDescriptors.html#rdkit.Chem.rdMolDescriptors.CalcTPSA
+PAINS_alert,Physicochemical,PAINS Alert,,regression,#,0.0,inf,-,,,,,https://www.rdkit.org/docs/GettingStartedInPython.html#filtering-unwanted-substructures
+BRENK_alert,Physicochemical,BRENK Alert,,regression,#,0.0,inf,-,,,,,https://www.rdkit.org/docs/GettingStartedInPython.html#filtering-unwanted-substructures
+NIH_alert,Physicochemical,NIH Alert,,regression,#,0.0,inf,-,,,,,https://www.rdkit.org/docs/GettingStartedInPython.html#filtering-unwanted-substructures
+HIA_Hou,Absorption,Human Intestinal Absorption,578.0,classification,-,0.0,1.0,human,0.9994842348250168,0.9940232101885412,,,https://tdcommons.ai/single_pred_tasks/adme/#hia-human-intestinal-absorption-hou-et-al
+Bioavailability_Ma,Absorption,Oral Bioavailability,640.0,classification,-,0.0,1.0,human,0.8699950216268804,0.7163512034578641,,,https://tdcommons.ai/single_pred_tasks/adme/#bioavailability-ma-et-al
+Solubility_AqSolDB,Absorption,Aqueous Solubility,9980.0,regression,log(mol/L),-inf,inf,-,,,0.8166316273439673,0.6921369647155847,https://tdcommons.ai/single_pred_tasks/adme/#solubility-aqsoldb
+Lipophilicity_AstraZeneca,Absorption,Lipophilicity,4200.0,regression,log-ratio,-inf,inf,-,,,0.7711741108080836,0.4069769084746869,https://tdcommons.ai/single_pred_tasks/adme/#lipophilicity-astrazeneca
+HydrationFreeEnergy_FreeSolv,Absorption,Hydration Free Energy,642.0,regression,kcal/mol,-inf,inf,-,,,0.8876539579865786,0.7826281766672228,https://tdcommons.ai/single_pred_tasks/adme/#hydration-free-energy-freesolv
+Caco2_Wang,Absorption,Cell Effective Permeability,906.0,regression,log(10^-6 cm/s),-inf,inf,human,,,0.7065060857230016,0.3114522384781544,https://tdcommons.ai/single_pred_tasks/adme/#caco-2-cell-effective-permeability-wang-et-al
+PAMPA_NCATS,Absorption,PAMPA Permeability,2034.0,classification,-,0.0,1.0,artificial membrane,0.9549333833403232,0.7863669156852404,,,https://tdcommons.ai/single_pred_tasks/adme/#pampa-permeability-ncats
+Pgp_Broccatelli,Absorption,P-glycoprotein Inhibition,1212.0,classification,-,0.0,1.0,human pgp / mouse cells,0.9580859888617924,0.9474505385046356,,,https://tdcommons.ai/single_pred_tasks/adme/#pgp-p-glycoprotein-inhibition-broccatelli-et-al
+BBB_Martins,Distribution,Blood-Brain Barrier Penetration,1975.0,classification,-,0.0,1.0,human,0.9589556717958928,0.9003816994239712,,,https://tdcommons.ai/single_pred_tasks/adme/#bbb-blood-brain-barrier-martins-et-al
+PPBR_AZ,Distribution,Plasma Protein Binding Rate,1614.0,regression,%,0.0,100.0,human,,,0.5888679381304678,6.851690451293895,https://tdcommons.ai/single_pred_tasks/adme/#ppbr-plasma-protein-binding-rate-astrazeneca
+VDss_Lombardo,Distribution,Volume of Distribution at Steady State,1111.0,regression,L/kg,0.0,inf,human,,,-1.2107082831685434,5.039386413798697,https://tdcommons.ai/single_pred_tasks/adme/#vdss-volumn-of-distribution-at-steady-state-lombardo-et-al
+Half_Life_Obach,Excretion,Half Life,665.0,regression,hr,0.0,inf,human,,,-2.385712736530985,31.847395032315593,https://tdcommons.ai/single_pred_tasks/adme/#half-life-obach-et-al
+Clearance_Hepatocyte_AZ,Excretion,Drug Clearance (Hepatocyte),1020.0,regression,uL/min/10^6 cells,0.0,inf,human & rat,,,0.2639755817093195,32.72573699277887,https://tdcommons.ai/single_pred_tasks/adme/#clearance-astrazeneca
+Clearance_Microsome_AZ,Excretion,Drug Clearance (Microsome),1102.0,regression,uL/min/mg,0.0,inf,human,,,0.276741790995323,26.73759681256409,https://tdcommons.ai/single_pred_tasks/adme/#clearance-astrazeneca
+CYP1A2_Veith,Metabolism,CYP1A2 Inhibition,12579.0,classification,-,0.0,1.0,human,0.9352310814957951,0.9410729533100876,,,https://tdcommons.ai/single_pred_tasks/adme/#cyp-p450-1a2-inhibition-veith-et-al
+CYP2C19_Veith,Metabolism,CYP2C19 Inhibition,12665.0,classification,-,0.0,1.0,human,0.875286685765493,0.9062325677287462,,,https://tdcommons.ai/single_pred_tasks/adme/#cyp-p450-2c19-inhibition-veith-et-al
+CYP2C9_Veith,Metabolism,CYP2C9 Inhibition,12092.0,classification,-,0.0,1.0,human,0.8223621973733012,0.9076776897689186,,,https://tdcommons.ai/single_pred_tasks/adme/#cyp-p450-2c9-inhibition-veith-et-al
+CYP2D6_Veith,Metabolism,CYP2D6 Inhibition,13130.0,classification,-,0.0,1.0,human,0.7255343259283761,0.8861374248891597,,,https://tdcommons.ai/single_pred_tasks/adme/#cyp-p450-2d6-inhibition-veith-et-al
+CYP3A4_Veith,Metabolism,CYP3A4 Inhibition,12328.0,classification,-,0.0,1.0,human,0.8733639396410531,0.9116457077306306,,,https://tdcommons.ai/single_pred_tasks/adme/#cyp-p450-3a4-inhibition-veith-et-al
+CYP2C9_Substrate_CarbonMangels,Metabolism,CYP2C9 Substrate,666.0,classification,-,0.0,1.0,human,0.3696343498175162,0.6278973930359049,,,https://tdcommons.ai/single_pred_tasks/adme/#cyp2c9-substrate-carbon-mangels-et-al
+CYP2D6_Substrate_CarbonMangels,Metabolism,CYP2D6 Substrate,664.0,classification,-,0.0,1.0,human,0.6602305465449196,0.8200422282192378,,,https://tdcommons.ai/single_pred_tasks/adme/#cyp2d6-substrate-carbon-mangels-et-al
+CYP3A4_Substrate_CarbonMangels,Metabolism,CYP3A4 Substrate,667.0,classification,-,0.0,1.0,human,0.7271589946144282,0.7048194823279468,,,https://tdcommons.ai/single_pred_tasks/adme/#cyp3a4-substrate-carbon-mangels-et-al
+hERG,Toxicity,hERG Blocking,648.0,classification,-,0.0,1.0,human,0.9061997857102244,0.8387915076676851,,,https://tdcommons.ai/single_pred_tasks/tox/#herg-blockers
+ClinTox,Toxicity,Clinical Toxicity,1459.0,classification,-,0.0,1.0,human,0.6069354051558659,0.9275087330093084,,,https://tdcommons.ai/single_pred_tasks/tox/#clintox
+AMES,Toxicity,Mutagenicity,7255.0,classification,-,0.0,1.0,salmonella typhimurium,0.8957980386551526,0.8815869913780047,,,https://tdcommons.ai/single_pred_tasks/tox/#ames-mutagenicity
+DILI,Toxicity,Drug Induced Liver Injury,475.0,classification,-,0.0,1.0,human,0.8777146999563998,0.8814562005384994,,,https://tdcommons.ai/single_pred_tasks/tox/#dili-drug-induced-liver-injury
+Carcinogens_Lagunin,Toxicity,Carcinogenicity,278.0,classification,-,0.0,1.0,rodent,0.608283704744014,0.7722614379084967,,,https://tdcommons.ai/single_pred_tasks/tox/#carcinogens
+LD50_Zhu,Toxicity,Acute Toxicity LD50,7342.0,regression,log(1/(mol/kg)),-inf,inf,rat,,,0.5959243623284032,0.4515061714343698,https://tdcommons.ai/single_pred_tasks/tox/#acute-toxicity-ld50
+Skin_Reaction,Toxicity,Skin Reaction,404.0,classification,-,0.0,1.0,mouse,0.8730032877355487,0.7179946827366182,,,https://tdcommons.ai/single_pred_tasks/tox/#skin-reaction
+NR-AR,Toxicity,Androgen Receptor (Full Length),7258.0,classification,-,0.0,1.0,human,0.5151499066330999,0.7794796279772097,,,https://tdcommons.ai/single_pred_tasks/tox/#tox21
+NR-AR-LBD,Toxicity,Androgen Receptor (Ligand Binding Domain),6751.0,classification,-,0.0,1.0,human,0.6721736896162589,0.8833775261961652,,,https://tdcommons.ai/single_pred_tasks/tox/#tox21
+NR-AhR,Toxicity,Aryl Hydrocarbon Receptor,6542.0,classification,-,0.0,1.0,human,0.6359797022426139,0.9043922118028404,,,https://tdcommons.ai/single_pred_tasks/tox/#tox21
+NR-Aromatase,Toxicity,Aromatase,5815.0,classification,-,0.0,1.0,human,0.4747761622876256,0.9055872473619092,,,https://tdcommons.ai/single_pred_tasks/tox/#tox21
+NR-ER,Toxicity,Estrogen Receptor (Full Length),6186.0,classification,-,0.0,1.0,human,0.4583187668558939,0.7488198624538707,,,https://tdcommons.ai/single_pred_tasks/tox/#tox21
+NR-ER-LBD,Toxicity,Estrogen Receptor (Ligand Binding Domain),6948.0,classification,-,0.0,1.0,human,0.4838179820849542,0.826487896094781,,,https://tdcommons.ai/single_pred_tasks/tox/#tox21
+NR-PPAR-gamma,Toxicity,Peroxisome Proliferator-Activated Receptor Gamma,6443.0,classification,-,0.0,1.0,human,0.4390021749117615,0.9163781570174218,,,https://tdcommons.ai/single_pred_tasks/tox/#tox21
+SR-ARE,Toxicity,Nuclear Factor (Erythroid-Derived 2)-Like 2/Antioxidant Responsive Element,5825.0,classification,-,0.0,1.0,human,0.519545643846884,0.8377680366814685,,,https://tdcommons.ai/single_pred_tasks/tox/#tox21
+SR-ATAD5,Toxicity,ATPase Family AAA Domain-Containing Protein 5 (ATAD5),7065.0,classification,-,0.0,1.0,human,0.3116413438983285,0.8790823594219473,,,https://tdcommons.ai/single_pred_tasks/tox/#tox21
+SR-HSE,Toxicity,Heat Shock Factor Response Element,6460.0,classification,-,0.0,1.0,human,0.4274974106278428,0.8426772634912544,,,https://tdcommons.ai/single_pred_tasks/tox/#tox21
+SR-MMP,Toxicity,Mitochondrial Membrane Potential,5804.0,classification,-,0.0,1.0,human,0.6983247428958566,0.92474050186623,,,https://tdcommons.ai/single_pred_tasks/tox/#tox21
+SR-p53,Toxicity,Tumor Protein p53,6767.0,classification,-,0.0,1.0,human,0.4411030404695476,0.880314338237026,,,https://tdcommons.ai/single_pred_tasks/tox/#tox21

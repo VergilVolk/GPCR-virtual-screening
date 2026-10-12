@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://zenodo.org/records/7797465/files/uspto_model.onnx",
+    "error": "The read operation timed out"
+  },
+  {
+    "url": "https://zenodo.org/records/7341155/files/uspto_unique_templates.csv.gz",
+    "error": "The read operation timed out"
+  },
+  {
+    "url": "https://ndownloader.figshare.com/files/23086469",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://zenodo.org/api/records/7341155",
+    "error": "The read operation timed out"
+  }
+]

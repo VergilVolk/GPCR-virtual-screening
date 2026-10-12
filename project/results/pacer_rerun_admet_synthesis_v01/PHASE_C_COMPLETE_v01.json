@@ -1,0 +1,8 @@
+{
+  "status": "COMPLETE_WITH_EXPLICIT_GAPS",
+  "n_molecules": 200,
+  "n_model_endpoints": 41,
+  "n_raw_predictions": 8200,
+  "input_sha256": "723830461f517315172a47686b941b468da12d23cdb60b8e4e041cdc86eef944",
+  "all_model_members_saved": true
+}

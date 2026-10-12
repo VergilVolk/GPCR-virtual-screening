@@ -1,0 +1,20 @@
+{
+  "python": "3.11.9 (v3.11.9:de54cf5be3, Apr  2 2024, 07:12:50) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "executable": "/Users/barneygong/Documents/GPCR-virtual-screening/.venv-pacer-admet-v01/bin/python",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "packages": {
+    "rdkit": "2026.3.6",
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2",
+    "torch": "2.14.1",
+    "chemprop": "2.3.1",
+    "admet-ai": "2.0.1",
+    "aizynthfinder": null,
+    "deepchem": null,
+    "openbabel": null
+  },
+  "rdkit": "2026.03.6",
+  "default_python_before_setup": "3.14.7; RDKit/pandas/matplotlib/torch/ADMET/AiZynthFinder absent",
+  "environment_policy": "isolated .venv-pacer-admet-v01; original project environments untouched"
+}

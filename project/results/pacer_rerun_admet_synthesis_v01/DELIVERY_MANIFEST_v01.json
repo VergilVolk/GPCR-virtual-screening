@@ -1,0 +1,261 @@
+{
+  "files": [
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/ALL200_ADMET_MODEL_MEMBERS_v01.csv",
+      "bytes": 1811637,
+      "sha256": "14b04a929a5524e3b7586f950aaf3535ed453f19b2b054be159034c985a5c884"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/ALL200_ADMET_RAW_ENSEMBLE_MEANS_v01.csv",
+      "bytes": 101353,
+      "sha256": "29d0bf3740eea0b713e849a07801062d24bd7e183511776129296aee88eeb813"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/ALL200_ADMET_v01.csv",
+      "bytes": 4978498,
+      "sha256": "492362ba36f745ce1d80d78b6c8c3953ca2fa776002dae9495e6866ef0092a48"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/ALL200_CNS_COMPONENTS_v01.csv",
+      "bytes": 54859,
+      "sha256": "f21a5857529bcca05b62755da1c9640e76f962a77b96ab15c506cd52bfcf06de"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/ALL200_DRUGLIKENESS_v01.csv",
+      "bytes": 71503,
+      "sha256": "2413f5fcd21083e2578f880b3f18a13223e877c496a7d7b7d5111f50e511f3f5"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/ALL200_PHYSICOCHEMICAL_v01.csv",
+      "bytes": 45283,
+      "sha256": "f32d802234aaec3ac5e096866ace5d82afa084488083f4e488ca0d6ed356ba02"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/ALL200_REACTIVITY_ALERTS_v01.csv",
+      "bytes": 155928,
+      "sha256": "937fc19ab3fb657e8dec2accbe8e9dbe10a387f1cbe482b53868ae1f765a5879"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/ALL200_RETROSYNTHESIS_v01.csv",
+      "bytes": 70700,
+      "sha256": "34c206215cd481c0926cd509f8281f0e402410be6bf33a97f9835cd86d0a5121"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/ALL200_STEREOCHEMISTRY_v01.csv",
+      "bytes": 98829,
+      "sha256": "2b3160ec588741117d55d4fb75ac4542031b2ae2245a9c52fba5902852dcba6c"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/ALL200_STRUCTURAL_ALERTS_v01.csv",
+      "bytes": 86484,
+      "sha256": "5e14feef6af7a332c52bb30157bb315f353f9a317dd255c4f07efcd673160335"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/ALL200_SYNTHESIS_FEASIBILITY_v01.csv",
+      "bytes": 123566,
+      "sha256": "eddb475dc2f9493e4a03162f17814ca5373c4609f624297040c6f454a4c572f4"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/ALL200_TOXICITY_v01.csv",
+      "bytes": 3946984,
+      "sha256": "8bdcaa17d6c6f791f5dfe2f60ca2d0df4d2cb314ec222afbf498ac73e019119c"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/ALL200_WATER_SOLUBILITY_v01.csv",
+      "bytes": 225543,
+      "sha256": "7e3fdeff90bc23ddada20b9db4bf38679a57b7fbf6ed248d51ad4fb2767dcdf7"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/ANALYSIS_VALIDATION_v01.json",
+      "bytes": 9501,
+      "sha256": "6a505676bd733cb05ed0cfa95c915400b4cc331eff5913fa9c2b40584ce24839"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/ENDPOINT_SUMMARY_v01.json",
+      "bytes": 10356,
+      "sha256": "ef5bbe96d949d0dca9af9e49661f400e307f832a409b9a7a70d17e4c65369c4b"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/ENVIRONMENT_v01.json",
+      "bytes": 740,
+      "sha256": "be2898fc73ecee04565326b2659db78e494386f48a732aef1c10cc1ab93c61c8"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/EVIDENCE_COMPLETENESS_v01.csv",
+      "bytes": 2158749,
+      "sha256": "ab98a2f2ef98e48b9d3ca52710a27e8c1093af43874c227dcc36640336f066f0"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/EXTERNAL_ASSET_PREFLIGHT_v01.json",
+      "bytes": 483,
+      "sha256": "c21fe38fb5108610644a4d0cdc77ef0c08a433915c00903ff6197b7edea5361a"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/FINAL_SCIENTIFIC_REPORT_v01.md",
+      "bytes": 24358,
+      "sha256": "d74d2c636fb0202cffeb1f5cb79f786aefcabafd752f4a192717962514b11113"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/INPUT_VALIDATION_v01.json",
+      "bytes": 896,
+      "sha256": "cb73c32c46d550caeff61db75c4181f7cd50e9fbe679deb9bb2a8ec952c1faa2"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/MODEL_ENDPOINT_METADATA_v01.json",
+      "bytes": 21490,
+      "sha256": "75cd920c393a2505517199fceb41cb0bf35af33a7009b5ba324bc75968363020"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/MODEL_ENDPOINT_METADATA_v01.txt",
+      "bytes": 10053,
+      "sha256": "0bc5206b61ec3f53b45f19cd7277729b1d77b4795794be0ec9d4fd9bae675a62"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/MODEL_PROVENANCE_v01.json",
+      "bytes": 30219,
+      "sha256": "fd4004d91d2497f1d466cbcdbac142b9d50832f85db3c398d2d0c834f0286e2f"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/PHASE_AB_COMPLETE_v01.json",
+      "bytes": 262,
+      "sha256": "2153555722f9f47721087ecc5c2ff48aec2b3f476659a0dd251b27964061d0da"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/PHASE_B_SYNTHESIS_HEURISTICS_v01.csv",
+      "bytes": 58995,
+      "sha256": "b2d455854d38a7e776d02bfeb33ceecadc9360631ac2bda70a4aab40a3a600c0"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/PHASE_C_COMPLETE_v01.json",
+      "bytes": 244,
+      "sha256": "c9d358b4c5e21257bbaec3d99f0401de347ec8dd4e75c5076abf62fc72d987e6"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/PHASE_D_COMPLETE_v01.json",
+      "bytes": 245,
+      "sha256": "43a62c59c31638bc138ac364bace30f5f6d4889af8fe501ad2ef632a37ed4b65"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/PHASE_E_COMPLETE_v01.json",
+      "bytes": 153,
+      "sha256": "c1211744040827b9d7fec45d0aeead8654c130a53edd0a07980895fb9e79f197"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/RETROSYNTHESIS_TOOL_PREFLIGHT_v01.json",
+      "bytes": 1627,
+      "sha256": "32a65a75e0997a1794154390868c507d170c018b261236807174b363a0952828"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/RETRO_STOCK_GET_PROBE_v01.json",
+      "bytes": 121,
+      "sha256": "e156d85e2a9e52b6dede4932a36002d018672d85260a7fd499310c979bd40eca"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/TOP3_COMPREHENSIVE_PROFILE_v01.csv",
+      "bytes": 26337,
+      "sha256": "368a769dd147ac755c05b83319f057d7d3705dacbcedcd41f75b84df6754571a"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/TOP3_STRUCTURES_v01.png",
+      "bytes": 52873,
+      "sha256": "65a0861bf6a82a8f3517cef70f91bfaf702eb3778276e72f4e7ac423cbfc85c8"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/figures/Figure_1_v01.pdf",
+      "bytes": 27152,
+      "sha256": "b849d64cffafa97f6b9c0b1fb0ee72e824dfcfb7c201690aab3de11e77e5c5af"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/figures/Figure_1_v01.png",
+      "bytes": 219099,
+      "sha256": "21d54b2706e6e68b3ee12194f1edd958823302177d89b0a62a7916d0037a9487"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/figures/Figure_2_v01.pdf",
+      "bytes": 25987,
+      "sha256": "6c155c156732c7dbb79594f39dbc41bf5a4b347278d246a4c77ff2c13057ef8b"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/figures/Figure_2_v01.png",
+      "bytes": 159870,
+      "sha256": "d492d2504e80e6149ad3114bad7fd6416fa6a552675316573c32a321d38872d9"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/figures/Figure_3_v01.pdf",
+      "bytes": 34004,
+      "sha256": "5266865896f09feda0b39a2ebac030a9d791e38f2e512bcf814f08b3352afe31"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/figures/Figure_3_v01.png",
+      "bytes": 312519,
+      "sha256": "cf148e1c6447a4430fd413462f142412518bc81a3d3731f62c867e2b1e4aae75"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/figures/Figure_4_v01.pdf",
+      "bytes": 30606,
+      "sha256": "8768734ade3aacbb6c7d0a1339172a6de0398b315d3fb263ad4566ba7099b46c"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/figures/Figure_4_v01.png",
+      "bytes": 241469,
+      "sha256": "165fa1ed6c1268d4570e08eca67887fad2d38ef926746fbba9c76a054a263acd"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/figures/Figure_5_v01.pdf",
+      "bytes": 28870,
+      "sha256": "0741105d4542ca5131f75d9dae68f9edea0f2321fceaed25ecc45358f407907b"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/figures/Figure_5_v01.png",
+      "bytes": 185851,
+      "sha256": "78ccbb6a9b5c15db4325d519f975b1a6a807f40046009b1418da3c456f5be492"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/figures/Figure_6_v01.pdf",
+      "bytes": 26027,
+      "sha256": "918b68cf2719e73fd9705a12539ae2595001a8bdfab6e610925fd8053209b02a"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/figures/Figure_6_v01.png",
+      "bytes": 223057,
+      "sha256": "40b049d576bdfd4a02146a1ecaf3df03ed55bd183c1093f387f50da9315c115e"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/requirements_admet_lock_v01.txt",
+      "bytes": 1183,
+      "sha256": "f58844855e5cb7fbc75179ff8db123bb35a2138ed364e7b821a1efdd6c5176ed"
+    },
+    {
+      "path": "project/results/pacer_rerun_admet_synthesis_v01/requirements_retro_lock_v01.txt",
+      "bytes": 3293,
+      "sha256": "165b1244604372691d40875fabf042114060d19ad560f16699e35fa2f0867959"
+    },
+    {
+      "path": "project/scripts/pacer_rerun_admet_v01.py",
+      "bytes": 11890,
+      "sha256": "14899537d3cbb2058e126bc28b662669e19ffd96610a329d94f633fa3a75e141"
+    },
+    {
+      "path": "project/scripts/pacer_rerun_medchem_v01.py",
+      "bytes": 10704,
+      "sha256": "cf487fc36e3a8ff62d47f50bc9e1e2b128864c8fb3ec8cfc61ffab42eae2dce0"
+    },
+    {
+      "path": "project/scripts/pacer_rerun_report_v01.py",
+      "bytes": 27966,
+      "sha256": "935a62d5bf22cff314080a0f15b816f9f71a3290fb504a0c9790851087739fb2"
+    },
+    {
+      "path": "project/scripts/pacer_rerun_synthesis_v01.py",
+      "bytes": 3737,
+      "sha256": "9d197acbe0b37f835290d5b50d8da89d823187b34fc54da66bd1c3e386218113"
+    },
+    {
+      "path": "project/scripts/validate_pacer_rerun_admet_v01.py",
+      "bytes": 9205,
+      "sha256": "a28d72f53ca199bc235fba74b0cadd2d81c67322e0f7b04174bc6b21911d50cf"
+    }
+  ],
+  "self_excluded_to_avoid_recursive_hash": true,
+  "note": ".venv directories excluded; pinned dependencies and installed model hashes provided separately."
+}

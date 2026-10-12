@@ -1,0 +1,419 @@
+{
+  "AMES": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.1118501648306846,
+    "median_prediction": 0.5750909447669983,
+    "max_prediction": 0.9031137228012084
+  },
+  "BBB_Martins": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.1609703302383422,
+    "median_prediction": 0.5305238366127014,
+    "max_prediction": 0.9799745678901672
+  },
+  "Bioavailability_Ma": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.5308215022087097,
+    "median_prediction": 0.7036499977111816,
+    "max_prediction": 0.9161659479141236
+  },
+  "CNS_MPO_full": {
+    "status_counts": {
+      "NOT_ASSESSED": 200
+    },
+    "min_prediction": null,
+    "median_prediction": null,
+    "max_prediction": null
+  },
+  "CNS_brain_exposure": {
+    "status_counts": {
+      "NOT_ASSESSED": 200
+    },
+    "min_prediction": null,
+    "median_prediction": null,
+    "max_prediction": null
+  },
+  "CYP1A2_Veith": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.1310618966817855,
+    "median_prediction": 0.4051745980978012,
+    "max_prediction": 0.9368773698806764
+  },
+  "CYP2C19_Veith": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.1045498251914978,
+    "median_prediction": 0.6229185461997986,
+    "max_prediction": 0.9791945219039916
+  },
+  "CYP2C9_Substrate_CarbonMangels": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.031567707657814,
+    "median_prediction": 0.1180314309895038,
+    "max_prediction": 0.3559364378452301
+  },
+  "CYP2C9_Veith": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.1082859262824058,
+    "median_prediction": 0.6689398288726807,
+    "max_prediction": 0.9793009757995604
+  },
+  "CYP2D6_Substrate_CarbonMangels": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.0086499517783522,
+    "median_prediction": 0.04843374900519845,
+    "max_prediction": 0.4882729947566986
+  },
+  "CYP2D6_Veith": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.0113992132246494,
+    "median_prediction": 0.09724817052483554,
+    "max_prediction": 0.8397716283798218
+  },
+  "CYP3A4_Substrate_CarbonMangels": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.4346542954444885,
+    "median_prediction": 0.7060052454471588,
+    "max_prediction": 0.8410730361938477
+  },
+  "CYP3A4_Veith": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.1399922668933868,
+    "median_prediction": 0.8055473268032074,
+    "max_prediction": 0.9968205690383912
+  },
+  "CYP_metabolism_site": {
+    "status_counts": {
+      "NOT_ASSESSED": 200
+    },
+    "min_prediction": null,
+    "median_prediction": null,
+    "max_prediction": null
+  },
+  "Caco2_Wang": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": -5.356058120727539,
+    "median_prediction": -5.0745673179626465,
+    "max_prediction": -4.75666618347168
+  },
+  "Carcinogens_Lagunin": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.0431063212454319,
+    "median_prediction": 0.12291439622640604,
+    "max_prediction": 0.2422086298465728
+  },
+  "Clearance_Hepatocyte_AZ": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 17.449113845825195,
+    "median_prediction": 40.11868667602539,
+    "max_prediction": 84.61153411865234
+  },
+  "Clearance_Microsome_AZ": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 18.548986434936523,
+    "median_prediction": 52.50107955932617,
+    "max_prediction": 95.4688949584961
+  },
+  "ClinTox": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.0139730097725987,
+    "median_prediction": 0.10657904669642446,
+    "max_prediction": 0.7819503545761108
+  },
+  "DILI": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.5671642422676086,
+    "median_prediction": 0.9916352331638336,
+    "max_prediction": 0.999028980731964
+  },
+  "Fraction_unbound": {
+    "status_counts": {
+      "NOT_ASSESSED": 200
+    },
+    "min_prediction": null,
+    "median_prediction": null,
+    "max_prediction": null
+  },
+  "HIA_Hou": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.9941463470458984,
+    "median_prediction": 0.9998814761638641,
+    "max_prediction": 0.9999994039535522
+  },
+  "Half_Life_Obach": {
+    "status_counts": {
+      "NOT_ASSESSED": 200
+    },
+    "min_prediction": null,
+    "median_prediction": null,
+    "max_prediction": null
+  },
+  "Hepatotoxicity_general": {
+    "status_counts": {
+      "NOT_ASSESSED": 200
+    },
+    "min_prediction": null,
+    "median_prediction": null,
+    "max_prediction": null
+  },
+  "Human_microsomal_half_life": {
+    "status_counts": {
+      "NOT_ASSESSED": 200
+    },
+    "min_prediction": null,
+    "median_prediction": null,
+    "max_prediction": null
+  },
+  "Human_microsomal_stability_class": {
+    "status_counts": {
+      "NOT_ASSESSED": 200
+    },
+    "min_prediction": null,
+    "median_prediction": null,
+    "max_prediction": null
+  },
+  "HydrationFreeEnergy_FreeSolv": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": -17.743743896484375,
+    "median_prediction": -14.580793380737305,
+    "max_prediction": -8.267369270324707
+  },
+  "LD50_Zhu": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 1.791821837425232,
+    "median_prediction": 2.7303208112716675,
+    "max_prediction": 3.6884169578552246
+  },
+  "Lipophilicity_AstraZeneca": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 2.099126100540161,
+    "median_prediction": 3.340554356575012,
+    "max_prediction": 4.2482147216796875
+  },
+  "NR-AR": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.0114529822021722,
+    "median_prediction": 0.03576370328664775,
+    "max_prediction": 0.1010147482156753
+  },
+  "NR-AR-LBD": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.001817038631998,
+    "median_prediction": 0.032436307519674246,
+    "max_prediction": 0.1999362409114837
+  },
+  "NR-AhR": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.2827898859977722,
+    "median_prediction": 0.699097752571106,
+    "max_prediction": 0.9826468229293824
+  },
+  "NR-Aromatase": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.0924213156104087,
+    "median_prediction": 0.4026597738265991,
+    "max_prediction": 0.8046419024467468
+  },
+  "NR-ER": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.0721962675452232,
+    "median_prediction": 0.16482170671224589,
+    "max_prediction": 0.3387572765350342
+  },
+  "NR-ER-LBD": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.0161633566021919,
+    "median_prediction": 0.04008864425122735,
+    "max_prediction": 0.1007613167166709
+  },
+  "NR-PPAR-gamma": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.0104663372039794,
+    "median_prediction": 0.06246823444962495,
+    "max_prediction": 0.1875361502170562
+  },
+  "Oral_bioavailability_fraction": {
+    "status_counts": {
+      "NOT_ASSESSED": 200
+    },
+    "min_prediction": null,
+    "median_prediction": null,
+    "max_prediction": null
+  },
+  "PAMPA_NCATS": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.715703547000885,
+    "median_prediction": 0.9027121961116792,
+    "max_prediction": 0.9804065823554992
+  },
+  "PPBR_AZ": {
+    "status_counts": {
+      "PREDICTED": 166,
+      "MODEL_FAILED": 34
+    },
+    "min_prediction": 87.76001739501953,
+    "median_prediction": 97.06077194213867,
+    "max_prediction": 99.9798812866211
+  },
+  "Pgp_Broccatelli": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.3240271210670471,
+    "median_prediction": 0.8858135044574738,
+    "max_prediction": 0.984257698059082
+  },
+  "Pgp_substrate": {
+    "status_counts": {
+      "NOT_ASSESSED": 200
+    },
+    "min_prediction": null,
+    "median_prediction": null,
+    "max_prediction": null
+  },
+  "Reactive_metabolite_model": {
+    "status_counts": {
+      "NOT_ASSESSED": 200
+    },
+    "min_prediction": null,
+    "median_prediction": null,
+    "max_prediction": null
+  },
+  "SR-ARE": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.2475610971450805,
+    "median_prediction": 0.8025026619434357,
+    "max_prediction": 0.946842074394226
+  },
+  "SR-ATAD5": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.0273115877062082,
+    "median_prediction": 0.2308696880936622,
+    "max_prediction": 0.4633146822452545
+  },
+  "SR-HSE": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.0416088365018367,
+    "median_prediction": 0.14413230121135712,
+    "max_prediction": 0.3507375419139862
+  },
+  "SR-MMP": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.1155705228447914,
+    "median_prediction": 0.7930943667888641,
+    "max_prediction": 0.9442926645278932
+  },
+  "SR-p53": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.0271459072828292,
+    "median_prediction": 0.3582920283079147,
+    "max_prediction": 0.6572517156600952
+  },
+  "Skin_Reaction": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.1033204570412635,
+    "median_prediction": 0.384670689702034,
+    "max_prediction": 0.7677980661392212
+  },
+  "Solubility_AqSolDB": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": -6.7847418785095215,
+    "median_prediction": -5.365206241607666,
+    "max_prediction": -3.975243091583252
+  },
+  "Systemic_clearance": {
+    "status_counts": {
+      "NOT_ASSESSED": 200
+    },
+    "min_prediction": null,
+    "median_prediction": null,
+    "max_prediction": null
+  },
+  "VDss_Lombardo": {
+    "status_counts": {
+      "NOT_ASSESSED": 200
+    },
+    "min_prediction": null,
+    "median_prediction": null,
+    "max_prediction": null
+  },
+  "hERG": {
+    "status_counts": {
+      "PREDICTED": 200
+    },
+    "min_prediction": 0.258947491645813,
+    "median_prediction": 0.7006979584693909,
+    "max_prediction": 0.9828752279281616
+  }
+}

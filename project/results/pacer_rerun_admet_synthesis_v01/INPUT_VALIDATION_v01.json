@@ -1,0 +1,19 @@
+{
+  "input_file": "/Users/barneygong/Documents/GPCR-virtual-screening/project/results/pacer_xr_rerun_v01/pacer_xr_rerun_full200_ranking.csv",
+  "sha256": "723830461f517315172a47686b941b468da12d23cdb60b8e4e041cdc86eef944",
+  "git_commit": "9bb03d6dfa7ef29f1da877ccdfd6426198b2ac0a",
+  "git_branch": "analysis/pacer-rerun-admet-synthesis-v01",
+  "parent_result_branch": "results/pacer-stage4-pbcfix01-fkg-v02-v01",
+  "initial_worktree_clean": true,
+  "n_rows": 200,
+  "unique_ids": 200,
+  "unique_input_smiles": 200,
+  "unique_rdkit_canonical_smiles": 200,
+  "all_parse": true,
+  "id_smiles_bijection": true,
+  "all_ids_PACERGEN": true,
+  "top3_present": true,
+  "input_smiles_column_matches_canonical": true,
+  "canonical_serialization_differences": [],
+  "identity_policy": "Original strings preserved verbatim; canonical serialization used only to check identity. No historical PACER mapping."
+}

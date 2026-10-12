@@ -1,0 +1,255 @@
+{
+  "status": "PASS",
+  "checks": {
+    "required_prevalidation_outputs_exist": true,
+    "input_sha256_unchanged": true,
+    "ALL200_ADMET_MODEL_MEMBERS_v01.csv__identity_columns": true,
+    "ALL200_ADMET_MODEL_MEMBERS_v01.csv__verbatim_identity": true,
+    "ALL200_ADMET_MODEL_MEMBERS_v01.csv__full_expected_candidate_set": true,
+    "ALL200_ADMET_RAW_ENSEMBLE_MEANS_v01.csv__identity_columns": true,
+    "ALL200_ADMET_RAW_ENSEMBLE_MEANS_v01.csv__verbatim_identity": true,
+    "ALL200_ADMET_RAW_ENSEMBLE_MEANS_v01.csv__full_expected_candidate_set": true,
+    "ALL200_ADMET_v01.csv__identity_columns": true,
+    "ALL200_ADMET_v01.csv__verbatim_identity": true,
+    "ALL200_ADMET_v01.csv__full_expected_candidate_set": true,
+    "ALL200_CNS_COMPONENTS_v01.csv__identity_columns": true,
+    "ALL200_CNS_COMPONENTS_v01.csv__verbatim_identity": true,
+    "ALL200_CNS_COMPONENTS_v01.csv__full_expected_candidate_set": true,
+    "ALL200_DRUGLIKENESS_v01.csv__identity_columns": true,
+    "ALL200_DRUGLIKENESS_v01.csv__verbatim_identity": true,
+    "ALL200_DRUGLIKENESS_v01.csv__full_expected_candidate_set": true,
+    "ALL200_PHYSICOCHEMICAL_v01.csv__identity_columns": true,
+    "ALL200_PHYSICOCHEMICAL_v01.csv__verbatim_identity": true,
+    "ALL200_PHYSICOCHEMICAL_v01.csv__full_expected_candidate_set": true,
+    "ALL200_REACTIVITY_ALERTS_v01.csv__identity_columns": true,
+    "ALL200_REACTIVITY_ALERTS_v01.csv__verbatim_identity": true,
+    "ALL200_REACTIVITY_ALERTS_v01.csv__full_expected_candidate_set": true,
+    "ALL200_RETROSYNTHESIS_v01.csv__identity_columns": true,
+    "ALL200_RETROSYNTHESIS_v01.csv__verbatim_identity": true,
+    "ALL200_RETROSYNTHESIS_v01.csv__full_expected_candidate_set": true,
+    "ALL200_STEREOCHEMISTRY_v01.csv__identity_columns": true,
+    "ALL200_STEREOCHEMISTRY_v01.csv__verbatim_identity": true,
+    "ALL200_STEREOCHEMISTRY_v01.csv__full_expected_candidate_set": true,
+    "ALL200_STRUCTURAL_ALERTS_v01.csv__identity_columns": true,
+    "ALL200_STRUCTURAL_ALERTS_v01.csv__verbatim_identity": true,
+    "ALL200_STRUCTURAL_ALERTS_v01.csv__full_expected_candidate_set": true,
+    "ALL200_SYNTHESIS_FEASIBILITY_v01.csv__identity_columns": true,
+    "ALL200_SYNTHESIS_FEASIBILITY_v01.csv__verbatim_identity": true,
+    "ALL200_SYNTHESIS_FEASIBILITY_v01.csv__full_expected_candidate_set": true,
+    "ALL200_TOXICITY_v01.csv__identity_columns": true,
+    "ALL200_TOXICITY_v01.csv__verbatim_identity": true,
+    "ALL200_TOXICITY_v01.csv__full_expected_candidate_set": true,
+    "ALL200_WATER_SOLUBILITY_v01.csv__identity_columns": true,
+    "ALL200_WATER_SOLUBILITY_v01.csv__verbatim_identity": true,
+    "ALL200_WATER_SOLUBILITY_v01.csv__full_expected_candidate_set": true,
+    "EVIDENCE_COMPLETENESS_v01.csv__identity_columns": true,
+    "EVIDENCE_COMPLETENESS_v01.csv__verbatim_identity": true,
+    "EVIDENCE_COMPLETENESS_v01.csv__full_expected_candidate_set": true,
+    "PHASE_B_SYNTHESIS_HEURISTICS_v01.csv__identity_columns": true,
+    "PHASE_B_SYNTHESIS_HEURISTICS_v01.csv__verbatim_identity": true,
+    "PHASE_B_SYNTHESIS_HEURISTICS_v01.csv__full_expected_candidate_set": true,
+    "TOP3_COMPREHENSIVE_PROFILE_v01.csv__identity_columns": true,
+    "TOP3_COMPREHENSIVE_PROFILE_v01.csv__verbatim_identity": true,
+    "TOP3_COMPREHENSIVE_PROFILE_v01.csv__full_expected_candidate_set": true,
+    "all200_all12_descriptors_recomputed": true,
+    "all200_QED_recomputed": true,
+    "Lipinski__flags_match_violation_lists": true,
+    "Veber__flags_match_violation_lists": true,
+    "Ghose__flags_match_violation_lists": true,
+    "Egan__flags_match_violation_lists": true,
+    "Muegge__flags_match_violation_lists": true,
+    "PAINS_catalog_nonempty": true,
+    "endpoint_records_unique": true,
+    "all52_endpoint_complete200": true,
+    "raw41_endpoint_complete200": true,
+    "all8200_member_means_consistent": true,
+    "all8200_member_SDs_consistent": true,
+    "raw_predictions_match_saved_members": true,
+    "missing_failed_predictions_are_null": true,
+    "predicted_values_finite": true,
+    "classification_probabilities_in_0_1": true,
+    "PPBR34_out_of_bounds_not_clipped": true,
+    "negative_R2_endpoints_not_accepted": true,
+    "model_AD_not_falsely_in_domain": true,
+    "route_unassessed_not_no_route": true,
+    "no_unfounded_cost_yield_supplier": true,
+    "frozen_top3_order_identity": true,
+    "PACERGEN02432__profile_predictions_match_all200": true,
+    "PACERGEN00123__profile_predictions_match_all200": true,
+    "PACERGEN00462__profile_predictions_match_all200": true,
+    "Figure_1__png_pdf_valid": true,
+    "Figure_2__png_pdf_valid": true,
+    "Figure_3__png_pdf_valid": true,
+    "Figure_4__png_pdf_valid": true,
+    "Figure_5__png_pdf_valid": true,
+    "Figure_6__png_pdf_valid": true,
+    "existing_tracked_files_only_gitignore_changed": true,
+    "frozen_tracked_results_unchanged": true,
+    "analysis_branch_correct": true,
+    "result_PDF_not_gitignored": true
+  },
+  "failed_checks": [],
+  "files": {
+    "ALL200_ADMET_MODEL_MEMBERS_v01.csv": {
+      "rows": 8200,
+      "columns": 10,
+      "unique_candidates": 200
+    },
+    "ALL200_ADMET_RAW_ENSEMBLE_MEANS_v01.csv": {
+      "rows": 200,
+      "columns": 43,
+      "unique_candidates": 200
+    },
+    "ALL200_ADMET_v01.csv": {
+      "rows": 6200,
+      "columns": 31,
+      "unique_candidates": 200
+    },
+    "ALL200_CNS_COMPONENTS_v01.csv": {
+      "rows": 200,
+      "columns": 12,
+      "unique_candidates": 200
+    },
+    "ALL200_DRUGLIKENESS_v01.csv": {
+      "rows": 200,
+      "columns": 21,
+      "unique_candidates": 200
+    },
+    "ALL200_PHYSICOCHEMICAL_v01.csv": {
+      "rows": 200,
+      "columns": 22,
+      "unique_candidates": 200
+    },
+    "ALL200_REACTIVITY_ALERTS_v01.csv": {
+      "rows": 200,
+      "columns": 15,
+      "unique_candidates": 200
+    },
+    "ALL200_RETROSYNTHESIS_v01.csv": {
+      "rows": 200,
+      "columns": 19,
+      "unique_candidates": 200
+    },
+    "ALL200_STEREOCHEMISTRY_v01.csv": {
+      "rows": 200,
+      "columns": 20,
+      "unique_candidates": 200
+    },
+    "ALL200_STRUCTURAL_ALERTS_v01.csv": {
+      "rows": 200,
+      "columns": 12,
+      "unique_candidates": 200
+    },
+    "ALL200_SYNTHESIS_FEASIBILITY_v01.csv": {
+      "rows": 200,
+      "columns": 33,
+      "unique_candidates": 200
+    },
+    "ALL200_TOXICITY_v01.csv": {
+      "rows": 4200,
+      "columns": 31,
+      "unique_candidates": 200
+    },
+    "ALL200_WATER_SOLUBILITY_v01.csv": {
+      "rows": 200,
+      "columns": 35,
+      "unique_candidates": 200
+    },
+    "EVIDENCE_COMPLETENESS_v01.csv": {
+      "rows": 12800,
+      "columns": 7,
+      "unique_candidates": 200
+    },
+    "PHASE_B_SYNTHESIS_HEURISTICS_v01.csv": {
+      "rows": 200,
+      "columns": 20,
+      "unique_candidates": 200
+    },
+    "TOP3_COMPREHENSIVE_PROFILE_v01.csv": {
+      "rows": 3,
+      "columns": 332,
+      "unique_candidates": 3
+    }
+  },
+  "figures": [
+    {
+      "figure": 1,
+      "png_pixels": [
+        3569,
+        2292
+      ],
+      "pdf_bytes": 27152,
+      "visual_QA": "Inspected all six PNGs; labels, evidence types, missingness and model caveats readable."
+    },
+    {
+      "figure": 2,
+      "png_pixels": [
+        3569,
+        1502
+      ],
+      "pdf_bytes": 25987,
+      "visual_QA": "Inspected all six PNGs; labels, evidence types, missingness and model caveats readable."
+    },
+    {
+      "figure": 3,
+      "png_pixels": [
+        3566,
+        2409
+      ],
+      "pdf_bytes": 34004,
+      "visual_QA": "Inspected all six PNGs; labels, evidence types, missingness and model caveats readable."
+    },
+    {
+      "figure": 4,
+      "png_pixels": [
+        3563,
+        2409
+      ],
+      "pdf_bytes": 30606,
+      "visual_QA": "Inspected all six PNGs; labels, evidence types, missingness and model caveats readable."
+    },
+    {
+      "figure": 5,
+      "png_pixels": [
+        3568,
+        1590
+      ],
+      "pdf_bytes": 28870,
+      "visual_QA": "Inspected all six PNGs; labels, evidence types, missingness and model caveats readable."
+    },
+    {
+      "figure": 6,
+      "png_pixels": [
+        3869,
+        1414
+      ],
+      "pdf_bytes": 26027,
+      "visual_QA": "Inspected all six PNGs; labels, evidence types, missingness and model caveats readable."
+    }
+  ],
+  "details": {
+    "PAINS_catalog_entries": 480
+  },
+  "endpoint_status_counts": {
+    "PREDICTED": 7766,
+    "NOT_ASSESSED": 2600,
+    "MODEL_FAILED": 34
+  },
+  "n_model_endpoints": 41,
+  "n_recorded_endpoints": 52,
+  "input_sha256_final": "723830461f517315172a47686b941b468da12d23cdb60b8e4e041cdc86eef944",
+  "git_commit": "9bb03d6dfa7ef29f1da877ccdfd6426198b2ac0a",
+  "git_branch": "analysis/pacer-rerun-admet-synthesis-v01",
+  "git_status": " M .gitignore\n?? project/results/pacer_rerun_admet_synthesis_v01/\n?? project/scripts/pacer_rerun_admet_v01.py\n?? project/scripts/pacer_rerun_medchem_v01.py\n?? project/scripts/pacer_rerun_report_v01.py\n?? project/scripts/pacer_rerun_synthesis_v01.py\n?? project/scripts/validate_pacer_rerun_admet_v01.py\n",
+  "modified_tracked_files": [
+    ".gitignore"
+  ],
+  "not_committed_pushed_or_PR_created": true,
+  "scope_limitations": [
+    "No validated model applicability domain or probability calibration on these candidates",
+    "Caco2 unit discrepancy unresolved",
+    "Half-life/VDss model outputs not adopted",
+    "No complete retrosynthesis assets, searches or procurement validation"
+  ],
+  "scientific_completeness": "All200 covered with explicit gaps, not all requested endpoints reliably predicted."
+}

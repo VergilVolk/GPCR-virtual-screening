@@ -1,0 +1,38 @@
+{
+  "tool": "AiZynthFinder",
+  "version": "4.4.1",
+  "python": "3.11.9 (v3.11.9:de54cf5be3, Apr  2 2024, 07:12:50) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "import_and_object_creation_succeeded": true,
+  "source": "https://github.com/MolecularAI/aizynthfinder",
+  "license": "MIT",
+  "onnxruntime": "1.31.0",
+  "rdkit": "2023.9.6",
+  "model_record": "https://zenodo.org/records/7797465",
+  "model_license": "CC-BY-4.0 per Zenodo API metadata",
+  "expansion_policy_available": false,
+  "templates_available": false,
+  "stock_available": false,
+  "local_assets_found": [],
+  "network_preflight": [
+    {
+      "url": "https://zenodo.org/records/7797465/files/uspto_model.onnx",
+      "error": "The read operation timed out"
+    },
+    {
+      "url": "https://zenodo.org/records/7341155/files/uspto_unique_templates.csv.gz",
+      "error": "The read operation timed out"
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/23086469",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://zenodo.org/api/records/7341155",
+      "error": "The read operation timed out"
+    }
+  ],
+  "can_execute_search": false,
+  "reason": "Required complete policy/template/stock assets unavailable. Official ZINC stock URL returns 403; Zenodo files timed out. No access restriction bypass. Package installation and successful import alone do not constitute retrosynthesis.",
+  "all200_search_attempt_policy": "Preflight gate failed for every candidate; per-molecule route search NOT_ASSESSED, never NO_ROUTE_FOUND.",
+  "route_validation": "No computational routes generated; no experimental synthesis claim."
+}
